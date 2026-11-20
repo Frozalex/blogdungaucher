@@ -48,6 +48,36 @@ If the same missed move repeatedly returns, set aside a time to analyse it, then
 
 For broader context, read about [breaks](/en/blog/benefits-of-breaks-in-chess/), [sleep](/en/blog/chess-and-sleep/) and [meditation](/en/blog/chess-and-meditation/). Each has its own methods and limits; none reduces to one network.
 
+## A clock time is easier to reconstruct than a thought
+
+Imagine coming home from a tournament convinced that you lost because you glanced across at another board. Your score sheet can establish which move was played, and snapshots of the clock might help you locate the incident in time. Neither can tell you exactly what you were thinking twenty seconds earlier. Draw three boxes on a blank sheet: something another observer could have seen, a thought you remember having, and a move you can verify from the game record. “I left my chair” belongs in the first. “I was worrying about the team score” belongs in the second if you actually recall that thought. “I played the rook to the wrong file” can be checked against the third.
+
+The boxes need not contain equally detailed information. You may know the move exactly and remember nothing reliable about your thoughts. Leave that space empty. Filling it with the name of a brain network adds apparent precision without supplying any missing observation. A useful post-game conversation may turn up another possibility, such as a tempting line you mentioned to a teammate. Record the source of that information as well. Something you inferred during the analysis should not silently become a remembered fact about the original decision.
+
+## A break, an interruption and a planned change of task
+
+Picture three pauses of equal length. In the first, the player has already considered several candidate moves and spends a moment looking away before returning to the problem. In the second, a noise interrupts the player halfway through a forcing line. In the third, the player deliberately abandons tactical calculation to assess the likely pawn ending after an exchange. A spectator could describe all three as pauses in move-making. They do not require the same explanation or the same advice. The last is plainly a change of chess task even if the player sits perfectly still.
+
+How would you tell the cases apart in a training session? A partner might ask what question you were working on just before the pause and what you looked at first when you returned. The answer is a report, not a scan. Asking too frequently may itself disrupt the task. If you choose to record the exercise, announce the interruptions in advance and apply the same schedule to the positions you intend to compare. Even a simple training diary is easier to interpret when the method of observing does not change halfway through it.
+
+The distinction matters when reading about research on thoughts wandering away from the present activity. A study that samples reports during ordinary life has learned something about the experiences participants reported in that setting. It has not recorded the brain activity of a tournament player in a specific endgame. Conversely, an experiment reporting an imaging contrast did not necessarily ask what subjectively occupied each moment. Check what the participants were asked to do, when they were asked and what was measured before linking a population result to a single mistake.
+
+## Test the idea that arrives during the pause
+
+A player turns away from a hard position and, a little later, suddenly thinks of activating the king. It is a good story. Whether it is a good chess move remains open. Bring the candidate back to the board and write the opponent's strongest check, capture and threat after it. If the king walks into a fork, the novelty of the idea cannot rescue it. If the king reaches a useful square against the best defence you can find, you have discovered a practical plan. Your evidence is the variation. You still do not know exactly how the thought arose.
+
+Keep a failed idea in the notebook occasionally. Accounts of sudden insight naturally favour the plan that worked, because it makes a satisfying ending. The king manoeuvre that failed to a fork may be quietly forgotten, along with the ten pauses that produced no new candidate. To learn whether stepping away is helpful in your own sessions, include those cases and note what you did before the pause. A break after careful initial analysis and a break before reading the diagram are different conditions. Also distinguish finding an extra candidate from choosing it correctly after analysis.
+
+## Choose an appropriate route back to the board
+
+If you return during your opponent's thinking time and discover that a move has been made in your absence, reconstruct the change first. Where did the piece start and finish? Which line did it open, and what did it cease to defend? If you never left your seat but became absorbed in a branch the opponent did not choose, your route back is different. Identify the last diagram shared by the imagined and actual lines, discard the imagined successors and work from the real move. A similar feeling of lost focus can correspond to two different errors of board reconstruction.
+
+At home you can practise both with a partner. Let them change one move in a position while you look away, then ask you to identify the threat. On a different card, write two candidate lines, cross out one at random and ask you to describe the position that remains. The correction can be specific: a bishop's diagonal was opened, or a pawn still occupies the square because the expected exchange never happened. That is enough information to decide what to practise next week. It does not require anyone to diagnose the state of the default mode network from a missed check.
+
+If distraction is the concern, judge a small practical change by a small practical outcome. Did you identify the last move accurately on the next unfamiliar diagram? Did you find a safe reply when your preferred branch disappeared? Those answers are repeatable, useful to a coach and available at an ordinary chessboard. Their modest scope is precisely what makes them worth recording.
+
+A partner's record of which square you named gives you an independent check without asking them to guess what you were thinking.
+
 ## Sources
 
 - Christoff, K., Irving, Z. C., Fox, K. C. R., Spreng, R. N., & Andrews-Hanna, J. R. (2016). *Mind-wandering as spontaneous thought: a dynamic framework*. Nature Reviews Neuroscience, 17, 718–731. [Article](https://www.upaya.org/wp-content/uploads/2020/04/Christoff-et-al.-NRN-2016.pdf).

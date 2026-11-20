@@ -111,6 +111,14 @@ Au lieu de chercher une étiquette d'attachement, observe les possibilités conc
 
 Un conflit ponctuel ne résume pas une relation. Inversement, des humiliations répétées ou une peur durable de revenir au club méritent d'être prises au sérieux sans attendre de disposer d'une théorie complète. Écouter, revoir le cadre et rechercher un interlocuteur compétent répond mieux au besoin que de diagnostiquer à distance un enfant ou un entraîneur.
 
+## Qui ouvre le fichier de la partie ?
+
+Imagine une sortie de tournoi sous la pluie. L'enfant tient sa feuille roulée à la main. Dans la voiture, le parent sort son téléphone pour saisir les coups pendant qu'il s'en souvient. Il croit l'aider. L'enfant serre sa feuille et demande de la musique. À partir de ces gestes seuls, on ignore presque tout de leur relation. On peut néanmoins changer quelque chose de précis dans cette scène : demander à qui appartient le choix du moment.
+
+Le lendemain, la feuille ressort au petit déjeuner. Propose trois usages concrets. La garder dans un dossier, installer une position ensemble, ou la transmettre à l'entraîneur avec une question. L'enfant choisit la troisième option et désigne un échange de fous. Le parent peut écrire exactement : « J'aimerais savoir si je pouvais garder mon fou. » Le message appartient désormais au joueur. Inutile d'ajouter en son nom qu'il aurait paniqué ou que la défaite l'aurait démoralisé. Ces interprétations changeraient la question reçue par l'entraîneur.
+
+Ce dernier peut commencer la séance en demandant au joueur de remettre les pièces avant l'échange. Si le joueur change d'avis, la feuille reste disponible pour plus tard. L'adulte a rendu une analyse possible tout en laissant à l'enfant la faculté d'en choisir le moment et le sujet. Cette petite décision est directement observable. Elle peut devenir une habitude d'équipe sans qu'il soit nécessaire de déduire un style d'attachement d'une scène de voiture.
+
 ## Sources
 
 - Davis, L. et Jowett, S. (2010), « Investigating the Interpersonal Dynamics Between Coaches and Athletes Based on Fundamental Principles of Attachment », *Journal of Clinical Sport Psychology*, 4(2), 112–132. [Résumé des auteurs](https://researchportal.northumbria.ac.uk/en/publications/investigating-the-interpersonal-dynamics-between-coaches-and-athl/).

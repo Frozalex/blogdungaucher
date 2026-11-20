@@ -100,6 +100,14 @@ Ce passage est une proposition de formulation. Tu dois pouvoir expliquer chaque 
 
 Pour les dix minutes d'exposé prévues par le [format officiel du Grand oral](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028), réserve du temps à cette discussion. Un document bien analysé et une limite bien expliquée valent davantage qu'une succession d'anecdotes non vérifiées.
 
+## Deux légendes pour la même photographie
+
+Essaie de rédiger deux légendes pour une photographie montrant simplement deux adversaires devant un échiquier. Pour cette expérience de rédaction, imagine une image sans drapeau, sans public visible et sans autre indication. Avec la première légende, identifie les joueurs, le lieu et la compétition en ajoutant seulement les renseignements que tu as vérifiés ailleurs. Avec la seconde, explique comment un journal aurait pu présenter la rencontre comme un affrontement entre systèmes politiques. Précise que cette seconde légende est de ta composition. Si tu souhaites attribuer un tel cadrage à un journal réel, il te faudra un exemplaire daté et le passage exact.
+
+Ce déplacement permet d’expliquer un problème de preuve au jury. La photographie témoigne d’une situation sportive. La légende propose au lecteur de l’interpréter. Ni l’une ni l’autre ne permet de savoir combien de lecteurs ont adopté cette interprétation, modifié leur opinion d’un pays ou simplement apprécié les parties. La question du pouvoir d’attraction devient plus précise lorsqu’on indique quel effet on recherche, auprès de quel public, et avec quel document on pourrait le montrer.
+
+Pour ta conclusion, reprends tes deux légendes en imaginant qu’on ait perdu le nom de leur auteur et leur date de diffusion. Tu pourrais encore analyser les mots choisis, mais tu saurais beaucoup moins de choses sur leur circulation. Cette petite perte d’information démontre à quoi sert la critique des sources. Elle donne aussi une réponse concrète à la question du jury : comment passe-t-on d’un événement connu à une hypothèse testable sur ses usages diplomatiques ?
+
 ## Conclusion à construire
 
 Tu peux défendre cette réponse : le match a constitué une ressource symbolique dans la guerre froide, mais le passage de la notoriété à une influence politique durable ne se déduit pas du seul résultat.

@@ -135,6 +135,8 @@ Spelers van hoog niveau behandelen slaap als een volwaardig onderdeel van de tra
 
 Deze getuigenissen komen overeen met de wetenschappelijke gegevens: op het niveau waar de technische voorbereiding maximaal is, wordt slaapmanagement een belangrijk competitief onderscheid.
 
+Wil je je eigen toernooidag terugkijken, noteer dan samen met je bedtijd ook de begintijd van de ronde, reistijd en speelduur. Een slaperige middag na een vroege trein vertelt iets anders dan een korte nacht voorafgaand aan een online partij vanuit huis. Leg bij het naspelen één stelling klaar waarin je je vermoeid voelde. Had je daar nog voldoende bedenktijd? Was er een eenvoudige verdediging die je zelfs nu moeilijk ziet? Zulke controlevragen houden de verklaring eerlijk. Een schaakformulier en een slaapdagboek kunnen je helpen de volgende reis slimmer te plannen. Ze kunnen geen precieze oorzaak aan een losse blunder toekennen.
+
 ## Bronnen
 
 - Harrison, Y., & Horne, J. A. (2000). The impact of sleep deprivation on decision making: A review. *Journal of Experimental Psychology: Applied*, 6(3), 236-249.

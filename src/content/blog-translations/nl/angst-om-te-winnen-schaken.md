@@ -82,6 +82,18 @@ De eerste stap is eerlijke herkenning van het patroon. Analyseer je partijen met
 
 ---
 
+## Wanneer verandert een goede positie in een verplichting?
+
+Laat twee clubgenoten dezelfde eindspelstelling oplossen. Op het eerste blaadje staat alleen ‘wit aan zet’. Op het tweede staat ‘wit stond gewonnen en moet het nu afmaken’. Beide bladen bevatten exact dezelfde plaatsing van de stukken. Toch kan de tweede speler zich gedwongen voelen een korte winstvariant te vinden, ook wanneer rustig verbeteren van de koningspositie voldoende is. Alleen het tweede blad bevat een verhaal over de stand. Dat is een bruikbaar uitgangspunt om na te gaan of spanning of techniek het probleem vormt.
+
+Laat de twee spelers eerst een plan opschrijven en vervolgens één verdedigingsmogelijkheid van zwart uitproberen. Sta een terugzet toe als iemand ontdekt dat zijn berekening een verboden koningszet bevat. Noteer apart wie de theoretische methode kende, wie die onder tijdsdruk kon uitvoeren en wie zich door het etiket ‘gewonnen’ liet verleiden tot een overhaaste pionzet. Je kunt die drie dingen niet uit de uiteindelijk behaalde halve of hele punt afleiden. Een speler die de methode mist, is meestal beter geholpen met een zorgvuldig uitgespeeld voorbeeld dan met een gesprek over zelfvertrouwen.
+
+Verscherp het onderscheid met een uitkomst die spelers soms vergeten: de stelling kan bij perfecte verdediging gewoon remise zijn. Vraag de partijgenoot die ‘gewonnen’ beweerde wat de sterkste verdediging is. Laat hem juist die kant spelen. Als de analyse geen geforceerde winst oplevert, hoeft de aanvaller zichzelf geen gemiste zege te verwijten. Hij had het bord misschien correct gelezen en alleen het commentaar van een omstander te letterlijk genomen.
+
+Gebruik voor een volgende serieuze partij een concrete zin die bij een gunstige stand past. Bijvoorbeeld dat je wilt weten welke pion van de tegenstander nog vrij kan doorlopen voordat je stukken ruilt. Zo'n opdracht heeft een controleerbaar antwoord, ongeacht of je voorstond of achterstond. Na afloop kan de trainer vragen of je die pion hebt gezien en hoe je ermee omging. Dat gesprek gaat over een beslissing die werkelijk op het bord lag. Het geeft je een scherper aanknopingspunt dan de opdracht om bij een voorsprong meer in de overwinning te geloven.
+
+Bewaar ook het verdedigende gezichtspunt: welke laatste praktische kans had jij vanuit de andere kleur zelf nog willen proberen?
+
 ## Kernpunten
 
 - De angst om te winnen is geen irrationele paradox: het is een logische reactie op **angstwekkende gevolgen** van de overwinning

@@ -131,6 +131,14 @@ La publication d’un rapport rend certaines méthodes discutables publiquement 
 
 L’affaire Niemann rappelle finalement une exigence simple : **nommer la source, préciser la portée de sa conclusion et ne pas combler les inconnues par une accusation**.
 
+## Écrire une réclamation qui puisse être vérifiée
+
+Imaginons que, pendant un tournoi de club, tu entendes une sonnerie dans la salle voisine au milieu de la troisième ronde. Tu n’as vu ni l’appareil ni la personne qui l’utilisait. Une réclamation utile distingue trois éléments. D’abord ce que tu as perçu, en donnant le lieu et le moment approximatif. Ensuite ce qu’une autre personne pourrait vérifier par ses propres moyens. Enfin la question que tu poses à l’arbitre, par exemple si un contrôle ou un rappel collectif est prévu. La phrase « j’ai entendu une sonnerie près de l’entrée » a une portée limitée, mais elle est plus exploitable qu’une conclusion sur les intentions de ton adversaire.
+
+Suppose maintenant qu’une analyse d’après-partie recommande trois coups effectivement joués par cet adversaire. Tu peux donner les positions à examiner. Avant toute interprétation, demande si chaque décision offrait réellement plusieurs options plausibles et qui a sélectionné ces trois positions. Avec trois reprises quasiment forcées choisies après coup, le récit sonne plus impressionnant que les données qu’il contient. Quelqu’un qui analyserait l’intégralité de la partie pourrait trouver aussi des moments où le joueur s’écarte immédiatement de la recommandation.
+
+Cette discipline de rédaction a un intérêt quel que soit le résultat de la procédure. Elle aide les personnes chargées du dossier à distinguer une observation en salle d’une ressemblance entre coups. Elle évite également d’inscrire un nom dans une publication publique qui circulera au-delà du tournoi. Attendre la décision et lire précisément sa portée laisse la place à plusieurs issues, y compris une explication ordinaire de ce que tu avais remarqué.
+
 ## Sources
 
 - **Chess.com (octobre 2022)**, présentation et accès au *Hans Niemann Report*. [Rapport et conclusions](https://www.chess.com/news/view/chesscom-hans-niemann-report-cheating).

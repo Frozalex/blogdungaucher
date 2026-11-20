@@ -55,6 +55,34 @@ Uma diferença entre esse relato e a análise posterior não mede diretamente a 
 
 Veja também a [racionalização](/pt-br/blog/racionalizacao-no-xadrez/) e os [mecanismos de defesa](/pt-br/blog/mecanismos-de-defesa-no-xadrez/).
 
+## Quando a posição deixa de oferecer o que a abertura prometia
+
+Um jogador estuda um gambito porque gostaria de jogar com o par de bispos em linhas abertas. Consegue sua posição preferida, mas o adversário devolve o peão e troca um dos bispos. Há uma coluna útil para a torre que ficou em casa. O jogador, entretanto, insiste em explicar a posição aos colegas como se os dois bispos continuassem no tabuleiro. Duas afirmações merecem ser examinadas separadamente. “Escolhi a abertura para obter os bispos” descreve uma razão passada. “A posição ainda me agrada” descreve um julgamento atual. A segunda frase pode ser verdadeira, mas precisa de razões que tenham sobrevivido à troca.
+
+Monte o diagrama depois da devolução do peão. Para onde a torre gostaria de ir? Que peça pode contestar a coluna? Em quantos lances o adversário consegue trazê-la? Se houver uma boa casa de entrada, a troca talvez tenha transformado um tipo de vantagem em outro. Se todas as casas relevantes estiverem cobertas, o jogador ainda pode gostar da estrutura por se sentir à vontade no final. Em ambos os casos,“eu estudei essa abertura por um mês” permanece uma informação sobre o investimento anterior. Ela não revela quem chega primeiro à casa de entrada.
+
+Peça a um parceiro que lhe entregue a mesma posição sem dizer como ela surgiu. Você talvez sugira trocar as torres e fixar um peão fraco na ala da dama. Volte então à história do gambito. Você continuaria a defender as trocas mesmo sabendo que foi você quem preparou a linha agressiva? Se as duas análises forem diferentes, procure uma característica do tabuleiro que você descreveu em uma e esqueceu na outra. O resultado fornece uma hipótese sobre o que chamou sua atenção. Não revela sozinho qual era a intensidade de algum desconforto interno.
+
+## Quatro frases que parecem dizer a mesma coisa
+
+Depois da rodada, escreva “eu vi”, “eu esperava”, “agora concluo” e “eu mudaria de ideia se”. Complete as frases para uma decisão específica. Você viu uma oferta de troca de damas. Esperava entrar com o rei pela coluna central. Agora conclui que o rei rival chega primeiro. Uma casa de oposição ou um lance de espera disponível para o seu peão poderiam fazê-lo mudar de ideia. As quatro frases falam do mesmo final, mas cada uma situa a informação num momento diferente. Sem essa distinção é fácil guardar só a última avaliação e acreditar que já conhecia a solução durante a partida.
+
+Suponha que a análise posterior encontre uma vitória para o seu lado. É tentador encerrar a história dizendo que você estava certo desde o início. Reabra a segunda frase. Você havia calculado a manobra do rei que realmente ganha ou esperava que o adversário entrasse voluntariamente numa oposição desfavorável? É perfeitamente possível acertar o resultado de uma posição por uma razão que não resiste à melhor defesa. O exercício de explicar a vitória a alguém que vai jogar pelo outro lado costuma expor essa diferença mais depressa que a leitura de uma barra de avaliação.
+
+Experimente também a situação inversa. Uma linha que você calculou contra determinada resposta está correta, mas havia uma defesa melhor um lance antes. Sua análise contém uma contribuição aproveitável e uma conclusão incompleta. Marque exatamente o ponto de separação. Em vez de apagar todo o caderno porque o resultado final estava errado, guarde a continuação que funciona e escreva ao lado o que o adversário pode mudar. Você terá uma árvore de posições que pode voltar a usar, inclusive quando encontrar alguém que escolha a defesa menos precisa.
+
+## Quanto custa mudar de ideia numa preparação em dupla?
+
+Dois colegas preparam uma abertura para a competição por equipes. Um deles, depois de quatro sessões, avisa que prefere escolher outro lance na próxima rodada. O outro entende isso como rejeição de todo o mês de trabalho. Antes de discutir se alguém está tentando se justificar, esclareçam a decisão. O colega quer abandonar a abertura contra qualquer resposta? Quer trocar uma continuação no sexto lance? Ou prefere usar por uma tarde uma linha que o próximo adversário conhece menos? Essas três escolhas deixam quantidades muito diferentes de material aproveitável no caderno.
+
+Desenhem o primeiro ponto de divergência na árvore do repertório. Se vocês estudaram seis respostas e apenas uma delas pede outra continuação, as outras cinco permanecem disponíveis. Podem ter valor porque vocês continuam a encontrá-las na prática e aprenderam a jogar as posições resultantes. Isso é muito mais preciso do que dizer “já gastamos quatro sábados, então temos de insistir”. O tempo passado informa quanto custou o estudo. Os motivos para manter uma variante precisam levar em conta a posição que se obtém agora e as oportunidades em que ela pode voltar a aparecer.
+
+Para encerrar a discussão, cada parceiro anota uma observação capaz de mudar seu parecer. Um deles pode propor que a linha seja mantida se encontrar uma resposta satisfatória à defesa que apareceu no treinamento. O outro pode aceitar reabri-la se conseguir explicar o final resultante sem consultar nenhuma anotação. Coloquem a posição na mesa antes de comparar as respostas. Se ambos encontram recursos que ninguém havia previsto, mudar de opinião vira uma parte produtiva do trabalho em dupla. Se continuam discordando mesmo depois de admitir as mesmas variantes, talvez prefiram tipos distintos de posição, o que não exige inventar um conflito psicológico.
+
+Por último, preserve uma versão datada da análise. Na semana seguinte, olhe o diagrama sem reler a conclusão. Se você encontra o caminho do rei e mostra a casa que impede o contrajogo adversário, adquiriu um conhecimento reutilizável. Se consegue repetir apenas o resultado anunciado pelo parceiro, ainda há um problema interessante a investigar. As duas constatações são mais informativas do que decidir, em retrospecto, que seu primeiro julgamento deve ter sido totalmente racional ou deliberadamente defensivo.
+
+Ao voltar à posição uma semana depois, esconda os comentários anteriores. Verifique se a explicação ainda permite escolher um lance e antecipar a resposta adversária. A lembrança do resultado facilmente toma o lugar dessa verificação.
+
 ## Fontes
 
 - Festinger, L. e Carlsmith, J. M. (1959), “Cognitive Consequences of Forced Compliance”, *Journal of Abnormal and Social Psychology*, 58, 203–210. [Texto original](https://psychclassics.yorku.ca/Festinger/).

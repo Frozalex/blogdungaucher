@@ -110,6 +110,16 @@ Une anxiété intense ou persistante demande un accompagnement adapté à la per
 
 À l'analyse, garde une question simple : qu'est-ce qui a déclenché ma réaction, et qu'est-ce qui m'aurait permis de jouer avec davantage de clarté ? Tu n'as pas à choisir entre « tout est technique » et « tout est un réflexe » pour y répondre.
 
+## Construire trois scénarios avec une seule pendule
+
+Dans un premier exercice fictif, un entraîneur utilise un son avant de dévoiler la solution d'un diagramme. Le joueur peut répondre ou garder le silence : le signal et la révélation surviennent dans le même ordre. Au fil des séances, il commence à lever les yeux quand il entend le son. Pour examiner ce qu'il a appris, on peut lui demander ce qu'il attendait à cet instant, ou regarder ce qu'il fait si le son retentit exceptionnellement sans révélation. L'observation importante est le rapport entre le signal et l'événement attendu, indépendamment du coup proposé.
+
+Dans un deuxième exercice, le même son retentit uniquement quand le joueur donne une réponse correcte. Cette fois, le signal dépend de son action. S'il modifie ensuite sa façon de répondre, il faut se demander quel comportement a été suivi de quelle conséquence. Les deux exercices peuvent sembler identiques depuis la salle voisine, car on y entend exactement le même bruit. Il faut observer le déroulement de la séance pour savoir lequel a été organisé.
+
+Dans le troisième scénario, la pendule émet ce son pour la première fois pendant une partie et fait sursauter le joueur. Ce seul épisode ne renseigne guère sur une association apprise entre ce signal et la perte d'une partie. Une réaction immédiate à un bruit inhabituel peut exister avant toute histoire de défaites avec cette pendule. De même, un joueur peut avoir appris très explicitement ce que signifie l'affichage des dernières secondes et décider de jouer vite pour préserver du temps. Cette stratégie et l'attente d'un événement ne s'excluent pas, mais leur description demande des informations différentes.
+
+Si tu prends des notes sur tes habitudes, commence donc par l'ordre des faits. Un son a-t-il précédé le coup ? A-t-il suivi ta réponse ? Restait-il du temps et que prévoyais-tu concrètement ? Le relevé le plus utile peut tenir en deux phrases. Il évite de construire après coup une histoire d'apprentissage à partir d'un seul geste brusque, tout en laissant apparaître les associations que plusieurs séances te permettront réellement de comparer.
+
 ## Sources
 
 - Pavlov, I. P. (1927), *Conditioned Reflexes*, Oxford University Press, [conférence II, texte original traduit](https://psychclassics.yorku.ca/Pavlov/lecture2.htm).

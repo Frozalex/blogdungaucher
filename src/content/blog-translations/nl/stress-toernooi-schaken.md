@@ -141,6 +141,12 @@ De klok tikt. De stelling is moeilijk. Maar je brein kent de weg, als je het de 
 
 *"Onder druk stijg je niet naar het niveau van je verwachtingen. Je zakt terug naar het niveau van je training.", Citaat vaak toegeschreven aan speciale eenheden, perfect toepasbaar op het schaakbord.*
 
+## Een draaiboek voor het wachten op de indeling
+
+De tijd tussen aankomst en de eerste zet heeft geen vast ritme. Soms hangt de indeling er al. Soms staat iedereen rond de ingang en weet niemand wanneer de ronde begint. Spreek vooraf met jezelf af welke drie praktische vragen je bij aankomst wilt oplossen. Waar staat je bord, waar kun je je jas laten en wanneer moet je je telefoon volgens de toernooiregels opbergen? Als die vragen beantwoord zijn, hoeft je laatste kwartier niet ongemerkt te verdwijnen in het zoeken naar een oplader of een stoel.
+
+Spreek bij een teamwedstrijd ook af wie bij de wedstrijdleider navraag doet als er iets ontbreekt. Vijf spelers die los van elkaar naar de zaalindeling informeren, maken voor niemand de start rustiger. Na de partij kun je terugkijken welke onzekerheid uit de organisatie kwam en welke bij de eerste stelling hoorde. Een onduidelijk bordnummer los je de volgende ronde anders op dan een onbekende opening. Dat onderscheid levert een concretere voorbereiding op dan het voornemen om je bij de volgende wedstrijd minder druk te maken.
+
 ## Om verder te gaan
 
 - [Veerkracht bij schaken: leren terugveren na een nederlaag](/nl/blog/veerkracht-schaken/)

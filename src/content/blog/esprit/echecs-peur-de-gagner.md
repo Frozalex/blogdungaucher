@@ -99,6 +99,16 @@ Une formulation pratique peut être : « j'ai des ressources favorables, mais je
 
 Si une hésitation répétée concerne surtout les conséquences sociales d'une victoire, en parler peut aider à clarifier ce que tu souhaites. Tu n'as pas à rester bloqué au même classement pour préserver une image ou une relation. Mais ce travail de compréhension ne doit pas devenir une nouvelle injonction à gagner pour prouver que tu es désormais « guéri ».
 
+## Qui propose la nulle, et à quel moment ?
+
+En analyse avec un ami, donne-lui la position que tu croyais gagnée. Laisse de côté les coups qui ont effectivement suivi. Il joue le camp en difficulté et a une mission très précise : te proposer la nulle une seule fois, au moment qu'il choisit. Toi, tu peux accepter, continuer ou lui demander de garder son offre pour une autre séance de travail. Il s'agit d'une convention pour cet exercice à deux.
+
+Au moment de l'offre, dis d'abord ce qu'il te faudrait pour gagner. « Mon roi entre sur l'aile dame si son roi s'éloigne de la défense du pion » décrit un chemin vérifiable. « J'ai une pièce de plus » décrit le matériel et laisse entière la question du plan. Donne ensuite ce qui peut mal tourner. Si tu crains une série d'échecs de tour, montrez ensemble la première case où ton roi pourrait s'abriter. Le plateau contient maintenant un problème technique que vous pouvez jouer.
+
+À la deuxième tentative, échangez les couleurs. Cherche toi-même le meilleur moment pour proposer la nulle. Peut-être attendras-tu d'avoir créé une menace, ou au contraire de sentir que la position devient trop simple à convertir. Pendant la première tentative, tu avais pu lire dans l'offre un signe de confiance extraordinaire de ton partenaire. Changer de camp fait apparaître plusieurs explications plausibles au même geste.
+
+Pour conclure, remonte à l'instant où la position a été choisie. Si tu savais nommer une condition de gain et une ressource défensive avant l'offre, compare ta décision d'après avec les variantes effectivement examinées. Si le plan manquait déjà avant la proposition, entraîne d'abord ce plan. C'est une tâche précise pour la prochaine soirée, bien plus facile à travailler que l'injonction de ne plus jamais avoir peur au moment de gagner.
+
 ## Sources
 
 - Kahneman, D. et Tversky, A. (1979), « Prospect Theory: An Analysis of Decision under Risk », *Econometrica*, 47(2), 263–291. [Texte original](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf).

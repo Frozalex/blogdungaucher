@@ -99,6 +99,18 @@ Si la difficulté concerne un pion passé, rejoue quelques positions où il faut
 
 Tu n'as pas à supprimer tout récit émotionnel. « Cette défaite me reste en travers » peut être exact sans être une affirmation de probabilité. Le changement utile consiste à réserver les mots « toujours », « jamais » et « forcément » aux situations où tu disposes réellement d'une raison de les employer. Aux échecs, l'erreur reste possible ; sa possibilité n'est pas sa fatalité.
 
+## Deux pièges en série coûtent-ils deux fois plus cher ?
+
+Considère une position d'entraînement imaginaire. Pour convertir un avantage, les Blancs doivent d'abord éviter une fourchette puis repérer une menace de mat. Ton partenaire prépare vingt essais avec de petites variations de position. Quinze fois, tu passes le premier obstacle. Parmi ces quinze essais, tu en termines douze en évitant aussi le second. Si tu regardes seulement les échecs, tu peux dire que cinq parties ont basculé sur la fourchette et trois sur le mat. Mais le second piège n'a réellement été rencontré que dans quinze essais. Les cinq fois où tu as perdu la qualité dès le début ne renseignent pas sur ta capacité à prévenir le mat ensuite.
+
+Le calcul peut se lire de deux façons. Le parcours complet a réussi douze fois sur vingt, donc dans 60 % de ce petit exercice. Parmi les essais ayant atteint la seconde étape, la réussite y est de douze sur quinze, soit 80 %. Multiplier la proportion de passages du premier obstacle, quinze sur vingt, par la proportion conditionnelle du second donne bien douze sur vingt. L'égalité vient ici de la façon de compter. Tu n'as pas eu besoin de supposer que les deux erreurs étaient indépendantes, ni que les prochains adversaires te laisseraient exactement ces chances.
+
+Ce petit problème explique une impression fréquente de fin de partie. Tu te souviens surtout des trois mats, car la défaite y paraissait plus absurde après une première difficulté surmontée. Le carnet montre cependant que la première fourchette a interrompu davantage de tentatives. Ton entraîneur peut préférer travailler l'un ou l'autre obstacle selon le but choisi. Pour obtenir plus de positions d'entraînement du second type, commence une partie d'exercice juste après la fourchette. Pour savoir si tu convertis mieux l'ensemble du parcours, conserve aussi des essais depuis la position initiale.
+
+Si les Blancs modifient leur chemin et suppriment entièrement la menace de mat en échangeant les dames, il faut ouvrir une nouvelle ligne dans le tableau. Additionner ces conversions aux anciennes mélangerait deux problèmes différents. Le nouveau chemin peut être meilleur même si tu l'as joué une seule fois, ou moins bon malgré ta seule victoire. Examine ce que l'échange concède, puis rejoue la finale contre une défense qui connaît ton idée.
+
+C'est ainsi que le mot « toujours » peut disparaître de ton récit sans être remplacé par une promesse de réussite. Le danger est réel, il a un moment précis et il existe un moyen de le présenter plus souvent à l'entraînement. Le résultat de la prochaine partie ajoutera une observation ; il ne rendra pas les dix-neuf précédentes inutiles.
+
 ## Sources
 
 - Tversky, A. et Kahneman, D. (1973), « Availability: A Heuristic for Judging Frequency and Probability », *Cognitive Psychology*, 5, 207–232. [Texte original](https://noorsiddiqui.com/papers/TverskyKahneman.pdf), DOI : 10.1016/0010-0285(73)90033-9.

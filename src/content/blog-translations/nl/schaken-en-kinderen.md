@@ -170,6 +170,8 @@ Voor een ouder die zich afvraagt "waarom schaken in plaats van een ander spel of
 - Tactische puzzels toenemend in moeilijkheid
 - Als het kind gemotiveerd is: overweeg een lokale club of een aangepast online platform
 
+Een geschikte eerste les past op een bijna leeg bord. Leg een witte toren op a1 en een zwart doelstuk op d4. Laat het kind een route in twee zetten bedenken en daarna een tweede route zoeken. Via a4 en via d1 lukt het allebei. Vraag welk veld op de route een pion van de eigen kleur zou kunnen blokkeren. Zo hoor je hoe het kind over de regel redeneert.
+
 ## Bronnen
 
 - Diamond, A., & Lee, K. (2011). Interventions shown to aid executive function development in children 4 to 12 years old. *Science*, 333(6045), 959–964.

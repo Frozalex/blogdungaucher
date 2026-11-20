@@ -84,6 +84,24 @@ Esta é uma rotina prática para experimentar após uma derrota difícil. A orde
 
 O próximo treinamento pode partir de uma única posição. Qual era seu plano? Qual resposta adversária você negligenciou? Qual exercício ajudaria a reconhecer melhor essa situação? Essas perguntas oferecem uma ação possível, sem exigir que a decepção já tenha desaparecido.
 
+## O final que se perdeu duas vezes
+
+Imagine uma partida de clube em que as brancas chegaram a um final de torre com um peão a mais. Primeiro deixaram escapar uma oportunidade de simplificar. Vários lances depois, com o material equilibrado, permitiram um garfo que custou a torre. Ao recolher as peças, o jogador diz que “estragou tudo quando recusou a troca”. O relato junta duas perguntas. O que aconteceu com a vantagem inicial? E como uma posição posterior, na qual ainda valia a pena lutar, terminou em derrota?
+
+Separar a partida em dois diagramas permite trabalhar sem reduzir a história ao resultado. No primeiro, o jogador pode procurar uma continuação que conserve a vantagem e explicar por que a troca parecia desconfortável durante a partida. No segundo, pode tentar encontrar um lance que salve a torre. Mesmo que a primeira análise continue inconclusiva, o segundo problema admite uma resposta útil. A próxima vez que estiver frustrado por deixar escapar uma vitória, esse segundo diagrama pode lembrá-lo de uma tarefa bem concreta: verificar o que a posição atual ainda permite.
+
+Agora dê ao adversário o direito de contar a mesma passagem. Ele talvez diga que a troca que as brancas tanto lamentam teria sido justamente o final que preparou em casa. Pode achar que a posição intermediária estava mais difícil de defender do que parece na tela. Nenhum dos dois relatos resolve a avaliação, mas a conversa ajuda a formular linhas novas e atribui ao adversário sua parte na partida. Às vezes o lance mais instrutivo é uma defesa encontrada pelo outro jogador, que ficava invisível enquanto toda a atenção se concentrava no próprio fracasso.
+
+### O que levar para a rodada seguinte
+
+Se a próxima partida começa em meia hora, a análise completa provavelmente terá de esperar. Um procedimento simples é salvar a súmula, anotar o lance do segundo diagrama e conferir horário, mesa e cor da rodada seguinte. A nota reserva um lugar para a dúvida. Isso dispensa tentar memorizar uma variante complexa enquanto busca o novo emparceiramento. Se a competição terminou naquele dia, a mesma nota pode voltar ao caderno numa sessão com o treinador.
+
+Avalie a retomada por algo que você teve oportunidade de fazer. “Na posição seguinte que me irritou, voltei a procurar a ameaça do último lance” fornece uma descrição verificável, ainda que a partida seguinte também termine em derrota. “Preciso vencer imediatamente para provar que superei aquilo” depende do adversário e de situações que você não controla.
+
+Há ocasiões em que nenhuma variante precisa ser resolvida naquele momento. Combinar que o colega guardará o diagrama para o próximo treino pode ser uma resposta suficientemente boa a uma tarde difícil. A retomada pode ser observada quando a pergunta volta a fazer sentido, e a pessoa consegue examiná-la com atenção renovada. O ritmo dessa volta pode variar de uma rodada para outra. O diagrama guardado serve de ponto de partida quando você voltar.
+
+Um exercício para a próxima rodada é escolher uma posição em que ainda exista uma defesa depois de perder material. Entregue a posição ao colega com tempo para procurar a melhor continuação do lado superior. Você precisa descobrir até que ponto a resistência depende da cooperação dele. Quando a defesa funciona contra a tentativa mais precisa que os dois encontraram, a análise termina com algo que pode ser treinado e repetido.
+
 ## Fontes
 
 - Seligman, M. E. P. (1990). *Learned Optimism*. Knopf. [Bibliografia do Positive Psychology Center do autor](https://ppc.sas.upenn.edu/research/attributional-style-adults): modelo do estilo explicativo.

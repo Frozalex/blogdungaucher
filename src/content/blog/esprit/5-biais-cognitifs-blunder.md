@@ -97,6 +97,16 @@ Le garde-fou doit rester proportionné à la pendule. Avec quelques secondes, de
 
 Enfin, garde les contre-exemples : les moments où ta première intuition était bonne, où tu as changé d'avis à bon escient, où tu as trouvé une défense difficile. L'objectif n'est pas de démontrer que ton cerveau te trompe toujours, mais de construire une méthode qui améliore des décisions précises.
 
+## Débriefing à l'aveugle : deux annotations pour la même gaffe
+
+Dans un atelier, l'entraîneur distribue deux feuilles avec exactement la même partie. Sur la première, il indique que le joueur blanc venait de gagner cinq parties. Sur la seconde, il écrit qu'il revenait d'une série difficile. Il précise d'emblée que ces historiques sont deux scénarios imaginaires, et demande de proposer deux explications possibles au dernier coup. Un groupe parle d'excès de confiance, l'autre d'hésitation. Au tableau pourtant, les Blancs viennent, dans les deux copies, de laisser leur tour sans protection.
+
+Réunis les groupes et pose une question technique à laquelle les deux feuilles permettent réellement de répondre : quelle pièce défendait la tour avant le coup ? Si personne ne peut la nommer, l'étiquette psychologique est arrivée avant l'examen de la position. Replace cette pièce et joue le coup au ralenti. Vérifie si elle pouvait se déplacer ailleurs en continuant de défendre, si la tour pouvait quitter sa case, ou si une menace plus urgente rendait la perte acceptable. Les groupes disposeront maintenant de plusieurs hypothèses de travail pour le même problème.
+
+Une deuxième question appartient à une autre source. Qu'avait remarqué le joueur lorsqu'il a envisagé son coup ? Si le joueur réel est absent, aucune des deux feuilles ne peut y répondre à sa place. Dans une étude personnelle, tu peux enregistrer, immédiatement après la partie, une phrase sur le dernier calcul dont tu te souviens. Plus tard, compare cette phrase au replay. Si ton souvenir concerne un mat sur le roi adverse alors que ta pièce protectrice quitte la colonne de ta tour, tu connais une piste plausible : ton attention se portait sur une autre zone. Cela n'autorise toujours pas à départager définitivement cinq biais concurrents.
+
+Pour terminer la séance, fais choisir à chaque groupe un exercice de réparation. Le premier pourrait proposer de marquer, sur trois diagrammes différents, la pièce dont le coup candidat abandonne la protection. Le second pourrait demander au joueur de vérifier la meilleure réponse adverse à trois menaces de mat plausibles. Échangez les exercices. Lequel met le joueur devant une décision qui ressemble à celle qu'il a effectivement ratée ? Lequel lui donne une réponse observable ? On peut progresser en répondant à ces deux questions, même lorsque la cause psychologique exacte de la gaffe demeure inconnue.
+
 ## Sources
 
 - Bilalić, M., McLeod, P. et Gobet, F. (2008), « Why good thoughts block better ones: The mechanism of the pernicious Einstellung (set) effect », *Cognition*, 108, 652–661. [Texte](https://neuroscienceofexpertise.com/Publications/papers/Bilalic_2008_GoodThoughts_Einstellung.pdf).

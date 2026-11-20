@@ -75,8 +75,6 @@ La synthèse de Sala et Gobet (2017) souligne les limites des preuves et l'impor
 
 Dans leurs deux expériences sur la résolution de problèmes mathématiques, Sala et Gobet (2017) ne trouvent pas de bénéfice permettant de confirmer le transfert attendu avec ce type de contrôle. Il serait contradictoire de présenter ensuite la métacognition comme le « seul transfert scientifiquement prouvé » sans preuve spécifique suffisante.
 
-L'ancienne présentation d'une étude de Trèves ne fournissait pas de référence vérifiable permettant d'appuyer la conclusion avancée. Elle ne sert donc pas ici d'argument pour remplacer une heure de mathématiques par une heure d'échecs.
-
 ## Utiliser le jeu comme support de raisonnement
 
 Tu peux néanmoins faire un exercice précis avec une position. Écris ton hypothèse avant de regarder la solution : « Cette tour peut entrer parce que la dernière rangée est faible. » Cherche ensuite la meilleure défense adverse. Si elle réfute ton idée, explique où ton raisonnement a cessé de tenir.
@@ -88,6 +86,26 @@ Cette démarche peut aussi être explicitement travaillée en mathématiques. Pa
 Une partie lente te laisse davantage de temps pour noter tes candidats et expliquer ton choix. Une partie rapide peut servir à revoir des motifs et à constater ce qui te manque sous pression. Aucun seuil universel de secondes par coup ne permet de déclarer que ton cortex commence enfin à raisonner.
 
 Si ton objectif est scolaire, garde des exercices scolaires et mesure les compétences visées. Si ton objectif est échiquéen, examine tes erreurs de calcul et de compréhension. Dans les deux cas, une progression observable vaut mieux qu'une promesse générale d'intelligence.
+
+## Un problème de dénombrement à fabriquer au club
+
+Demande à un camarade combien de carrés contient un échiquier. Sa première réponse sera souvent le produit de huit par huit. Elle répond bien à la question du nombre de cases. Mais si tu acceptes aussi les carrés dont les côtés suivent les lignes du plateau et qui contiennent plusieurs cases, il faut préciser le contrat. Autrement, deux personnes peuvent défendre des réponses différentes sans s'être trompées dans leur calcul. Écris la règle : chaque carré aligné sur le quadrillage compte une fois, quelle que soit la couleur de ses cases.
+
+Commence sur un plateau plus petit que tu dessines sur une feuille. Dans une grille de trois cases de côté, il y a neuf petits carrés, quatre carrés de deux cases de côté et un seul grand carré. Tu peux nommer un carré par sa case du coin inférieur gauche et la longueur de son côté. Pour un côté donné, tu ne peux jamais placer le coin trop loin vers la droite ni trop haut. Chaque choix autorisé de colonne se combine pourtant avec chaque choix autorisé de rangée. Voilà pourquoi une multiplication apparaît dans le calcul.
+
+Sur l'échiquier complet, un carré de trois cases de côté peut commencer sur une des six premières colonnes et une des six premières rangées. Tu obtiens trente-six positions. Recommence pour chaque longueur puis additionne : les huit contributions valent soixante-quatre, quarante-neuf, trente-six, vingt-cinq, seize, neuf, quatre et une. Leur somme vaut deux cent quatre. Tu peux contrôler ton calcul en inversant le sens du raisonnement : le grand carré a une position possible, son voisin immédiatement plus petit en a quatre, et ainsi de suite. Cette vérification sert aussi à repérer une confusion classique entre le nombre de cases et le nombre de lignes qui les séparent.
+
+Comment transformer cela en vrai problème de recherche ? Change une seule contrainte : le carré doit contenir la case a1. Il en reste exactement un pour chaque longueur. Tous ont leur coin inférieur gauche en a1. Déplace maintenant la contrainte vers d4. Pour les carrés de deux cases de côté, d4 peut en être chacun des quatre coins, car aucune bordure ne gêne. Pour ceux de huit cases de côté, elle ne peut appartenir qu'au grand échiquier entier. Cette fois il serait faux de multiplier le nombre de longueurs par un même coefficient. La proximité du bord compte, même si la couleur de la case paraît plus frappante au premier regard.
+
+## Passer du calcul à la preuve avec deux tours
+
+Sur un plateau vide, combien de façons de placer deux tours blanches pour qu'elles ne partagent ni rangée ni colonne ? Suppose d'abord que l'une porte un ruban rouge. La tour marquée peut aller sur n'importe laquelle des soixante-quatre cases. Une fois posée, elle condamne pour la seconde sa propre rangée et sa propre colonne. Il reste sept rangées possibles et sept colonnes possibles. Le produit vaut quarante-neuf. Tu obtiens ainsi trois mille cent trente-six placements de tours distinguables.
+
+Retire le ruban. Chaque diagramme final a été compté exactement deux fois, parce que celle qui occupe la première case choisie pouvait être la tour rouge ou l'autre. Il reste donc mille cinq cent soixante-huit diagrammes. Compare ce résultat avec la question des huit dames. Ici la division par deux est justifiée pour tous les diagrammes par le même échange des étiquettes. Pour des symétries géométriques d'un placement de dames, il faut au contraire regarder si une transformation laisse certains placements inchangés. La présence d'un groupe de transformations ne suffit pas, à elle seule, à choisir un diviseur.
+
+Tu peux vérifier la réponse sans utiliser de tour marquée. Choisis deux rangées distinctes parmi huit : il y a vingt-huit paires possibles. Choisis deux colonnes de la même façon. Aux quatre intersections, deux placements seulement occupent une fois chaque rangée et une fois chaque colonne. Multiplie vingt-huit par vingt-huit puis par deux. Tu retrouves le même total par un chemin qui décrit directement les diagrammes. Si les deux méthodes avaient donné des résultats différents, chercher quel objet avait été compté deux fois aurait été bien plus instructif que recommencer la multiplication.
+
+Pour prolonger l'activité, dessine trois cases condamnées sur le plateau et conserve les deux tours. L'argument qui donnait quarante-neuf possibilités après le premier choix ne s'applique plus uniformément. Une case déjà interdite peut se trouver sur la rangée que la première tour vient de rendre inutilisable. Essaie un petit damier où tu peux lister les placements à la main, puis cherche quelles premières cases restent équivalentes. Tu as ainsi fabriqué une tâche mathématique à partir des déplacements d'une pièce, avec des hypothèses variées et une correction vérifiable. Gagner davantage de parties n'est pas nécessaire pour constater que tu sais désormais mieux compter ces configurations.
 
 ## Sources
 

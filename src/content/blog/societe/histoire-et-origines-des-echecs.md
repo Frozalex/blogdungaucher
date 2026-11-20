@@ -137,6 +137,14 @@ La solution arrive en **1849** avec le [set **Staunton**](https://amzn.to/4fJByQ
 
 Les institutions suivent. Le premier grand **tournoi international** se tient à Londres en **1851**, remporté par Adolf Anderssen. Le premier **championnat du monde** officiel couronne Wilhelm Steinitz en **1886**. Enfin, la **FIDE**, la fédération internationale, naît à Paris en **1924**. La pendule, la notation, le classement Elo viendront compléter l'édifice. Le jeu millénaire est devenu une institution mondiale réglée.
 
+## Identifier ce qu’une pièce ancienne permet de dater
+
+Prends trois cartes et inscris une source différente sur chacune : un objet sculpté sorti d’une collection, un texte qui décrit un déplacement et un diagramme accompagnant un problème. Ces traces peuvent raconter trois histoires distinctes. Une datation de la matière nous renseigne sur l’objet. Pour savoir quand et où l’on a réellement joué avec lui, il faut encore connaître sa provenance et son contexte d’utilisation. Une règle copiée dans un manuscrit prouve que quelqu’un connaissait cette formulation à la date de la copie. Le jeu qu’elle décrit peut lui être antérieur. Un diagramme témoigne d’une position pensée comme problème ; il ne documente pas forcément une partie réellement disputée.
+
+Cet exercice éclaire la transformation de la dame. Suppose qu’un inventaire emploie un nom que tu traduis par « reine ». Ce seul mot ne permet pas d’affirmer que la pièce franchissait déjà toute une diagonale. Pour soutenir une affirmation sur son mouvement, cherche une règle explicite ou une solution de problème qui exige ce déplacement. Pour défendre une hypothèse sur sa signification sociale, le vocabulaire et les représentations deviennent au contraire des indices précieux. Dans les deux cas, le document intéressant dépend de la question posée.
+
+Lorsque tu lis une légende annonçant « le premier échiquier », demande enfin : premier objet conservé dans quelle région, première description connue dans quelle langue, ou première occurrence de la règle moderne ? Ces questions sont assez différentes pour qu’une réponse soigneuse fournisse plusieurs dates.
+
 ## Un jeu palimpseste
 
 Si l'on prend de la hauteur, une chose frappe. À chaque étape de son voyage, les échecs ont été réécrits par-dessus leur version précédente, comme un parchemin gratté et réutilisé.

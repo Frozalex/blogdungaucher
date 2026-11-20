@@ -163,6 +163,14 @@ O remédio não é individual, é coletivo. Uma prática instituída não compro
 
 *Este artigo é um desdobramento do nosso artigo sobre [a psicologia da persuasão no xadrez](/pt-br/blog/psicologia-da-persuasao-no-xadrez/). Outros dois tratam da prova social e da escassez.*
 
+## A diferença entre devolver uma análise e devolver um resultado
+
+Imagine que um colega tenha passado uma hora ajudando você a preparar uma abertura. No torneio seguinte, vocês se enfrentam. Ele oferece empate numa posição que você prefere continuar jogando. A ajuda anterior pode ser retribuída fora da partida: por exemplo, reservando uma tarde para analisar um final que interessa a ele. O lance no tabuleiro tem outro contexto, inclusive para os demais participantes que disputam a classificação.
+
+Uma resposta simples já separa esses dois compromissos: “Obrigado pela preparação. Hoje quero continuar; depois analisamos juntos”. Nem sempre existe má intenção por trás de uma oferta inoportuna. Explicitar a distinção evita tanto a obrigação imaginária de aceitar quanto a acusação apressada de que a ajuda foi oferecida em troca de meio ponto. Na análise do clube, essa conversa é mais instrutiva do que tentar adivinhar o caráter dos dois jogadores.
+
+Se faltar tempo para devolver a análise prometida, diga qual posição você já examinou e qual ainda ficou pendente. Uma variante curta que o colega consiga testar no tabuleiro tem mais utilidade imediata que um elogio genérico escrito para encerrar a obrigação.
+
 ## Fontes
 
 - Regan, D. T. (1971). Effects of a favor and liking on compliance. *Journal of Experimental Social Psychology*, 7(6), 627-639.

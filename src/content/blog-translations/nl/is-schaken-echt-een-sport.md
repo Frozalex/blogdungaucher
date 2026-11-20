@@ -114,6 +114,18 @@ Maar het is ook een spel, een kunst, een intellectuele discipline. Deze categori
 
 Schaken behoort tot deze familie van "hybride" sporten. Dit label afwijzen betekent een nauwe en grotendeels achterhaalde visie op wat sport in de eenentwintigste eeuw is, verdedigen.
 
+## Drie loketten, drie verschillende vragen
+
+Stel dat je een jeugdtoernooi voor honderd deelnemers organiseert. Bij het eerste loket gaat het over de speelzaal. Je wilt genoeg tafels, voldoende licht, bereikbaarheid en ruimte voor mensen die lang op één plek zitten. Bij het tweede loket vraagt een verslaggever waarom het evenement op zijn sportpagina thuishoort. Bij het derde loket wil een sponsor weten hoeveel mensen aan een schaakwedstrijd kunnen meedoen en of het toernooi publiek trekt. Alle drie gebruiken ze misschien het woord sport, maar ze hebben het over heel verschillende beslissingen. Voor de zaalbeheerder blijven de eisen aan de stoelen precies hetzelfde wanneer het evenement op de culturele agenda komt te staan.
+
+Schrijf voor de verslaggever een korte uitslag zoals na iedere andere wedstrijd. Twee teams traden aan, er was een tijdslimiet, de scheidsrechter paste regels toe en de laatste partij besliste de ontmoeting. Dat bericht blijft informatief voor een lezer die bij sport vooral aan een hoge hartslag denkt. Voeg er vervolgens één zet uit de laatste partij aan toe die verklaart waarom iemand de beker mee naar huis nam. Daarmee geef je het publiek een werkelijk sportief verhaal, zelfs als er over de definitie nog lang gediscussieerd zal worden.
+
+Voor de deelnemers zelf kan de vraag concreter zijn. Een scholier die na voetbaltraining nog aan de laatste ronde van de clubcompetitie wil deelnemen, moet weten hoe laat hij moet beginnen en hoe lang hij geconcentreerd aan tafel zal zitten. Dat vergt een andere voorbereiding dan nog een voetbalwedstrijd. De overeenkomst is dat hij rekening houdt met herstel, materiaal en een tegenstander. Het verschil in belasting verdwijnt niet doordat beide verenigingen een wedstrijdformulier gebruiken. Je kunt die overeenkomst én dat verschil benoemen zonder een willekeurig minimumaantal zweetdruppels aan de definitie toe te voegen.
+
+Denk ten slotte aan de bezoeker die in de zaal niets aan de spelers kan vragen omdat iedereen midden in de partij zit. Op een groot scherm kan de organisatie twee mogelijke vervolgen tonen, zodat het beslissende moment ook zichtbaar wordt voor wie de wedstrijd niet zelf speelt. De bezoeker ziet dan hoe een regelgebonden keuze onder tijdsdruk de uitslag verandert. Dat biedt een ander soort overtuigingskracht dan een lijst instellingen citeren die schaken onder een bepaald administratief label plaatsen.
+
+In een discussie over erkenning helpt het daarom om je eerste zin heel concreet te maken. Misschien wil je ruimte voor een clubavond, opname in een competitie of simpelweg een begrijpelijk woord op een affiche. Voor elk van die doelen kunnen andere argumenten doorslaggevend zijn. Zodra de gesprekspartners hun werkelijke vraag uitspreken, hoeven ze vaak veel minder te ruziën over wat ze toevallig als eerste voor zich zagen bij het woord sport. Ze kunnen de beslissing bespreken waarvoor ze oorspronkelijk samen aan tafel gingen.
+
 ## Samenvatting
 
 Schaken wordt sinds 1999 door het IOC erkend als sport, maar de status varieert per land. Fysiologisch gezien is de inspanning reëel en meetbaar: hartslag, energieverbruik, chronische vermoeidheid zijn vergelijkbaar met die van traditionele atleten. Sociologisch gezien is het debat eerder cultureel dan technisch: de definitie van sport evolueert, en cerebrale sporten vinden er geleidelijk hun plaats.

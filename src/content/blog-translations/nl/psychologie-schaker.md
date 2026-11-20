@@ -120,15 +120,3 @@ Het bord blijft laten zien wat je soms weigert te zien: je reactie op druk, op a
 **Na het lezen:** noteer bij je volgende nederlaag in één zin de **emotie** op het moment van de eerste grote zwakke zet, en dan de **technische fout**: de koele analyse begint daar, niet bij de rating.
 
 ---
-
-## Veelgestelde vragen over psychologie bij schaken
-
-### Hoe ga je om met tilt bij schaken?
-
-De meest effectieve regel volgens trainers, waaronder Mark Dvoretsky: stop met spelen zodra de tilt begint, niet erna. De koele analyse na de partij, op zoek naar de emotionele toestand op het moment van de fout, niet alleen de technische fout, is het beste langetermijnwapen. Identificeren welk type situatie jouw tilt veroorzaakt (mislukt offer, verrassing in de opening, tijdnood) geeft je een concreet trainingsplan.
-
-### Waarom speel je minder goed onder tijdsdruk?
-
-Zeitnot activeert een door psychologen gedocumenteerd mechanisme: verlamming door analyse. Het brein zoekt naar het perfecte antwoord in plaats van een goed en snel antwoord, verbruikt tijd, en de paniek slaat spiraalsgewijs toe (Kahneman, Systeem 2 in overbelasting). De oplossing is niet sneller rekenen: het is eerder vertrouwen op je opgebouwde positionele oordeel (Systeem 1).
-
----

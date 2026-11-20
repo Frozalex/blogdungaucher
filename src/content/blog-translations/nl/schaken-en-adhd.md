@@ -158,22 +158,4 @@ Als je ouder, leerkracht of speler met ADHD bent, veranderen enkele aanpassingen
 
 ---
 
-## Veelgestelde vragen
-
-**Op welke leeftijd kan een kind met ADHD met schaken beginnen?**
-De meeste clubs verwelkomen kinderen vanaf 6-7 jaar. Voor ADHD-profielen is een begin met vereenvoudigde stukkenspelletjes op 5-6 jaar vaak beter geschikt dan meteen het volledige spel. Het belangrijkste is dat elke sessie eindigt in een succeservaring, niet in frustratie.
-
-**Is online schaken geschikt voor ADHD?**
-Fysiek spel, met een aanwezige tegenstander en tastbare stukken, activeert meer zintuigen en verankert de aandacht vaak beter dan een scherm. Het scherm voegt de afleiding van de interface, meldingen en real-time statistieken toe, allemaal elementen die de verwachte voordelen kunnen tegenwerken. Als het kind begint, heeft het fysieke bord de voorkeur.
-
-**Kunnen volwassenen met ADHD er ook baat bij hebben?**
-Ja. ADHD verdwijnt niet op volwassen leeftijd: studies tonen aan dat 60 tot 80% van de gediagnosticeerde kinderen op volwassen leeftijd nog steeds significante symptomen vertoont. De hier beschreven neurobiologische mechanismen gelden voor elke leeftijd. Volwassenen met ADHD die schaken rapporteren vaak dezelfde verankeringseffecten van de aandacht, met daarbovenop de dimensie van intellectuele uitdaging en socialisatie in een gestructureerd kader.
-
-**Bevelen artsen schaken aan voor ADHD?**
-Niet systematisch, bij gebrek aan voldoende robuust bewijs om schaken op te nemen in officiële klinische aanbevelingen. Maar veel gespecialiseerde psychiaters en psychologen noemen het als relevante aanvulling, met name voor kinderen bij wie medicatie alleen niet volstaat of door de ouders wordt geweigerd.
-
----
-
 **Na het lezen:** **korte** sessies (20 minuten), **hetzelfde** wekelijkse moment, **fysiek** bord bij voorkeur; vermijd grote lawaaierige zalen in het begin. Aanvulling op medische of psychologische begeleiding, geen vervanging.
-
----

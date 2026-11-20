@@ -116,6 +116,11 @@ Présente une petite recherche à la main, explique les deux sorties du réseau 
 
 Pour le détail de minimax et alpha-bêta, utilise le [guide NSI](/fr/blog/guide-grand-oral-echecs-nsi/).
 
+## Tester une affirmation sur le mot « apprendre »
+
+Propose au jury deux expériences fictives. Dans la première, les paramètres entraînés sont figés et le programme dispose de deux fois plus de simulations pour choisir un coup. Dans la seconde, le nombre de simulations est fixé et on remplace les paramètres par ceux obtenus après une nouvelle phase d’entraînement. Un meilleur résultat dans la première expérience renseignerait sur le bénéfice de la recherche supplémentaire. Dans la seconde, il pourrait renseigner sur le changement des paramètres. Si tu modifies les deux en même temps, il devient difficile d’attribuer le gain à l’un des mécanismes.
+
+Précise comment tu organiserais une comparaison : reprendre les mêmes positions de départ, alterner les couleurs et conserver un critère annoncé avant d’observer les résultats. Si la position testée apparaît au cours de l’entraînement, signale cette particularité. Une bonne décision sur une position déjà rencontrée ne suffit pas à établir une amélioration sur une famille de positions nouvelles.
 
 ## Sources
 

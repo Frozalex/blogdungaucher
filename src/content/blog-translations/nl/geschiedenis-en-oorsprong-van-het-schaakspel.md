@@ -117,6 +117,14 @@ India schreef er een **leger** in. Perzië, een **hof** en een vocabulaire. De i
 
 Daarom is de geschiedenis van het schaken geen eenvoudige chronologie van regels. Het is het verhaal van een cultureel object dat soepel genoeg is om elke beschaving te absorberen die het tegenkwam, en toch herkenbaar te blijven. Wanneer je vandaag een pion opschuift, speel je zonder het te weten vijftienhonderd jaar aan herschrijvingen na. De Indiase oorlogsolifant is er nog steeds, geworden tot loper; de Perzische raadgever is koningin geworden; en de koning heeft, sinds de eerste dag, maar één obsessie: niet in de val lopen.
 
+## Wat één schaakstuk in een vitrine wel en niet vertelt
+
+Een gebeeldhouwd paard in een museum spreekt meteen tot de verbeelding. Herken je de kop en de manen, dan lijkt de sprong naar ons huidige paard klein. Toch kan het object op zichzelf je niet vertellen hoe ver het mocht springen, of een speler twee zetten achter elkaar mocht doen en wat als een gewonnen partij telde. Voor zulke vragen zoek je een tekst met spelregels of een opgave waarvan de oplossing alleen onder bepaalde regels werkt. Andersom vertelt een geschreven opgave weinig over het materiaal waarvan gewone gezinnen hun stukken maakten.
+
+Denk aan een tentoonstelling waarbij drie kaartjes ontbreken: de plek waar het voorwerp werd gevonden, de plek waar het waarschijnlijk gemaakt werd en de naam waaronder het nu in de collectie staat. Die drie antwoorden kunnen verschillen. Een koopman kan een stuk meenemen, een schrijver kan de naam veranderen en een latere conservator kan het onder een moderne term rubriceren. Een verspreidingskaart die alleen de vindplaats gebruikt en daar de oorsprong van het spel lokaliseert, slaat dus een paar stappen over.
+
+Je kunt dat thuis uitproberen met een diagram uit een moderne puzzel. Laat een speler die alleen de afbeelding ziet beschrijven wat de dame mag doen. Laat een tweede speler haar vermoeden toetsen door de gepubliceerde oplossing zet voor zet na te spelen. De tweede heeft meer bewijs voor de toegepaste regel, maar nog steeds geen betrouwbare datering van het diagram. Datzelfde verschil tussen herkennen, de functie reconstrueren en historisch dateren maakt de reis van het schaakspel zo interessant om te volgen.
+
 ## Bronnen
 
 - Murray, H. J. R. (1913). *A History of Chess*. Oxford University Press.

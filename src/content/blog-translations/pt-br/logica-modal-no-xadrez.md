@@ -97,6 +97,18 @@ A profundidade útil depende da posição. Não existe aqui uma quantidade unive
 
 ---
 
+## Um mate possível chega perto de ser obrigatório?
+
+Monte a posição inicial e experimente 1.f3 e5 2.g4. Agora é a vez das pretas. A diagonal de d8 a h4 ficou livre para a dama, que pode dar mate em h4. A linha mostra que existe uma resposta vencedora imediata. Também existe o lance legal 2...a6. A presença desse simples lance de peão basta para mostrar que as pretas não são obrigadas a dar mate naquele instante. Nenhum conhecimento do resultado perfeito da posição é necessário para estabelecer a diferença.
+
+Volte um lance. Depois de 1.f3 e5, as brancas ainda não jogaram g4. A afirmação “as pretas podem dar mate na próxima jogada” passa a depender da escolha das brancas. Se seguirem com 2.g4, a possibilidade existe. Se jogarem 2.g3, o próprio peão em g3 pode capturar uma dama que se aventure em h4. A continuação que produzia mate deixou de demonstrar a mesma conclusão. Averiguar uma ameaça exige fixar de quem é a vez e quais respostas a frase permite.
+
+Agora transforme a variante num pequeno problema para dois jogadores. Um escolhe a casa do peão branco no segundo lance. O outro explica, antes de mover a dama, qual possibilidade a casa escolhida abriu ou fechou. Quem está com as brancas pode perguntar se ao menos uma defesa evita aquela sequência. Quem está com as pretas e quer demonstrar uma vitória precisa examinar as defesas que o adversário ainda pode escolher. A ordem das escolhas muda aquilo que conta como demonstração.
+
+Um detalhe de vocabulário ajuda na análise de partidas. Na linguagem cotidiana do clube, “era obrigado a trocar as damas” pode significar “as outras continuações perdiam material”. Nos termos das regras, havia outras jogadas legais. Na anotação, escreva qual é a consequência que torna a troca necessária para o seu objetivo. Se o objetivo era conservar o empate, mostre uma continuação que explique por que ele se perde com a alternativa. Assim outra pessoa consegue discordar da avaliação e propor uma linha, sem precisar discutir o significado da palavra “obrigado”. Na próxima análise, sublinhe o lance que muda o conjunto das respostas disponíveis.
+
+Você pode usar duas cores no caderno para tornar a distinção visível. Marque em azul um caminho que leva ao mate e em verde todas as defesas que já examinou. A existência de uma sequência azul responde à pergunta sobre possibilidade. Para sustentar que o ataque é forçado, resta justificar o que aconteceria nos desvios ainda sem marca. Se uma única defesa desfizer a ameaça, preserve o caminho azul na folha. Ele continua sendo um exemplo válido de mate possível.
+
 ## Fontes
 
 - Rendsvig, R., Symons, J., & Wang, Y. (edição de 2025). *Epistemic Logic*. Stanford Encyclopedia of Philosophy. [Texto](https://plato.stanford.edu/entries/logic-epistemic/).

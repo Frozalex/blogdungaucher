@@ -108,6 +108,10 @@ Si un cours affirme entraîner tes neurones miroirs pour mieux anticiper, demand
 
 Un exercice peut rester intéressant même si son habillage neuroscientifique n'est pas établi. Tu peux le juger sur sa clarté, ses positions, ses corrections et sa pertinence pour tes difficultés. Son utilité pédagogique ne lui donne pas automatiquement une explication biologique démontrée.
 
+### Le coup annoncé derrière un écran
+
+Imagine une partie commentée à la radio. Tu déplaces les pièces au fur et à mesure qu'une voix annonce les coups ; tu ne vois jamais le bras de l'adversaire. Tu peux quand même prévoir qu'il cherche à doubler ses tours sur une colonne ouverte. Compare ensuite ce que tu apprendrais avec une caméra qui filmerait seulement sa main, sans montrer la position des autres pièces. Un geste similaire pourrait servir plusieurs plans. Cette expérience de pensée permet de séparer les informations nécessaires à deux prédictions : où la main va se poser, et quelle faiblesse le déplacement prépare à attaquer. Elle ne permet pas de déterminer quels neurones ont participé à l'une ou l'autre prédiction.
+
 ## Sources
 
 - Di Pellegrino, G., Fadiga, L., Fogassi, L., Gallese, V., & Rizzolatti, G. (1992). *Understanding motor events: a neurophysiological study*. Experimental Brain Research, 91, 176–180. [Résumé et DOI](https://pubmed.ncbi.nlm.nih.gov/1301372/).

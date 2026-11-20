@@ -104,6 +104,12 @@ Si le jury demande « un objet d'échecs est-il forcément patrimonial ? », ré
 
 Ta conclusion peut défendre une idée délimitée : le patrimoine échiquéen transmet des objets et des pratiques, mais aussi une manière de raconter le jeu. L'enquête historique aide le public à reconnaître cette construction sans réduire toute mémoire à une manipulation.
 
+## Simuler le travail d’un commissaire d’exposition
+
+Ton musée imaginaire a la place pour une seule vitrine. Il possède la pendule d’un tournoi local, une feuille de partie annotée et l’affiche qui annonçait la rencontre. Tu connais le nom des joueurs, mais tu ignores qui a tracé les flèches dans la marge. Choisis l’objet qui répond le mieux à ta question. Pour parler des usages du temps, la pendule attire l’attention sur une règle de la compétition. Pour expliquer comment on apprenait après la ronde, la feuille offre une piste séduisante, à condition de ne pas attribuer les annotations à un joueur sans élément supplémentaire. L’affiche documente la manière dont les organisateurs ont voulu attirer un public, même si elle ne permet pas de le compter.
+
+Rédige maintenant un cartel de trois phrases. La première décrit un détail visible que quelqu’un pourrait vérifier devant la vitrine. La deuxième situe l’objet à partir de sa provenance. La dernière formule une question que cet objet laisse ouverte. Fais lire ton texte à quelqu’un qui ignore les règles des échecs. Demande-lui quelle phrase relève d’une observation et laquelle dépend d’une information extérieure. Si cette distinction disparaît, reprends un verbe ou ajoute l’origine d’une date. L’exercice fait sentir ce que produit la patrimonialisation : les choix de présentation construisent un accès au passé et orientent en même temps ce que le visiteur peut en retenir.
+
 ## Une conclusion délimitée
 
 Le cinquantenaire montre comment des traces du jeu sont choisies et mises en scène pour transmettre un passé. Il ne démontre pas, à lui seul, une opposition exhaustive entre mémoires américaine, russe et internationale.

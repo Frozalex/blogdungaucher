@@ -149,6 +149,14 @@ Teams in Italië, Spanje en de Verenigde Staten hebben lopende protocollen. Over
 
 Ondertussen loopt de praktijk voor op het onderzoek, zoals vaak het geval is bij aanvullende therapieën.
 
+## Wat zou een clubproject eigenlijk moeten meten?
+
+Stel dat een buurthuis tien bijeenkomsten aanbiedt waarin deelnemers in tweetallen schaken. Na afloop vraagt de organisator of de avonden prettig waren. Negen deelnemers antwoorden bevestigend. Dat is bruikbare informatie voor de planning van een volgende reeks. Toch is het nog onduidelijk of het effect aan het schaakspel, aan de vaste ontmoetingsplek of aan de begeleider te danken is. Ook weet je weinig over iemand die halverwege afhaakte en het afsluitende formulier niet kreeg.
+
+Een betere eerste vraag hangt af van het oorspronkelijke doel. Als de organisator mensen met elkaar in contact wilde brengen, kan ze vragen wie buiten de les met iemand heeft afgesproken en of die persoon dat contact wilde voortzetten. Als ze een vaardigheid wilde oefenen, kan ze bij de eerste en laatste bijeenkomst dezelfde opdracht geven met verschillende stellingen. Een deelnemer kan weinig vooruitgang boeken op het bord en toch elke week met plezier terugkomen. Het zou vreemd zijn dat op een enkel rapportcijfer samen te persen.
+
+De begeleider kan bovendien expliciet ruimte laten voor een andere activiteit. Iemand die na het verlies van een partij liever samen een probleem oplost, kan bij dezelfde tafel blijven meedoen. Je leert meer door dat op te schrijven dan door alleen de winnaars van het minitoernooi te tellen. Voor uitspraken over behandeling zou een heel andere opzet en gekwalificeerde begeleiding nodig zijn. Wat een schaakclub hier zelf kan beoordelen is kleiner en concreter: wie bereikte de activiteit, wie voelde zich welkom en welke aanpassing maakte deelname voor de volgende bezoeker gemakkelijker?
+
 ## Bronnen
 
 - Marín, M. D., Nuñez, J. L., García-Mas, A., & Morales-Sánchez, V. (2017). Effects of chess instruction on academic and cognitive outcomes in school-age children: A systematic review. *Journal of Educational Psychology Research*, 2017.

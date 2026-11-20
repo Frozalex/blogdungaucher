@@ -109,6 +109,16 @@ Tu peux demander un retour précis : quelle menace fallait-il voir, quelle méth
 
 Ta pratique peut conserver des objectifs chiffrés, mais elle gagne à rester ouverte à d'autres preuves d'apprentissage et d'appartenance. Le droit de jouer, de demander une explication et de progresser ne se perd pas lorsqu'une cote baisse.
 
+## Le lundi où deux listes se contredisent
+
+Imagine que tu joues le lundi au club et le vendredi sur une plateforme. Sur la liste interne, ton nom vient de passer de la huitième à la dixième place. Sur ton profil en ligne, ton classement a pris douze points. Tu peux vivre le premier changement comme une rétrogradation et le second comme un encouragement. Avant de les interpréter, regarde ce qui a effectivement changé. Deux joueurs plus forts ont-ils rejoint le club cette semaine ? Dans ce cas, tu peux perdre deux places sans avoir joué le moindre coup. Une place dans un groupe et une appréciation de soi sont deux choses que l'écran invite facilement à confondre.
+
+Cette distinction donne un exercice pour une fin de mois. Sur une feuille, note ton rang et l'effectif du groupe. Sur une autre, décris une tâche que tu sais maintenant accomplir sur l'échiquier : gagner une finale élémentaire contre résistance, noter correctement une partie entière, ou expliquer à un débutant pourquoi le roi doit s'activer. Si un nouveau membre entre demain, quelle feuille devra être modifiée ? Le rang peut changer aussitôt. La compétence demande une vérification différente, devant les pièces. Un tel contraste ne retire rien à la signification sportive du classement. Il évite de lui demander une réponse sur tous les domaines de ta vie.
+
+Essaie aussi de faire l'expérience en sens inverse. Une victoire obtenue après une déconnexion adverse ajoute parfois un point au tableau du tournoi en ligne. Qu'as-tu appris à faire pendant cette partie ? Peut-être quelque chose d'intéressant dans les premiers coups, peut-être rien que tu veuilles travailler. Laisse la case correspondante vide si c'est le cas. Il n'y a aucune obligation de convertir chaque gain numérique en mérite technique, pas plus que chaque baisse en défaut personnel.
+
+Enfin, choisis à qui tu montres chacune de ces deux feuilles. Ton capitaine peut avoir besoin de connaître ta place pour former les équipes. Ton partenaire d'entraînement aura sans doute davantage à t'apporter si tu lui montres la position que tu veux savoir jouer. Tu peux décider quelle conversation tu souhaites avoir ce soir, même lorsque le classement vient d'être publié et que tout le monde semble vouloir en parler.
+
 ## Sources
 
 - FIDE (2024), *FIDE Rating Regulations effective from 1 March 2024*, Fédération internationale des échecs. [Règlement officiel](https://handbook.fide.com/chapter/B022024).

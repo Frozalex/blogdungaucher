@@ -59,6 +59,28 @@ Uma partida lenta oferece mais tempo para registrar seus candidatos e explicar s
 
 Se o objetivo é escolar, mantenha exercícios escolares e meça as habilidades pretendidas. Se o objetivo é de xadrez, examine seus erros de cálculo e compreensão. Nos dois casos, um progresso observável vale mais que uma promessa geral de inteligência.
 
+## Um problema de contagem para propor no clube
+
+Pergunte a um colega quantos quadrados tem um tabuleiro de xadrez. Sua primeira resposta será muitas vezes o produto de oito por oito. Essa resposta conta corretamente as casas. Mas se você aceitar também os quadrados cujos lados seguem as linhas do tabuleiro e que abrangem várias casas, é necessário especificar o enunciado. Caso contrário, duas pessoas podem defender respostas diferentes sem se equivocar em seus cálculos. Escreva a regra: cada quadrado alinhado à malha do tabuleiro conta uma vez, independentemente da cor das suas casas.
+
+Comece em um tabuleiro menor do que você desenha em uma folha. Em uma grade de três quadrados de lado, há nove pequenos quadrados, quatro quadrados de duas casas de lado e um único grande quadrado. Você pode nomear um quadrado pela sua casa no canto inferior esquerdo e o comprimento do seu lado. Para cada comprimento, você nunca pode colocar o canto muito longe para a direita ou muito alto. Cada escolha permitida de coluna, no entanto, combina com cada escolha permitida de linha. É por isso que uma multiplicação aparece no cálculo.
+
+No tabuleiro completo, um quadrado de três casas de lado pode começar em uma das seis primeiras colunas e uma das seis primeiras fileiras. Você tem 36 posições. Repita para cada comprimento e depois some: as oito contribuições valem sessenta e quatro, quarenta e nove, trinta e seis, vinte e cinco, dezesseis, nove, quatro e uma. A soma dessas parcelas vale duzentos e quatro. Você pode conferir seu cálculo invertendo o sentido do raciocínio: o grande quadrado tem uma posição possível, seu vizinho imediatamente menor tem quatro, e assim por diante. Esta verificação serve também para detectar uma confusão clássica entre o número de casas e o número de linhas que as separam.
+
+Como transformar isso em um verdadeiro problema de pesquisa? Mude uma única restrição: o quadrado deve conter a casa a1. Resta um para cada comprimento. Todos têm o canto inferior esquerdo em a1. Mude a restrição para d4. Para os quadrados de duas casas de lado, d4 pode ser cada um dos quatro cantos, porque nenhuma borda incomoda. Para aqueles de oito casas de lado, ela só pode pertencer ao tabuleiro de xadrez inteiro. Desta vez seria errado multiplicar o número de comprimentos por um mesmo coeficiente. A proximidade da borda conta, embora a cor da casa pareça mais impressionante à primeira vista.
+
+## Passar do cálculo para a prova com duas torres
+
+Em um tabuleiro vazio, quantas maneiras de colocar duas torres brancas para que elas não compartilhem nem linha nem coluna? Suponha primeiro que uma delas tenha uma fita vermelha. A torre marcada pode ir em qualquer uma das sessenta e quatro casas. Uma vez colocada, elimina, para a segunda torre, a própria fileira e a própria coluna. Há sete linhas possíveis e sete colunas possíveis. O produto vale 49. Assim, você obtém 3.136 colocações de torres distinguíveis.
+
+Retire a fita. Cada diagrama final foi contado exatamente duas vezes, porque qualquer uma das duas torres poderia ter ocupado a primeira casa escolhida. Restam, portanto, mil e quinhentos e sessenta e oito diagramas. Compare este resultado com a questão das oito damas. Aqui a divisão por dois é justificada para todos os diagramas pela mesma troca de rótulos. Para simetrias geométricas de uma colocação de damas, pelo contrário, é necessário olhar se uma transformação deixa certas colocações inalteradas. A presença de um grupo de transformações não basta, por si só, para escolher um divisor.
+
+Você pode verificar a resposta sem usar uma torre marcada. Escolha duas linhas distintas entre oito: existem vinte e oito pares possíveis. Escolha duas colunas da mesma maneira. Nas quatro intersecções, apenas duas colocações ocupam uma vez cada linha e uma vez cada coluna. Multiplique vinte e oito por vinte e oito e depois por dois. Você encontra o mesmo total por um caminho que descreve diretamente os diagramas. Se os dois métodos tivessem dado resultados diferentes, procurar qual objeto tinha sido contado duas vezes teria sido muito mais instrutivo do que recomeçar a multiplicação.
+
+Para prolongar a atividade, marque três casas proibidas no tabuleiro e mantenha as duas torres. O argumento que dava quarenta e nove possibilidades após a primeira escolha não se aplica mais uniformemente. Uma casa já proibida pode estar na fileira que a primeira torre acabou de tornar inutilizável. Experimente um tabuleiro menor, onde você pode listar as colocações à mão, e depois procure quais casas permanecem equivalentes. Assim, você fez uma tarefa matemática a partir da movimentação de uma peça, com suposições variadas e uma correção verificável. Ganhar mais jogos não é necessário para ver que você já sabe contar melhor essas configurações.
+
+Você pode tornar visível a divisão por dois usando cartões. Em um cartão escreva “torre marcada em a1, outra em c3”; em outro, inverta os rótulos. Ao cobrir a palavra “marcada”, os dois cartões representam exatamente o mesmo diagrama. Faça o mesmo com duas torres que compartilham uma coluna e descarte ambas as versões. O argumento vale somente para as configurações permitidas pelo enunciado.
+
 ## Fontes
 
 - OEIS Foundation (sem data), *A000170: Number of ways of placing n nonattacking queens on an n×n board*, base matemática, [sequência e referências](https://oeis.org/A000170).

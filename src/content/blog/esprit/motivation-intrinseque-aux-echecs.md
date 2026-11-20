@@ -105,6 +105,17 @@ Revenir à un livre ou à une personne qui t’a donné envie de jouer peut êtr
 
 La théorie de l’autodétermination (article à venir) développe les questions d’autonomie, de compétence et de lien social. Elle offre un cadre pour réfléchir à ta pratique, sans prédire à elle seule la suite de ton classement ou de ton plaisir.
 
+## Le dossier que tu ouvrirais même sans classement
+
+Sur une table de club, trois boîtes contiennent des positions. La première porte le nom d'un grand tournoi, la deuxième annonce « finales de pions » et la troisième ne montre qu'un diagramme où deux cavaliers semblent se gêner mutuellement. Si personne ne vérifiait ton travail, laquelle ouvrirais-tu ? Ta réponse ne révélera pas une motivation profonde et permanente. Elle donnera une indication locale sur ce qui éveille ta curiosité aujourd'hui. C'est déjà de quoi lancer une séance que tu pourras ensuite relier à un objectif plus long.
+
+Supposons que tu choisisses les deux cavaliers. Au premier regard, tu voudrais savoir si l'un doit quitter sa belle case pour laisser passer l'autre. Installe la position et donne aux Noirs le coup dont tu as le plus peur. Après quelques minutes, formule une question à transmettre à un partenaire : « Est-ce que je peux améliorer le cavalier de derrière sans perdre le contrôle de cette case ? » Cette question est devenue la tienne. Même si un entraîneur a sélectionné le problème au départ, l'envie de voir comment les deux pièces peuvent coopérer peut maintenant soutenir ton attention.
+
+La semaine suivante, le club annonce une petite compétition de résolution. Tu peux très bien avoir envie de gagner et de comprendre encore les cavaliers. Si tu perds le classement du soir mais repars avec une manœuvre nouvelle, demande-toi ce que tu aimerais raconter à quelqu'un au dîner : le nombre de points, la case trouvée, la belle défense de ton voisin ? Plusieurs réponses peuvent cohabiter. Les opposer risque de te faire perdre une information sur ce qui rend la soirée mémorable.
+
+Pour un animateur, une manière de respecter cette diversité est de laisser chaque joueur choisir la dernière position à revoir ensemble. L'un montrera sa plus belle combinaison. Un autre aura surtout envie de comprendre une tentative complètement manquée. Un troisième voudra expliquer pourquoi il a préféré un problème pourtant moins coté. L'animateur peut noter les thèmes qui reviennent, puis préparer une séance suivante où chacun retrouvera une question reconnaissable.
+
+Si toutes les boîtes restent fermées pendant un moment, cela peut aussi signifier que tu préfères jouer une partie, parler aux amis ou rentrer tôt ce jour-là. La curiosité devient plus facile à observer lorsqu'elle est libre de se porter ailleurs. Donner une place à ce choix évite de faire de l'obligation d'être passionné une nouvelle tâche de plus dans le programme.
 
 ## Sources
 

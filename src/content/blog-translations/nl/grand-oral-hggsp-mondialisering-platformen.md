@@ -62,6 +62,12 @@ Derde niet-statelijke actor: de **internationale humanitaire organisaties**. Het
 
 Deze opkomst van niet-statelijke actoren roept nieuwe politieke vragen op. Als private platforms bepalen wat een goede speler is, wie reguleert hen dan? Als een individuele streamer miljoenen jonge spelers beïnvloedt, welke verantwoordelijkheid draagt hij dan? Deze vraagstukken overstijgen het schaken en betreffen de hele mondiale digitale cultuur. Dit is een van de centrale conflicten van de eenentwintigste eeuw.
 
+## Een kaart waarop ook de lege plekken zichtbaar worden
+
+Teken voor de jury twee schematische netwerken. Op het eerste verbindt een treinlijn drie clubs met één toernooizaal. Het aantal deelnemers hangt onder meer af van reistijd, kosten en het tijdstip van de laatste trein. Op het tweede verbindt een platform al die spelers via hun scherm. De trein valt als voorwaarde weg. Daar komen andere voorwaarden voor terug: betrouwbare verbinding, een gedeelde speeltijd en soms een taal die beide spelers begrijpen. Door in de tekening elke verbinding te benoemen geef je het woord mondialisering een concreet mechanisme.
+
+Draai vervolgens de kaart om. Een lokale bond ziet de uitslagen van haar aangesloten teams. Een platform ziet de partijen op zijn eigen servers, ook wanneer de spelers uit landen zonder actieve band met elkaar komen. Beide waarnemers kunnen dus een verschillende kaart van dezelfde schaakwereld tekenen. Geef aan welke groep zelfs op die tweede kaart ontbreekt: de spelers die elkaar buiten het platform ontmoeten. Een groot aantal online partijen vertelt veel over activiteit op de dienst, maar weinig over de schaakavonden die daar nooit zijn geregistreerd.
+
 ## Conclusie
 
 Om mijn oorspronkelijke vraag te beantwoorden: schaken illustreren tegelijkertijd de uniformiserende culturele mondialisering en het verzet tegen die uniformisering, in een typische vorm van glocalisering in de zin van Robertson. De FIDE-regels, de digitale platforms en het wereldwijde publiek tonen de uniformisering aan. De nationale speelstijlen, de lokale bonden en de culturele tradities handhaven de diversiteit.

@@ -106,6 +106,14 @@ Elke zet die je speelt is een benadering. Elke positiebeoordeling is een schatti
 
 Deze wiskundige bescheidenheid is gezond. Ze betekent dat zelfs tegenover een tegenstander die veel sterker is dan jij, ook hij de waarheid van de stelling niet kent.
 
+## Een spelboom die helemaal op een bierviltje past
+
+Teken bovenaan één stip voor de speler die begint en daaronder twee stippen, L en R. Vanuit elk van die stippen mag de tweede speler een van twee eindstanden aanwijzen. Schrijf onder L de uitslagen winst en verlies voor de eerste speler. Schrijf onder R remise en winst. Vraag een clubgenoot te kiezen tussen L en R voordat hij de antwoorden op de achterkant van het viltje bekijkt. Beide mogelijkheden bevatten een winst. Dat gegeven alleen helpt hem nog niet.
+
+Werk nu terug vanaf de onderste rij. Bij L heeft de tweede speler de macht om voor het verlies van de eerste te kiezen. Leg een rood fiche op L. Bij R kan de tweede speler remise afdwingen. Leg daar een grijs fiche. Nu is de beginbeslissing duidelijk: wie met zekerheid ten minste remise wil, kiest R. De aanwezigheid van een winstmogelijkheid bij L is volstrekt verenigbaar met de conclusie dat L bij correct tegenspel verliest. Het gaat bij de keuze om wat je kunt afdwingen.
+
+Verander één enkel woord onder R van remise naar verlies. Het hele oordeel over de beginstand verandert mee. Je hebt met twee beslissingen een eindige boom doorgerekend en hebt nergens kansen aan menselijke fouten hoeven toe te kennen. Leg dit viltje naast een variant uit je eigen partij waarin een aantrekkelijke offerserie eindigt met het woord ‘gewonnen’. Welke keuze krijgt de tegenstander onderweg? Wie op een zijtak nog een gelijk eindspel kan bereiken, heeft voldoende gevonden om die claim te weerleggen. De kleine boom laat precies zien waar een fraaie voorbeeldvariant ophoudt een bewijs te zijn.
+
 ## Bronnen
 
 - Zermelo, E. (1913). Über eine Anwendung der Mengenlehre auf die Theorie des Schachspiels. *Proceedings of the Fifth International Congress of Mathematicians*.

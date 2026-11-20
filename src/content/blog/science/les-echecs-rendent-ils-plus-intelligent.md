@@ -112,6 +112,12 @@ Ces questions ne servent pas à rejeter d'avance chaque résultat positif. Elles
 
 Tu peux défendre les échecs comme une activité exigeante et plaisante sans promettre qu'ils rendront quelqu'un plus intelligent dans tous les domaines.
 
+### Le défi des deux feuilles d'exercices
+
+Imagine un enseignant qui apprend à une classe à compter les déplacements d'une tour, puis distribue deux feuilles. Sur la première, il demande combien de cases une tour peut atteindre depuis un coin. Sur la seconde, les élèves doivent choisir une méthode pour compter les places possibles dans une salle avec des rangées condamnées. Les deux tâches utilisent un quadrillage et des exclusions, mais la seconde demande de reconnaître la structure en l'absence de la pièce familière. Une amélioration sur la première feuille est compatible avec un apprentissage réel de la leçon. Pour parler de transfert vers la seconde, il faut observer les réponses à cette seconde tâche.
+
+Les erreurs sont ici presque plus informatives que le score. L'élève a-t-il oublié de retrancher le point de départ ? A-t-il compté deux fois une intersection ? A-t-il suivi une diagonale, comme si la dame était encore sur le plateau ? Ces réponses conduisent à des corrections différentes. En explicitant le raisonnement demandé et les erreurs observées, l'enseignant sait quelle compétence il peut travailler à la prochaine séance. Un bilan qui annoncerait seulement une hausse de l'intelligence ne lui fournirait aucune de ces informations.
+
 ## Sources
 
 - Sala, G. et Gobet, F. (2017), *Does Far Transfer Exist? Negative Evidence From Chess, Music, and Working Memory Training*, Current Directions in Psychological Science, [article](https://journals.sagepub.com/doi/full/10.1177/0963721417712760).

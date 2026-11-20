@@ -121,6 +121,8 @@ Schaken is geen puur abstract oefening, zwevend boven het vlees. Het mobiliseert
 
 Dat is waarom fysieke voorbereiding als een serieuze component van training behandelen niets gimmick-achtigs heeft. Het is de erkenning dat de geest nooit alleen speelt: hij speelt met, en soms tegen, het lichaam dat hem draagt. De meest roerloze sport ter wereld is op zijn manier ook een uithoudings­proef.
 
+Probeer bij een oefenpartij ook de stoel van de toernooizaal uit. Kun je de verste pion pakken en daarna de klok indrukken terwijl je overzicht houdt op beide vleugels? Schuif de stoel een handbreedte op en vergelijk.
+
 ## Bronnen
 
 - Kumar, A. (2019). Why grandmasters like Magnus Carlsen lose weight playing chess. *ESPN*.

@@ -235,6 +235,12 @@ Il ne manque qu'une chose, et c'est celle qui le rendra utilisable : il ne sait 
 
 **Prochain article, le dernier :** parler UCI, se brancher dans une vraie interface d'échecs, et surtout, mesurer honnêtement ce que tout cela vaut en points Elo.
 
+### Deux échecs possibles dans un test de symétrie
+
+Place un cavalier blanc sur une case, conserve les deux rois, puis crée une seconde position en échangeant les couleurs et en réfléchissant les rangées. Vérifie que les entrées de table se correspondent dans les deux positions. Avec une valeur exprimée du point de vue des Blancs, les signes doivent s'inverser si le reste de ton évaluation est symétrique. Avec un score exprimé pour le camp au trait, tu dois également prendre en compte le changement de trait. Choisir la mauvaise attente suffit à condamner un programme correct.
+
+Pour examiner la quiescence, garde le même diagramme et change le type de question. Si le camp au trait est en échec, compare toute la liste de ses parades légales à la liste explorée. Une interposition silencieuse peut être l'unique défense. Tester seulement les captures la ferait disparaître, et accepter l'évaluation statique sur place reviendrait à autoriser le roi à rester en échec. Ce diagnostic concerne la génération des réponses ; modifier la prime de centralisation du cavalier ne le corrigera jamais.
+
 ## Sources
 
 Le chapitre de Russell et Norvig décrit les limites de recherche ; le code de Stockfish montre une quiescence avec traitement des échecs et profondeur maximale, ce qui éclaire les garde-fous de ce prototype.

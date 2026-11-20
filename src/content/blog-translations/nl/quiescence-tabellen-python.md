@@ -233,3 +233,9 @@ Vatten we samen wat er gebouwd is. Een voorstelling geverifieerd door 41 miljoen
 Er ontbreekt slechts één ding, en het is precies dat wat hem bruikbaar zal maken: hij weet nog steeds niet met iemand te praten. Hij leeft in een Python-script en speelt tegen zichzelf.
 
 **Volgend artikel, het laatste:** UCI praten, aansluiten op een echte schaakinterface, en vooral, eerlijk meten wat dit alles waard is in Elo-punten.
+
+## Een kleine valstrik voor de cache
+
+Vergelijk twee aanroepen voor hetzelfde bord. De eerste gebeurt midden in de gewone zoekboom met nog een volle laag te gaan. De tweede gebeurt precies op de grens waar alleen tactische vervolgen worden onderzocht. Als dezelfde opgeslagen score bij beide aanroepen zonder nadere controle wordt geaccepteerd, kan het programma de normale zoeklaag overslaan. De materiaalbalans ziet er dan rustig uit terwijl een stille verdedigingszet juist de hele evaluatie zou veranderen.
+
+Maak een test waarbij je eerst met lege tabel en vervolgens met gevulde tabel zoekt naar de waarde van de wortel. Gebruik dezelfde grenzen, diepte en evaluatie. De knoopentelling mag omlaag gaan, maar het hergebruik van informatie mag geen onterechte exacte score introduceren. Noteer daarom bij een tabelrecord of de waarde exact is of alleen een grens oplevert, en met welke zoekcontext zij werd verkregen. Kijk ook naar uitzonderingen zoals schaak: een speler die schaak staat kan zijn huidige materiaalwaardering niet zonder meer als uitvoerbaar alternatief beschouwen. Een rustige zet met de koning kan verplicht zijn. Dat ene tegenvoorbeeld is een betere test voor stabiliteit dan een lange reeks stellingen zonder enkele directe dreiging.

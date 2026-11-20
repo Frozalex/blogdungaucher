@@ -104,6 +104,18 @@ Tu peux aimer le blitz et vouloir aussi étudier une finale. Tu peux préférer 
 
 Si un objectif plus lointain t'importe, organise des étapes dont tu peux comprendre le résultat. Si l'objectif change, réévalue le programme. Le test du marshmallow n'a pas à devenir un tribunal de tes loisirs. La question concrète est de savoir ce que tu souhaites apprendre, à quel coût et avec quels retours fiables, sans promettre que l'attente elle-même fournira la récompense.
 
+## La récompense qui arrive avant la victoire
+
+Un joueur se donne pour objectif de gagner une finale de tours qu'il ne sait pas encore conduire. S'il décide que seule une victoire en tournoi comptera, la récompense peut ne jamais arriver : une telle finale ne se présentera peut-être qu'une seule fois dans l'année. Il existe pourtant plusieurs moments où l'étude produit un résultat observable. Trouver la bonne distance pour donner un échec latéral en est un. Comprendre pourquoi le roi doit attendre derrière son pion en est un autre. Ces petites étapes ont elles aussi une valeur immédiate pour quelqu'un qui aime démonter les positions.
+
+Imagine deux versions du même mois d'entraînement. Dans la première, tu accumules des exercices résolus et repousses à plus tard le plaisir de jouer une vraie partie. Dans la seconde, chaque jeudi, tu choisis un seul diagramme et tu en fais une mini-rencontre avec un ami. Chacun garde la même couleur pendant deux tentatives, puis vous inversez. Le plaisir de défendre et la curiosité de voir si l'autre trouvera une ressource sont déjà présents le jeudi. S'ils t'aident à vouloir revenir la semaine suivante, le calendrier comporte à la fois un avantage proche et un avantage éloigné. Il devient inutile d'exiger que tout plaisir immédiat soit un obstacle.
+
+Une façon simple de vérifier la différence est de noter ce que tu attends du prochain rendez-vous. « Finir les finales pour gagner cinquante points » laisse toute la satisfaction au bout d'une chaîne peu prévisible. « Essayer la défense de la troisième rangée contre la tour de Maël » désigne un événement possible dès jeudi, même si ton classement demeure exactement le même. Tu pourras comparer les deux manières de formuler ton projet en observant à laquelle tu arrives réellement à donner suite.
+
+Le calendrier peut aussi devenir trop rigide. Si Maël est absent trois semaines, la récompense proche disparaît. Prévoyez une solution de remplacement très limitée : il laisse le dernier diagramme et un coup défensif à tester. Cela suffit pour maintenir votre question en vie sans transformer son absence en obligation de multiplier les exercices individuels. Quand il revient, vous pourrez reprendre une discussion inachevée, au lieu de vous demander qui a manqué à un objectif abstrait.
+
+Enfin, conserve le droit d'arrêter une tâche dont tu ne vois plus l'intérêt. Attendre longtemps ne rend pas mécaniquement plus précieuse la récompense annoncée. Fixer une date pour réexaminer le projet peut être une décision aussi patiente que la poursuite de l'entraînement. À cette date, essaie de nommer la compétence acquise, le plaisir encore présent et la prochaine situation où tu pourrais t'en servir. Tes réponses peuvent justifier aussi bien un nouveau mois de travail qu'un changement de thème.
+
 ## Sources
 
 - Watts, T. W., Duncan, G. J. et Quan, H. (2018), « Revisiting the Marshmallow Test: A Conceptual Replication Investigating Links Between Early Delay of Gratification and Later Outcomes », *Psychological Science*, 29(7), 1159–1177. [Résumé original publié par l’APS](https://www.psychologicalscience.org/journals/psychological-science/0956797618761661/), DOI : 10.1177/0956797618761661.

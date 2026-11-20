@@ -57,6 +57,30 @@ O mesmo princípio vale para frases como “sempre perco para ele” ou “sou r
 
 Os estudos citados não demonstram que expectativas negativas sempre tenham mais força que positivas no xadrez. Também não permitem prometer um benefício cognitivo de um suplemento apenas porque ele é apresentado dessa forma. Para avaliar uma afirmação, pergunte qual tarefa foi medida, com qual grupo de comparação e com qual incerteza.
 
+## O torneio em que a caneta ficou em casa
+
+Suponha que você costume assinar a planilha com uma caneta recebida de presente. Na manhã da rodada descobre que a esqueceu. O primeiro pensamento é que o dia começou mal. Você pega outra caneta emprestada, joga uma partida difícil e termina empatando. À noite, consegue contar pelo menos três versões da história. O objeto fez falta e custou meio ponto. A preocupação inicial passou assim que apareceu a primeira ameaça. Ou a escolha da caneta não teve importância e o empate ficou decidido num final que merecia mais estudo. O resultado sozinho não permite escolher entre essas explicações.
+
+Para tornar a conversa mais precisa, separe o que aconteceu antes de sentar e o que foi possível observar durante a partida. Você precisou correr atrás de material e perdeu tempo real? Ficou preocupado, mas começou dentro do horário? Em qual lance a posição mudou de avaliação, e que defesa estava disponível? Talvez levar uma caneta reserva resolva um problema prático de organização. Admitir isso não exige medir um efeito psicológico sobre a qualidade do cálculo. A rotina pode ter uma função bastante simples que vale preservar.
+
+## Duas mensagens diferentes para o mesmo exercício
+
+Pense em um clube que anuncia uma oficina com a frase “descubra a técnica que vai melhorar sua memória”. Outra turma recebe um convite que diz apenas “sessão de exercícios com posições de xadrez”. As pessoas que se inscrevem podem chegar com expectativas diferentes. Também podem ter interesses anteriores distintos, justamente porque o convite ajudou a selecionar quem apareceria. Se uma turma obtiver uma nota maior, haverá mais de uma explicação possível. A comparação fica ainda mais difícil se os professores conhecerem a promessa e derem pistas extras à primeira turma sem perceber.
+
+Esse exemplo ajuda a entender uma decisão editorial. Se a oficina serve para ensinar uma técnica de revisão, anuncie a técnica e mostre o que os participantes farão com ela. Evite prometer melhora geral em testes que você nem pretende aplicar. Se houver avaliação, use critérios definidos antes da atividade. Uma resposta correta, uma defesa legal bem justificada e a impressão subjetiva de que o exercício foi fácil são informações diferentes. Uma pessoa pode acertar com pouca confiança e outra pode explicar com segurança uma variante que perde uma peça.
+
+Para reduzir um pouco o efeito da expectativa de quem corrige, guarde as respostas sem o nome da oficina e misture a ordem antes de entregá-las ao avaliador. Faça com que ele receba a posição, a solução proposta e os critérios de correção. Isso não elimina todas as diferenças entre os grupos, mas resolve um problema concreto. O avaliador deixa de saber qual resultado confirmaria sua preferência por um dos convites.
+
+## O que observar ao experimentar uma nova rotina
+
+Se você quer testar o hábito de preparar o material na véspera, escolha um resultado diretamente relacionado à mudança. Conte quantas vezes chegou procurando a caneta, a água ou o endereço da sala. Anote separadamente a tranquilidade que sentiu e a qualidade de uma decisão específica da partida. Depois de alguns encontros, talvez perceba que chega com menos pressa, mas continua gastando tempo demais para escolher entre duas trocas. A rotina pode merecer um lugar no seu dia pelo primeiro motivo. O segundo problema provavelmente pede outro tipo de treino.
+
+Considere também quando você começou a experiência. Muitas pessoas mudam de hábito depois de uma sequência especialmente ruim. Mesmo que nada importante mude, a série seguinte pode se aproximar do desempenho habitual. Se o torneio anterior teve adversários mais fortes ou um calendário completamente diferente, existe mais uma razão para evitar uma conclusão imediata. Registre encontros suficientes para incluir dias comuns e mantenha visíveis os resultados que contrariaram a hipótese inicial.
+
+É possível dividir o ritual em partes. Colocar a camisa preferida pode ser agradável. Conferir o horário de saída evita perder o ônibus. Repetir mentalmente um plano de abertura lembra uma linha que você estudou. Se um elemento faltar, os outros continuam disponíveis. Essa separação é particularmente útil para quem organiza atividades infantis. A criança pode levar o chaveiro de que gosta e também aprender como começar a partida quando ele fica em casa. O adulto pode perguntar de que parte ela sentiu falta sem sugerir que a ausência do objeto determina o placar.
+
+Ao conversar sobre a experiência com o clube, relate primeiro a mudança que você conseguiu descrever. “Passei a chegar antes do anúncio dos emparceiramentos” conta uma história que os colegas conseguem entender e, se quiserem, tentar reproduzir. “Meu cérebro funciona melhor com esta caneta” faz uma afirmação muito mais ampla. Para quem só quer aproveitar o próximo torneio, um pequeno ganho de organização já pode ser motivo suficiente para manter o hábito. O ritual pode até continuar tendo valor afetivo sem ganhar uma função de tratamento ou uma promessa de pontos a mais.
+
 ## Fontes
 
 - Hróbjartsson, A., & Gøtzsche, P. C. (2010). *Placebo interventions for all clinical conditions*. Cochrane Database of Systematic Reviews, Wiley. [Revisão integral](https://www.dcscience.net/Hrobjartsson-Gotzsche-Cochrane-placebo.pdf).

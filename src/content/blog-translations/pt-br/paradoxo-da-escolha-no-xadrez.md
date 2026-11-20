@@ -171,6 +171,12 @@ Daí uma conclusão pouco intuitiva. A pergunta certa não é qual abertura esco
 
 *Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a formação de hábitos no xadrez](/pt-br/blog/formacao-de-habitos-no-xadrez/) e [a dissonância cognitiva no xadrez](/pt-br/blog/dissonancia-cognitiva-no-xadrez/).*
 
+## Três partidas para decidir o que estudar
+
+Considere um jogador que está entre a Caro-Kann, a Francesa e a Siciliana. Comparar todas as subvariantes das três defesas é uma tarefa sem ponto de chegada. Ele pode tornar a dúvida concreta selecionando, para cada abertura, uma partida comentada que chegue ao meio-jogo. Antes de saber quem venceu, tenta responder onde colocaria o bispo de casas claras e que ruptura de peões prepararia. Em quais posições conseguiu formular um plano próprio?
+
+Esse teste avalia uma preferência de aprendizagem. Ele não estabelece qual defesa dá vantagem às pretas. Se duas continuarem empatadas, vale usar um desempate barato: escolher aquela para a qual já tem um parceiro de treino. Depois de algumas partidas, a situação na qual se sentiu perdido fornece uma pergunta bem definida para a próxima sessão de estudo.
+
 ## Fontes
 
 - Iyengar, S. S., & Lepper, M. R. (2000). When choice is demotivating : Can one desire too much of a good thing? *Journal of Personality and Social Psychology*, 79(6), 995–1006.

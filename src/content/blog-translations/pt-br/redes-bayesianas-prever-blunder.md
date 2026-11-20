@@ -107,6 +107,16 @@ Mesmo sem construir formalmente uma rede, princípios bayesianos podem ajudar a 
 
 ---
 
+## Um exemplo numérico em cem posições inventadas
+
+Imagine um arquivo didático de cem posições com dez erros graves. Entre as dez posições com erro, seis foram jogadas com menos de vinte segundos no relógio. Entre as noventa restantes, dezoito também foram jogadas nessa situação. Esses números são inventados para permitir uma conta à mão. Visto apenas o alerta do relógio, quantas posições com erro você esperaria encontrar entre as vinte e quatro assinaladas? Seis. A proporção é de um quarto. Os seis em dez respondem a outra pergunta: dado que houve erro, com que frequência apareceu o alerta?
+
+Se o treinador separa exclusivamente lances ruins para montar seu arquivo, ele perde as dezoito posições jogadas depressa e corretamente. Já não consegue estimar o que o alerta significava no conjunto. E se escolhe três lances seguidos de uma única partida perdida no tempo, esses registros contam parte de uma mesma história. Isso importa antes de qualquer cálculo sofisticado.
+
+Há ainda uma decisão prática independente da estimativa. Um alerta com muitos falsos positivos pode servir para selecionar partidas a revisar, pois o custo é olhar alguns lances a mais. O mesmo alerta seria uma péssima razão para concluir que uma pessoa específica vai errar o próximo lance. Sua utilidade depende da pergunta feita, da frequência de erros no arquivo e do preço de uma previsão equivocada.
+
+Volte agora às setenta e seis posições sem alerta. Quatro contêm erro grave e setenta e duas foram jogadas sem ele. Isso permite conferir a classificação inteira. Somando os quatro erros fora do alerta aos seis dentro dele, recuperamos os dez erros iniciais. A conta também mostra por que a ausência do alerta não garante um lance correto.
+
 ## Fontes
 
 - Friedman, N., & Koller, D. (2001, versão do documento consultado). *Being Bayesian About Network Structure: A Bayesian Approach to Structure Discovery in Bayesian Networks*. [Manuscrito dos autores, Stanford](https://ai.stanford.edu/~nir/Papers/FK1Full.pdf): dependências, independências condicionais e aprendizagem da estrutura.

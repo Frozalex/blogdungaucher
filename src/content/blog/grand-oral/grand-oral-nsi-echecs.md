@@ -172,6 +172,16 @@ Choisis un arbre assez petit pour expliquer chaque feuille, le code correspondan
 
 Pour les développements complémentaires, le [guide NSI détaillé](/fr/blog/guide-grand-oral-echecs-nsi/) reprend minimax et alpha-bêta ; le [guide Maths](/fr/blog/grand-oral-maths-spe-echecs/) traite les ordres de grandeur et les probabilités.
 
+## Un banc d’essai miniature à défendre devant le jury
+
+Une façon de donner du relief à ton exposé consiste à apporter une prédiction écrite avant d’exécuter ton programme. Pose sur la table deux cartes portant les lettres A et B. A cache deux scores, deux et huit. B en cache trois, quatre, cinq et six. Tous expriment l’intérêt de la position pour les Blancs. À la racine, les Blancs choisissent la carte ; ensuite les Noirs choisissent le score à retourner. Donne-toi dix secondes pour expliquer quel résultat tu attends. Les Noirs peuvent imposer deux sous A et quatre sous B. Les Blancs choisissent donc B. Un programme qui renvoie huit utilise probablement le même objectif aux deux étages. Tu viens de transformer une propriété de l’algorithme en test observable.
+
+Change ensuite une seule donnée. Remplace le huit par moins sept, sur la carte A. Le résultat de la racine reste quatre, mais la valeur de la branche A doit changer. Afficher exclusivement le meilleur coup masquerait une erreur de calcul dans cette branche. Pour ton essai sur papier, note les deux valeurs intermédiaires à côté du résultat final. Fais maintenant l’expérience inverse : garde les cinq valeurs et échange l’ordre des cartes et celui des nombres. La valeur finale doit rester identique. Si les deux coups ont la même valeur, en revanche, plusieurs choix de coup peuvent satisfaire le test. Exiger une lettre particulière reviendrait à vérifier une convention de départage que tu n’as jamais annoncée.
+
+Le jury peut alors te proposer une feuille qui représente un mat. Si ton programme traite cette feuille comme un simple bilan de matériel, une dame supplémentaire risque de masquer le fait que la partie est déjà finie. Réponds en décrivant l’ordre des vérifications : reconnaître le résultat terminal, vérifier la profondeur restante, puis développer les successeurs si la partie continue. Distingue aussi le pat du mat lorsque la liste des coups légaux est vide. La donnée qui permet de trancher est l’échec ou l’absence d’échec sur le roi au trait.
+
+Pour finir, explique comment tu mesurerais le coût. Une variable compte les feuilles effectivement évaluées, une autre les entrées dans la fonction, racine comprise. Fais tourner les deux versions sur le même arbre et annonce quelle variable figure dans ton tableau. Un camarade peut refaire tes prédictions avec quelques bouts de papier. Cette possibilité de contredire ton résultat donne beaucoup plus de poids à la démonstration qu’une capture d’écran d’un moteur qui gagne une partie.
+
 ## Sources
 
 - Ministère de l'Éducation nationale (2026), *Baccalauréat : comment se passe le Grand oral ?* [Format officiel](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028).

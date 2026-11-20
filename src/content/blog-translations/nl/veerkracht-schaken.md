@@ -138,6 +138,14 @@ Biografieën en interviews van grootmeesters onthullen een diversiteit aan react
 
 Deze profielen verschillen, maar komen samen: veerkracht is niet de afwezigheid van kwetsbaarheid. Het is de vernieuwde beslissing om terug te keren.
 
+## Twee notitiekaartjes voor een dubbelrondig toernooi
+
+Op een dag met een ochtendronde en een middagronde is het verleidelijk de eerste partij nog helemaal te willen begrijpen voor je aan de tweede begint. Stel dat je na drie uur vanuit een gewonnen eindspel verliest. Je hebt nog drie kwartier tot de volgende indeling bekend wordt. Een poging om elke onnauwkeurigheid te verklaren vult gemakkelijk dat hele gat. Het alternatief is de analyse een duidelijk vervolg te geven, zodat je haar voor het ogenblik kunt neerleggen.
+
+Neem het eerste kaartje en zet er het nummer van de kritieke zet op, met één vraag die je na het toernooi zou willen oplossen. Bijvoorbeeld of je eerst je koning had moeten activeren voordat je de vrijpion opspeelde. Die vraag blijft hetzelfde, ook wanneer de computer later een heel andere fout aanwijst. Ze bewaart wat je aan het bord werkelijk bezighield. Het tweede kaartje bevat alleen wat voor de volgende partij nodig is: aanvangstijd, bord en één herinnering aan je routine bij de eerste moeilijke beslissing.
+
+Wat kun je na afloop met die kaartjes? Zoek de oorspronkelijke stelling terug en laat een trainingspartner een verdediging proberen die jij tijdens de partij had uitgesloten. Slaagt de verdediging, dan heeft je ochtendpartij je iets concreets opgeleverd. Faalt zij, dan was misschien een latere beslissing doorslaggevend. In beide gevallen voorkom je dat de uitslag de verklaring dicteert. Bekijk vervolgens hoe je bij de middagpartij aan het bord verscheen. Misschien verloor je ook die, maar vond je bij het eerste onverwachte antwoord wel de tijd om opnieuw naar dreigingen te zoeken. Dat verschil is een concreet teken van herstel dat in het klassement van het weekend onzichtbaar blijft.
+
 ## Bronnen en referenties
 
 - Seligman, M. E. P. (1990). *Learned Optimism: How to Change Your Mind and Your Life*. Knopf.

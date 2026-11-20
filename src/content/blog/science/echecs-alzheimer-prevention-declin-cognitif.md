@@ -147,6 +147,10 @@ La durée de suivi devrait correspondre à la question. Une amélioration après
 
 Tu peux donc défendre la place des échecs sans promettre une protection démontrée : un loisir choisi possède une valeur propre. Les mesures générales de santé, l'activité physique, les liens sociaux et les soins adaptés restent complémentaires. En faire un choix plaisant est plus honnête et plus durable que présenter chaque partie comme une assurance contre la maladie.
 
+### Poser une question à laquelle une séance peut répondre
+
+Pour un atelier de découverte, vise une observation que la personne puisse elle-même juger. A-t-elle aimé chercher une prise avec le cavalier ? Préfère-t-elle revoir une position familière ou essayer une autre pièce ? Prépare deux activités brèves entre lesquelles elle peut choisir et laisse-lui la possibilité de s'arrêter. Inscris dans le compte rendu les préférences exprimées et les adaptations qui ont facilité la séance. Une telle note aide concrètement à préparer le prochain rendez-vous. Elle ne mesure aucune évolution clinique et ne justifie aucune promesse sur la survenue d'une maladie.
+
 ## Sources
 
 - Wu, Z., Pandigama, D. H., Wrigglesworth, J. et al. (2023), *Lifestyle Enrichment in Later Life and Its Association With Dementia Risk*, JAMA Network Open, [article](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2807256).

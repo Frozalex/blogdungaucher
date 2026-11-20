@@ -140,30 +140,6 @@ Deze afwezigheid van wrijving is technisch neutraal maar cognitief vijandig. Een
 
 ---
 
-## Veelgestelde vragen
-
-### Hoeveel pauzetijd heb je echt nodig tussen twee lange partijen?
-
-De literatuur over cognitieve vermoeidheid in sport (inclusief FIDE) suggereert minimaal **30 tot 60 minuten actief herstel** (wandelen, lichte maaltijd, hydratatie, geen schaakscherm) tussen twee klassieke partijen (≥ 90 minuten per speler). Online is dit moeilijker vol te houden, maar het principe blijft: als je na een verlies 5 blitzpartijen in 30 minuten speelt, garandeer je bijna jezelf in een negatieve spiraal en versterk je zwakke reflexen.
-
-### Telt slaap zwaarder dan studie voor vooruitgang?
-
-Niet zwaarder, maar **even zwaar**. 1 uur slaap inleveren voor 1 uur studie is bijna altijd een slechte ruil: je verliest meer in consolidatie van eerder geleerde stof dan je wint aan nieuwe kennis. Voor een late avondsessie is het beter om **3 bekende puzzels te herhalen** dan **10 nieuwe te ontdekken**: de aanstaande consolidatie werkt efficiënter op gedeeltelijk beheerste stof.
-
-### Telt een snelle partij als pauze?
-
-Nee. Dat is de meest gemaakte fout. Een snelle partij gebruikt **exact dezelfde cognitieve circuits** als je vorige studiesessie: beslissen onder druk, berekenen, evalueren. Vanuit het oogpunt van cognitieve vermoeidheid is het een voortzetting van de sessie, geen pauze. Een echte cognitieve pauze schakelt van kanaal: wandelen, een gesprek over iets anders dan schaken, licht lezen, lichte lichaamsbeweging.
-
-### Moet je ook lange pauzes nemen als je goed vooruitgaat?
-
-Juist dan. Het dopaminesysteem desensibiliseert sneller als de beloning regelmatig is (zichtbare vooruitgang): dit is de paradox van het "burnout van de goede leerling". Spelers die snel groeien tot 1800-2000 Elo en daarna vaak afhaken, zijn degenen die nooit een gestructureerde pauze hebben genomen. Een pauze van 5-7 dagen elke 2-3 maanden houdt de intrinsieke motivatie jarenlang op peil.
-
-### Helpt koffie echt om vermoeidheid te compenseren?
-
-Op korte termijn ja, maar tijdens een klassieke partij van 4-5 uur **verschuift** cafeïne de vermoeidheid eerder dan dat het die oplost: je voelt je alert bij zet 20, maar je speelt slechter tussen zet 35 en 50. FIDE-coaches adviseren doorgaans **één koffie vlak voor de partij** + **water tijdens de partij**, nooit meerdere stimulanten achter elkaar. Cafeïne na 14:00 uur schaadt ook de slaap van die nacht en daarmee de consolidatie van die partij.
-
----
-
 ## Kernpunten
 
 - Geheugenconsolidatie, het proces waardoor leerresultaten duurzaam worden, vindt plaats buiten de oefening om, met name tijdens slaap

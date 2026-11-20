@@ -66,6 +66,28 @@ A slow training game gives more time to record candidates and explain choices. A
 
 If the goal is school learning, retain school exercises and measure the intended skills. If it is chess, examine calculation and understanding errors. Either way, observable progress is better than a general promise of intelligence.
 
+## A counting problem you can build at a chess club
+
+Ask a friend how many squares there are on a chessboard. Sixty-four is an excellent answer if you mean the small squares on which the pieces stand. Suppose you also allow larger squares made out of whole cells. Now you have to agree on the rules. Count only squares whose sides follow the grid, count each outline once and allow its interior to contain any pattern of light and dark cells. Two people who gave different answers to the original question might both have counted correctly.
+
+Start with a drawing only three cells wide and three cells high. You can identify any square by its bottom left corner and the length of one side. There are nine possible corners for a square of side one. A square of side two can start in either of the first two columns and either of the first two rows. That gives four placements. The largest square has only one placement. There are fourteen in total. The useful discovery is the rule about the corner: once its location and the size are known, you do not have another choice to make.
+
+Return to the full board. A square three cells wide can begin in any of the first six columns and first six rows. There are thirty-six placements. Work through the lengths from one to eight and add sixty-four, forty-nine, thirty-six, twenty-five, sixteen, nine, four and one. The result is two hundred and four. You can check the ordering with a picture: the largest square has exactly one position and the next size down fits in four. A calculation that gives four placements for the largest square has probably counted grid lines in place of cells.
+
+Change one condition. Require the square to contain a1. There is exactly one qualifying square for each permitted length because its bottom left cell must be a1. Replace a1 with d4 and the situation changes. For a square of side two, d4 can occupy any of its four corners. For the largest possible square it must still lie inside the entire board. We have not changed the rectangular geometry of the board, but the distance of the specified cell from the edge now matters. Ask the class to predict which answers would survive if the special cell were h8. Reflection of the diagram is enough to settle that question without another sum.
+
+## Two rooks, two solutions and a useful division
+
+Set aside the kings for this puzzle: it is an exercise about the movement lines of pieces on an otherwise empty board. How many ways can you place two white rooks so that they share neither a rank nor a file? Tie an imaginary red ribbon around one of them. Place the marked rook first. It has sixty-four choices. Its rank and file are now unavailable, leaving the other rook seven choices of rank and seven choices of file. Multiply and you get three thousand one hundred and thirty-six placements for distinguishable rooks.
+
+Remove the ribbon. Each final diagram has appeared exactly twice in the preceding count. Either of its occupied squares could have held the marked rook, and there are no further choices once that is decided. Dividing by two gives one thousand five hundred and sixty-eight diagrams. The word “exactly” does important work here. In some symmetry problems, including rotations of arrangements of several pieces, an arrangement can remain unchanged under a transformation. Dividing by the number of named transformations then needs an additional argument. In this rook puzzle the two pieces occupy different squares, which makes the argument about the ribbon work for every diagram.
+
+Try a second solution that never puts a label on either rook. Choose two distinct ranks. There are twenty-eight possible pairs. Choose two distinct files in the same way. The intersections form four corners of a rectangle. Only the two diagonally opposite pairs put one rook on each rank and one on each file, giving twenty-eight times twenty-eight times two possibilities. The agreement between this count and the first one checks more than the arithmetic. It identifies the same objects from two descriptions, one beginning with a piece and one beginning with a set of lines.
+
+For a harder version, forbid three particular cells before you place either piece. The first counting method can no longer assume that every initial square gives forty-nine choices. Some forbidden cells already lie on lines that the first rook would rule out. Draw a smaller board and compare two first placements, one in a row with a forbidden cell and another in a completely clear row. Work out why their counts differ before trying the full board. You have created a mathematical exercise whose difficulty comes from a changed assumption; no assertion about a player's intelligence is required.
+
+A teacher can tell whether this activity worked by giving a fresh problem, such as two objects that may share a column but not a row. Ask learners to explain which step in either proof must change and which can be reused. An answer copied from the previous board will generally give the wrong total. An explanation that correctly identifies the new freedom tells you something specific about what the student learned to count.
+
 ## Sources
 
 - OEIS Foundation (undated), *A000170: Number of ways of placing n nonattacking queens on an n×n board*, [sequence and references](https://oeis.org/A000170).

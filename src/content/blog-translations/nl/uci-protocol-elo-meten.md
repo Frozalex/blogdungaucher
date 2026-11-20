@@ -242,3 +242,11 @@ Drie richtingen, in volgorde van winst-inspanningsverhouding.
 **Null move-snoeien.** De tegenstander twee keer na elkaar laten spelen, en als de stelling ondanks dit geschenk goed blijft, de tak afsnijden. Enkele regels, meerdere honderden Elo-punten, en een valstrik bij zugzwang.
 
 **Een andere taal.** Op een gegeven moment wordt de echte grens Python. De hier geschreven engine draait rond de 3000 stellingen per seconde; hetzelfde algoritme in C of Rust zou er honderd keer meer doen. Maar dan weet je precies wat je herschrijft, en dat was het hele doel van deze serie.
+
+## Een correcte verbinding en een overtuigende wedstrijd zijn twee tests
+
+Een programma dat netjes op de openingsberichten van de interface reageert, kan nog steeds een verkeerde zettenlijst verwerken. Test daarom met een beginstelling gevolgd door een korte bekende reeks. Stuur daarna dezelfde eindstand expliciet als stelling en laat beide zoekopdrachten onder dezelfde omstandigheden lopen. Let bij de vergelijking op de rokaderechten en de speler aan zet. Een bord met gelijke stukken op gelijke velden is niet in alle gevallen dezelfde invoer. Bij regels die naar de geschiedenis verwijzen kan een losse stelling bovendien minder informatie bevatten dan een volledige reeks zetten.
+
+Pas wanneer de verbinding en het teruggeven van legale zetten betrouwbaar zijn, is een wedstrijd iets meer dan een test van de aansluiting. Schrijf per partij op of het programma mat liep, opgaf, op tijd verloor of een ongeldig antwoord stuurde. Vier verloren partijen door een fout in tijdverwerking zijn vier geldige punten voor de tegenstander, maar ze zijn een slechte reden om de nieuwe evaluatiefunctie te verwerpen. Repareer eerst de oorzaak die je met het logbestand kunt aanwijzen.
+
+Houd bij een nieuwe reeks ook de versies en instellingen bij. Een onverwacht sterk of zwak resultaat blijft alleen bespreekbaar wanneer je achteraf weet welke instellingen aan beide kanten actief waren, welke openingsposities zijn gebruikt en of dezelfde fout nogmaals kan worden opgeroepen zonder het hele toernooi te herhalen.

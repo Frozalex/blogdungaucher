@@ -150,6 +150,8 @@ Het doel is niet om de pauzes te elimineren: het is om de duur en kwaliteit van 
 
 **Oververhitting.** Studies over cognitie en temperatuur (Simonsohn, 2014) tonen aan dat een te warme ruimte (>25°C) de aanhoudende aandacht verslechtert. Spelers die hun fysieke omgeving controleren (temperatuur van de zaal, water beschikbaar, ventilatiepauzes) maken minder fouten aan het einde van de partij.
 
+Leg voor een analysetraining een leeg blaadje naast het bord. Zet één streepje zodra je merkt dat je gedachten afdwalen, en hervat bij de laatste stelling die je nog helder zag. Zo kun je een onderbreking terugvinden zonder je hele variant opnieuw te beginnen.
+
 ## Bronnen en referenties
 
 - Killingsworth, M. A., & Gilbert, D. T. (2010). A wandering mind is an unhappy mind. *Science*, 330(6006), 932.

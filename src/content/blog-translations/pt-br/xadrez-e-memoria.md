@@ -51,6 +51,66 @@ Da mesma forma, um desempenho em problemas não é um rastreamento médico. Sobr
 
 Você pode acompanhar um progresso específico: reconhecer um padrão com mais segurança, esquecer menos uma defesa ou explicar melhor um final. Esses objetivos já são úteis, sem prometer uma memória superior em toda a vida cotidiana.
 
+## Três posições próximas, três lembranças para verificar
+
+Estas **posições construídas para o exercício** isolam o mate do corredor. Elas não vêm de uma partida histórica. As brancas têm a vez de jogar. Em cada uma, examine o candidato Te8 e decida se ele dá mate. O objetivo não é encontrar o melhor lance em todas as posições: é verificar uma hipótese precisa.
+
+### Posição A: Reconhecer e demonstrar o mate
+
+Coloque as brancas com rei em g1, torre em e1 e peões em f2, g2 e h2. As pretas têm rei em g8, torre em a7 e peões em f7, g7 e h7. As demais casas estão vazias. Encontre uma resposta antes de consultar a correção.
+
+<study-position fen="6k1/r4ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1" solution="Re8#" explanation="A torre em e8 controla f8 e h8. Os próprios peões bloqueiam f7, g7 e h7. A torre em a7 não pode capturar nem se interpor." caption="As brancas jogam. Encontre o mate em um lance."></study-position>
+
+**Correção: 1.Te8#.** O rei negro é atacado na oitava fila. Suas casas f8 e h8 são controladas pela torre branca; f7, g7 e h7 estão ocupadas por seus próprios peões. A torre a7 não pode capturar o atacante nem atingir f8 para bloquear o xeque. Nomear o padrão não era suficiente: essas verificações estabelecem o mate.
+
+Depois de esconder o tabuleiro, recoloque as peças e explique por que a torre preta não defende. Se você guardar apenas "torre branca em e8, rei negro encerrado", você corre o risco de apagar precisamente a condição que vai mudar.
+
+### Posição B: um defensor mudou de linha
+
+Retome exatamente a posição A, mas mova a torre preta de a7 para a8. As brancas ainda jogam. Antes de responder, nomeie essa única diferença.
+
+**Correção: 1.Te8+ não é mais mate, pois 1...Txe8 é legal.** A torre a8 atravessa b8, c8 e d8 e captura a torre branca. O rei negro fica atrás de seus três peões; a aparência do corredor está intacta. É a defesa disponível, e não a formação dos peões do roque, que muda a conclusão.
+
+Se você tivesse colocado a torre em a7 ao reconstruir o diagrama de memória, o erro é sobre a posição memorizada. Se você a colocou corretamente em a8, mas anunciou mate, o erro diz respeito à revisão da sua defesa. Essas duas respostas falsas exigem correções diferentes.
+
+### Posição C: o rei tem uma saída
+
+Parta novamente da posição A. Devolva a torre preta a a7 e avance o peão preto h7 em h6. Nada mais muda. Desta vez, a torre ainda não pode retomar em e8, mas o rei possui outro recurso.
+
+**Correção: 1.Te8+ Rh7 é legal.** A casa h7 está livre e nenhuma peça branca a ataca. O lance de torre dá xeque, mas o rei pode escapar. Esta resposta é suficiente para refutar "mate em um"; não pretende resolver o final que se segue.
+
+### O que a comparação permite aprender
+
+| Resposta observada  | Dificuldade em examinar  | Trabalho proposto |
+| ---  | ---  | --- |
+| Você coloca uma peça na casa que ela ocupava na posição anterior  | Confusão entre dois estados  | Reconstituir cada posição separadamente e depois nomear a diferença |
+| Você reproduz todas as peças, mas anuncia três mates  | Motivo reconhecido sem verificação  | Procurar sucessivamente captura, interposição e fuga do rei |
+| Você encontra as respostas com o modelo, mas não depois de escondê-lo  | Dificuldade de recuperação nesta tarefa  | Retomar a descrição das relações entre as peças e depois verificar sem olhar |
+
+Esta tabela não é um teste clínico nem uma medida do número de chunks. Ela simplesmente torna o erro observável. Na sessão seguinte, misture a ordem das três posições: conhecer o rótulo "posição B" seria um indício sem relação com a torre que defende.
+
+Uma resposta completa deve conter o lance, a eventual defesa e a condição decisiva. Você passa da lembrança “conheço o mate do corredor” para um conhecimento condicional: “funciona aqui porque o rei não tem nem fuga, nem captura, nem interposição”. Para seguir estas condições durante uma sequência de lances, continue com o exercício de [concentração e atualização da posição](/pt-br/blog/xadrez-e-concentracao/).
+
+## Consolidar uma ideia em vez de colecionar os lances
+
+Você pode aprender uma sequência precisa de abertura e o plano que acompanha. Os dois não se excluem. O importante é saber o que você fará se o adversário desviar.
+
+Depois de uma sessão, tente recuperar uma posição ou explicar uma decisão sem olhar. Verifique em seguida. Roediger e Karpicke (2006) mostram um benefício da prática de recuperação para lembrar os textos mais tarde em suas experiências; eles não testam uma dose ideal de treino de xadrez ou cada tipo de memória.
+
+Adapte suas revisões às dificuldades que você observa. Uma duração de 30 a 60 minutos ou três a cinco sessões por semana pode ser uma escolha de organização, não uma prescrição científica que garanta um efeito.
+
+### O que o estudo sobre a prática de recuperação permite propor
+
+Nas experiências de Roediger e Karpicke, os alunos aprendem textos e passam por testes de recuperação ou reestudam o material. O desempenho nos testes posteriores mostrou o benefício de tentar lembrar nessas condições. População e material não são os de um estudo de treinamento de xadrez. [Resumo do estudo](https://profiles.wustl.edu/en/publications/test-enhanced-learning-taking-memory-tests-improves-long-term-ret/).
+
+Você pode se inspirar para construir um exercício, desde que você distinga a inspiração da validação. Fechar o livro e reconstruir a ideia permite comparar o que você realmente conseguiu recuperar com a explicação impressa. Isso não define o número de posições a serem aprendidas ou o tempo de revisão ideal para você.
+
+Há uma forma simples de corrigir sem sugerir a resposta. Peça a outra pessoa que diga apenas se alguma peça foi parar na casa errada. Reconstrua primeiro o diagrama. Só depois receba uma pista sobre xeque, defesa ou casa de fuga. Isso preserva a distinção entre lembrar e avaliar.
+
+### Uma quarta ficha feita pelo parceiro
+
+Depois de resolver os três diagramas, deixe outra pessoa escolher qual deles montar. Ela pode fazer uma única alteração e deve descrevê-la por escrito antes de lhe mostrar a posição. Você informa primeiro o que mudou e só depois se Te8 ainda é mate. A ordem importa. Se responder “não é mate” por ter visto seu parceiro mexer em uma peça, talvez acerte o resultado sem sequer localizar a defesa. Uma resposta completa nomeia a nova casa, o lance legal que ela permite e a razão pela qual o rei sobreviveria. Confiram a anotação original juntos.
+
 ## Fontes
 
 - Chase, W. G. e Simon, H. A. (1973), *Perception in chess*, Cognitive Psychology, 4, 55–81, [original](https://gwern.net/doc/psychology/chess/1973-chase.pdf).

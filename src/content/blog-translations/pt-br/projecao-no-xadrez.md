@@ -160,6 +160,12 @@ Uma única pergunta basta para pegá-lo: de onde vem aquilo que eu acho que sei 
 
 *Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Ele aprofunda um mecanismo inventariado em [os mecanismos de defesa no xadrez](/pt-br/blog/mecanismos-de-defesa-no-xadrez/). Ver também [a teoria da mente no xadrez](/pt-br/blog/teoria-da-mente-no-xadrez/).*
 
+## Quando o silêncio do parceiro admite duas leituras
+
+Depois de uma derrota fictícia, uma jogadora propõe analisar o final. O adversário guarda as peças sem responder. Ela pensa que ele teme admitir que esteve perdido. Uma explicação igualmente compatível com o gesto é que o ônibus dele sai em cinco minutos. A posição pode decidir se havia vitória no tabuleiro; ela não contém informação sobre o horário do ônibus.
+
+Na súmula, a jogadora pode registrar “recusou a análise” apenas se houve uma recusa clara. Quanto à posição, pode registrar “achei que havia vitória e quero demonstrá-la”. Essas duas anotações levam a verificações diferentes. Uma conversa pode esclarecer o gesto; mover as peças testa a avaliação. Separá-las também evita que uma avaliação correta do final pareça confirmar, por tabela, uma leitura improvável da intenção alheia.
+
 ## Fontes
 
 - Ross, L., Greene, D., & House, P. (1977). The « false consensus effect » : An egocentric bias in social perception and attribution processes. *Journal of Experimental Social Psychology*, 13(3), 279–301.

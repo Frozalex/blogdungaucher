@@ -154,6 +154,14 @@ O rating Elo tem o perfil de uma recompensa externa esperada. Mas saber se ele t
 
 *Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Um artigo futuro tratará da teoria da autodeterminação. Veja também [Elo e autoestima](/pt-br/blog/xadrez-autoestima-elo/), [dopamina e xadrez](/pt-br/blog/dopamina-e-xadrez/) e [burnout no xadrez](/pt-br/blog/burnout-no-xadrez/).*
 
+## Quanto vale uma terça-feira sem torneio?
+
+Imagine uma escola de xadrez que costuma reservar as terças para partidas livres. A professora quer saber quais atividades despertam curiosidade fora das aulas. Ela oferece três mesas. Na primeira há uma posição de ataque para resolver em duplas. Na segunda, finais curtos que se podem jogar alternando as cores. Na terceira, tabuleiros disponíveis para inventar problemas. Uma criança pode trocar de mesa ou ficar sentada vendo um amigo jogar. O que interessa à professora é o que cada uma procura quando tem escolha.
+
+Agora acrescente um detalhe. Na semana passada, a professora entregou uma medalha a quem chegou primeiro à solução do ataque. Nesta terça, dois alunos perguntam se ainda vale medalha. Um terceiro volta à mesma mesa para mostrar uma defesa que descobriu em casa. Os três escolheram exatamente a mesma atividade por motivos possivelmente diferentes. Perguntar o que vieram fazer esclarece mais do que contar quantas crianças se sentaram ali.
+
+Na semana seguinte, a professora pode reservar alguns minutos para as crianças trazerem posições próprias. Se ninguém trouxer nada, ainda há várias explicações plausíveis. Talvez não tenham tabuleiro em casa, não saibam registrar a posição ou simplesmente prefiram jogar ao vivo. O desenho da atividade precisa oferecer um jeito acessível de participar antes que o adulto interprete o silêncio como falta de interesse.
+
 ## Fontes
 
 - Lepper, M. R., Greene, D., & Nisbett, R. E. (1973). Undermining children's intrinsic interest with extrinsic reward : A test of the « overjustification » hypothesis. *Journal of Personality and Social Psychology*, 28(1), 129–137.

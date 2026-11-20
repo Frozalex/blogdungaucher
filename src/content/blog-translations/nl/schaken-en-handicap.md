@@ -137,6 +137,16 @@ Het schaakbord blijft een van de weinige ruimten waar cognitieve prestaties zich
 
 ---
 
+## Een speelzaal testen vanaf de voordeur
+
+Neem bij de voorbereiding van een clubavond eens de route van een bezoeker in plaats van alleen het bord te inspecteren. Begin buiten bij de aangekondigde ingang. Is duidelijk waar iemand zich meldt wanneer de deur dicht is? Kan de inschrijving worden afgehandeld zonder een bordnummer op een hoog opgehangen vel te moeten lezen? Kun je de stoel aan bord vijf bereiken terwijl de andere deelnemers al zitten? Op een lege middag oogt de doorgang soms ruim. Met jassen, uitstekende stoelpoten en twee toeschouwers aan het uiteinde van een rij ziet de route er anders uit.
+
+Vraag de betrokken speler hoe een praktische aanpassing er voor hem of haar uitziet. Bij de ene tafel volstaat het de klok links te zetten en het bord na afloop op dezelfde plek terug te leggen. Elders is een tweede bord, duidelijke gesproken notatie of een andere zitplaats gewenst. Laat de organisator dat vóór de ronde met beide spelers en waar nodig met de wedstrijdleider afspreken. Een goedbedoelde verandering midden in het eindspel kan een vertrouwde opstelling juist verstoren. Het helpt als één aanspreekpunt weet welke afspraak is gemaakt, zodat de speler die niet aan iedere nieuwe vrijwilliger hoeft uit te leggen.
+
+Ook de analyse na de partij verdient aandacht. Iemand die de partij kon volgen dankzij het rustig noemen van zetten, kan buiten het gesprek vallen zodra drie mensen tegelijk stukken verplaatsen. Kondig bij de nabespreking aan wie de stukken bedient en op welk moment de beginstelling van een variant wordt teruggezet. Bied de notatie achteraf aan op een manier die de speler zelf kan lezen.
+
+De beste toets is de vraag wat iemand bij een volgende ronde nog zelf moet regelen om dezelfde partij te kunnen spelen. Als elke aanpassing uitsluitend berust op de aanwezigheid van één behulpzame clubgenoot, blijft deelname kwetsbaar. Schrijf de afgesproken praktische oplossing op voor de volgende ronde en laat de speler zelf aangeven welke informatie daarvoor nodig is. Daarmee wordt een toevallig goed verlopen avond ook voor een volgende bezoeker beter georganiseerd.
+
 ## Kernpunten
 
 - Blinde schaakspelers gebruiken **speciale borden** (verhoogde vakjes, gemarkeerde stukken) en bereiken het niveau van Nationaal Meester

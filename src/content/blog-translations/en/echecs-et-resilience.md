@@ -94,6 +94,20 @@ Here is a practical routine to try after a difficult loss. Its order and timings
 
 Your next session can begin with one position. What was your plan? Which opponent reply did you neglect? Which exercise would help you recognise the situation better? These questions give you a possible action without requiring disappointment to have disappeared.
 
+## The next round starts in thirty minutes
+
+You have just lost a rook ending that you thought was drawn. A teammate wants to analyse, the pairing for the next round is on the wall, and lunch is still in your bag. Which action addresses the actual difficulty? If you cannot bear to look at the position, a one-line note can preserve the question for later: “Could the king cross before the rook started checking from the side?” Add the move number and whether you thought you had time to calculate. That is enough information to recover a useful position. You can eat, find your board and make the next decision on its own terms. Declining analysis now and choosing never to revisit the game are different choices.
+
+Suppose instead the next round is tomorrow and the opponent offers to show you one idea. Ask for the earliest moment at which their plan changed. They might name a move ten turns before the blunder you remember. Draw both positions. If they are different, write down the connection the opponent proposes. Perhaps an early pawn advance gave the king an entry square and a later rook check allowed the king to reach it. It is possible for both decisions to matter. A story in which everything was fine until one last careless move may feel better and be a poor map of the game.
+
+## What would a successful return look like?
+
+In the next tournament game, the open file you neglected yesterday appears on the other side of the board. You notice it, spend time on the best invasion square and choose a sensible waiting move. Twenty moves later you lose on time. Have you made progress? Under a goal of “win the next game” the answer is no. Under the narrower question you saved after yesterday's defeat, there is evidence of a change: you now saw and examined the relevant square. Keep those two statements together. Separating them gives you permission to learn from one decision without having to portray the whole afternoon as a success.
+
+Reverse the example. You win because the opponent leaves a rook en prise, yet you again miss the entry square. The training question survives the happy result. Return to it with a partner and change one feature of the position at a time. Move a pawn, relocate the defending rook or give the other side the move. Which change prevents the king coming through? You are asking a question that can sometimes be settled at the board. That is more actionable than asking whether you have become a “resilient player” after one good or bad weekend.
+
+Someone may decide that the most sensible return is a social game next week instead of another rated event tomorrow. If the purpose of chess is to enjoy a regular activity with friends, adjusting the format can serve that purpose directly. The useful measure is whether the chosen next step fits the person's time, priorities and desire to play. Another result, pleasant or painful, is information about a game. It need not become a test of whether somebody has recovered correctly.
+
 ## Sources
 
 - Seligman, M. E. P. (1990). *Learned Optimism*. Knopf. [Bibliography from the author’s Positive Psychology Center](https://ppc.sas.upenn.edu/research/attributional-style-adults): the explanatory-style framework.

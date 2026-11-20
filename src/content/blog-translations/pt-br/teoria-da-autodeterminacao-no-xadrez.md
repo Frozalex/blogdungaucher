@@ -168,6 +168,14 @@ E isso aponta para a alavanca mais rentável, que não tem nada a ver com treino
 
 *Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a motivação intrínseca no xadrez](/pt-br/blog/motivacao-intrinseca-no-xadrez/), [a solidão no xadrez](/pt-br/blog/xadrez-e-solidao/) e [burnout no xadrez](/pt-br/blog/burnout-no-xadrez/).*
 
+## Duas versões da mesma tarefa de clube
+
+Um treinador entrega a todos a mesma posição de final e reserva quinze minutos para resolvê-la. Na primeira versão, cada aluno entrega uma lista de lances e recebe uma nota. Na segunda, pode escolher entre defender o lado mais fraco e tentar converter a vantagem; no fim, os parceiros trocam os papéis e explicam onde mudaram de ideia. Material, tabuleiro e duração são idênticos. A possibilidade de decidir como abordar o problema é diferente.
+
+Para avaliar essa mudança, o treinador pode ouvir também quem preferia a primeira versão. Um iniciante talvez quisesse um objetivo mais claro antes de escolher o lado. Autonomia pode significar poder pedir uma instrução direta. Para aquele grupo, a próxima tentativa poderia oferecer uma posição guiada e uma segunda opcional. O sinal interessante seria o motivo que cada aluno dá para querer voltar à atividade.
+
+Ao terminar, ofereça ao participante a chance de modificar uma condição concreta para o próximo encontro. A escolha entre rever o próprio erro e trazer uma posição favorita pode revelar qual parte do trabalho ele quer assumir.
+
 ## Fontes
 
 - Deci, E. L., & Ryan, R. M. (1985). *Intrinsic Motivation and Self-Determination in Human Behavior*. Plenum.

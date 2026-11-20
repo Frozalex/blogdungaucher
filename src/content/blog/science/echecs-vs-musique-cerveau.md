@@ -102,6 +102,18 @@ Tu peux choisir la musique pour jouer avec d'autres, ou les échecs pour explore
 
 Pour suivre le progrès, décris une opération : tenir le rythme d'un passage, reconnaître une progression harmonique, calculer une défense ou jouer une finale. Ce suivi aide à décider quoi travailler ensuite. Il évite de demander à une formule vague sur le cerveau de choisir à ta place.
 
+## Deux façons très différentes de reprendre après une erreur
+
+Imagine que tu apprennes quatre mesures d'un morceau et une suite forcée de quatre coups. Dans les deux cas, tu peux répéter jusqu'à reproduire l'enchaînement sans aide. Puis quelque chose change. Dans le morceau, le professeur te demande de commencer directement à la troisième mesure ; sur l'échiquier, ton partenaire remplace le deuxième coup adverse par une autre défense légale. Ce sont deux tests différents. Le premier vérifie l'accès à un point de départ intérieur à une séquence connue. Le second exige peut-être d'abandonner entièrement la séquence. Une restitution parfaite depuis le début peut masquer la difficulté dans les deux cas.
+
+Prépare une variante de chacun des tests pour clarifier la comparaison. Aux échecs, présente directement le diagramme après le deuxième coup prévu et demande au joueur de retrouver la suite. Tu obtiens une tâche de reprise plus proche de celle du musicien. En musique, propose au contraire un accompagnement différent et demande à l'instrumentiste d'adapter une phrase courte, si ce type d'exercice correspond à sa pratique. Tu obtiens une tâche de réaction à un changement. La distinction de départ porte sur les consignes données, autant que sur l'instrument ou l'échiquier.
+
+Comment traiter une erreur ? À l'instrument, répéter le passage à partir du temps juste avant la difficulté peut révéler que c'est la transition des doigts qui pose problème. Au jeu, redessiner la position immédiatement avant l'erreur peut révéler que la pièce adverse était toujours protégée. Recommencer systématiquement au tout début donne beaucoup de pratique au début du morceau ou de la variante et peu de pratique à l'obstacle lui-même. Compte les reprises réussies au point difficile, et confronte le lendemain l'élève à un autre point de départ.
+
+Rien dans cette activité ne demande de décider quel loisir mobilise davantage le cerveau. Elle suffit pourtant à préparer deux séances plus utiles. Un enseignant peut écrire exactement ce qu'il guette : retrouver un passage sans l'élan des premières mesures, ou redécider quand l'adversaire cesse de suivre le scénario. Deux progrès très concrets peuvent être décrits avec des verbes différents. Les remplacer par une même note d'« intelligence » effacerait précisément l'information qui permet au professeur d'ajuster la séance suivante.
+
+Chacun peut conserver un enregistrement du point précis où la reprise devient autonome.
+
 ## Sources
 
 - Schellenberg, E. G. (2004), *Music Lessons Enhance IQ*, Psychological Science, 15(8), 511–514. [Texte de l’auteur](https://sites.utm.utoronto.ca/sites/sites.utm.utoronto.ca.glenn_website/files/download/SchellenbergPS2004.pdf).

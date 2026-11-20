@@ -123,6 +123,14 @@ De speler die vijf uur blitz per dag online speelt in de eenzaamheid van zijn ka
 
 Schaken kan een school van productieve eenzaamheid zijn. Het kan ook een toevlucht van het sociale leven zijn. Het verschil is de intentie, en het bewustzijn van wat je aan het doen bent.
 
+## Een clubavond bekijken vanuit de stoel van een nieuwkomer
+
+Je stapt binnen terwijl de indeling al aan de muur hangt. Mensen kennen elkaars voornamen, weten waar de klok staat en vragen zonder uitleg naar een partij van vorige week. Voor de vaste spelers voelt die avond vertrouwd. Een nieuwe bezoeker kan aan hetzelfde bord drie uur schaken en bij vertrek nog steeds niemand weten te vinden voor de volgende afspraak. Wie achteraf alleen het aantal bezochte clubavonden telt, mist dat verschil.
+
+Een kleine verandering is na de partij een tweede stoel bij het analysebord vrij te houden en iemand een precieze vraag te stellen. Op welke zet wilde je de dames ruilen? Die vraag is gemakkelijker te beantwoorden dan een algemeen verzoek om iets over jezelf te vertellen. Het diagram blijft een gedeeld onderwerp wanneer de verliezer weinig behoefte heeft aan een uitgebreid verhaal. Een organisator kan ook expliciet melden dat meekijken zonder te praten prima is. Hetzelfde gebaar dat voor de ene speler uitnodigend is, voelt voor de andere als een nieuwe verplichting.
+
+Een week later kun je als club iets anders bekijken dan het ledenaantal. Wist de bezoeker hoe hij zich kon aanmelden, bij wie hij terechtkon als zijn tegenstander afwezig was en hoe hij na zijn partij nog een bord kon gebruiken? Dat zijn drie vragen waarop de vereniging zelf invloed heeft. Iemand kan uitstekend alleen analyseren en tegelijk graag een bekende begroeten bij de volgende ronde. Als je een geslaagde avond uitsluitend herkent aan luidruchtige gesprekken, zie je dat stille soort betrokkenheid over het hoofd.
+
 ## Bronnen
 
 - Winnicott, D. W. (1958). The capacity to be alone. *International Journal of Psycho-Analysis*, 39, 416-420.

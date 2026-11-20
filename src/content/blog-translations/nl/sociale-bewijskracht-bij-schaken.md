@@ -147,6 +147,18 @@ De krachtigste hefboom van de marketing is hier onschadelijk te maken met een fi
 
 *Dit artikel bouwt voort op ons artikel over de psychologie van persuasie bij schaken. Zie ook de wederkerigheid bij schaken.*
 
+## De populairste zet van wie?
+
+In een trainingsgroep bekijkt iemand de openingsverkenner. De bovenste zet is duizenden keren gespeeld, een alternatief slechts enkele tientallen keren. ‘Iedereen doet het dus zo’ klinkt overtuigend, maar de teller bevat geen adressenlijst van verschillende mensen. Een zeer actieve speler kan honderd partijen bijdragen. Een populair videokanaal kan een variant aan veel volgers hebben gedemonstreerd, waarna zij allemaal hetzelfde proberen. De partijen blijven echte partijen; de reeks vertegenwoordigt alleen minder onafhankelijke beoordelingen dan het grote getal suggereert.
+
+Neem het volgende verzonnen voorbeeld. Een zet staat in honderd partijen en scoort vijfenvijftig punten. Een tweede zet staat in tien partijen en scoort zes punten. Het tweede percentage is hoger. Toch zou één volgende nederlaag die kleine tabel al merkbaar veranderen. Bovendien weet je nog niet wie de kleur uit de statistiek had, welk tempo werd gespeeld en hoe vaak de stelling langs een andere zetvolgorde bereikt werd. Dit hoeft geen reden te zijn om de gegevens weg te klikken. Ze geven je twee kandidaten en materiaal om te bestuderen.
+
+Open uit elk groepje één gewonnen én één verloren partij als die er zijn. Zoek waar de overeenkomst tussen de voorbeelden ophoudt. Misschien had de veel gespeelde zet een duidelijk terugkerend plan, terwijl de zeldzame zet zijn successen dankt aan één gemiste tactische verdediging. Misschien is het andersom en wordt alleen de hoofdvariant routinematig door spelers gekozen die de bedoeling ervan niet kennen. Door de stukken na te spelen maak je van een stemming een concrete vraag aan het bord.
+
+Een nuttige afsluiting van de clubavond is de database nog één keer openen met een ander filter. Kies een ander tempo of beperk de resultaten tot een duidelijk omschreven niveau. Kijk of de rangorde gelijk blijft. Als zij omslaat, wil dat niet meteen zeggen dat de eerste zoekopdracht fout was. Je hebt een ander gezelschap gevraagd. Vertel je trainingspartner welke verzameling bij jouw praktische vraag past en waarom. Voor een langzame teamwedstrijd wil je wellicht uitleg bij de rustigste verdediging. Voor een korte trainingssessie zoek je misschien vooral vaak voorkomende valkuilen. In beide gevallen heeft de populariteitskolom haar beste werk gedaan zodra zij tot een beter gekozen voorbeeldpartij leidde.
+
+Bewaar dat voorbeeld samen met het gebruikte filter, zodat je het later onder dezelfde voorwaarden terugvindt.
+
 ## Bronnen
 
 - Goldstein, N. J., Cialdini, R. B., & Griskevicius, V. (2008). A room with a viewpoint: Using social norms to motivate environmental conservation in hotels. *Journal of Consumer Research*, 35(3), 472-482.

@@ -139,6 +139,14 @@ Uma linha rara tem um valor prático real, e por um motivo que não tem nada de 
 
 Atenção, porém, à inversão. A busca sistemática de linhas raras **pela raridade delas** é a alavanca virada contra si mesmo: acaba-se valorizando uma variante porque ninguém a joga, o que é exatamente o raciocínio dos biscoitos. O critério útil continua sendo a qualidade da posição obtida, sendo a raridade apenas um bônus prático.
 
+## A última vaga no curso de sábado
+
+Pense num curso de aberturas que você tinha deixado para depois. Na sexta chega a mensagem anunciando uma vaga devolvida. Antes de abrir o pagamento, anote o conteúdo, o nível previsto, o tempo de deslocamento e o preço final. Cubra a linha que diz “última vaga” e compare os itens com uma dificuldade que você havia registrado nas suas últimas partidas. Se a sua maior dúvida é converter finais de torres, a desistência de outro aluno num curso sobre a Najdorf não modifica o problema que apareceu no seu tabuleiro.
+
+Às vezes a disponibilidade muda, sim, o valor da oportunidade. Pode ser o único sábado em que você e o parceiro da equipe conseguem analisar juntos uma variante útil para o campeonato. Escreva esse benefício numa frase. Ele continuaria valendo se o professor revelasse que sobraram três vagas. A diferença permite reconhecer o que você perderia de fato ao deixar passar o convite.
+
+Para completar o teste, formule uma condição que faria você recusar mesmo com uma vaga disponível. O curso pode pressupor conhecimentos que você ainda não tem; o seu parceiro pode estar indisponível; o encontro pode terminar depois do último ônibus. Decidir com essas informações à vista dá trabalho, mas permite explicar sua escolha depois que a urgência do anúncio já passou.
+
 ## Quatro práticas
 
 **Aplique o prazo de vinte e quatro horas.** Para qualquer compra ligada ao xadrez. A escassez fabricada é a única alavanca da lista de Cialdini que não sobrevive à espera.

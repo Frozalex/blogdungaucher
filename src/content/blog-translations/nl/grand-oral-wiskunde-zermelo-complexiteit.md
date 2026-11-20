@@ -58,6 +58,14 @@ Deze grens is wat de wiskunde van AlphaZero zo treffend maakt. In plaats van de 
 
 Dit idee komt terug in alle toegepaste wiskunde. In cryptografie beschermt men data door gebruik te maken van problemen waarvan de oplossing bestaat maar miljarden jaren zou vergen. In optimalisatie aanvaardt men suboptimale oplossingen omdat de optimale oplossing ontoegankelijk is. In statistiek werkt men met benaderende schatters omdat de werkelijke waarde onbekend is. De wiskunde van de complexiteit zegt ons niet alleen wat we kunnen berekenen: ze zegt ons wat we nooit zullen kunnen berekenen.
 
+## Een cijferoefening voor de vragen na de presentatie
+
+Schrijf op het bord een verzonnen spel met precies drie keuzes per beurt, waarin elke partij na vier beurten eindigt. Dat levert eenentachtig verschillende zettenreeksen van maximale lengte op. Laat de jury eerst voorspellen of er ook precies eenentachtig verschillende eindstanden moeten zijn. Het antwoord is nee. Twee reeksen kunnen naar dezelfde stand leiden. Omgekeerd kunnen twee borden waarop de stukken precies gelijk staan toch verschillende spelrechten hebben, bijvoorbeeld als een koning heen en weer is gegaan en het recht om te rokeren heeft verloren.
+
+Je kunt nu uitleggen wat je in een schatting eigenlijk telt. Tel je alleen de uiteinden, dan krijg je in het kleine voorbeeld eenentachtig. Tel je ook de wortel en de tussenliggende knopen van de volledige boom, dan krijg je één plus drie plus negen plus zevenentwintig plus eenentachtig, dus honderdeenentwintig. Beide berekeningen zijn correct. Het zou een fout zijn om het tweede getal te gebruiken als antwoord op de eerste vraag.
+
+Vraag ten slotte wat er verandert als de computer één miljoen keer sneller wordt. Voor dit model kun je enkele extra lagen doorzoeken. Het vertakkingspatroon verandert echter niet: iedere extra laag blijft het aantal uiteinden verdrievoudigen. Bij echt schaken varieert het aantal legale zetten van stelling tot stelling en kunnen programma's deelresultaten hergebruiken. Presenteer de drie keuzes dus uitdrukkelijk als een lesmodel. Een berekening op dat bord kan verklaren waarom het naïeve zoeken zo snel groeit; het is geen bewijs over alle mogelijke algoritmen of toekomstige machines.
+
 ## Conclusie
 
 Om mijn oorspronkelijke vraag te beantwoorden: de wiskunde bewijst dat schaken nooit door brute kracht opgelost zal worden, om drie samenhangende redenen. Ten eerste zegt de stelling van Zermelo ons dat het resultaat bestaat, maar geeft het ons niet. Ten tweede overstijgt het getal van Shannon, tien tot de macht honderdtwintig, elke denkbare opslag- en rekencapaciteit. Tot slot legt de Bremermann-limiet een fysieke grens vast waar geen enkele klassieke computer voorbij kan, en deze grens is ruim onvoldoende voor schaken.

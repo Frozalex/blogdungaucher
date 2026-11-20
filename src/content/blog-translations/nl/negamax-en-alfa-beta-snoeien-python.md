@@ -191,3 +191,13 @@ We zijn ver van dat ideale geval, omdat onze zetten worden onderzocht in de volg
 Dat is uitstekend nieuws. Het betekent dat er, gratis, nog een aanzienlijke factor te halen valt, zonder de evaluatie of het algoritme aan te raken: het volstaat de zetten in een slimmere volgorde te onderzoeken.
 
 **Volgend artikel:** de ordening van zetten. Hoe raad je, voordat je ze hebt onderzocht, welke de beste zijn, en waarom een heuristiek zo grof als "eerst de slagzetten" volstaat om de orde van grootte te veranderen.
+
+## Een afgesneden tak waarvan je de precieze waarde niet kent
+
+Neem een papieren zoekboom met twee opties aan de wortel, A en B. De eerste speler probeert de score zo hoog mogelijk te krijgen. Na A kan de verdediger kiezen tussen de eindwaarden drie en vijf, beide uitgedrukt vanuit dezelfde eerste speler. De verdediger kiest drie. De aanvaller weet nu dat hij met A minstens drie kan veiligstellen. Na B ziet het programma eerst een antwoord dat twee oplevert. De verdediger kan bij B die twee altijd kiezen. Het maakt voor de wortel niet uit of de nog niet geopende tweede envelop bij B duizend of min duizend bevat. In het eerste geval kiest de verdediger twee, in het tweede geval iets nog slechters voor de aanvaller. De aanvaller heeft A al.
+
+Laat de envelop dicht en schrijf op wat je werkelijk bewezen hebt over B. Twee is hier een bovengrens voor de waarde die de eerste speler na B kan afdwingen. Je hebt geen precieze waarde gevonden. Dat verschil wordt belangrijk zodra je een zoekresultaat wilt hergebruiken. Een andere tak kan later dezelfde stelling bereiken met strengere grenzen. Wie de oude twee als exact resultaat behandelt, kan dan een heel andere beslissing verkeerd afkappen.
+
+Zet nu alle getallen om naar het gezichtspunt van de speler die op de betrokken knoop aan zet is. Wat voor de een drie punten voordeel is, staat er vanuit de ander als drie punten nadeel. Teken bij iedere rand een minteken en controleer dat je het bij terugkeer naar de ouder precies één keer verwerkt. In echte code is het gemakkelijk de evaluatiefunctie al van teken te laten wisselen en bij de ouder nogmaals om te keren op een ongepaste plaats. Schrijf daarom op een testje wie telkens aan zet is, wat de bladwaarde betekent en welke waarde je verwacht terug te krijgen.
+
+Keer tenslotte de volgorde van de wortelzetten om en open nu eerst B. Het algoritme kan in dat geval minder vroeg weten dat A een goed alternatief biedt. Het zal mogelijk meer enveloppen moeten openen. Het resultaat van de volledig onderzochte wortel hoort bij dezelfde vaste diepte toch gelijk te blijven. Zo laat één klein voorbeeld tegelijk zien waar de tijdswinst vandaan komt en waarom de niet-geopende envelop geen antwoord op alle denkbare vragen bevat.

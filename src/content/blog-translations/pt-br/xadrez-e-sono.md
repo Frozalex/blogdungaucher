@@ -50,6 +50,34 @@ Se as dificuldades para dormir se repetirem ou atrapalharem seus dias, converse 
 
 O artigo sobre [as pausas](/pt-br/blog/beneficios-das-pausas-no-xadrez/) trata da organização das sessões em vigília; este aborda o lugar do sono e os limites dos resultados que podem ser transpostos para o xadrez.
 
+## O que aconteceu quando pesquisadores acompanharam enxadristas
+
+Moen, Olsen e Hrozanova acompanharam quatorze enxadristas noruegueses durante um período de cento e vinte dias. Os pesquisadores compararam os registros de sono com a evolução do rating. O desenho tem uma vantagem interessante para quem joga torneios. Em vez de examinar apenas o desempenho em uma tarefa breve de laboratório, os autores conseguiram observar jogadores ao longo de parte de sua rotina. Isso também trouxe uma dificuldade bastante concreta. Durante viagens, houve problemas para conectar os aparelhos à rede dos hotéis. Parte das noites que seria especialmente interessante estudar ficou sem registro. [Artigo de Moen e colegas](https://pubmed.ncbi.nlm.nih.gov/32849090/).
+
+Antes de interpretar uma média, imagine duas planilhas. Na primeira faltam noites espalhadas ao acaso durante quatro meses. Na segunda faltam sobretudo noites fora de casa. As duas podem ter o mesmo número de linhas preenchidas e ainda assim descrever rotinas diferentes. Um grupo tão pequeno também pode mudar bastante de perfil com a entrada ou a saída de um único participante. Esses detalhes ajudam a entender por que os resultados exploratórios do estudo não permitem montar uma tabela de horas de sono por ponto de rating.
+
+O próprio rating é uma medida indireta para essa pergunta. Ele reflete os resultados obtidos contra determinados adversários. Um jogador pode ter defendido um final difícil durante horas e perdido no último minuto. Outro pode ter vencido logo na abertura depois de um erro do adversário. A tabela registra uma derrota e uma vitória. Ela não revela quem estava mais atento durante o dia, muito menos em qual estágio do sono teria sido preparada a decisão do tabuleiro.
+
+## Refaça o caminho da manhã de trás para a frente
+
+Suponha que a rodada comece às nove e que você queira chegar ao salão às oito e quarenta. Se leva meia hora até lá e ainda precisa encontrar a entrada, marque a saída com margem. Antes dela vêm café da manhã, banho e preparação do material. Faça a conta com seus próprios horários. O dado que costuma faltar nessa lista é o fim da noite anterior. Entre levantar da mesa e deitar podem entrar uma conversa sobre a partida, a viagem de volta, uma refeição e o tempo necessário para desacelerar. O horário em que a rodada termina raramente coincide com o horário em que você consegue dormir.
+
+Se a partida acabar mais tarde do que o previsto, separe o que tem prazo do que pode esperar. Confirmar o endereço da próxima rodada e combinar a carona pode ser necessário ainda naquela noite. Descobrir se a troca de damas no lance vinte e oito ganhava um peão pode esperar. Para guardar a pergunta, bastam o número do lance e a variante que você considerou. Na manhã seguinte ou depois do torneio, essa pequena anotação ajuda a reconstituir o dilema sem obrigar você a abrir a análise completa antes de dormir.
+
+Considere também quem viaja junto. Uma única pessoa precisando procurar o endereço de madrugada pode atrasar todo o grupo. Deixar combinado na véspera quem verifica o transporte, onde estão os documentos e em que ponto vocês se encontram reduz tarefas que competem com o descanso. É uma decisão de logística que pode ser útil mesmo numa noite em que todos estejam perfeitamente dispostos.
+
+## Esquecimento, distração ou conhecimento que ainda falta?
+
+Pegue uma posição em que você deixou escapar a oposição dos reis. Refaça o final no dia seguinte, sem olhar a resposta. Se você ainda não sabe explicar o que muda quando o lance passa para o adversário, vale estudar a técnica. Se explica tudo com facilidade, volte à planilha da partida. Talvez tenha sobrado pouco tempo no relógio, talvez você tenha contado errado um lance de peão, talvez nem tenha percebido a transição para o final. A sensação de cansaço pode integrar o relato sem apagar as outras explicações.
+
+Compare esse episódio com uma tarefa de vigilância. O pesquisador pode pedir que uma pessoa responda a um sinal que aparece em intervalos irregulares e medir atrasos ou omissões. No tabuleiro, um xeque lateral também pode passar despercebido. A semelhança torna a comparação intuitiva, mas uma partida inclui memória, estratégia e decisões do adversário. Nenhuma conta transforma diretamente um atraso diante do sinal em uma quantidade prevista de erros na abertura.
+
+Se quiser acompanhar a própria rotina, anote durante alguns torneios apenas informações que você conseguirá recuperar com razoável consistência. Horário aproximado de deitar e de levantar, deslocamento, início da rodada e uma decisão que merece revisão já dão assunto para análise. Registre também um dia em que a partida correu bem. Um diário feito somente depois de derrotas favorece explicações que parecem convincentes até aparecer o primeiro contraexemplo. Use o registro para identificar uma mudança viável no calendário, sem estabelecer uma meta de estágio do sono a partir de um aplicativo.
+
+No fim de um torneio, vale distinguir duas perguntas. A primeira é o que você aprendeu naquela posição. A segunda é se a organização deixou espaço suficiente para o descanso de que você precisava. Pode haver uma bela vitória na manhã de um deslocamento mal planejado. Também pode haver uma derrota perfeitamente compreensível depois de uma boa noite. Revisar as duas perguntas em separado permite melhorar o próximo roteiro sem inventar uma história sobre a causa do resultado. A meta mais fácil de verificar costuma ser simples, como deixar o material pronto antes do jantar ou transferir a análise detalhada para um dia sem rodada.
+
+Se a organização mudar o horário, refaça a conta a partir da nova hora de saída. Dez minutos a mais na mesa de análise podem ter consequências diferentes conforme o trajeto até o hotel.
+
 ## Fontes
 
 - Harrison, Y., & Horne, J. A. (2000). *The Impact of Sleep Deprivation on Decision Making: A Review*. Journal of Experimental Psychology: Applied, 6, 236–249. [Revisão](https://gwern.net/doc/zeo/2000-harrison.pdf).

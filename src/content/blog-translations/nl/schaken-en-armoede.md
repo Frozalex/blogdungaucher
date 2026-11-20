@@ -138,6 +138,14 @@ Het bord kan een hefboom zijn. Maar een hefboom zonder steunpunt tilt niets op.
 
 *[Wilhelm Steinitz](https://nl.wikipedia.org/wiki/Wilhelm_Steinitz), de eerste schaakwereldkampioen, stierf in een gesticht in New York in 1900. Hij had niets meer. Schaken had hem niet beschermd tegen de armoede: het had hem alleen de mogelijkheid gegeven er als koning in te leven, een paar uur per dag, op vierenzestig velden.*
 
+## De werkelijke prijs van één uitwedstrijd berekenen
+
+Neem een jeugdspeler die aan een regionaal toernooi wil meedoen. Voor het voorbeeld kost inschrijven acht euro, een treinkaartje voor het kind zes euro en het kaartje voor een noodzakelijke begeleider twaalf euro. De reis en het inschrijfgeld komen dan samen op zesentwintig euro, nog voordat iemand iets heeft gegeten. Het is een rekenvoorbeeld, geen landelijk tarief. Het laat zien waarom een affiche met alleen het bedrag naast ‘inschrijving’ voor twee gezinnen iets anders kan betekenen. Wie al mee kan rijden, rekent met een heel ander totaal.
+
+Maak in de clubbegroting onderscheid tussen een tegemoetkoming achteraf en het rechtstreeks boeken van vervoer. Stel dat beide oplossingen zesentwintig euro vergoeden. Bij de eerste moet iemand dit bedrag kunnen voorschieten en daarna een formulier indienen. Bij de tweede kan de deelnemer meteen in de bus stappen. Op de jaarrekening lijken de kosten gelijk. De ervaring van het kind en het gezin kan wezenlijk verschillen. Een regeling werkt bovendien alleen als ook een nieuw lid weet bij wie het discreet kan aankloppen.
+
+De volgende vraag is hoeveel schaaktijd die uitgave koopt. Voor het ene gezin valt de terugreis samen met het einde van de ronde, voor het andere vertrekt de laatste bus halverwege een mogelijk lang eindspel. Wie standaard alleen zaterdagen telt waarop een kind was aangemeld, ziet een voortijdig vertrek aan voor ongeduld of gebrek aan ambitie. Vergelijk daarom bij een nieuw initiatief de aanmeldingen, aankomsten en daadwerkelijk uitgespeelde rondes. Praat ook met wie zich helemaal niet heeft aangemeld. Dat geeft de vereniging een veel beter aangrijpingspunt voor haar volgende besluit over vervoer, aanvangstijden en materiaal dan een ranglijst van haar meest succesvolle junioren.
+
 ## Bronnen
 
 - Sala, G., & Gobet, F. (2016). Do the benefits of chess instruction transfer to academic and cognitive skills? *Educational Research Review*, 18, 46-57.

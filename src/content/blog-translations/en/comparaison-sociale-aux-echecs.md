@@ -145,6 +145,14 @@ That's also the limit of the downward side: reassuring yourself by looking at so
 
 **Ask for the method, not the result.** When someone improves faster than you, the useful question isn't by how much, it's how. The rating is public, the method isn't, and yet the method is the only one of the two that transfers.
 
+## Read two club results with the names covered
+
+Picture a weekend event in which two teammates both score three points from five games. One started in the top half of the draw and faced lower-rated opposition after an early loss. The other started lower, won the first two rounds and then met the leaders. A photograph of the final standings gives the same score for both. It tells you little about who defended the hardest positions, who found a new idea at home, or who used the most time getting out of the opening. Before turning the result into a verdict about either player, ask what decisions you are actually comparing.
+
+If the comparison is meant to help with training, narrow the unit. Ask your teammate for an example from a game in which they had to decide whether to enter a pawn ending. Offer one of your own. Cover the names and record the candidates, the clock times and the reason each player considered the trade. Now compare two decisions of a recognisable kind. You may discover that your teammate counts pawn tempos before considering material, or that both of you overlook an outside passed pawn. Those observations give you something to try next week.
+
+If the comparison is instead about qualifying for a team, the final standings may be exactly the relevant measure. The important move is to keep the purpose explicit. It is perfectly coherent to congratulate somebody on qualifying, acknowledge that they finished ahead, and still leave the training session with a useful technique you contributed. A single table settles an event under its scoring rules. It cannot order all the different things two players have learned.
+
 ## What to Take Away
 
 Festinger proposed in 1954 that we evaluate ourselves by comparison to others, for want of an objective yardstick, and preferentially against people close to us.

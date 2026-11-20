@@ -219,6 +219,12 @@ La clé n'est pas de chercher plus vite. Elle est de **ne pas chercher** l'écra
 
 **Prochain article :** négamax et l'élagage alpha-bêta. Un coup optimal selon le même arbre, les mêmes scores, un arbre dix fois plus petit.
 
+### Une feuille de calcul pour déboguer une profondeur de deux
+
+Dessine une racine blanche avec deux choix, puis deux réponses noires sous chacun. Écris les valeurs finales du point de vue des Blancs : sous le premier choix, trois et moins quatre ; sous le second, zéro et un. Replie la feuille pour cacher les autres branches et résous chaque paire indépendamment. Les Noirs peuvent garantir moins quatre dans la première et zéro dans la seconde. Les Blancs doivent donc retenir le second choix. Une recherche qui retient le trois aura oublié de modéliser une réponse adverse.
+
+Pour rendre le test plus exigeant, inverse l'ordre des deux candidats et permute les deux réponses sous chaque candidat. Le score de racine doit toujours être zéro. Ajoute ensuite un troisième candidat contenant deux feuilles toutes deux négatives. Il ne doit pas être retenu. Cette manipulation contrôle une erreur fréquente : initialiser le meilleur score à zéro comme si l'on pouvait toujours choisir la nulle. Dans une position perdante, le meilleur résultat disponible peut rester négatif. Ce petit arbre permet de vérifier l'alternance des choix avant de chercher une faute dans les règles de déplacement des pièces.
+
 ## Sources
 
 Russell et Norvig exposent minimax, ses valeurs terminales et la coupure heuristique utilisés dans cette implémentation.

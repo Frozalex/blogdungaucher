@@ -69,6 +69,38 @@ Escolha um momento em que seu estado pareceu modificar sua escolha. Anote o que 
 
 O objetivo é encontrar um ajuste que você possa experimentar e reavaliar. Uma partida, sozinha, não revela sua identidade, sua infância nem toda sua relação com o fracasso.
 
+## Entenda o papel da experiência no que você vê
+
+Uma parte da reflexão começa antes do cálculo consciente: você nota uma peça exposta, uma diagonal ou um padrão de mate. Em seu estudo *Perception in chess*, [Chase e Simon (1973)](https://doi.org/10.1016/0010-0285(73)90004-2) acompanham três jogadores de níveis diferentes em tarefas de reprodução de posições, visíveis ou apresentadas por cinco segundos. O protocolo se interessa pela organização perceptiva e pela recordação, não pela personalidade de um campeão, nem por uma classificação da inteligência humana.
+
+O resumo ajuda a entender a questão estudada; o pequeno número de jogadores exige que não se transforme essa experiência em um retrato universal. Acima de tudo, ela convida a observar o que sua experiência torna imediatamente legível. Um padrão familiar pode guiar seus candidatos, às vezes levando você a aplicar depressa demais uma solução conhecida a uma posição diferente.
+
+**Exemplo para reproduzir:** após 1.e4 e5 2.Cf3 Cc6 3.Bc4, o bispo branco mira f7. Isso é suficiente para direcionar a atenção para essa casa; isso não prova que um ataque contra ela funciona. Os defensores, os tempos de desenvolvimento e as respostas das pretas ainda precisam ser examinados. Reconhecer "ataque a f7" é o início do cálculo, não uma conclusão.
+
+Para trabalhar esta passagem, tome duas posições semelhantes e explique uma diferença: uma casa de fuga, um defensor adicional, um xeque intermediário. Assim, você treina um reconhecimento acompanhado de verificações. Este exercício é proposto para aprendizagem; não constitui um teste cognitivo clínico.
+
+## Reconstituir um erro sem inventar seu estado interior
+
+**Caso fictício:** você deixa escapar um xeque adversário depois de perder um peão. Três explicações são possíveis: você ainda pensava na perda; você calculava um ataque; você quase não tinha tempo. As três podem atuar juntas. O arquivo da partida mostra o lance, às vezes o relógio; não mostra diretamente o seu pensamento.
+
+Então comece escrevendo o que você se lembra antes de ligar o motor. "Eu pensei que o rei poderia ir a h2" é mais utilizável do que "Eu perdi porque eu sou frágil". Adicione o seu grau de certeza: lembrança clara, impressão ou reconstrução posterior. Isso evita criar uma história muito consistente a partir só do resultado.
+
+Quando você analisar a posição, pergunte o que teria permitido ver a resposta. Teria bastado conferir os xeques disponíveis? Você conhecia o final que surgiu? O candidato estava presente, mas mal avaliado? A emoção pode explicar o contexto sem dar a correção técnica. Por outro lado, a presença de um erro técnico não significa que a emoção foi irrelevante.
+
+A meta-análise de Shields e seus colegas reúne experiências sobre estresse e funções executivas. Essas tarefas fornecem um quadro para a formulação de suposições; elas não permitem identificar retrospectivamente a causa de seu lance a partir de uma pontuação do motor. Esta distinção permite descrever a decisão com precisão e ainda levar em consideração o que você sentiu.
+
+## Uma experiência de treinamento pessoal, com um critério claro
+
+Escolha uma alteração limitada para algumas sessões comparáveis: fechar o e-mail durante a partida, escrever um objetivo antes de começar, ou manter uma reserva de tempo. Não tente cinco métodos ao mesmo tempo, porque você não saberia qual parece útil.
+
+Observe um comportamento próximo do objetivo: número de lances jogados por impulso, frequência de esquecimentos de ameaça elementar, capacidade de terminar a sessão na hora escolhida. Observe também o prazer e a fadiga. O rating está muito longe do mecanismo para julgar uma experiência curta por si só: você pode respeitar melhor sua rotina e perder contra adversários mais fortes.
+
+Finalmente, mantenha a possibilidade de que a mudança não o ajude. A psicologia aplicada não é uma coleção de regras obrigatórias para vencer: se uma rotina atrapalha, simplifique-a. Se uma preocupação persistente afeta outras áreas da vida, conferir variantes dificilmente esclarecerá toda a questão. O caderno serve para entender e ajustar, não para te vigiar constantemente.
+
+## Examinar a posição antes de saber o rating
+
+Na análise em dupla, esconda o nome dos jogadores e pare a reprodução um lance antes da virada. Cada um escreve o lance que ele espera e a resposta que mais o assustaria. Revele primeiro o lance jogado e só depois os nomes. Se o seu comentário passar de “este sacrifício parece duvidoso” para “um mestre certamente calculou tudo”, você tem dois julgamentos diferentes em uma posição estritamente idêntica. Mantenha o primeiro na folha. Volte ao tabuleiro em busca de uma defesa precisa ao sacrifício. Após o exame, você pode ter mudado de ideia por uma boa razão, mesmo que o prestígio do jogador tenha sido o impulso inicial. A variante encontrada dirá ao seu parceiro o que justifica sua mudança.
+
 ## Fontes
 
 - Shields, G. S., Sazma, M. A. e Yonelinas, A. P. (2016), *The effects of acute stress on core executive functions: A meta-analysis and comparison with cortisol*, Neuroscience & Biobehavioral Reviews, 68, 651–668, [artigo](https://www.grantsshields.com/wp-content/uploads/2016/08/Stress_and_EF_meta-analysis.pdf).

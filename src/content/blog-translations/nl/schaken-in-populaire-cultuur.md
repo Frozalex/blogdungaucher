@@ -20,12 +20,12 @@ faq:
     answer: "Verschillende factoren kwamen samen. Allereerst de timing: uitgebracht in oktober 2020, midden in de wereldwijde lockdown, toen mensen op zoek waren naar activiteiten thuis. Dan de narratieve en visuele kwaliteit van de serie: de schaakscènes zijn spectaculair goed gefilmd. En bovenal de keuze voor een vrouwelijke hoofdpersoon, waardoor een nieuw publiek werd aangetrokken dat zich niet had geïdentificeerd met een typische mannelijke geniaal. De stijging van 87% in de verkoop van schaakspellen en de explosie van Chess.com-aanmeldingen werden direct gemeten in de weken na de release."
   - question: "Hoe portretteert de cinema schakers doorgaans?"
     answer: "Historisch gezien slecht. De cinematografische schaker is intelligent maar sociaal onhandig, vaak obsessief tot pathologie, emotioneel koud. Het is het 'duistere genie', een erfenis van het Bobby Fischer-personage in de populaire verbeelding. Deze representatie is geëvolueerd: The Queen's Gambit toont een complexe speler met echte menselijke relaties. Searching for Bobby Fischer (1993) toonde een wonderkind in een warm gezinsverband. Nuance neemt toe, ook al blijft het stereotiep bestaan."
-  - question: "Spelen schaken een rol in de klassieke literatuur?"
-    answer: "Ja, aanzienlijk. Het Schaaknovelle van Stefan Zweig (1942) is misschien de mooiste novelle die ooit over schaken is geschreven: het gebruikt het spel als metafoor voor intellectuele weerstand tegen nazistische ontmenselijking. Vladimir Nabokov was een gepassioneerd speler en verwerkte schaakstructuren in verschillende romans, met name De Verdediging (1930). Lewis Carroll, schrijver van Alice in Wonderland, was ook speler: het vervolg, Achter de spiegel, speelt zich af op een reusachtig schaakbord."
+  - question: "Speelt schaken een rol in de klassieke literatuur?"
+    answer: "Ja, aanzienlijk. De Schaaknovelle van Stefan Zweig (1942) is misschien de mooiste novelle die ooit over schaken is geschreven: het gebruikt het spel als metafoor voor intellectuele weerstand tegen nazistische ontmenselijking. Vladimir Nabokov was een gepassioneerd speler en verwerkte schaakstructuren in verschillende romans, met name De Verdediging (1930). Lewis Carroll, schrijver van Alice in Wonderland, was ook speler: het vervolg, Achter de spiegel, speelt zich af op een reusachtig schaakbord."
   - question: "Hoe hebben streamers het imago van schaken veranderd?"
     answer: "Radicaal. Streamers zoals Hikaru Nakamura (grootmeester en streamer met miljoenen abonnees) of YouTube-makers zoals GothamChess (Levy Rozman) toonden schaken als een sociaal, grappig spel dat live wordt becommentarieerd met authentieke emotionele reacties. Dit imago, ver verwijderd van het stille solitaire genie, trok een veel jonger en diverser publiek aan. Online schaken wordt nu vaak gepresenteerd als een toegankelijke e-sport, met zijn memes, persoonlijkheden en controverses."
   - question: "Zijn er muzikale werken over schaken?"
-    answer: "De bekendste is de musical Chess (1984), met muziek van ABBA (Benny Andersson en Björn Ulvaeus), over een fictief match tussen een Amerikaanse en een Sovjet-speler tijdens de Koude Oorlog. De musical werd gespeeld op Broadway en in het West End, en verschillende nummers bleven populair ('One Night in Bangkok', 'I Know Him So Well'). Schaken verschijnt ook in hiphop als symbool van strategie en intelligentie: RZA van Wu-Tang Clan is een gepassioneerd speler die regelmatig schaakmetaforen in zijn teksten verwerkt."
+    answer: "De bekendste is de musical Chess (1984), met muziek van ABBA (Benny Andersson en Björn Ulvaeus), over een fictieve wedstrijd tussen een Amerikaanse en een Sovjet-speler tijdens de Koude Oorlog. De musical werd gespeeld op Broadway en in het West End, en verschillende nummers bleven populair ('One Night in Bangkok', 'I Know Him So Well'). Schaken verschijnt ook in hiphop als symbool van strategie en intelligentie: RZA van Wu-Tang Clan is een gepassioneerd speler die regelmatig schaakmetaforen in zijn teksten verwerkt."
   - question: "Heeft het Tata Steel-toernooi in Wijk aan Zee invloed gehad op de populariteit van schaken in Nederland?"
     answer: "Absoluut. Het Tata Steel-toernooi is een van de prestigieuze schaaktoernooien ter wereld en trekt jaarlijks de wereldtop naar de kleine kustplaats Wijk aan Zee. Het toernooi heeft generaties Nederlandse schakers geïnspireerd en draagt bij aan de rijke schaakcultuur die Nederland heeft voortgebracht, van wereldkampioen Max Euwe tot grootmeesters als Jan Timman en Anish Giri."
 ---
@@ -50,7 +50,7 @@ Ingmar Bergman drijft de metafoor in *Het Zevende Zegel* (1957) tot het uiterste
 
 De literatuur heeft schaken met meer nuance verkend dan de populaire cinema.
 
-*Het Schaaknovelle* (1942) van Stefan Zweig is misschien de mooiste novelle die ooit over het onderwerp is geschreven. Postuum gepubliceerd (Zweig had zelfmoord gepleegd de maand voor de publicatie), vertelt het het verhaal van een Oostenrijkse arts die door de Gestapo gevangen is gezet, geïsoleerd in een hotelkamer zonder boek of papier. Om zijn geestelijke gezondheid te bewaren, eigent hij zich een schaakhandboek toe en begint partijen mentaal na te spelen, tot hij zijn geest in twee afzonderlijke spelers dissocieert die elkaar bestrijden.
+*De Schaaknovelle* (1942) van Stefan Zweig is misschien de mooiste novelle die ooit over het onderwerp is geschreven. Postuum gepubliceerd (Zweig had zelfmoord gepleegd de maand voor de publicatie), vertelt het het verhaal van een Oostenrijkse arts die door de Gestapo gevangen is gezet, geïsoleerd in een hotelkamer zonder boek of papier. Om zijn geestelijke gezondheid te bewaren, eigent hij zich een schaakhandboek toe en begint partijen mentaal na te spelen, tot hij zijn geest in twee afzonderlijke spelers dissocieert die elkaar bestrijden.
 
 Het schaakbord als mentale toevlucht. Het schaakbord als ruimte van vrijheid in totale gevangenschap. Het schaakbord als grens tussen gezondheid en waanzin.
 
@@ -100,6 +100,10 @@ De schaakstukken dragen elk culturele associaties die ver reiken voorbij het sch
 
 Schaakmetaforen zijn doorgedrongen tot alledaags taalgebruik. "Schaakmat zetten" beschrijft een definitieve overwinning. "Een pion zijn" beschrijft iemand die door anderen wordt gemanipuleerd. "Remise" voor een onopgelost conflict. "Patstelling" voor een politieke of diplomatieke impasse. In het Nederlands zijn deze termen volkomen ingeburgerd, ook bij mensen die nooit een partij hebben gespeeld.
 
+## Een schaakboek als cultureel voorwerp
+
+In Nederland leeft schaken ook voort op de boekenplank. Max Euwe schreef voor lezers die thuis met een bord op tafel zijn analyses wilden volgen. Zo'n boek vraagt om een heel andere manier van kijken dan een filmscène. De lezer kan de bladzijde terugslaan, een beslissing aanvechten en zelf uitproberen wat er gebeurt. Dezelfde stelling wordt daarmee een gesprek tussen auteur en lezer. Wie die traditie wil verkennen, kan terecht bij de [bibliotheek van het Max Euwe Centrum](https://maxeuwe.nl/bibliotheek/). De verzameling biedt ook een aardige vraag voor een bezoek: hoe verschilt het beeld van de schaker op een oud boekomslag van het beeld op een hedendaagse filmposter?
+
 ## Wat de populaire cultuur over schaken zegt
 
 De culturele trajectorie van schaken, van het cinematografische afkortingsteken voor "koud genie" naar de Netflix-serie die massale bekeringen uitlokt, via streamers die voor hun webcam schreeuwen, zegt iets interessants over de relatie tussen representatie en praktijk.
@@ -119,34 +123,6 @@ De echte revolutionair was misschien niet Beth Harmon. Het was de camera die haa
 - [Schaken en streaming: hoe Twitch en YouTube het spel revolutioneerden](/nl/blog/schaken-en-streaming/)
 - [Schaken en handicap: wanneer het bord grenzen wegwist](/nl/blog/schaken-en-handicap/)
 - [Schaken en valsspelen: wat de Niemann-affaire echt onthulde](/nl/blog/valsspelen-schaken/)
-
----
-
-## Veelgestelde vragen
-
-### Waarom had The Queen's Gambit zo'n grote impact op de schaakpraktijk?
-
-Verschillende factoren kwamen samen. Allereerst de timing: uitgebracht in oktober 2020, midden in de wereldwijde lockdown, toen mensen op zoek waren naar activiteiten thuis. Dan de narratieve en visuele kwaliteit van de serie: de schaakscènes zijn spectaculair goed gefilmd. En bovenal de keuze voor een vrouwelijke hoofdpersoon, waardoor een nieuw publiek werd aangetrokken dat zich niet had geïdentificeerd met een typische mannelijke geniaal. De stijging van 87% in de verkoop van schaakspellen en de explosie van Chess.com-aanmeldingen werden direct gemeten in de weken na de release.
-
-### Hoe portretteert de cinema schakers doorgaans?
-
-Historisch gezien slecht. De cinematografische schaker is intelligent maar sociaal onhandig, vaak obsessief tot pathologie, emotioneel koud. Het is het "duistere genie", een erfenis van het Bobby Fischer-personage in de populaire verbeelding. Deze representatie is geëvolueerd: The Queen's Gambit toont een complexe speler met echte menselijke relaties. Nuance neemt toe, ook al blijft het stereotiep bestaan.
-
-### Spelen schaken een rol in de klassieke literatuur?
-
-Ja, aanzienlijk. Het Schaaknovelle van Stefan Zweig (1942) is misschien de mooiste novelle die ooit over schaken is geschreven: het gebruikt het spel als metafoor voor intellectuele weerstand tegen nazistische ontmenselijking. Vladimir Nabokov verwerkte schaakstructuren in verschillende romans. In Nederland schreef wereldkampioen Max Euwe meer dan honderd schaakboeken en beïnvloedde hij generaties spelers.
-
-### Hoe hebben streamers het imago van schaken veranderd?
-
-Radicaal. Streamers zoals Hikaru Nakamura en YouTube-makers zoals GothamChess toonden schaken als een sociaal, grappig spel dat live wordt becommentarieerd met authentieke emotionele reacties. Anish Giri draagt in Nederland bij aan dit toegankelijkere imago. Dit beeld, ver verwijderd van het stille solitaire genie, trok een veel jonger en diverser publiek aan.
-
-### Zijn er muzikale werken over schaken?
-
-De bekendste is de musical Chess (1984), met muziek van ABBA (Benny Andersson en Björn Ulvaeus), over een fictief match tussen een Amerikaanse en een Sovjet-speler tijdens de Koude Oorlog. De musical werd gespeeld op Broadway en in het West End, en verschillende nummers bleven populair. Schaken verschijnt ook in hiphop als symbool van strategie: RZA van Wu-Tang Clan is een gepassioneerd speler.
-
-### Heeft het Tata Steel-toernooi in Wijk aan Zee invloed gehad op de populariteit van schaken in Nederland?
-
-Absoluut. Het Tata Steel-toernooi is een van de prestigieuste schaaktoernooien ter wereld en trekt jaarlijks de wereldtop naar de kleine kustplaats Wijk aan Zee. Het toernooi heeft generaties Nederlandse schakers geïnspireerd en draagt bij aan de rijke schaakcultuur die Nederland heeft voortgebracht, van wereldkampioen Max Euwe tot grootmeesters als Jan Timman en Anish Giri.
 
 ---
 

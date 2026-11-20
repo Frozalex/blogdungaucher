@@ -101,6 +101,16 @@ Un bon joueur peut manquer de connaissances algébriques ; un bon mathématicien
 
 Tu peux travailler la formulation d'hypothèses et la vérification dans les deux activités, en annonçant explicitement le lien. L'intérêt du rapprochement est alors ce que tu peux démontrer ou réutiliser, sans transformer un classement ou une note en mesure totale de ton intelligence.
 
+## Une affirmation à corriger jusqu'à ce qu'elle soit vraie
+
+« Deux tours sur une colonne se protègent. » Voilà une phrase que tu peux tester comme un petit théorème. Mets une tour blanche en d1 et une en d6 sur une colonne libre entre elles. Dans ce premier dessin, chacune vise la case de l'autre. Intercale ensuite un pion en d4, sans déplacer les tours. La phrase initiale n'a pas changé, mais ton exemple favorable a cessé de fonctionner. Tu peux donc préciser la proposition en ajoutant une hypothèse sur les cases intermédiaires. L'idée de la démonstration vient directement de la règle de déplacement de la tour.
+
+Le mot « protéger » cache cependant une autre question. Veux-tu dire que la pièce vise géométriquement la case de sa partenaire ou qu'elle pourrait reprendre légalement une pièce qui la capturerait ? Mets le roi blanc en a1 et une tour noire en h1, avec la tour blanche d1 entre les deux, toutes les cases intermédiaires libres. La tour blanche de d1 regarde toujours vers d6, mais si elle quitte la première rangée pour reprendre en d6, elle découvre un échec contre son roi. Une ligne dégagée sur la colonne suffit au dessin géométrique ; la légalité d'une reprise exige aussi de vérifier la sécurité du roi après le déplacement.
+
+On peut alors écrire deux énoncés que l'on sait utiliser. Pour décrire la ligne de visée, précise la colonne commune et l'absence d'obstacle. Pour décider d'une reprise dans une partie, donne une position complète, exécute mentalement la capture et vérifie si ton roi est attaqué. Le mauvais réflexe serait de demander laquelle des deux réponses est la « vraie » indépendamment du verbe choisi. Elles résolvent deux problèmes dont les données ne sont pas les mêmes.
+
+En classe, laisse un camarade choisir une autre phrase usuelle, par exemple qu'un cavalier au bord a deux coups. Demande-lui la population de cases qu'il vise : un coin et une case du bord comme a4 n'offrent déjà pas les mêmes possibilités sur un plateau vide. Puis demande si les pièces présentes et les échecs au roi doivent entrer dans le compte. Écrire ces deux précisions suffit à transformer une formule mémorisée en question soluble. Le travail mathématique apparaît dans la portée du mot « tous » et dans le choix d'un contre-exemple ; le travail échiquéen consiste à vérifier que le diagramme respecte bien les contraintes annoncées.
+
 ## Sources
 
 - Sala, G. et Gobet, F. (2017), *Does Far Transfer Exist? Negative Evidence From Chess, Music, and Working Memory Training*, Current Directions in Psychological Science, [article](https://journals.sagepub.com/doi/full/10.1177/0963721417712760).

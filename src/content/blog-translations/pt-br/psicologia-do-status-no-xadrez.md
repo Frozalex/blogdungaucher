@@ -161,6 +161,12 @@ Resta uma carga que lhe é própria, e que é o preço da sua qualidade. Esse ra
 
 *Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [Elo e autoestima](/pt-br/blog/xadrez-autoestima-elo/), [a comparação social no xadrez](/pt-br/blog/comparacao-social-no-xadrez/) e [o estresse crônico no xadrez](/pt-br/blog/estresse-cronico-no-xadrez/).*
 
+## Uma análise de clube sem a etiqueta do rating
+
+Numa atividade fictícia de clube, o organizador projeta uma posição e recolhe as sugestões em papéis sem assinatura. Cada pessoa escreve um lance e a resposta adversária que mais teme. Primeiro o grupo examina essas respostas no tabuleiro. Só depois os autores revelam o próprio nome, se quiserem. Um iniciante pode ter visto uma defesa que escapou ao favorito, mesmo que o resto de sua variante esteja errado.
+
+Observe o que muda após a revelação. Alguém encontrou uma continuação nova ou apenas passou a falar com mais segurança? Guarde as duas versões da análise. O objetivo é dar à autoridade do especialista um uso verificável: se ele vê um detalhe a mais, consegue mostrá-lo. A contribuição do novato também permanece visível, com seus méritos e seus limites.
+
 ## Fontes
 
 - Marmot, M. G., Rose, G., Shipley, M., & Hamilton, P. J. (1978). Employment grade and coronary heart disease in British civil servants. *Journal of Epidemiology and Community Health*, 32(4), 244-249.

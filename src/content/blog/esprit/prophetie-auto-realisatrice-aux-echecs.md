@@ -106,6 +106,17 @@ Si tu entraînes, propose des objectifs discutés et des retours précis. La th�
 
 L’[effet Barnum](/fr/blog/effet-barnum-aux-echecs/) concerne les descriptions vagues ; le [biais de confirmation](/fr/blog/biais-de-confirmation-aux-echecs/) concerne la recherche d’informations. Les distinguer évite de faire d’une phrase sur ton jeu une explication psychologique complète.
 
+## Quand la sélection d'équipe change le nombre d'occasions
+
+Imagine deux membres d'un club qui arrivent au même moment. Alex et Sam ont une petite expérience des compétitions, mais le capitaine a déjà vu Alex gagner une belle partie. Il le choisit pour quatre déplacements et demande à Sam de rester disponible en réserve. À la fin du mois, Alex a remporté deux parties et obtenu une nulle. Sam a gagné une seule fois lors de son unique titularisation. À regarder les seules victoires, Alex semble avoir confirmé la préférence initiale. Mais quatre occasions et une occasion ne permettent pas la même démonstration.
+
+Discuter de ce cas oblige à nommer le chemin possible entre l'attente et le résultat. Le souvenir de la belle partie a pu conduire le capitaine à titulariser Alex plus souvent. Les déplacements lui ont donné davantage de chances d'obtenir des points et davantage de parties à analyser avec l'équipe. Une différence d'expérience peut alors commencer à se former. Elle n'est pas encore la preuve qu'au premier jour les deux joueurs auraient donné les mêmes résultats à conditions identiques. D'autres raisons de sélection, comme la disponibilité réelle le dimanche ou les couleurs nécessaires sur les échiquiers, peuvent aussi avoir joué.
+
+Un tableau plus utile noterait, pour chaque personne, le nombre de rencontres proposées, le nombre de rencontres acceptées, le nombre de parties jouées et les points obtenus. Une absence sur refus personnel ne raconte pas la même chose qu'une absence de proposition. Essaie ensuite de calculer le score des deux joueurs dans cet exemple. Alex a obtenu deux points et demi sur quatre si la dernière partie est une défaite. Sam a marqué un point sur un. Le second pourcentage est plus élevé, mais vient d'une seule rencontre. Aucun de ces petits chiffres ne suffirait à départager solidement les deux candidats pour toute la saison.
+
+Le capitaine n'a pas besoin de renoncer à toute sélection sportive. Il peut donner aux remplaçants un rendez-vous réel pour montrer ce qu'ils savent faire, expliquer les conditions de la prochaine sélection et vérifier qui pourra être présent. Une rencontre amicale à cadence lente, où les deux candidats jouent contre des adversaires de force voisine, produit des renseignements plus comparables qu'une accumulation de résultats récoltés dans des contextes complètement différents.
+
+Le mécanisme intéresse aussi le joueur qui se croit voué au banc de touche. Il peut demander un retour sur une position précise et une occasion définie de rejouer, plutôt que de devoir deviner si l'opinion du capitaine est immuable. Si l'occasion vient et que la partie est perdue, cela apportera une donnée de plus. Si elle ne vient jamais, la question restera celle de l'accès à la compétition. Distinguer ces cas donne à l'équipe un levier concret : agir sur le nombre d'occasions tout en continuant à évaluer ce que les joueurs font lorsqu'elles se présentent.
 
 ## Sources
 

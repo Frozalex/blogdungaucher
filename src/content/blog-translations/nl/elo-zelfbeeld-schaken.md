@@ -142,6 +142,18 @@ De oplossing is niet om je niet met de Elo bezig te houden. Het is om er een ind
 
 *De Elo is een meetinstrument. Het meet niet je waarde: alleen je prestatie in een spel, op een bepaald moment. Arpad Elo had waarschijnlijk niet voorzien dat zijn algoritme voor sommigen een bestaansmaat zou worden. Hij zou dat waarschijnlijk triest hebben gevonden, en hijzelf, een bescheiden speler, zou er misschien om hebben geglimlacht.*
 
+## Een uitslagenlijst op twee manieren lezen
+
+Stel dat je vier zaterdagen achter elkaar aan het eerste bord speelt. Je haalt één punt: twee remises en twee nederlagen. Een maand later speel je vier partijen aan een lager bord en scoor je drie punten. Op het eerste gezicht is het tweede resultaat veel aangenamer. Toch zou een trainer die alleen de punten ziet nog niet weten in welke maand je beter hebt verdedigd, meer kansen hebt geschapen of de moeilijkste tegenstand kreeg. Een getal zonder zijn vergelijkingsgroep zegt minder dan het op een scherm doet vermoeden.
+
+Neem daarom twee stroken papier. Op de eerste schrijf je de uitslagen in hun echte volgorde. Op de tweede noteer je bij elke partij een beslissing waarop je daadwerkelijk invloed had. Bijvoorbeeld de keuze om een toreneindspel met een actieve koning toe te laten of het moment waarop je dacht dat een loper ongedekt stond. Vouw de eerste strook dicht en geef de tweede aan een clubgenoot. Welke beslissing zou hij willen zien op een bord? Hij kan prima bij een verloren partij uitkomen. Als jij alleen naar de eerste strook had gekeken, was juist die partij misschien als eerste in het archief verdwenen.
+
+Sommige spelers vrezen dat interesse in inhoudelijke beslissingen hun ambitie ondermijnt. Ze willen hun score helemaal niet loslaten, want selectie voor het volgende team hangt deels van die score af. Je kunt beide motieven naast elkaar zetten. Schrijf voor het selectiemoment op uit welke partijen de teamleider zijn keuze maakt. Schrijf voor je eigen voorbereiding op welke stelling je onder vergelijkbare omstandigheden sterker wilt spelen. Het zijn twee verschillende vragen met twee verschillende tijdschalen. Je krijgt een kans om je techniek te verbeteren op een clubavond waarop geen enkel ratingpunt wordt toegekend.
+
+Een laatste proef: stel dat je tijdens een platformstoring een mooie partij hebt gewonnen waarvan de uitslag nooit in je profiel terechtkomt. Wat zou je dan toch bewaren? Misschien het eerst gevonden paardmanoeuvre, misschien de concrete zettenreeks waarmee je onder tijdsdruk remise had kunnen houden, misschien de bespreking met de tegenstander. Alles wat op dat lijstje komt, bestond al voordat er een cijfer achter je naam verscheen. Je rating kan dus een nuttige reden zijn om een nieuwe uitdaging te zoeken, terwijl je voor een antwoord op de vraag waarom een bepaalde partij ertoe deed naar de notatie moet terugkeren.
+
+Kijk na een seizoen welke van de twee stroken je helpt om de eerste clubtraining van september voor te bereiden. Waarschijnlijk heb je ze allebei nodig, maar gebruik je ze op een ander moment. De uitslagen ondersteunen de indeling. De gemarkeerde beslissingen bepalen welke stellingen er op het bord komen.
+
 ## Om verder te gaan
 
 - [Echecs en flow: hoe je flow bereikt op het schaakbord](/nl/blog/schaken-en-flow/)

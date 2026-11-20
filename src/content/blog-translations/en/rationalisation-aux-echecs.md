@@ -174,6 +174,10 @@ This is the hardest and most useful answer. The lesson of the faces experiment i
 
 Explicitly allowing "I don't know why I played that" frees up the space to go and find out.
 
+## Identify the point where the story changed
+
+Write down what attracted you to a move before looking at the engine. If the note says “wins a pawn,” keep it even if the move later turns out to work for a completely different reason. Your final annotation can say “I wanted the pawn; the continuation actually depends on the exposed king.” A brilliancy discovered after the game is a legitimate addition to the analysis. What teaches you about your decision is the gap between the two sentences. If you replace the first with the second, readers get a cleaner story and you lose a way to tell calculation from luck.
+
 ## What to Take Away
 
 Eighty-seven per cent of participants handed the photo they had rejected explained, with conviction, why they preferred it. They weren't lying: the system that produces justifications runs independently of the one that produces decisions, and it justifies whatever it's shown.

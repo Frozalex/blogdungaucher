@@ -198,3 +198,11 @@ En toch zoeken engines gewoonlijk twintig halve zetten diep. $30^{20}$ is een ge
 De sleutel is niet sneller zoeken. De sleutel is de overweldigende meerderheid van de takken **niet doorzoeken**, door te bewijzen dat ze de beste zet niet kunnen bevatten. En het mooiste is dat dit bewijs bijna niets kost, en dat het het resultaat **nooit** verandert.
 
 **Volgend artikel:** negamax en alfa-bèta-snoeien. Dezelfde zet gespeeld, dezelfde scores, een boom tien keer kleiner.
+
+## Een tegenvoorbeeld voor de gretige aanvaller
+
+Geef je zoekfunctie een klein bord op papier in plaats van meteen een hele partij. De eerste speler kan kiezen tussen een pion slaan en rustig ontwikkelen. Het slaan van de pion levert voorlopig één punt voordeel op. Na een gedwongen antwoord verliest die speler echter een toren. De rustige zet heeft twee mogelijke verdedigende antwoorden, die beide bij ongeveer gelijk materiaal eindigen. Stel de waarden van de twee eindstanden na de rustige zet voor dit voorbeeld vast op nul en één. De tegenstander zal de nul kiezen. Onder de roofzet blijft na het torenverlies een negatieve eindwaarde over. Vanaf een zoekdiepte die de verdediging bereikt hoort de motor dus rustig te ontwikkelen.
+
+Verwissel de volgorde waarin je de beide wortelzetten aanlevert. Als de gekozen zet dan volledig omslaat terwijl de waarden duidelijk verschillen, onderzoek dan of je na het terugzetten van een tak inderdaad weer dezelfde toestand onderzoekt. Stukken, beurt, rokaderechten en tijdelijke informatie over de laatste pionzet kunnen stuk voor stuk in de toestand van het bord zitten. Een fout bij het terugnemen kan ervoor zorgen dat de tweede tak ongemerkt vanuit de eerste tak verdergaat.
+
+Juist daarom is de papieren boom nuttig: daar kun je de verwachte beslissing aanwijzen zonder een tweede schaakprogramma om raad te vragen. Werkt die goed maar gaat het op het echte bord fout, dan heb je de oorzaak verder ingeperkt. Je kunt nu de zetgeneratie, het bijwerken van de toestand en de waardering elk met een gerichter voorbeeld onderzoeken.

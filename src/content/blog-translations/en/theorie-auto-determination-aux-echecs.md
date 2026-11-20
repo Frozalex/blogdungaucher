@@ -151,6 +151,12 @@ This isn't social consolation: it's what turns a loss into a shared object rathe
 
 **5. If you coach players, look at relatedness.** For a club or a coach it's the highest-return lever, because it's the only one online play doesn't supply and therefore the only one that makes a club irreplaceable.
 
+## Give the junior a decision with consequences
+
+A coach tells a junior, “It's your choice: another set of the same puzzles or you can stop training.” That is a choice in the literal sense, but it gives the junior little say in the learning itself. Consider a different invitation: select one ending from last week's games, decide whether to defend or attack, and choose whether you want the coach to pause after a mistake or play the position through. The junior's preferences now change what happens at the board.
+
+At the end, ask what was difficult and what kind of help would make the next attempt worthwhile. A younger player might point to the square they kept forgetting, or say they wanted more time to consider the coach's last move. A coach can respond with a concrete adjustment. There is no need for the child to use the language of autonomy, competence or belonging. What matters is whether their answer affects the next lesson. Keep one part of the exercise fixed so that improvement remains visible, while leaving room for the learner to ask a genuinely different question about the position.
+
 ## What to Take Away
 
 Deci and Ryan propose that lasting motivation depends on three needs: autonomy, competence and relatedness. The framework is solidly supported on autonomy, more debatable in its claim to universality, and very useful as a diagnostic grid.

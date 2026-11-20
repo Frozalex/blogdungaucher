@@ -98,6 +98,18 @@ Em uma posição de treinamento, escolha dois lances candidatos e examine uma re
 
 ![Cálculo: uma analogia com limites](/images/pt-br/minimax-02-profondeur-humain-moteur.svg)
 
+## Um nó da árvore que você pode conferir no papel
+
+Imagine uma árvore inventada com três lances das brancas. Ao final das linhas consideradas, A oferece resultados de mais três ou menos dois; B oferece mais um ou zero; C oferece mais dois ou menos quatro. Todos os números estão expressos do ponto de vista das brancas. Em cada ramo as pretas escolhem o menor resultado disponível. Restam, portanto, menos dois para A, zero para B e menos quatro para C. As brancas escolhem B.
+
+Agora acrescente, apenas em B, uma defesa das pretas que produz menos três. A escolha inicial muda para A. Nenhum valor antigo precisou mudar: foi o conjunto de respostas examinadas que mudou. No tabuleiro, esse é um bom motivo para anotar a defesa adversária que você descartou cedo demais, além do próprio lance errado. A regra minimax pode estar impecável mesmo quando a árvore desenhada pelo jogador está incompleta.
+
+### O mesmo exemplo com empate aceitável
+
+Se um empate bastar para ganhar o torneio, a decisão prática pode depender do relógio e da dificuldade de execução. Para testar essa pergunta diferente, você teria de alterar a definição de resultado no modelo. Trocar uma avaliação numérica pela sua preferência pessoal depois de ver a resposta muda o problema no meio do cálculo.
+
+Anote os valores ao lado de cada resposta adversária. Isso permite recuperar qual escolha efetivamente limita o resultado em cada ramo.
+
 ## Fontes
 
 - Russell, S., & Norvig, P. (sem data, capítulo on-line). *Adversarial Search*. Artificial Intelligence: A Modern Approach. [Capítulo](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).

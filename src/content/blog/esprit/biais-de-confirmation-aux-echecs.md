@@ -106,6 +106,17 @@ Le moteur peut ensuite montrer une réponse oubliée et aider à la comprendre. 
 
 Choisis enfin une position similaire à travailler. L’objectif est de rendre une défense plus accessible à ta recherche, sans transformer une erreur en verdict sur ta lucidité. Le guide d’analyse (article à venir) propose une démarche complémentaire.
 
+## Le pion empoisonné que personne ne veut défendre
+
+En séance de club, un joueur montre une position de son invention et annonce : « Le pion sur l'aile dame est empoisonné. » Très vite, les participants cherchent la combinaison qui le prouve. Ils proposent un échec, puis une attaque sur la dame, enfin le gain d'une tour. Leur enthousiasme produit de belles variantes. Il manque pourtant une personne autour de la table : quelqu'un qui ait vraiment intérêt à garder le pion pris et à survivre à l'attaque. Tu peux changer la qualité de l'analyse en distribuant les rôles avant de commencer.
+
+Donne au premier partenaire les pièces du camp qui offre le pion. Sa mission est de montrer une compensation concrète. Le deuxième joue le défenseur. Il reçoit un objectif plus simple que gagner immédiatement : arriver à une position où l'attaque annoncée a cessé et où il peut compter les pièces restantes. Le troisième inscrit le premier coup où leurs opinions divergent. À ce stade, la notation doit enregistrer les réponses ordinaires autant que les échecs spectaculaires. Une fuite de la dame vers une case peu active peut suffire à réfuter une combinaison.
+
+Lors de la deuxième manche, le défenseur est autorisé à refuser le pion. Attention à la question que cela résout. Si refuser aboutit à une finale confortable, c'est peut-être le meilleur choix pratique. Cela ne dit toujours pas si prendre était perdant. Pour résoudre cette deuxième question, replace le pion, effectue la prise litigieuse et donne le trait à l'attaquant. Deux questions proches ont alors deux diagrammes de départ différents. Numérote-les pour permettre au groupe de revenir exactement au bon point.
+
+L'entraîneur peut intervenir avec une seule contrainte : à la fin de la séance, chaque camp doit montrer un coup qu'il n'avait pas prévu au départ. Pour l'attaquant, ce sera une défense. Pour le défenseur, une manière plus forte de poursuivre que la combinaison dont tout le monde parlait. Si chacun ne rapporte que des lignes dans lesquelles son propre camp triomphe facilement, les deux partenaires n'ont probablement pas examiné les mêmes réponses.
+
+En quittant le club, reformule l'annonce initiale avec la précision que vous avez réellement gagnée. Peut-être le pion se prend-il à condition de rendre un tempo pour mettre le roi à l'abri. Peut-être l'attaque suffit-elle seulement à récupérer le matériel. Ou peut-être le défenseur s'est-il sauvé en trouvant un seul coup difficile. La conclusion rend alors service au prochain joueur de cette position. Il saura dans quelle branche chercher et à quel moment l'adversaire dispose d'un vrai choix. Elle conserve la part séduisante de l'idée de départ tout en donnant une place digne de ce nom à la défense.
 
 ## Sources
 

@@ -68,11 +68,11 @@ Zweig usava o xadrez como metáfora da resistência intelectual contra a desuman
 
 Beth Harmon é uma jogadora de gênio, mas seu gênio não é apresentado como uma maldição. Ela tem relações humanas reais, amizades, amores, uma vida social movimentada. É feminina e sedutora sem que isso seja apresentado como incompatível com suas capacidades intelectuais. Ela luta com o vício, mas essa luta não é apresentada como o "preço" de seu gênio : é uma ferida da infância, distinta do jogo.
 
-A série se apoiou no ex-campeão mundial [Garry Kasparov](https://pt.wikipedia.org/wiki/Garry_Kasparov) (para a autenticidade das posições jogadas) e em consultores em psicologia da performance. As cenas de jogo são filmadas como cenas de ação, com uma tensão dramática real, enquadramentos inovadores, uma trilha sonora que cresce.
+A série se apoiou no ex-campeão mundial [Garry Kasparov](https://pt.wikipedia.org/wiki/Garry_Kasparov) (para a autenticidade das posições jogadas). As cenas de jogo são filmadas como cenas de ação, com uma tensão dramática real, enquadramentos inovadores, uma trilha sonora que cresce.
 
 Resultado: pela primeira vez num grande formato audiovisual, o xadrez era representado como algo *vivo*. Não de frieza intelectual: de paixão. Não de solidão: de competição encarnada.
 
-O impacto sobre a prática real foi imediato e mensurável. O Chess.com publicou seus dados : entre outubro e dezembro de 2020, 2,3 milhões de novas contas criadas, quase tanto quanto em todo o ano de 2019. Os cursos de xadrez online exibiram listas de espera. Os clubes locais receberam pedidos de inscrição incomuns, notadamente de mulheres adultas, um público historicamente sub-representado.
+Uma compra e uma inscrição registram comportamentos diferentes. Para acompanhar a passagem do sucesso da série à prática regular, seria preciso observar a frequência das mesmas pessoas no clube ou na plataforma por um período maior. O comunicado sobre vendas nos Estados Unidos ajuda a localizar um pico, mas deixa essa pergunta em aberto.
 
 ## A revolução Twitch e YouTube
 
@@ -80,7 +80,7 @@ Paralelamente a *O Gambito da Rainha*, outra transformação cultural estava em 
 
 [Hikaru Nakamura](https://pt.wikipedia.org/wiki/Hikaru_Nakamura), Grande Mestre americano, começou a fazer stream no Twitch em 2017. Seu canal explodiu durante a pandemia, com até 50.000 espectadores simultâneos. Em 2024, ele conta entre os streamers de jogo mais seguidos do mundo, em todas as categorias combinadas.
 
-Levy Rozman (GothamChess) desenvolveu um formato YouTube de análise de partidas com um tom acessível, humorístico e emocional : celebrando as belas combinações, sofrendo com os blunders. Seu canal ultrapassa 4 milhões de inscritos.
+Levy Rozman (GothamChess) desenvolveu um formato YouTube de análise de partidas com um tom acessível, humorístico e emocional : celebrando as belas combinações, sofrendo com os blunders. Nesse formato, o comentário falado conduz a atenção do público de uma decisão à seguinte.
 
 Esses criadores fizeram algo que o cinema hollywoodiano não havia conseguido : mostraram que jogar xadrez podia ser *divertido*. Barulhento. Social. Acompanhado de gritos, risos, comentários do chat. O oposto do gênio silencioso num quarto escuro.
 
@@ -92,6 +92,20 @@ O tabuleiro de elite, pela primeira vez, estava nos trending topics mundiais. N�
 
 É talvez o sinal de uma integração cultural profunda : quando um jogo gera controvérsias virais, é porque tem um público suficientemente amplo e apaixonado para alimentar a indignação coletiva. O xadrez atingiu esse estatuto.
 
+## Ensaio de cinema com um tabuleiro emprestado
+
+Imagine que você tem de filmar duas irmãs que se reencontram depois de anos. Na primeira versão da cena, a mais velha derruba o próprio rei assim que a irmã chega. Mesmo quem nunca disputou um torneio pode interpretar o gesto como uma rendição. Na segunda versão, ela troca uma peça branca por uma preta e observa em silêncio. Se a irmã reconhece a brincadeira e devolve a peça ao lugar, o tabuleiro passa a guardar uma lembrança das duas. Na terceira versão, elas jogam de fato um final de torres. Para o espectador, agora interessa descobrir se um lance específico muda o que sabemos sobre a relação entre as personagens. É um trabalho diferente para o diretor e para quem assiste.
+
+Faça um teste simples com a sua cena preferida. Retire mentalmente o tabuleiro. O que deixou de fazer sentido? Se bastasse substituir a partida pela assinatura de um documento, talvez o jogo estivesse ali para sugerir uma disputa de poder. Se a personagem reconhece uma armadilha que só aprendeu com o pai, trocar a atividade pode eliminar a própria pista que a ajudou a identificar o adversário. A pergunta permite comentar o roteiro mesmo quando você não consegue identificar a abertura usada pelos atores.
+
+O enquadramento também muda a leitura. Uma câmera próxima da mão que hesita sobre uma torre revela a dúvida e esconde boa parte das casas. Um plano aberto permite conferir a posição, mas pode deixar passar a reação silenciosa da oponente. O leitor que conhece xadrez terá prazer em conferir a legalidade do lance. Outra pessoa poderá perceber, antes dele, que as irmãs acabam de retomar um hábito de infância. As duas leituras podem coexistir na mesma sessão sem que uma invalide a outra.
+
+## Onde termina a piada e começa a alegação sobre uma pessoa
+
+Considere um meme inventado: um peão chega à última fileira e a legenda celebra o estagiário que virou chefe. A ideia geral circula até fora de clubes. Quando um enxadrista pergunta em que peça o peão se transformou, abre espaço para uma segunda piada, agora sobre a subpromoção. Você consegue mostrar como o meme conversa com públicos diferentes apenas examinando o que cada leitor precisa saber para entender cada camada da graça.
+
+A situação muda quando a legenda nomeia um jogador real e deixa implícito que a posição veio de uma partida sua. Antes de repetir a história como fato, procure o registro do jogo e verifique o momento retratado. Se a posição foi montada por quem criou a piada, apresente-a como montagem. A circulação de uma imagem comprova que alguém achou o trocadilho interessante. Para afirmar que um grande mestre fez aquele lance em competição, é preciso outra evidência. Essa distinção vale tanto para o fã que publica um vídeo curto quanto para um professor que usa cultura popular para ensinar a promoção do peão.
+
 ## O que a cultura popular diz do xadrez
 
 A trajetória cultural do xadrez : do atalho cinematográfico para "gênio frio" à série Netflix que provoca conversões massivas, passando pelos streamers que gritam diante de sua webcam : diz algo interessante sobre a relação entre representação e prática.
@@ -102,7 +116,6 @@ O verdadeiro revolucionário talvez não fosse Beth Harmon. Era a câmera que a 
 
 ---
 
-*"Chess is ruthless : you've got to be prepared to kill people.", Nigel Short, Grande Mestre britânico. A cultura popular levou décadas para compreender que essa frase era uma metáfora, e uma declaração de amor.*
 
 ---
 
@@ -115,4 +128,3 @@ A série deu grande visibilidade a uma protagonista enxadrista num período de j
 - **Zweig, S.** *Schachnovelle.* Bermann-Fischer Verlag, 1942. (Ed. bras.: *O Jogador de Xadrez.* L&PM, 2013.)
 - **Nabokov, V.** *The Luzhin Defense.* Putnam, 1964. (Ed. bras.: *A Defesa.* Companhia das Letras, 2010.)
 - **Chess.com.** *The Queen's Gambit Effect : Data and Analysis.* Outubro-dezembro de 2020.
-- **Edelman, B.** *How 'The Queen's Gambit' boosted chess popularity.* Harvard Business Review, 2021.

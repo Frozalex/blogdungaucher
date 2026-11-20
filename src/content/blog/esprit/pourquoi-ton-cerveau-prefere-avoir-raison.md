@@ -108,6 +108,17 @@ Tu peux apprendre dans une victoire, une défaite ou une partie nulle. Tu peux a
 
 Garde les cadres psychologiques comme des questions ouvertes. Une explication devient utile quand elle éclaire ce que tu peux examiner, sans décider à ta place de ce que tu ressentais.
 
+## Le partenaire qui tient la feuille des objections
+
+Dans une analyse à deux, il arrive un moment où les variantes se multiplient et où une seule fin heureuse reste en mémoire. Pour l'éviter sur une partie précise, donne au partenaire un rôle délimité. Pendant que tu proposes un plan, il écrit sur une feuille les objections déjà examinées et celles qui restent sans réponse. Il n'a aucune obligation de trouver la réfutation décisive. Il doit seulement pouvoir montrer, à la fin de la séance, ce que vous avez effectivement calculé.
+
+Supposons que ton idée soit d'avancer le pion g pour ouvrir une colonne devant le roi adverse. La première objection est une prise en passant si toutes ses conditions sont réunies. La deuxième est un échange des dames avant que la colonne ne s'ouvre. La troisième est une contre-attaque sur ton propre roi au centre. Ton partenaire inscrit seulement les objections légales dans la position réelle. Il peut en rayer une si le pion adverse n'est pas sur la bonne rangée ou si la dame ne dispose d'aucun échange raisonnable. Une objection abandonnée pour une raison explicite vaut mieux qu'une longue liste de dangers théoriques.
+
+Vous examinez la troisième : contre l'échec de la tour, ton roi peut se déplacer, mais vers quelle case ? Si l'échiquier montre que cette case est contrôlée, l'objection reste ouverte. Tu ne pourras pas la faire disparaître en trouvant ailleurs une spectaculaire variante de mat. En revanche, si un coup intermédiaire couvre cet échec, fais-le figurer en face de la ligne correspondante. La feuille commence à servir de mémoire commune. Elle réduit la tentation de recommencer la première variante chaque fois que la discussion menace ton plan préféré.
+
+À la fin, tente une conclusion de portée limitée. « J'ai une attaque intéressante si l'adversaire me laisse jouer deux coups sur cette colonne ; il me manque une réponse à l'échec central » est un résultat honnête et directement réutilisable. Sur la feuille de la prochaine séance, vous pouvez ouvrir au même endroit avec le camp défensif au trait. Si un autre membre rejoint le groupe, donne-lui la position et cette seule objection. Il saura ce qu'il faut chercher sans avoir à accepter d'abord ton évaluation personnelle.
+
+Cette manière de garder les désaccords visibles change le but de la conversation. Tu peux rentrer chez toi en ayant trouvé une très belle attaque ou une réfutation très simple. Dans les deux cas, quelqu'un peut reprendre le travail sans devoir croire l'auteur sur parole, et ton idée initiale aura produit une question digne d'être jouée.
 
 ## Sources
 

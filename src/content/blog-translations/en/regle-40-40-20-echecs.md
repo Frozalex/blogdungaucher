@@ -71,6 +71,34 @@ Note a recurring difficulty, choose an exercise that addresses it, and reassess 
 
 To organise recovery between sessions, see [the benefits of breaks](/en/blog/benefits-of-breaks-in-chess/). For your relationship with results, see [the psychology of the chess player](/en/blog/chess-player-psychology/).
 
+## Make the denominator visible
+
+Suppose you have two evenings, each lasting fifty minutes. A literal implementation gives you forty minutes of tactics, forty of endgames and twenty of openings across the week. It does not oblige you to interrupt a rook ending twenty minutes into the first evening. You might use the first session for forty minutes of endgames and ten minutes of opening reconstruction. On the second evening, finish the opening work and spend the remaining forty minutes on tactics. The arithmetic survives. Whether the sessions are any good depends on what you ask yourself to do in them.
+
+Now suppose those hundred minutes also include a thirty-minute rapid game and ten minutes immediately afterwards to write down what you were thinking. Treating those forty minutes as extra time you somehow ought to find is a good way to abandon the plan. Decide openly whether the split concerns all chess time or only exercise time. Applied to the sixty minutes left, it gives twenty-four minutes for tactics, twenty-four for endings and twelve for openings. Both schedules can be called forty-forty-twenty. They lead to quite different evenings. Put the actual minutes in your diary and reserve time to play the games that supply your next questions.
+
+## One game can generate three different exercises
+
+Imagine your last game reached a rook ending after a familiar opening. You remember being worried about a knight fork on move twelve. Later you exchanged rooks without calculating whose king would reach the pawn first. In the post-game conversation your opponent says the opening had gone badly for you. You now have material for all three boxes in the plan. The useful exercise is deciding which question matters first, while the memory is still fresh.
+
+For the tactical exercise restore the position before move twelve and give the move to the opponent. Ask them to execute the fork you feared. If the knight's target square is occupied by its own pawn, the imagined threat never existed. The lesson may be to test the opponent's route before spending a tempo defending. Put a different knight two moves away from the same target and repeat. A puzzle that always announces a forced win would not expose precisely this habit of defending against imaginary threats.
+
+For the ending restore the position just before the rook exchange. Draw the two king routes to the critical pawn. Let Black move first in one version and White first in another. If the move order changes the result, note the one square on which the kings compete. If the result is the same, see whether a pawn can gain a tempo. You have turned a complaint about “bad endings” into something a partner can set up again next week.
+
+For the opening start from the last position you recognised, remove your notes and play two legal plans for each side. Perhaps your opponent's comment referred to an awkward bishop whose retreat cost time. Perhaps it referred to a break you could still have played much later. Find the move where the practical difficulty first became visible. Only then look up how a stronger player handled the same structure. This makes ten minutes with an opening file answer a question that came from your board.
+
+## How to adjust after a fortnight
+
+Keep one line per game for two weeks. Record the critical position, time on your clock and what you missed before consulting a stronger player or engine. Add a second line only when the review changes the diagnosis. “Forgot the opening” might become “knew the position and rejected a safe move because of an illegal reply”. The result in the opening column of your notebook has now moved to calculation. Changing the training programme before that second line was written would have been premature.
+
+At the end of the fortnight, pick two records in which the same difficulty appears. Set up one position, work on it and save the other for the following week. If both concern rook exchanges, try a temporary allocation with more endgame practice. State what would make you restore the previous split. Finding the correct king route in a fresh position and explaining it without moving the pieces is an observable outcome. Winning the next tournament game is too dependent on the opponent to be the sole measure.
+
+If your next event is tomorrow, you might choose a short opening review even if endgames dominate your notebook. You can rehearse where your pieces belong in the structures you expect and decide when to stop consulting the file. That is an event-specific preparation choice. It need not become a permanent theory about your weaknesses. Conversely, during a quiet month a long rook ending with a club partner may deserve an entire evening. A calendar can contain productive exceptions.
+
+One final check concerns enjoyment. If an evening of exercises keeps getting postponed because the puzzles feel like an exam, put a game with a friend into the diary first. Before starting, agree that each player will choose one position to revisit. The resulting twenty-minute discussion may reveal a memorable tactical motif or a position worth looking up in a book. Count the session honestly. The object of the spreadsheet is to support the chess you have time and appetite to play. An allocation that looks balanced only because no actual sessions ever took place teaches you remarkably little.
+
+Schedule the next review while the positions are still easy to find. Label each diagram with the original move number, the colour to play and the question you want a partner to ask.
+
 ## Sources
 
 - Chase, W. G., & Simon, H. A. (1973). *Perception in Chess*. Cognitive Psychology, 4, 55–81. [Article](https://gwern.net/doc/psychology/chess/1973-chase.pdf).

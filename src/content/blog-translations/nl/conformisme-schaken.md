@@ -170,6 +170,8 @@ De nuttige vraag is dus niet "ben ik origineel", wat een slecht doel is. Ze is: 
 
 *Dit artikel maakt deel uit van een reeks over psychologie toegepast op schaken. Zie ook [gehoorzaamheid aan autoriteit bij schaken](/fr/blog/obeissance-a-l-autorite-aux-echecs/) en [het omstandereffect bij schaken](/fr/blog/effet-spectateur-aux-echecs/). Een artikel gewijd aan massapsychologie volgt later in deze reeks.*
 
+Laat in een groepsanalyse iedereen zijn kandidaat opschrijven voordat de sterkste speler iets zegt. Verzamel de briefjes en speel eerst de minst gekozen zet na. Ze hoeft niet goed te zijn om iets te onthullen: misschien zagen vijf spelers dezelfde tegenaanval over het hoofd. Bewaar ook het oorspronkelijke briefje als iemand later instemt met de groep. Zo kun je onderscheid maken tussen een nieuwe overtuigende variant en het simpelweg volgen van de meerderheid.
+
 ## Bronnen
 
 - Asch, S. E. (1951). Effects of group pressure upon the modification and distortion of judgments. In H. Guetzkow (Ed.), *Groups, Leadership and Men*. Carnegie Press.

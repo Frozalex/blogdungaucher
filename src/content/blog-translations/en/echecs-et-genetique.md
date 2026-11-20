@@ -54,6 +54,36 @@ If you support a child, preserve opportunities to discover several activities an
 
 Research leaves many questions open. That does not prevent serious work or playing for enjoyment; above all, it prevents turning a population statistic into a verdict on a person.
 
+## A percentage about differences is not a pie chart of a person
+
+Imagine recording two things for every player in a hypothetical junior league: their performance at a set of chess tasks and the number of practice sessions they report. Some players with similar practice totals achieve different results. A tempting explanation divides the performance into two piles, one labelled practice and the other labelled genes. Yet almost everything about those sessions is missing from the tally. One player received detailed feedback on every error; another replayed opening moves they already knew. An hour on the sheet is not a standard dose of the same experience. An unexplained difference between the players cannot be assigned to heredity simply by subtracting their recorded hours.
+
+Even a much better measurement of practice would leave further questions. Did the players enter the league at the same age? Did they all encounter the same tasks previously? Does a single performance measure represent the skills the league wants to understand? A six-year-old learning to read notation and an experienced junior preparing endgames can make different kinds of progress during an equally well-designed lesson. A model may miss some of that progress because the test measures only one part of the game. The remainder includes limitations of measurement as well as influences the researcher has not studied.
+
+Now consider a different question. Suppose every child in that league receives an excellent year of coaching and all improve substantially. Differences between them may remain, and their ranking may look roughly the same. That observation does not imply that coaching was ineffective; ranking has deliberately discarded the information that everyone improved. Conversely, a player's rank can rise when other competitors leave even if their own chess is unchanged. If you want to study what an opportunity to learn can accomplish, keep a measure of absolute performance as well as the ordering of the class.
+
+## How a family can share opportunities as well as characteristics
+
+Imagine two cousins growing up near a club. One often sees an older relative playing, receives a set at an early age and gets a lift to evening matches. The other comes across formal chess later and has no convenient way to attend the same events. If the first cousin eventually plays better, the difference has many possible contributing causes. You cannot read their respective biological capacities from the club's rating list. Nor would a family history in which several relatives excel prove that everything is explained by their favourite set of exercises. Both stories need a comparison that separates variables which tend to occur together.
+
+Selection also changes what a coach observes. A child who enjoys early success may ask for more games and be invited to stronger training sessions. A child who finds the first events stressful may spend the same evening on music or leave the competition sample entirely. Looking back from the strongest surviving juniors can make years of enthusiastic practice seem inevitable. That sample omits people who started with similar encouragement and made different choices. When telling a champion's biography, distinguish a well-documented sequence of events from a claim that the same sequence would produce the same outcome for another child.
+
+## Turn a prediction about potential into two testable lessons
+
+Suppose a beginner repeatedly loses material to a knight fork. Rather than trying to decide whether they have the right kind of mind for chess, a coach can set two tasks. In the first, show a position with a fork already on the board and ask which pieces are attacked. In the second, remove the forking move and ask the pupil to find the square from which the knight would create the threats. Solving the first while missing the second is useful information: the player can recognise the relation when it is present but has trouble generating the move. A general label of “talented” or “untalented” contains none of that detail.
+
+Build the next lesson around the missing operation. Let the pupil mark the squares a knight can reach, find those that attack a king with check and only then test whether a second valuable piece is also threatened. At the next session change the diagram, which side is to move and the direction from which the knight approaches. Keep the first attempt and the explanation, not just the score. If the pupil now searches the appropriate candidate squares before moving, you have evidence about a skill that changed. You do not need an estimate of the child's lifelong ceiling in order to design the next exercise.
+
+A progress note might read: “Finds forks that give check; still overlooks quiet double attacks.” That sentence suggests two fresh positions for next week. It remains useful even if the pupil never plays a rated event. A claim that they have reached eighty per cent of their genetic potential would require a personal maximum you have no way to observe from the lesson. It is also a poor substitute for telling the child where to look on the board.
+
+## Read a claim about talent at the right scale
+
+When an article quotes a study of expertise, write down the population before copying the conclusion. Was it looking at musicians, chess players, twins or adults taking general cognitive tests? Were training histories recorded at the time or reconstructed afterwards? A finding about differences within one group may motivate a new chess question without answering it. The sources below address several distinct questions. Following the question from the population studied to the claim being made is more revealing than collecting percentages whose denominators do not match.
+
+Finally, let a real educational decision set the standard of evidence. A club deciding whether to open a second beginners' group needs to know who can attend, what teaching they would receive and how to tell whether it helped. It need not settle the distribution of every possible cause of elite performance. Providing an opportunity and documenting what happens is a practical response to uncertainty, and leaves room for individual differences without turning those differences into predictions that no beginner can test.
+
+Two beginners who need different exercises today may both have excellent reasons to keep playing tomorrow.
+
 ## Sources
 
 - Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993). *The Role of Deliberate Practice in the Acquisition of Expert Performance*. Psychological Review, 100, 363–406. [Article](https://gwern.net/doc/psychology/writing/1993-ericsson.pdf).

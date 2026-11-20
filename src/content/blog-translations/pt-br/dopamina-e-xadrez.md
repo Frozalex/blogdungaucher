@@ -49,6 +49,38 @@ Se o jogo invadir regularmente suas obrigações ou causar sofrimento, busque ap
 
 Para continuar: [o esgotamento na prática](/pt-br/blog/burnout-no-xadrez/) e [o estresse em torneios](/pt-br/blog/xadrez-estresse-torneio/).
 
+## Uma previsão que dá para escrever no papel
+
+Pegue uma posição de treino e, antes de começar, anote a chance que você acha que tem de resolver o problema em cinco minutos. Use um número entre zero e um. Suponha, apenas para este exemplo, que sua estimativa seja de quatro décimos. Combine que o resultado valerá um quando você encontrar a solução e zero quando não a encontrar. Se acertar, a diferença entre resultado e previsão será de seis décimos. Se errar, será de menos quatro décimos. Esse cálculo descreve a surpresa dentro de um modelo simples. Nenhum aparelho mediu uma substância no seu cérebro.
+
+Agora defina uma regra fictícia para ajustar a próxima previsão. Some à estimativa anterior um quinto da diferença que acabou de calcular. Após o acerto, a nova estimativa passa de 0,40 para 0,52. Após um erro, ela passaria de 0,40 para 0,32. A regra atualiza a previsão na direção do resultado sem apagar de uma vez o que se esperava antes. O valor de um quinto foi escolhido para facilitar a conta. Um jogador real não precisa realizar essa operação para aprender e os números não representam unidades de prazer, ansiedade ou dopamina.
+
+O exemplo permite enxergar um detalhe importante. Acertar um problema muito fácil e acertar outro que parecia quase impossível produzem o mesmo ponto na planilha. No modelo, porém, as diferenças em relação às respectivas previsões são distintas. É possível usar essa distinção para conversar sobre aprendizagem sem presumir que os dois acertos tenham provocado reações idênticas. Talvez o problema fácil tenha trazido a satisfação de reconhecer uma ideia antiga. Talvez o difícil tenha sido resolvido por tentativa e deixado mais dúvidas que entusiasmo. Perguntar ao jogador ajuda a entender sua experiência.
+
+## Duas cartas para discutir a surpresa
+
+Para levar a ideia ao clube, prepare dois diagramas a partir de uma mesma posição de treino. O primeiro pode conter um garfo de cavalo que ganha material. No segundo, ajuste a posição de outra peça para que o adversário disponha de um xeque intermediário ou consiga retirar a dama com ganho de tempo. Confira as duas soluções no tabuleiro antes de levar as cartas. O exercício depende de haver uma diferença real entre as respostas, mesmo que o desenho pareça familiar de relance.
+
+Na frente de cada carta, escreva apenas quem joga e peça uma continuação. Não anuncie que existe uma combinação vencedora em todas as posições. Quem recebe essa promessa costuma procurar sacrifícios até encontrar o que o professor aparentemente quer ouvir. Quem sabe que a combinação pode falhar tem motivo para procurar também uma defesa. Dê crédito à pessoa que refuta o garfo e propõe uma continuação tranquila. Você acabou de mudar o que conta como sucesso no exercício, e isso é uma decisão pedagógica que pode ser examinada diretamente.
+
+Peça ao primeiro participante que estime a dificuldade antes de jogar e explique a principal defesa depois de escolher o lance. Com um segundo participante, inverta a ordem das cartas. Encontrar primeiro o garfo falso talvez torne a pessoa mais desconfiada do garfo verdadeiro. Também pode não fazer diferença alguma. Registre as previsões e as justificativas, inclusive quando contrariem sua impressão inicial. Com dois participantes e dois diagramas, o objetivo é gerar uma boa discussão de variantes. Isso está ao alcance de uma mesa de clube sem transformar uma tarde de treino em experimento de neurociência.
+
+Uma semana depois, aproveite o material com uma alteração adicional. Mude uma casa de fuga do rei ou retire o defensor que impedia a combinação. Pergunte qual das soluções anteriores continua de pé e por quê. Reconhecer a imagem de uma carta já vista é uma coisa. Identificar a consequência concreta de uma mudança de posição é outra. Se o aluno explicar a diferença mesmo sem lembrar o lance original, você obteve uma informação valiosa sobre o que ele aprendeu.
+
+## Por que continuar jogando quando a diversão acabou?
+
+Imagine uma sessão em que você perdeu três partidas rápidas e quer recuperar a pontuação inicial. Pode haver uma vontade intensa de clicar de novo mesmo quando as últimas partidas já não foram agradáveis. Também é possível ter gostado muito de uma vitória e preferir fechar o aplicativo porque o jantar está pronto. Desejo de repetir, satisfação com o que acabou de acontecer e decisão de continuar são três coisas que você pode examinar separadamente. Dar a todas o mesmo nome seria perder parte da história.
+
+Antes da sessão seguinte, anote a atividade que você pretende fazer e o que indicará seu término. Pode ser jogar duas partidas para testar uma abertura e guardar uma posição de cada uma. Ao fechar o aplicativo, registre o que fez de fato. Se jogou outras seis partidas, procure o momento em que o plano mudou. O adversário pediu revanche? O site ofereceu outra partida imediatamente? Você quis terminar com uma vitória? Mais de uma resposta é possível. Cada uma sugere uma forma diferente de organizar a próxima sessão, independentemente de uma explicação química.
+
+Se o problema foi nunca encontrar um ponto satisfatório para parar, experimente terminar com uma pergunta de análise em vez de condicionar a saída ao placar. Volte à posição em que aceitou uma troca e escreva qual resposta deixou de verificar. Você pode encerrar a noite com uma posição importante ainda sem solução. No dia seguinte haverá um motivo específico para abrir o tabuleiro, mesmo que o último resultado registrado continue sendo uma derrota.
+
+## Um retorno que informa o próximo treino
+
+Para um professor, vale perguntar qual comportamento o sistema de pontos do clube está incentivando. Se só a primeira resposta correta recebe crédito, alguns participantes podem passar a anunciar palpites rapidamente. Se também houver tempo para justificar uma defesa ou corrigir uma linha depois de ouvir um colega, haverá espaço para outras habilidades. Compare as explicações em duas ou três sessões. Se continuarem superficiais, reveja a maneira de formular as perguntas antes de concluir que o grupo precisa de problemas mais difíceis.
+
+Experimente devolver a folha de um aluno com uma pergunta curta sobre a melhor defesa adversária. Na aula seguinte, confira se a resposta contém uma variante que pode ser jogada do começo ao fim. Essa é uma mudança que o professor e o aluno conseguem discutir juntos. O prazer de descobrir o recurso pode fazer parte da conversa, mas a evidência do aprendizado estará ali, nas casas ocupadas pelas peças e nas alternativas que resistem à análise.
+
 ## Fontes
 
 - Schultz, W., Dayan, P., & Montague, P. R. (1997). *A Neural Substrate of Prediction and Reward*. Science, 275, 1593–1599. [Artigo](https://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf).

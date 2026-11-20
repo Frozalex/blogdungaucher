@@ -140,6 +140,14 @@ This piece deals with a precise, tightly bounded mechanism: **one reason for act
 
 **Find what brought you here.** Plenty of players arrived through a book, a famous game, a film, a person. Coming back to that thing occasionally sustains a motivation the rating can't supply.
 
+## What a rating graph cannot tell your coach
+
+Take two club members who each play twenty rapid games in a month. One plays most of them with an old friend because they like arguing about rook endings. The other plays strangers to reach the qualifying score for a league team. Game count and time control are identical. The graph cannot tell you which invitation would bring either player back next month. Ask each what they would miss if the platform stopped displaying points for a week. One might miss a measure of progress, another the chance to share a milestone, and another very little at all.
+
+Suppose you run the club and want beginners to analyse one game. Instead of giving a prize for the most annotations, invite each player to bring a single position they have not stopped wondering about. Pair them with someone who likes that kind of question. The starting point might be an elegant attacking idea or an ugly position in which every move seemed to lose. At the next meeting, ask whether anybody returned to the problem voluntarily. That observation speaks more directly to curiosity than a pile of annotations written to meet a quota.
+
+There is still room for achievement and recognition. A player may value selection for the team and love studying a particular opening. If a reward is removed, what disappears might be a practical reason to make time this month, not the underlying interest. Good coaching starts by hearing the distinction from the person involved.
+
 ## Key Takeaways
 
 The 1973 experiment shows that promising a reward for an activity you enjoy reduces how much time you later spend on it spontaneously. But it shows this on 51 children **selected because they already liked the activity**, a condition almost always cut from summaries.

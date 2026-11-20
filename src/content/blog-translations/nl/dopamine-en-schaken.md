@@ -146,6 +146,8 @@ Deze mechanismen begrijpen maakt het mogelijk om de training intelligenter te st
 
 **Vier tussentijdse vooruitgang.** Een partij naspelen waarin je een moeilijk eindspel goed hebt gespeeld, activeert het beloningscircuit en versterkt het geheugen van dit gedrag. Atleten gebruiken de "beoordeling van successen" als een bewust hulpmiddel voor positieve conditionering.
 
+Een eenvoudig onderscheid helpt om bij je eigen analyses bij de feiten te blijven. Noteer na een spannende partij het moment waarop je de volgende partij aanklikte. Schrijf ook op wat je verwachtte te krijgen: dezelfde tegenstander, een snelle kans op herstel of nog eens dat mooie soort stelling. Vergelijk dat eens met een avond waarop het platform geen knop voor een onmiddellijke revanche toont. Het verschil is interessant als beschrijving van je gedrag. Je hebt in geen van beide situaties gemeten welke stof er in je hersenen vrijkwam. Zelfs twee spelers die op precies dezelfde knop drukken, kunnen daarbij iets heel anders beogen. Vraag eerst naar de reden van het doorklikken voordat je aan het schaakdagboek een neurochemisch verhaal verbindt.
+
 ## Bronnen
 
 - Schultz, W., Dayan, P., & Montague, P. R. (1997). A neural substrate of prediction and reward. *Science*, 275(5306), 1593-1599.

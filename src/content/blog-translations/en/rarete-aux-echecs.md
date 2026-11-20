@@ -148,6 +148,16 @@ Watch out for the reversal, though. Systematically hunting for rare lines **beca
 
 **Remember that unspent time is wasted.** That's not a figure of speech: it's arithmetically true. A minute still on the display when the game ends produced no value whatsoever.
 
+## The last seat at a training weekend
+
+A club advertises one remaining place at an endgame workshop. Imagine two players looking at the same notice. One already plans to practise rook endings, has checked the instructor's sample lesson and can attend both days. The other regularly buys courses that remain unopened and has a team match on Sunday. A genuine limit of one seat describes the organiser's room equally well for both. It says surprisingly little about which player should buy it.
+
+To test the offer, write down the first exercise you expect to do after the weekend. Can you name a position from your own games in which you would use it? Then cover the deadline and price. If you would still choose that exercise over analysing your last loss, the workshop has an identifiable use. If the urgency disappears along with the deadline, wait until another training opportunity fits a need you can state. Missing a place sometimes preserves the time needed to finish earlier work.
+
+The same test helps with a rare opening move. Ask for the reply you would fear if your opponent had a spare ten minutes. Surprise can buy thinking time at the board. It cannot protect a loose piece once someone spots the capture. Test that reply before you spend the week collecting examples of players who missed it.
+
+Bring the position to a practice partner who has never seen the trap. Then give that partner a second attempt after revealing the trick. The second game tests the opening you will actually own once its secret has travelled.
+
 ## What to Take Away
 
 Identical cookies are rated better when two are left rather than ten, and better still when eight have just been removed. What acts on you isn't scarcity, it's the process of becoming scarce: a possibility that disappears gets treated as a loss.

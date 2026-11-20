@@ -99,6 +99,14 @@ Si tu négliges l'heure de fin à la maison, essaie un rappel externe et prépar
 
 Ces changements répondent à des observations différentes. Il n'est pas nécessaire de les réunir sous une méthode universelle d'hyperfocus. Garde comme critère la qualité du travail et sa place dans ta vie : comprendre davantage, conserver les informations pertinentes et rester capable de choisir quand continuer ou s'arrêter.
 
+## Quand approfondir une ligne devient le mauvais objectif
+
+Voici une situation fictive de club. Le joueur blanc examine pendant plusieurs minutes une prise de pion sur l'aile dame. Il a vu quatre réponses possibles et vérifié une suite de huit demi-coups. En revenant à la position initiale, son partenaire lui montre un échec direct contre son roi sur l'autre aile. Peut-on dire que les minutes de concentration ont été perdues ? La réponse dépend de ce que l'on demande : sa variante peut être d'une grande précision et le choix de la question initiale peut simultanément être mauvais. Mesurer uniquement la longueur de la ligne récompense le premier résultat sans jamais enregistrer le second.
+
+Essaie une correction qui rende ces deux compétences visibles. Sur la feuille d'analyse, écris d'abord ce que le dernier coup adverse a libéré comme ligne ou comme case. Écris ensuite la raison pour laquelle la prise de pion mérite du temps maintenant. Si la première réponse mentionne une menace contre le roi et que la seconde l'ignore entièrement, tu as repéré le moment où élargir ton examen. Si la prise pare également la menace, continue à calculer. La durée d'une réflexion, prise isolément, ne donne pas cette information.
+
+Pour préparer ton prochain entraînement, choisis deux diagrammes avec une longue suite séduisante. Dans le premier, la suite résout le véritable problème ; dans le second, une ressource adverse la rend sans intérêt. Donne les deux à un partenaire avec le même temps disponible. Demande-lui de marquer l'instant où il change de question et le détail de la position qui le motive. Tu peux discuter cette décision sans attribuer aucun profil clinique au joueur. Un bon changement de direction peut venir d'une case d'échec enfin remarquée, d'une défense interposée ou de la découverte que le gain recherché était déjà protégé. Ce sont ces raisons précises qui rendront l'entraînement réutilisable.
+
 ## Sources
 
 - Ashinoff, B. K. et Abu-Akel, A. (2021 ; en ligne 2019), *Hyperfocus: the forgotten frontier of attention*, Psychological Research, 85, 1–19, [revue complète](https://link.springer.com/article/10.1007/s00426-019-01245-8).

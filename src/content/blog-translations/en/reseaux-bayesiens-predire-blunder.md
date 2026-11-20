@@ -113,6 +113,20 @@ Even without constructing a network, use the framework to ask more explicit ques
 
 ---
 
+## Work through a false alarm
+
+Here is a fictional data set you can audit on paper. Imagine one hundred decisions made in one time control. Label twenty as difficult using a rule set before looking at the results. Eight of the twenty difficult decisions contain a serious error. Eight of the eighty ordinary decisions do too. If you are told only that a serious error occurred, what is the probability it came from a difficult position? There were sixteen serious errors and eight came from the difficult group, so the answer is one half. If you are instead told that the position was difficult, the error rate is eight out of twenty, or forty per cent. Both questions use the same observations. Reversing what you are told changes the denominator.
+
+Now suppose a spectator calls every difficult position a likely mistake. That rule flags twenty positions and catches eight errors. It also misses eight errors in positions that looked ordinary. A coach with time to review only twenty decisions might still like the rule: examining twenty randomly selected decisions would on average bring fewer errors to the board. A coach trying to reassure a player that routine positions are safe would be misusing the same rule. Some of the missed errors might be precisely the lapses the player wants to investigate.
+
+## What belongs upstream of the error?
+
+A digital scoresheet records how long someone thought and how much time remained. Long thought can indicate that a position is hard. It can also mean the player noticed the danger and spent the time necessary to solve it. Now consider two players with twenty seconds left. One reached that point by spending four minutes on a single critical decision. The other has been moving slowly in quiet positions for the entire game. Giving both moves the same clock label loses part of the story. A network diagram makes you choose whether position difficulty influences both the time spent and the chance of error. It does not make your choice true.
+
+A useful next step is to set aside a whole later session before building the model. If the model repeatedly gives a group of positions a one-in-four chance of a mistake, count how often mistakes actually occurred in that group. Include every prediction, including the uneventful ones. Do not tune the probability on that session and then present its apparent accuracy as independent evidence. If the group contains only four positions, report four positions. One error out of four is compatible with a wide range of underlying rates.
+
+Finally, give your model an ordinary competitor. Predict the same overall error rate in every position and see whether your added complexity helps on unseen games. If it does not, you have learned where the proposed variables fail to distinguish risk. Changing your opening because a diagram looks persuasive would be a much bigger claim than this little exercise can support. In the example above every number was chosen for arithmetic clarity; none describes the prevalence of mistakes in a real tournament.
+
 ## Sources
 
 - Friedman, N., & Koller, D. (2001, consulted manuscript version). *Being Bayesian About Network Structure: A Bayesian Approach to Structure Discovery in Bayesian Networks*. [Authors’ manuscript, Stanford](https://ai.stanford.edu/~nir/Papers/FK1Full.pdf): dependencies, conditional independences and structure learning.

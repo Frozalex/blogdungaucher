@@ -106,6 +106,16 @@ L'enquête de Charness et ses collègues relie les activités de pratique et le 
 
 Le bon critère de fin n'est pas « je connais toute la théorie ». Tu peux terminer une séance lorsque la question choisie est suffisamment expliquée et que tu disposes d'un moyen de la tester. Le répertoire devient alors un outil pour mieux jouer les positions, pas une collection sans limite de coups à stocker.
 
+## Une fiche d'ouverture qui tient sur l'envers de la feuille de partie
+
+Après un tournoi, récupère ta dernière partie disputée avec les Noirs. Sur le verso de la feuille, inscris trois éléments : le dernier coup de la ligne que tu connaissais, la première menace adverse dont tu n'étais plus sûr et la position où tu as commencé à employer beaucoup de temps. Les trois moments peuvent être distincts. Perdre son souvenir précis au cinquième coup n'est pas forcément un problème si la première vraie hésitation arrive bien plus tard, dans une position où tes pièces sont déjà développées.
+
+Imagine maintenant deux suites. Dans la première, tu oublies un coup de livre mais tu comprends que ton adversaire cherche à occuper une colonne avec sa tour. Tu peux choisir entre contester la colonne et chercher du contre-jeu sur l'autre aile. Dans la seconde, tu récites huit coups de mémoire et découvres au neuvième que tu ignores pourquoi ton fou se trouve loin de la défense du roi. Le nombre de coups appris favorise la deuxième partie. L'utilité du travail engagé peut pourtant être supérieure dans la première, car deux plans compréhensibles sont à ta disposition.
+
+Pour refaire ta fiche, choisis une seule suite que tu peux rejouer avec un partenaire jusqu'à une position où chacun sait dire ce qu'il veut. Ton partenaire a le droit de dévier plus tôt. Si sa déviation abandonne quelque chose, montre-le sur l'échiquier. Si elle est jouable, examine quelle pièce doit changer de case et pour quelle raison. C'est souvent cette branche, jamais préparée à l'avance, qui révèle si les premiers coups ont été compris.
+
+Range enfin la fiche avec la date de la partie qui l'a motivée. Si la même structure revient trois fois au cours de l'hiver, tu auras plusieurs décisions à comparer. Si elle ne revient jamais, le bénéfice éventuel se cherchera dans le motif transférable que tu y as appris. Tu disposeras dans les deux cas d'une raison intelligible pour prolonger ou interrompre ce chapitre du répertoire.
+
 ## Sources
 
 - Charness, N., Tuffiash, M., Krampe, R., Reingold, E. et Vasyukova, E. (2005), « The role of deliberate practice in chess expertise », *Applied Cognitive Psychology*, 19(2), 151–165. [Résumé original](https://onlinelibrary.wiley.com/doi/10.1002/acp.1106), DOI : 10.1002/acp.1106.

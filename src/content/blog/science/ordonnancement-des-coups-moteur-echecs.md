@@ -233,6 +233,10 @@ Ce qui laisse notre moteur avec un défaut rédhibitoire pour un vrai joueur : *
 
 **Prochain article :** l'approfondissement itératif, qui consiste à refaire tout le travail à chaque profondeur, et dont le coût et le bénéfice doivent être mesurés.
 
+### Le test du coup qui change seulement de rang
+
+Fabrique une position avec deux coups dont la valeur finale est égale à la profondeur testée. Inverse leur ordre dans la liste que reçoit la recherche. Si ton programme conserve le premier coup rencontré en cas d'égalité, le coup annoncé peut changer entre les deux essais. Compare d'abord les valeurs obtenues et vérifie que les deux coups sont légaux. Attendre exactement la même réponse ferait échouer un test pourtant correct. En revanche, un changement de valeur lors d'une recherche complète à profondeur identique mérite d'être expliqué avant toute mesure de vitesse.
+
 ## Sources
 
 Le code de recherche de Stockfish fournit un exemple réel de tri et d’historiques. La documentation Python définit le retour NotImplemented utilisé pour les comparaisons de Coup.

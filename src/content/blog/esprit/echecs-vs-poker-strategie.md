@@ -100,6 +100,16 @@ Revoir ses décisions, formuler une hypothèse et la vérifier sont des démarch
 
 Les cartes cachées changent la façon de raisonner sur les actions adverses. Elles n'autorisent pas à traiter un geste ou un temps d'hésitation comme un accès fiable aux intentions. Commence par les règles, les actions observées et les limites de ton modèle.
 
+## La carte retournée après la décision
+
+Pour voir exactement où une analogie devient trompeuse, prends un jeu réduit à deux cartes possibles. Dans cet exemple artificiel, une carte A vaut un point si tu choisis rouge ; une carte B vaut un point si tu choisis bleu. Les deux cartes sont également probables. Le meneur place une seule carte face cachée, tu choisis ta couleur, puis il retourne la carte. Quel score moyen peux-tu obtenir si la distribution reste identique d'une manche à l'autre ?
+
+Si tu choisis toujours rouge, tu marques en moyenne un demi-point par manche. Si tu choisis toujours bleu, même résultat. Si tu tires à pile ou face pour choisir ta couleur, tu n'augmentes pas ce score : tu as toujours une chance sur deux de faire correspondre l'action à la carte. En revanche, si le meneur te montre la carte avant de demander la couleur, tu peux marquer un point à chaque essai. L'écart est entièrement produit par le moment où l'information devient disponible.
+
+Suppose qu'après dix manches tu publies une analyse qui dit simplement « il fallait choisir rouge dans les cinq manches avec A et bleu dans les cinq autres ». Le conseil décrit dix réussites réalisables par quelqu'un qui connaît les réponses. Il n'indique aucune conduite utilisable par la personne qui doit parler avant que la carte soit retournée. De même, au poker réel, commenter une décision après avoir vu la main adverse demande un effort supplémentaire : revenir aux informations dont on disposait avant de connaître cette main. Ce petit jeu écarte les mises, le bluff et l'interaction pour isoler cette seule difficulté.
+
+À l'échiquier, installe une position et couvre la pendule si tu veux réduire les distractions. Ton partenaire peut t'autoriser à regarder toutes les pièces pendant ton calcul. Aucune pièce ennemie supplémentaire ne sera révélée après ton choix. Il reste beaucoup d'inconnu, puisque tu ignores quel coup ton adversaire choisira et quelle ligne tu n'as pas calculée. Mais tu pourrais essayer chaque réponse légale sur la même position publique après la partie. Si tu reviens de l'analyse avec « je n'avais pas envisagé cet échec », tu as identifié une branche négligée. Si tu reviens d'une main de poker avec « je ne pouvais pas savoir qu'il détenait exactement cette carte », tu viens de décrire une limite d'information. Ces deux difficultés demandent des exercices distincts.
+
 ## Sources
 
 - Russell, S. et Norvig, P. (s. d.), *Adversarial Search*, projet de chapitre d'Artificial Intelligence: A Modern Approach, Berkeley. [Texte des auteurs](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).

@@ -72,6 +72,22 @@ Imagine que crianças de um clube de xadrez tenham melhor desempenho num teste d
 
 No seu treino, antes de ligar o motor, anote a ameaça do adversário em três momentos de uma partida sua. Se deixou escapar a diagonal de um bispo, procure outra posição com a mesma ideia e explique a ameaça antes de jogar. Lembrar a solução de ontem e reconhecer a relação numa posição nova são conquistas diferentes.
 
+## Duas tarefas que parecem iguais vistas de fora
+
+Imagine dois participantes sentados diante do mesmo tabuleiro. Um deve informar a cor da casa em que está o cavalo branco. O outro deve decidir se pode retirar o cavalo sem expor a dama a um ataque. Ambos olham a mesma peça; só o segundo precisa representar a posição que existiria depois da jogada. Se uma reportagem disser apenas que os dois “resolveram um problema de xadrez”, esconde justamente a diferença necessária para interpretar o resultado. Ao ler um estudo, procure o enunciado dado ao participante. Era reconhecer, recordar, comparar alternativas ou encontrar uma defesa?
+
+O tipo de erro também é informativo. Um participante pode tocar na casa errada embora descreva corretamente a casa pretendida. Outro pode acertar a resposta por reconhecer a posição de um livro. Um acerto aparece do mesmo jeito na planilha, mesmo que as duas pessoas tenham feito trabalhos diferentes. Saber se a posição era nova para os participantes, quanto tempo tinham e como registravam a escolha ajuda a entender o alcance da comparação.
+
+### Um caderno com a pergunta antes da conclusão
+
+Para praticar essa leitura sem nenhum equipamento, crie duas fichas da mesma posição. Na primeira, mostre o tabuleiro durante o tempo que escolher e peça que o parceiro reconstrua os quatro peões centrais. Na segunda, permita que continue olhando e peça que identifique o peão cuja saída abriria uma diagonal importante. Desde o início, avise que são duas tarefas de clube. A ideia é comparar o que cada pergunta exige. Quem erra uma casa na primeira ficha pode explicar toda a diagonal na segunda. Sua descrição contém uma relação que a contagem bruta de casas acertadas deixaria escapar.
+
+Se quiser repetir, use uma posição nova e troque a ordem das tarefas. Ter visto a solução antes é uma explicação alternativa para a melhora. Convém registrar também a resposta em palavras do jogador. “Eu lembrava que o peão fechava o bispo” oferece ao treinador uma pista diferente de “eu lembrava do desenho”. Um pequeno teste entre parceiros não fornece uma medida clínica e tampouco localiza o processo em uma região cerebral.
+
+Na próxima vez que alguém disser que uma atividade “ativa o cérebro”, tente completar a notícia com uma frase mais específica. Quem participou, qual problema recebeu, qual resposta foi registrada e qual comparação sustentou a conclusão? Se esses elementos estiverem descritos, há uma ideia concreta para discutir, apoiar ou contestar. Se estiverem ausentes, a pergunta permanece aberta, mesmo diante de uma imagem colorida e de um tabuleiro perfeitamente reconhecível.
+
+Se o grupo resolver trocar de tarefa no meio da sessão, guarde os resultados em colunas diferentes. Alguém que passou da simples identificação de uma peça à busca por uma ameaça pode precisar de mais tempo e, ainda assim, ter respondido corretamente. Somar as duas durações como se medissem a mesma coisa apagaria a mudança que vocês introduziram de propósito.
+
 ## Fontes
 
 - Li, K., Jiang, J., Qiu, L. et al. (2015), *A multimodal MRI dataset of professional chess players*, Scientific Data, 2, 150044, [artigo](https://www.nature.com/articles/sdata201544).

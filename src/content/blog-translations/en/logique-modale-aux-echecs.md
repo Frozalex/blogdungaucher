@@ -95,6 +95,24 @@ Useful depth depends on the position. No universal number of moves is associated
 
 ---
 
+## Audit the phrase “White has mate”
+
+Write the sentence on a card and ask three people to explain what it asserts. One might think it means that White can give checkmate on the next move. Another might think that White has a forced mate after an unspecified number of moves. A third might only have spotted a pretty line ending in mate if Black makes a natural-looking mistake. All three claim to have seen a mating possibility, but the answers required to justify them are different. Keeping track of whose choices are involved is more important than choosing an impressive symbol.
+
+You can demonstrate the difference from the opening position after 1.f3 e5. It is White's turn. Is it possible for Black's very next move to be checkmate? Yes. White can play 2.g4 and Black can reply 2...Qh4 mate. The route from d8 is clear and the checking diagonal from h4 reaches e1 through g3 and f2. White has no way to block it, capture the checker or move the king to safety. That supplies a complete witness for a claim of existence. There is at least one legal continuation with the advertised ending.
+
+Can you now state that White is forced to allow that particular mate? No. Try 2.g3 instead. The pawn occupies the diagonal and protects h4; putting the black queen there would allow gxh4. You have refuted the claim that the same mating move works after every legal white choice. You have not proved that this is White's best move, nor calculated the eventual outcome of the position after 2.g3. A counterexample has a precise reach: it invalidates the universal assertion to which it responds. It need not settle every broader question someone could ask about the board.
+
+## The answer changes when you move the quantifiers
+
+Consider an imaginary two-branch tree in which White can choose plan A or plan B. Against a passive defence, plan A wins and plan B draws. Against an active defence, A loses and B wins. For each *named* defensive scheme you can identify a white plan that wins against it. Does White therefore have a winning plan if required to choose A or B before learning the defence? Look at the rows separately. Black can answer A with the active defence and can answer B with the passive defence. The existence of a winning reply to every already named option does not give White one option that wins against whatever Black does afterwards.
+
+That is why a useful exercise in annotation is to move the words around. Compare “for every reply I have a continuation” with “I have one continuation for every reply”. At a real board, you get to choose your *next* move after seeing Black's reply; you cannot use that information to revise your *previous* move. Draw one extra level on the tree if necessary. Put the player to move beside every fork, and cross out an assertion as soon as a legal branch defeats it.
+
+This style of checking is particularly helpful when someone gives a puzzle a grand title. A diagram labelled “forced win” needs a defence test quite different from one labelled “find a striking possible finish”. Both can be enjoyable puzzles. A solver who asks first whether the opponent must cooperate has already chosen the right standard for the solution.
+
+A good solution can therefore be checked by a reader who disagrees with the title: list the choices and inspect what each claim requires.
+
 ## Sources
 
 - Rendsvig, R., Symons, J., & Wang, Y. (2025 edition). *Epistemic Logic*. Stanford Encyclopedia of Philosophy. [Text](https://plato.stanford.edu/entries/logic-epistemic/).

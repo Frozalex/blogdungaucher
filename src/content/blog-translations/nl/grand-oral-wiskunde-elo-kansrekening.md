@@ -66,6 +66,8 @@ Derde aanname: de **geldigheid van de sigmoïde**. De Elo-formule is gekalibreer
 
 Een alternatieve, modernere benadering is die van AlphaZero. Dit programma gebruikt geen expliciet probabilistisch model. Zijn neurale netwerk schat rechtstreeks een positiewaarde en een kansverdeling over de zetten, maar deze kansen zijn impliciet, voortkomend uit het leerproces. AlphaZero stelt het idee ter discussie dat kansen door formules gemodelleerd moeten worden: ze kunnen door ervaring worden aangeleerd. Dit is een paradigmaverschuiving, die de beperkingen van de parametrische benadering toont.
 
+Een nuttige tegenvraag van de jury is wat een verwachte score van een half punt precies zegt. Denk aan twee fictieve ontmoetingen. Bij de eerste eindigen alle partijen in remise. Bij de tweede wint wit de helft en verliest wit de helft. In beide gevallen is de verwachte opbrengst voor wit een half punt. De kans op winst is toch heel anders. Als je op het bord de formule in woorden omzet, schrijf dan eerst wat de variabele voorstelt: het gemiddelde aantal punten per partij. Voor een afzonderlijke winstkans heb je ook informatie nodig over remises.
+
 ## Conclusie
 
 Om mijn oorspronkelijke vraag te beantwoorden: kansrekening maakt het mogelijk om schaakprestaties te modelleren met een opmerkelijke maar begrensde precisie. De binomiale verdeling verklaart waarom onevenwichtige wedstrijden kunnen ontstaan tussen gelijke spelers. De Elo-formule, via een convergente recursieve rij, maakt het mogelijk om de winkans tussen twee willekeurige spelers te schatten en hun ratings bij te werken naarmate er partijen worden gespeeld. De wet van de grote aantallen garandeert dat deze schatting convergeert naar de werkelijke kracht van de spelers, onder aannames van stationariteit.

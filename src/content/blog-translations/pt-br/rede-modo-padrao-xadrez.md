@@ -50,6 +50,34 @@ Se o mesmo lance errado volta sem parar, você pode reservar um momento para ana
 
 Para o contexto geral, leia [as pausas](/pt-br/blog/beneficios-das-pausas-no-xadrez/), [o sono](/pt-br/blog/xadrez-e-sono/) e [a meditação](/pt-br/blog/xadrez-e-meditacao/). Esses assuntos têm métodos e limites próprios; não se reduzem a uma única rede.
 
+## Olhar pela janela enquanto o rei atravessa o tabuleiro
+
+No clube, faça a seguinte experiência de imaginação. Dois jogadores desviam os olhos do tabuleiro durante o mesmo final. Um está contando as casas até a promoção do peão. O outro tenta lembrar onde deixou o bilhete do estacionamento. Uma câmera registraria dois movimentos muito parecidos. Ao perguntar no que cada um estava pensando, você descobriria que só o segundo se afastou da tarefa. Ainda assim, a resposta de nenhum deles seria um registro de atividade cerebral. Ela descreve o conteúdo que a pessoa consegue relatar naquele momento.
+
+Agora acrescente um terceiro jogador. Ele continua olhando para as peças enquanto calcula quantos pontos precisa para ganhar o torneio. Está pensando em xadrez, mas deixou por instantes de resolver a posição. Dependendo da pergunta que você fizer, o episódio será classificado de maneira diferente. Se perguntar se estava pensando no torneio, ele dirá que sim. Se perguntar se calculava uma variante, provavelmente dirá que não. Esse exemplo é um bom antídoto para a vontade de classificar a atenção de alguém a partir da postura, de uma foto ou do tempo que levou para responder.
+
+Em um estudo de amostragem de experiências, a formulação e o momento das perguntas importam. Uma resposta obtida durante um deslocamento pode ter significado diferente de uma resposta obtida em meio a uma conversa. Além disso, receber um aviso já interrompe por um instante o que a pessoa fazia. No clube, perguntar repetidamente se o jogador ainda está concentrado também mudaria o andamento da tarefa. Antes de transportar um número publicado para uma partida, confira se as perguntas, o ambiente e a unidade que está sendo contada continuam reconhecíveis.
+
+## Um treino sobre retomada com duas folhas de papel
+
+Escolha para estudo uma posição de uma partida sua que ainda lhe cause dúvida. Na primeira folha, escreva o lado a jogar, o objetivo que você identificou e duas respostas adversárias que pretende verificar. Calcule por alguns minutos sem consultar a solução. Quando perceber que está repetindo a mesma sequência, anote a casa ou o lance que impede o avanço da análise. Um registro como “o cavalo chega a tempo de cobrir a torre?” é mais informativo do que escrever apenas que você travou.
+
+Guarde a posição e faça outra atividade por um intervalo compatível com sua tarde. Ao voltar, abra a segunda folha antes de ler a primeira. Reconstrua a pergunta do jeito que vier à cabeça e registre o primeiro lance candidato que encontrar. Só então compare as folhas. A ideia nova talvez seja uma defesa do adversário, uma ordem de lances ou simplesmente a percepção de que seu plano não funciona. Também pode acontecer de você voltar exatamente à mesma dificuldade. Conserve esse resultado. Descartar todas as tentativas sem novidade faria a pausa parecer mais produtiva do que foi.
+
+Para conferir o resultado, jogue as variantes no tabuleiro e tente encontrar uma resposta incômoda contra sua própria proposta. Uma ideia que apareceu imediatamente depois do intervalo pode ser falsa. Outra, anotada antes da pausa, pode resistir a todas as tentativas de refutação. Avalie a validade enxadrística independentemente do entusiasmo de ter encontrado uma continuação diferente. Depois escolha o que vale guardar para o treino seguinte. Talvez a pausa tenha ajudado a formular a pergunta mesmo sem resolver a posição.
+
+Se quiser comparar formas de trabalhar, use posições diferentes de dificuldade parecida e alterne a ordem das sessões. Trabalhar sempre sem pausa na primeira posição e com pausa na segunda confunde o efeito da ordem com o do intervalo. Um registro doméstico continua sujeito ao cansaço do dia e às diferenças entre posições. Ele serve para decidir como você prefere estudar e que perguntas levar ao treinador. Não identifica qual rede cerebral participou da solução.
+
+## Quando um pensamento que foge também traz informação
+
+Imagine que, enquanto você calcula uma troca de damas, venha à cabeça a derrota da rodada anterior. Antes de julgá-la como distração, pergunte o que a lembrança trouxe. Pode ser uma posição parecida em que o rei entrou pelo flanco oposto. Nesse caso, transforme a lembrança numa hipótese verificável. O rei tem uma entrada equivalente aqui? Se a resposta for negativa, descarte a analogia. Se o pensamento for apenas sobre o resultado de ontem, vale reconhecer a mudança de assunto e voltar à troca que está à sua frente.
+
+Esse retorno fica mais fácil quando há uma pergunta curta à sua espera. Em uma posição com pouco tempo, basta conferir o que mudou com o último lance e se sua resposta deixa algum xeque decisivo. Em uma análise longa, você pode retomar a última posição da variante em que tinha certeza da avaliação. A escolha depende do relógio e da complexidade do problema. Não há necessidade de tentar esvaziar a mente antes de voltar a jogar.
+
+Depois da sessão, peça a um colega que leia suas duas folhas sem saber se a ideia veio antes ou depois da pausa. Se ele apontar uma defesa que você ignorou em ambas, leve essa defesa para o próximo treino. Se as duas propostas forem equivalentes, investigue por que uma pareceu tão mais convincente no momento. Essa conversa tem um resultado observável no tabuleiro e deixa em aberto a questão científica de como pensamentos espontâneos surgem e mudam de direção.
+
+Uma última variação é escolher uma partida que você venceu. Fica mais fácil reconhecer os momentos de dispersão quando o desfecho foi ruim e esquecê-los quando o adversário acabou errando depois. Aplicar a mesma pergunta a uma vitória ajuda a construir um relato mais equilibrado da tarde. Às vezes a anotação mais valiosa registra uma defesa que você encontrou apesar de ter passado vários minutos pensando em outra coisa.
+
 ## Fontes
 
 - Christoff, K., Irving, Z. C., Fox, K. C. R., Spreng, R. N., & Andrews-Hanna, J. R. (2016). *Mind-wandering as spontaneous thought: a dynamic framework*. Nature Reviews Neuroscience, 17, 718–731. [Artigo](https://www.upaya.org/wp-content/uploads/2020/04/Christoff-et-al.-NRN-2016.pdf).

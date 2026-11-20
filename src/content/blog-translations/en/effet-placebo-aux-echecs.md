@@ -77,6 +77,30 @@ The same applies to “I always lose to them” or “I am useless at endgames�
 
 The cited studies do not demonstrate that negative expectations always have more force than positive ones in chess. Nor do they promise a cognitive benefit from a supplement merely because it is presented that way. To assess a claim, ask which task was measured, against which comparison group and with what uncertainty.
 
+## Three things a “lucky” routine may contain
+
+Imagine a player who always lays a particular pen next to the board before a game. The player says it helps them settle down. There is an ordinary practical possibility: the pen works, so there is one fewer problem to deal with during the round. There is also a learned routine: laying it down marks the transition from chatting in the hall to examining the position. Finally there is the expectation that this particular object will bring success. Those possibilities can coexist. A win on the day the pen was used will not tell you which of them, if any, affected a move.
+
+What could the player do if it went missing? Retain the useful behaviour and change the object. Put another working pen on the table, check the board orientation, find the clock and get ready to write down the first move. If the player can perform the same preparation, that is already a useful discovery about how portable the routine is. It does not show that their level of confidence, concentration or rating would be identical across a season. The exercise answers the modest question “can I reproduce what I actually do before the game?”
+
+## A recruitment message can change the meaning of a test
+
+Suppose a coach advertises two Saturday workshops. One notice promises an exciting technique for boosting chess calculation; the other neutrally offers participation in a practice session. People choosing the first may arrive with different expectations and perhaps different reasons for volunteering. Imagine that both groups then receive the same twenty diagrams. Even before the results are available, it would be wrong to describe the two groups as interchangeable simply because the boards were identical. Recruitment, instructions and the way players interpret the task belong to the conditions of the comparison. This is one reason research on expectations in cognitive training is relevant when evaluating a striking club claim.
+
+Now imagine designing a more informative chess experiment. Start with one recruitment message, define the task before seeing scores, and plan how players will be assigned to the different instructions. Use comparable positions, allow the same time and give both groups the same quality of feedback. Decide whether the outcome is the number of correct solutions, the quality of the defensive lines or a self-report of confidence. Those measures can move in different directions. The player who feels calmer but finds exactly the same number of moves has given a different result from the player who solves an extra problem while reporting unchanged confidence.
+
+A coach who knows which players received the supposedly special routine may give them more encouragement or wait longer for their answers. If possible, have somebody who does not know the assignments score written solutions using the same rules. Decide in advance how to handle an alternative move that is just as strong as the official answer. A correct solution should not become incorrect because it came from the comparison group. Each choice makes the test less dependent on a person's hope that the exercise will work.
+
+## What one favourable result would still leave open
+
+Suppose the specially worded group does better on the diagrams. The first question is how large and consistent the difference is, and how much uncertainty remains. A difference of one position in a tiny club session can change sign if one participant arrives late or recognises a famous problem. Ask whether the groups began at comparable levels and whether the test included fresh positions. Also look at what happened to both groups: repeating similar exercises can improve performance even without a special routine. A before-and-after change in the featured group is only part of the comparison.
+
+Suppose instead that the players report enjoying the session more, with little difference in how accurately they calculated. There may be a perfectly good reason to retain an enjoyable format while being precise about what it achieved. A coach can advertise a welcoming session that people wish to attend again. Claiming that the same session improves tournament strength would require evidence about play beyond those Saturday exercises. No clinical example or cycling experiment can supply the missing chess outcome merely because it too involved expectations.
+
+For a personal experiment, keep the question small enough that your observations can answer it. You might compare whether two preparations leave you with the clock set, your pen working and time to settle before the first move. Record disruptions as well as victories, and decide in advance what would count as a useful change. The point of this exercise is to keep a practical routine from becoming dependent on a lucky shirt or pen. Its value can be described without turning a friendly club ritual into a treatment or a promise about Elo.
+
+A simple check on the design is to ask two readers to interpret the result independently. Give one reader the numerical outcome with the group names hidden, and give the other the original labels. If one calls the same small difference a breakthrough and the other calls it inconclusive, look at the numbers and the uncertainty together before deciding how to describe the session to the next group of players.
+
 ## Sources
 
 - Hróbjartsson, A., & Gøtzsche, P. C. (2010). *Placebo interventions for all clinical conditions*. Cochrane Database of Systematic Reviews, Wiley. [Full review](https://www.dcscience.net/Hrobjartsson-Gotzsche-Cochrane-placebo.pdf).

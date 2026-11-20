@@ -93,21 +93,17 @@ Deze anekdotische voorbeelden bewijzen geen causale synergie, maar ze suggereren
 
 ---
 
-## Veelgestelde vragen
+## Een fout terugvinden op het gehoor en op het bord
 
-### Verandert muziek het brein meer dan schaken?
+Neem een melodie van vier korte maten die je al kunt spelen en een bekende schaakvariant van vier zetten. Maak op papier van beide de volgorde onzichtbaar na de helft. Speel eerst de melodie tot de onderbreking. Probeer daarna vanaf de stilte verder te gaan zonder weer bij maat één te beginnen. Zet vervolgens de schaakvariant op het bord en onderbreek op dezelfde manier na twee zetten. Waar vind je aanknopingspunten om te hervatten? Bij de melodie kan een toon of ritme de volgende beweging oproepen. Op het bord vertelt de plaats van een inmiddels geslagen stuk iets over wat mogelijk blijft.
 
-Anatomisch gezien wel: IRM-studies tonen meer uitgesproken structurele verschillen bij muzikanten (dikker corpus callosum, meer ontwikkelde auditieve cortex). Maar dit betekent niet dat muziek de algemene intelligentie meer ontwikkelt: de voordelen blijven grotendeels domeinspecifiek.
+Verander in een tweede poging één toon of één zet. Lukt het nog om vanuit het veranderde punt verder te komen? Wie een bekende melodie vlekkeloos kan vervolgen, kan bij een verandering ineens naar de oorspronkelijke versie terugspringen. Dezelfde vergissing is herkenbaar wanneer een tegenstander in een bekende opening een ongewone volgorde kiest en jij uit gewoonte je vaste antwoord uitvoert. Het gezamenlijke leerprobleem is opmerken welke informatie tijdens de afwijking veranderde.
 
-### Moet je jong beginnen om een effect te hebben?
+Trek de vergelijking ook weer op tijd uit elkaar. Een geslaagde muzikale variatie kan aantrekkelijk zijn zonder één geforceerde voortzetting. In een schaakstelling kan een onverwachte maar fraaie zet gewoon een tactische weerlegging hebben. De oefening zegt dus iets over het opnieuw oriënteren na een onderbreking. Ze zegt niets over welke hobby de grootste algemene invloed op je intelligentie heeft.
 
-Hoe jonger je begint, hoe meer uitgesproken de structurele aanpassingen zijn, vooral voor muziek. Maar functionele veranderingen treden op elke leeftijd op bij regelmatige beoefening. Het is nooit te laat om te beginnen.
+### Wat je op de tweede dag kunt controleren
 
-### Zijn muzikanten beter in schaken?
-
-Niet specifiek. Enkele vaardigheden overlappen (aanhoudende concentratie, patroongeheugen), maar de directe overdracht is zwak. De meeste grote muzikanten spelen niet op hoog niveau schaken, en omgekeerd.
-
----
+Leg na het oefenen de bladmuziek en de partijnotatie weg. Begin de volgende dag eens midden in de melodie, bijvoorbeeld op de eerste tel van de derde maat. Zet voor het schaken het diagram halverwege de variant op en bedek de voorafgaande zetten. Kun je vanaf dat punt verder? Wie telkens bij het begin wil herstarten, heeft een aanwijzing voor de volgende oefensessie. Speel bij de melodie de overgang naar die maat apart. Zoek op het bord uit wat er zojuist is veranderd, welke verdediger is weggelokt of welke lijn plotseling openligt. De overeenkomst zit hier in de opzet van het oefenen. Of de melodie klopt, hoor je bij het terugluisteren. Of de schaakvariant deugt, merk je pas wanneer je de beste verdediging voor de andere kleur hebt gezocht.
 
 ## Kernpunten
 

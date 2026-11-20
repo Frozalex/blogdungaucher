@@ -1,4 +1,4 @@
-﻿---
+---
 heroImageAlt: Uma sequência de silhuetas de peças de xadrez em alturas crescentes.
 title: "História e origens do xadrez: do chaturanga indiano à dama moderna"
 excerpt: >-
@@ -96,6 +96,12 @@ O primeiro grande livro impresso sobre o novo jogo, o de **Luis Ramírez de Luce
 A solução chega em **1849** com o set **Staunton**: um modelo sóbrio, estável, imediatamente legível, registrado por Nathaniel Cooke e promovido pelo campeão inglês Howard Staunton. Ele se impõe como norma universal, e ainda hoje é o único autorizado em competição oficial.
 
 As instituições se seguem. O primeiro grande **torneio internacional** acontece em Londres em **1851**, vencido por Adolf Anderssen. O primeiro **campeonato mundial** oficial coroa Wilhelm Steinitz em **1886**. Por fim, a **FIDE**, a federação internacional, nasce em Paris em **1924**. O relógio, a notação, o ranking Elo virão completar o edifício. O jogo milenar tornou-se uma instituição mundial regulamentada.
+
+## O que uma peça antiga permite datar?
+
+Faça uma pequena investigação no papel. Na primeira coluna, coloque uma peça esculpida cuja procedência você conhece. Na segunda, uma regra escrita que descreve um movimento. Na terceira, um diagrama com uma solução comentada. As três fontes podem se referir a uma tradição parecida e ainda assim responder a perguntas diferentes. A idade da madeira ajuda a situar o objeto, mas não revela por si só em que corte se jogava com ele. Um texto copiado numa certa data mostra que aquela formulação já circulava quando foi copiada. O jogo descrito pode ser anterior.
+
+A transformação da dama oferece um teste interessante. Encontrar um nome equivalente a “rainha” num inventário diz algo sobre o vocabulário das pessoas que o organizaram. Para concluir que a peça já percorria toda uma diagonal, procure uma regra explícita ou a solução de um problema cujo lance decisivo exija exatamente esse alcance. Da próxima vez que encontrar o título “o primeiro tabuleiro”, experimente completá-lo: primeiro exemplar preservado naquela região, primeira descrição em determinada língua ou primeira representação da regra moderna? Cada resposta pode exigir um documento diferente.
 
 ## Um jogo palimpsesto
 

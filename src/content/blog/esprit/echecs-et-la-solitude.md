@@ -104,6 +104,17 @@ Ces propositions ne constituent pas un traitement de la solitude. Elles permette
 
 Si les échecs occupent un temps que tu voudrais consacrer à d'autres relations, regarde ce que tu peux modifier concrètement. Le critère n'est pas d'atteindre un équilibre identique à celui des autres joueurs, mais de pouvoir choisir une pratique qui trouve sa place dans ta vie.
 
+## Une position qui circule entre quatre personnes
+
+Quatre membres d'un club s'apprécient mais se voient rarement. L'un travaille le soir, l'autre habite loin de la salle, les deux derniers aimeraient jouer des parties lentes plutôt que discuter sur une messagerie en continu. Ils peuvent organiser un échange qui exige peu de disponibilité simultanée. Le premier envoie une seule position issue de sa propre partie avec la question qui lui est restée. Il choisit quelque chose que les autres savent installer en quelques instants. Un diagramme accompagné de « les Noirs jouent, échangerais-tu les tours ? » suffit pour commencer.
+
+Le deuxième membre répond en choisissant un camp. Il joue sa ligne sur un échiquier et renvoie le premier obstacle qu'il rencontre. Le troisième prend le camp opposé et cherche une réponse pertinente, en conservant le droit de dire que la position ne l'inspire pas cette semaine. Le quatrième rassemble les deux lignes sur la même feuille pour la prochaine réunion. Les rôles peuvent tourner. Personne n'a besoin de se présenter comme le spécialiste des finales pour avoir quelque chose à apporter. Le propriétaire de la partie garde aussi la liberté de la retirer s'il préfère qu'elle ne circule plus.
+
+Le détail important arrive à la réunion suivante. Les quatre personnes peuvent s'asseoir autour d'un échiquier avec un vrai souvenir commun, même si elles ne se sont jamais connectées au même moment. On reprend la position pendant un quart d'heure, puis on passe à une partie amicale. Si le projet tourne au fil interminable où le même membre finit par tout analyser, modifiez le contrat : une seule réponse de chaque personne, une date de clôture et une semaine sans position de temps à autre.
+
+Ce dispositif a ses limites. Quelqu'un qui veut surtout rencontrer des gens près de chez lui peut n'éprouver aucun intérêt pour une correspondance supplémentaire. Demande-lui alors s'il préférerait simplement être attendu à une table précise le prochain soir d'ouverture. Pour une première visite, « Je serai à la table du fond à dix-neuf heures avec un jeu et deux places libres » est plus facile à transformer en rencontre que « passe quand tu veux ». Cette précision bénéficie aussi à quelqu'un qui aime travailler seul la plupart du temps mais souhaite savoir qu'une soirée commune reste possible.
+
+Après deux essais, chacun peut dire ce qu'il voudrait garder : le petit problème reçu dans la semaine, la rencontre devant les pièces ou seulement la possibilité d'écrire lorsqu'une partie lui résiste. Le bon format sera celui auquel les personnes concernées voudront réellement revenir. Le nombre de messages échangés ne permet pas à lui seul de juger si ce lien leur convient.
 
 ## Sources
 

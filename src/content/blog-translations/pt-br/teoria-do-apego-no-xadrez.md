@@ -49,6 +49,54 @@ Uma criança silenciosa pode estar cansada, decepcionada, concentrada em algo ou
 
 Não existe aqui um limite estabelecido de doze ou treze anos a partir do qual uma relação explicaria o abandono. Se o desconforto durar, pergunte o que pesa: ritmo dos torneios, relação com o treinador, expectativas familiares ou vontade de praticar de outro jeito. A resposta merece ser ouvida antes de buscar uma teoria.
 
+## Disponibilidade não significa monitoramento permanente
+
+Uma pessoa pode estar presente e dar liberdade para explorar. Para um jovem jogador, essa diferença se vê em situações comuns: poder tentar uma abertura sem temer uma piada, pedir ajuda sem ter que justificar cada erro, ou dizer que prefere analisar no dia seguinte. Estas são propostas educacionais, não comportamentos cujo efeito este artigo teria medido no rating.
+
+O apoio torna-se ambíguo se serve para obter um resultado em troca. “Eu só te acompanho se você ganhar” condiciona explicitamente a ajuda ao desempenho. Uma expectativa sobre a preparação pode ser formulada de outra forma: “Nós planejamos uma sessão; vejamos juntos se o programa continua adequado.” A segunda frase não proíbe esforço nem responsabilidade. Ela separa o ambiente de trabalho do valor pessoal da criança.
+
+O silêncio também requer um contexto. Respeitar alguns minutos de calma depois de uma partida pode ser acolhedor; cortar o relacionamento de forma duradoura para punir uma derrota não responde à mesma necessidade. Portanto, não é a presença ou a ausência de uma discussão que basta para qualificar a relação.
+
+## Por que uma associação não estabelece a direção do efeito
+
+As pesquisas de Davis e Jowett baseiam-se em respostas aos questionários. As variáveis estão ligadas estatisticamente, mas ainda são possíveis várias direções: uma relação considerada satisfatória pode acompanhar uma melhor experiência esportiva; um período esportivo feliz também pode colorir o julgamento sobre o treinador. Outros fatores podem influenciar ambos.
+
+Uma análise de mediação descreve uma organização estatística compatível com um modelo. Sem demonstração adicional, ela não demonstra um mecanismo causal na vida cotidiana. O leitor deve, portanto, poder distinguir “estas dimensões estão associadas” de “se você pronuncia essa frase, seu filho perseverará”. A segunda afirmação excede os resultados disponíveis.
+
+Esse limite deixa espaço para a ação: você pode tentar tornar o relacionamento mais claro e respeitoso sem prometer um efeito esportivo mensurável. O objetivo educacional tem seu próprio valor.
+
+## Depois da rodada, três momentos possíveis
+
+Aqui está uma cena fictícia. Seu filho sai depois de deixar sua dama sem defesa. Ele diz que nunca mais quer jogar. A primeira tarefa não é provar imediatamente que esta conclusão é falsa. Você pode reconhecer o momento difícil e atender a uma necessidade concreta: sentar, beber, encontrar um lugar calmo.
+
+O segundo momento é perguntar o que aconteceu, quando ele quer falar sobre isso. “O que você viu naquele momento?” abre a história mais do que “Como você pôde deixar a dama em perigo?”. Se ele atribuir tudo ao adversário, primeiro ouça a situação; uma possível questão de arbitragem é tratada com o árbitro, e um erro técnico é retomado no tabuleiro.
+
+O terceiro momento é a análise. Monte a posição, encontre as ameaças e, em seguida, escolha apenas uma dificuldade para trabalhar. A perda da dama pode se tornar uma lição sobre a verificação das peças atacadas. Ela não precisa se tornar uma história sobre a falta de caráter. Estes passos não são um protocolo terapêutico; eles oferecem um ambiente de conversação adaptável.
+
+## O papel do pai, do treinador e do jogador
+
+Quando cada um comenta a partida, as mensagens podem contradizer-se. O responsável elogia a prudência; o treinador pede mais iniciativa; a criança tenta adivinhar qual resposta evitará uma repreensão. Um simples acordo sobre os papéis pode limitar essa confusão: quem conduz a análise técnica, como o jogador expressa seus objetivos, quando discutir o calendário?
+
+O jogador também deve ser capaz de dizer que ficou com uma dúvida. "Eu não entendi por que a troca era ruim" é um pedido de explicação, mesmo que a solução já tenha sido mostrada. Um quadro confiável dá lugar a essa repetição e erro. Ele também pode especificar limites: pontualidade, respeito ao adversário, direito à imagem e horários de contato.
+
+Para um adulto, as mesmas questões relacionais podem existir sem infantilizar o relacionamento. Você pode querer um treinador exigente e pedir que seus feedbacks sejam sobre decisões específicas. É possível cobrar dedicação e tratar a pessoa com respeito.
+
+## Avaliar o quadro em vez de classificar a criança
+
+Em vez de procurar um rótulo de apego, observe as possibilidades concretas: o jogador pode pedir uma pausa, reconhecer um erro, discordar, escolher um objetivo? O treinador pode explicar suas decisões e ouvir uma dificuldade? Será que a família pode falar de outra coisa que não seja a classificação?
+
+Um conflito pontual não resume uma relação. Por outro lado, humilhações repetidas ou um medo duradouro de voltar ao clube merecem ser levadas a sério sem esperar por uma teoria completa. Ouvir, rever o quadro e procurar um interlocutor competente responde melhor à necessidade do que diagnosticar remotamente uma criança ou um treinador.
+
+## Quem abre o arquivo da partida?
+
+Imagine uma saída de torneio na chuva. A criança segura a folha enrolada na mão. No carro, o pai pegou o celular para registrar os lances de que ainda se lembrava. Ele acredita que isso vai ajudar. A criança aperta a folha e pede música. A partir desses gestos sozinhos, quase tudo é desconhecido de sua relação. No entanto, podemos mudar algo específico nesta cena: perguntar a quem pertence a escolha do momento.
+
+No dia seguinte, a súmula volta à mesa do café. O pai sugere três opções. Guardar a folha numa pasta, montar uma posição juntos ou enviá-la ao treinador com uma pergunta. A criança escolhe a terceira opção e aponta uma troca de bispos. O responsável pode escrever exatamente: “Gostaria de saber se posso conservar o meu bispo.” A mensagem agora pertence ao jogador. Não há necessidade de acrescentar em seu nome que ele teria entrado em pânico ou que a derrota o teria desmoralizado. Essas interpretações mudariam a pergunta recebida pelo treinador.
+
+Este último pode iniciar a sessão pedindo ao jogador que monte as peças como estavam antes da troca. Se o jogador mudar de ideia, a folha permanecerá disponível para mais tarde. O adulto tornou possível uma análise, deixando à criança a faculdade de escolher o momento e o assunto. Esta pequena decisão é diretamente observável. Ela pode se tornar um hábito de equipe sem a necessidade de deduzir um estilo de apego de uma cena de carro.
+
+Se o combinado do clube mudar, pergunte à pessoa como prefere ser avisada. Uma mensagem com antecedência resolve um problema de calendário que, sem conversa, poderia ser confundido com falta de interesse.
+
 ## Fontes
 
 - Davis, L. e Jowett, S. (2010), “Investigating the Interpersonal Dynamics Between Coaches and Athletes Based on Fundamental Principles of Attachment”, *Journal of Clinical Sport Psychology*, 4(2), 112–132. [Resumo dos autores](https://researchportal.northumbria.ac.uk/en/publications/investigating-the-interpersonal-dynamics-between-coaches-and-athl/).

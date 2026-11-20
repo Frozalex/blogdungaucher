@@ -114,6 +114,20 @@ A organização e as adaptações cabem aos responsáveis pela unidade e aos pro
 - [Xadrez e TDAH: distinguir prática e cuidado](/pt-br/blog/xadrez-e-tdah/)
 - [Xadrez e cérebro: o que as pesquisas medem](/pt-br/blog/xadrez-e-o-cerebro/)
 
+## Uma oficina que outro educador consiga avaliar
+
+Considere um plano fictício de quatro encontros. No primeiro, cada dupla aprende a retomar uma posição depois de uma interrupção. No segundo, os parceiros revezam quem descreve o plano em voz alta. No terceiro, quem perdeu a partida escolhe um momento para reexaminar. No último, a dupla prepara um problema simples para outra mesa. São atividades identificáveis. O educador pode observar se aconteceram e perguntar aos participantes qual delas gostariam de repetir, sem atribuir aos encontros um efeito que o programa não mediu.
+
+Até a contagem de presença exige cuidado. Uma pessoa pode ter faltado porque o horário coincidiu com uma visita, porque houve transferência ou porque preferiu outra atividade. Colocar todos esses casos na coluna “desistência” atribui a mesma intenção a situações diferentes. Quando houver registro permitido, separe “estava disponível e optou por não vir” de “não pôde participar”. Deixe uma categoria para motivo desconhecido. Esse detalhe melhora a decisão sobre manter o horário da próxima turma.
+
+O produto da última oficina também pode ser avaliado com respeito à privacidade. Para entender se os problemas preparados funcionaram, basta saber se a outra mesa conseguiu montar a posição e explicar o objetivo. Não é necessário publicar nomes, histórias pessoais ou imagens do encontro para tornar a atividade inteligível. Um exemplo construído pelo educador e uma descrição das adaptações podem ser suficientes para que outro grupo repita a experiência.
+
+Se o objetivo do relatório for defender a continuidade do projeto, inclua também o principal obstáculo. Uma atividade apreciada que só aconteceu em dois dos quatro dias previstos enfrenta um problema prático diferente de uma atividade pontual que ninguém quis repetir. As duas situações pedem decisões distintas sobre materiais, equipe e calendário. É nesse nível que um relato pequeno e honesto pode orientar uma escolha de verdade.
+
+### Quando a lista de presença muda
+
+Numa oficina fictícia de quatro encontros, dez pessoas participam do primeiro e seis chegam ao quarto. Dizer que quatro abandonaram por desinteresse seria acrescentar uma explicação que a lista não traz. Uma pessoa pode ter sido transferida, outra pode ter conflito de horário e outra pode simplesmente preferir uma atividade diferente. Se o motivo não foi comunicado, registre apenas a ausência. Quando descrever as respostas ao questionário final, indique que vieram de participantes presentes naquele encontro. Quem organiza a próxima oficina passa a saber quais experiências conseguiu ouvir e quais ficaram fora do relatório.
+
 ## Fontes
 
 - FIDE e Cook County Sheriff’s Office (2021), *Chess for Freedom program launched*, [apresentação do lançamento](https://chessforfreedom.fide.com/2021/04/13/chess-for-freedom-program-launched/).

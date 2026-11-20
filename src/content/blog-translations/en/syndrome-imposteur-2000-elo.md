@@ -69,6 +69,26 @@ The number can remain a reference point without deciding the value of every sess
 
 If fear of exposure goes beyond protecting a milestone, return to [the general guide](/en/blog/impostor-syndrome-in-chess/). It addresses doubt, explanations after a win and seeking help at every level.
 
+## The number on the team sheet
+
+Picture a club captain choosing boards for a match. In September a player appears at 1998 and sits on board four. A month later the list says 2003 and a teammate jokes, “Now you have to win that ending.” The player might enjoy the joke, shrug it off, or quietly begin treating every rook ending as an examination. The expectation has changed because the first digit has changed. Nothing in that change tells you which ending was on the board or whether the player had ever studied it. A captain can communicate the practical consequence accurately: “This list affects our board order. Shall we practise the endings you expect to meet?”
+
+Notice how many questions a milestone can hide. Does it affect eligibility for a particular event? Which list and publication date do its regulations use? Are you comparing an online rapid number with an over-the-board standard rating? Does your local club use a different system entirely? If the decision is about entry or selection, the organiser's rule is the relevant answer. If the decision is about whether you can analyse with someone, no entry regulation is involved. Two players can productively work on the same position without resolving whose number better describes them.
+
+## A small calculation without a verdict
+
+Set up a deliberately simple case with a player facing three equally rated opponents. Against each opponent their expected score is half a point. They win, lose and draw, in that order. The total of one and a half points matches the total expected score. The three games could still contain a remarkable save, a terrible oversight and a long sequence of routine moves. The rating calculation does not give one event a special weight because it felt momentous. A single result just above a round-number threshold may carry a large emotional weight for the player while contributing quite an ordinary amount of information to the rating.
+
+Now imagine the player holds a display of that running number beside their board for every game. The first victory crosses the threshold and the loss takes it back. Which of the two dates should count as the day they “became” the stronger player? The question has no good technical answer. You can reasonably celebrate the first time a list records a goal and still expect to cross the same boundary again in the other direction. Saving a favourite game from the event gives the celebration an object that subsequent results cannot retrospectively remove. In ten years the position will still be there to show a friend.
+
+## Let another player set the challenge
+
+Ask a training partner to choose one position from each of three games, without telling you how highly either participant was rated. Select a move, explain its main weakness and give one reply you particularly want checked. Then compare notes. If your answer is mostly sensible but misses one forcing move, you have a finite piece of work to do. If the other player finds that your proposed defence improves on the game, there is something they learned from you. Neither outcome depends on convincing the room that you deserve the number beside your name.
+
+The distinction also helps when you offer feedback to someone else crossing a milestone. Instead of “You should already know this at two thousand,” specify which decision needs attention: “After the rook trade, who queens first?” The player may lack a technique you assumed they had; they may also be able to explain a different feature of the position better than you can. The conversation becomes more informative as soon as being surprised by a mistake stops being the entire lesson. A strong question about one move is a perfectly respectable contribution from a player on either side of a rating threshold.
+
+Return to the original game on the team sheet after a month. Find the first point at which both players had meaningful alternatives and see whether your description is more accurate now. That is a test of understanding, with a retrievable position and a comparison you can inspect. Even if the next published list moves in the opposite direction, the analysis tells you what the work bought.
+
 ## Sources
 
 - Clance, P. R., & Imes, S. A. (1978). *The Impostor Phenomenon in High Achieving Women: Dynamics and Therapeutic Intervention*. Psychotherapy: Theory, Research & Practice, 15(3), 241–247. [Full article](https://mpowir.org/wp-content/uploads/2010/02/Download-IP-in-High-Achieving-Women.pdf).

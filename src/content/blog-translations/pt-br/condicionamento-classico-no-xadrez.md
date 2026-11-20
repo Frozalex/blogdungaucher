@@ -170,6 +170,12 @@ O que a desfaz é a exposição repetida sem consequência desagradável. O que 
 
 *Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [o condicionamento operante no xadrez](/pt-br/blog/condicionamento-operante-no-xadrez/), [como lidar com o estresse em torneio](/pt-br/blog/xadrez-estresse-torneio/) e [xadrez e medo de perder](/pt-br/blog/xadrez-medo-de-perder/).*
 
+## Separar o som do relógio da informação que ele traz
+
+Duas partidas podem produzir a mesma sensação de aperto por motivos diferentes. Numa delas o alerta sonoro coincide com cinco segundos restantes. Na outra o relógio mostra um minuto inteiro, mas o som lembra a derrota de ontem. A informação objetiva da primeira posição já justifica acelerar. Na segunda, ainda cabe verificar a ameaça antes de soltar a peça.
+
+Para explorar a diferença numa análise informal, reproduza uma posição conhecida e anote quanto tempo acredita que falta antes de olhar o mostrador. Compare essa estimativa com o tempo real. Repita em outro dia com o alerta desligado e uma posição comparável. Familiaridade com a posição e cansaço também mudam a experiência. O registro serve para descobrir se o alerta ajuda você a consultar o relógio ou se desvia seus olhos justamente no momento em que precisa encontrar uma defesa.
+
 ## Fontes
 
 - Pavlov, I. P. (1927). *Conditioned Reflexes: An Investigation of the Physiological Activity of the Cerebral Cortex*. Oxford University Press.

@@ -141,6 +141,14 @@ If a sentence in your profile can't be translated into a measurement, note that.
 
 **5. Phrase things as projects, not identities.** Replace "I'm an intuitive player" with "I score 41% in rook endgames, against 52% overall." The second phrasing contains an objective, a measurement and a possible deadline. The first contains nothing.
 
+## Make two scouting notes compete
+
+Here are two imaginary notes about the same opponent. The first says, “Prefers active positions but can defend patiently when necessary.” The second says, “In the five recent games I found with an isolated queen's pawn, they kept the queens on four times, including twice when a queen trade would have been easy to arrange.” The first is easy to recognise in almost any game, including games played by quite different people. The second gives you a sample, a type of position and a claim someone could check. It still leaves much to explain. Perhaps only one of the five positions offered a good exchange. Perhaps all five opponents avoided exchanging.
+
+To test the notes, hide the names on a second batch of games with similar structures. Give both notes to a friend and ask them to say what observations would count against each. It is surprisingly hard to imagine an ordinary game contradicting the first note. Almost any quiet move can be called patient defence and most active moves can be called a preference for activity. For the second note, a series of voluntary queen trades when a reasonable alternative existed would weaken the prediction. Looking for that evidence is more work, but it also teaches something about the positions.
+
+What if the second note turns out wrong? Keep the evidence and retire the label. A useful scouting notebook can contain a small, failed prediction with five examples underneath it. A scrapbook of portraits in which everyone is both “creative” and “practical when it counts” is harder to improve. For your own style profile, try changing one flattering adjective into a statement about a choice between two legal moves. If no choice comes to mind, the description is probably too broad to guide tomorrow's training.
+
 ## What to Take Away
 
 Thirty-nine students rated a personality profile 4.26 out of 5, identical for all of them, copied out of an astrology book. The text wasn't describing them: it was supplying a frame vague enough for them to fill in themselves with their own memories.

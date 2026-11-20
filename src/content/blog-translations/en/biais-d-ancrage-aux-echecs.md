@@ -158,6 +158,10 @@ Otherwise the anchor updates continuously and all you're doing is following a sl
 
 When a book or a video announces a line is equal, note when that evaluation was made and with what tools. A 2005 evaluation of a sharp tactical position doesn't have the same status as a 2024 one.
 
+## Put the evaluation in a sealed envelope
+
+Before showing a club partner your analysis, write the engine score on the back of the diagram. Ask them for two moves and one reason their preferred move might fail. Turn the sheet over only after you have compared variations. If the number surprises them, investigate the first position where the two analyses diverge. The score has then done a useful job: it has pointed to a disagreement that the players can locate on the board.
+
 ## Key Takeaways
 
 A rigged wheel stopping on 10 or 65 shifts by twenty points the estimate people make of the UN's composition. The number is random, they watch it being drawn, and it acts anyway. That's anchoring, and unlike many social psychology classics, it has held up solidly under replication.

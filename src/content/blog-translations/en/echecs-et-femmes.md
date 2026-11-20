@@ -66,7 +66,7 @@ In that sample, much of the gap between the top hundred men and women is compati
 
 Other research examines participation and experience, including [Howard (2014)](https://doi.org/10.1017/S0021932013000205). Observations across different countries are not a controlled experiment. They encourage examining several explanations rather than automatically attributing a remaining gap to biology.
 
-Players’ careers may make taking up chess more imaginable for others. This is an approach to welcome and representation whose precise effect depends on context; it cannot replace respectful support and concrete access to training.
+Suppose a junior wants to play the next interclub match after watching a champion's game. Can she find the schedule, get a board on the team and learn who analyses the games afterwards? A club can check those three things for itself. They connect a visible role model with an opportunity to play, and each can fail even when an invitation is sincere.
 
 
 ![Bilalić 2009: the scope of the model. The model does not establish one global cause or a biological limit.](/images/en/echecs-femmes-02-biais-participation-bilalic.svg)

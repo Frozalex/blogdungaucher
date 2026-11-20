@@ -114,6 +114,14 @@ A notebook can record facts: the format chosen, help requested, a break taken, a
 
 If significant difficulty arises, prioritise understanding the need and adjusting the setting with those concerned. Rating points or finishing the game do not come before the participant’s well-being.
 
+## Before the first club night
+
+Here is a message an organiser could send to any new member: “The front desk is just inside the door. We can show you an empty board at half past six, or introduce you to someone for a game at seven. Would you like either option? You can also come just to look around.” A concrete invitation answers several questions that the usual “everyone welcome” leaves open. No one needs to disclose a diagnosis in order to choose.
+
+Ask privately whether the person wants potential partners to know anything practical. One player may welcome an introduction but prefer to explain their own communication style. Another may want you to arrange an opponent who is happy to play in silence. An agreement made on the first evening need not apply next week. If the room or schedule changes, let the player know by whichever channel you agreed on.
+
+Afterwards, the best first question may be about the chess: “Was there a position you wanted to show me?” If the player raises a problem with the room, ask what they would like changed. If they simply want another game, the organiser has learned something important too. Participation can have the ordinary, unremarkable meaning it has for other club members.
+
 ## A possible hobby, without improvised diagnosis or treatment
 
 You cannot diagnose Morphy, Fischer or a contemporary player from playing style, isolation or a biography. Champions’ histories do not demonstrate an overrepresentation of autism. A passion for openings does not establish a diagnosis either.

@@ -63,6 +63,55 @@ Anote uma dificuldade recorrente, escolha um exercício que a trabalhe e reavali
 
 Para organizar a recuperação entre duas sessões, leia [os benefícios das pausas](/pt-br/blog/beneficios-das-pausas-no-xadrez/). Para sua relação com o resultado, veja [a psicologia do enxadrista](/pt-br/blog/psicologia-do-jogador-de-xadrez/).
 
+## O verdadeiro problema da fórmula: classificar seu trabalho
+
+O mesmo número pode esconder programas diferentes. Alguns guias classificam a estratégia com os finais; outros falam do meio de jogo. Analisar um ataque do seu repertório envolve, ao mesmo tempo, abertura, tática e estratégia. Se você mudar de classificação em cada sessão, sua tabela dará uma precisão artificial.
+
+Escolha uma convenção estável: classifique uma atividade de acordo com a questão principal que você quer resolver. “Qual peça desenvolver nesta estrutura?” pertence à compreensão das posições. “Posso ganhar um peão com uma combinação?” é uma questão de cálculo. “Este final de peões está ganho?” envolve técnica de finais e cálculo. A fronteira não é uma lei do jogo, mas torna seu balanço legível.
+
+O tempo de jogo também deve ser explícito. Uma semana com cinco horas de estudo e vinte horas de blitz não tem o mesmo perfil que uma semana de cinco horas que inclui as partidas. A fórmula descreve corretamente o seu esforço somente se você souber o que conta.
+
+## Diagnosticar uma derrota sem acusar o último lance
+
+Aqui está um método proposto para analisar suas próprias partidas. Antes de consultar o motor, escreva o primeiro momento em que você não sabia o que fazer, os candidatos considerados e o tempo restante. Em seguida, verifique as variantes. A primeira dúvida não é necessariamente o primeiro erro; o último lance perdedor não explica necessariamente a partida inteira.
+
+Exemplo fictício: você sai de uma abertura com uma posição saudável, passa vinte minutos procurando um plano e depois deixa uma torre sem defesa com alguns segundos no relógio. "Tática" descreve o erro final. “Ausência de plano em uma estrutura familiar” e “orçamento de tempo” descrevem duas causas possíveis para trabalhar. Uma série de exercícios de garfos responderia apenas a uma parte do problema.
+
+Construa um pequeno registro: posição crítica, decisão tomada, alternativa incluída após análise, exercício de transferência. Inclua também as vitórias: uma combinação mal calculada pode permanecer invisível quando o adversário comete um erro mais grave.
+
+## Ciclo de trabalho que pode ser avaliado
+
+Para um primeiro ciclo, reserve parte do tempo para suas análises e distribua o resto. Em um orçamento fictício de cinco horas, uma hora de análise deixa quatro horas; aplicar 40-40-20 a esse resto dá 96 minutos de tática, 96 minutos de finais e 48 minutos de aberturas. Este cálculo não é um programa ideal: mostra por que adicionar uma quarta atividade sem alterar as outras excede o orçamento.
+
+Escolha um objetivo observável para cada posição:
+
+| Objetivo  | Exercício proposto  | O que importa na correção |
+| ---  | ---  | --- |
+| Ver a resposta adversa  | Resolver uma combinação com uma defesa imposta  | Explicar por que essa defesa não é suficiente |
+| Dominar uma técnica  | Reproduzir uma posição elementar jogando com cada uma das cores  | Sucesso sem ler a linha do livro |
+| Compreender uma abertura  | Explicar um lance de desenvolvimento e sua alternativa  | Conectar o lance a uma ameaça ou estrutura |
+| Conectar estudo e partida  | Encontrar um tema em suas partidas recentes  | Nomear as diferenças com o exercício |
+
+Você pode dedicar várias sessões ao mesmo problema. Mudar de tema assim que você reconhece uma solução muitas vezes confunde reconhecimento e autonomia. Por outro lado, repetir uma posição que se tornou trivial pouco diz sobre o que você sabe fazer em uma posição próxima.
+
+## Um exercício de transferência, sem enciclopédia de abertura
+
+Depois de **1.e4 e5 2.Cf3 Cc6 3.Bc4 Bc5**, cada lado desenvolveu duas peças e contestam o centro. Pergunte-se por que **4.d3** liberta o bispo de c1, por que **4.c3** prepara um avanço no centro e o que você precisa verificar antes de jogar rapidamente **d4**. Não basta recordar três nomes de variantes: é preciso observar as capturas possíveis e o tempo necessário ao desenvolvimento.
+
+A sequência **4.c3 Cf6 5.d4 exd4 6.cxd4** é uma ilustração legal da transformação do centro, não uma recomendação universal ou prova de que as brancas estão ganhando. Compare a posição antes e depois das trocas: que linhas se abrem, quais peças ainda estão nas casas iniciais, quais lances forçantes o adversário tem à disposição? Este exercício já atravessa as três categorias do programa.
+
+## Quando alterar o programa
+
+No final de um ciclo escolhido com antecedência, volte aos erros do registro. Você identificou melhor as ameaças? Você consegue explicar seus finais sem ajuda? Entende mais as posições realmente encontradas? Este balanço é mais informativo do que uma variação de rating isolada, influenciada também pelo pequeno número de partidas.
+
+Se uma nova prioridade aparecer, redistribua o tempo; não adicione sistematicamente uma obrigação. Um programa sustentável dá lugar à disponibilidade real, ao descanso e ao prazer de jogar. O interesse do 40-40-20 é tornar suas escolhas visíveis e depois questionáveis. Deixa de ser útil quando o respeito pelas proporções se torna mais importante do que a dificuldade que você procura resolver.
+
+## Quando você tem três quartos de hora
+
+Aplicados a quarenta e cinco minutos, os percentuais dão dezoito minutos, dezoito minutos e nove minutos. O detalhe parece rigoroso. Ora, se os últimos nove minutos servem sobretudo para instalar uma posição e depois para reencontrar a explicação do dia anterior, a distribuição medida no relógio descreve mal o trabalho realizado. Um clube que só se reúne uma vez por semana pode preferir dividir os tópicos entre vários encontros.
+
+Pegue um final de peões que lhe custou meio ponto. Na primeira sessão, monte a posição e jogue contra um parceiro, trocando as cores. Na próxima vez, avance um único peão uma casa e verifiquem juntos se o resultado muda. Em seguida, volte à partida original até a troca de torres que levou ao final. A que atividade atribuir estes minutos: meio-jogo ou final? A fronteira tem pouco interesse aqui. A pergunta encontrada no terceiro encontro é a que você terá de responder em competição: eu aceito essa troca específica? Você precisará de uma divisão se ela liberar tempo para responder a essa pergunta.
+
 ## Fontes
 
 - Chase, W. G., & Simon, H. A. (1973). *Perception in Chess*. Cognitive Psychology, 4, 55–81. [Artigo](https://gwern.net/doc/psychology/chess/1973-chase.pdf).

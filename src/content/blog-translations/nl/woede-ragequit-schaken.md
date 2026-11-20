@@ -106,4 +106,10 @@ Als je systematisch ragequit na blunders in tijdnood, is de informatie: je hebt 
 
 **Na het lezen:** wacht na je volgende frustrerende nederlaag **vijf minuten** voor de engine; noteer **één** trigger ("tijdnood", "vreemde zet", "zwakkere tegenstander") voor je persoonlijke protocol.
 
+## Wat een tegenstander van je vertrek merkt
+
+Stel je twee verloren stellingen voor. Op het eerste bord geef je op, sluit je het venster en ga je water halen. Op het tweede bord sluit je alleen het venster terwijl je nog zes minuten hebt. In beide gevallen ben je boos en wil je stoppen, maar op het tweede bord moet iemand anders mogelijk wachten tot je tijd is verstreken. Schrijf op welke afsluiting je voor jezelf wilt gebruiken. Een afspraak die begint met een zichtbare handeling, zoals de partij eerst reglementair beëindigen, is gemakkelijker terug te vinden dan de opdracht om nooit meer boos te worden.
+
+Gebruik daarna de zettenlijst als geheugensteun. Welke zet ging direct vooraf aan de neiging om weg te klikken? Had je de fout zelf al gezien of zag je hem pas toen de tegenstander reageerde? Twee ogenschijnlijk identieke nederlagen kunnen zo verschillende aanleidingen hebben. Je kunt de volgende dag één daarvan opzetten en het alternatief rustig uitspelen. Daar heb je meer aan dan aan een geforceerde revanche vijf seconden na het verlies.
+
 ---

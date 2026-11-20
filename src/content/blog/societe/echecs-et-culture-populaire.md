@@ -47,9 +47,9 @@ faq:
     indicateurs commerciaux ont augmenté après sa sortie ; ils ne permettent pas d’isoler à eux seuls l’effet de
     la série ni de mesurer une pratique durable.
 - question: Comment le cinéma représente-t-il généralement les joueurs d'échecs ?
-  answer: 'Historically, très mal. Le joueur d''échecs cinématographique est intelligent mais asocial, souvent obsessionnel
+  answer: 'Le cinéma a souvent joué sur des stéréotypes. Le joueur d''échecs cinématographique est intelligent mais asocial, souvent obsessionnel
     jusqu''à la pathologie, froid émotionnellement. C''est le ''génie noir'' : un héritage du personnage de Bobby
-    Fischer dans l''imaginaire populaire. Cette représentation a évolué : The Queen''s Gambit montre une joueur
+    Fischer dans l''imaginaire populaire. Cette représentation a évolué : The Queen''s Gambit montre une joueuse
     complexe avec des relations humaines réelles. Searching for Bobby Fischer (1993) montrait un enfant prodige
     dans un cadre familial chaleureux. La nuance progresse, même si le stéréotype persiste.'
 - question: Les échecs jouent-ils un rôle dans la littérature classique ?
@@ -70,7 +70,7 @@ faq:
 ---
 Le 23 octobre 2020, Netflix lance *The Queen’s Gambit*. Un [communiqué NPD](https://www.prweb.com/releases/sales-spikes-for-chess-books-and-sets-follow-debut-of-queens-gambit-the-npd-group-says-815041445.html) rapporte +87 % de ventes de jeux d’échecs en unités aux États-Unis dans les trois semaines suivantes. Ce périmètre ne décrit ni les ventes mondiales ni les inscriptions en club.
 
-Ce n'est pas un phénomène ordinaire. C'est la démonstration de quelque chose que les sociologues étudient depuis des décennies : le pouvoir d'une représentation culturelle pour transformer une pratique réelle.
+Ce n'est pas un phénomène ordinaire. Cette coïncidence invite à examiner ce que les spectateurs ont pu trouver dans la série et quels indicateurs permettraient de documenter un changement de pratique.
 
 ## L'échiquier comme raccourci narratif
 
@@ -126,6 +126,20 @@ L'échiquier d'élite, pour la première fois, était dans les trending topics m
 
 C'est peut-être le signe d'une intégration culturelle profonde : quand un jeu génère des controverses virales, c'est qu'il a un public suffisamment large et passionné pour alimenter l'indignation collective. Les échecs ont atteint ce statut.
 
+## Un test de mise en scène à faire avec un échiquier
+
+Imagine que tu dois filmer une rencontre entre deux sœurs qui se retrouvent après plusieurs années. Tu disposes d’une table, d’un échiquier et de trois plans. Dans la première version, l’aînée renverse son roi dès que la cadette entre. Le public peut comprendre un aveu de défaite sans connaître la position. Dans la seconde version, l’aînée remet une pièce noire à la place d’une blanche et attend la réaction de sa sœur. Cette fois, l’objet suggère une histoire commune et une règle privée qui intrigue le public. Dans la troisième version, les deux jouent une finale complète. Reste à savoir quelle information apportent les coups à un spectateur qui ne connaît pas la marche des pièces. Le même accessoire peut fournir un signe immédiatement lisible, déclencher un mystère ou porter l’action elle-même.
+
+Pour comparer ces scènes, retire mentalement le plateau. Si les personnages pourraient simplement signer un document, le jeu servait surtout à résumer un rapport de force. Si l’un des deux reconnaissait un piège précis que leur père leur avait enseigné, retirer les pièces ferait aussi disparaître le moyen de se reconnaître. C’est un bon exercice quand tu lis une critique de film : au lieu de demander seulement si l’acteur tient correctement le cavalier, demande quelle partie de l’histoire serait impossible à raconter de la même façon avec une autre activité.
+
+Le point de vue de la caméra mérite aussi ton attention. Un gros plan sur une main qui s’arrête au-dessus d’une tour peut rendre le doute visible. Le même gros plan peut t’empêcher de vérifier si le roi est réellement en prise. Un plan large rend la géométrie lisible mais risque de faire perdre une réaction silencieuse de l’adversaire. On peut discuter chacune de ces décisions sans exiger qu’un spectacle populaire devienne une leçon intégrale de technique.
+
+## Décoder un mème avant de le partager
+
+Prends une image fictive : un pion atteint la dernière rangée, et la légende raconte le premier jour d’un stagiaire devenu chef. Un lecteur qui reconnaît la promotion comprend le raccourci. Un joueur de club peut aussi demander en quelle pièce le pion se transforme, ce qui ouvre la porte à une plaisanterie différente sur la sous-promotion. Ces deux lectures expliquent comment un même dessin réunit un public large et un petit groupe qui partage des références plus précises. Elles n’exigent pas que tous les lecteurs comprennent exactement la même chose.
+
+Une question demeure lorsqu’une image sort de son fil original : le texte décrit-il une partie réellement jouée ou détourne-t-il une position montée pour l’occasion ? Avant de transformer le mème en anecdote sur un joueur, cherche le contexte d’origine. À défaut, présente-le comme une image humoristique. Tu lui gardes alors sa force comique sans attribuer à une personne réelle une parole, un geste ou une gaffe dont la seule trace serait une légende recopiée.
+
 ## Ce que la culture populaire dit des échecs
 
 La trajectoire culturelle des échecs : du raccourci cinématographique pour "génie froid" à la série Netflix qui provoque des conversions massives, en passant par les streamers qui crient devant leur webcam : dit quelque chose d'intéressant sur la relation entre représentation et pratique.
@@ -135,5 +149,3 @@ Les jeux que la culture populaire présente comme accessibles, sociaux et émoti
 Le vrai révolutionnaire n'était peut-être pas Beth Harmon. C'était la caméra qui la filmait en gros plan, avec de la musique dramatique, comme si l'échiquier était un ring de boxe.
 
 ---
-
-*"Chess is ruthless : you've got to be prepared to kill people.", Nigel Short, Grand Maître britannique. La culture populaire a mis des décennies à comprendre que cette phrase était une métaphore, et une déclaration d'amour.*

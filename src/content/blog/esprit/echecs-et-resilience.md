@@ -144,6 +144,18 @@ Voici une routine pratique à essayer après une défaite difficile. Son ordre e
 
 Le prochain entraînement peut partir d’une seule position. Quel était ton plan ? Quelle réponse adverse as-tu négligée ? Quel exercice t’aiderait à mieux reconnaître cette situation ? Ces questions te donnent une action possible, sans exiger que la déception ait déjà disparu.
 
+## Le dossier de la première ronde suit-il dans la deuxième ?
+
+Un tournoi du week-end oblige parfois à rejouer peu après une défaite. Tu sors de la première ronde avec trois questions : la combinaison adverse était-elle forcée, pouvais-tu conserver ta tour, et comment as-tu pu tomber si bas à la pendule ? Chercher les trois réponses avant la ronde suivante peut transformer la pause en seconde partie d'entraînement. Un fichier de travail te permet de différer la recherche tout en gardant la question qui vaut la peine de revenir.
+
+Sur la feuille de la partie, entoure d'abord le numéro du dernier coup dont tu te souviens clairement. Reproduis la position plus tard à partir de ce numéro. Pour le moment, note seulement une phrase qui conserve la difficulté telle qu'elle se présentait : « Je voyais l'échec sur la dernière rangée, mais je croyais avoir une case pour le roi. » Si tu te souviens ensuite d'une autre ligne, ajoute-la ailleurs avec la date. Cela conserve une différence utile entre ce dont tu étais sûr pendant la partie et ce que tu reconstruis dans le couloir.
+
+Pour la deuxième ronde, la seule consigne issue de cette note pourrait être de regarder la case d'arrivée du roi quand tu écartes un échec. Elle est assez courte pour ne pas encombrer toutes tes décisions. Si ton prochain adversaire propose un échange de dames dès l'ouverture, le problème tactique de la première partie ne se reproduira peut-être jamais. Tu peux alors jouer la finale qui se présente sans essayer d'y trouver à tout prix une preuve que tu as appris ta leçon.
+
+Le jour de l'analyse, demande à un partenaire de jouer la combinaison contre toi. Ensuite, donne-lui l'autre camp et teste ta case de fuite. La différence entre les deux essais peut tenir à un pion qui contrôle une case ou à une pièce clouée qui ne peut pas couvrir l'échec. Le fichier ouvert entre les rondes a trouvé sa conclusion lorsqu'il contient cette différence. Celle-ci peut être technique même si ta première réaction à la défaite a été très émotionnelle.
+
+Reste une question sportive : qu'arrive-t-il si tu perds encore la ronde suivante ? Vérifie les motifs sur les deux feuilles. Une seconde défaite dans une finale de pions ne démontre pas que ton travail sur les cases de fuite était inutile. Elle te présente un problème supplémentaire. Si le même oubli se répète, tu disposes au contraire d'une bonne raison de préparer plusieurs positions courtes sur le même thème. La résilience, dans ce cas précis, se voit dans ce que tu arrives à reprendre et à traiter séparément. Compter une victoire immédiate comme seule preuve de rebond te priverait de cette information.
+
 ## Sources
 
 - Seligman, M. E. P. (1990). *Learned Optimism*. Knopf. [Bibliographie du Positive Psychology Center de l’auteur](https://ppc.sas.upenn.edu/research/attributional-style-adults) : cadre du style explicatif.

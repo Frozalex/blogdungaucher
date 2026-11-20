@@ -229,6 +229,14 @@ C'est aussi une bonne nouvelle pour la suite de la série. Elle indique que l'ef
 
 **Prochain article :** minimax, l'algorithme qui suppose que l'adversaire joue bien. Le moteur cesse enfin de mettre son adversaire pat, et commence à trouver des mats en deux.
 
+### Suivre la promotion dans le registre du matériel
+
+Construis une position de test avec un pion blanc sur la septième rangée et sa case de promotion libre. Note le total des valeurs blanches avant et après la promotion. Si le pion vaut cent et la dame neuf cents dans ton modèle, la différence attendue est huit cents. Une différence de neuf cents signifie que le programme a ajouté la dame sans retirer le pion. Une valeur de zéro peut indiquer que le calcul lit encore la liste des pièces d'avant le déplacement. Vérifie le mouvement inverse avec ta fonction d'annulation : les totaux d'origine doivent revenir exactement.
+
+Essaie ensuite une promotion avec prise. La différence de score blanc comporte deux contributions distinctes : le gain net de la promotion et la disparition de la pièce noire. Une erreur de signe est facile à masquer lorsqu'un seul de ces mouvements est testé. Recommence avec un pion noir et vérifie quelles valeurs changent de signe avant d'appeler la recherche. Tu sauras ainsi distinguer une faute de mise à jour du plateau d'une faute dans l'évaluation elle-même.
+
+Cette comptabilité reste utile avec des valeurs provisoires. Tu peux même prendre des prix volontairement différents des valeurs habituelles afin d'identifier aussitôt la pièce mal remise en place. Une fois le test réussi, remets le barème prévu pour jouer. Une suite de tests n'a pas besoin de bien jouer aux échecs pour te dire si le moteur compte correctement.
+
 ## Sources
 
 Le code officiel de Stockfish distingue recherche, évaluation et scores UCI. Le chapitre de Russell et Norvig décrit la séparation entre valeurs terminales et heuristiques.

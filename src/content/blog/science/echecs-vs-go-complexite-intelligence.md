@@ -110,6 +110,14 @@ Si tu hésites, essaie de petites séances et observe ce qui t'intéresse : les 
 Pour comparer ta propre progression, définis des objectifs dans chaque jeu. La compréhension d'une finale ou d'un problème de vie et mort vaut comme apprentissage du domaine, sans devoir établir une hiérarchie des personnes qui le pratiquent.
 
 
+## Changer la taille du plateau change-t-il la question ?
+
+Imagine un atelier avec deux petites surfaces quadrillées. Sur l'une, tu mets quelques pièces d'échecs et conserves leurs déplacements habituels. Sur l'autre, tu poses deux groupes de pierres de go près du bord. Demande d'abord combien d'actions sont légalement disponibles dans chacun des deux diagrammes, puis combien paraissent pertinentes pour sauver un groupe ou attaquer un roi. Ce sont deux comptes distincts. Au go comme aux échecs, une action peut être légale et fort peu utile. Une liste réduite aux décisions jugées sensées par le professeur incorpore déjà une part d'expertise.
+
+Pour construire une comparaison propre, note tout ce que tu as modifié en réduisant le plateau. Une tour perd des cases accessibles depuis son coin. Une pierre placée au bord dispose de moins de voisins qu'au centre. Les proportions de cases proches du bord augmentent quand la grille rétrécit. Si les problèmes semblent plus faciles à tes élèves, tu ne sais donc pas si c'est le nombre de possibilités qui a baissé, la nature des formes qui a changé ou simplement le fait que tes exemples étaient mieux choisis. Un petit plateau est un bon outil d'enseignement, mais le passage à l'échelle fait partie de ce que tu étudies.
+
+Le même raisonnement s'applique à une comparaison entre programmes. Deux logiciels peuvent rendre le bon coup dans ton diagramme avec des budgets très différents. Pour savoir ce que prouve cet essai, conserve la position complète, le temps accordé et le critère qui rend la réponse correcte. S'il existe plusieurs défenses légales équivalentes, un corrigé qui ne prévoit qu'une suite peut même faire passer une bonne réponse pour un échec. Ces détails te permettent de discuter une difficulté précise. Ils ne classent pas les joueurs de go et d'échecs sur une échelle commune d'intelligence.
+
 ## Sources
 
 - Tromp, J. (2016), *Counting Legal Positions in Go*, compte rendu de l'auteur, [texte et méthode](https://tromp.github.io/go/legal.html).

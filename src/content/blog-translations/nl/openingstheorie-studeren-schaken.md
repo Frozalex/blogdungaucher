@@ -8,13 +8,10 @@ draft: false
 faq:
   - question: "Moet je openingen bestuderen als beginner?"
     answer: >-
-      Niet echt. Onder de 1200 Elo wordt 95% van de partijen beslist door tactische fouten in het
-      middenspel of het eindspel. Openingen bestuderen op dit niveau betekent zetten memoriseren die je
-      nooit de kans krijgt toe te passen."
+      Ja, de beginprincipes helpen je de stukken in het spel te brengen. Een lange reeks memoriseren heeft minder nut als je vooral verliest doordat je ongedekte stukken mist.
   - question: "Vanaf welk Elo wordt het bestuderen van openingen nuttig?"
     answer: >-
-      Rond 1600-1800 Elo kennen tegenstanders hun systemen, en begint het te tellen wat je doet in de
-      eerste 10-15 zetten. Voor die drempel moet het geld naar tactiek en eindspel gaan."
+      Er is geen vaste ondergrens. Als je geregeld in dezelfde structuur terechtkomt en een plan mist, kun je meteen gericht met die stelling oefenen.
   - question: "Moet je tientallen varianten uit je hoofd leren?"
     answer: >-
       Nee. Het is beter 1 tot 2 openingen per kleur grondig te beheersen (strategische ideeën, plannen,
@@ -102,7 +99,7 @@ Het effect is asymmetrisch naargelang de persoonlijkheid, maar het bestaat. Angs
 
 ## De kalibratieregel
 
-Hier is een praktische regel afhankelijk van het niveau:
+Onderstaande percentages zijn een denkvoorbeeld voor een trainingsschema, geen gemeten optimale verdeling. Welke taak aandacht verdient hangt af van terugkerende problemen in je eigen partijen:
 
 - **< 1200 Elo**: 0% openingsstudie. 70% tactiek, 30% basiseindspel.
 - **1200-1600 Elo**: 10% openingsstudie (alleen de principes). 50% tactiek, 40% eindspel.
@@ -111,6 +108,22 @@ Hier is een praktische regel afhankelijk van het niveau:
 - **> 2300 Elo**: 40-50% openingsstudie. Voorbereiding wordt de belangrijkste onderscheidende factor.
 
 Deze verdeling evolueert. Maar het principe blijft: het gewicht van openingen in je studie moet toenemen met je niveau, niet andersom.
+
+## Een openingskaart die na de zevende zet nog iets zegt
+
+Pak een eigen partij waarin je kon aangeven op welke zet je geheugen ophield. Stel dat dit gebeurde na 1.e4 e5 2.Pf3 Pc6 3.Lc4 Lc5. Op veel notatiebladen blijft dan een groot wit vlak over: je kent de naam van de opening, maar wat moet je invullen als de computeranalyse is uitgezet? Begin met de stukken die nog in hun beginstand staan. Je eigen koning en de toren op h1 zouden bij korte rokade samen een andere plek krijgen. Je pion op d2 bepaalt mede welke weg de loper op c1 later vrij krijgt. Je hoeft geen variant van vijftien zetten te onthouden om die twee vragen mee te nemen naar een volgende partij.
+
+Teken het diagram op de voorkant van een kaart. Laat op de achterkant drie plekken vrij voor een pionruil, een gevaar voor je koning en een rustig ontwikkelingsplan. Vul de antwoorden zelf in voordat je een database opent. Een antwoord mag voorwaardelijk zijn. Als de zwartveldige loper van zwart op c5 blijft, blijft zijn diagonaal naar f2 interessant. Als hij verdwijnt of de diagonaal wordt afgesloten, moet je op het kaartje niet blijven doen alsof dezelfde dreiging onveranderd bestaat. Schrijf dus ook op welke verandering het oorspronkelijke antwoord ongeldig maakt.
+
+Een tweede kaart kan uit de beginstelling ontstaan met 1.e4 e5 2.Pf3 Pc6 3.Lc4 Pf6. Nu is de laatste zet een paardzet en wordt de witte e-pion meteen aangevallen. Leg de kaarten naast elkaar en laat een clubgenoot willekeurig één van beide zien. Wie alleen de opsomming ‘Italiaans, loper naar c4, dan rokeren’ heeft onthouden, moet nu voor het eerst echt naar de verschillen kijken. Welke pion is direct aangevallen, welk zwart stuk heeft zijn beginveld nog niet verlaten en welke witte mogelijkheid zou je alleen in één van beide diagrammen willen berekenen? Je kunt met twee kaarten in tien minuten meer controleren dan door veertig varianten gedachteloos aan te klikken.
+
+## Van eigen notatie naar een volgende proefpartij
+
+Verzamel na een maand alleen de partijen waarin een van deze twee stellingen verscheen. Het interessante moment hoeft niet de eerste afwijking van een boeklijn te zijn. Misschien kwam je uit de opening met precies het stuk op het veld dat je voor ogen had, maar verloor je later doordat je een pion vergat. Misschien had je een volkomen speelbare stand met nog maar weinig tijd omdat je bijna al je minuten aan een richtingloze herinnering besteedde. Noteer bij het diagram welke van deze verklaringen werkelijk bij jouw partij past. Alleen in het tweede geval wijst de ervaring duidelijk op een probleem met de openingsvoorbereiding.
+
+In een oefenpartij kun je daarna met de kaarten al op tafel vanaf de kritieke positie beginnen. Speel de eerste keer de kleur waarmee je het probleem had. Wissel voor de tweede partij van kleur en onderzoek welke zet je als tegenstander het minst graag zou zien. Schrijf na afloop één zin op die je vooraf niet had kunnen aantonen. Bijvoorbeeld dat een ogenschijnlijk vrije pion pas genomen kan worden nadat je een tussenschaak hebt gecontroleerd, of dat een rustig veld voor de loper handiger bleek toen de tegenstander vroeg rokeerde. Zulke zinnen bevatten voorwaarden die je in de volgende partij opnieuw kunt herkennen.
+
+Het aantal kaarten is geen doel op zichzelf. Een kaart waarop je nooit een partij terugvindt, heeft misschien een interessant nieuw idee maar hoort niet vanzelfsprekend bovenaan je wekelijkse studielijst. Een veel terugkerend diagram met telkens een andere zetvolgorde verdient meer aandacht, omdat het jou dwingt te begrijpen wat de zetten met elkaar verbindt. Kijk daarom na enkele weken ook welke kaart je zonder verlies kunt opbergen. Dat is geslaagde voorbereiding: je kunt de stelling inmiddels lezen op het moment dat ze daadwerkelijk voor je neus verschijnt.
 
 ## Samenvattend
 

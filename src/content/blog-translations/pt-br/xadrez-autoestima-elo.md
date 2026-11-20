@@ -1,4 +1,4 @@
-﻿---
+---
 heroImageAlt: Um ponteiro de medição enorme parafusado sobre um painel fino que
   racha sob o seu peso.
 title: "Elo e autoestima: quando sua classificação vira sua identidade"
@@ -12,12 +12,7 @@ frSlug: echecs-estime-de-soi-elo
 faq:
   - question: Como funciona o cálculo do Elo ?
     answer: >-
-      O sistema Elo calcula a probabilidade teórica de um jogador vencer o outro em função da diferença de rating.
-      Se você vence um adversário de mesmo Elo, ganha cerca de 16 pontos (e ele perde 16). Se vence um
-      adversário 200 pontos acima, ganha mais (cerca de 24 pontos) e ele perde mais. Se você perde contra
-      um adversário 200 pontos abaixo, os pontos perdidos são significativos (cerca de 24). A fórmula é
-      calibrada estatisticamente para que, no conjunto das partidas, os ratings convirjam para os níveis reais
-      de jogo.
+      O Elo compara o resultado obtido com a pontuação esperada para a diferença de classificação. Em um exemplo didático com fator K igual a 20 e jogadores de mesmo rating, a vitória rende 10 pontos. O fator aplicado pode variar. Plataformas online também usam outros sistemas.
   - question: Por que os jogadores são tão apegados ao seu Elo ?
     answer: >-
       Porque o Elo é um número preciso, publicamente visível, comparativo e atualizado com regularidade. Essas
@@ -50,11 +45,7 @@ faq:
       é mais produtivo.
 ---
 
-Há alguns anos, conheci um jogador de clube que recusava jogar em torneios há dois anos. Sua explicação : "Cheguei a 1680 e não quero cair abaixo disso. Em torneio, corro o risco de perder pontos."
-
-1680 era para ele uma linha d'água identitária. Cair abaixo significava não ser mais "o jogador de 1680". O medo de perder esse rótulo paralisava sua prática.
-
-Não é um caso isolado.
+Imagine um jogador de clube que acaba de chegar a 1680. A inscrição para um torneio fecha amanhã. Ele queria participar desde o início do ano. Agora considera desistir porque uma derrota na primeira rodada poderia apagar o número que acabou de conquistar. O que exatamente ele estaria preservando ao ficar em casa? Sua última classificação continuaria visível. Sua capacidade de conduzir um final difícil continuaria sendo uma pergunta em aberto.
 
 ## O Elo : uma invenção brilhante tornada armadilha
 
@@ -78,11 +69,11 @@ Os números são **dinâmicos**: mudam após cada partida. Essa atualização pe
 
 Essas propriedades fazem do Elo um objeto psicológico particularmente ativo. Em outros domínios : sua competência culinária, seu nível de leitura, sua aptidão para resolver problemas : não existe equivalente tão preciso, comparativo e dinâmico.
 
-## O Elo anxiety : um fenômeno documentado
+## O Elo anxiety : o receio de perder pontos
 
 As plataformas de jogo online criaram uma exposição nova à flutuação da classificação. Nos anos 1990, um jogador de clube via seu Elo FIDE atualizado a cada 3 meses após um torneio. Hoje, o Chess.com e o Lichess atualizam a classificação após cada partida, às vezes várias vezes por dia.
 
-O **"Elo anxiety"**: termo usado informalmente na comunidade antes de aparecer em alguns estudos psicológicos : designa a ansiedade especificamente ligada ao medo de perder pontos de classificação.
+Jogadores usam informalmente a expressão inglesa *rating anxiety* para o receio de perder pontos. Ela descreve uma experiência; não permite diagnosticar alguém que decidiu ficar de fora de uma competição.
 
 Suas manifestações:
 
@@ -92,7 +83,7 @@ Suas manifestações:
 
 *O "tilting"*: após uma derrota, rejogar imediatamente e rapidamente para "recuperar" os pontos perdidos : um comportamento emocional que geralmente leva a outras derrotas (joga-se em estado de frustração).
 
-*A pausa preventiva*: parar de jogar quando a classificação atinge um nível "suficiente" para não arriscar uma queda, como o jogador de 1680 da anedota de abertura.
+*A pausa preventiva*: parar de jogar quando a classificação atinge um nível "suficiente" para não arriscar uma queda, como o jogador de 1680 do exemplo de abertura.
 
 Esses comportamentos reduzem todos a qualidade da experiência e o ritmo de progressão.
 
@@ -104,13 +95,9 @@ A **orientação ego** (ou orientação performance): o indivíduo se mede princ
 
 A **orientação maestria** (ou orientação tarefa): o indivíduo se mede em relação a si mesmo e à tarefa. Seu sentimento de competência depende do progresso, da qualidade do jogo, do aprendizado. Uma derrota pode ser uma experiência de aprendizado preciosa, se o jogo foi bom e houve um recurso tático que não se havia visto.
 
-Décadas de pesquisa (notadamente os trabalhos de [Carol Dweck](https://pt.wikipedia.org/wiki/Carol_Dweck) sobre o "growth mindset" e de John Nicholls sobre as orientações motivacionais) mostram que a orientação maestria é sistematicamente associada a:
-- Maior persistência diante dos obstáculos
-- Maior disposição para o risco (tentar estratégias novas, jogar contra adversários mais fortes)
-- Nível de estresse competitivo mais baixo
-- Progressão a longo prazo mais robusta
+Na prática, as duas referências podem conviver. Uma adolescente pode querer se classificar para a final da cidade e, ao mesmo tempo, conseguir transformar uma vantagem material pequena sem entrar em apuros de tempo. Se perder a classificação na última rodada, a segunda meta continua fazendo sentido. Examinar os lances com essa pergunta evita que a tabela de resultados encerre a conversa antes que ela comece.
 
-A orientação ego pode produzir resultados a curto prazo : o medo de perder às vezes motiva boas performances. Mas ela fragiliza diante das inevitáveis derrotas e tende a limitar a progressão.
+Uma meta de resultado ainda cumpre uma função concreta. Ela ajuda a escolher o torneio, organizar o calendário e reservar tempo para treinar. O problema aparece quando ela se torna a única informação usada para julgar cada sessão. Uma rodada conta para a classificação mesmo que dure quinze minutos e termine num erro adversário. Nem sempre ela ensina mais do que uma defesa longa que acabou em derrota.
 
 ## O Elo online amplifica os efeitos negativos
 
@@ -122,7 +109,7 @@ Efeito negativo : a frequência de exposição ao Elo é muito maior. Um jogador
 
 Além disso, as plataformas gamificam a classificação : gráficos de progressão, badges de "recorde pessoal", notificações de classificação. Esses elementos reforçam a atenção dada ao número e a identificação com ele.
 
-Um estudo de 2022 sobre jogadores ativos do Chess.com (500+ partidas online) mediu a correlação entre frequência de verificação da classificação após as partidas e nível de ansiedade de jogo. A correlação era positiva e significativa : os jogadores que verificavam o Elo após cada partida mostravam níveis de ansiedade competitiva mais elevados e maior variabilidade de performance.
+Quem quiser entender a própria relação com essa atualização pode comparar duas sessões de duração parecida e anotar em que momentos procurou o gráfico. A questão é bastante específica. Depois de ver os pontos, você voltou à partida para conferir o lance sobre o qual tinha dúvida ou foi imediatamente procurar outra? Um registro pessoal pode ajudar a identificar uma rotina que vale mudar sem atribuir à plataforma o estado emocional de todos os usuários.
 
 ## Construir uma identidade enxadrística mais robusta
 
@@ -134,8 +121,26 @@ A solução não é não se preocupar com o Elo. É torná-lo um indicador entre
 
 **Fixar objetivos de processo**: "vou analisar cada partida esta semana", "vou estudar finais de torre 30 minutos por semana", "vou jogar um torneio presencial este mês". Esses objetivos estão sob seu controle, ao contrário do Elo que depende também dos adversários, da forma do dia e do acaso dos emparelhamentos.
 
-**Aceitar as fases de estagnação** como normais. As curvas de aprendizagem não são lineares : platôs de vários meses seguidos de saltos são o padrão habitual. Um Elo estável durante 3 meses não é sinal de fracasso; frequentemente é o sinal de que uma reestruturação cognitiva está em curso.
+**Observar as fases de estabilidade.** Um rating estável pode acompanhar partidas muito diferentes. Analise algumas antes de mudar o treino. Um mês difícil na faculdade, uma mudança de repertório ou horários de jogo diferentes são informações que a curva sozinha não contém.
 
----
+## A mesma variação, duas histórias de jogo
 
-*O Elo é uma ferramenta de medida. Não mede seu valor : apenas sua performance num jogo, num momento dado. Arpad Elo provavelmente não havia previsto que seu algoritmo se tornaria para alguns uma medida de existência. Provavelmente acharia isso triste, e ele mesmo, jogador modesto, talvez sorrisse.*
+Imagine dois jogadores que terminaram a semana com o mesmo saldo de pontos. Um ganhou uma peça na abertura, trocou tudo e venceu sem entrar em apuros. Na partida seguinte teve uma posição quase igual e perdeu porque deixou o próprio relógio zerar. O outro saiu mal das duas aberturas. Na primeira perdeu sem criar dificuldades. Na segunda encontrou contrajogo contra o rei e virou o resultado. O saldo não distingue essas semanas. As planilhas, sim. O primeiro tem motivos para observar o uso do tempo em posições simples. O segundo pode comparar como saiu das aberturas antes de decidir se precisa estudar tática de ataque.
+
+Quem vê apenas a classificação pode celebrar ou lamentar os dois resultados pelo mesmo motivo. Quem treina com os jogadores precisa de informações diferentes. Quantos minutos ainda restavam quando o primeiro começou a repetir variantes? Em que momento o segundo escolheu voluntariamente uma estrutura inferior? Uma única pergunta que possa ser respondida pelos lances já permite definir uma tarefa para a próxima sessão.
+
+## Uma ficha que continua útil depois de perder
+
+Divida uma folha em três espaços. No primeiro, anote o momento em que tomou uma decisão difícil. Escreva o motivo que você tinha durante a partida, antes de consultar qualquer ferramenta. No segundo, anote o recurso que o adversário de fato usou. No terceiro, proponha uma posição parecida que gostaria de tentar outra vez. Se a partida terminou por falta de tempo, também vale indicar o lance em que gastou mais minutos e o que esperava esclarecer com eles.
+
+Esse formato funciona melhor com exemplos modestos. «Preciso estudar finais» exige escolher entre milhares de posições. «Quero jogar outra vez torre e peão da coluna a contra torre, com o rei defensor cortado» já orienta a montagem do tabuleiro. Registre o lado a mover e a posição exata antes de guardá-la. No próximo treino, reveze as cores com um colega. Poder defender a posição que achou fácil ganhar é um teste melhor de compreensão do que decorar uma sequência.
+
+Na quarta semana, leia quatro fichas e marque os problemas que voltaram a aparecer. Se as quatro falam de relógio, procure um momento recorrente. Você está investindo tempo demais na escolha da abertura ou em finais onde não conhece os planos? A resposta ajuda a trocar uma recomendação vaga, como jogar mais rápido, por um exercício que corresponda às suas partidas.
+
+## Como responder ao primeiro número de um iniciante
+
+Pense numa criança que volta do primeiro torneio com uma classificação e pergunta se ela é boa. Perguntar qual foi a posição mais difícil que conseguiu resolver abre um assunto do qual ela também pode participar. Outra possibilidade é explicar com quem aquele número está sendo comparado e por que pode mudar bastante nas próximas competições. Mostrar interesse pelo número e pela história da partida é perfeitamente compatível.
+
+Evite usar a classificação de colegas como prova de esforço. Duas pessoas que começaram no mesmo mês podem ter jogado quantidades diferentes de partidas válidas, contra grupos diferentes e em condições diferentes de descanso. Se o objetivo for mostrar progresso à família, guardem juntos uma posição que ela não sabia defender e tentem novamente algum tempo depois. Quando a solução aparecer, haverá algo muito específico para comemorar, mesmo se naquele domingo não houver torneio nem pontos em disputa.
+
+Para consultar o cálculo utilizado em competições oficiais, veja as [regras de rating da FIDE](https://handbook.fide.com/chapter/B022024). Uma classificação só pode ser interpretada com referência ao sistema, à modalidade e ao conjunto de partidas a que pertence.

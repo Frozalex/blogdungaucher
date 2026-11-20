@@ -65,6 +65,34 @@ In practice, varying your repertoire may complicate opposing preparation. You ma
 
 Before playing, distinguish “Which continuation seems soundest?” from “Which can I handle correctly today?” Afterwards, compare your hypotheses about the opponent with the moves actually played.
 
+## Resolve the smallest useful game tree by hand
+
+Give White two legal plans in an imaginary position. Call them Open File and Trade Queens. After Open File, Black may choose a counterattack or passive defence. In our deliberately small tree the counterattack ends in a white loss, while passive defence ends in a white win. After Trade Queens, Black can choose either of two endings. One ends in a draw and the other in a white win. These terminal results are assumptions of the example; they have not been generated from a chess engine. Use one point for a white win, half a point for a draw and zero for a loss.
+
+Start at the bottom under Open File. Which outcome should White use when comparing plans against the strongest defence? Black can choose the counterattack, and that leaves White with zero. The win following passive defence is real inside the example, but White cannot force Black to choose it. Do the same under Trade Queens. Here the best defence gives Black a draw, leaving White half a point. Return to the root. White can choose between a guaranteed zero and a guaranteed half. The minimax choice in this tree is Trade Queens. The calculation never needed to know which plan sounds more ambitious or which line produces the prettiest finish.
+
+Now erase one of the replies. If the counterattack was missing from your original analysis, Open File would have appeared to win. Adding it changes your answer dramatically even though you have not changed the rules or the players' objectives. This is a useful way to read annotations such as “forced” or “wins by force”. Ask which replies were considered, why the unlisted replies are irrelevant and whether a forcing-looking move might actually permit a quiet defensive answer. A guarantee in the little tree is only as complete as the branches you had grounds to include.
+
+## Put habits into a separate calculation
+
+What if your actual opponent habitually defends passively? You may want a prediction about that player in addition to the worst-case result. Make the assumption explicit: suppose you estimate a three-in-four chance of passive defence against Open File and a one-in-four chance of the counterattack. The expected score under those invented assumptions is three quarters of a point. Suppose also that you expect Black to reach the drawing ending every time after Trade Queens. That still gives half a point. Under this second question Open File comes out ahead. You haven't discovered an error in minimax; you have introduced information about the expected reply and changed the criterion used to rank the plans.
+
+Ask how far the estimate can change before the preference reverses. If Open File wins after passive defence and loses after the counterattack, its expected score is just the probability you assign to passive defence. Once that falls below one half, Trade Queens has the higher expected score in this particular example. At one half the expected scores tie, while the possible outcomes remain very different. That threshold is a property of the numbers we invented. To use it in practice you would need evidence about the player, the position and the time available to find the counterattack.
+
+A thin notebook sample can give a misleading impression of precision. Three missed tactics in a rapid event are weak grounds for claiming the opponent will miss the same idea in a slow game next month. They may have studied the weakness since. Their previous positions may also have contained fewer alternative checks, or their clock may have been running short. Show these limitations by writing the worst-case result beside the expected result in your notes. You can then say both “I believe the trap is attractive in this pairing” and “if Black sees the defence, I risk losing.”
+
+## What if only a win qualifies?
+
+Imagine that this is the last round and White must win to qualify for the final. On a second sheet, give qualification one and elimination zero. With the rankings in our example a draw now has the same consequence for qualification as a loss. It still earns half a point on the tournament score sheet. Those two entries refer to different objectives. Against Black's best defence neither plan guarantees qualification. If you change the utility of the draw in the calculation, make sure you have also stated what Black wants; assuming identical tournament incentives for both sides may be wrong.
+
+This matters when listening to two strong players argue about a practical decision. One might prefer a safe draw because it secures a team match. The other might reject it because the team already needs a full point. Before deciding which player understands the position better, compare the results they are trying to achieve. It is entirely possible for them to agree on every variation and still recommend different choices in different match situations.
+
+## A question to take to your next analysis session
+
+Pick one critical position and give a friend an incomplete tree to challenge. Write your candidate moves on the left and your predicted replies on the right, with a blank row under each. Ask the friend to fill in the row that would most damage your recommendation. If they find one, update the result for that branch before asking a computer for a score. Keep your initial prediction on the page so that you can see what changed. Did the new reply refute a tactic, alter your estimate of what the opponent would choose, or expose a disagreement about the value of a draw? Those are three different discoveries, and each suggests a different lesson to carry into the next game.
+
+Before filing the diagram, add the one assumption on which you are least confident. When you revisit the position with a stronger player, that assumption gives them a concrete place to challenge your decision.
+
 ## Sources
 
 - Russell, S. and Norvig, P. (undated), *Adversarial Search*, authors’ textbook chapter, [text](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).

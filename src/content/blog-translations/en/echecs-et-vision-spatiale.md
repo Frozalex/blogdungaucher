@@ -107,6 +107,22 @@ Sala and Gobet’s review (2017) specifically encourages separating that hypothe
 
 **4. Analysis without an engine.** Review a game first without an engine, writing variations during training or post-game analysis. This asks you to represent positions not physically played out. Such notes are not permitted as analysis aids during an official game.
 
+## A blindfold test with an answer you can check
+
+Set a bishop on b2 and imagine an otherwise empty board. Name its diagonal running towards h8, listing the squares in order: c3, d4, e5, f6, g7, h8. Put a black pawn on e5. Which squares can the bishop now reach in that direction in one move? It can move to c3 or d4, or it can capture on e5. The squares beyond the pawn still belong to the same geometric diagonal but cannot be reached in a single bishop move from b2. Put a white pawn on e5 instead. Now even e5 is unavailable as a destination. You have held the geometry fixed while changing the meaning of one stopping square.
+
+Take away both pawns. Turn the board so that you see it from Black's side. The names on the diagonal have not changed, even though its apparent direction from your seat has reversed. A learner who knows the names but points in the wrong direction after rotating the board needs a different correction from one who keeps looking beyond the blocking pawn. The first mistake concerns the frame of reference; the second concerns occupancy. Neither requires memorising a longer list of coordinates.
+
+Now try a knight instead. Put it on d4 and list its destinations on an empty board before looking. Group them into pairs: two files left, two files right, two ranks up and two ranks down. The eight destinations are b3 and b5, f3 and f5, c6 and e6, c2 and e2. Transfer the knight to a1 and apply the same mental template. Only b3 and c2 are on the board. The movement pattern stayed constant; the boundary discarded the other six potential destinations. You can check the entire exercise with one physical piece.
+
+## Find out why an apparently easy square disappeared
+
+After a game, choose a moment when a defensive resource surprised you. Draw the attacker's ray in the position *before* the previous move. Draw it again in the new position. Did the opponent move a piece onto the line, remove one from it or allow your own piece to block a flight square? Any of those can make a familiar arrangement behave differently. An engine might identify the resource immediately, but it cannot tell you from the diagram alone which transformation you failed to update.
+
+Use that diagnosis when choosing the next task. If the trouble was a disappearing blocker, start with one bishop and one pawn and practise pointing to the first occupied square. If the trouble was orientation from the black side, alternate seats while keeping the algebraic names fixed. Compare performance on new boards at the same level of difficulty. Repeatedly reciting one learned diagonal may be satisfying without testing the operation that failed in your game. A practical visualisation exercise succeeds when the player can explain where a line ends, why it ends there and what sort of move would open it again.
+
+Try a final change of viewpoint. Ask a partner to describe the blocking move aloud while you face away, then mark the first occupied square on a blank board. A mismatch between the spoken instruction and your diagram helps locate the step that needs another attempt.
+
 ## Sources
 
 - Sala, G., & Gobet, F. (2017). *Does Far Transfer Exist? Negative Evidence From Chess, Music, and Working Memory Training*. Current Directions in Psychological Science, 26(6), 515–520. [Full text](https://journals.sagepub.com/doi/10.1177/0963721417712760): effects, control limitations and pattern recognition.

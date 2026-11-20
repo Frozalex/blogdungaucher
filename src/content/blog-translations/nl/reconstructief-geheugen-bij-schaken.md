@@ -159,6 +159,8 @@ Diezelfde eigenschap, omgekeerd, is wat actief terughalen zo effectief maakt: he
 
 *Dit artikel maakt deel uit van een reeks over toegepaste psychologie bij schaken. Zie ook [valse herinneringen bij schaken](/fr/blog/faux-souvenirs-aux-echecs/) voor de pathologische versie van dit mechanisme, en [partijen onthouden bij schaken](/fr/blog/memoriser-parties-aux-echecs/) voor het geheugen van stellingen.*
 
+Doe de reconstructie een tweede keer met de kleuren omgedraaid naast het originele diagram. Welke fout verhuist mee met het patroon en welke blijft aan dezelfde kant van de tafel zitten?
+
 ## Bronnen
 
 - Bartlett, F. C. (1932). *Remembering: A Study in Experimental and Social Psychology*. Cambridge University Press.

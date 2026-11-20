@@ -105,6 +105,18 @@ Les modèles expérimentaux donnent des outils pour étudier des mécanismes. To
 
 Tu peux reconstruire un entraînement plus lisible, faire une pause ou choisir une autre manière de pratiquer. Si le sentiment d'inutilité devient durable et dépasse les échecs, cherche un soutien adapté. Aucun résultat d'exercice ne doit décider à lui seul si tu mérites cette aide.
 
+## Le réglage que le joueur peut effectivement modifier
+
+En entraînement, une débutante doit défendre une finale contre un partenaire beaucoup plus expérimenté. Elle la perd six fois. On lui propose de recommencer une septième fois à partir du même diagramme avec le même temps, sans savoir quel changement essayer. « Je perds quoi que je fasse » décrit alors assez bien son expérience de la séance. Cette phrase ne suffit pas à identifier son état psychologique. Elle indique surtout que les répétitions ne lui ont fourni aucun repère pour relier une décision à ses conséquences.
+
+Modifie une seule condition de l'atelier. Demande au partenaire de repartir deux coups avant la première intrusion de son roi et de montrer les deux routes qu'il envisage. La débutante doit fermer une seule route au premier coup, puis observer laquelle il emprunte. Elle peut encore perdre la finale, mais elle peut aussi voir le roi changer de direction en réponse à son action. Garde la position résultante. Elle constitue une réussite locale qu'on peut montrer sur le plateau, même dans une défense objectivement très difficile.
+
+À la répétition suivante, le partenaire annonce uniquement la case qu'il souhaite atteindre. Il laisse la débutante retrouver les routes par elle-même. Si elle ne voit pas la seconde, rétablissez les deux pièces à leur place et examinez le chemin sans pendule. Si elle voit les deux mais ne sait pas lequel boucher, la prochaine question sera celle du choix, pas celle de la vision du trajet. La consigne se précise à mesure que la difficulté devient visible.
+
+Il peut aussi arriver qu'aucun des deux chemins ne puisse être fermé avec le matériel disponible. Une position perdante n'est pas un exercice honnête pour quelqu'un à qui l'on a promis qu'il existait nécessairement une défense. Dans ce cas, l'entraîneur peut déclarer la situation et poser une autre question : combien de temps peut-on retarder l'entrée du roi, ou quel échange antérieur aurait donné une chance de tenir ? Dire la vérité sur la position protège la signification du prochain exercice où une solution existe réellement.
+
+Au terme de la séance, la débutante gagnera peut-être la finale ou la perdra encore. Elle pourra néanmoins retrouver le diagramme où elle a su contraindre l'autre roi à changer de route. Ce souvenir précis lui donne quelque chose qu'elle peut reproduire, puis mettre à l'épreuve sans dépendre d'un encouragement général à persévérer.
+
 ## Sources
 
 - Gobet, F. R. (1992), *Learned helplessness in chess players: The importance of task similarity and the role of skill*, Psychological Research, 54, 38–43. [Résumé éditeur](https://link.springer.com/article/10.1007/BF01359222).

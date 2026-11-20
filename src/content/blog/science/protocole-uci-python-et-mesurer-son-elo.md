@@ -263,6 +263,10 @@ Trois directions, par ordre de rapport gain sur effort.
 
 **Un autre langage.** À un moment, la vraie limite devient Python. Le moteur écrit ici tourne autour de 3 000 positions par seconde ; un portage en C ou Rust demanderait son propre banc de mesure. Mais tu sauras alors exactement ce que tu réécris, et c'était tout l'objet de cette série.
 
+### Quand une défaite vient du protocole
+
+Conserve séparément le résultat de la partie et la raison de son arrêt. Une défaite au temps, alors que ton moteur annonce encore une longue variante, oriente l'enquête vers la gestion de la pendule. Une défaite sur coup illégal demande de rejouer la liste reçue avec la commande position. Mélanger ces incidents aux défaites ordinaires peut faire croire à un affaiblissement de l'évaluation. Pour interpréter un match de développement, indique combien de parties se sont terminées pour chacune de ces raisons.
+
 ## Sources
 
 Shredder identifie les auteurs du protocole ; la spécification UCI impose de pouvoir recevoir des commandes pendant la recherche et utilise 0000 pour un coup nul. Le code de Stockfish définit ses options de force, qui ne constituent pas une cote FIDE du prototype.

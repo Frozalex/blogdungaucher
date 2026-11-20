@@ -59,6 +59,44 @@ Na prática, variar o repertório pode dificultar a preparação adversária. Vo
 
 Antes de uma partida, distinga: “Qual sequência parece mais sólida?” e “Qual sequência consigo jogar corretamente hoje?”. Depois da partida, confira suas hipóteses sobre o adversário com os lances realmente jogados.
 
+## Uma árvore que você pode resolver por si mesmo
+
+Aqui está um **exemplo pedagógico fictício**, sem pretender representar uma posição real. As brancas hesitam entre dois planos A e B. Depois de A, as pretas têm duas respostas que levam a valores de +4 e  −1 para as brancas. Depois de B, suas respostas dão +1 e +2. Todas as variantes terminam aqui por construção.
+
+Se você olhar apenas para a melhor folha, A parece atraente: +4 excede +2. Mas as pretas não são obrigadas a cooperar. Elas escolhem  −1 depois de A e +1 depois de B. As brancas então comparam  −1 e +1, então escolhem B. O valor desta árvore é +1. Este cálculo explica o que falta à frase “eu tinha visto uma bela combinação”: é preciso também examinar o que acontece se o outro recusa a continuação desejada.
+
+Agora mude uma hipótese. Suponhamos que estes números sejam avaliações aproximadas após três meios-lances, e não resultados finais. O cálculo de baixo para cima permanece exato **para estes números**; a conclusão sobre a posição real torna-se uma estimativa. Uma captura intermediária no quarto meio-lance pode alterar a avaliação. O rigor consiste em manter o método e seu alcance juntos.
+
+Você pode fazer o exercício novamente com resultados vitória, empate e derrota. Um ramo onde todas as respostas adversas levam a um empate garante o empate. Outro ramo que contém nove vitórias e uma derrota não garante nenhuma vitória. O número de boas folhas não substitui a escolha do adversário. Para falar de probabilidade, é necessário acrescentar um modelo de sua conduta.
+
+## Armadilha, melhor defesa e esperança prática
+
+Uma armadilha pode ganhar muitas vezes sem ser teoricamente boa. Vamos pegar um **modelo fictício de preparação**: uma linha arriscada dá a vitória se o adversário cair na armadilha, mas a derrota se ele encontrar a refutação. Se a probabilidade de cair é de 70%, a pontuação esperada é de 0,70, com a pontuação do torneio. Outra linha garante hipoteticamente o empate, ou seja, 0,50. A primeira maximiza o resultado esperado nesse modelo; a segunda garante mais contra uma defesa exata.
+
+De onde vem 70%? Este número é inventado para o exercício. Uma frequência em uma base pode ser enganosa: adversários menos experientes, partidas rápidas, versões antigas da teoria, armadilha conhecida apenas pelos jogadores que entram nela. Se o seu próximo adversário preparou a refutação, a frequência histórica não é a sua probabilidade de errar. Uma estratégia dita “prática” deve explicitar os conhecimentos sobre os quais ela aposta.
+
+É por isso que uma surpresa não se julga apenas pela pontuação imediata. Uma linha pode ser eficaz uma vez e, em seguida, tornar-se ruim quando os adversários adaptam sua preparação. A [introdução à teoria dos jogos da Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/game-theory/) ajuda a separar estratégias, utilidades e crenças. Ela não fornece uma frequência ideal universal para o seu repertório.
+
+## O resultado da partida e o objetivo do torneio
+
+Um empate pode ser suficiente para ganhar um torneio; também pode deixar um jogador eliminado. As regras e os pontos da partida são os mesmos, mas o objetivo prático muda. Maximizar a pontuação média da partida e maximizar a probabilidade de terminar primeiro não são duas formulações automaticamente equivalentes.
+
+**Situação fictícia:** na última rodada, apenas uma vitória permite que você se qualifique. Você pode preferir uma posição com mais desequilíbrios do que uma repetição de lances disponível. Isso não torna a repetição menos correta no jogo abstrato. Você muda a função de utilidade relevante para a sua decisão. É preciso ainda verificar se a complicação mantém chances razoáveis, em vez de confundir a obrigação de ganhar com a obrigação de sacrificar.
+
+Uma análise útil pode, portanto, manter duas colunas: valor estimado e interesse em seu objetivo real. Essa separação permite discutir uma decisão sem reescrever depois as regras matemáticas para justificar uma aposta.
+
+## Como usar essa teoria em seu treinamento
+
+Escolha uma partida recente e reconstrua um único momento decisivo. Escreva seus dois candidatos, a resposta do adversário que você esperava e a resposta que você temia. Então procure uma terceira resposta que você tenha negligenciado. O objetivo não é calcular toda a árvore, mas verificar se a sua escolha é baseada na cooperação do adversário.
+
+Na revisão, distinga três possíveis erros: uma resposta legal esquecida, uma posição final mal avaliada ou uma hipótese frágil sobre o comportamento adverso. Eles exigem trabalhos diferentes. No primeiro caso, pratique a busca por lances candidatos. No segundo, compare a sua avaliação da posição final com os recursos disponíveis para cada lado. No terceiro, reveja as hipóteses que você fez sobre o adversário.
+
+Este protocolo é uma proposta de treinamento, não uma intervenção validada experimentalmente. Ele, no entanto, dá uma tradução concreta à teoria: você não busca mais apenas uma sequência brilhante, você identifica o que a sua escolha garante e quais hipóteses sustentam o restante.
+
+### Quando o adversário oferece empate
+
+Imagine uma última rodada em que apenas uma vitória te qualifica. Para a folha de resultados, um empate vale sempre meio ponto. Para o seu objetivo de qualificação, ele tem exatamente a mesma consequência de uma derrota. Escreva as duas colunas de ganhos antes de comparar suas opções. Dois leitores podem escolher lances diferentes da mesma árvore simplesmente porque eles definiram dois objetivos diferentes. Esta divergência não põe em causa o cálculo feito em cada coluna.
+
 ## Fontes
 
 - Russell, S. e Norvig, P. (sem data), *Adversarial Search*, capítulo de manual disponibilizado pelos autores, [texto](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).

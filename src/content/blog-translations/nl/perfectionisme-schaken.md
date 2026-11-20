@@ -83,6 +83,14 @@ Toxisch perfectionisme transformeren betekent niet je normen verlagen. Het is je
 
 ---
 
+## Wanneer is een rustige zet voldoende gecontroleerd?
+
+Zet vanuit de beginstelling 1.e4 e5 2.Pf3 Pc6 3.Lc4 Lc5 op het bord. Wit overweegt nu korte rokade. Een speler die elke zet volledig wil rechtvaardigen, kan zich verliezen in het vergelijken van pionzetten en lopermanoeuvres tot diep in het middenspel. Dat is een groot onderzoek voor een kleine beslissing. Welke vragen zouden je nu werkelijk van gedachten doen veranderen over rokeren? Begin met de regels: de koning staat niet schaak, de stukken tussen koning en toren zijn weg, en de koning passeert geen aangevallen veld. Kijk daarna of zwart op de volgende zet iets direct kan winnen. Als je een concrete dreiging vindt, verdient juist die extra rekentijd.
+
+Een trainingspartner kan bij dezelfde stand een heel andere taak geven. Zet op papier waarom de witte toren na de rokade op f1 terechtkomt en welke pion zijn blik naar voren blokkeert. Nu is er aanleiding om een later plan te bespreken. De stelling is gelijk gebleven maar het doel van de analyse veranderde. Wie het eerste antwoord tijdens een partij even uitvoerig wil uitwerken als het tweede na de partij, verwart twee vormen van zorgvuldigheid.
+
+Maak daar een oefening van met een klok. Geef jezelf voor de eerste vraag een vooraf gekozen korte tijd, en laat de klok voor de nabespreking uit. Kijk daarna bij het teruglezen waar de extra minuten iets veranderden aan je beslissing. Vaak leverden ze vooral aanvullende uitleg op voor een zet die je al op goede gronden wilde doen. Soms ontdek je wél een verdediging die je aanvankelijk oversloeg. Noteer in dat geval welke zichtbare eigenschap van de stelling bij een volgende partij aanleiding zou zijn om door te rekenen. Op die manier leer je selectief tijd te besteden aan onzekerheid in plaats van iedere rustige zet als een examen over het hele middenspel te behandelen.
+
 ## Kernpunten
 
 - Er bestaan twee vormen van perfectionisme: adaptief (gezond) en maladaptief (toxisch)

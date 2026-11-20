@@ -96,4 +96,14 @@ Goed beheerde angst om te verliezen wordt niet geëlimineerd: ze wordt omgezet i
 
 **Na het lezen:** schrijf vóór je volgende partij "met inzet" **één procesdoel** op (bijv. tien zetten een plan volhouden) los van het resultaat: dat is de variabele die je controleert.
 
+## Een aangeboden remise uit elkaar trekken
+
+Je speelt met zwart in een teamwedstrijd. De stelling is ongeveer in evenwicht en je tegenstander biedt remise aan. Je voelt opluchting voordat je ook maar één variant hebt overwogen. Dat gevoel is echte informatie over je reactie. Het vertelt nog niet of accepteren sportief verstandig is. Zet bij een latere analyse drie vragen uit elkaar. Wat stond er op het bord? Hoeveel tijd hadden beide spelers? Wat wist je op dat ogenblik volgens de regels daadwerkelijk over de stand van de teamwedstrijd?
+
+Neem twee versies van hetzelfde voorbeeld. In de eerste heb je nog veertig seconden zonder increment en moet je een lastige verdediging vinden. In de tweede heb je tien minuten en precies die verdediging al gezien. Een scoresysteem dat in beide gevallen alleen een halve punt noteert, maakt die beslissingen achteraf identiek. Je eigen notities kunnen het onderscheid bewaren. Stel dat de tegenstander géén remise had aangeboden. Schrijf dan op welke zet je zou hebben uitgevoerd en welk antwoord je het meest bezighield. Komt er een concrete variant op papier of alleen de wens dat de partij ophoudt?
+
+Bespreek het voorbeeld met iemand die de uitslag nog niet kent. Geef eerst alleen de positie en de tijden. Geef pas na diens voorstel het remiseaanbod en jouw besluit prijs. Je krijgt dan twee gezichtspunten die je kunt vergelijken zonder dat de bekende uitslag het hele gesprek stuurt. Misschien blijkt dat je een serieuze dreiging over het hoofd zag en dat de remise gunstig was. Misschien was je voorgenomen zet heel speelbaar maar had je nog niet bekeken hoe zwart na de meest natuurlijke witte reactie verder zou gaan.
+
+Het vervolg van de oefening is klein. Speel de stelling thuis vanaf precies dat punt uit en wissel na afloop van kleur. Je hoeft daarmee niet te bewijzen dat je altijd op winst moet spelen. Je verzamelt een tweede ervaring met de stand waarin je eerder vooral de kans op verlies zag. De volgende beslissing over een remiseaanbod heeft dan iets concreters als achtergrond dan de herinnering dat de vorige halve punt prettig voelde.
+
 ---

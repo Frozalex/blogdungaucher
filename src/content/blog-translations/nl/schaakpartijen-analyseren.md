@@ -153,3 +153,13 @@ Deze drie criteria filteren de leerzaamste partijen eruit en maken analyse behee
 ---
 
 *De partij is afgelopen wanneer ze eindigt. Maar ze is pas echt afgelopen wanneer je haar hebt begrepen.*
+
+## De fout die niet als rood balkje verschijnt
+
+Neem vanuit de beginstelling de zetten 1.e4 e5 2.Pf3 Pc6 3.Lb5 a6. Zwart valt de loper aan. Wit kan terugtrekken naar a4 of de zwarte springer op c6 slaan. Stel dat je voor afruilen koos omdat je je herinnerde dat er daarna een ongedekte pion op e5 zou staan. Op je analyseblad hoort die gedachte naast de vierde zet, ook wanneer je later in de partij heel ergens anders veel meer materiaal verloor.
+
+Speel nu 4.Lxc6 dxc6 5.Pxe5 op het bord. Zwart heeft de mogelijkheid 5...Dd4. Zoek eerst uit wat de dame aanvalt, zonder meteen een oordeel over de hele stelling over te nemen. Vanuit d4 kijkt ze schuin naar het paard op e5 en langs de vierde rij naar de pion op e4. Als het paard naar f3 terugkeert, kan de dame op e4 slaan met schaak. Wit heeft dan wel de pion op e5 genomen, maar de zwarte dame krijgt de witte centrumpion terug. De oorspronkelijke gedachte ‘ik win een pion’ bleek dus te kort.
+
+Deze analyse is nuttig zelfs als je tijdens de partij na de afruil meteen iets anders deed. Je hebt blootgelegd welke veronderstelling ten grondslag lag aan je openingskeuze. Op je blad kan nu een regel komen die een computer niet vanzelf voor je opschrijft: bij een ogenschijnlijk hangende pion eerst kijken welke lijnen door het slaan van het vorige stuk zijn geopend. De zwarte d-pion verliet d7 en maakte de weg van de dame naar d4 vrij. Dat detail verbindt drie zetten uit je notatie.
+
+Zoek bij de volgende clubanalyse eens een zet op die door de engine wordt goedgekeurd maar die jij om een ondeugdelijke reden speelde. Juist daar kan een onzichtbare leerfout zitten. Je hebt geluk gehad met de uitkomst van je beslissing, terwijl je manier van kiezen voor een andere stand weinig voorspellende waarde heeft.

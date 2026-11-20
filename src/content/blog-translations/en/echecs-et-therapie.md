@@ -90,6 +90,18 @@ A useful study should define its outcome before counting results: symptoms, ever
 
 There is no need to announce a date when all the answers will arrive. This article’s current conclusion is narrower: uses exist and questions are being studied. That does not justify presenting chess as a demonstrated treatment for the disorders discussed. You can enjoy the activity, share a game and seek appropriate care without assigning it a role it has not proved.
 
+## What belongs in a workshop invitation?
+
+Suppose a community centre has a quiet room, four chess sets and a volunteer who can teach the rules. Its invitation could promise a weekly place to play, a partner for beginners and the option to watch. Each of those promises has an owner who can deliver it. “Relieves depression” raises a different question: who established that result, in whom, against what comparison and for how long? A change in the wording matters because someone deciding whether to attend is entitled to know what is actually on offer.
+
+Design the first ten minutes around the weaker promise, the one you can keep. Put out a board already set up for a short game. Ask whether the visitor wants to learn a move, watch someone else demonstrate it, or sit with a friend. Explain how to leave and come back. If the visitor asks about treatment, the chess volunteer can describe the activity and direct individual health questions to the clinician responsible for their care. The volunteer need not invent a therapeutic rationale to justify offering an enjoyable afternoon.
+
+## What could a participant reasonably dispute?
+
+Consider a report that reads, “Our eight regular players are more confident.” Which eight? Someone who attended twice and then left might have had a different experience. Did the regular players report confidence, did the facilitator infer it, or was it the ability to ask an opponent for another game? Replace that sentence with something checkable: “Five of the eight regular players said they felt comfortable asking someone new to play.” This is an illustrative wording, not a result from a trial. It identifies both the question and the group and leaves room for people who answered differently.
+
+A short anonymous exit card could ask what made the room easy or difficult to use and what the person would change next time. Better lighting, a choice of seats or a more patient introduction to the clock are all responses the organiser could act on. Readers of a clinical claim would still need a different study. A community centre, meanwhile, would have direct evidence for moving a lamp or offering untimed games. In a modest programme, the most valuable outcome may be that the next visitor finds a chair, a ready partner and a clear invitation to return.
+
 ## Sources
 
 - Demily, C., Cavézian, C., Desmurget, M., Berquand-Merle, M., Chambon, V., & Franck, N. (2009). *The game of chess enhances cognitive abilities in schizophrenia*. Schizophrenia Research, 107(1), 112–113. [Record](https://pubmed.ncbi.nlm.nih.gov/18995990/) and [consulted author text](https://www.researchgate.net/publication/23460530_The_game_of_chess_enhances_cognitive_abilities_in_schizophrenia), DOI: 10.1016/j.schres.2008.09.024.

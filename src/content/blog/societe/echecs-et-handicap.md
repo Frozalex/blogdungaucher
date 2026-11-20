@@ -131,3 +131,11 @@ Un plateau adapté ne répare pas un escalier à l’entrée. Une interface voca
 L’objectif est que la personne puisse décider, jouer, apprendre et faire connaître ses besoins. Un club n’a pas besoin d’annoncer une égalité cognitive parfaite ou un effet de santé pour rendre ce projet utile. Il doit surtout transformer ses intentions en conditions d’accueil vérifiables.
 
 **Après lecture :** choisis un obstacle concret à résoudre avec le participant et confirme la solution avant la séance. Pour poursuivre, lis [échecs et TDAH](/fr/blog/echecs-et-tdah/) ou [échecs et streaming](/fr/blog/echecs-et-streaming/).
+
+## Une répétition avant l’arrivée des autres joueurs
+
+Pour préparer un tournoi avec deux échiquiers, organise une répétition de quelques minutes autour de la table réservée. Les deux participants jouent une petite suite de coups, annoncent les déplacements et vérifient la concordance des positions. Fais volontairement une pause après une prise. Quelle pièce a été retirée sur chacun des plateaux ? Qui a entendu l’annonce ? La pendule est-elle à portée de la personne qui doit l’actionner ? L’[annexe D des règles du jeu de la FIDE](https://handbook.fide.com/chapter/E012023) décrit notamment l’annonce, la répétition et l’exécution des coups. C’est un bon texte à avoir sous la main pour préparer cette vérification avec l’arbitre.
+
+Élargis ensuite l’essai à ce qui se passe entre les rondes. Imagine que l’appariement annonce une nouvelle table et que la salle soit déjà pleine. Le chemin dégagé pendant l’installation peut maintenant être encombré de sacs ou de chaises tirées. Qui pourra renseigner le joueur et comment trouver cette personne ? Un numéro de table difficile à lire à distance ou une consigne donnée seulement à voix haute peut mettre en échec une préparation pourtant soigneuse du matériel.
+
+Termine par une question adressée directement au participant : « Si un incident se produit pendant ta partie, quel moyen de signalement te convient ? » Note la réponse utile à l’organisation et communique-la au seul interlocuteur concerné. Une solution trouvée pour cette rencontre peut inspirer la suivante ; il restera à la rediscuter avec la prochaine personne qui utilisera la table.

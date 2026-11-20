@@ -39,6 +39,16 @@ faq:
       en concrete berekening die door het hele spel hergebruikt worden. Een solide eindspeltechniek geeft
       ook vertrouwen in het middenspel: wetende dat je een licht voordeel in het eindspel kunt converteren,
       zoek je niet te vroeg naar beslissende tactische voordelen.
+  - question: "Op welk niveau moet je openingen serieus nemen?"
+    answer: "Kijk eerst naar je eigen partijen. Verlies je al in dezelfde openingsvariant materiaal of kom je steeds zonder plan uit de opening, besteed daar dan tijd aan. Ook tegen vaste clubgenoten die je repertoire kennen kan zo’n gerichte voorbereiding lonen. Een rating alleen bepaalt die keuze niet."
+  - question: "Hoe lang duurt het voor je resultaten ziet met dit soort werk?"
+    answer: "Vergelijk na enkele weken dezelfde soorten stellingen en noteer of je eerder gemiste tactische mogelijkheden vindt. Een technisch eindspel komt soms maar één keer in een heel toernooi op het bord. Neem daarom ook oefenstellingen mee in je vergelijking. Een vaste termijn voor ratingwinst is niet te geven."
+  - question: "Lichess Puzzles of Chess Tempo voor tactiek?"
+    answer: "Beide werken. Chess Tempo wordt vaak verkozen voor serieus werk omdat je tactieken kunt filteren (geforceerd mat, materiaalwinst, verdediging) en niveau. Lichess Puzzles is toegankelijker met een vloeiendere interface. Regelmaat telt meer dan het platform."
+  - question: "Moet je eindspelen echt bestuderen voor je het middenspel goed kunt spelen?"
+    answer: "Dat is het klassieke standpunt van Fine, en het is verdedigbaar. Eindspelen leren echte stukwaarden, sleutelvelden en precisie in afgeslankte standen. Die lessen dragen door naar het middenspel. In de praktijk is het beter parallel op beide te vorderen in plaats van te wachten totdat eindspelen \"klaar\" zijn voor je de rest aanpakt."
+  - question: "Geldt de regel voor blitz?"
+    answer: "Bij blitz is snelle patroonherkenning belangrijk. Controleer in je eigen partijen waar de meeste punten blijven liggen. Als je onder tijdsdruk geregeld een eindspel bereikt dat je niet kent, blijft het zinvol dat langzaam uit te spelen. Blitz kan laten zien wat je wilt trainen; reserveer daarna tijd voor de analyse."
 ---
 
 Je hebt net een partij verloren. Je opent je repertoire, herstart de variant die je problemen gaf, besteedt veertig minuten aan het memoriseren van zetten die je misschien nooit meer zult spelen. Het voelt nuttig aan. Het voelt als werk.
@@ -177,30 +187,6 @@ Eén puzzel opgelost met volledige aandacht, echt vragen stellen waarom de combi
 | Eindspelen (40%) | Chronisch verwaarloosd; beslissend voor het converteren van voordelen | Begin met de basis: koning en pion, torens, dameseindspelen |
 | Openingen (20%) | Overschat op laag niveau; relevant vanaf ca. 1800 Elo | Bestudeer ideeën, niet lijnen; twee of drie solide systemen zijn voldoende |
 | Grenzen | Vuistregel voor verbeteraars, geen universele formule | Aanpassen aan echte zwaktes; eigen partijen analyseren |
-
----
-
-## Veelgestelde vragen
-
-**Op welk niveau moet je openingen serieus nemen?**
-
-Context speelt een rol, maar de meeste trainers plaatsen de drempel rond de 1600-1800 standaard rating. Daaronder worden partijen elders gewonnen en verloren. Uitzondering: als je vaak dezelfde tegenstanders treft die je gewoonten kennen, kan minimale voorbereiding ook op lager niveau nog verrassen.
-
-**Hoe lang duurt het voor je resultaten ziet met dit soort werk?**
-
-Tactiek heeft de neiging vrij snel effecten te tonen: veel spelers rapporteren minder grove blunders na vier tot zes weken consistent dagelijks werk. Eindspelen duren langer om in resultaten te verschijnen, omdat eindspelposities zeldzamer zijn. Drie maanden gestructureerd werk is doorgaans genoeg om een meetbaar ratingverschil te zien.
-
-**Lichess Puzzles of Chess Tempo voor tactiek?**
-
-Beide werken. Chess Tempo wordt vaak verkozen voor serieus werk omdat je tactieken kunt filteren (geforceerd mat, materiaalwinst, verdediging) en niveau. Lichess Puzzles is toegankelijker met een vloeiendere interface. Regelmaat telt meer dan het platform.
-
-**Moet je eindspelen echt bestuderen voor je het middenspel goed kunt spelen?**
-
-Dat is het klassieke standpunt van Fine, en het is verdedigbaar. Eindspelen leren echte stukwaarden, sleutelvelden en precisie in afgeslankte standen. Die lessen dragen door naar het middenspel. In de praktijk is het beter parallel op beide te vorderen in plaats van te wachten totdat eindspelen "klaar" zijn voor je de rest aanpakt.
-
-**Geldt de regel voor blitz?**
-
-In puur blitz doen eindspelen er veel minder toe (partijen bereiken zelden technische eindspelen) en weegt tactiek nog zwaarder. Als je langetermijndoel verbetering is, is blitz alleen niet voldoende. Blitz traint reflexen; gestructureerde training bouwt begrip.
 
 ---
 

@@ -169,6 +169,10 @@ Ensuite, la nuance de Bond et Smith est ici utile : le conformisme n'est pas une
 
 **Sois la voix discordante en analyse.** C'est le résultat le plus actionnable d'Asch. Une seule objection formulée à voix haute change la dynamique du groupe entier, et elle ne coûte presque rien, y compris quand elle est fausse.
 
+## Un vote après l’analyse
+
+Au club, fais écrire un premier coup candidat sur papier avant le tour de table. Après discussion, chaque personne note une nouvelle proposition et la variante qui a changé son avis. Deux votes identiques peuvent ainsi cacher des raisonnements différents ; un changement appuyé sur une défense concrète vaut la peine d’être expliqué.
+
 ## Ce qu'il faut retenir
 
 Asch a montré qu'environ 37 % des réponses données face à une majorité unanimement dans l'erreur suivent cette majorité, sur une tâche perceptive dont la réponse est évidente. Trois participants sur quatre cèdent au moins une fois, mais un sur quatre ne cède jamais, et une seule voix dissidente suffit à briser l'effet.

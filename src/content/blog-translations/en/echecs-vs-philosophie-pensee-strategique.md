@@ -86,6 +86,10 @@ Philosophy in turn invites examination of the analysis criteria: why choose this
 
 To try this dialogue, revisit one decision from your last game. Record the move, an alternative and your justification at the time. After checking, separate proof, estimate and preference. This exercise is not a scientific method for general improvement; it simply helps make your reasoning explicit and recognise where the analogy stops explaining the position.
 
+## One board, three meanings of “best”
+
+A coach calls a move best because it leaves a novice with an ending they understand. An analyst calls another move best because it preserves a theoretical win. A third player wants the move that offers the most chances against an opponent with ten seconds left. All three can agree on the legal moves, the material and the clock. Their disagreement is over what the recommendation is meant to achieve. Before invoking freedom, necessity or objectivity, try finishing the sentence “best for a player who wants to…”. Then ask which of your claims could be tested on the board and which would require knowing something about the people playing.
+
 ## Sources
 
 - Wittgenstein, L. (1953). *Philosophical Investigations*, §§31, 43 and 66–67. [Full text, accessible bilingual edition](https://danielwharris.com/teaching/38080/readings/WittgensteinPI.pdf). Section 31 concerns a piece’s use; §43 explicitly qualifies the scope of its formulation.

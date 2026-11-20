@@ -156,6 +156,10 @@ The goal isn't to save lost games, it's to **produce cases where you see that a 
 
 "I'm hopeless in endgames" is a checkable claim. Go find your actual percentage in rook endgames. It's often less bad than the belief, and sometimes it's accurate, in which case you're holding a work plan instead of an identity.
 
+## Pick the decision you can change
+
+After a run of defeats, lay three score sheets side by side and look for decisions that were yours even if the eventual results were not. Choosing a time control, checking the last rank before a capture, and asking for a post-game analysis are different decisions. Select one that recurs and is small enough to repeat. On the next sheet mark whether you actually made the check. A move can pass that test in a game you lost. That distinction makes the feedback precise enough to use.
+
 ## What to Take Away
 
 The 1967 experiment still holds: for an equal amount of shock, what separates the two groups is control, and the absence of control produces a passivity that generalizes.

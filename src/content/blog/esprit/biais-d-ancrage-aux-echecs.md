@@ -106,6 +106,18 @@ Tu peux analyser plusieurs positions sans score visible, puis comparer avec les 
 
 Pour mesurer un effet d'ancrage, il faudrait davantage : des positions comparables, un ordre d'information contrôlé et une mesure définie à l'avance. Une série personnelle peut guider ton entraînement sans isoler cette cause. Le résultat utile reste une explication plus exacte des positions, pas l'impression d'avoir enfin rendu tout jugement indépendant de toute influence.
 
+## Quand le premier diagramme vient d'une autre colonne
+
+Prends une feuille et trace deux colonnes. Dans celle de gauche, installe une position avec un pion blanc très avancé sur l'aile dame. Dans celle de droite, représente la même position juste après un échange dont la conséquence principale est de libérer une tour noire. Tu n'as pas besoin de trouver un exemple célèbre : utilise une de tes parties où une tour devient active derrière le pion. Sous chaque diagramme, écris le camp au trait. Le but est de conserver visuellement la position qui a produit ta première impression même après qu'elle a disparu de l'échiquier.
+
+Comment décrirais-tu la première position à quelqu'un qui arrive devant ta table ? Tu pourrais dire que le pion avancé limite la mobilité adverse, et indiquer la tour qui se charge de le soutenir. Cache maintenant la colonne de gauche. Dans celle de droite, quelle pièce attaque le pion et quelle pièce l'empêche d'avancer ? La première description peut encore être pertinente. Elle peut aussi avoir perdu la moitié de ses raisons, précisément parce que la nouvelle tour attaque de loin. La présence du pion dans les deux cases du tableau ne garantit pas que sa valeur pratique ait été conservée.
+
+Écris ensuite deux prédictions très modestes. Pour le diagramme de gauche, combien de coups faudrait-il au roi noir pour intervenir si personne ne l'arrêtait ? Pour celui de droite, combien de coups faut-il déjà à la tour pour attaquer ? Un trajet qui demande trois coups à un roi peut ne demander qu'un seul mouvement à une tour. Tu viens de trouver l'objet du changement : le temps de réaction du défenseur. Ce détail donne une meilleure raison de réviser une impression qu'une nouvelle appréciation globale du type « les Blancs sont sans doute moins bien ».
+
+La contre-épreuve est de demander à un ami de commencer par la deuxième colonne. Donne-lui le diagramme sans les annotations. Il peut apercevoir immédiatement une activité de tour que tu n'avais pas envisagée ou au contraire remarquer un moyen simple de protéger le pion. Comparez les variantes, puis seulement l'ordre dans lequel vous avez découvert les positions. Si vous êtes d'accord après vérification, il n'y a pas d'erreur à inventer. Si vous différez encore, cherchez le premier coup précis sur lequel vos réponses divergent.
+
+Cette feuille peut aussi accompagner une partie commentée où l'on annonce « avantage important » puis plus rien pendant quinze coups. Reconstitue le premier diagramme au moment de l'annonce. Place le second à la première transformation irréversible : échange de dames, rupture d'une chaîne de pions, entrée d'un roi. Si tu constates que l'ancienne appréciation survit seulement parce que personne ne l'a réévaluée, ajoute ta propre note à cet endroit. Le prochain lecteur saura quelle hypothèse tester lorsqu'il retrouvera la position, même s'il partage finalement l'évaluation initiale du commentateur.
+
 ## Sources
 
 - Équipe Stockfish, *Frequently Asked Questions*, section « Interpretation of the Stockfish evaluation ». [Documentation officielle](https://official-stockfish.github.io/docs/stockfish-wiki/Stockfish-FAQ.html).

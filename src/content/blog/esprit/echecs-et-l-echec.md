@@ -114,6 +114,16 @@ Pratiquer un jeu ne garantit pas une meilleure gestion de tous les échecs de la
 
 Tu peux essayer de réutiliser une démarche ; examiner un fait, demander un retour, choisir une action ; dans un autre domaine. Il faut ensuite regarder si elle t'y aide réellement.
 
+## Quand ton adversaire t'offre la revanche immédiatement
+
+Une revanche juste après une partie ratée a un attrait : les pièces sont encore sur la table et chacun se souvient du tournant. Elle a aussi un défaut pour l'analyse : on risque de repartir de la position initiale puis de passer quinze coups à essayer de reproduire une situation que personne ne joue plus de la même façon. Si c'est la position perdue qui t'intéresse, propose un autre départ. Rejouez le dernier moment où deux candidats te paraissaient raisonnables et échangez les couleurs après quelques coups.
+
+Tu peux découvrir trois choses assez différentes. D'abord, le coup que tu voulais essayer en premier échoue à une réponse simple que ton adversaire avait préparée. Dans ce cas, la revanche aura servi à éliminer une fausse bonne idée. Ensuite, tu peux trouver une ligne résistante sans parvenir à la défendre à la pendule. Tu as isolé une difficulté d'exécution. Enfin, la position peut être si désagréable qu'aucune des deux reprises n'améliore vraiment tes chances. Il faudra peut-être remonter avant l'échange qui t'y a conduit. Ces constats restent utiles même si, en nombre de parties, tu viens de perdre une fois de plus.
+
+Si ton adversaire préfère rentrer, garde la position dans un fichier que tu peux rouvrir seul. Donne-lui un nom qui indique la décision : « reprendre du pion ou du roi » aide davantage que « défaite horrible ». La prochaine fois que tu cherches un exercice de cinq minutes, tu sauras ce qui t'attend avant même de lancer le logiciel. Ce changement minuscule évite d'avoir à revivre toute la soirée pour travailler un choix technique.
+
+Une défaite peut ainsi rejoindre ton matériel d'entraînement sans devoir devenir immédiatement un souvenir agréable. Le critère est plus simple : peux-tu réutiliser une de ses positions lorsque tu as choisi de le faire ?
+
 ## Sources
 
 - FIDE (2023), *FIDE Laws of Chess*, Fédération internationale des échecs. [Règles officielles](https://handbook.fide.com/chapter/e012023).

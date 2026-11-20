@@ -140,6 +140,18 @@ But a line's practical difficulties aren't the same at every level. A variation 
 
 **Treat absence as absence.** A rare move hasn't been ruled bad by any authority. It simply hasn't been played by the people whose games make it into the databases. That's also what our article on [conformity in chess](/en/blog/conformity-in-chess/) shows.
 
+## A small database you can audit by hand
+
+Build a fictional opening file with ten games. A fashionable bishop move appears in eight and wins six. A quiet king move appears in two and wins once. Before concluding that the bishop move is superior, give six of its eight games to the same experienced player against learners. Give both king moves to evenly matched opponents. The original counts are still correct. Their usefulness for a club player about to face an equal opponent has changed. A result is attached to two people and a whole subsequent game, as well as to the move that got stored in the file.
+
+Now erase the results and replay the positions immediately after the chosen moves. For the bishop move write the strongest defence you can find. For the king move identify the weakness it was designed to cover. Swap notes with another player before restoring the percentages. This produces two candidate explanations you can check against the games. If the experienced player won only after repeated mistakes thirty moves later, the first statistic is an especially poor guide to the immediate position.
+
+Make a third copy containing the same win imported from three different collections. Someone who searches by filename will count three endorsements. Someone who compares players, position and continuation will discover one event. The exercise illustrates a particular danger of social proof: apparent agreement can grow through copying even when the underlying evidence has stood still.
+
+In a real database, keep the filters with your conclusion. A line played in online bullet and a line selected for a classical match answer different practical questions. Write down whose games entered the sample and which position you queried. A clubmate can then repeat the search or change one condition at a time. That is a much stronger invitation to discussion than showing a screenshot with a large green percentage and asking everyone to trust the colour.
+
+One final check costs very little: sort the games by date and look for the first example after an important new defence appeared. Older wins may still teach an attacking plan even where their opening verdict has become obsolete.
+
 ## What to Take Away
 
 Social proof is a reasonable shortcut that becomes exploitable as soon as the appearance of numbers gets manufactured. Its experimental base is shakier than advertised: the 2014 replication didn't recover the specific advantage of the norm message over an ordinary one.

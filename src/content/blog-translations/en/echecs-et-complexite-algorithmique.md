@@ -90,6 +90,14 @@ Deep Blue and AlphaZero show two ways of selecting variations and evaluating pos
 
 For you, the distinction is useful: engine analysis proposes moves within a computing budget. It does not provide proof of the initial position’s exact value. Combinatorial explosion explains why selection is necessary in these approaches; it does not establish that every future solution method is impossible.
 
+## Count a tiny search by hand
+
+Draw a root with three legal choices for White. Give Black three replies to each choice, then stop. You have drawn thirteen positions, including the root, and nine leaves at which you need an evaluation. A programmer reporting “nine positions” might be counting evaluations; another reporting “twelve” might be counting moves generated. Both figures make sense once the unit is stated. Now extend each leaf by three moves. The nine existing leaves become internal positions and twenty-seven new evaluations appear. A single extra ply has tripled the leaf count in this deliberately regular example.
+
+Next, assign the nine original leaves these scores for White, in order: four, six and five in the first group; two, eight and nine in the second; three, seven and five in the third. Black chooses the lowest score in each group, so White's best available guarantee is four. Once the first group has established that guarantee, evaluating the first reply in the second group already proves White will get no more than two there. The same argument applies when you see the three in the last group. You needed five leaf evaluations, not nine, to choose White's move. Put the low scores last in both groups and repeat. The answer survives, but so does most of the work.
+
+This little tree suggests a useful way to read a benchmark. Ask how deep the search went, whether its positions were the same, how the moves were ordered and what exactly was counted. A single speed figure hides each of those choices. Real chess positions also have unequal numbers of legal moves; our tripling is a property of the drawing, not a constant of the game.
+
 ## Sources
 
 - Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. Philosophical Magazine, 41, 256–275. [Original article, Computer History Museum](https://www.computerhistory.org/chess/doc-431614f453dde/): tree estimates and selective search.

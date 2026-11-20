@@ -151,6 +151,8 @@ De Elo-rating heeft het profiel van een verwachte externe beloning. Maar of ze j
 
 *Dit artikel maakt deel uit van een reeks over toegepaste psychologie bij schaken. Een komend artikel behandelt de zelfdeterminatietheorie. Zie ook [Elo en zelfbeeld](/nl/blog/elo-en-zelfbeeld-schaken/), [dopamine en schaken](/nl/blog/dopamine-schaken/) en [burn-out bij schaken](/nl/blog/burnout-schaken/).*
 
+Bekijk eens welke stelling je vrijwillig opzoekt op een vrije avond zonder wedstrijd in het vooruitzicht. Je hoeft haar niet te kiezen als vaste trainingsvorm. Schrijf alleen op wat er bleef boeien toen de rating, het huiswerk en de uitslag buiten beeld waren. Dat geeft de trainer een concreet aanknopingspunt voor een volgende les.
+
 ## Bronnen en referenties
 
 - Lepper, M. R., Greene, D., & Nisbett, R. E. (1973). Undermining children's intrinsic interest with extrinsic reward: A test of the "overjustification" hypothesis. *Journal of Personality and Social Psychology*, 28(1), 129-137.

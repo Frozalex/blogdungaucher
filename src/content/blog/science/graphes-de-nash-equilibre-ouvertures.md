@@ -127,6 +127,10 @@ Proposition de travail : prends une position repère de ton répertoire et écri
 
 Analyse ensuite cette réponse gênante en premier. Tu passes d'une préparation qui confirme tes préférences à une préparation qui affronte les meilleures objections disponibles. C'est l'apport utile du langage des meilleures réponses, même lorsque tu ne disposes pas d'un équilibre démontré.
 
+### Un classement qui dépend du répertoire adverse
+
+Imagine que deux ouvertures donnent les mêmes résultats moyens dans ton carnet. En relisant les parties, tu découvres que tu as surtout employé la première contre des adversaires qui échangent tôt les dames et la seconde contre des joueurs qui cherchent le roque opposé. Ta moyenne mêle alors choix des ouvertures et choix des adversaires. Pour éclairer ta prochaine ronde, sépare les réponses que cet adversaire joue effectivement de celles que les règles lui permettent. Même avec des observations parfaites sur son répertoire passé, tu aurais estimé une habitude, pas démontré qu'il ne gagnerait rien à jouer autrement.
+
 ## Sources
 
 - Nash, J. (1951). *Non-Cooperative Games*. Annals of Mathematics, 54(2), 286–295. [Article](https://irving.vassar.edu/faculty/gj/FTU/io/literature/Nash51.pdf).

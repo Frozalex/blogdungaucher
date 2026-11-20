@@ -129,6 +129,12 @@ Pour un entraîneur, la conséquence utile est de proposer des occasions de prog
 
 Un entraînement honnête annonce ce qu'il exerce, comment il sera évalué et ce qu'il ne peut pas prédire. Cette précision donne davantage de pouvoir d'action qu'une étiquette de talent attachée trop tôt.
 
+### Deux clubs imaginaires et un classement commun
+
+Supposons que deux clubs présentent leurs débutants au même tournoi. Dans l'un, les enfants reçoivent un cours et jouent une partie lente chaque semaine ; dans l'autre, ils viennent surtout aux vacances. Un an plus tard, les meilleurs résultats sont concentrés dans le premier club. C'est un résultat descriptif sur ces joueurs. Attribuer l'écart aux familles, aux prédispositions ou à l'entraîneur exigerait de savoir entre autres comment les enfants sont arrivés dans leur club et lesquels ont continué à jouer. Le tournoi commun harmonise la mesure finale ; il ne rend pas les parcours comparables.
+
+Modifie une seule chose dans cette histoire. À la rentrée suivante, le premier club ouvre ses séances à tous les enfants des deux groupes. Même si une partie des écarts individuels subsiste au prochain tournoi, certains enfants peuvent avoir beaucoup progressé. Le classement relatif et les progrès absolus répondent à deux questions différentes. Si tu veux savoir ce qu'un élève apprend, garde, à côté de ses résultats, quelques positions qu'il ne résolvait pas auparavant et des positions nouvelles de difficulté comparable. Cette trace décrit ce que change une occasion d'apprendre sans avoir à deviner l'origine de toutes les différences entre joueurs.
+
 ## Sources
 
 - Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993). *The Role of Deliberate Practice in the Acquisition of Expert Performance*. Psychological Review, 100, 363–406. [Article](https://gwern.net/doc/psychology/writing/1993-ericsson.pdf).

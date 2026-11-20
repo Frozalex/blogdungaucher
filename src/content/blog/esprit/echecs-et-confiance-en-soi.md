@@ -122,6 +122,14 @@ Après la séance, garde le résultat sportif, la qualité des décisions et ton
 
 Enfin, il est possible d'être correctement préparé et d'avoir encore du trac. L'objectif n'est pas d'attendre une sensation parfaite pour jouer, mais de disposer d'une manière de décider malgré l'incertitude. Si le jeu devient régulièrement une source de détresse, réduire l'enjeu ou la fréquence peut faire partie d'une pratique choisie.
 
+## La feuille des paris de calcul
+
+Voici un jeu à pratiquer avec un partenaire qui a conservé quelques positions de vos entraînements. Il en choisit quatre, sans te dire lesquelles contiennent une combinaison. Tu notes un coup par position, une réponse que tu as vérifiée et une appréciation très simple : « Je le jouerais maintenant » ou « J'aimerais disposer d'une minute de plus. » Ton partenaire garde tes feuilles dans cet ordre. Si tu examines ensuite les positions avec un moteur, conservez aussi les variantes qui expliquent les coups.
+
+La quatrième position est particulièrement intéressante quand tu demandes du temps et trouves pourtant le bon coup. Qu'aurais-tu voulu vérifier ? Si tu peux nommer le seul échec adverse qui t'inquiétait, une minute aurait eu un objet précis. Si tu recommençais la même ligne avec les mêmes conclusions, l'hésitation portait davantage sur ta capacité à accepter une petite incertitude. À l'inverse, tu peux avoir joué immédiatement un mauvais coup parce que tu avais déjà rencontré la même idée la veille. L'étiquette « confiant » aurait effacé cette différence.
+
+Gardez une position pour une revanche différée. Ton partenaire change la place d'une pièce qui intervenait dans le calcul et vérifie que la nouvelle position reste légale. Cachez le premier résultat. Pourras-tu dire quelle branche exige une vérification différente ? Cette seconde tentative t'offre un repère plus fin que le nombre de bonnes réponses. Tu découvres dans quelles circonstances ta première impression mérite d'être suivie et lesquelles justifient une dépense supplémentaire à la pendule.
+
 ## Sources
 
 - Bandura, A. (1977), « Self-efficacy: Toward a Unifying Theory of Behavioral Change », *Psychological Review*, 84(2), 191–215. [Texte intégral](https://dradamvolungis.com/wp-content/uploads/2011/06/self-efficacy-unifying-theory-of-behavioral-change-bandura-1977.pdf), DOI : 10.1037/0033-295X.84.2.191.

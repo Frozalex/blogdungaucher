@@ -214,6 +214,14 @@ C'est une excellente nouvelle. Cela signifie qu'il reste, gratuitement, un facte
 
 **Prochain article :** l'ordonnancement des coups. Comment deviner, avant de les avoir cherchés, lesquels sont les meilleurs, et pourquoi une heuristique aussi grossière que « les prises d'abord » suffit à changer l'ordre de grandeur.
 
+## Une coupure laisse parfois une borne pour seule réponse
+
+Construis un arbre jouet et garde tous ses nombres du point de vue du joueur à la racine pour le dessiner. Le premier candidat a été entièrement examiné et garantit quatre unités. Le second donne le choix à l'adversaire entre trois feuilles. La première feuille que tu visites vaut deux. Tu peux déjà interrompre cette branche : l'adversaire dispose d'au moins une réponse qui limite le gain à deux, alors que ton premier candidat garantissait quatre. Écris dans ta marge « au plus deux » et essaie de remplir les deux feuilles restantes. Deux nombres très favorables ne changeront pas ta décision de racine ; une valeur moins sept changera la valeur véritable du second candidat.
+
+C'est la raison pour laquelle un compte rendu de recherche ne devrait pas annoter automatiquement tous les coups rejetés avec une évaluation exacte. Dans cet exemple, la recherche a fait précisément le travail attendu en évitant les deux dernières feuilles. Si tu veux publier un tableau donnant le score exact de chaque candidat, il faudra parfois réexaminer des branches avec une fenêtre plus large. Le résultat retenu à la racine et les renseignements disponibles sur chaque alternative ne répondent pas au même contrat.
+
+Pour tester ton négamax, dessine les mêmes feuilles une deuxième fois, cette fois avec le signe du camp qui parle à chaque niveau. Suis le chemin de la première coupure. Lorsque le joueur change, l'ancien maximum du parent se traduit en limite de sens inverse pour l'enfant. Note les deux bornes sur un bout de papier avant d'écrire l'appel récursif : changer les signes et garder l'ancien ordre te donnerait une fenêtre renversée. Une comparaison avec la recherche exhaustive sur cet arbre minuscule rend cette faute visible, sans exiger une analyse de partie entière ni une estimation de force de jeu.
+
 ## Sources
 
 Russell et Norvig présentent la garantie de valeur minimax d’alpha-bêta, sa dépendance à l’ordre des coups et les bornes asymptotiques citées ici.

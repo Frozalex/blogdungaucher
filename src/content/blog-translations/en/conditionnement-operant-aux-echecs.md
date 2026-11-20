@@ -156,6 +156,12 @@ A numeric rule, decided in a calm moment, of the "three games and I stop" kind, 
 
 Add a physical obstacle. Ten seconds of friction is often enough to turn an impulse into a decision.
 
+## Find out what the rematch button is paying for
+
+Consider a player whose last game ends in an elementary rook blunder. They hit rematch, play a quick opening and feel better almost immediately. What happened before the first move of the new game? The old board disappeared. The red result banner disappeared. There was something fresh to do with the mouse. Winning the rematch is a possible later reward, but it cannot account on its own for the immediate change the player describes. The urge to click may also belong to this transition out of an uncomfortable moment.
+
+Design two different endings to your next practice session. On one evening, after the agreed last game, close the playing tab and reconstruct the final position on a physical board. On another, save the score sheet, leave the desk and come back to the game the next morning. Record which action actually occurred; a declared intention to analyse is different from placing the pieces. These are small experiments in arranging what follows a game. They are not a diagnosis of why someone plays online. If playing again is precisely what the player wanted from a free evening, a rematch can be an appropriate choice. The question matters most when the same action keeps displacing something they had explicitly chosen to do instead.
+
 ## Key Takeaways
 
 Ferster and Skinner established in 1957 that the rule for delivering a reward matters as much as the reward itself. The variable ratio schedule, where the number of required actions is unpredictable, produces the most intense behavior and the most resistant to extinction, because no losing streak amounts to usable information.

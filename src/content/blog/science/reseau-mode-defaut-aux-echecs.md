@@ -93,6 +93,12 @@ Pendant une partie officielle, garde une routine brève et respecte les règles 
 
 Compare aussi des situations où l'esprit s'est égaré sans erreur et des erreurs survenues alors que tu te sentais absorbé. Cette comparaison évite de transformer chaque faute en preuve de distraction. L'auto-observation reste imparfaite, mais elle devient plus utile quand elle accepte les contre-exemples.
 
+### Dater une distraction sur la feuille de partie
+
+Tu rentres d'un tournoi en pensant avoir perdu parce que tu regardais une autre table. Tu peux peut-être retrouver quand tu t'es levé et quel coup a été joué à ton retour. Il est plus difficile de reconstituer tout ce à quoi tu pensais avant la gaffe. Fais un schéma en trois cases : l'événement extérieur, le raisonnement que tu te rappelles et le coup objectivement joué. Quand une case manque, laisse-la vide. Ajouter une explication cérébrale plausible ne comble pas ce trou.
+
+Cette distinction change l'exercice de reprise. Si tu t'es levé sur le temps de l'adversaire, tu as pu revenir devant un échiquier modifié. Ton premier travail est alors de retrouver ce que son dernier déplacement a libéré ou attaqué. Si tu étais resté assis à calculer une autre branche, il te faut plutôt revenir à la position présente. Une même erreur sur la feuille de partie débouche ainsi sur deux gestes de vérification différents. Tu peux comparer leur utilité à la prochaine séance par la qualité des menaces que tu identifies, sans essayer d'attribuer une activité à un réseau cérébral que tu n'as pas mesurée.
+
 ## Sources
 
 - Christoff, K., Irving, Z. C., Fox, K. C. R., Spreng, R. N., & Andrews-Hanna, J. R. (2016). *Mind-wandering as spontaneous thought: a dynamic framework*. Nature Reviews Neuroscience, 17, 718–731. [Article](https://www.upaya.org/wp-content/uploads/2020/04/Christoff-et-al.-NRN-2016.pdf).

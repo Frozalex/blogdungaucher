@@ -69,6 +69,26 @@ O número pode continuar sendo uma referência sem decidir o valor de cada sess�
 
 Se o medo de ser desmascarado vai além de proteger o patamar, volte ao [guia geral](/pt-br/blog/sindrome-do-impostor-no-xadrez/). Ele trata da dúvida, das atribuições após uma vitória e do pedido de ajuda em todos os níveis.
 
+## Dois torneios que terminam com a mesma pontuação
+
+Imagine uma jogadora que alcançou os 2000 em uma lista específica. Em dois torneios de quatro rodadas, faz dois pontos em cada um. No primeiro, empata as quatro partidas. No segundo, ganha duas e perde duas. Só pelo placar final, é impossível saber em qual torneio tomou as melhores decisões. Também é impossível calcular a mudança exata de rating sem saber qual sistema foi usado e contra quem ela jogou. O número redondo no início dos torneios não resolve nenhuma dessas perguntas.
+
+Para analisar o primeiro torneio, ela escolhe dois empates. Num deles, encontrou uma defesa difícil e chegou a um final equilibrado. No outro, ofereceu empate cedo porque estava preocupada com uma queda no ranking. Na folha de resultados, ambos valem meio ponto. Para quem quer continuar evoluindo, os dois episódios pedem perguntas diferentes. No primeiro, vale guardar a defesa para reconhecer a mesma estrutura mais tarde. No segundo, vale voltar ao momento da oferta e tentar descobrir se a posição ainda suscitava interesse antes de o número vir à mente.
+
+No segundo torneio, uma das derrotas ocorreu após uma escolha arriscada num final conhecido. A outra veio de um lance ilegal imaginado numa variante, que o adversário jamais seria obrigado a aceitar. A mesma frase “não sou bom o bastante para este nível” não ajuda a corrigir nenhuma das duas. A primeira partida talvez peça conhecer as consequências da escolha. A segunda pede reconstruir a posição depois da troca e conferir onde o rei ficou. Chamar os dois episódios de falhas de legitimidade faz perder uma tarde de estudo que já tinha um tema.
+
+### Planejar o calendário sem fazer o número jogar por você
+
+Antes de decidir se entra no próximo torneio, experimente comparar dois calendários concretos. Um inclui um evento clássico com adversários variados e tempo disponível para análise. O outro reúne várias sessões rápidas porque são as únicas compatíveis com o seu horário de trabalho. Você pode preferir qualquer um dos dois por motivos razoáveis. O problema aparece quando a justificativa vira “preciso manter o número” e todas as outras características deixam de entrar na conta.
+
+Uma pergunta mais precisa é o que você deseja ter aprendido ao terminar o evento. Se quer entender melhor suas decisões sob pressão, escolha desde o início quais dados consegue guardar. O horário aproximado em que entrou na fase crítica e o lance em que o plano mudou podem ser suficientes. Se quer testar uma defesa nova, registre as oportunidades reais de jogá-la. Talvez nenhum adversário escolha a abertura esperada. Isso tornará aquela semana pouco informativa sobre a defesa, qualquer que seja o número que aparecer na lista.
+
+Num clube, também é possível esclarecer o que se espera de alguém que passou de um patamar. Se pediram sua ajuda para explicar um final, pergunte qual é a posição e quanto tempo terá para prepará-la. Você pode mostrar a defesa que conhece, dizer onde começa sua dúvida e consultar uma referência junto com os colegas. Esse procedimento oferece uma aula verificável e torna desnecessário fingir domínio sobre todo o conteúdo associado, na imaginação do grupo, a uma classificação.
+
+Quando a lista seguinte sair, abra primeiro uma partida do período que você considere instrutiva. Anote em uma frase o que hoje entende melhor. Só depois confira a variação de pontos. Essa ordem permite registrar uma descoberta que uma queda poderia ofuscar, ou uma fraqueza que uma alta poderia esconder. Você termina a consulta com duas informações úteis: o resultado reconhecido pelo sistema e uma questão técnica que continua sob seu alcance na sessão seguinte. Coloque o diagrama dessa questão no início da próxima folha de treino.
+
+Há ainda um detalhe prático quando chega a convocação de uma equipe. Pergunte qual lista de rating o clube adotou e qual a data usada para ordenar os tabuleiros. Uma lista publicada no início do mês pode diferir do número que você acompanha em tempo real. Esclarecer essa convenção responde à pergunta administrativa sobre onde sentar. A pergunta técnica sobre o que preparar continua dependendo do adversário, da cor e do tempo disponível para a partida.
+
 ## Fontes
 
 - Clance, P. R., & Imes, S. A. (1978). *The Impostor Phenomenon in High Achieving Women: Dynamics and Therapeutic Intervention*. Psychotherapy: Theory, Research & Practice, 15(3), 241–247. [Artigo integral](https://mpowir.org/wp-content/uploads/2010/02/Download-IP-in-High-Achieving-Women.pdf).

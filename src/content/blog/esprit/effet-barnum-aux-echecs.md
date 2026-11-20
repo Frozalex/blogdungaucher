@@ -108,6 +108,19 @@ Compare aussi des contre-exemples. Une partie technique bien conduite peut empê
 
 Tu peux conserver des préférences et une manière personnelle de jouer. Le but est de garder ces descriptions ouvertes à la discussion, plutôt que de leur demander d’expliquer d’avance chaque victoire et chaque défaite. Le [guide d’analyse](/fr/blog/analyser-ses-parties/) aide à revenir aux choix concrets.
 
+## Soumettre un portrait de joueur à un test de substitution
+
+Deux partenaires rédigent chacun un paragraphe sur leur style de jeu, à partir de trois parties récentes. Le premier écrit : « Tu aimes attaquer lorsque l'occasion se présente, mais tu sais aussi être prudent dans une position difficile. » Le second écrit : « Dans les trois parties examinées, tu as refusé deux échanges de dames alors que ton roi se trouvait encore au centre. » Mélange les deux portraits et demande à un troisième joueur lequel il accepterait volontiers pour lui-même. Il pourra sans doute adopter le premier sans même ouvrir ses archives. Pour le second, il aura besoin d'aller chercher des parties. Ce besoin de vérification constitue déjà une différence majeure.
+
+Le deuxième portrait peut évidemment être faux. Son avantage est justement que l'on peut le découvrir. Qu'appelle-t-on « roi au centre » dans ces trois positions ? Les échanges refusés étaient-ils réellement disponibles ou est-ce le commentateur qui les a imaginés ? Le joueur avait-il un motif tactique de garder les dames ? Rejouez les coups et donnez un nom à chaque position. Si l'un des échanges perdait du matériel, il faudra corriger le portrait. Le comportement initialement présenté comme un trait de caractère peut devenir une décision imposée par l'échiquier.
+
+Pour aller plus loin, donne au troisième joueur une partie supplémentaire dont il cache les derniers coups. Les deux auteurs doivent prévoir un choix vérifiable du joueur décrit. Par exemple : face à un échange de dames sans perte matérielle, le refusera-t-il encore ? Écris aussi l'observation qui rendrait la prédiction impossible à tester. Si le joueur n'a jamais l'occasion d'échanger les dames, tu devras suspendre la conclusion. Compter cette partie comme une confirmation rendrait le portrait aussi élastique que la première formulation.
+
+Essaie enfin de rédiger une version qui reconnaît la petite taille de l'archive. « Deux refus méritent qu'on regarde ce qui rendait les finales peu attrayantes » formule déjà une bonne question d'entraînement. Il n'est pas nécessaire de proclamer que tu es un attaquant né. Ton partenaire peut maintenant sélectionner deux finales voisines et te faire jouer le camp que tu évitais. Peut-être découvriras-tu que tu connais mal le plan après l'échange. Peut-être trouveras-tu ces finales parfaitement agréables, et les refus s'expliqueront par les particularités des deux parties.
+
+Garde les deux textes sur la même feuille. Dans quelques mois, le premier semblera probablement encore flatteur, quelles que soient tes parties. Le second aura peut-être été remplacé par une observation différente, un progrès ou une exception bien comprise. Pouvoir vieillir et devenir faux est une qualité précieuse pour un commentaire d'entraînement : il se rapporte à une période, à des positions et à une question que quelqu'un pourra de nouveau examiner.
+
+Essaie de dater la version précise de ce portrait et note dans la marge le prochain adversaire contre lequel tu voudrais vérifier sa prédiction. Cela transforme une description séduisante en rendez-vous avec une position réellement jouée.
 
 ## Sources
 

@@ -99,6 +99,18 @@ Pendant une partie officielle, aucune de ces propositions ne justifie de noter u
 
 La [théorie de l’esprit](/fr/blog/theorie-de-l-esprit-aux-echecs/) aborde les modèles que tu peux construire d’autrui. Les [mécanismes de défense](/fr/blog/mecanismes-de-defense-aux-echecs/) discutent un autre usage du mot projection. Aucun de ces cadres ne remplace l’examen des coups légaux.
 
+## Le coup que tu crois obligatoire pour l'autre
+
+Tu arrives devant une position où ton adversaire peut échanger les dames ou les garder. À sa place, tu échangerais : tu trouves ton roi exposé et tu apprécies les finales. Tu écartes donc sa deuxième possibilité sans l'étudier. Lorsque les dames restent sur le plateau, tu dis qu'il a pris un risque absurde. Avant d'invoquer une erreur d'évaluation, sépare deux assertions. La première, « je préférerais échanger », décrit ton confort à toi. La seconde, « il échangera », décrit un événement futur. Pour passer de l'une à l'autre, il manque un renseignement sur sa position ou ses préférences.
+
+Tu peux combler ce vide de plusieurs façons. Une variante peut montrer que garder les dames perd immédiatement une pièce. Dans ce cas, ton anticipation s'appuie sur une contrainte concrète. À l'autre extrême, tu peux avoir joué dix parties contre le même partenaire et noté qu'il garde volontiers les dames même avec un roi un peu exposé. Cette information personnelle peut guider une hypothèse, mais elle n'enlève pas son droit de changer de plan aujourd'hui. Entre les deux, seules quelques réponses réellement examinées te diront ce que tu sais.
+
+Propose ce problème lors d'une séance à deux. Place le diagramme, puis demande à ton partenaire d'indiquer sa préférence sans entendre la tienne. Tu écris de ton côté le coup que tu penses qu'il choisira et le coup que tu choisirais toi-même. Les deux réponses peuvent être identiques pour de bonnes raisons. Pour identifier lesquelles, demande à chacun d'inscrire la première menace prise en compte. Une égalité de coups ne prouve pas une égalité de préférences, et deux préférences différentes peuvent conduire au même échange forcé.
+
+Recommence avec un diagramme où les raisons changent. Déplace les rois sur des cases où l'un des deux camps bénéficie d'une colonne ouverte ou d'une diagonale supplémentaire, en gardant une position légale et utile à jouer. Cette fois, chacun explique quel détail suffirait à lui faire changer d'avis. C'est souvent la phrase la plus informative du jeu. « J'échangerais si sa tour pouvait entrer avec échec » révèle une condition tactique. « Je garderais les dames parce qu'en finale je ne trouve aucun objectif » révèle une question de plan.
+
+Dans une partie de tournoi, tu n'obtiendras pas les réponses de ton adversaire avant son coup. L'exercice t'aura néanmoins donné un moyen de continuer le calcul : prévoir les réponses qui seraient gênantes pour toi, même lorsqu'elles ne correspondent pas à ce que tu voudrais jouer de l'autre côté. Quand ton adversaire justifie ensuite une décision par une idée inattendue, tu peux la conserver comme une nouvelle option pour tes exercices. Il ne s'agit plus de deviner sa personnalité ; tu viens d'élargir la liste de coups dont tu sais expliquer le projet.
+
 ## Sources
 
 - Ross, L., Greene, D. et House, P. (1977), « The “False Consensus Effect”: An Egocentric Bias in Social Perception and Attribution Processes », *Journal of Experimental Social Psychology*, 13(3), 279–301. [Article original reproduit](https://www.bulidomics.com/w/images/d/d8/4705-Ross-et-al-False-Consensus-Effect.pdf), DOI : 10.1016/0022-1031(77)90049-X.

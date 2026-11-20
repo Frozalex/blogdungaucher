@@ -80,6 +80,20 @@ Imagine that children in a chess club score higher on an attention test than chi
 
 You can use the same precision in your own practice. Before consulting an engine, write down your opponent’s threat at three turning points in one game. If you overlooked a bishop’s line, find a different position with that motif and explain the threat before moving. Recalling yesterday’s answer and recognising the same relationship on a new board are two different achievements.
 
+## Reconstruct the decision behind a correct answer
+
+Two players can find the same move by quite different routes. Set up a board with both kings on their starting squares, a white knight on c7 and a black rook on a8. Leave the other squares empty. The knight attacks the king on e8 and the rook on a8. Black must respond to the check. In this simplified diagram moving the king to d7 is legal, after which White can capture the rook on a8. The point of the exercise is small and visible: a player can learn to recognise the geometry of two knight attacks without searching every legal move.
+
+Now put a white pawn on c6, return the king to e8, and ask what changed. The original knight attacks exactly the same squares. The king still has moves, but no longer has the specific escape d7, which the pawn now covers. Someone repeating the first line from memory will get the geometry of the fork right and the defence wrong. Someone who traces each relevant attack afresh may reach a better answer while taking longer. Measuring only how fast the player says “fork” would hide this difference.
+
+Use two columns on a piece of paper: “What I recognised” and “What I checked.” A player can write “knight attacks king and rook” in the first column and “is the proposed king move legal?” in the second. That small separation tells a coach more about the missed reply than a general statement about concentration. It also shows how a training task differs from a controlled scientific study. We intentionally gave away the pattern in the question. An experiment about spontaneous recognition would have to consider how much the wording disclosed and which other patterns the participants expected.
+
+## Three conclusions from the same training evening
+
+Imagine a learner solves the diagram immediately after the demonstration, solves it again next week, and then solves a fresh problem with the same geometry on different squares. The first result could reflect a memory of the instruction. The second tells you the answer survived a delay. The third provides a little evidence that the learner can reuse the relation in another chess position. None of these tasks measures performance in the classroom or ability to navigate an unfamiliar city. Each conclusion is tied to the question that was actually asked.
+
+To make this a useful exercise for your own games, find a missed double attack in your score sheet and redraw it from the opponent's side. Ask a partner to alter a single defender or escape square and keep the change secret until you start. After you answer, put the old and new diagrams next to each other. Name the exact relation the change broke. That is a concrete piece of chess learning you can describe without guessing which part of your brain produced it.
+
 ## Sources
 
 - Li, K., Jiang, J., Qiu, L. et al. (2015), *A multimodal MRI dataset of professional chess players*, Scientific Data, 2, 150044, [article](https://www.nature.com/articles/sdata201544).

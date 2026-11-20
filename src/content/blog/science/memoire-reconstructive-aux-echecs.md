@@ -110,6 +110,14 @@ Lorsque tu fais le bilan d'une période, conserve donc des parties gagnées, nul
 
 Tu peux apprécier une partie ancienne et corriger son récit. La correction retire peut-être une certitude, mais elle ajoute une information utile : ce que tu savais, ce que tu as appris et ce qu'il te reste à retrouver sans assistance.
 
+## Une annotation en aveugle pour retrouver l'origine d'une idée
+
+Après une partie, écris sur une carte la défense que tu pensais avoir examinée avant de sacrifier un pion. Donne la carte face cachée à ton partenaire. Sur une autre feuille, demande-lui d'écrire ce qu'il t'a entendu dire lors de l'analyse commune. Ouvrez ensuite les deux documents avant de consulter un moteur. Une même variante peut apparaître dans les deux récits, dans un seul, ou dans aucun. Ce sont trois résultats documentaires distincts ; aucun ne donne un accès direct et exhaustif à ce que tu pensais pendant la ronde.
+
+Supposons que ta carte annonce une prise de tour et que la feuille de ton partenaire mentionne un échange des dames. Comment lire ce désaccord ? Tu as pu examiner les deux coups et n'en raconter qu'un. Ton partenaire a pu proposer l'échange, puis vous avez tous deux poursuivi cette piste sans rappeler qui l'avait introduite. Tu as aussi pu découvrir un coup seulement en regardant le plateau a posteriori. Pour départager ces possibilités, la feuille officielle peut fixer la position, mais elle ne départage pas l'origine de la suggestion. Mieux vaut marquer cette origine comme incertaine que corriger la mémoire de l'un avec l'assurance de l'autre.
+
+Une semaine plus tard, ressors le diagramme et demande-toi ce que tu choisirais aujourd'hui. Note ta réponse sur une troisième carte, avec sa date. Cette fois il n'est plus nécessaire de te rappeler qui a proposé l'échange : la question porte sur ta compréhension actuelle. Tu peux changer d'avis pour une bonne raison, par exemple parce que la finale issue de l'échange possède une case d'entrée que tu avais négligée. Le progrès apparaît dans le raisonnement nouveau. Conserver les deux anciennes cartes empêche simplement de transformer ce progrès en impression que la bonne explication était évidente depuis le départ.
+
 ## Sources
 
 - Loftus, E. F. et Palmer, J. C. (1974), *Reconstruction of automobile destruction: An example of the interaction between language and memory*, Journal of Verbal Learning and Verbal Behavior, 13, 585–589, [original](https://gwern.net/doc/psychology/cognitive-bias/1974-loftus.pdf).

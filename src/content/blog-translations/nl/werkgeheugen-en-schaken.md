@@ -140,3 +140,15 @@ Dat is de echte les: de bottleneck is echt. Vaardigheid bij schaken is grotendee
 - Ontdek de kracht van schaken op je geheugen
 - Schaken en ruimtelijk inzicht: het brein dat in 3D ziet
 - Schaken en slaap: waarom de nacht ook jouw partij speelt
+
+## De stelling die tijdens het rekenen stilletjes verandert
+
+Speel vanuit de beginstelling de zetten 1.e4 e5 2.Pf3 Pc6 op een echt bord. Laat de stukken daarna staan. Reken in gedachten verder met 3.Lb5 a6 4.Lxc6 dxc6. Sluit het notatieboek en beantwoord drie vragen. Op welk veld stond de witte loper voordat hij sloeg? Welke zwarte pion staat nu op c6? En vanaf welk veld vertrekt de witte dame als zij later in het spel wordt gebracht? Leg je antwoord eerst vast zonder de stukken aan te raken.
+
+De eerste vraag verwijst naar een tussenbeeld uit de variant. De tweede gaat over een wijziging die tot in de eindstand blijft bestaan. De derde vraagt naar iets dat helemaal niet veranderde: de dame staat nog op d1. Bij het nakijken kun je de variant uitvoeren en vaststellen welk antwoord bij welke laag hoorde. Wie zich de zwarte pion op c7 herinnert en daarom denkt dat die op c6 belandde, heeft het beeld van de stelling met het verhaal van de zetten vermengd. De pion op c7 stond er de hele tijd. De pion op d7 sloeg de loper op c6.
+
+Ga een stap terug naar de situatie na 3...a6 en vergelijk in gedachten het andere vervolg 4.La4. Nu staat de witte loper nog op het bord en is d7 nog bezet. Vraag dezelfde drie dingen opnieuw. Een goed geheugen voor de eerste variant kan hier juist een hinderlijke voorganger zijn: je antwoordt nog op de vraag uit het eerdere vervolg. Een praktisch hulpmiddel is bij terugkeer naar het vertakkingspunt hardop de laatste werkelijke zet te noemen. In dit geval was dat de zwarte pion van a7 naar a6. Begin daarna met een korte beschrijving van wat nog op het bord staat.
+
+Voor een trainingspartner is de uitkomst van de opgave minder interessant dan de plek waar het misgaat. Vraag of jij op het eindbeeld strandde, op een ruil van zetten volgorde of op de overgang van de ene zijtak naar de andere. Dan kun je de volgende oefening gericht veranderen. Voeg bij een overgangsfout twee korte varianten toe met dezelfde beginzet. Bij een vergeten stuk is één rechte lijn met een rustige tussenzet al lastig genoeg.
+
+Gebruik zo'n oefening alleen tussen partijen. Tijdens een wedstrijd gelden er regels voor aantekeningen en hulpmiddelen. Aan het bord kun je wel de gewoonte meenemen om na het verwerpen van een variant opnieuw te kijken naar de feitelijke stelling die voor je staat. Een speler die zijn ogen opent na lang rekenen, krijgt veel informatie cadeau: de geslagen loper staat nog gewoon op f1 als hij de derde zet in werkelijkheid helemaal niet speelde. Juist het vaste vertrekpunt maakt deze kleine proef herhaalbaar en laat je over een paar dagen met een andere stelling zien welke fout minder vaak terugkomt.

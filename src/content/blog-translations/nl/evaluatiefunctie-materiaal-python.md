@@ -210,3 +210,13 @@ Materiaal is een middel, geen doel. We weten dat als we schaken; we meten het hi
 Dat is ook goed nieuws voor het vervolg van de serie. Het geeft aan dat de inspanning niet in de eerste plaats op de finesse van de evaluatie moet liggen, maar op de diepte van de zoekfunctie. Een engine die vier zetten vooruit ziet met een grove evaluatie verslaat ruim een engine die één zet vooruit ziet met een verfijnde evaluatie. Daarom gaan de volgende zes artikelen bijna uitsluitend over zoekfuncties.
 
 **Volgend artikel:** minimax, het algoritme dat veronderstelt dat de tegenstander goed speelt. De engine stopt eindelijk met zijn tegenstander pat te zetten, en begint mat in twee te vinden.
+
+## Twee stellingen met precies dezelfde inventaris
+
+Zet op een leeg bord een witte koning op a1, een zwarte koning op g8, een witte toren op a2 en een zwarte toren op h8. Beide kanten bezitten een koning en een toren. Je eenvoudige materiaalfunctie hoort dus geen voorkeur uit te spreken. Zet vervolgens de zwarte toren naar b2 en laat wit aan zet. De inventaris veranderde niet, maar de witte toren kan nu de zwarte toren slaan. Een functie die alleen de huidige stukken telt kan het verschil pas laten zien nadat de zoekroutine die zet werkelijk heeft uitgevoerd.
+
+Dit voorbeeld scheidt twee vragen die bij het debuggen gemakkelijk door elkaar lopen. Is de waarde van de huidige stelling correct volgens jouw beperkte definitie? En krijgt de zoekroutine vanuit die stelling de juiste opvolgers? Bij de eerste vraag is nul een verdedigbare uitkomst. Bij de tweede vraag verwacht je een stelling waarin zwart zijn toren kwijt is en wit de zijne behoudt. Als je de huidige nul alvast verandert om het hangende stuk mee te tellen, heb je een nieuw evaluatiemodel ontworpen. Dat kan interessant zijn, maar het repareert geen fout in de zoekfunctie.
+
+Test na de slagzet ook meteen het terugnemen van de zet. De twee torens moeten weer op hun oude velden staan en de oorspronkelijke score hoort terug te keren. Herhaal deze controle met zwart aan zet en de kleuren gespiegeld. Noteer voor elke score expliciet vanuit welk perspectief zij is berekend. Een score die altijd voor wit wordt opgeschreven heeft bij kleurwisseling een ander teken. Een score voor de speler aan zet volgt een andere afspraak. Beide conventies kunnen werken, zolang de rest van de code dezelfde afspraak consequent gebruikt.
+
+Bewaar ten slotte een volkomen gelijke materiaalstelling waarin geen directe slagzet mogelijk is. Samen met de hangende toren dekt die kleine verzameling drie verschillende gevallen af, zonder dat je het precieze aantal partijen uit een eerdere proef hoeft te reproduceren.

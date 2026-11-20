@@ -18,17 +18,17 @@ tags:
 draft: false
 faq:
   - question: "Waarom wordt de Fischer-Spassky-match van 1972 beschouwd als een diplomatiek evenement?"
-    answer: "Omdat het plaatsvond tijdens de Détente, de periode van gespannen coëxistentie tussen de VS en de USSR. De USSR had de schaakwereldkampioenschappen gedomineerd sinds 1948: verliezen van een Amerikaan was symbolisch rampzalig voor de Sovjet-ideologie die de collectieve intellectuele superioriteit presenteerde als bewijs van de waarde van het systeem. Elke persconferentie van Fischer werd door inlichtingendiensten van beide kanten nauwlettend gevolgd als een strategisch signaal."
+    answer: "Fischer speelde als Amerikaan tegen de Sovjetwereldkampioen tijdens de Koude Oorlog. Na een opeenvolging van Sovjetkampioenen kreeg de strijd om de titel een politieke betekenis die verder reikte dan de zetten op het bord."
   - question: "Hoe gebruiken de Verenigde Naties schaken in de diplomatie?"
-    answer: "Voornamelijk via programma's voor burgerdiplomatie: internationale toernooien die jongeren uit conflictlanden samenbrengen, lerarenopleidingen in ontwikkelingslanden, en partnerschappen met de FIDE om wedstrijden te organiseren in regio's na een conflict. De centrale gedachte is dat het schaakbord een symbolische neutraliteit creëert: men kan samen spelen zonder het politieke conflict te ontkennen, en respectvolle competitie bouwt een minimale relatie die een beginpunt kan worden."
+    answer: "De Algemene Vergadering riep 20 juli uit tot Wereldschaakdag. Bij Chess for Protection in Kakuma werkt de vluchtelingenorganisatie UNHCR met de FIDE en plaatselijke partners. De ene activiteit is institutionele erkenning, de andere een concreet programma."
   - question: "Is schaken echt nuttig voor het leren onderhandelen?"
     answer: "Voor bepaalde aspecten wel. Het boomdenken in schaken, het anticiperen op de mogelijke antwoorden van de tegenstander en het voorbereiden van tegenantwoorden, is direct overdraagbaar aan de voorbereiding van een onderhandeling. Het beheersen van het ego bij een moeilijke positie ook: een goede onderhandelaar zoekt, net als een goede speler, de beste uitweg in de werkelijke positie, niet in de ideale positie die hij had gewild. Maar schaken is een nulsomspel (één winnaar), wat het tegenovergestelde is van win-win-onderhandeling: men moet zich bewust zijn van deze beperking."
   - question: "Werken de Chess for Peace-programma's echt?"
-    answer: "De beschikbare studies tonen positieve maar bescheiden resultaten. Een studie uit 2018 over Israëlische en Palestijnse kinderen van 8-12 jaar die 18 maanden deelnamen aan gemengde schaakclubs mat een vermindering van 23% op gestandaardiseerde schalen voor etnische vooroordelen, versus 4% in de controlegroep. Het hoofdeffect is niet het spel zelf maar het herhaalde contact in een kader van respectvolle samenwerking: schaken biedt het voorwendsel en de structuur."
+    answer: "Projectdocumenten beschrijven ontmoetingen, partners en activiteiten. Om te weten of deelnemers later meer contact hebben of anders denken over de andere groep, zijn aparte metingen en een zinvolle vergelijking nodig. De naam van een programma of het aantal gespeelde partijen levert dat bewijs niet."
   - question: "Welke rol spelen schaken in de Russische culturele diplomatie?"
     answer: "Een centrale rol, van Botvinnik tot vandaag. Rusland financiert zijn schaakfederatie en opleidingsscholen massaal, deels om internationale culturele invloed te behouden. Wereldwijd gerespecteerde Russische grootmeesters hebben een diffuse soft power gecreëerd. Na 2022 schortte de FIDE de wedstrijden in Rusland en Belarus op, wat een diplomatieke breuk veroorzaakte in dit historische kanaal."
   - question: "Heeft Nederland een rol gespeeld in de schaakdiplomatie?"
-    answer: "Ja, een opmerkelijke rol. Nederland was het land waar Viktor Korchnoi in 1976 defecteerde tijdens een toernooi, wat een van de spectaculairste politieke episodes in de schaakgeschiedenis werd. Bovendien organiseerde Nederland de wereldkampioenschapswedstrijd tussen Max Euwe en Alekhine in 1935, waarbij een Nederlander voor het eerst de wereldtitel veroverde op een Russische titelverdediger."
+    answer: "Ja, een opmerkelijke rol. Nederland was het land waar Viktor Korchnoi in 1976 defecteerde tijdens een toernooi, wat een van de spectaculairste politieke episodes in de schaakgeschiedenis werd. Bovendien organiseerde Nederland de wereldkampioenschapswedstrijd tussen Max Euwe en Alekhine in 1935, waarbij een Nederlander voor het eerst de wereldtitel veroverde op de titelverdediger. Van 1970 tot 1978 was Euwe voorzitter van de FIDE tijdens onder meer de WK-match van 1972."
 ---
 
 In 1972, in Reykjavik, zaten twee mannen tegenover een schaakbord. De ene was Amerikaans, excentriek, onvoorspelbaar. De andere Sovjet, kalm, het product van een machine die kampioenen fabriceerde. Tussen hen: vierenzestig houten vakjes. Eromheen: twee nucleaire supermachten die toekeken.
@@ -39,7 +39,7 @@ Bobby Fischer tegen Boris Spassky was niet alleen een Wereldkampioenschap schake
 
 Waarom hebben politieke leiders altijd van schaakmetaforen gehouden? Omdat het spel strategisch denken intuïtief structureert: actoren met verschillende vermogens, beperkte middelen, een centraal doel om tegelijkertijd te beschermen en aan te vallen, een lange tijdshorizon waarbij elke beslissing trapsgewijze gevolgen heeft.
 
-Clausewitz gebruikte in *Vom Kriege* al het schaakbord om het verschil tussen tactiek en strategie te illustreren. Sun Tzu, die vaak wordt vertaald met schaakmetaforen terwijl hij het over *weiqi* (het Chinese Go) had, inspireerde generaties strategen die de versie met aparte stukken verkozen boven de versie met identieke stenen. De structuur van het schaakspel, met zijn duidelijke hiërarchie, gecodeerde bewegingen en volledige informatie voor beide spelers, correspondeert goed met het rationele ideaal van de klassieke politieke strategie.
+Een schaakbord maakt zichtbaar wie aan zet is, welke middelen beide partijen hebben en wanneer een partij afgelopen is. Bij een diplomatieke onderhandeling kunnen er meerdere gesprekspartners zijn, met verschillende doelen en zonder gemeenschappelijk beeld van de uitkomst. Juist daar wordt de beperking van de vergelijking interessant.
 
 Maar naast de metafoor speelde het schaakbord ook een concrete rol in de diplomatieke geschiedenis van de twintigste eeuw.
 
@@ -49,11 +49,11 @@ De USSR had de Schaakwereldkampioenschappen zonder onderbreking gedomineerd sind
 
 Toen Bobby Fischer, Amerikaan, individualist, instabiel, de institutionele beperkingen verwerpend, begon op te klimmen in de wereldranglijst, nam de spanning toe. Fischer was niet alleen sterk. Hij was *gevaarlijk* sterk, en dat wist hij, en hij gebruikte het.
 
-De wedstrijd in Reykjavik ging vooraf aan weken van quasi-diplomatieke onderhandelingen over de voorwaarden: het prijzengeld, de camera's, het geluid, het licht, de grootte van de stukken. Fischer won elk protocollair gevecht terwijl hij anthologiepartijen speelde op het schaakbord. De USSR overwoog serieus het terugtrekken van Spassky om een symbolisch rampzalige nederlaag te vermijden. Henry Kissinger belde Fischer persoonlijk om hem aan te moedigen deel te nemen: de Amerikaanse minister van Buitenlandse Zaken begreep de inzet.
+Voor en tijdens de match in Reykjavik waren er conflicten over de speelvoorwaarden, onder meer over de camera’s. Henry Kissinger, destijds nationaal veiligheidsadviseur van de Amerikaanse president, moedigde Fischer telefonisch aan om te spelen. Een onderwerp dat voor de spelers heel concreet was, kreeg zo ook aandacht op regeringsniveau.
 
 Fischer won. De westerse wereld jubelde. De USSR richtte onmiddellijk zijn inspanningen op de vorming van de volgende kampioen (Anatoly Karpov), die in 1975 de titel zou terugwinnen, nadat Fischer weigerde zijn kroon te verdedigen.
 
-De vijftig jaar die volgden bevestigden dat 1972 een belangrijk symbolisch moment bleef: de eerste keer dat een Amerikaan wereldkampioen schaken werd, op het hoogtepunt van de Koude Oorlog, in een neutraal land dat het geniaal idee had gehad de wedstrijd te organiseren.
+Fischers overwinning maakte een einde aan de reeks Sovjetwereldkampioenen. De sportieve betekenis en de plaats die de wedstrijd kreeg in de berichtgeving over de Koude Oorlog zijn allebei te begrijpen zonder een individuele zet aan een landsbelang gelijk te stellen.
 
 ## Kasparov en de diplomatie van exhibitions
 
@@ -65,23 +65,19 @@ Deze diplomatie via het spel was niet naïef, Kasparov was zich volledig bewust 
 
 Vergelijkbaar heeft Max Euwe, de enige Nederlandse wereldkampioen (1935-1937), zijn schaakprestige gebruikt om bruggen te bouwen. Als president van de FIDE van 1970 tot 1978 pleitte hij voor inclusiviteit in het internationale schaak en speelde hij een sleutelrol in de organisatie van historische wedstrijden tijdens de Koude Oorlog.
 
-## Chess for Peace: burgerdiplomatie via het schaakbord
+## Wat een schaakproject voor vrede kan aantonen
 
-In de jaren 2000 begonnen verschillende organisaties schaken op systematische wijze te gebruiken als instrument voor verzoening in post-conflictregio's.
+De naam Chess for Peace kan naar verschillende plaatselijke initiatieven verwijzen. Een [overzicht van FIDE en Peace and Sport](https://www.fide.com/images/stories/NEWS_2013/FIDE/FIDE_-_Peace_and_Sport.pdf) beschrijft bijvoorbeeld Ajedrez por la Paz in Colombia in 2010 en het Palestijnse project Chess for leadership and creativity in 2011. Het geeft informatie over organisaties en activiteiten. Welke leerlingen een gesprek begonnen, of ze elkaar later terugzagen en of hun houding veranderde, zijn andere vragen. Een beschrijving door de organisator levert geen vergelijking met een controlegroep op.
 
-Het meest gedocumenteerde programma is **Chess for Peace**, geboren uit een Israëlisch-Palestijns initiatief in 2002 in de context van de Tweede Intifada. Het idee: gemengde schaakclubs oprichten voor kinderen van 8 tot 14 jaar in steden waar de gemeenschappen niet meer spontaan gemengd raakten. De instructeurs waren opgeleid in beide talen en in interculturele bemiddeling. Het spel diende als voorwendsel.
+Stel je twee scholen voor die een schaakmiddag organiseren. Deelnemers wisselen van tegenstander en analyseren na afloop samen een partij. Een verslag kan vastleggen hoeveel leerlingen kwamen, hoe vaak zij een nieuw contact legden en wie na een maand opnieuw meedeed. Zelfs als iedereen graag terugkomt, weet je nog niet hoeveel contact er zonder het toernooi zou zijn geweest. Misschien kenden veel deelnemers elkaar al, terwijl een andere groep zich niet veilig genoeg voelde om te komen. Vraag daarom ook aan de begeleiders welke leerlingen het programma niet wist te bereiken.
 
-Een studie uitgevoerd door onderzoekers van de Hebreeuwse Universiteit van Jeruzalem en gepubliceerd in 2018 volgde 312 kinderen gedurende 18 maanden (156 in gemengde clubs, 156 in aparte clubs). De resultaten: een vermindering van 23% op gestandaardiseerde schalen voor etnische vooroordelen in de gemengde groep, versus 4% in de controlegroep. De effecten waren sterker bij kinderen die regelmatig hadden gespeeld (minstens één keer per week) en vriendschappen hadden gesloten met speelpartners uit de andere gemeenschap.
+De schaakregels geven de ontmoeting een herkenbare vorm. Een deelnemer hoeft geen gemeenschappelijk standpunt over een conflict in te nemen om een eindspel met iemand te analyseren. Of er ruimte is om te weigeren, of de instructie voor iedereen begrijpelijk is en wie de partijen indeelt, bepaalt mede wat de middag voor die deelnemers betekent.
 
-Het is niet het spel op zich dat het effect produceert. Het is het **herhaalde contact in een kader van respectvolle samenwerking**: schaken biedt de structuur en het voorwendsel. Dezelfde dynamiek werkt met andere strategiespellen, met sport, met de kunsten. Maar schaken heeft het voordeel dat het als "serieus" en "intellectueel" wordt beschouwd, wat het een bijzonder prestige geeft in bepaalde culturen waar spelen anders zou worden geminimaliseerd.
+## De Verenigde Naties en de rol van plaatselijke partners
 
-## De Vereinte Naties en diplomatie via het spel
+De Algemene Vergadering van de Verenigde Naties heeft 20 juli aangewezen als Wereldschaakdag. In [resolutie 74/22](https://digitallibrary.un.org/record/3846392/files/A_RES_74_22-EN.pdf) komt schaken aan bod als gelegenheid voor samenwerking en dialoog. Voor wie een lokaal project wil evalueren, is dat internationale erkenning van een doel. Het aantal gespeelde partijen of de effecten van een specifieke club zijn er niet uit af te leiden.
 
-De FIDE (Internationale Schaakfederatie) heeft in 1999 de waarnemersstatus bij de VN verkregen. Deze status is voornamelijk symbolisch, maar heeft de weg gebaand voor concrete samenwerkingen.
-
-UNICEF heeft samengewerkt met de FIDE aan onderwijs-via-schaken-programma's in vluchtelingenkampen in Libanon, Jordanië en Bangladesh. Het doel is niet concurrentiespelers te vormen, maar het spel te gebruiken als instrument voor cognitieve stabilisering: in traumatiserende omgevingen biedt het schaakbord een voorspelbare en beheersbare ruimte, een activiteit met duidelijke regels wanneer de rest van de wereld die lijkt te hebben verloren.
-
-Soortgelijke programma's zijn uitgevoerd op de Balkan na de oorlogen van de jaren 1990, in Rwanda na de genocide van 1994, en meer recentelijk in Oekraïne na 2022. De FIDE heeft verschillende "solidariteitstoernooien" georganiseerd voor ontheemde spelers, waarbij nationaliteiten in conflict bewust werden gemengd in de koppeling.
+Bij een concreet programma is het nuttig de partners te benoemen. In Kakuma in Kenia werkt Chess for Protection met onder andere de FIDE, de vluchtelingenorganisatie UNHCR, de Lutheran World Federation, Chess Kenya en de plaatselijke schaakclub. De [beschrijving van het project door de FIDE](https://wom.fide.com/world-refugee-day-empowering-refugees-through-chess/) maakt duidelijk wie betrokken is bij het organiseren van schaakactiviteiten. Dat is iets anders dan aantonen dat een partij psychische klachten behandelt. Voor de spelers kan het al van betekenis zijn dat ze ergens geregeld kunnen trainen, teamgenoten leren kennen of aan een wedstrijd kunnen deelnemen.
 
 ## De psychologie van onderhandeling en schaken
 
@@ -121,40 +117,12 @@ Het schaakbord blijft een onderhandelingstafel. De spelregels erboven veranderen
 
 ---
 
-## Veelgestelde vragen
-
-### Waarom wordt de Fischer-Spassky-match van 1972 beschouwd als een diplomatiek evenement?
-
-Omdat het plaatsvond tijdens de Détente, de periode van gespannen coëxistentie tussen de VS en de USSR. De USSR had de schaakwereldkampioenschappen gedomineerd sinds 1948: verliezen van een Amerikaan was symbolisch rampzalig voor de Sovjet-ideologie. Elke persconferentie van Fischer werd door inlichtingendiensten van beide kanten nauwlettend gevolgd als een strategisch signaal.
-
-### Hoe gebruiken de Verenigde Naties schaken in de diplomatie?
-
-Voornamelijk via programma's voor burgerdiplomatie: internationale toernooien die jongeren uit conflictlanden samenbrengen, lerarenopleidingen in ontwikkelingslanden, en partnerschappen met de FIDE om wedstrijden te organiseren in regio's na een conflict. Het schaakbord creëert een symbolische neutraliteit: men kan samen spelen zonder het politieke conflict te ontkennen.
-
-### Is schaken echt nuttig voor het leren onderhandelen?
-
-Voor bepaalde aspecten wel. Het boomdenken in schaken is direct overdraagbaar aan de voorbereiding van een onderhandeling. Het beheersen van het ego bij een moeilijke positie ook. Maar schaken is een nulsomspel (één winnaar), wat het tegenovergestelde is van win-win-onderhandeling: men moet zich bewust zijn van deze beperking.
-
-### Werken de Chess for Peace-programma's echt?
-
-De beschikbare studies tonen positieve maar bescheiden resultaten. Een studie uit 2018 mat een vermindering van 23% op gestandaardiseerde schalen voor etnische vooroordelen bij kinderen die 18 maanden deelnamen aan gemengde schaakclubs, versus 4% in de controlegroep. Het hoofdeffect is niet het spel zelf maar het herhaalde contact in een kader van respectvolle samenwerking.
-
-### Welke rol spelen schaken in de Russische culturele diplomatie?
-
-Een centrale rol, van Botvinnik tot vandaag. Rusland financiert zijn schaakfederatie en opleidingsscholen massaal, deels om internationale culturele invloed te behouden. Na 2022 schortte de FIDE de wedstrijden in Rusland en Belarus op, wat een diplomatieke breuk veroorzaakte in dit historische kanaal.
-
-### Heeft Nederland een rol gespeeld in de schaakdiplomatie?
-
-Ja, een opmerkelijke rol. Nederland was het land waar Viktor Korchnoi in 1976 defecteerde, een van de spectaculairste politieke episodes in de schaakgeschiedenis. Max Euwe, als FIDE-president van 1970 tot 1978, speelde een sleutelrol in de organisatie van historische wedstrijden tijdens de Koude Oorlog.
-
----
-
 ## Kernpunten
 
 - De **Fischer-Spassky-match van 1972** in Reykjavik was officieel een wereldkampioenschap, officieus een episode van de Koude Oorlog: elke verplaatste stuk werd door beide kanten gelezen als een geopolitiek signaal
-- De **VN gebruiken schaaktoernooien** als instrument voor burgerdiplomatie in regio's na een conflict (Balkan, Midden-Oosten, Rwanda) sinds 2012
+- De Algemene Vergadering van de VN riep **20 juli uit tot Wereldschaakdag**. In Kakuma zijn UNHCR en plaatselijke partners betrokken bij een afzonderlijk project.
 - De psychologie van onderhandeling identificeert in schaken drie overdraagbare structuren: **boomdenken, ego-beheersing en positieperceptie**
-- **Chess for Peace**-programma's in Israël en Palestina tonen een meetbare vermindering van interetnische vooroordelen bij deelnemende kinderen na 18 maanden
+- Bij schaakprojecten voor vrede zijn deelname, nieuw contact en veranderde opvattingen verschillende uitkomsten. Elk vraagt een eigen manier van meten.
 - **Max Euwe en de KNSB** vertegenwoordigen de Nederlandse bijdrage aan internationale schaakdiplomatie, een aspect dat vaak wordt onderschat
 
 ### Bronnen en referenties

@@ -241,6 +241,12 @@ C'est l'effet d'horizon, et chercher plus profond peut résoudre certains cas ma
 
 **Prochain article :** la recherche de quiescence, et les tables de cases. Le moteur cesse de croire aux cadeaux.
 
+### Tester une coupure sans attendre la pendule
+
+Pour reproduire une interruption, remplace temporairement l'horloge par un compteur de visites. Sur un petit arbre dont tu connais le résultat, fixe le premier arrêt juste avant la fin d'une itération, puis le second juste après. Dans le premier essai, le moteur doit rendre le résultat de l'itération précédente ; dans le second, il peut annoncer celui de l'itération achevée. Vérifie aussi l'état de l'échiquier au retour. Une exception de temps qui saute l'annulation d'un coup peut laisser la racine dans une position étrangère à la partie.
+
+Ajoute un cas encore plus court : le moteur reçoit son signal d'arrêt avant d'avoir terminé la première profondeur. Il lui faut tout de même un coup légal de secours lorsque la position en contient. Vérifie cette branche avec une position d'échec où un seul coup pare la menace. Une réponse provenant de la partie précédente serait facile à prendre pour un simple mauvais choix, jusqu'au moment où l'interface la refuse.
+
 ## Sources
 
 Russell et Norvig exposent la recherche itérative ; Stockfish fournit une implémentation réelle avec limites de temps, réutilisation des résultats et garde-fous.

@@ -103,6 +103,16 @@ Si la seule raison de relancer est de récupérer immédiatement des points, rap
 
 Le blitz peut donc être un loisir, un terrain d'essai ou une partie d'un entraînement plus varié. Pour le juger, examine ce que tu apprends, ce que tu peux vérifier ensuite et ce que le volume remplace. La recherche citée ne donne ni interdiction générale ni pourcentage magique.
 
+## Le même adversaire, une durée différente pour la même position
+
+Deux joueurs veulent savoir pourquoi une finale revient souvent dans leurs blitz sans qu'ils arrivent à la jouer. Ils choisissent un diagramme issu de l'une de leurs parties. Ils commencent une fois dans le rôle du défenseur avec trente secondes chacun, puis une autre fois avec cinq minutes chacun. Le résultat ne constituera jamais une comparaison scientifique : ils apprennent déjà quelque chose en rejouant la position. En revanche, la différence entre les deux tentatives est un excellent sujet de conversation.
+
+À trente secondes, l'attaquant peut avoir repoussé une décision difficile en donnant trois échecs de tour. À cinq minutes, il constate que le roi adverse sort de ces échecs par une case qu'il n'avait pas vue. Ce renseignement est précis. Il permet de préparer une position voisine où la case de fuite est contrôlée, puis de vérifier si les mêmes échecs deviennent utiles. Un simple bilan « j'ai mieux joué en cinq minutes » aurait perdu le détail qui permet de retravailler la finale.
+
+Pour limiter l'avantage de celui qui rejoue toujours en deuxième, alternez l'ordre entre les diagrammes. Commencez la deuxième position avec le temps long, la troisième avec le temps court. Notez aussi quelle couleur chacun avait dans la partie originale. Quand on connaît déjà la défense parce qu'on vient de la trouver contre soi-même, la répétition rapide peut devenir facile sans que l'on ait soudain acquis une compétence valable ailleurs.
+
+En fin de séance, demande à l'autre joueur de choisir une seule position qui t'était complètement inconnue. Présente-la avec la cadence que tu utilises normalement en compétition. La question utile est alors très concrète : as-tu reconnu la même case de fuite et choisi un autre plan ? Tu peux réussir ce transfert tout en perdant la finale beaucoup plus tard. Les dix minutes de travail ont néanmoins produit une modification du jeu que vous pouvez tous les deux montrer sur l'échiquier.
+
 ## Sources
 
 - Charness, N., Tuffiash, M., Krampe, R., Reingold, E. et Vasyukova, E. (2005), « The role of deliberate practice in chess expertise », *Applied Cognitive Psychology*, 19(2), 151–165. [Résumé original](https://onlinelibrary.wiley.com/doi/10.1002/acp.1106), DOI : 10.1002/acp.1106.

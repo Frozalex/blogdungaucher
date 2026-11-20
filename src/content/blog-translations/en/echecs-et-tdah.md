@@ -94,6 +94,14 @@ The [NICE NG87 recommendations](https://www.nice.org.uk/guidance/ng87/chapter/re
 
 For persistent difficulties affecting school, work or relationships, seek a professional assessment. Do not change treatment because of a good or bad period of play. A club can welcome people, adapt activities and share the pleasure of learning; it does not need to promise a cure to be worthwhile.
 
+## Design one round with the player
+
+Imagine a club volunteer has set aside half an hour and brought ten puzzles. Their partner wants to play a game. A compromise is to put one puzzle on the board as a starting position and then play it out together. Decide what counts as finished before moving: one player might want to try both colours, another might be ready to leave after finding a defence. The volunteer does not need to interpret either choice as evidence about attention. Knowing whether the player would come back for the same activity answers the immediate question about the club.
+
+Consider a second difficulty: the player often leaves pieces en prise after switching from attack to defence. Put the position back and let them describe whose turn it is and what changed on the last move. Offer a choice between a spoken reminder, a short written prompt and trying again unaided. If the written prompt helps in that position, check whether it is also welcome next time. A cue that keeps a training exercise moving may be distracting or inappropriate during a rated game. A coach can distinguish the settings beforehand.
+
+Finally, agree who gets to see any notes. A list such as “preferred a physical board, enjoyed taking Black, wants to try the ending again” is enough to prepare a good next session. The coach has no reason to turn it into a dossier of presumed symptoms. If the player would rather leave without any record, they can still take the position home on a card. The outcome is a chess opportunity designed with its participant, evaluated against a modest goal that both people understand. When the player becomes the one setting the goals, ask whether the arrangements still fit rather than assuming a successful trial has solved the problem permanently.
+
 ## Sources and limitations
 
 - **NIMH**, [Attention-Deficit/Hyperactivity Disorder: What You Need to Know](https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know): institutional information about symptoms, assessment and care.

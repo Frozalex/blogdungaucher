@@ -140,6 +140,12 @@ La suite **4.c3 Cf6 5.d4 exd4 6.cxd4** est une illustration légale de transform
 
 Si une priorité nouvelle apparaît, déplace du temps ; n'ajoute pas systématiquement une obligation. Un programme soutenable laisse une place à la disponibilité réelle, au repos et au plaisir de jouer. L'intérêt du 40-40-20 est de rendre tes choix visibles, puis discutables. Il cesse d'être utile quand le respect des proportions devient plus important que la difficulté que tu cherches à résoudre.
 
+## Quand tu disposes de trois quarts d'heure
+
+Appliqués à quarante-cinq minutes, les pourcentages donnent dix-huit minutes, dix-huit minutes et neuf minutes. Le détail paraît rigoureux. Or si les neuf dernières minutes servent surtout à installer une position puis à retrouver l'explication de la veille, la répartition mesurée sur la pendule décrit mal le travail effectué. Un club qui ne se réunit qu'une fois par semaine peut préférer répartir les sujets sur plusieurs rencontres.
+
+Prends une finale de pions qui t'a coûté un demi-point. Lors de la première séance, installe-la et joue-la contre un partenaire en échangeant les couleurs. La fois suivante, déplace un seul pion d'une case et cherchez ensemble si le résultat change. Puis remonte dans la partie initiale jusqu'à l'échange de tours qui avait amené cette finale. À quel atelier attribuer ces minutes : milieu de jeu ou finale ? La frontière a peu d'intérêt ici. La question retrouvée au troisième rendez-vous est celle que tu te poseras en compétition : est-ce que j'accepte cet échange précis ? Une répartition t'aura servi si elle a ménagé de la place pour répondre à cette question.
+
 ## Sources
 
 - Chase, W. G., & Simon, H. A. (1973). *Perception in Chess*. Cognitive Psychology, 4, 55–81. [Article](https://gwern.net/doc/psychology/chess/1973-chase.pdf).

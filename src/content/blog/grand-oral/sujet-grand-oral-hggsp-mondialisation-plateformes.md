@@ -110,6 +110,13 @@ Tu peux défendre l'idée qu'un même jeu circule dans des institutions et des c
 
 Pour tes dix minutes de présentation, choisis un contraste précis entre deux modèles de plateforme et un cas local. Prépare la distinction entre objectif annoncé et résultat démontré pour les dix minutes d'échange.
 
+## Suivre le trajet d’une partie plutôt que celui d’une entreprise
+
+Pour ton support, dessine le parcours hypothétique d’une seule partie. Deux joueurs la disputent à la pendule dans une salle. Une personne saisit les coups. Un diffuseur les reproduit sur un plateau numérique. Une commentatrice reprend une position dans une vidéo destinée à un autre public linguistique. Enfin, un professeur en tire un exercice imprimé. En cinq étapes, le jeu traverse plusieurs organisations et plusieurs supports. Seule une partie de cette circulation suppose la présence simultanée des spectateurs en ligne.
+
+Choisis maintenant une coupure à appliquer à ton schéma. La retransmission en direct tombe en panne après le vingtième coup. La partie peut se poursuivre dans la salle ; les abonnés éloignés cessent de voir les coups ; une feuille de partie complète peut encore permettre la préparation d’un cours ultérieur. Cette expérience de pensée révèle exactement quel acteur contrôle quel accès. Elle t’évite de donner à un diffuseur un pouvoir total sur l’événement sportif.
+
+Pour préparer une objection, remplace la panne par l’absence d’une traduction. La diffusion technique atteint toujours le même territoire, mais une explication de finale peut devenir inaccessible à une partie des spectateurs. Il te reste à distinguer disponibilité d’un signal, compréhension de son contenu et possibilité d’y répondre. Sur ta feuille, une flèche et un verbe différent pour chacun de ces trois rapports suffisent à rendre l’argument lisible.
 
 ## Sources
 

@@ -178,25 +178,3 @@ Als er één zin moet blijven hangen: schaken kunnen een formidabel kader zijn, 
 Als je een autistisch persoon begeleidt die klikt met schaken: **korte sessies**, **stabiele plek**, **herhaalde regels**; noteer wat werkt (duur, puzzels tegenover vrij spel) om het te herhalen. Voor de link met meetbare cognitie voorbij ASS, ga verder met [schaken en het brein](/nl/blog/schaken-en-het-brein/).
 
 ---
-
-## Veelgestelde vragen over schaken en autisme
-
-### Zijn schaken gunstig voor alle autistische kinderen?
-
-Niet universeel. De gedocumenteerde voordelen, minder sociale angst, betere executieve functies, meer zelfvertrouwen, gelden vooral voor kinderen wier cognitief profiel interesse in regelsystemen omvat, wat Baron-Cohen *systemizing* noemt. Sommige kinderen met ASS voelen geen klik met schaken, en dat is volkomen normaal.
-
-### Op welke leeftijd begin je met schaken bij een autistisch kind?
-
-De meeste onderwijsprogramma's introduceren schaken tussen 5 en 7 jaar. Belangrijk is niet de exacte leeftijd maar de aanpassing: grote stukken, korte partijen, rustige omgeving, zonder resultaatdruk. De organisatie Chess in Schools and Communities (CSC) beschikt over middelen die specifiek zijn aangepast aan ASS-profielen.
-
-### Kunnen schaken therapie voor autisme vervangen?
-
-Nee. De beschikbare gegevens tonen dat schaken een serieuze aanvulling zijn op multidisciplinaire zorg (logopedie, ergotherapie, psychologische begeleiding), nooit een vervanging. Ze presenteren als behandeling zou oneerlijk en potentieel schadelijk zijn voor families die gespecialiseerde begeleiding nodig hebben.
-
-### Waarom hebben autistische mensen vaak een natuurlijke affiniteit met schaken?
-
-Volgens de theorie van *systemizing* van Simon Baron-Cohen (Cambridge) hebben autistische breinen een sterke neiging om regelsystemen te analyseren en te bouwen. Het schaakbord, een spel met perfecte informatie, zonder sociale dubbelzinnigheid, met stabiele en verifieerbare regels, komt bijna perfect overeen met dit cognitieve profiel.
-
-**Na het lezen:** mik voor een eerste opzet op **drie** korte sessies per week, een fysiek bord, **zonder** ratingdoel gedurende een maand; noteer wat vermoeit (geluid, duur, groep).
-
----
