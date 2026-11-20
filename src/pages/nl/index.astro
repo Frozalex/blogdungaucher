@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import HomePortal from "../../components/HomePortal.astro";
 
 import { buildWebsiteJsonLd, getAllPosts, filterPostsForLang, getPostHeroSrc } from "../../utils/blog";
-import { getHomeEditorialPosts } from "../../data/home-editorial";
+import { getHomeEditorialPosts, homeTitles } from "../../data/home-editorial";
 import { buildSrcset } from "../../utils/image-variants";
 import { NL_LAUNCH_DATE } from "../../data/site";
 
@@ -13,7 +13,7 @@ const leadImage = lead ? getPostHeroSrc(lead) : null;
 
 ---
 <BaseLayout
-  title="Blog van een Linkshandige — Schaken zonder oversimplificatie"
+  title={homeTitles["nl"]}
   description="Schaakwetenschap, de competitieve mindset en schaken in de samenleving: twee nieuwe artikelen per week. Een rigoureuze en menselijke redactionele ruimte."
   canonicalPath="/nl/"
   lang="nl"

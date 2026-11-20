@@ -5,10 +5,10 @@ import type {SiteLang} from '../utils/lang-paths';
 interface Props{posts:BlogEntry[];lang:SiteLang;}
 const {posts,lang}=Astro.props;
 const ui={fr:['La sélection du Gaucher','Le regard du Gaucher','Les échecs pour comprendre le jeu, l’esprit et la société.','Découvrir le média'],en:["The Left-Hander’s selection","The Left-Hander’s perspective",'Chess to understand the game, the mind and society.','About the journal'],'pt-br':['A seleção do Canhoto','O olhar do Canhoto','O xadrez para compreender o jogo, a mente e a sociedade.','Conhecer o blog'],nl:['De selectie van de Linkshandige','De blik van de Linkshandige','Schaken om het spel, de geest en de samenleving te begrijpen.','Over het blog']}[lang];
-const selection=await Promise.all(posts.filter(p=>!p.data.noindex).slice(0,3).map(async p=>({post:p,text:await getLocalizedPostText(p,lang),image:getPostHeroSrc(p),href:await getPostUrlLang(p,lang)})));
+const selection=await Promise.all(posts.map(async p=>({post:p,text:await getLocalizedPostText(p,lang),image:getPostHeroSrc(p),href:await getPostUrlLang(p,lang)})));
 ---
 <aside class="bv-sidebar" data-pagefind-ignore><div class="bv-sidebar-inner">
- <section class="bv-side-card"><h2>{ui[0]}</h2>{selection.map((p,i)=><a class:list={['bv-side-post',{'bv-side-post--first':i===0}]} href={p.href}>{p.image&&<img src={p.image} srcset={buildSrcset(p.image)} sizes={i===0?'250px':'70px'} width="300" height="200" loading="lazy" alt=""/>}<span><strong>{p.text.title}</strong><small>{formatDateForLang(p.post.data.publishDate,lang)}</small></span></a>)}</section>
+ {selection.length > 0 && <section class="bv-side-card"><h2>{ui[0]}</h2>{selection.map((p,i)=><a class:list={['bv-side-post',{'bv-side-post--first':i===0}]} href={p.href}>{p.image&&<img src={p.image} srcset={buildSrcset(p.image)} sizes={i===0?'250px':'70px'} width="300" height="200" loading="lazy" alt=""/>}<span><strong>{p.text.title}</strong><small>{formatDateForLang(p.post.data.publishDate,lang)}</small></span></a>)}</section>}
  <section class="bv-side-card bv-side-about"><img src="/images/logo.svg" width="34" height="48" alt=""/><h2>{ui[1]}</h2><p>{ui[2]}</p><a class="resource-button" href={`/${lang}/about/`}>{ui[3]} ↗</a></section>
  </div></aside>
 <style>

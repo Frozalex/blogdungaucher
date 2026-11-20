@@ -15,8 +15,8 @@ const L=editorialUi(lang);
 const localized=new Map(await Promise.all(posts.map(async post=>[post.id,{...(await getLocalizedPostText(post,lang)),href:await getPostUrlLang(post,lang)}] as const)));
 const eligible = posts.filter(post => !post.data.noindex);
 const bySlug = new Map(eligible.map(post => [getPostSlug(post), post]));
-const { lead, secondary, latest } = getHomeEditorialPosts(eligible);
-const used = new Set([...(lead ? [lead] : []), ...secondary, ...latest].map(post => post.id));
+const { feed, selection: sidebar } = getHomeEditorialPosts(eligible);
+const used = new Set([...feed, ...sidebar].map(post => post.id));
 const selection: BlogEntry[] = [];
 for (const post of [...mostReadSlugs.map(slug => bySlug.get(slug)), ...eligible]) {
   if (selection.length === 3) break;
@@ -37,7 +37,7 @@ const dossier = (lang==="fr"?currentDossier.entries:[]).flatMap(entry => {
 ---
 
 {selection.length > 0 && <section class="editorial-section" aria-labelledby="selection-heading">
-  <div class="section-heading"><h2 id="selection-heading">{L.further}</h2><span>{L.selection}</span></div>
+  <div class="section-heading"><h2 id="selection-heading">{L.further}</h2></div>
   <div class="selection-grid">{selection.map(post => <div class="selection-item"><EditorialArticle lang={lang} post={post} variant="feature" /></div>)}</div>
 </section>}
 

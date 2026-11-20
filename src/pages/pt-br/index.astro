@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import HomePortal from "../../components/HomePortal.astro";
 
 import { buildWebsiteJsonLd, getAllPosts, filterPostsForLang, getPostHeroSrc } from "../../utils/blog";
-import { getHomeEditorialPosts } from "../../data/home-editorial";
+import { getHomeEditorialPosts, homeTitles } from "../../data/home-editorial";
 import { buildSrcset } from "../../utils/image-variants";
 import { PT_BR_LAUNCH_DATE } from "../../data/site";
 
@@ -13,7 +13,7 @@ const leadImage = lead ? getPostHeroSrc(lead) : null;
 
 ---
 <BaseLayout
-  title="Blog de um Canhoto - Xadrez sem simplificação"
+  title={homeTitles["pt-br"]}
   description="Ciência do xadrez, mentalidade competitiva e xadrez na sociedade: dois novos artigos por semana. Um espaço editorial rigoroso e humano."
   canonicalPath="/pt-br/"
   lang="pt-br"

@@ -3,14 +3,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import HomePortal from "../../components/HomePortal.astro";
 
 import { buildWebsiteJsonLd, getAllPosts, filterPostsForLang, getPostHeroSrc } from "../../utils/blog";
-import { getHomeEditorialPosts } from "../../data/home-editorial";
+import { getHomeEditorialPosts, homeTitles } from "../../data/home-editorial";
 import { buildSrcset } from "../../utils/image-variants";
 const { lead } = getHomeEditorialPosts(filterPostsForLang(await getAllPosts(), "en"));
 const leadImage = lead ? getPostHeroSrc(lead) : null;
 
 ---
 <BaseLayout
-  title="A Left-Hander's Blog - Chess Without Oversimplifying"
+  title={homeTitles["en"]}
   description="Chess science, the competitive mindset, and chess in society: two new articles every week. A rigorous and human editorial space."
   canonicalPath="/en/"
   lang="en"
