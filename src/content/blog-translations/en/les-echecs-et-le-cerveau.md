@@ -64,6 +64,22 @@ Before remembering a spectacular number, ask four questions: which game do the p
 
 For your training, keep observable goals: explaining a position better, remembering a pattern, checking a threat before moving. You can appreciate those improvements without making them carry a promise of general brain transformation.
 
+## What a brain scan can tell you about a move
+
+Suppose you read that two groups differ on an MRI measure. Which measurement was it? A structural scan estimates properties of anatomy. Diffusion imaging measures how water moves through tissue. Functional MRI tracks changes related to blood oxygenation over time. A brighter patch on a contrast map cannot tell you that a player has just spotted mate. To connect a measurement to a decision, you need to know the task, the comparison and how the players performed. The resting-state scans in the xiangqi dataset were acquired without a move-selection task.
+
+## What does an experienced player look at?
+
+In an [eye-tracking experiment](https://pubmed.ncbi.nlm.nih.gov/11913751/), experts and intermediate players chose a move in each of five positions. Where a player looked gave researchers a way to examine which information attracted attention. A fixation does not reveal the variation the player calculated.
+
+**Try this constructed example.** Play 1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5. Cover the board. Which pawn in each camp is attacked by a bishop and defended only by its king? The bishop on c4 looks along d5 and e6 towards f7. Its counterpart on c5 looks along d4 and e3 towards f2. Remembering those relationships lets you reconstruct the threats even if you forget where an unrelated pawn stands. Count the attackers before sacrificing: the bishop alone has no second attacker on its target.
+
+## How would you test whether lessons caused an improvement?
+
+Imagine that children in a chess club score higher on an attention test than children outside the club. That comparison leaves open who chose to join. Assigning volunteers at random to lessons or a waiting list addresses that question, but only the first group gets a teacher and a new group activity. A stronger test would give both groups equally demanding activities with comparable teaching time, measure both groups before and after, and specify the outcome in advance. If the claim concerns mathematics, test mathematics directly.
+
+You can use the same precision in your own practice. Before consulting an engine, write down your opponent’s threat at three turning points in one game. If you overlooked a bishop’s line, find a different position with that motif and explain the threat before moving. Recalling yesterday’s answer and recognising the same relationship on a new board are two different achievements.
+
 ## Sources
 
 - Li, K., Jiang, J., Qiu, L. et al. (2015), *A multimodal MRI dataset of professional chess players*, Scientific Data, 2, 150044, [article](https://www.nature.com/articles/sdata201544).

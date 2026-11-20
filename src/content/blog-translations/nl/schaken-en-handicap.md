@@ -137,30 +137,6 @@ Het schaakbord blijft een van de weinige ruimten waar cognitieve prestaties zich
 
 ---
 
-## Veelgestelde vragen
-
-### Hoe spelen blinden schaak?
-
-Op speciale borden: de zwarte vakjes zijn iets hoger dan de witte vakjes, en de zwarte stukken hebben een inkeping of knop bovenop om ze van de witte stukken te onderscheiden. Spelers mogen de stukken aanraken om de positie te controleren: de 'aanraken-is-spelen'-regel wordt aangepast zodat ze hun bedoeling verbaal moeten aankondigen voor ze aanraken ('ik wil de positie van het paard controleren'). Zetten worden vaak verbaal aangekondigd in algebraïsche notatie. Sommige slechtziende spelers bereiken het niveau van Nationaal Meester of zelfs Internationaal Meester.
-
-### Helpen schaken echt voor mensen met autisme?
-
-Getuigenissen en casestudies wijzen in de richting van ja, voor een aanzienlijk deel van de mensen met autisme, maar niet voor allemaal. Helpende aspecten: de expliciete regelstructuur (geen ambiguïteit), de objectiviteit van het resultaat (je kunt een positie niet 'verkeerd interpreteren'), de afwezigheid van non-verbale taal die gedecodeerd moet worden, en de waardering van logica en berekening. Het competitieve aspect kan voor sommigen stressvol zijn.
-
-### Zijn online platforms toegankelijk voor mensen met een beperking?
-
-Chess.com en Lichess hebben aanzienlijke inspanningen geleverd op het gebied van toegankelijkheid. Beide platforms zijn compatibel met schermlezers voor slechtzienden. Lichess (open-source) heeft een teksttoegankelijke interface. Voice-to-play interfaces bestaan voor motorische beperkingen. Commerciële oogvolginterfaces (Tobii, e.a.) werken met standaard webinterfaces. Online schaken heeft het spel geopend voor spelers die niet konden deelnemen aan fysieke toernooien.
-
-### Zijn er schaakkampioenen met ernstige beperkingen?
-
-Verschillende. Internationaal Meester Dariusz Świercz (Polen) speelde op hoog niveau ondanks gedeeltelijke verlamming. Op een minder competitief maar even betekenisvol niveau nemen veel spelers met ernstige motorische verlammingen deel aan online toernooien via ondersteunende technologie. Organisaties voor schaak voor slechtzienden organiseren al meer dan 60 jaar Wereldkampioenschappen.
-
-### Hoe werken schaakprogramma's in het speciaal onderwijs?
-
-Doorgaans door schaken te integreren als een vakoverstijgend pedagogisch instrument: niet om competitieve spelers te vormen, maar om algemene vaardigheden te ontwikkelen: aanhoudende aandacht, frustratiemanagement, sequentiële planning, regelnaleving. Programma's passen de randvoorwaarden aan: kortere partijen, vereenvoudigde regels in het begin, focus op specifieke aspecten. Studies in Amerika en Duitsland tonen meetbare verbeteringen in zelfregulatie binnen 3 tot 6 maanden.
-
----
-
 ## Kernpunten
 
 - Blinde schaakspelers gebruiken **speciale borden** (verhoogde vakjes, gemarkeerde stukken) en bereiken het niveau van Nationaal Meester

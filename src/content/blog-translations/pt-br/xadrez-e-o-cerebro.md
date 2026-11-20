@@ -56,6 +56,22 @@ Antes de guardar um número impressionante, faça quatro perguntas: qual jogo os
 
 No treinamento, mantenha objetivos observáveis: explicar melhor uma posição, lembrar um padrão, verificar uma ameaça antes de jogar. Você pode valorizar esses avanços sem lhes atribuir uma promessa de transformação geral do cérebro.
 
+## O que uma imagem do cérebro revela sobre um lance?
+
+Quando uma pesquisa encontra uma diferença entre dois grupos, vale perguntar o que foi medido. A ressonância estrutural permite estimar características anatômicas. A imagem por difusão mede o movimento da água nos tecidos. A ressonância funcional acompanha variações relacionadas à oxigenação do sangue. Uma área destacada no mapa não diz se o jogador acabou de enxergar um mate. Para relacioná-la a uma decisão, é preciso conhecer a tarefa, a comparação e o desempenho dos participantes. No conjunto de dados de xiangqi, os exames em repouso foram feitos sem pedir aos jogadores que escolhessem um lance.
+
+## Para onde olha um jogador experiente?
+
+Em um [experimento de rastreamento ocular](https://pubmed.ncbi.nlm.nih.gov/11913751/), especialistas e jogadores intermediários escolheram um lance em cada uma de cinco posições. A direção do olhar ajuda a investigar quais informações atraem a atenção. Ela não revela a sequência de lances que o jogador calculou.
+
+**Experimente esta posição construída.** Jogue 1.e4 e5 2.Cf3 Cc6 3.Bc4 Bc5 e cubra o tabuleiro. De cada lado, qual peão está atacado por um bispo e defendido apenas pelo rei? O bispo de c4 olha para f7, passando por d5 e e6. O de c5 olha para f2, passando por d4 e e3. Quem guarda essas relações consegue reconstruir as ameaças mesmo que esqueça a posição de outro peão. Antes de sacrificar, conte os atacantes: nenhum dos dois bispos tem um segundo atacante apoiando a captura.
+
+## Como testar se as aulas causaram uma melhora?
+
+Imagine que crianças de um clube de xadrez tenham melhor desempenho num teste de atenção do que crianças de fora do clube. Quem decidiu entrar já podia ter interesses diferentes. Sortear voluntários entre aulas e lista de espera reduz esse problema, mas só o primeiro grupo recebe a atenção de um professor. Uma comparação mais informativa oferece outra atividade organizada, com duração e acompanhamento semelhantes, avalia os grupos antes e depois e define de antemão o resultado a medir. Se a hipótese é sobre matemática, é a matemática que precisa ser avaliada.
+
+No seu treino, antes de ligar o motor, anote a ameaça do adversário em três momentos de uma partida sua. Se deixou escapar a diagonal de um bispo, procure outra posição com a mesma ideia e explique a ameaça antes de jogar. Lembrar a solução de ontem e reconhecer a relação numa posição nova são conquistas diferentes.
+
 ## Fontes
 
 - Li, K., Jiang, J., Qiu, L. et al. (2015), *A multimodal MRI dataset of professional chess players*, Scientific Data, 2, 150044, [artigo](https://www.nature.com/articles/sdata201544).

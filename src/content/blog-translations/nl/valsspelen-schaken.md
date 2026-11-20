@@ -135,34 +135,6 @@ Bij gebrek aan een biomarker zal valsspelen bij schaken altijd een grijze zone b
 
 ---
 
-## Veelgestelde vragen
-
-### Heeft Hans Niemann echt vals gespeeld tegen Magnus Carlsen?
-
-We weten het niet. Chess.com publiceerde een rapport van 72 pagina's waaruit bleek dat Niemann waarschijnlijk in meer dan 100 online partijen vals had gespeeld. Maar voor de bewuste partij in Saint Louis werd geen enkel bewijs van valsspelen in fysieke klassieke omstandigheden vastgesteld. De rechtszaak werd in 2023 buiten de rechtbank geschikt. Geen bekentenis, geen veroordeling.
-
-### Hoe wordt valsspelen bij schaken gedetecteerd?
-
-Voornamelijk door statistische analyse: de gespeelde zetten worden vergeleken met de aanbevelingen van de beste schaakprogramma's (Stockfish, Leela Chess Zero) en een correlatieindex wordt berekend. Een abnormaal hoge correlatie over een lange periode is verdacht. Maar dit is een probabilistische inferentie, geen direct bewijs. De methode produceert valse positieven.
-
-### Waarom heeft Magnus Carlsen zijn terugtrekking niet uitgelegd?
-
-Hij verklaarde niet te willen spreken op advies van zijn juridisch team: begrijpelijk als een rechtszaak werd overwogen. Zijn gedrag werd breed gelezen als een impliciete beschuldiging. Maar iemand publiekelijk beschuldigen van valsspelen zonder solide bewijs stelt je bloot aan lasterklachten. Carlsen koos voor berekende ambiguïteit.
-
-### Is valsspelen bij schaken frequent in klassieke toernooien?
-
-In gecontroleerde klassieke toernooien is direct vals spelen via schaakprogramma's zeer moeilijk. Gedocumenteerde gevallen betreffen doorgaans verborgen apparatuur. Online is valsspelen daarentegen endemisch: Chess.com en Lichess verbieden elk jaar tienduizenden accounts.
-
-### Wat heeft de affaire concreet veranderd?
-
-De FIDE heeft zijn anti-valsspeelprotocollen versterkt: elektronisch stoorzenden, uitzendvertraging van 15-30 minuten. Chess.com heeft zijn rapport gepubliceerd, wat een transparantieprioriteit heeft geschapen. Het debat over de bewijslast blijft echter open en structureel onopgelost.
-
-### Hoe staat de KNSB tegenover valsspelen bij schaken?
-
-De Koninklijke Nederlandse Schaakbond volgt de FIDE-richtlijnen. Nederlandse toernooien, waaronder het Tata Steel-toernooi in Wijk aan Zee, hebben de beveiligingsmaatregelen aangescherpt na de Niemann-affaire: vertraagde live-uitzendingen, elektronische stoorzenders en strikte controles voor aanvang van de ronden.
-
----
-
 ## Kernpunten
 
 - Valsspelen bij schaken wordt gedetecteerd via **statistische correlatie** met schaakprogramma's, niet via direct bewijs: dit produceert valse positieven en vormt geen juridisch bewijs

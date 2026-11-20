@@ -162,30 +162,6 @@ Von Neumann heeft de speltheorie niet uitgevonden voor schaken. Hij heeft ze uit
 
 ---
 
-## Veelgestelde vragen
-
-### Is schaken een nulsomspel in de strikte zin?
-
-Ja, wiskundig gezien. De som van de opbrengsten (1 voor een overwinning, 0 voor een verlies) is constant ongeacht het resultaat: de overwinning van de één is precies het verlies van de ander, remise wordt 0,5-0,5 gedeeld. Het is juist deze eigenschap die minimax zonder complicaties toepasbaar maakt. "Matchen" (reeksen partijen met tactische bonussen) zijn niet meer strikt nulsomspelen, en dat is precies waar de theorie van herhaalde spellen interessant wordt.
-
-### Wat is het verschil tussen minimax en Nash-evenwicht bij schaken?
-
-Minimax is een **berekeningstechniek**: het zegt hoe je de beste zet vindt door ervan uit te gaan dat de tegenstander optimaal speelt. Het Nash-evenwicht is een **toestand van het systeem**: een configuratie waarbij geen speler er belang bij heeft om alleen af te wijken. In een nulsomspel met twee spelers zoals schaken *valt* de minimax-oplossing *samen* met het Nash-evenwicht (stelling van von Neumann, 1928). Bij complexere spellen (niet-nulsom, meer dan twee spelers) lopen de twee concepten uiteen.
-
-### Bestaat er een dominante strategie bij de eerste zet?
-
-Empirisch gezien **nee**. Statistieken over tientallen miljoenen toppartijen geven 1.e4, 1.d4, 1.c4 en 1.Pf3 als speelbaar met een vergelijkbaar voordeel voor Wit (~54-56% score). Geen ervan *domineert* de anderen in de strikte zin. Dit suggereert ofwel dat de "waarheid" van het schaken meerdere evenwichten bij zet 1 toelaat, ofwel dat de menselijke en machinale rekeningshorizon ze nog niet kan onderscheiden.
-
-### Waarom spreekt men van "gemengde strategieën" als je altijd de beste zet speelt?
-
-Omdat "de beste zet" afhangt van je model van de tegenstander. Als je systematisch 1.e4 speelt, geef je de tegenstander perfecte informatie over je voorbereiding: hij kan al zijn studietijd in jouw lijnen investeren. Diversifiëren (40% 1.e4, 40% 1.d4, 20% 1.Pf3) verdunt zijn voorbereidingsinspanning. Boven een bepaald niveau wordt de gemengde strategie een defensieve investering in informatie.
-
-### Kan de speltheorie voorspellen wie een partij wint?
-
-Nee, en dat is belangrijk. Ze zegt dat **onder perfect spel** het resultaat bepaald is. Maar perfect spel bestaat noch bij de mens (cognitieve beperkingen) noch bij de machine (rekenbeperkingen voorbij eindspelen met 7 stukken). De theorie voorspelt *asymptotische evenwichten* (de Spaanse opening stabiel gedurende 200 jaar), niet *individuele uitkomsten*. Daarvoor moet je krachtsverschil, voorbereiding, vermoeidheid en het tijdstip van de partij modelleren, en dan maakt de speltheorie plaats voor statistiek en psychologie.
-
----
-
 ## Kernpunten
 
 - Schaken is een eindig, nulsomspel met twee spelers en perfecte informatie, dus analyseerbaar via Zermelo (1913).

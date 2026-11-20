@@ -111,34 +111,6 @@ In het winterse Berlijn van 2015 is de partij die begint tussen de Syrische vluc
 
 ---
 
-## Veelgestelde vragen
-
-### Hoe bevordert schaken de integratie van vluchtelingen?
-
-Via verschillende gelijktijdige mechanismen. Allereerst de gelijke deelname zonder taalbarrière: men kan een volledige partij spelen zonder de plaatselijke taal te spreken. Vervolgens het tot stand brengen van respectvolle interacties in een neutraal kader. Ten slotte de waardering van cognitieve verdienste onafhankelijk van herkomst: een persoon kan duidelijk beter zijn dan een lokale bewoner, wat de gebruikelijke machtsdynamiek verandert.
-
-### Welke landen hebben de meest ontwikkelde Chess for Refugees-programma's?
-
-Duitsland (via 'Schach und Integration'), Nederland (de club van Amsterdam heeft een gestructureerd programma sinds 2015), Zweden en Noorwegen (waar de nationale federaties de opvang van vluchtelingen als officiële missie hebben opgenomen). De UNHCR heeft spelprogramma's gedocumenteerd in kampen in Libanon, Jordanië en Griekenland.
-
-### Waarom hebben zoveel grootmeesters van sportnationaliteit gewisseld?
-
-Meerdere redenen. Economisch: sommige landen bieden aantrekkelijke contracten aan GM's aan. Politiek: Sovjet-GM's defecteerden tijdens de Koude Oorlog. Persoonlijk: huwelijken, studies, levensstijlvoorkeur. De FIDE staat federatiewisselingen toe onder voorwaarden (doorgaans 3 jaar wachttijd).
-
-### Zijn immigranten echt oververtegenwoordigd in de schaakélites?
-
-In sommige landen wel. De voorgestelde hypothese: geografische mobiliteit correleert met ambitie en risicobereidheid, eigenschappen die ook de competitieve progressie bevorderen. Het gaat niet om genetische of culturele superioriteit: het is selectie door motivatie.
-
-### Is schaken echt cultureel 'universeel'?
-
-Bijna, maar niet helemaal. De FIDE-regels zijn universeel. Maar nationale varianten bestaan (shogi, xiangqi, janggi). In culturen waar deze varianten dominant zijn, is westers schaken mogelijk minder bekend. De schaakcultuur is ook in sommige regio's beter ontwikkeld dan in andere.
-
-### Hoe heeft de Nederlandse schaakgemeenschap bijgedragen aan de integratie van vluchtelingen?
-
-De club van Amsterdam heeft een gestructureerd programma voor de integratie van vluchtelingen. De KNSB heeft ook initiatieven gesteund. Anish Giri, geboren in Rusland en opgegroeid in Japan voor zijn vestiging in Nederland, is een inspirerend voorbeeld van hoe het schaakbord nationale grenzen kan overstijgen.
-
----
-
 ## Kernpunten
 
 - Schaken functioneert als een **niet-verbale lingua franca**: algebraïsche notatie is universeel, regels zijn identiek wereldwijd, een partij kan worden gespeeld zonder een woord te wisselen
