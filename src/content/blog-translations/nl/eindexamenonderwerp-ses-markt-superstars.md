@@ -67,6 +67,16 @@ Drie effecten stapelen zich op. Eerste effect, democratisering van de toegang: C
 
 Daar komt een geografische dimensie bij. De economische groei van India en China brengt een nieuwe generatie spelers voort (Praggnanandhaa, Gukesh, Ding Liren) die de markt transformeert. Het zwaartepunt verschuift van Europa naar Azië, zoals in veel geglobaliseerde markten.
 
+## Het verschil tussen een stoel en een extra kijker
+
+Stel dat een trainer op een woensdagavond een groep van tien kinderen lesgeeft. Er komt een elfde kind bij. Misschien past het nog net aan tafel, misschien is een extra bord of begeleider nodig. Verdubbelt de groep, dan wordt persoonlijke feedback ingewikkelder. De kwaliteit die de deelnemers kopen hangt hier mede af van de tijd die de schaakleraar per leerling heeft. De hoeveelheid geleverde begeleiding kan moeilijk groeien zonder dat de kosten meegroeien.
+
+Zet daar een denkbeeldige opname van dezelfde les naast. Voor één extra kijker hoeft de trainer de hele les niet opnieuw te geven. De opname kostte voorbereiding en het platform heeft kosten, maar de band tussen één uur van de trainer en één uur per leerling verandert. Maak in je mondeling duidelijk dat de elfde kijker nog niets zegt over de inkomsten: daarvoor moet iemand betalen of moet er bijvoorbeeld een sponsor zijn. Groot bereik en hoge verdiensten zijn twee verschillende grootheden.
+
+Dit voorbeeld helpt bij een vraag die vaak bij het woord superster rijst: zou de beste speler automatisch de meeste inkomsten verwerven? De grootmeester met het beste eindspel verkoopt misschien weinig videolessen als de uitleg voor beginners te specialistisch is. Een minder sterke speler kan een publiek bereiken dat zijn taal, humor of manier van voordoen waardeert. Het product dat het publiek kiest verschilt in dat geval van het product dat een toernooitabel rangschikt.
+
+Laat de jury ten slotte zelf aan één knop draaien. Wat zou er gebeuren als dezelfde kijker moest reizen naar een zaal om de les te zien? De geografische beperking keert terug en een lokale trainer krijgt opnieuw een voordeel. Zo laat een eenvoudige verandering van distributie zien waarom de verdeling van inkomsten binnen één en dezelfde sport sterk kan uiteenlopen zonder dat de schaaksterkte van de betrokken spelers ook maar één punt is veranderd.
+
 ## Conclusie
 
 Om mijn oorspronkelijke **vraag** te beantwoorden: de markt van schaakspelers illustreert de mechanismen van de arbeidsmarkt voor talent met grote duidelijkheid: een extreme inkomensconcentratie aan de top, theoretisch onderbouwd door Rosens superstereconomie en Ricardo's differentiële rente. De cijfers van de FIDE en de platforms bevestigen deze analyse, met minder dan driehonderd professionals en een factor honderd tot duizend tussen de uiterste inkomens.

@@ -161,6 +161,10 @@ Second, the Bond and Smith qualification is useful here: conformity isn't inevit
 
 **Be the dissenting voice in analysis.** This is Asch's most actionable result. A single objection said out loud changes the dynamic of the whole group, and it costs almost nothing, including when it's wrong.
 
+## Get the first-round ballots before the discussion
+
+At a club meeting, project a position and give everyone a slip. Each person writes a candidate, the reply they fear most and one feature that would make them change their mind. Collect the slips. Now reveal just the proposed moves, discuss them and vote again. A change of vote can be excellent chess: someone may have pointed out an interposition that refutes the popular sacrifice. Ask the people who changed to identify what they learned. Ask those who stayed put the same question. This keeps the exercise from rewarding stubbornness as if it were a virtue. When the second vote converges, compare the written reasons as well as the tally. Ten votes behind an idea that nobody checked are different from ten votes backed by a variation that survived the group's strongest objection.
+
 ## What to Take Away
 
 Asch showed that around 37% of answers given in the face of a unanimously mistaken majority follow that majority, on a perceptual task whose answer is obvious. Three participants out of four give in at least once, but one in four never gives in, and a single dissenting voice is enough to break the effect.

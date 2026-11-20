@@ -163,6 +163,10 @@ La théorie des perspectives et sa critique aident à interroger tes préférenc
 
 *Cet article fait partie d'une série sur la psychologie appliquée aux échecs. Voir aussi [décision sous incertitude aux échecs](/fr/blog/decision-sous-incertitude-aux-echecs/) et [le biais de confirmation aux échecs](/fr/blog/biais-de-confirmation-aux-echecs/). Voir aussi [la gratification différée aux échecs](/fr/blog/gratification-differee-aux-echecs/).*
 
+### Faire varier le récit sans bouger une pièce
+
+Propose le même diagramme à deux partenaires qui ne connaissent pas la partie. Au premier, raconte que les Blancs avaient un pion de plus au coup précédent ; au second, présente simplement le trait et le temps restant. Demande à chacun une variante écrite avant de discuter de son ressenti. Si l'un veut absolument récupérer un pion alors que l'autre termine son développement, regarde quelle réponse noire ils avaient prévue. Une seule paire de réponses ne démontre aucun biais. Elle fournit en revanche deux analyses concrètes pour examiner comment un récit peut guider la recherche des coups candidats.
+
 ## Sources
 
 - Kahneman, D. et Tversky, A. (1979), *Prospect Theory: An Analysis of Decision under Risk*, Econometrica, 47(2), 263–292, [original](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf).

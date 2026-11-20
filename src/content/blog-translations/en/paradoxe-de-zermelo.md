@@ -121,6 +121,10 @@ Zermelo’s contribution is not a winning strategy from the initial chess positi
 
 ---
 
+## A proof that fits on a scrap of paper
+
+Make a game in which two players take turns removing one or two counters from a pile. Whoever removes the last counter wins. A player facing one counter can win immediately; the same is true with two. With three counters, every legal choice leaves one of those winning positions to the opponent. Three is therefore a losing position for the player to move. With four counters, removing one leaves three, which proves that four is winning. Notice the difference in what you had to establish. A single working move settled the position with four counters. Calling the position with three lost required checking every available move. That asymmetry explains a frequent error in chess analysis: showing one losing response to a threat proves a trap exists, but does not prove the threat wins by force.
+
 ## Frequently asked questions
 
 ### Does Zermelo’s theorem prove White wins?

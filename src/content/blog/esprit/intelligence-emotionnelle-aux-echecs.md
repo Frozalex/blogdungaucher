@@ -100,6 +100,18 @@ Analyser avec quelqu'un demande de distinguer correction et humiliation. Tu peux
 
 Ces propositions relèvent d'un cadre d'échange respectueux. Elles ne prouvent pas une hausse d'un quotient émotionnel grâce aux échecs. Leur valeur pratique est déjà claire : permettre une discussion où chacun peut poser une question, reconnaître une erreur et choisir le moment d'apprendre.
 
+## Analyser à deux sans faire dire à l'autre ce qu'il ressent
+
+Dans une salle d'analyse, un joueur repose la dame sur l'échiquier avec un petit bruit sec. Son partenaire commente aussitôt : « Tu es énervé parce que tu savais que j'étais mieux. » Or le geste peut tout aussi bien exprimer une hésitation sur la case de départ, l'agacement d'avoir mélangé deux variantes ou simplement une pièce qui penche. Une discussion sur les intentions vient de prendre la place de la discussion sur la position. Comment revenir à ce que les deux partenaires peuvent examiner ?
+
+Tu peux commencer par une demande observable : « Est-ce qu'on repart de la position avant l'échange ? » Si l'autre répond oui, cherchez ensemble la case de la dame et indiquez le trait. Si l'autre répond qu'il veut faire une pause, ce renseignement suffit pour ranger les pièces quelques minutes. Aucun des deux joueurs n'a eu besoin de convaincre son partenaire de la cause réelle du bruit.
+
+Voici une façon de tester une autre manière de donner un avis. Lorsque c'est ton tour d'expliquer un choix, termine par la question qui te restait pendant la partie. « J'ai joué ma tour sur la colonne ouverte, mais je ne savais pas ce que tu menaçais avec ton fou. » Ton adversaire peut proposer une variante, expliquer une intention différente ou reconnaître qu'il ne s'en souvient plus. Les trois réponses font avancer l'analyse. En revanche, lui dire qu'il avait certainement peur de perdre son fou l'oblige à défendre un sentiment que tu lui prêtes.
+
+Dans cet exercice, le résultat observable est modeste et précis. Chacun a-t-il eu le temps de formuler sa propre incertitude ? Avez-vous quitté la table avec une position que vous savez reconstituer et une question qui vous intéresse tous les deux ? Tu peux évaluer ce résultat sans attribuer de note de sensibilité à qui que ce soit. Si le même malentendu se reproduit, modifie une convention pratique, par exemple laisser le joueur terminer sa ligne avant de proposer une réfutation. Une règle de parole peut être essayée dès la prochaine analyse. Une étiquette attachée à la personnalité est beaucoup plus difficile à discuter.
+
+Lors de votre prochaine rencontre, demande à ton partenaire quelle convention de parole lui a effectivement permis de réfléchir plus librement.
+
 ## Sources
 
 - Salovey, P. et Mayer, J. D. (1990), *Emotional Intelligence*, Imagination, Cognition and Personality, 9, 185–211. [Résumé original](https://scholars.unh.edu/psych_facpub/450/).

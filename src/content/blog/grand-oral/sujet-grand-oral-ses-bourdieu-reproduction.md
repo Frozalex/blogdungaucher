@@ -115,6 +115,14 @@ La transition centrale peut être : « Si l'obstacle ne se limite pas au prix du
 
 À la question « Les champions issus de milieux modestes ne réfutent-ils pas Bourdieu ? », réponds qu'un parcours individuel montre une possibilité, tandis qu'une hypothèse sur les inégalités porte sur la distribution des chances. À la question inverse « Les échecs sont-ils forcément élitistes ? », rappelle que les conditions d'accès et de reconnaissance peuvent changer. Le raisonnement gagne en force lorsqu'il accepte ces deux objections.
 
+## Comparer deux inscriptions qui coûtent le même prix
+
+Imagine un club qui offre le premier tournoi à tous les collégiens d’un établissement. Noor et Camille disposent de la même invitation. Noor découvre le matin du tournoi qu’il fallait confirmer la présence avant une heure précise. Camille a déjà accompagné une cousine en compétition et connaît la procédure. Dans ce scénario fictif, aucune différence de tarif n’explique la difficulté. Un savoir pratique, transmis avant l’événement, devient visible à travers un détail aussi ordinaire que le pointage. L’exemple fournit un mécanisme possible. Il ne suffit pas à attribuer un comportement à toute une origine sociale.
+
+Comment distinguer ce mécanisme d’un problème d’horaire ou de transport ? Tu pourrais proposer à tous les inscrits une répétition de cinq minutes à la fin d’une séance. Chacun expliquerait à partir de la convocation où aller, à qui s’adresser et quoi faire en cas de retard. Note les étapes mal comprises, reformule le message, puis vérifie ce que les élèves comprennent de la nouvelle version. Cette démarche mesure une difficulté précise d’accès à l’information. Pour éclairer les absences du jour même, il faudrait interroger aussi les élèves qui avaient compris et n’ont pourtant pu venir.
+
+À l’oral, cette distinction aide à ne pas faire porter aux familles toute la responsabilité d’un écart. La présentation d’un tournoi peut elle-même favoriser ceux qui maîtrisent déjà ses usages. Une convocation réécrite constitue alors une intervention modeste dont on peut examiner l’effet.
+
 ## Sources
 
 - Bourdieu, P. (1979), *Les trois états du capital culturel*, Actes de la recherche en sciences sociales, 30, 3–6. [Article original, page d'ouverture consultée](https://www.persee.fr/doc/arss_0335-5322_1979_num_30_1_2654).

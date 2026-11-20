@@ -113,6 +113,14 @@ Piéger ne signifie pas forcément tromper une personne sur les règles ou se mo
 
 Inversement, appeler un coup « psychologique » ne le rend pas bon. Lorsque la meilleure défense réfute ton idée, tu dois décider si le risque pratique est acceptable ; aucun mot de cognition ne transforme cette réfutation en avantage. La qualité de ton modèle adverse se juge sur des prédictions et des corrections, sans prétendre accéder directement à l'esprit de l'autre.
 
+## Écrire un commentaire que l'adversaire pourrait contester
+
+Prends un moment où ton adversaire refuse un échange proposé. Au lieu d'écrire immédiatement « il avait peur de la finale », compose deux annotations compatibles avec le même coup. Dans la première, il a calculé que ta tour entrerait après l'échange. Dans la seconde, il n'a pas remarqué l'offre et songeait à développer son autre aile. Demande ensuite quel fait pourrait départager les deux récits. Le coup effectivement joué figure dans les deux, donc le fait de le retrouver sur la feuille ne suffira pas.
+
+Imagine que l'adversaire accepte de revoir la position après la ronde. Montre-lui le diagramme sans lui demander « tu avais vu l'invasion de ma tour, n'est-ce pas ? ». Demande d'abord quels candidats il envisageait et quelle réponse de ta part il attendait. S'il mentionne spontanément la case d'entrée, tu possèdes un élément en faveur de la première lecture. S'il dit qu'il ne se rappelle pas, inscris cette réponse telle quelle. Une absence de souvenir ne prouve pas qu'il n'avait rien calculé. Tu ne gagnes rien à remplacer cette lacune par une certitude littéraire.
+
+Reste la partie que tu peux contrôler entièrement toi-même : l'analyse de l'échange. Replace la tour, indique son chemin, cherche une parade et vérifie si l'invasion représente vraiment une menace. Il est possible que ton adversaire ait redouté une suite incorrecte ou qu'il ait évité une bonne tactique sans l'avoir vue. Ces deux résultats séparent la qualité d'un coup des raisons qu'un joueur avait de le choisir. C'est précisément cette distinction qui rend les annotations psychologiques intéressantes lorsqu'elles s'appuient sur une conversation et des variantes identifiables.
+
 ## Sources
 
 - Premack, D. et Woodruff, G. (1978), *Does the chimpanzee have a theory of mind?*, Behavioral and Brain Sciences, 1(4), 515–526, [résumé original de la revue](https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/doesthe-chimpanzee-havea-theory-of-mind/1E96B02CD9850016B7C93BC6D2FEF1D0).

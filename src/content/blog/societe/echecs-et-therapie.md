@@ -108,6 +108,14 @@ Une étude utile doit définir son objectif avant de compter les résultats : sy
 
 Il n’est pas nécessaire d’annoncer une date à laquelle toutes les réponses arriveront. La conclusion actuelle de cet article est plus limitée : des usages existent et des questions sont étudiées. Cela ne permet pas de présenter les échecs comme traitement démontré des troubles abordés. Tu peux apprécier ce loisir, partager une partie et chercher des soins adaptés sans lui attribuer une mission qu’il n’a pas prouvée.
 
+## Lire le compte rendu d’un atelier
+
+Prends deux phrases fictives dans le bilan d’un atelier de six séances. La première indique qu’une personne est revenue cinq fois et a demandé à revoir une finale. La seconde affirme que ses difficultés quotidiennes se sont atténuées grâce aux échecs. La feuille de présence et la question sur la finale étayent directement la première. Pour soutenir la seconde, il faudrait déjà savoir de quelles difficultés il s’agit, comment elles ont été mesurées, à quelle date et quelles autres circonstances ont pu changer. Une activité peut procurer une satisfaction réelle à la personne qui y revient alors même que le bilan ne renseigne pas sur son état clinique.
+
+Si tu animes une activité de loisir, une question finale telle que « Préfères-tu retrouver ce partenaire ou changer de format la prochaine fois ? » peut améliorer la séance suivante. Évite de transformer une réponse sur le plaisir de jouer en appréciation médicale. Une personne qui souhaite participer seulement comme spectatrice peut aussi donner un avis pertinent sur la durée ou le bruit de la salle.
+
+Si un programme se présente explicitement comme thérapeutique, renseigne-toi sur l’objectif, les qualifications de la personne qui l’encadre et la place éventuelle de cette activité dans les soins déjà en cours. Le [NIMH décrit plusieurs questions à poser à un professionnel](https://www.nimh.nih.gov/health/topics/psychotherapies), notamment sur l’approche et les modalités du suivi. Pour le club, une information claire sur le statut de l’atelier permet aux participants de choisir la forme d’engagement qui leur convient.
+
 ## Sources
 
 - Demily, C., Cavézian, C., Desmurget, M., Berquand-Merle, M., Chambon, V. et Franck, N. (2009). *The game of chess enhances cognitive abilities in schizophrenia*. Schizophrenia Research, 107(1), 112–113. [Notice](https://pubmed.ncbi.nlm.nih.gov/18995990/) et [texte des auteurs consulté](https://www.researchgate.net/publication/23460530_The_game_of_chess_enhances_cognitive_abilities_in_schizophrenia), DOI : 10.1016/j.schres.2008.09.024.

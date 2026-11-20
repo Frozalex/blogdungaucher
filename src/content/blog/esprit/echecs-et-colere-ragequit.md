@@ -91,6 +91,18 @@ Tu peux également vérifier si tu serais capable d'accepter une autre défaite 
 
 À froid, conserve une seule situation à retravailler : l'erreur déclenchante ou le premier coup joué impulsivement ensuite. Vérifie-la avec les variantes. Tu peux avoir été en colère et avoir tout de même trouvé de bons coups ; tu peux avoir été calme et t'être trompé. Cette nuance t'évite de remplacer l'analyse échiquéenne par un jugement moral sur tes émotions.
 
+## La revanche que tu peux refuser sans disparaître
+
+Un adversaire inconnu accepte ta pièce offerte et convertit facilement. L'écran de fin affiche en même temps le résultat, la variation de classement, le bouton d'analyse et une demande de revanche. Ces quatre informations arrivent presque ensemble. Tu peux être irrité par le résultat et curieux de comprendre la perte de la pièce. Donner la priorité à la seconde envie demande un geste très simple : prendre la position ou le lien de la partie avant de choisir une nouvelle rencontre.
+
+Imagine que cela arrive avec un ami du club. Tu fermes la fenêtre sans répondre, puis tu renonces à la séance suivante parce que l'échange est devenu embarrassant. Un message de deux lignes peut suffire à éviter le malentendu : « Je m'arrête pour ce soir. J'aimerais revoir demain le coup où j'ai laissé le cavalier. » Tu annonces que la soirée est terminée et tu indiques ce que l'autre peut utilement faire plus tard. Tu préserves la relation même si tu n'es toujours pas content de ta partie.
+
+Le lendemain, distingue les deux moments à analyser. Le cavalier était-il déjà en prise quand tu l'as déplacé, ou l'as-tu perdu sur un échec intermédiaire ? Ce sont deux exercices différents. Ensuite seulement, reprends ce qui s'est passé sur l'écran de fin. Avais-tu prévu une seconde partie avant même de commencer la première ? L'aurais-tu demandée après une victoire ? Si tu souhaitais uniquement rejouer pour changer le dernier résultat affiché, une revanche ne pouvait réaliser cette promesse : la défaite resterait dans l'historique.
+
+Rien n'oblige à faire de chaque fin de session un bilan écrit. Pour cette partie précise, il peut suffire de renommer le fichier « cavalier, vérifier l'échec intermédiaire ». La soirée suivante commencera par une question que tu as choisie. Quant au partenaire, il saura qu'il peut t'adresser la solution demain ou attendre que vous soyez assis devant le même échiquier. Ce transfert de la précipitation vers un rendez-vous précis est un changement à ta portée, quelle que soit l'intensité du sentiment du soir.
+
+Quand tu reprends le fichier, replace d’abord la pièce sur sa case initiale pour éprouver à nouveau la difficulté du coup.
+
 ## Sources
 
 - Gross, J. J. (1998), « Antecedent- and response-focused emotion regulation: divergent consequences for experience, expression, and physiology », *Journal of Personality and Social Psychology*, 74(1), 224–237. [Résumé original](https://pubmed.ncbi.nlm.nih.gov/9457784/?dopt=Abstract), DOI : 10.1037/0022-3514.74.1.224.

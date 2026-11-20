@@ -95,6 +95,16 @@ As [recomendações NICE NG87](https://www.nice.org.uk/guidance/ng87/chapter/rec
 
 Diante de dificuldades persistentes que prejudiquem a escola, o trabalho ou os relacionamentos, procure uma avaliação profissional. Não mude um tratamento por causa de uma fase boa ou ruim no jogo. Um clube pode acolher, adaptar atividades e compartilhar o prazer de aprender; não precisa prometer uma cura para ser útil.
 
+## Uma oficina que permite voltar à posição
+
+Numa oficina fictícia, um aluno se levanta enquanto a dupla analisa um final. Quando volta, três peças já mudaram de casa. Agora ele precisa descobrir a posição e lembrar a pergunta ao mesmo tempo. O professor pode fotografar a posição inicial ou anotá-la numa folha, junto com a tarefa: “Qual casa o rei precisa alcançar?”. Assim qualquer participante consegue retomar o fio sem depender da memória do colega.
+
+Em outra mesa, dois alunos preferem manter o tabuleiro durante toda a explicação e mover as peças só no final. Oferecer as duas maneiras permite ouvir qual funciona melhor para cada um naquela aula. O professor pode registrar se o grupo conseguiu explicar a solução e em que momento pediu ajuda. Esse registro descreve o funcionamento da oficina; não permite inferir diagnóstico, mudança de sintomas ou efeito de tratamento.
+
+## Como devolver a palavra ao participante
+
+Depois da atividade, experimente perguntar “Em qual parte foi mais fácil voltar ao jogo?” e deixar que a pessoa aponte a casa ou o cartão usado. Isso oferece uma maneira concreta de explicar uma preferência. Guarde a resposta com as sugestões sobre a organização da aula e pergunte novamente se o formato ou o grupo mudar.
+
 ## Fontes e limites
 
 - **NIMH**, [Attention-Deficit/Hyperactivity Disorder: What You Need to Know](https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know): informação institucional sobre sintomas, avaliação e cuidados.

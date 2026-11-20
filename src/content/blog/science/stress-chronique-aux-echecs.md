@@ -113,6 +113,16 @@ Si la contrainte principale vient d'ailleurs, modifier les échecs peut libérer
 Pour les sujets voisins, [le sommeil](/fr/blog/echecs-et-sommeil/) traite de la vigilance et de la récupération ; [le burnout](/fr/blog/burnout-chess/) distingue l'épuisement sportif de la définition professionnelle de l'OMS. Aucun de ces termes ne se diagnostique par le seul Elo.
 
 
+## Reconstruire les demandes d'une semaine de tournoi
+
+Dessine sept colonnes et place d'abord les rondes dont l'horaire est imposé. Ajoute les trajets, le travail ou les cours, puis les plages que tu pensais réserver aux analyses. Tu découvriras parfois que ton programme supposait de revoir pendant une heure une finale tout en traversant la ville pour rejoindre la ronde suivante. Ce conflit est déjà une information exploitable : aucune théorie sur ton état psychologique n'est nécessaire pour déplacer une activité impossible à caser.
+
+Marque d'un symbole différent les demandes que tu peux réellement modifier. L'heure fixée par l'organisateur ne dépend pas de toi ; la promesse de publier un commentaire détaillé le soir même, peut-être davantage. Choisis ce que tu conserverais si une ronde devait finir une heure plus tard que prévu. Donner la priorité à un trajet fiable ou à un repas organisé peut vouloir dire limiter l'analyse au seul diagramme décisif de la journée. Si les résultats se passent bien, tu disposeras quand même de ce plan. Il n'a pas besoin d'attendre une série de défaites pour devenir utile.
+
+Pour rendre le bilan honnête, note aussi une journée où tu t'es senti disponible alors que le résultat sportif était mauvais. À l'inverse, note une victoire obtenue au terme d'une journée où tout t'a semblé trop lourd. Ces deux exemples cassent le raccourci qui consiste à transformer la couleur du résultat en thermomètre personnel. Une victoire par abandon inattendu dit très peu de la manière dont tu as vécu les heures qui l'ont précédée.
+
+À la fin de la semaine, garde la question à l'échelle de ce que ton carnet contient. Quel engagement facultatif s'est révélé difficile à tenir ? À qui peux-tu signaler le chevauchement avant la prochaine compétition ? Ce sont des questions d'organisation et de conversation. Un calendrier tenu par un joueur décrit une succession de contraintes ; il ne suffit pas à qualifier médicalement ce qu'il traverse.
+
 ## Sources
 
 - McEwen, B. S. (2007), *Physiology and Neurobiology of Stress and Adaptation: Central Role of the Brain*, Physiological Reviews, 87, 873–904, [article original](https://www.overcominghateportal.org/uploads/5/4/1/5/5415260/bruce_mcewen_brain_and_stress.pdf).

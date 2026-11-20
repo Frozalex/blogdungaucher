@@ -110,6 +110,22 @@ In a training position, choose two candidates and examine a reply to each. Then 
 
 ![Calculation: an analogy to clarify](/images/en/minimax-02-profondeur-humain-moteur.svg)
 
+## Audit a principal variation with four envelopes
+
+Try this with a friend. Each envelope represents a candidate move for White and contains slips representing Black's available replies. Write the scores from White's point of view. Put five, two and four in the first envelope; one, nine and seven in the second; and three, four and six in the third. Give the fourth envelope just one slip, a zero. Your friend plays Black and wants to hand you the lowest number available from whichever envelope you select.
+
+Which envelope do you choose if you know their contents? The first guarantees two, the second one, the third three and the fourth zero. The third wins the comparison. Now list the largest number printed in each envelope. The seductive nine tells you only that one of Black's replies would be very good news for White. Choosing the envelope on that basis gives the opponent control of the wrong end of your calculation. The nine is exactly the kind of attractive continuation that can dominate a post-game story despite being irrelevant to the outcome against accurate defence.
+
+Open the third envelope first and find its minimum. When you start on the second, suppose the one comes out first. You can put that envelope aside immediately. The remaining slips could both say a thousand and Black would still have the option of handing you the one. If the first slip from that envelope shows a nine instead, you must keep looking. Merely seeing a good reply for White tells you nothing about the worst reply still in the envelope. This is why accurate bookkeeping about whose turn it is pays off even in a completely artificial game.
+
+## When the last slip is only an estimate
+
+Imagine that the three in your chosen envelope was not a final score but your judgement of a position in which queens have just been traded. Looking one move further, you discover that the recapture you assumed is illegal because the piece is pinned. You now revise that slip downwards. The original calculation may have propagated all its numbers impeccably and still guided you to the wrong decision. The defect was at the boundary where calculation handed the job to evaluation.
+
+Find one example of that boundary in your next analysis. Write the move where your variation stops, whose turn it is, what forcing continuation remains and which enduring advantage you think survives it. If you cannot do that yet, call the end of the line unclear. This makes the analysis useful to another player: they know exactly which position to set up and test. It also distinguishes two productive training jobs. Sometimes you need a wider list of defensive replies. Sometimes your list was adequate and your assessment of the resulting pawn ending needs work. Searching the same favourite attacking variation for another ten minutes would solve neither problem.
+
+One last variation on the envelope game is to hide the numbers until after you have chosen. You are now studying decisions with missing information about the evaluation. Chess pieces themselves stay visible, yet human access to the correct scores is limited. Confusing a player's uncertainty about those numbers with a random rule of chess would change the problem itself.
+
 ## Sources
 
 - Russell, S., & Norvig, P. (undated online chapter). *Adversarial Search*. Artificial Intelligence: A Modern Approach. [Chapter](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).

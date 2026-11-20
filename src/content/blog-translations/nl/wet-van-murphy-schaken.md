@@ -81,6 +81,16 @@ Het is geen lot. Het is herhaling.
 
 ---
 
+## Het schriftje met ook de probleemloze tijdnoodfases
+
+Een clubgenoot zegt dat zijn vlag altijd valt net voordat hij kan promoveren. Als hij drie pijnlijke voorbeelden laat zien, lijkt het verhaal overtuigend. Maar de juiste vervolgvraag is verrassend alledaags: hoe vaak bereikte hij überhaupt een eindspel met een vrijpion en hoeveel tijd stond er toen nog op de klok? Zonder die andere eindspelen weet je niet waarmee je de drie voorbeelden moet vergelijken. Drie keer uit vier is een ander patroon dan drie keer uit veertig.
+
+Leg samen vooraf vast welke situaties in het schriftje komen. Bijvoorbeeld elke eigen partij waarin een pion vanaf de zesde rij kan doorlopen én minder dan twee minuten over zijn. Noteer ook de gevallen waarin de tegenstander tijdig opgeeft, waarin de pion wordt geruild of waarin de resterende tijd ruimschoots genoeg blijkt. Het criterium moet je ook kunnen toepassen voordat je de uitslag kent. Wie bij elk nieuw voorbeeld de grens van twee naar drie minuten verschuift omdat de nederlaag zo goed in het verhaal past, maakt van zijn verklaring een bewegend doelwit.
+
+Stel dat er na een tijdje zes passende eindspelen staan. Twee keer viel de vlag. In beide gevallen was de stelling al ver voor de pion op de zesde rij kwam lastig te spelen met weinig tijd. In drie andere partijen was de winst eenvoudig; in de laatste kreeg je juist lang de tijd omdat de tegenstander nadacht. Het groepje van zes is te klein om algemene kansen uit af te leiden. Wel kun je een technisch probleem aanwijzen dat verder onderzoek verdient: je besteedt relatief veel tijd aan de beslissing om naar het pionneneindspel af te wikkelen en houdt te weinig over voor de uitvoering.
+
+Een aardige toets is het schriftje omgekeerd te lezen. Welke keer ontsnapte jij doordat de tegenstander vlak voor promotie door zijn tijd ging? Zo'n meevaller blijft misschien veel korter hangen dan een eigen nederlaag. Dat doet niets af aan de emotie van de ongelukkige partij. Het verandert wel welke voorbeelden je spontaan opvoert als bewijs dat de klok het steeds op jou gemunt heeft. Een logboek waarin ook de onopvallende partijen staan, levert vaak een beter trainingsidee op dan een verzameling spectaculaire pechgevallen.
+
 ## Kernpunten
 
 - Murphy is geen "wet" in de wetenschappelijke zin: het is een sociale intuïtie over storingen in complexe systemen

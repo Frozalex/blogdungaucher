@@ -88,6 +88,14 @@ Uma partida de motor pode oferecer uma ideia para conferir: atividade contra mat
 
 Comparar várias versões e condições também ajuda a ler as avaliações com cuidado. A força de um programa em um match e a explicação de um lance para um humano são duas questões diferentes.
 
+## Uma maneira de testar um sacrifício comentado
+
+Pegue uma partida publicada em que o comentário atribua a compensação por um peão ao espaço ou à atividade. Cubra a continuação. Anote primeiro a versão mais concreta dessa afirmação que conseguir: qual peça adversária ficará sem casas, em qual coluna uma torre sua entrará e em quantos lances isso poderá acontecer? Se só puder escrever “as brancas têm iniciativa”, ainda falta uma hipótese para colocar à prova.
+
+Depois troque de lado. Procure uma sequência que ofereça a devolução do peão para trocar justamente a torre ativa. Se essa defesa funciona, você identificou uma condição do sacrifício. Se ela falha, localize a primeira casa que falta ao defensor. O ponto instrutivo pode estar vários lances antes do desfecho espetacular escolhido para a publicação.
+
+Por fim, compare duas análises do mesmo motor a partir da mesma posição e com o mesmo orçamento de busca. Numa, examine o lance da partida. Na outra, examine sua defesa, mesmo que a tela não a sugira entre as primeiras opções. Conserve a variante concreta que explica a diferença. Essa comparação permite aprender com um exemplo de AlphaZero sem precisar adivinhar o que a rede teria “pensado” nem tratar uma única partida como julgamento definitivo sobre um estilo de jogo.
+
 ## Fontes
 
 - Silver, D., et al. (2017). *Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm*. arXiv. [Texto](https://arxiv.org/html/1712.01815v1).

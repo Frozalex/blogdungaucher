@@ -111,6 +111,10 @@ Before starting a series of lessons, specify its goal, cost, staffing, what it r
 
 A team may nevertheless choose the game for its cultural value, enjoyment or opportunities to meet others. In that case, assess those goals, listen to pupils who enjoy it less and adjust the activity. Chess does not need a promise of higher IQ to have a considered place in school.
 
+## What to put in the report to parents
+
+Suppose pupils finish a six-week club by demonstrating checkmate with a queen against a bare king. A teacher can report how many pupils completed that task and describe which steps were hardest. This is useful evidence for planning the next session. If the school also wants to claim gains in mathematics, it needs a separate measure of mathematics and a comparison that accounts for ordinary classroom progress. One pupil's clever coordinate trick is a lovely example for the school newsletter. Keep the story, and label it as one pupil's solution. A family reading the report should be able to tell what their child learned at the board and which wider questions remain open.
+
 ## Sources
 
 - **Sala, G. and Gobet, F. (2016)**, [Do the benefits of chess instruction transfer to academic and cognitive skills? A meta-analysis](https://doi.org/10.1016/j.edurev.2016.02.002), *Educational Research Review*, 18, 46-57; [full text](https://eprints.lse.ac.uk/102237/1/main.pdf).

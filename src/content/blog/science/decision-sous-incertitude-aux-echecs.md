@@ -107,6 +107,12 @@ Après la partie, distingue la décision et son issue. Un pari raisonnable dans 
 
 À l'analyse, reconstruis ce que tu savais au moment de jouer. Distingue une mauvaise estimation, une variante oubliée et une décision raisonnable dont l'issue a été défavorable. C'est une manière concrète d'améliorer ton jugement sans prétendre disposer de probabilités exactes pour chaque coup.
 
+### Combien de temps acheter avec une simplification ?
+
+Imagine que tu aies une minute pour achever ta partie. La première variante conduit à une position où ton roi doit retrouver un échec intermédiaire précis. La seconde mène à une finale de tours où tu comprends déjà le plan, mais où ton pion supplémentaire a disparu. Compare d'abord les deux positions en supposant que les deux joueurs disposent de tout leur temps. Puis ajoute une colonne où tu inscris le nombre de décisions délicates que tu t'attends encore à prendre toi-même. Une variante courte sur la feuille peut déboucher sur beaucoup de décisions difficiles.
+
+La décision devient plus claire si tu écris ce qui pourrait te faire changer d'avis. Avec trente secondes d'incrément par coup, serais-tu encore aussi pressé de simplifier ? Si l'adversaire connaît parfaitement la finale de tours, la considères-tu toujours comme facile pour toi ? Ces changements modifient les données de ton problème, sans changer la légalité ni le matériel des variantes. Quand tu commenteras ta partie, donne la cadence et l'obstacle précis. Cela permettra au lecteur de discuter ton choix sur les mêmes bases.
+
 ## Sources
 
 - Russell, S. et Norvig, P. (s. d.), *Adversarial Search*, chapitre de manuel, [texte des auteurs](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).

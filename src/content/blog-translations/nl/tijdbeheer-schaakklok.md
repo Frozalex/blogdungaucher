@@ -150,6 +150,14 @@ Het is nuttig tijdbeheer niet als een geïsoleerde vaardigheid te zien, maar als
 
 Vooruitgaan in tijdbeheer is dus ook vooruitgaan in zelfkennis: je eigen vertekeningen begrijpen, je eigen emotionele toestanden, en routines ontwikkelen die onafhankelijk van de context werken.
 
+## De klok reconstrueren als er geen tijden op je formulier staan
+
+Na een clubpartij kun je vaak de zetten terugvinden, maar ontbreken de tijden. Schrijf dan bij twee of drie beslissingen eerst op wat je nog weet zonder er seconden bij te verzinnen. Bij de eerste afruil stond mijn tegenstander op. Bij de tweede moest ik direct na het indrukken van de klok mijn volgende zet al zoeken. Op zichzelf zijn dat zwakke signalen. Samen helpen ze de stukken terug te zetten op het moment waarop je beslissingsritme veranderde.
+
+Neem een denkbeeldige stand na zet twintig met nog twaalf minuten en tien seconden increment per zet. Als de partij nog dertig zetten duurt, krijg je over die zetten in totaal vijf minuten erbij. Die vijf minuten staan bij zet twintig nog niet op het scherm. Je kunt ze dus niet direct besteden aan het oplossen van het probleem voor je neus. Evenmin weet je nu of de partij na zes of na zestig zetten eindigt. Een tabel die het resterende aantal minuten eenvoudig door het verwachte aantal zetten deelt, levert hooguit een ruwe richtlijn op.
+
+Vergelijk een duidelijke terugslaande zet met het moment net vóór een pionnendoorbraak. In het eerste geval kan weinig tijd gebruiken vanzelfsprekend zijn. In het tweede kan twee minuten rekenen een hele reeks gedwongen antwoorden verhelderen. Markeer daarom in je verslag zowel een partijmoment waarop je bewust tijd investeerde als een moment waarop je dezelfde variant bleef herhalen. Beide kosten tijd op de klok. Alleen bij het tweede ligt het voor de hand om een stopregel voor je berekening te oefenen.
+
 ## Bronnen
 
 - Guid, M., & Bratko, I. (2006). Computer analysis of world chess champions. *ICGA Journal*, 29(2), 65-73.

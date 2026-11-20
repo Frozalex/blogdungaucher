@@ -108,6 +108,12 @@ Avant de reprendre, choisis ce qui rendrait la pratique plus vivable : un calend
 
 Observe le quotidien autant que le score. Retrouves-tu le choix de commencer et de terminer ? Le jeu laisse-t-il de la place au reste ? Une victoire ne prouve pas que tout est réglé ; une défaite ne prouve pas que la reprise a échoué. Ces critères évitent de remettre le classement au centre d'une démarche qui cherche justement à rendre la pratique soutenable.
 
+## Négocier une place de remplaçant au club
+
+Supposons que tu aimes encore les soirées d'analyse, mais que les déplacements d'équipe du dimanche te pèsent. Dire seulement « je fais une pause » risque de donner au capitaine une information inutilisable. Il peut comprendre que tu quittes le club alors que tu voudrais surtout récupérer tes dimanches. Tu pourrais écrire : « Compte sans moi pour les trois prochaines rondes à l'extérieur. J'aimerais venir au club le mercredi quand j'en ai envie. Je te recontacte avant les inscriptions de janvier. » Il sait désormais quand chercher un autre joueur et à quel moment reprendre la conversation.
+
+En retour, il peut te proposer le statut de remplaçant. Vérifie concrètement ce que cela implique. Faut-il rester joignable chaque samedi soir ? Peux-tu refuser un remplacement le matin même ? Une place apparemment moins exigeante peut encore immobiliser tout le week-end. Si l'accord convient, inscris la date de bilan au calendrier, puis laisse passer les premières semaines sans noter le moindre classement. À ce rendez-vous, la première question pourrait être toute simple : le changement t'a-t-il rendu les dimanches que tu voulais retrouver ?
+
 ## Sources
 
 - Organisation mondiale de la santé (2019). *Burn-out an occupational phenomenon: International Classification of Diseases*. OMS. [Définition et périmètre](https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases).

@@ -107,3 +107,14 @@ Um tabuleiro adaptado não elimina uma escada na entrada. Uma interface vocal n�
 O objetivo é que a pessoa possa decidir, jogar, aprender e comunicar suas necessidades. Um clube não precisa anunciar igualdade cognitiva perfeita ou efeitos de saúde para tornar esse projeto útil. Precisa sobretudo transformar suas intenções em condições verificáveis de acolhimento.
 
 **Depois da leitura:** escolha um obstáculo concreto para resolver com o participante e confirme a solução antes da sessão. Para continuar, leia [xadrez e TDAH](/pt-br/blog/xadrez-e-tdah/) ou [xadrez e streaming](/pt-br/blog/xadrez-e-streaming/).
+
+## Um ensaio completo antes de abrir as inscrições
+
+Imagine que um clube queira testar o salão na véspera de um torneio. O responsável põe um tabuleiro acessível na primeira mesa e considera a preparação encerrada. Para descobrir omissões, vale percorrer uma rodada inteira com alguém que conheça a adaptação e queira participar do teste. A pessoa consegue identificar o próprio emparceiramento, chegar à mesa, saber de que cor joga e pedir a presença da arbitragem? Depois de terminar, consegue entregar o resultado pelo mesmo procedimento disponível aos demais participantes ou por uma alternativa combinada?
+
+Uma falha pode ocorrer muito longe do tabuleiro. Um anúncio oral de mudança de mesa perde quem depende de instrução escrita. Um aviso publicado apenas como fotografia pode dificultar a consulta por alguns leitores de tela. A solução operacional começa por saber qual informação precisa chegar, a quem e em que momento. Um quadro com números grandes pode ajudar parte do grupo; divulgar o mesmo emparceiramento em texto permite que cada pessoa escolha seu modo de consulta. Antes de dar o trabalho por concluído, peça que o participante encontre uma informação específica no formato fornecido.
+
+Combine também quem pode decidir quando algo sai do previsto. Se um equipamento para de funcionar, o participante precisa de um interlocutor identificável. Deixar duas pessoas diferentes prometerem procedimentos incompatíveis no meio da rodada acrescenta uma incerteza desnecessária. Anote com a arbitragem como solicitar ajuda e como comunicar a decisão à outra pessoa na mesa.
+
+Depois do ensaio, registre o obstáculo com verbos concretos. “A lista ficou atrás de um corredor estreito” orienta uma mudança. “A pessoa teve dificuldade” pouco esclarece sobre o que o clube pode fazer. Faça o mesmo depois do torneio e confira, com quem enviou a observação, se a mudança proposta resolve o caso. A melhor pergunta muitas vezes é pequena: “Em qual etapa você precisou pedir uma ajuda que poderia ter sido dispensável?”.
+

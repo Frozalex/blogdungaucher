@@ -144,6 +144,10 @@ Les probabilités rendent explicites les hypothèses et les limites d'une prévi
 
 Pour tes dix minutes de présentation, montre le calcul binomial, puis la distinction entre victoire et score attendu, avant de discuter la suite récurrente. Prépare aussi un exemple où une hypothèse, comme l’indépendance, l’absence de nulle ou le niveau constant, devient discutable.
 
+## Faire parler un demi-point
+
+Suppose qu’un joueur attendu à trois quarts de point par partie en dispute exactement deux. Il gagne la première et fait nulle dans la seconde. Sa moyenne observée vaut trois quarts. Pour autant, ces deux observations suffisent aussi peu à confirmer la courbe Elo qu’une première défaite aurait suffi à la réfuter. Demande au jury quelle information manque : il faudrait davantage de rencontres comparables et une manière de tenir compte de la variabilité du score. Si les adversaires suivants sont systématiquement plus forts, juxtaposer les scores bruts brouille aussi l’interprétation. Inscris donc dans ton tableau deux colonnes distinctes, le score réalisé et le score attendu pour chaque rencontre.
+
 ## Sources
 
 - FIDE (2024), *FIDE Rating Regulations effective from 1 March 2024*, section 8. [Tables et calcul officiels](https://handbook.fide.com/chapter/B022024). Les exemples numériques ci-dessus sont des calculs explicitement effectués sous les hypothèses indiquées.

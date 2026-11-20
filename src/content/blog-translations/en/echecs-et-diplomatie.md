@@ -93,6 +93,22 @@ The board can therefore support an encounter project or a narrative of confronta
 
 **After reading:** when a project is presented as a tool for peace, distinguish documented activity, stated aims and evaluated results. This takes initiatives seriously without attributing unestablished effects to them.
 
+## Three documents to keep apart when reading a chess headline
+
+A newspaper headline says two countries “met over a chessboard”. What would you need to know to explain the meeting? Start with a pairings sheet. It can establish that two named players were scheduled to play under particular flags. A result sheet may add that the game took place and how it finished. Neither sheet identifies who authorised a diplomatic message. Next look for a statement from the organiser. It tells you what the organisers publicly wanted the event to represent. Finally, look for a record from the parties said to have negotiated. A public invitation, a recorded commitment and an agreement carried out later are three different findings.
+
+Try the distinction on a fictional exchange. A club in one port invites a club in another country to play a two-board match online. The clubs publish the games and agree to exchange annotated scores. A newspaper later calls it a “rapprochement”. There is direct evidence of contact between the clubs. If the scores are exchanged, there is also a small promise kept. A diplomatic agreement between the governments would require different evidence altogether. Keeping the modest achievement visible matters: local volunteers actually did the work and deserve to be named for it.
+
+The reverse mistake is possible too. An official event might have a clear political purpose even if the moves on the board are entirely ordinary. To test that interpretation, put the game score aside and compare the invitations, public speeches and audience for the event. Ask which statements came before the match and which were written years afterwards. A memoir can illuminate what a player remembers. It cannot, on its own, settle what every spectator thought at the time.
+
+## A question for a club exhibition
+
+Suppose two junior teams plan a rematch after an international exhibition. Before the first event, ask each organiser what would count as a useful connection six months later. They might name a regular correspondence game, a translated bulletin or a second meeting organised by the players themselves. Record the answer before the cameras arrive. After six months, check whether the named activity exists and who maintains it. A schedule and a set of annotated games offer more informative evidence of an ongoing relationship than the number of flags visible in the opening photograph.
+
+None of this requires a grand claim for chess. It makes the historical question more interesting. The same game can provide a public symbol, an evening of genuine contact and an opportunity for officials to present a preferred story. Each layer leaves a different trace. When you next see a photograph of two leaders at a board, read its caption, identify its source and ask what the photograph could possibly establish if the pieces never moved.
+
+A match programme with the names of the two clubs may give you the first people worth interviewing.
+
 ## Further reading
 
 - [Fischer-Spassky 1972: an HGGSP discussion sheet, in French](/fr/blog/sujet-grand-oral-hggsp-fischer-spassky/)

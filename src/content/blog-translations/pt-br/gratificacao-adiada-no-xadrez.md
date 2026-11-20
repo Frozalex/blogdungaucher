@@ -178,6 +178,12 @@ A alavanca, portanto, não é se obrigar a esperar mais. É cumprir a promessa c
 
 *Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a formação de hábitos no xadrez](/pt-br/blog/formacao-de-habitos-no-xadrez/), [o desamparo aprendido no xadrez](/pt-br/blog/desamparo-aprendido-no-xadrez/) e [procrastinação e xadrez](/pt-br/blog/xadrez-e-procrastinacao/).*
 
+## Quanto custa esperar neste final?
+
+Imagine um torneio por equipes. Você tem dez minutos para terminar sua partida, existe incremento de cinco segundos e o adversário oferece empate. Seu time precisa de meio ponto. Recusar para provar que sabe esperar por uma vitória mistura duas decisões. A primeira diz respeito ao placar coletivo. A segunda envolve o que pode aprender jogando o final. Aceitar hoje e reconstruir a posição amanhã pode atender aos dois objetivos.
+
+Na análise posterior, inverta a situação: seu time agora precisa de um ponto inteiro. As peças continuam exatamente nas mesmas casas, mas o valor prático da oferta mudou. Esse exercício esclarece uma confusão comum: adiar uma recompensa só faz sentido quando você consegue identificar qual recompensa está perseguindo e o preço que paga por ela. A demora, por si só, não mede paciência nem qualidade do cálculo.
+
 ## Fontes
 
 - Mischel, W., Ebbesen, E. B., & Zeiss, A. R. (1972). Cognitive and attentional mechanisms in delay of gratification. *Journal of Personality and Social Psychology*, 21(2), 204–218.

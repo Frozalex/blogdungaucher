@@ -143,6 +143,16 @@ Chess expertise is already an achievement without a general enhancement promise.
 
 *This article is part of a series on psychology applied to chess. See also [the Dunning-Kruger effect](/en/blog/dunning-kruger-effect-in-chess/) and [survivorship bias](/en/blog/survivorship-bias-in-chess/).*
 
+## What would count as a lasting chess improvement?
+
+Imagine someone studies the queen-and-king mate on Monday and carries it out correctly on Tuesday. There are at least three ways to interpret the performance. They might remember the moves in the demonstration. They might understand a method they can use when the pieces start somewhere else. Or they might already have known the ending before the lesson. You could distinguish some of these possibilities without putting anyone in a scanner. Ask for a pre-lesson attempt, change the starting squares on Tuesday, and return to a fresh version a fortnight later. For a practical coaching question these modest checks may tell you more than a photograph of a brain.
+
+Make the success criterion specific. “Forced the king to the edge and delivered mate without assistance” can be checked on the board. “Looked confident” depends on the observer. “Got a win” could include a stalemate mistakenly recorded as mate. A player who reaches the right final position only after three prompts has learned something too; the record should say what assistance they needed. When they repeat the exercise unaided, you have a small but meaningful change to describe.
+
+Now change the question. Suppose you want to know whether that lesson improves a child's ability to plan the route home. You cannot establish the answer by giving the child another queen mate. You must define the route-planning task, decide what counts as an improvement on that task, and compare the experience with something that addresses other reasons for doing better. A child who has already seen the test may remember its route. A child given an equal amount of individual attention in another activity may improve as much. Neither possibility denies that the chess lesson taught chess.
+
+These distinctions explain how two claims using the word “lasting” can differ greatly. Maintaining an endgame skill across a fortnight is already a claim about time and deserves a check after a delay. Reusing it on a different board adds a claim about generalisation within the game. Applying it to navigation adds a claim about a different activity. A visible change on a scan would raise another question still: what aspect of the measurement tracks which of those behaviours? The most informative follow-up to “training changed the brain” may simply be “what could the person do afterwards that they could not do before?”
+
 ## Sources
 
 - Maguire, E. A., et al. (2000). *Navigation-related structural change in the hippocampi of taxi drivers*. PNAS, 97, 4398–4403. [Article](https://www.fil.ion.ucl.ac.uk/Maguire/Maguire_CORE_2000.pdf).

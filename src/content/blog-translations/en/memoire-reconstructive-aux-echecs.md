@@ -152,6 +152,10 @@ That's the mechanism behind why the most unpleasant exercise is also the most ef
 
 **5. Base your decisions on numbers, not stories.** Your statistics don't normalize. It's the only body of evidence whose content doesn't depend on the idea you hold about yourself.
 
+## Save the first annotation
+
+Write your first recollection on a separate sheet before replaying the moves. Suppose it reads, “I was afraid of the queen coming to h4.” When you reconstruct the board, a pawn blocks that route. You now know the line you remembered cannot have happened in that position. Several explanations remain open: you could have miscalculated during the game, confused two neighbouring moves afterwards, or chosen the wrong label for a real threat. Preserve the original note and add the board correction beside it. Replacing the first note with the polished version destroys the very discrepancy that taught you something.
+
 ## Key Takeaways
 
 Bartlett showed in 1932 that a story recalled several times gets shorter, gets rationalized and normalizes toward the expectations of whoever is remembering it. The distortion isn't random: it runs in the direction of the schema.

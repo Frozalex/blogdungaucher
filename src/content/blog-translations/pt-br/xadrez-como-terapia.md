@@ -89,6 +89,18 @@ Um estudo útil precisa definir o objetivo antes de contar os resultados: sintom
 
 Não é necessário anunciar uma data para todas as respostas. A conclusão atual deste artigo é mais limitada: existem usos e perguntas em estudo. Isso não permite apresentar o xadrez como tratamento demonstrado dos transtornos abordados. Você pode aproveitar esse lazer, compartilhar uma partida e buscar cuidados adequados sem lhe atribuir uma missão que não provou cumprir.
 
+## Usar a palavra da pessoa que participa
+
+Considere um encontro fictício entre duas pessoas que se conheceram numa oficina. Uma delas relata que gosta de arrumar as peças antes de começar porque essa pequena tarefa dá assunto para a conversa. A outra prefere entrar quando a posição já está pronta, pois acha cansativo esperar. Ambas podem querer voltar. Se o organizador resumir os dois relatos como “o xadrez acalma os participantes”, perderá a diferença que poderia orientar a oficina seguinte. Pode, por exemplo, deixar uma mesa pronta e convidar quem quiser a montar a segunda.
+
+Separar experiência de efeito clínico também melhora a maneira de ouvir uma crítica. Alguém pode sair irritado depois de perder e continuar interessado em participar. Outra pessoa pode ficar a tarde inteira, agradecer por educação e preferir nunca mais voltar. Nenhum desses gestos dá ao observador acesso direto ao bem-estar de quem saiu. Ao oferecer uma escolha para a próxima sessão, inclua uma alternativa que não envolva jogar ou justificar a recusa. O que se aprende com essa escolha diz respeito à organização do encontro.
+
+### Quatro informações para um relato de atividade
+
+Para compartilhar a experiência com outra associação, registre quem pôde participar, o que foi oferecido, o que aconteceu durante as sessões e como os participantes descreveram a atividade quando quiseram falar. “Oferecemos duas mesas num salão barulhento e três pessoas pediram um espaço mais silencioso” é uma observação que permite uma mudança específica. “As pessoas precisam desenvolver mais concentração” atribui aos participantes uma explicação que o ambiente também poderia fornecer.
+
+Se houver interesse em pesquisar uma mudança duradoura, formule uma pergunta que possa receber uma resposta negativa. Quantas pessoas voltaram por escolha quando havia outra atividade no mesmo horário? O que acharam difícil no jogo? Houve participantes para quem a proposta perdeu o sentido com o passar das semanas? Respostas variadas ajudam a melhorar uma oficina e delimitam a interpretação do relatório. A pessoa continua sendo a melhor interlocutora para dizer o que encontrou naquela mesa, inclusive quando o benefício procurado era só ter companhia durante a tarde.
+
 ## Fontes
 
 - Demily, C., Cavézian, C., Desmurget, M., Berquand-Merle, M., Chambon, V. e Franck, N. (2009). *The game of chess enhances cognitive abilities in schizophrenia*. Schizophrenia Research, 107(1), 112–113. [Registro](https://pubmed.ncbi.nlm.nih.gov/18995990/) e [texto dos autores consultado](https://www.researchgate.net/publication/23460530_The_game_of_chess_enhances_cognitive_abilities_in_schizophrenia), DOI: 10.1016/j.schres.2008.09.024.

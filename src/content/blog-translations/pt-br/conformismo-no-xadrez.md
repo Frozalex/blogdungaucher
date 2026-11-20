@@ -177,6 +177,12 @@ A pergunta útil, portanto, não é "eu sou original?", que é um objetivo ruim.
 
 *Este artigo faz parte de uma série sobre psicologia aplicada ao xadrez. Veja também [a obediência à autoridade no xadrez](/pt-br/blog/obediencia-a-autoridade-no-xadrez/) e [o efeito espectador no xadrez](/pt-br/blog/efeito-espectador-no-xadrez/). Um artigo dedicado à psicologia das multidões virá nesta série.*
 
+## Duas votações em torno da mesma posição
+
+Leve ao clube uma posição que admita pelo menos dois planos plausíveis. Antes de ouvir o treinador, cada participante escreve sua escolha e uma resposta das pretas. Recolha os papéis. Agora permita a discussão aberta e faça uma segunda votação. Uma troca de voto pode ter duas histórias: alguém mostrou um recurso tático decisivo, ou o grupo aderiu ao jogador mais graduado sem examinar a alternativa.
+
+Para distinguir as histórias, peça uma pequena demonstração. Qual peça muda de casa na nova linha? Em que momento o plano inicial deixa de funcionar? Quem manteve o primeiro voto também precisa responder. Um grupo inteiro pode chegar ao mesmo lance por bons motivos; a unanimidade, sozinha, não diz como ele chegou lá. O ganho do exercício é conservar um vestígio das razões que existiam antes da conversa.
+
 ## Fontes
 
 - Asch, S. E. (1951). Effects of group pressure upon the modification and distortion of judgments. In H. Guetzkow (Ed.), *Groups, Leadership and Men*. Carnegie Press.

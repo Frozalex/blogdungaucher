@@ -124,6 +124,16 @@ De oplossing is niet heroïsche discipline. Het is **wrijvermindering**:
 
 En erken de ware aard van je "ik heb vandaag geen tijd voor analyse". Het is geen gebrek aan tijd. Het is vermijding verkleed als luciditeit.
 
+## Een analyse beginnen zonder meteen een hele partij te beloven
+
+Op je computer staan twaalf eigen partijen klaar. Je hebt ze gemarkeerd om later te analyseren. Elke keer dat de map opengaat, voelt de taak als twaalf volledige middenspelen met talloze zijvarianten. Probeer de eerstvolgende handeling kleiner en preciezer op te schrijven. Open de partij van dinsdag en zet de stelling vlak voor de eerste dameruil op het scherm. De opdracht is klaar zodra het bord goed staat en je één vraag onder de notatie hebt gezet. Je mag daarna doorgaan, maar hoeft je beslissing om te beginnen niet meer te nemen voor alle resterende uren tegelijk.
+
+Een handige test is of iemand met dezelfde instructie op hetzelfde bord zou uitkomen. ‘Werken aan mijn techniek’ voldoet daar moeilijk aan. ‘Controleer waar de toren heen kan als ik de pion op c7 sla’ is wel terug te vinden. Zet bij het afsluiten ook de bereikte tussenstand neer. De volgende dag hoef je dan niet eerst opnieuw te beslissen wat het meest dringende probleem van de hele map is.
+
+Het wordt anders wanneer je die kleine opdrachten steeds op veilige onderdelen richt. Je herschrijft de openingsnaam, zoekt een diagramplaatje en kiest kleurtjes voor de zetten die je ooit wilt bespreken. Aan het eind van de avond is het dossier netter en ontbreekt nog altijd een antwoord op de vraag die je tijdens de partij niet durfde te stellen. Schrijf daarom aan het begin op welke inhoudelijke onzekerheid je met de volgende handeling wilt verkleinen. Een screenshot kan precies de juiste stap zijn als hij je helpt een stelling tegen een clubgenoot uit te spelen. Dezelfde screenshot kan ook een uitvlucht zijn.
+
+Kijk een week later naar de map en tel hoeveel concrete bordvragen een voorlopig antwoord kregen. Een voorlopig antwoord mag fout zijn, want een clubgenoot kan het weerleggen. Twaalf fraai geordende bestanden vertellen je weinig over het uitstel waarmee je begon. Twee werkelijk onderzochte dameruilen geven je wél iets om tijdens de volgende partij op terug te vallen.
+
 ## Kernpunten
 
 - Uitstellen = een oncomfortabele emotie neutraliseren. Geen wilskrachtgebrek.

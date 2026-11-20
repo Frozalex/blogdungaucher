@@ -111,6 +111,16 @@ Note aussi ce que tu voudrais réutiliser dans ton jeu. « Tour derrière le pio
 L'étude des parties a ainsi une utilité possible même si tu n'en récites pas tous les coups. Sa qualité se juge à ce que tu comprends et retrouves ensuite, avec des objectifs explicites plutôt qu'un quota de parties.
 
 
+## Fabriquer une carte de reprise pour une partie modèle
+
+Au lieu de garder uniquement le premier diagramme d'une ouverture, choisis le moment juste après un choix coûteux à inverser, comme un échange de fous ou une poussée de pion. Au recto de ta carte, mets le diagramme, le trait et une seule question : qu'est-ce que le dernier coup a rendu possible ? Au verso, inscris la suite réellement jouée et une autre réponse légale que tu as toi-même examinée. En séparant ces deux réponses, tu évites de baptiser « erreur » un coup raisonnable simplement parce que le maître avait choisi une autre voie.
+
+Fais un essai concret. Montre d'abord le recto avec les noms des joueurs et le tournoi cachés. Retrouves-tu le plan grâce aux relations entre les pièces, ou grâce à l'année de la partie que tu connais par cœur ? Retourne ensuite la carte et demande à ton partenaire de t'interrompre à un moment différent de celui où tu commences habituellement ton récit. Pour reprendre, décris d'abord la position atteinte. Réciter depuis le tout premier coup chaque fois que tu hésites peut t'aider à raconter l'histoire, tout en masquant les endroits que tu ne reconnais jamais seuls.
+
+Pour suivre tes progrès, change le type d'erreur que tu notes. Écris « mauvais ordre, même position » quand tes coups transposent vers le diagramme étudié, et « ordre décisif » si l'adversaire dispose entre-temps d'une réponse nouvelle. Deux écarts d'un seul coup appellent ainsi deux corrections pédagogiques différentes. Tu pourras consacrer ta prochaine séance à celui qui change véritablement l'analyse.
+
+Inscris le coup adverse intermédiaire sur la carte : il te rappellera pourquoi cet ordre méritait une place dans ton répertoire.
+
 ## Sources
 
 - Chase, W. G. et Simon, H. A. (1973), *Perception in chess*, Cognitive Psychology, 4, 55–81, [original](https://gwern.net/doc/psychology/chess/1973-chase.pdf).

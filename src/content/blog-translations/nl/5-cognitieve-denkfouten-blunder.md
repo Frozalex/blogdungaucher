@@ -93,4 +93,6 @@ Het trainen van het schaakdenken is niet alleen het trainen van het rekenen. Het
 
 **Na het lezen:** kies **één** denkfout die je onlangs een partij heeft gekost; stel jezelf de komende drie sessies **dezelfde controlevraag** vóór elke belangrijke zet (bijv. "welk ander idee sluit ik uit?" voor Einstellung).
 
+Een tegenvraag voor bij de analyse: welke zwarte zet zou jouw eerste verklaring meteen onderuit halen? Zet juist die verdediging op het bord. Soms blijkt de gemiste mogelijkheid sterker dan de fout die je jezelf aanvankelijk verweet.
+
 ---

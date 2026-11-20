@@ -101,6 +101,18 @@ To prepare a visit, the player and organiser can review:
 
 Request information needed for organisation without requiring a public medical account. Any documentation belongs to the event’s applicable conditions; assumptions about a player’s appearance cannot replace them.
 
+## Rehearse a whole round before the first pairing
+
+A venue can have an accessible entrance and still be difficult to play in. Walk through a round in the order a player encounters it. Where do the pairings appear? Can someone find the assigned board while the room is already full? How is a change of board number announced? Where is the clock, and can the player use it with their usual equipment? Finish the route at the result desk. If a volunteer has to leave their own game to collect every result, the arrangement may work for the opening ceremony and fail by round three.
+
+Invite the player to test the setup and say how they prefer to receive information. Someone who uses a tactile board may already have a reliable routine with an opponent. Another player may want to try an unfamiliar clock away from competition. Note down practical agreements with consent, using only the information the relevant officials need. Asking for the square a player wants their clock on is often a more useful question than asking for a description of a diagnosis.
+
+A rehearsal should include an ordinary mistake. Suppose the players disagree about whether a knight moved to c3 or d2. Pause the trial game and practise summoning the arbiter using the arrangements agreed for the event. Which records are available? Can both players explain what they understood? The arbiter decides the applicable procedure. Volunteers should know how to get help rather than improvise a ruling on an unfamiliar form of play. A practice disagreement is much cheaper to resolve than a real one with two clocks running.
+
+Online access also benefits from a realistic test. Give a willing participant a short, finished game and ask them to find move twelve, replay the reply and return to the previous position with their usual controls. A board that announces legal moves may still make it hard to locate the move list or recover after focus jumps. Write down the exact operation that failed, device and control used, and what the player expected. Send the report through the platform's ordinary feedback channel if the player agrees.
+
+After the event ask which arrangement the club should keep even if a different volunteer is on duty. A clear way of communicating board changes, a contact who can be reached before registration and a repeatable clock check help future organisers. The most valuable part of the rehearsal may be discovering that one small change lets a player make their own decisions throughout the round.
+
 ## Inclusion means making participation possible
 
 An adapted board does not remove an entrance staircase. A voice interface does not erase fatigue or equipment costs. Acknowledging these limits helps build a solution instead of blaming difficulties on a player’s motivation.

@@ -81,6 +81,16 @@ Ten derde is het een doorbraak op het gebied van **verklaarbaarheid**. Stockfish
 
 De **beperkingen** van AlphaZero zijn ook aanzienlijk. Ten eerste kost de training veel: 5.000 TPU's gedurende meerdere **uren**, oftewel meerdere miljoenen dollars aan infrastructuur. Deze toetredingsdrempel concentreert het onderzoek bij enkele grote bedrijven. Ten tweede blijft AlphaZero traag in termen van geëvalueerde stellingen: ongeveer zestigduizend per seconde, tegenover tweehonderd miljoen voor Stockfish. Zijn superioriteit komt van de kwaliteit van de evaluatie, niet van het rekenvolume. Ten derde kan het systeem niet generaliseren buiten zijn trainingsdomein: een AlphaZero getraind op schaken kan niet spontaan dammen spelen.
 
+## Een miniatuur van zoeken met advies
+
+Voor een uitleg aan de jury heb je geen tweede schaakprogramma nodig. Teken op een vel een beginstelling met drie mogelijke zetten, schematisch A, B en C. Veronderstel dat een getraind netwerk bij de eerste blik de waarden zes tiende, drie tiende en één tiende aan die zetten toekent als voorlopige voorkeur. Samen tellen ze op tot één. Het grootste getal betekent hier dat de zoekprocedure een reden heeft om relatief veel aandacht aan A te besteden. Het betekent geenszins dat A met zekerheid de beste zet is, of dat je er exact zestig procent van de partijen mee wint.
+
+Laat nu een fictieve verdediging onder A zien die tijdens het zoeken aan het licht komt. Het vervolg blijkt voor de speler aan zet onaantrekkelijk. Bij B lijken de antwoorden gunstiger. De bezochte varianten leveren nieuwe informatie op en de verdeling van het zoekwerk kan verschuiven. Een examinator die vraagt waarom er ondanks het netwerk nog gezocht moet worden, krijgt zo een tastbaar antwoord. De eerste inschatting verdeelt de aandacht; concrete vervolgen maken het mogelijk die inschatting bij te stellen.
+
+Voeg onder C een nog niet onderzochte mogelijkheid toe. Hoe voorkom je dat het programma een uitstekende zet nooit serieus bekijkt omdat de aanvankelijke voorkeur klein was? Dat is de spanning tussen het verder uitwerken van een kansrijke tak en het verkennen van alternatieven. Je hoeft geen exacte implementatie uit je hoofd op te schrijven om die keuze helder te demonstreren. Zeg er wel bij dat de drie getallen die je tekent door jou zijn gekozen voor de uitleg. Ze komen niet uit de trainingen van het echte netwerk.
+
+Wissel tenslotte van perspectief. Als wit na een bepaalde zettenreeks een voordeel verwacht, betekent dat voor zwart juist een ongunstige voorspelling. Zet bij elk knooppunt op je blad de speler die aan zet is. Door de kleur overal consequent te noemen voorkom je een klassieke fout in de mondelinge uitleg, waarbij wit én zwart allebei proberen de score van wit zo hoog mogelijk te maken. Met die ene controle sluit je voorbeeld aan bij de eigenlijke beslisstructuur van een tegenstanderspel.
+
 ## Conclusie
 
 Om mijn oorspronkelijke **vraag** te beantwoorden: AlphaZero vormt een doorbraak in kunstmatige intelligentie omdat het expliciet programmeren loslaat ten gunste van **reinforcement learning**, en aantoont dat deze aanpak vijftig jaar menselijke expertise in vier **uur** kan overtreffen. Deze doorbraak is niet alleen kwantitatief: ze verandert de betekenis van wat het inhoudt om kunstmatige intelligentie te "programmeren".

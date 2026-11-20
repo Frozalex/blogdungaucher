@@ -147,6 +147,14 @@ Dit resultaat is logisch: meetkunde en natuurkunde vereisen precies dezelfde bew
 
 **4. Analyse zonder engine.** Een partij analyseren zonder engine, door eerst je varianten op papier te noteren, dwingt tot visualisatie van stellingen die nooit fysiek hebben bestaan. Het is een visualisatieoefening vermomd als analyse.
 
+## Een route uit het hoofd nalopen
+
+Zet op een leeg bord een wit paard op b1. Laat iemand de bestemming e5 noemen. Probeer eerst de route via c3 te vinden. Na b1 naar c3 kun je e4 bereiken, maar vanaf e4 ligt e5 niet op één paardensprong. Toch is er een korte route via c3: het paard bereikt vanaf c3 het veld e4 of d5, en vanaf die velden kun je verder zoeken. Neem nu als andere bestemming e4. Daar kom je vanaf b1 via c3 in twee sprongen. De moeilijkheid zit soms in het loslaten van de eerste bestemming terwijl het oude beeld nog op je netvlies staat.
+
+Probeer een tweede opgave met een loper op c1 en een eigen pion op d2. Vraag eerst welke velden de loper langs de diagonaal naar h6 beheerst. Geen enkel veld voorbij de pion: de lijn is afgesloten. Verplaats de pion in gedachten van d2 naar d3. Spreek de nieuw geopende velden langzaam uit en zet daarna de stukken neer om te controleren. Wie direct h6 zegt maar onderweg e3 vergeet, ziet de richting goed en verliest een tussenliggend veld.
+
+Wissel bij het nakijken je veldenkaart om met die van een clubgenoot. Maak een onderscheid tussen verkeerde sprongen, obstakels die zijn vergeten en velden die slechts andersom zijn benoemd. Een gedraaid bord kan namelijk een notatiefout uitlokken terwijl de voorgestelde route als vorm wel klopt. Zo eindigt de oefening met een aanwijzing voor je volgende diagram. Een totaalscore voor ruimtelijke intelligentie kun je uit deze twee kleine opdrachten niet afleiden.
+
 ## Bronnen
 
 - Tejada-Gallardo, C., Blasco-Belled, A., Torrelles-Nadal, C., & Alsinet, C. (2021). Effects of school-based multicomponent positive psychology interventions on well-being and distress in adolescents. *Educational Psychology Review*, 33, 1689-1720.

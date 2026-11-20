@@ -123,6 +123,10 @@ Observe un comportement proche de l'objectif : nombre de relances non prévues, 
 
 Garde enfin la possibilité que le changement ne t'aide pas. La psychologie appliquée n'est pas une collection d'obligations à réussir : si une routine t'encombre, simplifie-la ; si une inquiétude déborde durablement le jeu, son exploration mérite un cadre plus large qu'une analyse de partie. Le carnet sert à comprendre et à ajuster, pas à te surveiller en permanence.
 
+## Faire parler la position avant le classement
+
+En analyse à deux, cache le nom des joueurs et arrête le défilement un coup avant le tournant. Chacun écrit le coup qu'il attend et la réponse qui lui ferait le plus peur. Dévoile ensuite le coup joué, puis les noms. Si ton commentaire passe de « ce sacrifice semble douteux » à « un maître a sûrement tout calculé », tu tiens deux jugements différents sur une position strictement identique. Garde le premier sur la feuille. Passe au tableau pour chercher une défense précise au sacrifice. Au terme de l'examen, tu peux avoir changé d'avis pour une bonne raison, même si le prestige du joueur a été le premier déclic. La variante trouvée dira à ton partenaire ce qui justifie ton changement.
+
 ## Sources
 
 - Shields, G. S., Sazma, M. A. et Yonelinas, A. P. (2016), *The effects of acute stress on core executive functions: A meta-analysis and comparison with cortisol*, Neuroscience & Biobehavioral Reviews, 68, 651–668, [article](https://www.grantsshields.com/wp-content/uploads/2016/08/Stress_and_EF_meta-analysis.pdf).

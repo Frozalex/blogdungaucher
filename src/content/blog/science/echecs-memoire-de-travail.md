@@ -136,6 +136,18 @@ Le bruit, le stress ou une fatigue ressentie peuvent aussi rendre ton calcul moi
 
 Pour évaluer ton travail, relève plutôt ce que tu arrives à suivre : une pièce déplacée que tu oublies, un échange que tu visualises mal, une menace que tu négliges. Reprends une position adaptée et vérifie ta représentation sur le plateau. Tu disposes ainsi d’un objectif concret, sans convertir un modèle de laboratoire en promesse de progression.
 
+## Une variante à retenir, puis à mettre à jour
+
+Voici un exercice à faire sur un échiquier, d'abord sans déplacer les pièces. Pars de la position initiale et imagine les coups suivants : les Blancs jouent e4, les Noirs e5, puis le cavalier blanc de g1 vient en f3. Arrête-toi. Où est le cavalier ? Où était-il juste avant ? Quel pion noir attaque-t-il maintenant ? Les trois questions mobilisent des informations proches et pourtant différentes. On peut garder en tête le point d'arrivée du cavalier sans avoir repéré la conséquence de son déplacement.
+
+Continue mentalement par ...Cc6, puis Fb5. À cet instant, la première question devient : quelle pièce blanche vient d'arriver sur b5 et quelle pièce noire rencontre-t-elle d'abord sur la diagonale qui descend vers d7 ? Vérifie sur le plateau : le fou blanc vise le cavalier c6 et, derrière celui-ci, le pion noir d7. Le cavalier garde pourtant le droit de bouger. Il ne découvre aucun échec sur son roi, puisque d7 reste occupée. Si tu l'avais déclaré cloué par principe, tu avais probablement reconnu un dessin familier avant de finir de mettre à jour l'occupation des cases.
+
+Reviens au moment où les Blancs s'apprêtaient à jouer leur fou et remplace Fb5 par Fc4. Là se trouve le véritable défi : il faut effacer la première décision en conservant les déplacements antérieurs. Quelle diagonale est maintenant visée ? En partant de c4, le fou regarde d5, e6 puis f7, où se trouve toujours un pion noir. Si tu vois un fou agir simultanément sur f7 et sur c6, tu as transporté une relation de la branche abandonnée vers la nouvelle. Il arrive qu'une variante soit courte et que le retour au point de départ soit précisément l'étape la plus difficile.
+
+Pour corriger l'exercice, dessine trois diagrammes à la main : le dernier moment commun aux deux lignes, l'arrivée en b5 et l'arrivée en c4. Note sous chaque dessin une case devenue vide et une relation nouvelle. Compare seulement ensuite avec les pièces réelles. Une erreur de case demande de retravailler le trajet ; une relation oubliée demande de regarder ce que le déplacement a changé autour de la pièce. Si tout est juste sur le papier mais que les deux lignes se mélangent quand tu les racontes, entraîne-toi surtout à nommer le dernier point commun.
+
+Quand cette ouverture devient trop connue pour te faire hésiter, utilise une autre position de tes parties. Choisis deux candidats qui déplacent la même pièce vers des cases différentes ; garde un candidat facile à visualiser et une réponse adverse dans chaque branche. Augmente la longueur quand tu peux reconstruire les deux arrivées en expliquant ce qui les distingue. Ce petit test te donne une difficulté échiquéenne à régler ; il ne constitue ni une note générale de mémoire ni une comparaison valide entre deux joueurs qui connaîtraient plus ou moins bien l'ouverture.
+
 ## Sources
 
 - Baddeley, A. (2012). *Working Memory: Theories, Models, and Controversies*. Annual Review of Psychology, 63, 1–29. [Revue intégrale](https://jontalle.web.engr.illinois.edu/MISC/ReadingGroup.11/Papers/Baddeley-WorkingMemory.12.pdf).

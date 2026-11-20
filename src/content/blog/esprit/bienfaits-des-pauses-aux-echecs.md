@@ -104,6 +104,12 @@ Si tu compares deux organisations, garde quelques repères stables : type d'exer
 
 Une seule bonne séance après une pause ne prouve pas son efficacité causale. Une mauvaise séance ne prouve pas davantage que le repos est inutile. Cherche plutôt une organisation que tu peux maintenir et qui te laisse libre de terminer. Si la fatigue devient persistante ou touche aussi la vie quotidienne, l'enjeu dépasse le réglage d'un minuteur d'entraînement.
 
+## Construire une pause sans perdre le fil d'une analyse
+
+Tu étudies une finale sur un échiquier de club. Tu viens de calculer un trajet de roi, mais tu hésites encore sur la réponse au troisième coup. Si tu te lèves maintenant, au retour il faudra peut-être reconstruire toute la branche. Essaye de laisser une seule trace avant de partir : « Après l'échange en c5, son roi peut-il prendre l'opposition ? » Prends une photo de la position de départ si ton partenaire doit libérer la table. Ces gestes concernent ta séance personnelle, hors compétition.
+
+À ton retour, donne à cette question le premier tour de parole. Vérifie la case d'entrée du roi, replace les deux pions échangés, puis essaye l'autre ordre de coups. Si la note te permet de reprendre en quelques secondes, elle a rempli son office. Si elle t'enferme dans une piste fausse, élargis la prochaine note : « Comparer les deux reprises en c5 » laisse deux branches ouvertes. Essaie aussi de terminer certaines pauses sans revenir à la position le même jour. Une étude privée peut attendre. La possibilité de s'arrêter importe autant que l'efficacité du redémarrage, surtout si la séance de dix minutes finit chaque fois par prendre toute la soirée.
+
 ## Sources
 
 - FIDE Arbiters’ Commission (2025), *Arbiters’ Manual*, chapitre des règles, articles 11.2 et 11.3. [Texte officiel](https://arbiters.fide.com/wp-content/uploads/Publications/Manual/Arbiters_Manual_2025.pdf).

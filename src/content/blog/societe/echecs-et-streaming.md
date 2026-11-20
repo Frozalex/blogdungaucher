@@ -134,6 +134,20 @@ Dans les années 1990, pour accéder à l'analyse de parties de Grands Maîtres,
 
 Aujourd'hui, des centaines d'heures d'analyse de parties par des GM sont disponibles gratuitement sur YouTube. Des streams en direct permettent de regarder un 2700 Elo analyser ses propres erreurs en temps réel, avec une pensée verbalisée. La qualité d'accès à l'enseignement s'est radicalement améliorée.
 
+## Regarder la même minute avec trois fenêtres différentes
+
+Imagine une position de milieu de jeu pendant un blitz. Les Blancs hésitent entre avancer un pion devant leur roi et doubler leurs tours sur une colonne ouverte. Sur la diffusion du joueur, tu vois les secondes qui passent et tu l’entends expliquer qu’il a perdu le fil de sa variante. Sur une retransmission commentée, un observateur déplace déjà les pièces sur un plateau d’analyse. Sur un extrait vertical publié le lendemain, tu arrives directement à la gaffe qui a décidé la partie. Ces trois documents donnent accès au même événement. Pourtant, si on te demande pourquoi le pion a bougé, chacun met à ta disposition des indices différents. Le premier donne accès à une intention exprimée, le deuxième à une lecture extérieure, le dernier surtout au résultat.
+
+Pour tirer quelque chose d’une rediffusion, arrête la vidéo avant la décision. Note le temps affiché, le camp au trait et une seule menace adverse. Choisis toi-même un coup et écris ce que tu ferais sur la réponse la plus gênante. Relance la vidéo en masquant le chat. Est-ce que le joueur parle de la menace que tu avais vue ? Explique-t-il une idée que tu pourrais reprendre dans une position comparable ? Reviens enfin au chat. Une plaisanterie comprise après la gaffe et une objection formulée avant le coup méritent des lectures différentes. L’exercice fonctionne même si le joueur choisit un troisième coup : cette divergence peut précisément expliquer ce qui t’avait échappé.
+
+## Quand ton club veut diffuser sa première ronde
+
+Pour un essai de retransmission, choisis d’abord ce que le spectateur doit pouvoir suivre. Une caméra large sur dix tables donne une idée de l’ambiance. Elle risque aussi de rendre illisible le seul échiquier dont parle le commentateur. Une position numérique reportée proprement et une voix qui nomme les cases peuvent rendre la même discussion accessible depuis un téléphone. Fais le test avec une personne qui connaît seulement le mouvement des pièces. Demande-lui de te montrer, après trente secondes, quel camp joue et quelle pièce était menacée. Une hésitation te renseignera davantage sur l’interface qu’un avis général sur sa beauté.
+
+Choisis ensuite la relation entre les personnes filmées et le public. Un joueur peut accepter la retransmission de ses coups et préférer que son visage reste hors champ. Un accompagnateur peut vouloir traverser la salle sans intervenir dans la vidéo. Une table de démonstration volontaire, filmée après la ronde, peut constituer un premier format plus simple à organiser. Tu peux y inviter les deux joueurs à reconstruire une décision importante, puis leur demander à quel moment leurs calculs ont divergé. Les spectateurs découvrent ainsi une raison de rester après le résultat : ils entendent deux points de vue sur une même position.
+
+Pour évaluer ce premier essai, garde séparées trois questions : combien de personnes ont ouvert le direct, combien ont regardé l’analyse jusqu’au bout, et quelles explications ont suscité une question compréhensible. Une pointe d’audience au moment d’une gaffe peut t’apprendre à monter un extrait. Une poignée de questions précises peut t’aider à construire la séance suivante au club. L’objectif éditorial détermine lequel de ces signaux tu choisiras de suivre.
+
 ## La question du futur
 
 Le streaming d'échecs a créé une économie et une culture nouvelles. Mais plusieurs questions se posent sur sa durabilité.
@@ -148,4 +162,3 @@ La révolution du streaming d'échecs est réelle, Chess.com et ses 150 millions
 
 ---
 
-*Nakamura joue ses parties de Championnat du monde en streaming. Ses spectateurs regardent simultanément les coups joués et la réaction du joueur qui les joue. C'est peut-être la chose la plus étrange et la plus fascinante que le numérique ait faite au jeu le plus ancien du monde.*

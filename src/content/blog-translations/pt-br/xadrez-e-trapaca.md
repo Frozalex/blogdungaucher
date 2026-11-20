@@ -111,6 +111,18 @@ Publicar um relatório abre alguns métodos à discussão pública; não revela 
 
 O caso Niemann lembra, por fim, uma exigência simples: **identificar a fonte, precisar o alcance da conclusão e não preencher as incógnitas com acusações**.
 
+## A posição que todos resolvem igual
+
+Numa posição criada para a explicação, as brancas têm rei em f6 e dama em g6; as pretas têm apenas o rei em h8. As brancas podem jogar Dg7 mate. A dama ataca h8 pela diagonal, o rei branco protege a dama e as casas de fuga g8 e h7 também estão cobertas. Um iniciante que conheça esse padrão e um motor podem indicar o mesmo lance por razões fáceis de explicar. Coincidência, aqui, é exatamente o que esperamos de uma solução simples.
+
+Agora imagine uma lista que misture esse tipo de final, recapturas óbvias e posições de meio-jogo com muitas continuações plausíveis. Um percentual único de coincidência trata situações muito diferentes como observações equivalentes. Retirar as recapturas e submeter apenas os lances mais difíceis a uma nova contagem muda a pergunta e a amostra. O resultado depende de como foram escolhidas as posições, de quais alternativas o motor tentou e da definição usada para “coincidir”. É insuficiente ler um percentual sem saber como ele foi obtido.
+
+O inverso também vale como teste de raciocínio. Uma jogadora descobre uma defesa que o comentarista não viu na transmissão. Depois, ambos consultam um motor e a defesa se confirma. O fato novo diz algo sobre a posição; não explica como ela chegou ao lance. Ela pode ter reconhecido uma ideia estudada, calculado a linha durante a partida ou encontrado um recurso por outro caminho. Uma sequência na tela não dá acesso direto ao processo de decisão da pessoa.
+
+Para quem organiza uma competição, há duas conversas diferentes depois de um incidente. Na primeira, registra-se o fato observado: horário, mesa, regra comunicada aos participantes e qual integrante da organização recebeu a informação. Na segunda, avalia-se qual procedimento o regulamento do evento prevê. Um participante que tenha uma dúvida pode procurar o canal indicado pela arbitragem e descrever o que realmente percebeu. Repetir em público o nome de um adversário a partir de um gráfico acrescenta uma acusação e pouco esclarece sobre a evidência.
+
+O mesmo cuidado vale ao rever uma notícia antiga. Anote a data da alegação e procure saber se a fonte fala de reclamação, medida provisória, decisão posterior ou recurso. São acontecimentos diferentes. Uma manchete sobre a abertura de uma apuração não fornece, por si só, o desfecho. Esse vocabulário torna possível defender condições justas de jogo e, ao mesmo tempo, contar com precisão o que já se sabe sobre um caso concreto.
+
 ## Fontes
 
 - **Chess.com (outubro de 2022)**, apresentação e acesso ao *Hans Niemann Report*. [Relatório e conclusões](https://www.chess.com/news/view/chesscom-hans-niemann-report-cheating).

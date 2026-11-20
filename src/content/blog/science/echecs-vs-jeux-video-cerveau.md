@@ -100,6 +100,18 @@ Pour décider, sépare trois questions : est-ce que l'activité te plaît ? Qu'a
 Tu peux suivre un objectif simple : analyser une partie, apprendre une mécanique, ou limiter une session pour garder une autre activité prévue. La comparaison gagne à porter sur tes usages réels, sans déclarer une activité saine par nature et l'autre nocive.
 
 
+## Comparer deux replays avec une même question
+
+Prends le replay d'une partie d'échecs jouée en ligne et celui d'un jeu de stratégie au tour par tour que tu connais. Choisis dans chacun un moment où le joueur a laissé une menace sans réponse. Arrête l'enregistrement juste avant le choix : que pouvait-il savoir à ce moment-là ? Aux échecs, l'attaque d'un fou peut être complètement visible sur le plateau tout en échappant au regard. Dans un jeu avec brouillard de guerre, l'unité qui va tendre l'embuscade peut être littéralement invisible jusqu'au tour suivant. Une capture d'écran produite après la décision peut donner l'illusion que les deux dangers étaient également faciles à éviter.
+
+Construis une légende pour annoter ces replays : ce qui était affiché, ce que l'on pouvait déduire et ce qui a été révélé ensuite. Si le joueur soupçonnait une embuscade sans en connaître l'emplacement, classe séparément l'hypothèse et la case finalement découverte. Dans la partie d'échecs, indique les cases de la diagonale du fou et l'obstacle que le dernier coup a déplacé. Le résultat peut être identique dans les deux jeux, une pièce perdue, mais l'entraînement correctif change. Un joueur peut apprendre à inspecter les lignes ouvertes ; l'autre peut apprendre à obtenir une information avant d'avancer.
+
+Retire maintenant la pendule du premier replay et ajoute une limite de décision au second, dans une nouvelle séance. Tu n'as plus la même tâche, même si les deux jeux portent le même nom qu'au début. Un élève qui répond vite en reconnaissant un danger connu et un élève qui reconstruit lentement le danger peuvent obtenir le même point si seule la solution finale compte. Avant de classer leurs performances, décide si tu veux récompenser la justesse, le temps ou la qualité de l'explication. Garde les trois observations séparées sur la feuille si tu veux pouvoir y revenir.
+
+Pour finir, invente une situation nouvelle qui possède le même problème d'information dans un décor différent. Demande aux participants ce qu'ils chercheraient à savoir avant d'agir. S'ils savent le préciser, tu as obtenu une réponse sur cette tâche et ce changement de décor. Cela donne déjà beaucoup plus de matière qu'un classement général des deux loisirs. Pour parler de changements cérébraux ou d'un bénéfice durable, il faudrait d'autres observations que la réussite à cet exercice construit au club.
+
+Le corrigé idéal indique aussi un indice qui aurait suffi pour changer la décision avant la révélation.
+
 ## Sources
 
 - Sala, G. et Gobet, F. (2017), *Does Far Transfer Exist? Negative Evidence From Chess, Music, and Working Memory Training*, Current Directions in Psychological Science, [article](https://journals.sagepub.com/doi/full/10.1177/0963721417712760).

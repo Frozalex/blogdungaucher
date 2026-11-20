@@ -161,6 +161,10 @@ Not all chess skills convert into results at the same speed. Tactical patterns p
 
 Starting with what pays quickly isn't a surrender: it's what builds the reliability of the link, and therefore your ability to delay later on slower targets.
 
+## The invitation to analyse yesterday's win
+
+A win makes a particularly revealing test. Your platform offers a fresh opponent immediately. The move that won you the game looks obvious in retrospect, but you remember being uncertain for nearly a minute. Save the position and choose a small delayed task: tomorrow, before opening a new game, identify the defender that made the tactic work. Make yourself a card with just the diagram rather than a grand commitment to analyse the whole evening. When tomorrow comes, finding the defence is one possible reward; deciding that the original move was lucky is another. The immediate choice and the delayed one both have value. You might reasonably choose the next game on an evening set aside for friendly play. What matters for training is knowing which opportunity you are postponing, and making it concrete enough that you can actually return to it.
+
 ## Key Takeaways
 
 The marshmallow test has been downgraded. On a larger sample, the association between waiting and later success is half as strong as advertised, and it loses two thirds of its magnitude once family background and early ability are taken into account.

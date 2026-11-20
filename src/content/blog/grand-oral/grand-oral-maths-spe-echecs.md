@@ -144,6 +144,14 @@ Choisis l'un des axes. Tu n'as pas à comprimer combinatoire, Elo, suites et mot
 
 Pour l'échange, entraîne-toi à répondre à ces questions : pourquoi ce modèle ? Où interviennent les nulles ? Qu'est-ce qui est calculé exactement ? Qu'est-ce qui n'est pas démontré ? Une limite expliquée vaut mieux qu'une preuve annoncée mais absente.
 
+## Un calcul que le jury peut modifier en direct
+
+Prépare une feuille pliée en deux. À gauche, dessine deux branches de longueurs inégales : après le choix A, l’adversaire dispose de trois réponses ; après B, il n’en a qu’une. À droite, réserve un espace pour écrire les probabilités. Demande combien de suites de deux demi-coups existent. La réponse est quatre. Puis pose une question qui paraît identique : si chacun choisit au hasard parmi ses coups disponibles, quelle est la probabilité d’obtenir la suite B suivie de son unique réponse ? Elle vaut une demie. Sous A, chaque suite particulière vaut un sixième. Les poids des quatre feuilles donnent bien un au total.
+
+Cet exemple tient dans la marge et montre précisément où intervient une hypothèse de modélisation. Tirer uniformément l’une des quatre suites donnerait un quart à chacune ; choisir uniformément à chaque tour produit une autre expérience. Si le jury ajoute une quatrième réponse sous A, le nombre total de suites passe à cinq. La probabilité d’entrer dans B reste une demie dans l’expérience des choix successifs. Tu peux donc répondre à la relance avant même de reprendre ta calculatrice.
+
+Sur ton support, écris une phrase sous chaque colonne : « Je compte les chemins disponibles », puis « Je spécifie comment on tire un chemin ». Pour relier le résultat au jeu réel, demande ce qu’il faudrait connaître pour estimer la fréquence d’une ouverture dans ton club. Deux joueurs de force égale peuvent avoir des répertoires opposés. Le nombre de suites possibles ne fournit à lui seul aucune distribution des choix qu’ils feront samedi.
+
 ## Sources
 
 - Ministère de l'Éducation nationale (2026), *Baccalauréat : comment se passe le Grand oral ?* [Format officiel](https://www.education.gouv.fr/reussir-au-lycee/baccalaureat-comment-se-passe-le-grand-oral-100028).

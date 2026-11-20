@@ -81,6 +81,22 @@ O barulho, o estresse ou o cansaço percebido também podem tornar o cálculo me
 
 Para avaliar seu trabalho, registre antes o que consegue acompanhar: uma peça movida que esquece, uma troca que visualiza mal, uma ameaça que negligencia. Retome uma posição adequada e confira a representação no tabuleiro. Assim terá um objetivo concreto, sem converter um modelo de laboratório em promessa de progresso.
 
+## Um teste de atualização com quatro lances conhecidos
+
+Monte a posição inicial. Antes de mexer nas peças, imagine a sequência 1.e4 d5 2.exd5 Dxd5. Ao final, quantos peões permanecem nas colunas d e e? O peão branco de e foi a d5 e acabou capturado. O peão preto de d já tinha saído de d7 e foi capturado pelo peão branco. Continuam no tabuleiro o peão branco de d2 e o peão preto de e7. A dama preta está em d5. Se você disser que o peão preto permanece em d7, terá preservado uma informação que foi verdadeira no início, porém já não descreve a posição.
+
+Agora continue a mesma linha com 3.Cc3. O cavalo branco saiu de b1 e passou a atacar d5. Antes de escolher uma fuga para a dama, tente dizer em voz alta de qual casa partiu cada uma das três peças que ainda estão relevantes nessa disputa. O cavalo veio de b1, a dama de d8, e o peão branco que iniciou a troca veio de e2, mas já foi retirado do tabuleiro. Lembrar de onde veio uma peça pode ajudar; confundir a lembrança com a presença atual produz um cavalo ou peão imaginário na variante.
+
+### Distinguir esquecimento, troca de linha e erro de regra
+
+Na folha de análise, reserve um espaço pequeno para desenhar a posição em que sua imagem deixou de bater com o tabuleiro. Se desenhou o peão de e ainda em e4, tem uma pergunta de atualização. Se substituiu a captura de dama por uma recaptura imaginada de cavalo, observe se misturou duas defesas estudadas anteriormente. Se desenhou uma peça que salta por cima de outra sem poder fazê-lo, consulte o movimento da peça. Esses três erros podem resultar na mesma resposta errada, mas pedem exercícios diferentes.
+
+Quem estuda com um parceiro pode fazer uma pausa em pontos imprevisíveis da sequência e perguntar “O que mudou no último lance?”. O parceiro deve aceitar uma resposta parcial e concreta, como “a dama ocupou a casa do peão”, antes de pedir a posição inteira. Refaça o exercício uma vez olhando e outra sem olhar. Assim fica mais fácil perceber se a tarefa difícil era reconhecer a relação no tabuleiro ou mantê-la enquanto imaginava o lance seguinte.
+
+Só depois introduza uma bifurcação. Volte à posição após 1.e4 d5 e explore uma alternativa branca simples, como 2.Cc3. O peão branco continua em e4 e o preto em d5. Compare com a sequência em que houve troca e recaptura. Uma anotação por ramo impede que o resultado de uma linha contamine a vizinha. No caderno, uma seta de retorno à posição inicial ajuda mais do que uma lista longa de lances sem separação.
+
+Para acompanhar o progresso, conte quantas vezes precisou reposicionar peças para retomar a variante e anote também o ponto exato de cada pausa. Resolver a mesma sequência mais depressa na segunda tentativa pode refletir familiaridade. Uma posição nova com outra troca de peões mostra se você começou a atualizar a representação com mais consistência. Esse é um progresso identificável dentro da prática do xadrez, sem reivindicar uma medida geral de toda a sua memória.
+
 ## Fontes
 
 - Baddeley, A. (2012). *Working Memory: Theories, Models, and Controversies*. Annual Review of Psychology, 63, 1–29. [Revisão integral](https://jontalle.web.engr.illinois.edu/MISC/ReadingGroup.11/Papers/Baddeley-WorkingMemory.12.pdf).

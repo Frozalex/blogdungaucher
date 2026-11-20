@@ -147,6 +147,10 @@ This lever has a peculiarity: it's the only one on Cialdini's list whose **since
 
 **And for purchases, stay on the question of content.** What you received for free is in the past. The only question that matters is whether what's on offer is worth its price.
 
+## A useful reply need not be a return favour
+
+Imagine an opponent spends twenty minutes helping you analyse a difficult ending. Next week they ask you to enter a tournament that clashes with your plans. You can thank them, identify the variation their explanation cleared up and offer to share your annotated game. That recognises the specific act of help without granting a claim on a different evening. Put yourself on the other side too. If you volunteer to analyse a junior's game, tell them how much time you have and whether you expect anything in return. “I can look at one position before the next round” is easier to accept than a vague offer that feels like a debt. An invitation with a clear boundary gives both players a way to say yes for the same reason.
+
 ## Key Takeaways
 
 A can of Coke handed over without being asked for doubles the number of tickets bought, and the effect works even when the giver isn't liked. It's one of the best-replicated results in the psychology of persuasion, because it rests on a norm that makes cooperation possible.

@@ -101,6 +101,16 @@ Voici des pistes de réflexion à adapter, sans promesse de disparition du doute
 
 Si le doute te fait durablement souffrir ou t’empêche de jouer comme tu le souhaites, tu peux en parler à un professionnel. Les observations d’un entraîneur et un journal de parties ne remplacent pas un accompagnement adapté.
 
+## Expliquer une partie au club quand on doute de sa place
+
+Un responsable te propose de présenter une partie aux nouveaux membres. Tu viens de perdre deux rondes et tu penses à décliner : comment enseigner alors que ton propre classement baisse ? Avant de répondre, demande le sujet exact. « Montre comment tu choisis entre deux reprises » demande une compétence délimitée. Personne n'a besoin de te proclamer expert de toutes les finales pour t'écouter sur une décision que tu as réellement étudiée. Le désaccord éventuel d'un spectateur pourra porter sur une variante précise.
+
+Prépare l'échiquier au moment du choix. Écris deux éléments sur une petite feuille : ce que tu pensais pendant la partie et ce que tu as compris après. Commence par ta première idée, y compris la défense adverse que tu n'avais pas vue. Puis invite les participants à installer eux-mêmes cette défense. Si quelqu'un trouve un meilleur coup, demande-lui de jouer la suite. Tu apprendras peut-être quelque chose du groupe. Ce résultat est compatible avec le fait que tu sois la personne la mieux placée pour raconter ce qui t'avait échappé ce jour-là.
+
+À l'issue de la présentation, évite la question « Est-ce que j'étais assez bon ? » Elle laisse peu de réponses utiles à quelqu'un qui veut t'encourager. Demande plutôt où il aurait fallu s'arrêter plus longtemps, ou quelle case on distinguait mal depuis le fond de la salle. Tu obtiendras une modification à essayer la prochaine fois. Si le retour porte sur ton classement, ramène tranquillement la conversation à ce que vous venez de jouer : « Oui, j'ai perdu des points ce mois-ci. Quelle défense aurais-tu choisie ici ? »
+
+Cette situation comporte aussi un cas où refuser serait parfaitement raisonnable. Si le responsable te demande une conférence sur une ouverture que tu ne joues jamais, tu peux proposer de présenter ta propre partie ou recommander un autre membre. Valider une limite réelle demande parfois autant de discernement qu'accepter une invitation. Dans les deux cas, la décision devient explicable par la tâche, le temps disponible et ce que tu en sais. C'est plus précis que de déduire ta légitimité d'une série récente de résultats. Et la prochaine proposition sera plus facile à examiner parce que tu sauras désormais ce que tu peux transmettre en vingt minutes devant un échiquier.
+
 ## Sources
 
 - Clance, P. R., & Imes, S. A. (1978). *The Impostor Phenomenon in High Achieving Women: Dynamics and Therapeutic Intervention*. Psychotherapy: Theory, Research & Practice, 15(3), 241–247. [Article intégral](https://mpowir.org/wp-content/uploads/2010/02/Download-IP-in-High-Achieving-Women.pdf).

@@ -108,6 +108,10 @@ Dans une preuve, les défenses adverses ne doivent pas disparaître parce qu'ell
 
 Tu peux organiser l'exposé autour de l'arbre miniature, du calcul par logarithmes et de ces distinctions. Les notions historiques ou informatiques servent d'ouverture ; les calculs que tu sais expliquer constituent le cœur mathématique. Chronomètre ta propre version et conserve le détail technique pour les questions, sans présenter le texte entier comme une durée de lecture garantie.
 
+## Un certificat qu’on peut examiner à la main
+
+Dessine une racine blanche avec deux coups possibles. Sous le premier, les Noirs ont deux réponses. Chacune conduit à une victoire blanche immédiatement vérifiable. Sous le second, laisse volontairement la suite inconnue. As-tu déjà prouvé l’existence d’une stratégie gagnante pour les Blancs à la racine ? Oui, dans cet arbre miniature. Il suffit de choisir le premier coup et de couvrir toutes les réponses adverses. En revanche, montrer une seule suite gagnante sous chacun des deux coups ne donnerait aucune garantie si les Noirs disposent ailleurs d’une défense. Ce changement de quantificateur est au cœur du mot « stratégie ». Il explique au jury comment une preuve peut parfois éviter des branches entières tout en restant bien plus exigeante que la découverte d’une jolie variante.
+
 ## Conclusion pour ta présentation
 
 Tu peux répondre : une valeur théorique existe dans le modèle fini, tandis que la recherche exhaustive naïve présente une explosion combinatoire. L'existence, le coût d'un algorithme donné et l'impossibilité de toute solution sont trois affirmations distinctes.

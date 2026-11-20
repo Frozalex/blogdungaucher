@@ -109,6 +109,20 @@ Organisation and adaptations belong with institutional staff and relevant profes
 
 **After reading:** if you support a workshop, choose a limited objective and say how you will observe it. “Understand opposition in an endgame” is easier to check than “change behaviour outside prison”. Then revise the project from observations, including difficulties.
 
+## What one session can actually show
+
+Imagine a facilitator who has forty minutes, four boards and a mixed group. Some people have played for years. Others know only how a rook moves. A single knockout tournament would leave several people watching for most of the session. A different plan starts with pairs deciding whether a short rook move is legal. The experienced player explains one case, then creates a new position for the other person to explain back. Both participants have a role even if the room has to close unexpectedly. Staff and participants should help shape any format to the needs and constraints of their own setting.
+
+Give each board the same question on a card: can the rook reach the marked square in one move? In the first diagram the path is clear. In the second a friendly pawn is in the way. In the third the rook can capture an opposing piece on the target square. Someone who can sort all three examples has demonstrated a particular rule in this session. The facilitator can record what needs teaching next time. There is no reason to turn this small achievement into a claim about someone's personality, offence history or prospects after release.
+
+Attendance requires equally careful interpretation. Suppose twelve people express interest, eight can attend the first meeting and four of those return. The second meeting may overlap with visits or a transfer. Simply writing “half lost interest” would convert missing information into an explanation. Record places offered, places taken and opportunities to return separately. Ask about obstacles through the channels that participants and staff judge appropriate. Keep participation voluntary, especially if staff or volunteers are also collecting feedback.
+
+What about a participant who asks for a harder task? Offer a board on which one move gives check and another leaves the rook en prise, then ask them to write an explanation that a new partner could follow. Reuse the explanation next week with permission. That gives a participant a genuine teaching contribution and the facilitator a way to see whether the instructions travel. A worksheet that remains useful after the person who made it has left the room is a tangible outcome in its own right.
+
+For a follow-up report, describe the session at the scale of the evidence: which activity was offered, which materials participants could use and which rule they could demonstrate. Separate participant quotations from the facilitator's interpretation and ask before attributing someone's words. A modest report that helps the next group arrange better sessions is a more defensible use of the evidence than a spectacular promise about reoffending that the club could never test.
+
+The next facilitator can then reproduce the useful part of the exercise with the materials actually available in the room.
+
 ## Further reading
 
 - [Chess and ADHD: distinguish practice from care](/en/blog/chess-and-adhd/)

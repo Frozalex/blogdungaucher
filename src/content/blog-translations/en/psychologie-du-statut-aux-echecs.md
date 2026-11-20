@@ -144,6 +144,10 @@ Three observations this grid clarifies.
 
 **Be careful during unstable periods.** Sapolsky's result deserves to be taken seriously: it's when rank is on the line that the load peaks, at the top as much as anywhere else. A stretch of heavy rating swings is a good moment to reduce the competitive load, as our article on [chronic stress in chess](/en/blog/chronic-stress-in-chess/) sets out.
 
+## Watch who gets the demonstration board
+
+Club status is easiest to notice when a scarce opportunity has to be allocated. After a team match, who gets their game shown on the large board? Keeping a simple list for a month might reveal that only decisive wins from the top two boards ever reach the screen. That could reflect the person who brings the projector and volunteers first. It does not establish that the remaining games offer less to learn. Try one meeting where the captain chooses a position for its instructional question before revealing the names. Give the person who played it the right to explain or decline. Then compare the range of questions the group discussed. The relevant outcome is whether a wider group contributed useful analysis, not whether a popular player spoke for fewer minutes.
+
 ## What to Take Away
 
 The Whitehall studies established a steady gradient between hierarchical position and mortality, on people none of whom was poor, with a ratio of one to three between bottom and top. And above all, they identified the factor carrying most of that effect: not income, but **control over one's own work**.

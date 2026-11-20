@@ -111,6 +111,16 @@ In het winterse Berlijn van 2015 is de partij die begint tussen de Syrische vluc
 
 ---
 
+## Een eerste clubavond waarop de regels al bekend zijn
+
+Een bezoeker zet zich aan een vrij bord, schuift de pion voor zijn koning twee velden vooruit en steekt zijn hand naar de klok uit. Tot hier is nauwelijks gezamenlijke taal nodig. De eerste onduidelijkheid kan pas veel later komen. Is dit een oefenpot of telt de partij mee voor de ladder? Wie meldt de uitslag? Blijft de zaal na het spelen open om na te bespreken? Juist de informatie die voor een vaste clubspeler zo vanzelfsprekend is dat hij haar nooit uitspreekt, bepaalt of iemand de volgende week nog eens binnenstapt.
+
+Leg daarvoor bij een open avond eens drie kleine kaarten op een tafel. De eerste geeft met de twee koningen aan welke kant wit en zwart speelt en wanneer de ronde begint. De tweede toont hoe de uitslag wordt doorgegeven. De derde bevat de datum van de volgende ontmoeting en een aanspreekpunt dat ook na afloop bereikbaar is. Laat een nieuw lid zelf kiezen of er meer uitleg nodig is. De schaaksterkte van een gast afleiden uit het gemak waarmee die het plaatselijke inschrijfformulier invult, kan aardig misgaan.
+
+Een tweede misverstand ontstaat bij namen voor de stukken. De letter B in een Engelse notatie verwijst naar de bishop. In de Nederlandse notatie staat daar een L voor loper. Een diagram, twee verschillend benoemde notatiebladen en één gedeelde zettenlijst kunnen een levendig gesprek opleveren waarbij beide spelers iets te vragen én iets uit te leggen hebben. Het is een gelijkwaardiger start dan een gesprek waarin slechts één partij geacht wordt zijn levensverhaal te vertellen.
+
+Beoordeel zo'n avond ten slotte op meer dan de eerste groepsfoto. Wist iemand waar de volgende ontmoeting was? Kon een bezoeker zelf een tegenstander uitnodigen voor een partij? Kwam er ruimte om over de favoriete opening te praten, ook wanneer de organisatie graag iets over herkomst wilde horen? Die kleine keuzes maken zichtbaar wie in de club als speler wordt aangesproken en wie telkens als vertegenwoordiger van een groep wordt voorgesteld.
+
 ## Kernpunten
 
 - Schaken functioneert als een **niet-verbale lingua franca**: algebraïsche notatie is universeel, regels zijn identiek wereldwijd, een partij kan worden gespeeld zonder een woord te wisselen

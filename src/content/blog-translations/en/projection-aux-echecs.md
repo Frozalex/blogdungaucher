@@ -144,6 +144,10 @@ There are only two possible answers. Either from something in the position, a mo
 
 **5. In analysis, separate two questions.** What was the best move, and what was humanly visible in this position? The engine answers the first. Only a player can help you with the second, and it's the second that corrects projection.
 
+## Swap seats during analysis
+
+A common post-game question is “Why didn't you take the pawn?” It already assumes that taking the pawn occupied a place in the other player's list. Try “Which replies did you look at?” and write them down before showing your own list. Suppose you spent four minutes dismissing a sacrifice while the defender was choosing between two king moves and never considered it. That discovery changes what you learned about the opponent's thought process. It does not invalidate your four minutes: a sound sacrifice would still have been legal and available. Keep the board question and the question about the other player's thinking in separate lines of your notes.
+
 ## What to Take Away
 
 The defensive projection of the psychoanalytic tradition, attributing to others what you refuse in yourself, suffers from the same measurement problems as the defense model as a whole.

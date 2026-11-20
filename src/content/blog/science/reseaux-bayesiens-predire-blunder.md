@@ -117,6 +117,12 @@ Même sans construire formellement un réseau bayésien, les principes bayésien
 
 ---
 
+### Vérifier les prévisions par groupes
+
+Supposons que ton modèle attribue environ une chance sur quatre de commettre une gaffe dans quarante positions de test. Tu t'attends alors à un total voisin de dix gaffes dans ce groupe, sans savoir lesquelles des quarante positions seront concernées. Note le résultat observé et répète la comparaison pour d'autres groupes de risque. Une moyenne globale correcte pourrait masquer une surestimation des cas difficiles et une sous-estimation des cas faciles.
+
+Garde les parties d'une même session ensemble lorsque tu sépares les données d'entraînement et de test. Des positions consécutives partagent la pendule, la structure et souvent la même menace. Les répartir au hasard entre les deux lots risque de donner l'impression que le modèle sait prédire des situations nouvelles alors qu'il retrouve surtout les traces d'une même partie.
+
 ## Sources
 
 - Friedman, N., & Koller, D. (2001, version du document consulté). *Being Bayesian About Network Structure: A Bayesian Approach to Structure Discovery in Bayesian Networks*. [Manuscrit des auteurs, Stanford](https://ai.stanford.edu/~nir/Papers/FK1Full.pdf) : dépendances, indépendances conditionnelles et apprentissage de structure.

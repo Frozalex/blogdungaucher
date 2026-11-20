@@ -99,6 +99,16 @@ Essaie un seul changement : annoncer la fin de l'analyse, réduire le nombre de 
 
 Si le résultat tarde, cela ne démontre pas que tu manques encore de volonté. Une difficulté durable peut demander un accompagnement adapté, surtout quand elle déborde largement le jeu. Le travail échiquéen garde sa place, mais ne doit pas devenir une nouvelle manière de te juger à chaque instant.
 
+## Livrer une annotation utilisable au prochain joueur
+
+Ton club prépare un bulletin. On te confie la présentation d'une de tes parties et tu veux expliquer le sacrifice de qualité que tu as refusé. Tu peux écrire une page sur chaque réponse imaginable ; le lecteur du bulletin aura pourtant besoin, avant tout, de savoir pourquoi cette décision se présentait. Prépare une première version autonome : un diagramme, le matériel des deux camps, la menace immédiate et les deux candidats que tu as réellement envisagés.
+
+Donne cette version à une personne qui ne connaît pas la partie. Demande-lui de faire un choix et de montrer la réponse qu'elle craint. Si elle hésite parce que tu as oublié d'indiquer le trait, la version mérite une correction. Si elle propose une autre défense qui change la conclusion, examine-la et ajoute-la. Si elle reproduit ton idée et comprend pourquoi tu as décliné le sacrifice, tu possèdes déjà une annotation qui remplit son rôle. Tu peux placer les variantes secondaires dans tes notes personnelles, puis décider un autre jour si elles méritent d'être publiées.
+
+Cette manière de terminer le travail a une vertu particulière : le point d'arrêt vient d'une tâche accomplie par quelqu'un d'autre. « Je suis satisfait » peut rester hors d'atteinte, même devant un texte clair. « Mon camarade a pu rejouer la position et retrouver l'objection » désigne un événement que vous avez effectivement observé. Il se peut que la prochaine lectrice, moins expérimentée, ait besoin d'une explication supplémentaire. Vous pourrez amender le bulletin à cette occasion. Ce droit de révision permet une première version utile.
+
+En compétition, le lecteur du bulletin disparaît et le délai devient celui de la pendule. La question analogue serait : est-ce que je sais déjà ce qui pourrait me faire abandonner mon coup candidat ? Un risque concret mérite un dernier calcul. Si tu attends seulement que plus aucune incertitude ne se fasse sentir, il n'existe pas de variante précise à vérifier. Ce sont deux situations distinctes, même si ton envie de réfléchir encore est aussi forte dans les deux.
+
 ## Sources
 
 - Simon, H. A. (1955), « A Behavioral Model of Rational Choice », *The Quarterly Journal of Economics*, 69(1), 99–118. [Texte original](https://cooperative-individualism.org/simon-herbert_a-behavioral-model-of-rational-choice-1955-feb.pdf), DOI : 10.2307/1884852.

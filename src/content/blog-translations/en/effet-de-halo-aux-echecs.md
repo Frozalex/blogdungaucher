@@ -161,6 +161,10 @@ And be careful with the interpretation: the result may also be nil. That's a res
 
 **Analyse blind.** When you work on masters' games, hide the names and the results. Evaluate the position, choose your move, then reveal. The halo attached to a famous name makes you accept moves you wouldn't have accepted otherwise, which removes the entire point of the exercise.
 
+## Rotate the commentator
+
+In a group analysis, give one board to the least experienced player first. They explain what each side threatens, then someone else supplies a candidate move. Give the strongest player the narrow task of looking for a refutation after everyone has spoken. The following week, rotate the roles. Ask which ideas would have been lost if the highest-rated person had given their verdict first. A clearly demonstrated refutation deserves exactly as much attention when it comes from the junior as when it comes from the club champion.
+
 ## What to Take Away
 
 Thorndike showed in 1920 that professional evaluators are incapable of judging distinct qualities separately: they form an overall impression and deduce the details from it. Nisbett and Wilson added the genuinely awkward part in 1977: people deny the effect, and go as far as reversing the direction of causality to explain a judgment they didn't produce the way they think they did.

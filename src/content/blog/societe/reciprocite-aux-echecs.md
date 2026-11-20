@@ -154,6 +154,10 @@ Ce levier a une particularité : il est le seul de la liste de Cialdini dont **l
 
 **Et pour les achats, reste sur la question du contenu.** Ce que tu as reçu gratuitement est passé. La seule question qui vaille est de savoir si ce qui est proposé vaut son prix.
 
+## Rendre le service au club
+
+Un joueur t’a montré sa préparation avant une ronde. Tu peux lui proposer de l’aider à ranger les échiquiers ou lui envoyer plus tard une finale intéressante. Si ton prochain adversaire est son ami, cette aide passée ne crée aucune obligation sur le résultat de la partie. Pour éviter un malentendu, demande quel retour lui serait agréable. Il peut tout simplement préférer que tu transmettes à un débutant la méthode d’analyse qu’il vient de t’enseigner.
+
 ## Ce qu'il faut retenir
 
 Une canette de Coca offerte sans être demandée double le nombre de billets achetés, et l'effet fonctionne même quand le donneur n'est pas apprécié. C'est l'un des résultats les mieux répliqués de la psychologie de la persuasion, parce qu'il repose sur une norme qui rend la coopération possible.

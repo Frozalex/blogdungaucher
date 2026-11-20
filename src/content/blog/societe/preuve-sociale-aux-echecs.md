@@ -148,6 +148,14 @@ Or les difficultés pratiques d'une ligne ne sont pas les mêmes selon le niveau
 
 **Traite l'absence comme une absence.** Un coup rare n'a pas été jugé mauvais par une instance. Il n'a simplement pas été joué par les gens dont les parties entrent dans les bases. C'est aussi ce que montre notre article sur [le conformisme aux échecs](/fr/blog/conformisme-aux-echecs/).
 
+## Ce que deux diagrammes d’ouverture peuvent cacher
+
+Construis une petite base fictive de quarante parties issues de la même position. Dans les vingt où les Blancs ont joué A, ils marquent douze points. Dans les vingt où ils ont joué B, ils en marquent onze. La première ligne de ton tableau semble recommander A. Avant de conclure, répartis les résultats en deux groupes suivant la force de l’adversaire. Pour A, imaginons seize parties face au groupe moins fort, avec onze points, et quatre face au groupe plus fort, avec un point. Pour B, supposons quatre parties face au groupe moins fort, avec trois points, puis seize face au groupe plus fort, avec huit points. Les totaux restent douze et onze.
+
+Regarde maintenant les proportions. Face au groupe moins fort, A rapporte onze seizièmes des points possibles, B trois quarts. Face au groupe plus fort, A rapporte un quart et B une moitié. B obtient donc une proportion supérieure dans chacun des groupes, malgré son total inférieur. Le paradoxe tient à la composition de l’échantillon. A a été beaucoup plus utilisé contre le groupe où il était plus facile de marquer. Rien dans ces chiffres fictifs ne démontre que B est objectivement le meilleur coup : quelques joueurs peuvent avoir joué plusieurs des parties, et les positions finales ont aussi dépendu des décisions suivantes.
+
+Que faire dans ta propre préparation ? Utilise d’abord la fréquence pour repérer les réponses que tu risques de rencontrer. Choisis ensuite une partie représentative de chaque réponse et cherche un plan que tu pourrais défendre si l’adversaire sortait de la théorie un coup plus tôt. La popularité t’aura indiqué où pratiquer. La qualité du plan se jugera sur l’échiquier.
+
 ## Ce qu'il faut retenir
 
 La preuve sociale est un raccourci raisonnable qui devient exploitable dès qu'on fabrique l'apparence du nombre. Son socle expérimental est plus fragile qu'on ne le dit : la réplication de 2014 n'a pas retrouvé l'avantage spécifique du message de norme sur un message ordinaire.

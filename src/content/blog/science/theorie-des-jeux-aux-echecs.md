@@ -111,6 +111,10 @@ Lors de la correction, sépare trois erreurs possibles : une réponse légale ou
 
 Ce protocole est une proposition d'entraînement, pas une intervention validée expérimentalement. Il donne néanmoins une traduction concrète à la théorie : tu ne cherches plus seulement une suite brillante, tu précises ce que ton choix garantit et ce qu'il suppose.
 
+### Une offre de nulle change la question
+
+Imagine une dernière ronde où seule une victoire te qualifie. Pour la feuille de résultats, une nulle vaut toujours un demi-point. Pour ton objectif de qualification, elle a exactement la même conséquence qu'une défaite. Écris les deux colonnes de gains avant de comparer tes options. Deux lecteurs peuvent choisir des coups différents à partir du même arbre simplement parce qu'ils ont fixé deux objectifs différents. Cette divergence ne remet pas en cause le calcul effectué dans chaque colonne.
+
 ## Sources
 
 - Russell, S. et Norvig, P. (s. d.), *Adversarial Search*, chapitre de manuel des auteurs, [texte](https://aima.cs.berkeley.edu/4th-ed/pdfs/newchap06.pdf).

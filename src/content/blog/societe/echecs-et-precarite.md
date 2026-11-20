@@ -168,6 +168,14 @@ L'échiquier peut être un levier. Mais un levier sans point d'appui ne soulève
 
 *Wilhelm Steinitz, premier champion du monde d'échecs, est mort dans un asile à New York en 1900. Il était dans la misère. Les échecs ne l'avaient pas protégé de la précarité : ils lui avaient seulement permis d'y vivre en roi, pendant quelques heures par jour, sur soixante-quatre cases.*
 
+## Combien coûte réellement une première ronde ?
+
+Fais le budget d’un tournoi fictif du samedi. Le club prend en charge l’inscription. Reste un trajet à quatre euros l’aller et autant pour le retour, ainsi qu’un déjeuner estimé à six euros. Pour deux enfants accompagnés d’un adulte, si les trois paient ce même tarif de transport, le calcul atteint vingt-quatre euros de trajet avant tout repas. Si une famille peut apporter un déjeuner, elle réduit une ligne du budget sans pouvoir agir sur les autres. Les montants inventés ici servent à repérer la structure d’une dépense. Remplace-les par les horaires et les tarifs réels de ton territoire pour préparer une sortie.
+
+Ajoute maintenant une colonne sans euros. À quelle heure l’accompagnateur doit-il partir ? La dernière ronde se termine-t-elle avant son service du soir ? Peut-on participer à une seule journée lorsque l’événement en compte deux ? Une aide financière peut être suffisante pour couvrir les dépenses visibles et laisser entier l’obstacle de disponibilité. La personne qui décline une invitation n’a aucune obligation de fournir le détail de son budget pour que l’organisateur améliore la proposition.
+
+Une démarche réalisable consiste à publier dès l’annonce le coût complet connu, les plages horaires et l’identité d’un contact joignable en privé. Si le club dispose d’une enveloppe, il peut comparer deux usages possibles : financer intégralement quelques inscriptions, ou mutualiser le trajet de plusieurs familles. La meilleure réponse dépend du frein rencontré localement. Demande après la sortie ce qui aurait rendu le prochain déplacement plus simple et consigne les réponses sans nommer les familles. Cette petite enquête oblige à regarder aussi les personnes qui n’ont jamais franchi la porte de la salle, alors que les chiffres d’inscription décrivent surtout celles qui y sont déjà parvenues.
+
 ## Pour aller plus loin
 
 - [Les échecs en prison : quand l'échiquier devient un outil de réhabilitation](/fr/blog/echecs-en-prison/)

@@ -96,6 +96,16 @@ Un entraîneur peut demander ce que tu avais calculé avant de commenter ton cou
 
 Une discussion utile garde ensemble résultat, apprentissage et ressenti. Elle peut déboucher sur une décision simple : réduire le nombre de parties, mieux préparer la logistique ou revoir une position précise. Si l'angoisse reste forte ou s'étend aux études, au travail ou aux relations, son exploration dépasse le réglage d'un programme d'échecs. Chercher un accompagnement adapté n'enlève rien à ton envie de progresser.
 
+## Nulle choisie, nulle subie : comparer deux fins de partie
+
+Reprends deux parties terminées par la nulle. Dans la première, tu avais obtenu une position désagréable et trouvé le moyen de provoquer une répétition. Dans la seconde, avec une position que tu appréciais, tu as proposé le partage du point dès que les dames ont été échangées. Le tableau du tournoi attribue la même récompense à ces deux décisions. Ton carnet d'entraînement a intérêt à conserver leurs histoires séparément.
+
+Sur la première feuille, place un trait au dernier moment où le résultat dépendait encore d'une décision personnelle. Si la répétition reposait sur une série d'échecs, vérifie d'abord chaque case de fuite. Rejoue ensuite ce qui arrivait si tu refusais le mécanisme. Une défense volontaire peut demander de la précision et de l'audace, alors même qu'elle vise un demi-point. Regarde ce que tu as su calculer pour obtenir ce résultat.
+
+Sur la seconde feuille, installe la position après le départ des dames. Imagine que la même position soit arrivée dans une partie amicale où il reste du temps pour jouer. Quel coup aurais-tu envie d'essayer ? Quels seraient les deux problèmes à résoudre ensuite ? Tu pourras découvrir que la position offrait peu d'espoirs de gain ou, au contraire, qu'un plan naturel existait et que tu ne l'as pas examiné. Ces deux réponses ont de la valeur. Tu viens d'isoler une décision que le seul mot « prudence » ne permettait pas d'étudier.
+
+Si un capitaine d'équipe, un prix partagé ou la fatigue entrait dans ton choix initial, ajoute-le explicitement en marge. Accepter le même demi-point avec des contraintes différentes peut être cohérent. Le but de cette comparaison est de savoir raconter ce que tu choisis de préserver, et à quel prix, avant de décider s'il y a quelque chose à changer.
+
 ## Sources
 
 - Kahneman, D. et Tversky, A. (1979), « Prospect Theory: An Analysis of Decision under Risk », *Econometrica*, 47(2), 263–291. [Texte original](https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Behavioral_Decision_Theory/Kahneman_Tversky_1979_Prospect_theory.pdf).

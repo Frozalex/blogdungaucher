@@ -132,6 +132,12 @@ Une mauvaise fin de partie peut venir d'un manque de connaissance, de temps ou d
 
 Si un symptôme persiste ou t'inquiète, le résultat d'une partie ne permet pas de l'interpréter. Les données générales sur les joueurs ne remplacent pas une évaluation de ta situation. L'intérêt d'une approche physiologique est précisément de poser des questions mesurables, au lieu de transformer chaque sensation en histoire de calories ou d'hormones.
 
+### Le tournoi vu depuis une feuille de pointage
+
+Construis deux colonnes pour la même journée. Dans la première, place les heures assises devant l'échiquier, les déplacements à pied entre les salles et les pauses. Dans la seconde, indique le moment où tu as remarqué que ton cœur battait vite ou que tu n'avais plus envie de calculer. Le coup où tu as raté une fourchette et la montée de trois étages jusqu'à la salle peuvent tous deux figurer sur la feuille, pour des raisons différentes. La feuille devient trompeuse dès que leurs effets sont confondus.
+
+Reprends maintenant le titre « une journée aux échecs brûle tant de calories ». Que faudrait-il connaître pour isoler les échecs eux-mêmes ? La durée des activités, le niveau de dépense qui aurait existé sans partie et la méthode de mesure sont trois renseignements distincts. Si l'article ne donne que la durée du tournoi et un témoignage de fatigue, aucune opération arithmétique ne peut reconstituer les deux autres.
+
 ## Sources
 
 - Troubat, N., Fargeas-Gluck, M.-A., Tulppo, M., & Dugué, B. (2009). *The stress of chess players as a model to study the effects of psychological stimuli on physiological responses: an example of substrate oxidation and heart rate variability in man*. European Journal of Applied Physiology, 105, 343–349. [Article](https://gwern.net/doc/psychology/chess/2009-troubat.pdf).

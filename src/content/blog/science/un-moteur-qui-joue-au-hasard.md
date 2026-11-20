@@ -288,6 +288,10 @@ C'est l'objet du prochain article, et le premier moment de la série où le mote
 
 **Pour continuer :** [évaluer une position en comptant le matériel](/fr/blog/fonction-evaluation-materiel-python/). Cet exemple permet de comparer les choix du moteur à ceux d'un jeu aléatoire dans le protocole présenté.
 
+### Retrouver une partie aléatoire qui plante
+
+Conserve la suite exacte des coups dès qu'une partie échoue. Une graine aléatoire peut reproduire le tirage seulement tant que le générateur reçoit les mêmes listes dans le même ordre. Si tu modifies le classement des coups, un indice identique peut désormais désigner un autre déplacement. Le relevé des coups effectivement joués te permet de retrouver la position critique même après cette modification. Au prochain test, rejoue d'abord ce relevé, puis relance les parties aléatoires.
+
 ## Sources
 
 La documentation de python-chess distingue les nulles réclamables, automatiques et le détecteur matériel limité. La spécification PGN fixe les lettres des pièces pour l’export.

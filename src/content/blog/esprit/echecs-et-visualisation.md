@@ -108,6 +108,16 @@ Tu peux conserver l'échiquier visible et calculer sans bouger les pièces. Cach
 
 Ces propositions ne garantissent ni délai ni transfert chiffré vers les parties. Le repère est concret : restitues-tu plus sûrement les positions et comprends-tu pourquoi tu avais perdu le fil ? C'est cette information qui permet de choisir le prochain exercice.
 
+## Le problème du pion qui disparaît à côté
+
+Installe cette suite depuis la position initiale : 1.e4 a6 2.e5 d5. Les Blancs ont le trait. Avant de déplacer quoi que ce soit, dicte à voix haute les occupants des cases d7, d6, d5 et e5. La première est vide, la deuxième aussi, la troisième contient le pion noir qui vient d'avancer de deux cases et la dernière le pion blanc. Si tu décris la position de mémoire à un ami, ce petit tour des cases fixe le point de départ.
+
+Calcule maintenant 3.exd6 en passant. À quoi ressemblera la colonne d après ce coup ? Sur la case d6, qui était vide, apparaît un pion blanc. Sur la case d5, la pièce noire disparaît alors que le pion blanc ne s'y est jamais posé. Sur e5, il ne reste rien. Fais vérifier cette description avant de poursuivre. C'est précisément parce que la prise ordinaire laisse la case de destination occupée par le preneur que cette autre séquence peut constituer un exercice intéressant.
+
+Imagine alors 3...cxd6. Quel pion noir arrive en d6 ? Celui parti de c7. Si tu réponds « le pion d », ton image a probablement conservé une pièce disparue un demi-coup plus tôt. Le bilan matériel permet une vérification indépendante. Les deux camps ont perdu un pion. Les Blancs ont perdu leur pion e, les Noirs leur pion d. Le pion noir présent en d6 reste celui qui a commencé la partie devant le fou de dame. Tu peux suivre son histoire en trois mots : c7, prise, d6.
+
+Reviens au diagramme initial après 2...d5. Demande à ton ami de remplacer 3.exd6 par 3.d4, sans t'annoncer le coup suivant. Le pion noir est-il encore en d5 ? Oui. Si les Noirs jouent ensuite 3...h6, les Blancs peuvent-ils encore effectuer la prise en passant qui ouvrait le premier exercice ? Non, l'occasion était limitée à la réponse immédiate à l'avance double. Les deux images se ressemblent beaucoup, mais le trait et le dernier coup font partie des informations à conserver. Une photo mentale qui ne retient que la place des pièces laisse échapper cette différence.
+
 ## Sources
 
 - Chase, W. G. et Simon, H. A. (1973), *Perception in Chess*, Cognitive Psychology, 4, 55–81. [Article](https://gwern.net/doc/psychology/chess/1973-chase.pdf).

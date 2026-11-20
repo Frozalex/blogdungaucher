@@ -126,6 +126,10 @@ Si tu souhaites mieux organiser ta pratique, observe plusieurs jours : place des
 
 Le but pratique est de donner au sommeil une place réaliste dans l'entraînement. Il ne s'agit ni de calculer un handicap Elo par heure perdue ni de surveiller chaque nuit comme une performance supplémentaire. Une préparation cohérente associe étude, occasions de récupération et attention à la vie quotidienne.
 
+### Reconstituer les contraintes d'une ronde du matin
+
+Sur ton calendrier, note à quelle heure il faut réellement quitter ton domicile. Remonte ensuite du départ vers le réveil en ajoutant le trajet, le petit déjeuner et le matériel à préparer. Beaucoup de plannings fictifs prennent pour point de départ l'heure de la première ronde, puis oublient tout ce qui doit déjà être fait quand l'arbitre lance les pendules. Tu peux libérer un peu de marge en préparant la feuille de route et le sac la veille. Cette organisation se juge par une question pratique : as-tu pu arriver à l'heure et t'installer tranquillement ? Un seul résultat sportif ne permet pas de mesurer la contribution du sommeil à cette journée.
+
 ## Sources
 
 - Moen, F., Olsen, M. et Hrozanova, M. (2020). *Associations Between Sleep Patterns and Performance Development Among Norwegian Chess Players*. Frontiers in Psychology, 11, 1855. [Texte intégral](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.01855/full).

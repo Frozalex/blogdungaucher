@@ -141,6 +141,8 @@ Voor een schaakspeler of een ouder van een kind dat leert, heeft de vraag "aange
 
 **Voor ouders:** Stel uw kinderen vroeg, zonder druk, bloot aan verrijkende cognitieve activiteiten: waaronder schaken. U weet niet wat hun specifieke aanleg is, maar u maximaliseert de omstandigheden waaronder die tot expressie kan komen.
 
+Denk aan twee kinderen die even oud zijn en evenveel clublessen hebben gevolgd. De een heeft thuis een sparringpartner en herkent de stellingen uit de les. De ander ziet ze voor het eerst. Hun uitslag in één jeugdtoernooi kan dat onderscheid onmogelijk ontwarren. Vraag daarom bij het woord talent eerst welke kansen om te leren je werkelijk hebt kunnen vergelijken.
+
 ## Bronnen
 
 - Hambrick, D. Z., Oswald, F. L., Altmann, E. M., Meinz, E. J., Gobet, F., & Campitelli, G. (2014). Deliberate practice: Is that all it takes to become an expert? *Intelligence*, 45, 34-45.

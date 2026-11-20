@@ -103,6 +103,14 @@ Alguém absorvido no blitz às duas da manhã pode estar aproveitando a experiê
 
 Você pode registrar o tempo dedicado ao xadrez, perguntar se procura a atividade por ela mesma ou para evitar outra coisa e manter uma variedade de atividades que valoriza. Use essa observação para decidir se precisa ajustar seu padrão.
 
+## Duas anotações depois do mesmo torneio
+
+Num torneio imaginário, Rita termina uma partida dizendo que o salão desapareceu enquanto calculava um final de torres. Ela encontrou a ideia central, mas consumiu quase todo o tempo tentando decidir a ordem de dois lances equivalentes. Na mesa ao lado, Paulo relata que precisou se lembrar do relógio várias vezes. A partida dele foi menos envolvente; mesmo assim, reservou tempo para verificar uma defesa importante antes de jogar. Quem esteve mais absorvido e quem administrou melhor o final são perguntas diferentes.
+
+Vale guardar dois registros separados depois de jogar. No primeiro, descreva a experiência com suas palavras antes de consultar a análise. Você estava curioso sobre a próxima posição? O ruído ainda chegava até você? No segundo, aponte uma decisão observável: em qual lance escolheu entre duas alternativas e quanto tempo levou? Uma boa noite de jogo pode aparecer nos dois registros, em um só ou em nenhum.
+
+Na revisão, procure também a posição em que precisou interromper o próprio ritmo. O adversário pode ter aberto uma coluna, trocado o defensor de uma casa ou encontrado um xeque intermediário. Conseguir abandonar uma linha agradável quando os fatos mudam é uma habilidade valiosa. Perseguir a sensação de continuidade a qualquer custo pode mascarar justamente essa mudança na posição. Um relato de absorção tem valor por descrever o prazer de jogar; a análise posterior responde pela qualidade das decisões tomadas.
+
 ## Fontes
 
 - Nakamura, J., & Csikszentmihalyi, M. (2002). *The Concept of Flow*. Em *Handbook of Positive Psychology*, Oxford University Press, p. 89–105. [Capítulo](https://nuovoeutile.it/wp-content/uploads/2015/12/2002-Flow.pdf).

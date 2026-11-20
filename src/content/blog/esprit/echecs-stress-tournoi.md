@@ -140,6 +140,12 @@ Dans une colonne, note ton expérience : tension, pensées sur le résultat, fat
 
 Choisis ensuite une modification concrète : préparer le trajet, revoir une structure, limiter les analyses tardives ou raccourcir la routine. Changer une seule chose rend son utilité plus facile à observer. Le progrès recherché est la capacité à travailler sur la position malgré une tension possible, sans obligation de ressentir la sérénité à chaque ronde.
 
+## Le premier coup après la mauvaise surprise
+
+Supposons que tu aies préparé une ligne précise avec les Blancs avant la ronde. Au troisième coup, ton adversaire échange un cavalier que tu attendais ailleurs. La surprise a un effet très concret : les coups que tu avais prévus concernaient une pièce qui vient de quitter le plateau. Tu peux utiliser cet instant comme un retour au jeu présent. Qu'est-ce que l'échange a ouvert ? Quelle pièce peut reprendre ? Quelles cases ont cessé d'être défendues ? Tu obtiens de quoi réfléchir, même si la sensation désagréable est toujours là.
+
+Au club, organise une répétition de cette situation. Demande à un partenaire de choisir un écart légal dans une ouverture que tu crois bien connaître. Joue ensuite cinq coups de chaque côté en cadence confortable. À la fin, chacun répond à une question différente. Ton partenaire indique le premier moment où il a perçu une menace concrète. Toi, tu indiques le premier moment où tu as retrouvé une décision que tu comprenais. Comparez les deux positions sur l'échiquier. Tu peux avoir retrouvé un plan cohérent deux coups avant de te sentir de nouveau tranquille. Ce décalage t'apprend qu'il est possible de continuer à prendre des décisions utiles alors que le tournoi n'a pas encore retrouvé son allure familière.
+
 ## Sources
 
 - Shields, G. S., Sazma, M. A., & Yonelinas, A. P. (2016). *The effects of acute stress on core executive functions: A meta-analysis and comparison with cortisol*. Neuroscience & Biobehavioral Reviews, 68, 651–668. [Article](https://www.grantsshields.com/wp-content/uploads/2016/08/Stress_and_EF_meta-analysis.pdf).

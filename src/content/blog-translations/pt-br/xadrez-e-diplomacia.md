@@ -93,6 +93,18 @@ O tabuleiro pode, portanto, apoiar um projeto de encontro ou uma narrativa de co
 
 **Depois da leitura:** diante de um projeto apresentado como instrumento de paz, distinga a atividade documentada, o objetivo anunciado e o resultado efetivamente avaliado. Isso permite levar as iniciativas a sério sem lhes atribuir um efeito não demonstrado.
 
+## O que registrar depois de um encontro entre clubes
+
+Imagine duas cidades que organizam um amistoso por equipes após anos sem atividades esportivas em comum. A cerimônia rende boas fotografias e uma frase simpática dos dirigentes. Para saber o que realmente aconteceu, um cronista pode começar por perguntas verificáveis. Quem convidou quem? Os dois clubes participaram da escolha da data e do local? Houve tempo e meios para os jogadores conversarem além da rodada? As respostas permitem descrever o tipo de encontro, sem transformar uma tarde de competição numa mudança já comprovada nas relações entre as cidades.
+
+Um primeiro resultado é a realização do evento. Outro, diferente, seria uma colaboração continuada. Se os clubes combinarem uma oficina, convém distinguir o anúncio da oficina efetivamente realizada. E se no semestre seguinte dois jogadores passarem a treinar juntos, existe um contato novo que merece ser documentado, mesmo que nenhuma política municipal tenha mudado. Colocar cada resultado na sua escala evita que uma experiência modesta precise provar uma transformação desproporcional para ter valor.
+
+A metáfora do tabuleiro também pode ser testada numa negociação simples sobre a volta do amistoso. Um clube precisa jogar no sábado por causa do transporte; o outro só conseguiu um salão no domingo. No xadrez, os dois jogadores não podem, de comum acordo, acrescentar uma nova casa ao tabuleiro. Numa negociação, podem convidar um terceiro clube que tenha espaço disponível no sábado, dividir as rodadas ou adiar a data. Participantes reais podem alterar as opções da própria decisão. É uma diferença concreta que a imagem de dois grandes mestres calculando variantes costuma apagar.
+
+Outra diferença está no que cada pessoa tem autorização para prometer. Um dirigente pode querer garantir a viagem e depender de financiamento que ainda não foi aprovado. Uma declaração de apoio descreve a intenção do momento. A compra de passagens e a reserva de uma sala descrevem compromissos de outra natureza. Um bom relato conserva as datas das duas etapas e informa quando só dispõe da palavra dos organizadores.
+
+Na leitura de uma notícia, experimente escrever três frases separadas. A primeira descreve a partida que ocorreu. A segunda explica quem escolheu apresentá-la como gesto diplomático. A terceira identifica um efeito posterior confirmado por outra observação. Às vezes só será possível completar as duas primeiras. Essa lacuna é informativa: ela deixa espaço para o acompanhamento no mês seguinte e ajuda a reconhecer tanto um contato duradouro quanto um encontro que terminou com o aperto de mãos.
+
 ## Para continuar a leitura
 
 - [Fischer-Spassky 1972: ficha HGGSP para discutir influência, em francês](/fr/blog/sujet-grand-oral-hggsp-fischer-spassky/)

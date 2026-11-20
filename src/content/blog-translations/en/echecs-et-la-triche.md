@@ -111,6 +111,20 @@ Publishing a report opens some methods to public discussion; it does not necessa
 
 The Niemann controversy ultimately illustrates a simple requirement: **identify the source, state the scope of its conclusion and do not fill unknowns with accusations**.
 
+## What belongs in a report to an arbiter?
+
+Imagine a local tournament where a spectator is concerned about an interruption beside board seven. A useful report starts with what the spectator directly observed, when they observed it and where they were standing. It separates those observations from what somebody else said afterwards. They may know a player left the board before move twenty. They may have no way of knowing whom the player spoke to or what was discussed. Leaving that second question open is more accurate than filling it with a story that happens to fit the result.
+
+The player who lost the game has another job: save the score and ask the arbiter which reporting route the event uses. Putting a name and an accusation in a club group chat creates a second public controversy before the first claim has been examined. In particular, a tactical move that seems astonishing to the loser may have been prepared, forced or found by ordinary calculation. The score matters as context, but it cannot supply a missing eyewitness account.
+
+Consider a toy exercise in interpreting agreement with a computer. In one position the king has exactly one legal reply to a check. Every player who continues legally will match the engine's first choice. In another there are many plausible continuations and the strongest one is difficult to explain. A pair of tick marks in an agreement column looks identical for the two moves. Yet the first contains no information about the player's ability to select between legal alternatives. This is why a percentage with an unknown method and a small sample is a poor basis for a personal accusation.
+
+A fair report also records the scope of any later decision. Did an online platform close an account under its terms? Did an arbiter impose a penalty in one event? Was an allegation withdrawn, disputed or upheld under a particular process? These statements concern different decisions and different evidence. When drafting a club notice, preserve that distinction even if it makes the headline longer. A player reading it should be able to tell what conduct was addressed, by whom and in which setting.
+
+For organisers, a rehearsal before the first round can avoid confusion later. Tell players whom to approach with a concern and how to reach that person while a game is in progress. Give volunteers a sample report with a clear observation and a separate, explicitly unresolved interpretation. Ask which part they would pass on and to whom. A useful procedure makes it possible to raise an issue promptly and to investigate quietly without asking the loudest person in the room to decide what happened.
+
+Keep the original score separate from later annotations, so that people reviewing the report can distinguish the game from the analysis performed afterwards.
+
 ## Sources
 
 - **Chess.com (October 2022)**, presentation of and access to the *Hans Niemann Report*. [Report and findings](https://www.chess.com/news/view/chesscom-hans-niemann-report-cheating).

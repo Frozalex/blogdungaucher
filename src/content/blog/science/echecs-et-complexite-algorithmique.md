@@ -147,6 +147,10 @@ Deep Blue et AlphaZero montrent deux façons de sélectionner les variantes et d
 
 Pour toi, la distinction est utile : une analyse moteur propose des coups dans un budget de calcul donné. Elle ne fournit pas une preuve de la valeur exacte de la position initiale. L’explosion combinatoire explique la nécessité de sélectionner ; elle ne dit pas que toute méthode future de résolution est impossible.
 
+### Quand deux programmes annoncent la même profondeur
+
+Un programme écrit « profondeur six » et un autre affiche également six. Demande combien de positions ils ont évaluées, sur quel diagramme et avec quelles extensions de recherche. Si le premier poursuit certaines captures au-delà de la limite, il a résolu un problème légèrement différent. Si le second réutilise une évaluation déjà calculée pour une position rencontrée par transposition, il peut rendre le même résultat en effectuant moins de calculs. Pour un exposé, dessine deux chemins qui convergent vers le même diagramme et compte séparément les visites et les positions distinctes. La différence entre ces deux comptes explique déjà une partie du vocabulaire des moteurs.
+
 ## Sources
 
 - Shannon, C. E. (1950). *Programming a Computer for Playing Chess*. Philosophical Magazine, 41, 256–275. [Article original, Computer History Museum](https://www.computerhistory.org/chess/doc-431614f453dde/) : estimation de l’arbre et recherche sélective.

@@ -119,6 +119,16 @@ Une proposition pratique consiste à finir une séance par une question comprise
 
 Le critère à examiner est concret : comprends-tu mieux la position, respectes-tu le temps choisi et gardes-tu du plaisir ? Ces repères sont observables. Les appeler « optimisation de dopamine » n'ajouterait aucune mesure et pourrait donner une autorité trompeuse à un simple conseil d'entraînement.
 
+## Concevoir un problème où la solution change de sens
+
+Prends deux cartes et écris le même objectif au dos de chacune : trouver un coup qui gagne du matériel. Sur la première, montre une fourchette immédiate. Sur la seconde, montre une fourchette apparemment identique, mais donne au camp adverse un échec intermédiaire qui libère sa dame. Annonce à ton partenaire qu'il y a peut-être une solution, puis demande-lui de s'engager sur une réponse avant de retourner la carte. Tu obtiens une observation que l'on peut discuter : qu'attendait-il et qu'a-t-il découvert ? Sa surprise peut être forte dans la seconde position même s'il n'a gagné aucun point.
+
+Fais jouer ces cartes dans l'autre ordre à un second partenaire. Celui qui a déjà vu l'échec intermédiaire cherchera peut-être une ruse dans la fourchette simple. Les deux cartes sont restées matériellement identiques, mais l'attente de la personne qui les aborde a changé. C'est une manière de rendre concrète la différence entre l'intérêt d'une découverte et la valeur objective du coup. Tu peux observer leurs réponses et leur demander de les raconter. Tu ne peux pas en tirer une mesure de substance chimique.
+
+Ce dispositif aide surtout à améliorer une séance de problèmes. Si toutes les cartes garantissent une combinaison gagnante, on peut réussir en cherchant indéfiniment le sacrifice spectaculaire que l'organisateur promet implicitement. Mélanger des positions avec et sans gain forcé oblige à justifier le moment où l'on quitte cette recherche. Accorde aussi le point quand le joueur explique correctement pourquoi la combinaison est fausse et propose un coup raisonnable. Tu changes alors, très concrètement, ce que la séance récompense.
+
+Après une dizaine de décisions, regarde les réponses aux cartes déjà vues et aux cartes nouvelles séparément. Retrouver la pointe d'un exercice célèbre peut être satisfaisant, mais ne te dit pas encore si le joueur sait détecter une défense inédite. Pour évaluer cette capacité, change la place du roi ou une case de fuite, puis demande ce que ce changement fait à la combinaison. Le critère de réussite devient une explication vérifiable sur l'échiquier.
+
 ## Sources
 
 - Schultz, W., Dayan, P., & Montague, P. R. (1997). *A Neural Substrate of Prediction and Reward*. Science, 275, 1593–1599. [Article](https://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf).

@@ -113,6 +113,18 @@ Quand une séance ne se fait pas, note ce qui l'a empêchée et modifie une seul
 
 Tu peux essayer une formule situation-action : « Après avoir enregistré ma prochaine partie, je marque seulement le coup qui me pose question. » C'est une proposition d'organisation, pas une dose thérapeutique. Si les difficultés persistent dans plusieurs domaines et te font souffrir, une aide adaptée peut être utile ; l'entraînement échiquéen n'a pas à résoudre seul toute la difficulté.
 
+## Deux dossiers pour les parties que tu n'ouvres jamais
+
+Un joueur conserve soixante fichiers de parties dans un répertoire nommé « À analyser ». Il dispose enfin d'une soirée libre, ouvre le dossier, trie les fichiers par date puis par adversaire et la soirée passe. Trier avait son intérêt. Le résultat attendu au départ était pourtant de comprendre ce qui s'était joué sur une position. La prochaine fois, il crée deux dossiers plus modestes. Le premier reste une archive complète. Le second contient une seule partie et porte une question dans son nom : « Pourquoi ai-je échangé les tours ? »
+
+Même cette question peut être trop large. Quand s'asseoir devant l'échiquier paraît difficile, il peut commencer avec une action que l'on saura terminée : retrouver le numéro de l'échange et sauvegarder la position juste avant. Un autre soir, le travail reprend sur cet échiquier précis. Il peut choisir de jouer trois coups avec les tours, puis trois après l'échange. Le dossier devient ainsi utilisable entre deux cours, sans devoir consacrer toute une soirée à l'histoire complète d'une défaite.
+
+Il existe un piège plus discret. Le joueur ouvre sa partie dès le lendemain et choisit finalement de commenter une combinaison gagnante qu'il comprend déjà. L'heure a été bien remplie, mais la position de tours attend toujours. Comparer les deux tâches révèle quelque chose : l'une comporte la satisfaction de présenter une idée déjà claire, l'autre oblige à admettre une hésitation. Cette différence peut expliquer le choix du soir ; elle ne permet pas de conclure que le joueur fuit toute difficulté.
+
+Pour franchir le premier pas, demande à un ami un service minuscule : démarrer une position de tours à partir du fichier préparé et choisir le camp qu'il veut. Fixez ensemble une heure d'arrêt. L'issue de la séance peut tenir dans une phrase, même imparfaite, comme « J'échangeais pour supprimer les échecs mais je perdais le contrôle de la colonne ouverte ». Garde ce résultat avec le diagramme. La semaine suivante, tu auras un vrai point de départ, y compris si l'hypothèse s'avère fausse. Ne place un autre dossier dans la pile de travail que lorsque tu as choisi ce que devient le premier.
+
+Tu peux conserver l’ancienne archive entière sans lui demander de servir de programme pour la semaine.
+
 ## Sources
 
 - Sirois, F. et Pychyl, T. (2013), « Procrastination and the Priority of Short-Term Mood Regulation: Consequences for Future Self », *Social and Personality Psychology Compass*, 7(2), 115–127. [Manuscrit des auteurs](https://eprints.whiterose.ac.uk/91793/1/Compass%20Paper%20revision%20FINAL.pdf), DOI : 10.1111/spc3.12011.

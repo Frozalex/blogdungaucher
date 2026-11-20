@@ -155,6 +155,10 @@ Fix a single dimension and settle it on that. For instance: I want an opening wi
 
 Time spent choosing is time not going to tactics or endgames, which are the best-documented items in terms of return. Our article on [the 40-40-20 rule](/en/blog/chess-40-40-20-rule/) details that split, and [do you really need to study openings](/en/blog/faut-il-vraiment-etudier-les-ouvertures/) takes the problem from the other end.
 
+## Try a shortlist that can admit a late arrival
+
+You have four minutes in a quiet position. Pick one move that improves your least active piece and one that addresses the opponent's next plan. Write down the specific weakness of each. Now ask whether a third move answers a weakness both candidates share. A move that merely looks different has no claim on the rest of the clock; a forcing check that neither quiet move considered deserves immediate attention. The distinction is important because a fixed cap on candidates can turn a remedy for indecision into a recipe for overlooking tactics. After the game, revisit the piece you nearly moved three times. Did you uncover genuinely new information each time, or were you running the same comparison again? Your answer tells you whether the shortlist needed a late arrival or a stopping point.
+
 ## What to Take Away
 
 The jam experiment is real and its result is spectacular. But it didn't survive aggregation: across 63 conditions and more than 5,000 participants, the average choice overload effect is close to zero, and sometimes reversed.

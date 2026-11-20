@@ -156,6 +156,10 @@ Three important qualifications.
 
 **6. Expect the comeback.** The partial return of the reaction is normal and documented. It doesn't mean the work failed, only that the original association wasn't erased. Knowing this keeps you from quitting right when it's working.
 
+## Two sounds in the analysis room
+
+Picture a player who hears the platform's move sound hundreds of times in comfortable games, then plays an evening of frantic bullet with a new warning tone for low time. The next day the warning tone plays in a puzzle and they reach for the mouse before inspecting the board. The observation would be interesting. It still has alternatives: the sound may simply be abrupt, or the puzzle interface may look like the bullet screen. Try a quiet practice session with the warning off, leaving the visible clock available, and note which situations trigger the rush. Bring the sound back in an otherwise similar session if the player wants to compare. A single response cannot reconstruct their learning history. The practical benefit is identifying an interface setting the player can change while working on the separate task of reading the clock.
+
 ## Key Takeaways
 
 Pavlov showed that an association between two stimuli is enough to produce a physiological response, with no decision and no belief involved. Watson claimed to extend that to human emotion with an experiment so methodologically weak that today it counts as historical illustration and not as proof.

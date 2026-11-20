@@ -156,6 +156,12 @@ Attention toutefois au retournement. La recherche systématique de lignes rares 
 
 **Rappelle-toi que le temps non dépensé est perdu.** Ce n'est pas une figure de style : c'est arithmétiquement vrai. Une minute qui reste au tableau quand la partie s'achève n'a produit aucune valeur.
 
+## La place qui vient de se libérer
+
+Suppose qu’un stage d’ouvertures auquel tu avais renoncé annonce une dernière place. Sur une feuille, inscris le thème de la séance, la cadence des exercices, le prix total et le créneau nécessaire. Couvre ensuite le message qui annonce la dernière place. Est-ce que le contenu du stage corrige une difficulté que tu avais déjà identifiée dans tes parties ? Si tu travailles surtout des finales de tours, une place soudain disponible dans un cours sur la Najdorf ne modifie aucune des positions que tu as mal jouées dimanche.
+
+Le raisonnement change si la disponibilité touche réellement l’usage que tu comptes en faire. Un stage en présentiel avec ton partenaire de championnat peut être la seule occasion commune de répéter une préparation. Note alors ce bénéfice précis. Il serait encore pertinent si tu apprenais qu’il reste trois places. Pour tester ta décision, demande-toi quel changement te ferait effectivement renoncer : un partenaire absent, une date incompatible, un niveau annoncé trop avancé. Tu viens de séparer les contraintes concrètes du simple sentiment de devoir répondre immédiatement.
+
 ## Ce qu'il faut retenir
 
 Des biscuits identiques sont jugés meilleurs quand il en reste deux plutôt que dix, et meilleurs encore quand on vient d'en retirer huit. Ce n'est pas la rareté qui agit, c'est la raréfaction : une possibilité qui disparaît est traitée comme une perte.

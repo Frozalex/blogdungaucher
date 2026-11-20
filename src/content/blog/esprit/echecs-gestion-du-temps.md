@@ -118,6 +118,16 @@ Pour quelques parties comparables, relève le temps restant avant le coup et le 
 
 Ce petit relevé corrige un biais rétrospectif fréquent : appeler « trop long » tout coup finalement mauvais et « intuitif » tout coup rapide finalement bon. Le résultat seul ne dit pas si le processus était raisonnable. Tu peux perdre après avoir bien utilisé ton temps ; tu peux gagner malgré une mauvaise répartition. L'objectif est d'améliorer tes prochaines décisions, pas de reconstruire une histoire à partir du score.
 
+## Deux feuilles de pendule pour le même résultat
+
+Imagine un rapide de quinze minutes sans incrément. Après le dixième coup, il te reste onze minutes. Après le vingtième, huit. Tu termines au trentième avec quarante secondes. L'intervalle le plus cher est facile à repérer : entre les coups vingt et trente, tu as dépensé sept minutes et vingt secondes. Cette moyenne ne dit pourtant rien du moment où l'argent a été bien ou mal dépensé. Une longue réflexion peut avoir résolu le problème le plus difficile de la partie.
+
+Reprends cet intervalle en plaçant trois repères. Au vingt et unième coup, tu avais deux plans crédibles. Au vingt-quatrième, une reprise était pratiquement forcée. Au vingt-sixième, une menace imprévue t'a obligé à recalculer. Si la reprise a pris autant de temps que la comparaison des deux plans, cherche ce que tu faisais pendant cet arrêt. Tu pouvais anticiper la suite de l'adversaire, ou simplement repasser pour la troisième fois une variante identique. Les conséquences pour ton prochain entraînement diffèrent.
+
+Refais maintenant le calcul avec un incrément de dix secondes et dix coups effectivement joués dans l'intervalle. Ta pendule a reçu cent secondes. En passant de huit minutes à quarante secondes, tu as donc réfléchi neuf minutes au total : les sept minutes et vingt secondes disparues de l'affichage, plus la minute et quarante secondes ajoutée entre-temps. En comparant deux parties, indique toujours l'incrément et le moment où le temps est enregistré. Sinon, une séance jouée avec incrément peut paraître plus économe qu'elle ne l'a été.
+
+Pour la prochaine rencontre, choisis un seul point de contrôle : regarder le temps restant après avoir réglé la première difficulté sérieuse. Un chiffre lu à cet instant peut encore modifier la façon dont tu répartis les décisions suivantes.
+
 ## Sources
 
 - Guid, M. et Bratko, I. (2006), « Computer Analysis of World Chess Champions », *ICGA Journal*, 29(2), 65–73. [Article original](https://en.chessbase.com/news/2006/world_champions2006.pdf).

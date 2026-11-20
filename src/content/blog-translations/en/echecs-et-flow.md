@@ -113,6 +113,14 @@ Someone absorbed in blitz at two in the morning may be enjoying the experience. 
 
 You can record time spent on chess, ask whether you are seeking the activity for itself or avoiding something else, and maintain a range of valued activities. Use that observation to decide whether your pattern needs adjusting.
 
+## Did you see the position, or only the plan?
+
+Take two games that felt unusually absorbing and stop the replay at the move where the opponent changed the character of the position. Perhaps a pawn break opened a file or a queen exchange made a rook ending possible. Cover your next move. Can you name what your opponent is threatening, which of your pieces lost a defender, and which feature of your old plan is still relevant? Write that answer before reading the evaluation. It is perfectly possible to have enjoyed the original game and discover that you had been pursuing a plan whose conditions had disappeared.
+
+Run the same experiment with a game that felt laborious. A player who spent three uncomfortable minutes checking a sacrifice may have found the only adequate defence. A player who saw a beautiful attacking pattern in seconds may have overlooked an escape square. The two positions give you separate answers to two worthwhile questions: did playing feel absorbing, and did the decisions hold up? A useful practice diary has space for both.
+
+There is a practical reason to keep those questions separate when designing training. If effortless absorption is your sole indicator of quality, you might keep returning to familiar puzzles whose themes you recognise from the picture. To design a more diagnostic session, give a friend six positions: two wins, two draws requiring accurate defence and two where the tempting sacrifice fails. Ask them to mix the order without naming the categories. Set aside a fixed amount of time and allow “I haven't decided” as an answer. Compare the positions you wanted to continue with the positions where you actually found the critical reply. You might choose an absorbing group for fun on Friday and a much less comfortable defensive group for practice on Monday. There is no contradiction in valuing both kinds of session.
+
 ## Sources
 
 - Nakamura, J., & Csikszentmihalyi, M. (2002). *The Concept of Flow*. In *Handbook of Positive Psychology*, Oxford University Press, pp. 89–105. [Chapter](https://nuovoeutile.it/wp-content/uploads/2015/12/2002-Flow.pdf).
