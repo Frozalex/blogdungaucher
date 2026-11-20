@@ -4,7 +4,8 @@ import { categoryMap, categorySlugs } from "../data/site";
 import { swapLangPrefix } from "../utils/lang-paths";
 import { t, type Lang } from "../i18n/translations";
 
-const { frHref, enHref, ptBrHref, nlHref, lang = "fr" } = Astro.props as {
+const { navCategory, frHref, enHref, ptBrHref, nlHref, lang = "fr" } = Astro.props as {
+  navCategory?: string;
   frHref?: string;
   enHref?: string;
   ptBrHref?: string;
@@ -45,22 +46,8 @@ const navUi = {
 } as const;
 const ui = navUi[tLang as keyof typeof navUi] ?? navUi.fr;
 
-const isActive = (href : string) => {
-  const homePaths = ["/fr/", "/en/", "/pt-br/", "/nl/"];
-  if (homePaths.includes(href)) {
-    return pathname === href;
-  }
-  if (lang === "en") {
-    return href === "/en/" ? pathname === "/en/" : pathname.startsWith(href);
-  }
-  if (lang === "pt-br") {
-    return href === "/pt-br/" ? pathname === "/pt-br/" : pathname.startsWith(href);
-  }
-  if (lang === "nl") {
-    return href === "/nl/" ? pathname === "/nl/" : pathname.startsWith(href);
-  }
-  return href === "/fr/" ? pathname === "/fr/" : pathname.startsWith(href);
-};
+const isActive = (href: string) =>
+  pathname.startsWith(href) || rubriques.some(item => item.href === href && item.slug === navCategory);
 
 // Correspondance href → clé de traduction navLinks
 const linkKey : Record<string, string> = {
@@ -103,17 +90,27 @@ const rubriques = categorySlugs
     href: lang === "fr" ? categoryMap[slug].href : swapLangPrefix(categoryMap[slug].href, lang),
     accent: categoryMap[slug].accent,
   }));
+const library = {
+  fr: {name:"Bibliothèque", saved:"Mes lectures", browse:"Parcourir", resources:"Consulter"},
+  en: {name:"Library", saved:"My reading", browse:"Browse", resources:"Resources"},
+  "pt-br": {name:"Biblioteca", saved:"Minhas leituras", browse:"Explorar", resources:"Consultar"},
+  nl: {name:"Bibliotheek", saved:"Mijn leeslijst", browse:"Bladeren", resources:"Naslagwerken"},
+}[lang];
+const savedHref = `/${lang}/lectures/`;
 const menuGroups = [
-  {label:E.read,items:[{label:E.all,href:`/${lang}/blog/`,accent:"var(--green)",key:"navLinks.blog"},{label:{fr:"Mes lectures",en:"My reading","pt-br":"Minhas leituras",nl:"Mijn leeslijst"}[lang],href:`/${lang}/lectures/`,accent:"var(--green)",key:""},...(lang!=="nl"?[{label:E.series,href:`/${lang}/series/`,accent:"var(--green)",key:"navLinks.series"}]:[]),...((lang==="fr"||lang==="en")?[{label:E.essays,href:`/${lang}/dissertations/`,accent:"var(--green)",key:"navLinks.dissertations"}]:[])]},
-  {label:E.understand,items:[{label:E.search,href:`/${lang}/recherche/`,accent:"var(--green)",key:""},...(lang==="fr"?[{label:"L’Atlas du Gaucher",href:"/fr/infographie/",accent:"var(--green)",key:""},{label:"Glossaire",href:"/fr/glossaire/",accent:"var(--green)",key:""}]:[])]},
-  {label:E.media,items:[{label:E.about,href:`/${lang}/about/`,accent:"var(--green)",key:"navLinks.about"},{label:E.contact,href:`/${lang}/contact/`,accent:"var(--green)",key:"navLinks.contact"}]},
+  { label: library.browse, items: [
+    { label: E.all, href: `/${lang}/blog/` },
+    ...(lang !== "nl" ? [{label: E.series, href: `/${lang}/series/`}] : []),
+    ...(lang === "fr" || lang === "en" ? [{label: E.essays, href: `/${lang}/dissertations/`}] : []),
+  ]},
+  ...(lang === "fr" ? [{ label: library.resources, items: [
+    {label:"L’Atlas du Gaucher", href:"/fr/infographie/"},
+    {label:"Glossaire des échecs", href:"/fr/glossaire/"},
+  ]}] : []),
 ];
-const articlesMenu=menuGroups.flatMap(group=>group.items);
-const exploreLabel=E.explore;
-const articlesActive = articlesMenu.some((item) => pathname.startsWith(item.href));
+const exploreLabel = library.name;
+const articlesActive = !navCategory && (pathname === savedHref || menuGroups.some(group => group.items.some(item => isActive(item.href))));
 
-/** En français, les quatre rubriques sont directement visibles. Explorer rassemble
- *  les formats, les ressources et le média. L'ordre du DOM reste celui de lecture. */
 type NavEntry =
   | { kind: "link"; label: string; href: string }
   | { kind: "articles" };
@@ -155,6 +152,7 @@ const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, 
               <svg class="nav-dropdown__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             </button>
             <div class:list={["nav-dropdown__menu", {"nav-dropdown__menu--grouped":true}]} id="nav-explore-menu">
+              <a href={savedHref} class="nav-dropdown__item saved-reading" aria-current={pathname === savedHref ? "page" : undefined}>{library.saved}</a>
               {menuGroups.map(group => <div class="nav-dropdown__group"><span class="nav-dropdown__label">{group.label}</span><ul>{group.items.map(item => <li><a href={item.href} class:list={["nav-dropdown__item",{active:isActive(item.href)}]} aria-current={pathname === item.href ? "page" : isActive(item.href) ? "location" : undefined}>{item.label}</a></li>)}</ul></div>)}
             </div>
           </li>
@@ -239,7 +237,7 @@ const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, 
       id="burger"
       type="button"
     >
-      <span></span><span></span><span></span>
+      Menu
     </button>
   </div>
 
@@ -249,7 +247,7 @@ const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, 
         <>
           <span class="mobile-eyebrow">{E.sections}</span>
           <div class="mobile-rubriques mobile-rubriques--primary">{rubriques.map(item => <a href={item.href} class:list={["mobile-rubrique",{active:isActive(item.href)}]} style={`--fc:${item.accent}`} aria-current={pathname === item.href ? "page" : isActive(item.href) ? "location" : undefined}><span class="nav-dropdown__dot" aria-hidden="true"></span>{item.label}</a>)}</div>
-          <div class="mobile-browse-groups">{menuGroups.map(group => <section><h2 class="mobile-sublabel">{group.label}</h2><ul>{group.items.map(item => <li><a href={item.href} class:list={["mobile-link",{active:isActive(item.href)}]} aria-current={pathname === item.href ? "page" : isActive(item.href) ? "location" : undefined}>{item.label}</a></li>)}</ul></section>)}</div>
+          <div class="mobile-browse-groups"><a href={savedHref} class="nav-dropdown__item saved-reading" aria-current={pathname === savedHref ? "page" : undefined}>{library.saved}</a>{menuGroups.map(group => <section><h2 class="mobile-sublabel">{group.label}</h2><ul>{group.items.map(item => <li><a href={item.href} class:list={["mobile-link",{active:isActive(item.href)}]} aria-current={pathname === item.href ? "page" : isActive(item.href) ? "location" : undefined}>{item.label}</a></li>)}</ul></section>)}</div>
         </>
         <div class="mobile-utils">
           <button
@@ -844,6 +842,8 @@ const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, 
     .navbar--editorial .logo-text { min-width:0; overflow:hidden; text-overflow:ellipsis; font-size:1rem; }
   }
   @media(prefers-reduced-motion:reduce) { .navbar,.navbar * { transition:none!important; } }
+  .saved-reading { grid-column: 1 / -1; font-weight: 650; }
+  .burger { width: auto; padding-inline: .65rem; align-items: center; font: inherit; color: var(--text-main); }
 </style>
 
 <script>

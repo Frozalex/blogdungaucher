@@ -3,9 +3,11 @@ import PushSubscribe from "./PushSubscribe.astro";
 import { t, type Lang } from "../i18n/translations";
 
 interface Props {
+  pageTitle: string;
+  pageUrl: string;
   lang?: "fr" | "en" | "pt-br" | "nl";
 }
-const { lang = "fr" } = Astro.props;
+const { lang = "fr", pageTitle, pageUrl } = Astro.props;
 const editorialHome = true;
 
 const aboutHref =
@@ -34,6 +36,24 @@ const tt = (key: string, fallback: string) => {
   return v && typeof v === "string" ? v : fallback;
 };
 
+const copy = {
+  fr: {read:"Retrouver une lecture", search:"Rechercher un article", saved:"Mes lectures", all:"Tous les articles", resources:"Ressources", series:"Séries", essays:"Dissertations", exchange:"Échanger et suivre", error:"Signaler une erreur", topic:"Proposer un sujet", rss:"Flux RSS"},
+  en: {read:"Find a read", search:"Search articles", saved:"My reading", all:"All articles", resources:"Resources", series:"Series", essays:"Essays", exchange:"Contact and updates", error:"Report an error", topic:"Suggest a topic", rss:"RSS feed"},
+  "pt-br": {read:"Encontre uma leitura", search:"Buscar um artigo", saved:"Minhas leituras", all:"Todos os artigos", resources:"Recursos", series:"Séries", essays:"Ensaios", exchange:"Contato e novidades", error:"Informar um erro", topic:"Sugerir um tema", rss:"Feed RSS"},
+  nl: {read:"Artikelen vinden", search:"Zoek een artikel", saved:"Mijn leeslijst", all:"Alle artikelen", resources:"Bronnen", series:"Reeksen", essays:"Essays", exchange:"Contact en updates", error:"Een fout melden", topic:"Een onderwerp voorstellen", rss:"RSS-feed (Frans)"},
+}[lang];
+const resourceLinks = lang === "fr" ? [
+  {label:"Atlas du Gaucher", href:"/fr/infographie/"},
+  {label:"Glossaire des échecs", href:"/fr/glossaire/"},
+  {label:"Préparer mon Grand oral", href:"/fr/grand-oral/"},
+] : [
+  ...(lang !== "nl" ? [{label:copy.series, href:`/${lang}/series/`}] : []),
+  ...(lang === "en" ? [{label:copy.essays, href:"/en/dissertations/"}] : []),
+];
+const rssHref = lang === "en" || lang === "pt-br" ? `/${lang}/rss.xml` : "/rss.xml";
+const mail = "mailto:contact@blogdungaucher.com?subject=";
+const reportHref = mail + encodeURIComponent(copy.error + " · " + pageTitle) + "&body=" + encodeURIComponent(pageUrl + "\n\n");
+
 ---
 
 <footer class:list={["footer", { "footer--editorial": editorialHome }]} data-pagefind-ignore>
@@ -47,9 +67,6 @@ const tt = (key: string, fallback: string) => {
         {tt("footer.tagline", "Un espace éditorial indépendant pour explorer les échecs en profondeur, avec des contenus utiles et actionnables.")}
       </p>
       <PushSubscribe lang={lang} />
-      <a class="footer-contact" href="mailto:contact@blogdungaucher.com" data-t="footer.suggestTopic">
-        {tt("footer.suggestTopic", "Proposer un sujet ou poser une question")}
-      </a>
     </div>
 
     <div class="footer-vertical-divider" aria-hidden="true"></div>
@@ -57,21 +74,27 @@ const tt = (key: string, fallback: string) => {
     <nav class:list={["footer-nav-col", { "fade-up": !editorialHome }]} style="--motion-delay: 120ms;" aria-label={{fr:"Navigation du pied de page",en:"Footer navigation","pt-br":"Navegação do rodapé",nl:"Voettekstnavigatie"}[lang]}>
 
       <div class="footer-col-group">
-        <h2 class="footer-col-label" data-t="footer.exploreTitle">{tt("footer.exploreTitle", "Explorer")}</h2>
-        <a href={aboutHref} data-t="footer.editorial">{tt("footer.editorial", "Ligne éditoriale")}</a>
-        {lang === "fr" && <a href="/fr/glossaire/">Glossaire</a>}
-        {lang === "fr" && <a href="/fr/infographie/">Explorer l’Atlas</a>}
+        <h2 class="footer-col-label">{copy.read}</h2>
+        <a href={`/${lang}/recherche/`}>{copy.search}</a>
+        <a href={`/${lang}/lectures/`}>{copy.saved}</a>
+        <a href={`/${lang}/blog/`}>{copy.all}</a>
       </div>
-
+      {resourceLinks.length > 0 && <div class="footer-col-group">
+        <h2 class="footer-col-label">{copy.resources}</h2>
+        {resourceLinks.map(link => <a href={link.href}>{link.label}</a>)}
+      </div>}
       <div class="footer-col-group">
-        <h2 class="footer-col-label" data-t="footer.trustTitle">{tt("footer.trustTitle", "Confiance")}</h2>
+        <h2 class="footer-col-label">{copy.exchange}</h2>
+        <a href={reportHref}>{copy.error}</a>
+        <a href={mail + encodeURIComponent(copy.topic)}>{copy.topic}</a>
+        <a href={rssHref}>{copy.rss}</a>
         <button
           type="button"
           class="footer-text-link"
           id="footer-open-notification-settings"
           data-t="footer.notificationSettings"
         >{tt("footer.notificationSettings", "Notifications")}</button>
-        <a href={accessibilityHref} data-t="footer.accessibility">{tt("footer.accessibility", "Accessibilité")}</a>
+
       </div>
 
     </nav>
@@ -82,6 +105,7 @@ const tt = (key: string, fallback: string) => {
     <div class="container footer-bottom-bar__inner">
       <p>&copy; {new Date().getFullYear()} <span data-t="nav.siteName">{tt("nav.siteName", "Blog d'un Gaucher")}</span></p>
       <div class="footer-bottom-links">
+        <a href={accessibilityHref} data-t="footer.accessibility">{tt("footer.accessibility", "Accessibilité")}</a>
         <a href={legalHref} data-t="footer.legal">{tt("footer.legal", "Mentions légales")}</a>
         <a href={termsHref}>{termsLabel}</a>
         <a href={privacyHref} data-t="footer.privacy">{tt("footer.privacy", "Confidentialité")}</a>
@@ -218,7 +242,7 @@ const tt = (key: string, fallback: string) => {
   ══════════════════════════════════════════ */
   .footer-body {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: minmax(12rem,.7fr) auto minmax(0,1.8fr);
     gap: 0 3rem;
     padding: 2.75rem 0 2.5rem;
     align-items: start;
@@ -288,14 +312,14 @@ const tt = (key: string, fallback: string) => {
   /* Navigation droite */
   .footer-nav-col {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
     gap: 1.5rem 1rem;
     align-items: start;
   }
 
   @media (max-width: 500px) {
     .footer-nav-col {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
     }
   }
 

@@ -126,6 +126,7 @@ const structuredData = [
   type="article"
   publishDate={post.data.publishDate}
   modifiedDate={post.data.updatedDate ?? post.data.publishDate}
+  navCategory={post.data.category}
   section={category.label}
   structuredData={structuredData}
   accentColor={category.accent}
