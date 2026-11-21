@@ -209,6 +209,15 @@ Le fichier `deploy/nginx-redirects.conf` est un **snippet** (un morceau de confi
 3. Teste la configuration (`nginx -t`).
 4. Recharge nginx sans interruption (`systemctl reload nginx`).
 
+**Accueil multilingue :** `/` sert désormais `dist/index.html` avec un choix de langue,
+sans redirection automatique. Après déploiement de cette modification, lancer
+`sudo bash /var/www/site/repo/deploy/activate-nginx-redirects.sh` sur le VPS pour
+retirer l'ancienne règle `location = / { return 301 /fr/; }` du snippet actif.
+Vérifier ensuite que `curl -sI https://blogdungaucher.com/` répond `200` sans
+`Location`, puis que les liens de langue ouvrent les accueils correspondants.
+Un navigateur ayant mémorisé l'ancienne 301 peut nécessiter un effacement du cache
+ou un premier essai en navigation privée.
+
 > **Différence nginx vs Astro pour les redirections :** le fichier `astro.config.mjs` déclare aussi des redirections (via la clé `redirects`), mais il génère des pages HTML avec une balise meta-refresh (redirection côté navigateur, lente). Les redirections nginx sont des **vraies 301 HTTP** (gérées par le serveur, instantanées, mieux comprises par Google). Les deux coexistent : les redirections Astro servent de filet de sécurité côté dist, les redirections nginx sont les « vraies ».
 
 ---
