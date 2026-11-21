@@ -358,7 +358,7 @@ const structuredData = [
     {relatedWithUrls.length > 0 && (
       <section class="related-carousel container" aria-label="Aanbevolen artikelen" data-pagefind-ignore>
         <div class="related-carousel__head">
-          <span class="related-carousel__label">Voor jou</span>
+          <h2 class="related-carousel__label">Voor jou</h2>
           <div class="related-carousel__nav">
             <CarouselRotation lang="nl" />
             <button type="button" class="rc-btn" data-rc-prev aria-label="Vorige artikelen">
@@ -597,7 +597,7 @@ const structuredData = [
     border-radius: var(--radius-lg);
   }
   .related-carousel__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; }
-  .related-carousel__label { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text-main); }
+  .related-carousel__label { margin: 0; font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text-main); }
   .related-carousel__label::before {
     content: ""; display: inline-block; width: 0.55rem; height: 0.55rem;
     margin-right: 0.55rem; border-radius: 50%; background: var(--green); vertical-align: middle;

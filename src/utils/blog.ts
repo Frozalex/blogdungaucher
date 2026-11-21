@@ -149,12 +149,13 @@ export type SiteLang = "fr" | "en" | "pt-br" | "nl";
  */
 export async function getLocalizedPostText(post: BlogEntry, lang: SiteLang) {
   const frAlt = post.data.heroImage?.alt ?? null;
-  const fallback = { title: post.data.title, excerpt: post.data.excerpt, heroImageAlt: frAlt };
+  const fallback = { textLang: "fr", title: post.data.title, excerpt: post.data.excerpt, heroImageAlt: frAlt };
   if (lang === "fr") return fallback;
 
   const frSlug = getPostSlug(post);
 
   const localized = (entry: { data: { title: string; excerpt: string; heroImageAlt?: string } }) => ({
+    textLang: lang,
     title: entry.data.title,
     excerpt: entry.data.excerpt,
     // Une traduction sans `heroImageAlt` retombe sur l'alt FR : mieux qu'un alt

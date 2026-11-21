@@ -23,7 +23,7 @@ const TitleTag = headingLevel === 2 || (headingLevel === undefined && (lead || f
 const category = getCategoryMeta(post.data.category);
 
 // Titre/extrait/alt dans la langue de la page (retombe sur le FR si pas de traduction publiée).
-const { title: postTitle, excerpt: postExcerpt, heroImageAlt } = await getLocalizedPostText(post, lang);
+const { textLang, title: postTitle, excerpt: postExcerpt, heroImageAlt } = await getLocalizedPostText(post, lang);
 
 // Étiquettes localisées (server-side, indexable par les moteurs).
 const tLang: Lang = (lang === "pt-br" || lang === "nl") ? lang : (lang as Lang);
@@ -80,8 +80,8 @@ const postHref = await getPostUrlLang(post, lang as "fr" | "en" | "pt-br" | "nl"
       <span class="card-time">{post.data.readingTime}</span>
     </div>
 
-    <TitleTag class="card-title">{postTitle}</TitleTag>
-    <p class="card-excerpt">{postExcerpt}</p>
+    <TitleTag class="card-title" lang={textLang !== lang ? textLang : undefined}>{postTitle}</TitleTag>
+    <p class="card-excerpt" lang={textLang !== lang ? textLang : undefined}>{postExcerpt}</p>
 
     <div class="card-bottom">
       <time datetime={post.data.publishDate.toISOString()} class="card-date">
