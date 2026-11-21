@@ -462,6 +462,7 @@ const umamiUrl     = import.meta.env.PUBLIC_UMAMI_URL        ?? "https://stats.b
 
   </head>
   <body class="site-blogvi" style={accentColor ? `--page-accent:${accentColor}` : ""}>
+    <a class="skip-link" href="#main-content">{{fr: "Aller au contenu principal", en: "Skip to main content", "pt-br": "Ir para o conteúdo principal", nl: "Ga naar de hoofdinhoud"}[lang]}</a>
     <Navbar navCategory={navCategory} frHref={resolvedFrPath} enHref={enSwitchHref} ptBrHref={ptBrSwitchHref} nlHref={nlSwitchHref} lang={lang} />
     {/* Le contenu principal peut recevoir le focus après une navigation. */}
     <main id="main-content" tabindex="-1">

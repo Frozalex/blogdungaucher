@@ -153,7 +153,7 @@ const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, 
             </button>
             <div class:list={["nav-dropdown__menu", {"nav-dropdown__menu--grouped":true}]} id="nav-explore-menu">
               <a href={savedHref} class="nav-dropdown__item saved-reading" aria-current={pathname === savedHref ? "page" : undefined}>{library.saved}</a>
-              {menuGroups.map(group => <div class="nav-dropdown__group"><span class="nav-dropdown__label">{group.label}</span><ul>{group.items.map(item => <li><a href={item.href} class:list={["nav-dropdown__item",{active:isActive(item.href)}]} aria-current={pathname === item.href ? "page" : isActive(item.href) ? "location" : undefined}>{item.label}</a></li>)}</ul></div>)}
+              {menuGroups.map((group, i) => <div class="nav-dropdown__group"><span class="nav-dropdown__label" id={`desktop-browse-label-${i}`}>{group.label}</span><ul aria-labelledby={`desktop-browse-label-${i}`}>{group.items.map(item => <li><a href={item.href} class:list={["nav-dropdown__item",{active:isActive(item.href)}]} aria-current={pathname === item.href ? "page" : isActive(item.href) ? "location" : undefined}>{item.label}</a></li>)}</ul></div>)}
             </div>
           </li>
         ))}
@@ -247,7 +247,7 @@ const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, 
         <>
           <span class="mobile-eyebrow">{E.sections}</span>
           <div class="mobile-rubriques mobile-rubriques--primary">{rubriques.map(item => <a href={item.href} class:list={["mobile-rubrique",{active:isActive(item.href)}]} style={`--fc:${item.accent}`} aria-current={pathname === item.href ? "page" : isActive(item.href) ? "location" : undefined}><span class="nav-dropdown__dot" aria-hidden="true"></span>{item.label}</a>)}</div>
-          <div class="mobile-browse-groups"><a href={savedHref} class="nav-dropdown__item saved-reading" aria-current={pathname === savedHref ? "page" : undefined}>{library.saved}</a>{menuGroups.map(group => <section><h2 class="mobile-sublabel">{group.label}</h2><ul>{group.items.map(item => <li><a href={item.href} class:list={["mobile-link",{active:isActive(item.href)}]} aria-current={pathname === item.href ? "page" : isActive(item.href) ? "location" : undefined}>{item.label}</a></li>)}</ul></section>)}</div>
+          <div class="mobile-browse-groups"><a href={savedHref} class="nav-dropdown__item saved-reading" aria-current={pathname === savedHref ? "page" : undefined}>{library.saved}</a>{menuGroups.map((group, i) => <div class="mobile-browse-group"><p class="mobile-sublabel" id={`mobile-browse-label-${i}`}>{group.label}</p><ul aria-labelledby={`mobile-browse-label-${i}`}>{group.items.map(item => <li><a href={item.href} class:list={["mobile-link",{active:isActive(item.href)}]} aria-current={pathname === item.href ? "page" : isActive(item.href) ? "location" : undefined}>{item.label}</a></li>)}</ul></div>)}</div>
         </>
         <div class="mobile-utils">
           <button
@@ -824,11 +824,11 @@ const navEntries: NavEntry[] = [...rubriques.map(r => ({ kind: "link" as const, 
   .mobile-rubriques--primary { grid-template-columns:1fr 1fr; gap:.5rem; }
   .mobile-rubriques--primary .mobile-rubrique { border:1px solid var(--border-strong); border-radius:3px; min-height:3rem; padding:.6rem .75rem; font-size:.92rem; }
   .mobile-browse-groups { display:grid; grid-template-columns:1fr 1fr; gap:1.1rem; margin-top:1.25rem; }
-  .mobile-browse-groups h2 { margin:0 0 .45rem; font-family:var(--font-body); font-size:.65rem; font-weight:650; color:var(--green); }
+  .mobile-browse-groups .mobile-sublabel { line-height:1.12; margin:0 0 .45rem; font-family:var(--font-body); font-size:.65rem; font-weight:650; color:var(--green); }
   .mobile-browse-groups ul { list-style:none; margin:0; padding:0; }
   .mobile-browse-groups .mobile-link { display:flex; align-items:center; min-height:2.75rem; padding:.5rem .35rem; font-size:.88rem; border-radius:3px; }
-  .mobile-browse-groups section:last-child { grid-column:1/-1; border-top:1px solid var(--border-strong); padding-top:.8rem; }
-  .mobile-browse-groups section:last-child ul { display:grid; grid-template-columns:1fr 1fr; gap:1.1rem; }
+  .mobile-browse-group:last-child { grid-column:1/-1; border-top:1px solid var(--border-strong); padding-top:.8rem; }
+  .mobile-browse-group:last-child ul { display:grid; grid-template-columns:1fr 1fr; gap:1.1rem; }
   .mobile-utils { border-top:1px solid var(--border-strong); padding-top:1rem; margin-top:.8rem; gap:.75rem; }
   .mobile-util-btn { font-family:var(--font-body); border-radius:3px; padding:.6rem; }
   .mobile-lang { border-radius:3px; }

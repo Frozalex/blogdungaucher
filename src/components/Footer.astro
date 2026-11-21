@@ -73,18 +73,18 @@ const reportHref = mail + encodeURIComponent(copy.error + " · " + pageTitle) + 
 
     <nav class:list={["footer-nav-col", { "fade-up": !editorialHome }]} style="--motion-delay: 120ms;" aria-label={{fr:"Navigation du pied de page",en:"Footer navigation","pt-br":"Navegação do rodapé",nl:"Voettekstnavigatie"}[lang]}>
 
-      <div class="footer-col-group">
-        <h2 class="footer-col-label">{copy.read}</h2>
+      <div class="footer-col-group" role="group" aria-labelledby="footer-read-label">
+        <p class="footer-col-label" id="footer-read-label">{copy.read}</p>
         <a href={`/${lang}/recherche/`}>{copy.search}</a>
         <a href={`/${lang}/lectures/`}>{copy.saved}</a>
         <a href={`/${lang}/blog/`}>{copy.all}</a>
       </div>
-      {resourceLinks.length > 0 && <div class="footer-col-group">
-        <h2 class="footer-col-label">{copy.resources}</h2>
+      {resourceLinks.length > 0 && <div class="footer-col-group" role="group" aria-labelledby="footer-resources-label">
+        <p class="footer-col-label" id="footer-resources-label">{copy.resources}</p>
         {resourceLinks.map(link => <a href={link.href}>{link.label}</a>)}
       </div>}
-      <div class="footer-col-group">
-        <h2 class="footer-col-label">{copy.exchange}</h2>
+      <div class="footer-col-group" role="group" aria-labelledby="footer-exchange-label">
+        <p class="footer-col-label" id="footer-exchange-label">{copy.exchange}</p>
         <a href={reportHref}>{copy.error}</a>
         <a href={mail + encodeURIComponent(copy.topic)}>{copy.topic}</a>
         <a href={rssHref}>{copy.rss}</a>
@@ -330,6 +330,7 @@ const reportHref = mail + encodeURIComponent(copy.error + " · " + pageTitle) + 
   }
 
   .footer-col-label {
+    line-height: 1.12;
     font-size: 0.7rem;
     font-family: var(--font-display);
     font-weight: 700;
