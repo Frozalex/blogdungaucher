@@ -121,7 +121,7 @@ Een applicatie openen en op "nieuwe partij" klikken is een perfecte gewoonte. Ki
 
 **De beloning is onmiddellijk.** Drie minuten later weet je of je gewonnen hebt.
 
-**En vooral, ze is variabel.** Je weet vooraf niet of je gaat winnen. Dit type beloning, onvoorspelbaar maar frequent, is verreweg de krachtigste bekende versterker, en het is ook die van gokautomaten. Een komend artikel in deze reeks, gewijd aan operante conditionering, behandelt dit mechanisme in detail, dat ons artikel over [dopamine en schaken](https://blogdungaucher.com/fr/blog/echecs-et-dopamine/) benadert vanuit de neurochemie.
+**En vooral, ze is variabel.** Je weet vooraf niet of je gaat winnen. Dit type beloning, onvoorspelbaar maar frequent, is verreweg de krachtigste bekende versterker, en het is ook die van gokautomaten. Een komend artikel in deze reeks, gewijd aan operante conditionering, behandelt dit mechanisme in detail, dat ons artikel over [dopamine en schaken](/nl/blog/dopamine-en-schaken/) benadert vanuit de neurochemie.
 
 ### Wat "trainen" onmogelijk maakt
 

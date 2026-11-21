@@ -21,7 +21,7 @@ De psychologie onderscheidt twee vormen van perfectionisme met radicaal verschil
 
 **Maladaptief perfectionisme** (of toxisch) wordt gekenmerkt door onmogelijk hoge normen, een onvermogen om tevreden te zijn zelfs met uitstekende prestaties, en een emotioneel buitensporige reactie op fouten. De toxische perfectionist is nooit tevreden, leeft in permanente angst voor fouten, en stelt belangrijke taken vaak uit om het risico van een "onvolmaakte" prestatie te vermijden.
 
-Onderzoekers als [Gordon Flett](https://en.wikipedia.org/wiki/Perfectionism_(psychology)) en Paul Hewitt ontwikkelden meetschalen voor perfectionisme die deze twee vormen onderscheiden. Het onderzoek toont systematisch dat maladaptief perfectionisme geassocieerd is met angst, depressie, uitstelgedrag en suboptimale prestaties in competitieve domeinen.
+Onderzoekers als [Gordon Flett](https://en.wikipedia.org/wiki/Perfectionism_(psychology)) en Paul Hewitt ontwikkelden meetschalen voor perfectionisme die deze twee vormen onderscheiden. Het onderzoek toont systematisch dat maladaptief perfectionisme geassocieerd is met angst, depressie, [uitstelgedrag](/nl/blog/uitstelgedrag-schaken/) en suboptimale prestaties in competitieve domeinen.
 
 ## Hoe toxisch perfectionisme zich bij schaken manifesteert
 

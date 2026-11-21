@@ -40,7 +40,7 @@ Le vocabulaire des mécanismes de défense peut aider à réfléchir à ta mani�
 
 Dans ce cadre psychologique, une défense désigne une façon de gérer un conflit ou un affect difficile, parfois sans en avoir conscience. L’idée n’est pas équivalente à un mensonge délibéré. Mais tu ne peux pas non plus conclure qu’une explication est inconsciente simplement parce qu’elle t’agace.
 
-Le bruit ou un mauvais réglage de pendule peuvent réellement poser problème. Avant d’y voir une excuse, distingue le fait vérifiable de l’interprétation.
+Le bruit ou un mauvais réglage de pendule peuvent réellement poser problème. Avant d’y voir une excuse, distingue le fait vérifiable de l’interprétation. Si un adversaire te dérange à plusieurs reprises, tu peux [décrire la gêne à l’arbitre](/fr/blog/manipulation-emotionnelle-aux-echecs/) sans avoir à prouver une intention.
 
 ![Distinguer un fait observé, une explication possible et une conclusion encore à vérifier.](/images/defenses-observation.svg)
 

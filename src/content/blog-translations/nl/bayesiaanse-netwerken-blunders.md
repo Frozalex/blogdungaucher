@@ -81,11 +81,11 @@ Empirische studies over partijdatabases hebben de risicofactoren voor blunders g
 
 Het bayesiaanse perspectief op blunders heeft een directe strategische consequentie. Als je kunt inschatten dat jouw complicaties een hoge kans op tegenstander-fouten creëren, zelfs in een objectief licht minderwaardige stelling, kan compliceren de beste strategie zijn.
 
-Dit is een beslissing onder onzekerheid: de winstkans in de gecompliceerde lijn (objectief nadelig maar met hoog risico op tegenstander-fouten) vergelijken met de eenvoudigere lijn (gelijk of licht voordelig maar met laag foutenrisico).
+Dit is een [beslissing onder onzekerheid](/nl/blog/beslissen-onder-onzekerheid-schaken/): de winstkans in de gecompliceerde lijn (objectief nadelig maar met hoog risico op tegenstander-fouten) vergelijken met de eenvoudigere lijn (gelijk of licht voordelig maar met laag foutenrisico).
 
 In bayesiaanse termen: als $P(\text{blunder} | \text{complicatie}) > \text{drempel}$ hoog genoeg is om het objectieve nadeel van de complicatie te compenseren, is compliceren correct. Deze "drempel" hangt af van de context: in een toernooi waar je een overwinning nodig hebt, is de weging anders dan in een partij waarbij remise volstaat.
 
-[Bobby Fischer](https://nl.wikipedia.org/wiki/Bobby_Fischer) had een reputatie van complicaties te vermijden tenzij zijn analyse hem een duidelijk voordeel gaf. [Tal](https://nl.wikipedia.org/wiki/Michail_Tal) zocht daarentegen systematisch complicaties en deedde impliciet een inzet op een hoge kans op tegenstander-fouten in de chaotische stellingen die hij creëerde. Beide benaderingen zijn consistent met verschillende bayesiaanse schattingen van het tegenstander-foutenrisico.
+[Bobby Fischer](https://nl.wikipedia.org/wiki/Bobby_Fischer) had een reputatie van complicaties te vermijden tenzij zijn analyse hem een duidelijk voordeel gaf. [Tal](https://nl.wikipedia.org/wiki/Michail_Tal) zocht daarentegen systematisch complicaties en deedde impliciet een inzet op een hoge kans op tegenstander-fouten in de [chaotische stellingen](/nl/blog/chaostheorie-schaken/#quotchaotischequot-stellingen-als-strategie) die hij creëerde. Beide benaderingen zijn consistent met verschillende bayesiaanse schattingen van het tegenstander-foutenrisico.
 
 Anish Giri, die bekendstaat om zijn degelijkheid, past de omgekeerde logica toe: hij vermijdt complicaties in gelijke stellingen tenzij zijn analyse uitwijst dat zijn kans op succes duidelijk hoger is dan die van de tegenstander. Jan Timman, aan de andere kant van het spectrum, stond in zijn hoogtijdagen bekend om zijn bereidheid complexiteit te creëren zelfs vanuit matig voordelige posities.
 
@@ -103,7 +103,7 @@ Het bayesiaanse model heeft belangrijke beperkingen in deze context. De voornaam
 
 Voor de amateurschaker blijft het redeneren nuttig maar minder precies. De kansen zijn generieke priors op basis van statistieken van spelers van hetzelfde niveau, niet op basis van individuele data.
 
-Een andere beperking is het bevestigingsbias: door te zoeken naar signalen van blunderrisico bij de tegenstander, riskeer je te vinden wat je zoekt, zelfs als het er niet werkelijk is. De bayesiaanse discipline vereist ook de bewijzen tégen de hypothese te overwegen.
+Een andere beperking is het [bevestigingsbias](/nl/blog/bevestigingsvooroordeel-schaken/): door te zoeken naar signalen van blunderrisico bij de tegenstander, riskeer je te vinden wat je zoekt, zelfs als het er niet werkelijk is. De bayesiaanse discipline vereist ook de bewijzen tégen de hypothese te overwegen.
 
 ## Praktische toepassingen voor de pratische speler
 

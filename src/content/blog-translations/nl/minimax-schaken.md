@@ -62,7 +62,7 @@ Waarbij $p$ de huidige stelling is, $d$ de resterende zoekdiepte, $Z(p)$ de verz
 
 ## De evaluatiefunctie: het hart van de engine
 
-Zuivere minimax zou schaken perfect oplossen als je de volledige boom tot eindstellingen kon verkennen. In de praktijk is dat onmogelijk vanwege de combinatorische complexiteit ($10^{120}$ bladeren volgens [Claude Shannon](https://nl.wikipedia.org/wiki/Claude_Shannon)). De zoekactie moet worden gestopt op een eindige diepte en niet-eindstellingen moeten worden geëvalueerd met een **heuristische evaluatiefunctie**.
+Zuivere minimax zou schaken perfect oplossen als je de volledige boom tot eindstellingen kon verkennen. In de praktijk is dat onmogelijk vanwege de [combinatorische complexiteit](/nl/blog/algoritmische-complexiteit-schaken/#de-spelenboom-en-de-vloek-van-de-combinatorische-explosie) ($10^{120}$ bladeren volgens [Claude Shannon](https://nl.wikipedia.org/wiki/Claude_Shannon)). De zoekactie moet worden gestopt op een eindige diepte en niet-eindstellingen moeten worden geëvalueerd met een **heuristische evaluatiefunctie**.
 
 Moderne engines zoals [Stockfish](https://nl.wikipedia.org/wiki/Stockfish_(schaakprogramma)) gebruiken uiterst geavanceerde evaluatiefuncties die integreren:
 

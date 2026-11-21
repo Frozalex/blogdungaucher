@@ -152,7 +152,7 @@ De feedback wordt ontvangen, maar niet als een meting behandeld. Ze wordt behand
 
 De rating meet een score onder gegeven omstandigheden. De speler zelf weet veel dingen die de rating niet weet: dat hij moe was in ronde 5, dat hij beter speelt als hij zich voorbereid heeft, dat hij een moeilijke maand doormaakte, dat hij twee winnende partijen op tijd verloor. Elk van deze informatie is **waar**. En elk levert een legitieme reden om te denken dat het getal het niveau onderschat.
 
-Het probleem is niet de informatie, het is de asymmetrie in het gebruik ervan. Deze omstandigheden worden aangehaald om nederlagen te verklaren, bijna nooit om overwinningen te relativeren. Niemand zegt "ik won deze partij maar mijn tegenstander was ziek, dus mijn rating overschat me". Deze eenrichtingsbehandeling heeft een naam, en dat is het onderwerp van een ander, komend artikel in deze reeks: **rationalisatie**.
+Het probleem is niet de informatie, het is de asymmetrie in het gebruik ervan. Deze omstandigheden worden aangehaald om nederlagen te verklaren, bijna nooit om overwinningen te relativeren. Niemand zegt "ik won deze partij maar mijn tegenstander was ziek, dus mijn rating overschat me". Deze eenrichtingsbehandeling heeft een naam, en dat is het onderwerp van ons artikel over afweermechanismen: **[rationalisatie](/nl/blog/verdedigingsmechanismen-schaken/)**.
 
 ### Het geheugen slaat geen representatieve steekproef op
 

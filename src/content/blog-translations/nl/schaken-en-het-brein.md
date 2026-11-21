@@ -57,7 +57,7 @@ Ook bij ouder worden helpt het de uitkomst scherp te houden. Een clubavond kan v
 
 Kies uit je laatste partij drie momenten waarop je twijfelde. Schrijf vóór de computeranalyse op wat je tegenstander dreigde, welke zet je overwoog en welk antwoord je verwachtte. Speel daarna de kritieke variant op het bord na. Sloeg je een zet over in de berekening? Zag je een verdediger over het hoofd? Of kende je het patroon nog niet?
 
-Elk antwoord leidt naar een andere volgende oefening. Bij een gemiste diagonaal zoek je een nieuwe stelling waarin een loper op afstand werkt. Bij een fout in een berekende variant speel je de zetten langzamer na en noteer je op welke zet het beeld van het bord onjuist werd. Controleer een paar dagen later met een andere stelling of je het beslissende verband zelf vindt. Zo meet je vooruitgang op precies de vaardigheid die je wilde trainen.
+Elk antwoord leidt naar een andere volgende oefening. Bij een gemiste diagonaal zoek je een nieuwe stelling waarin een loper op afstand werkt. Bij een fout in een berekende variant speel je de zetten langzamer na en noteer je op welke zet [het beeld van het bord](/nl/blog/schaken-en-ruimtelijk-inzicht/) onjuist werd. Controleer een paar dagen later met een andere stelling of je het beslissende verband zelf vindt. Zo meet je vooruitgang op precies de vaardigheid die je wilde trainen.
 
 ## Een kleine proef met een schaakbord, papier en twee enveloppen
 

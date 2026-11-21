@@ -58,7 +58,7 @@ Un pourcentage de licenciés ayant un parent diplômé ne peut pas être avancé
 
 Lichess présente un accès gratuit et un financement par les dons. Cela documente une modalité d'accès aux outils. On ne peut pas en déduire que tous les obstacles sociaux ont disparu : équipement, disponibilité, accompagnement et connaissance des ressources restent des questions à examiner.
 
-Inversement, l'existence d'un coût ne prouve pas une exclusion totale. Clubs, établissements, associations et aides peuvent modifier les conditions d'accès. Leur effet doit être étudié plutôt que présumé à partir d'une biographie de champion.
+Inversement, l'existence d'un coût ne prouve pas une exclusion totale. Clubs, établissements, associations et aides peuvent modifier [les conditions d'accès](/fr/blog/echecs-et-precarite/). Leur effet doit être étudié plutôt que présumé à partir d'une biographie de champion.
 
 ## Un exemple institutionnel précis
 

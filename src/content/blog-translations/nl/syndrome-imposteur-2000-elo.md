@@ -63,7 +63,7 @@ Resultaat: de 2000 Elo-speler met sterk impostorsyndroom speelt in belangrijke s
 
 ## Wat "je rating verdienen" echt betekent
 
-Een centrale verwarring bij het schaak-impostorsyndroom is het begrip "je rating verdienen". Veel spelers denken dat ze op aanvraag, perfect consistent, hun maximale niveau moeten kunnen reproduceren.
+Een centrale verwarring bij het schaak-impostorsyndroom is het begrip "[je rating verdienen](/nl/blog/elo-zelfbeeld-schaken/)". Veel spelers denken dat ze op aanvraag, perfect consistent, hun maximale niveau moeten kunnen reproduceren.
 
 In werkelijkheid is het Elo-systeem een statistische schatting. Een 2000 Elo-speler is een speler wiens verwacht resultaat tegen andere 2000-spelers 50 procent is. Niet 100 procent. Niet eens 70 procent. Prestatievariaties, "slechte dagen," suboptimale partijen zijn integrale onderdelen van wat het betekent op 2000 Elo te staan.
 

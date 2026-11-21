@@ -85,7 +85,7 @@ Muitas partidas podem ser reconstruídas a partir de notação ou registros da p
 
 Mensagens, atas e outros registros também podem existir fora do xadrez. Facilitam algumas verificações sem registrar toda a experiência vivida.
 
-Um arquivo não torna uma relação imune à desestabilização. Fornece elementos, não uma leitura completa das intenções.
+Um arquivo não torna uma relação imune à desestabilização. Fornece elementos, não [uma leitura completa das intenções](/pt-br/blog/manipulacao-emocional-no-xadrez/#um-gesto-não-dá-acesso-a-uma-intenção).
 
 A discussão pode envolver os próprios lances, um registro contestado ou aquilo que a notação não estabelece diretamente:
 

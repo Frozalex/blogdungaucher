@@ -74,7 +74,7 @@ Als de engine vóór jou analyseert, verlies je het grootste deel van de waarde 
 
 **Fase 1: Menselijke analyse zonder engine (15-20 minuten)**
 
-Speel de partij mentaal of fysiek na, zet voor zet. Stel je bij elke zet drie vragen:
+Speel de partij mentaal of fysiek na, zet voor zet. Bekijk een kritiek moment ook vanuit [het perspectief van je tegenstander](/nl/blog/spiegelneuronen-schaken/#hoe-je-de-voorspelling-van-een-kenner-nakijkt). Stel je bij elke zet drie vragen:
 
 *"Begreep ik de stelling op dat moment?"* Zo niet, dan is dit een zet om als eerste te analyseren.
 

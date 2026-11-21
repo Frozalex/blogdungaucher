@@ -50,7 +50,7 @@ These are analysis instructions. They are not attributed here to Botvinnik witho
 
 “In their place, I would attack” can be a useful starting point. It can also make you overlook a defence or an exchange you dislike playing yourself. Your hypothesis about the opponent should not close the list of moves to calculate too soon.
 
-A stronger question is: “Which reply makes my idea difficult?” It concerns the position rather than an assumed intention. If several replies work, keep them in the analysis rather than discarding one because it feels unnatural.
+A stronger question is: “[Which reply makes my idea difficult?](/en/blog/confirmation-bias-in-chess/)” It concerns the position rather than an assumed intention. If several replies work, keep them in the analysis rather than discarding one because it feels unnatural.
 
 ![Avoid projecting your own style](/images/en/neurones-miroirs-03-angles-morts-style.svg)
 

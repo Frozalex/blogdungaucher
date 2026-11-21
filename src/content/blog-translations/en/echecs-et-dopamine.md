@@ -45,7 +45,7 @@ An interface enabling successive games makes stopping easy to postpone: that is 
 
 ## Observing what you actually do
 
-For your practice, begin with concrete questions: had you chosen to play this game? How much time did you intend to spend? Did you continue to recover points after already wanting to stop?
+For your practice, begin with concrete questions: had you chosen to play this game? How much time did you intend to spend? Did you [continue to recover points after already wanting to stop](/en/blog/chess-and-addiction/#three-situations-to-notice-in-online-chess)?
 
 You can decide an end time before starting, choose a study theme or alternate with another activity. These organise your time; they are not a dopamine-reset protocol.
 

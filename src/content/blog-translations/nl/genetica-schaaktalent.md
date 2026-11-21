@@ -117,7 +117,7 @@ Bovendien varieert erfelijkheid met de omgeving. In zeer homogene omgevingen (wa
 
 ## Wonderkinderen: wat leren ze ons?
 
-Schaakwonderkinderen (degenen die op 12 tot 14-jarige leeftijd het grootmeesterniveau bereiken) lijken op het eerste gezicht argumenten voor de genetica te zijn. Hoe anders een zo snelle voortgang te verklaren?
+[Schaakwonderkinderen](/nl/blog/schaken-en-hoogbegaafdheid/#vroege-intellectuele-ontwikkeling-hoogbegaafdheid-en-schaaktalent-verschillende-vragen) (degenen die op 12 tot 14-jarige leeftijd het grootmeesterniveau bereiken) lijken op het eerste gezicht argumenten voor de genetica te zijn. Hoe anders een zo snelle voortgang te verklaren?
 
 [Magnus Carlsen](https://nl.wikipedia.org/wiki/Magnus_Carlsen) behaalde de grootmeesters titel op 13 jaar en 148 dagen. [Sergey Karjakin](https://nl.wikipedia.org/wiki/Sergey_Karjakin) behaalde hem op 12 jaar en 7 maanden (officieel record). [Judit Polgar](https://nl.wikipedia.org/wiki/Judit_Polg%C3%A1r) brak het record van Bobby Fischer op 15-jarige leeftijd.
 

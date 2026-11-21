@@ -26,7 +26,7 @@ These dimensions can help you discuss your experience. They do not allow the con
 
 Ask what makes you start the next game. Do you want to? Are you trying to recover rating points? Are you afraid of disappointing your coach or losing your place on the team? The answers may overlap.
 
-The review by Gustafsson and colleagues examines social pressures, motivation and perfectionistic concerns, among other factors. It does not establish a number of weekly hours beyond which a chess player is bound to become exhausted.
+The review by Gustafsson and colleagues examines social pressures, motivation and [perfectionistic concerns](/en/blog/chess-toxic-perfectionism/), among other factors. It does not establish a number of weekly hours beyond which a chess player is bound to become exhausted.
 
 You can look at your actual schedule. What have you given up to study one more opening? Is that still a choice that suits you? The same volume can play a very different role depending on your commitments and circumstances.
 

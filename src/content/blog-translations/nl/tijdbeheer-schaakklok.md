@@ -120,7 +120,7 @@ Deze emotionele toestanden kunnen lang nadenken aandrijven zonder nuttig nadenke
 
 Een vaak verwaarloosd aspect van tijdbeheer: **de informatie in het tijdgebruik van de tegenstander**.
 
-Wanneer je tegenstander erg lang nadenkt, zijn meerdere verklaringen mogelijk:
+Wanneer je tegenstander [een kwartier over één zet nadenkt](/nl/blog/bayesiaanse-netwerken-blunders/#de-tegenstander-als-continue-informatiebron), zijn meerdere verklaringen mogelijk:
 1. De stelling is objectief complex en hij zoekt de beste reactie
 2. Hij heeft iets gezien wat jij niet hebt (potentieel gevaar in jouw zet)
 3. Hij is in emotionele zeitnot: overstuur, verstoord, niet in staat te beslissen

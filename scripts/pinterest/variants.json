@@ -2494,7 +2494,7 @@
     "category": "esprit",
     "pinId": "theorie-de-l-attachement-aux-echecs--angle-03",
     "title": "Échecs : Accueillir sans transformer la sortie en examen",
-    "description": "Si tu accompagnes un jeune joueur, tu peux commencer par lui demander s’il souhaite parler maintenant. Une question sur la faim, la fatigue ou l’envie de retrouver ses amis laisse une place à autre chose que le score. Propose ensuite l’analyse au lieu de l’imposer.",
+    "description": "Si tu accompagnes un jeune joueur, tu peux commencer par lui demander s’il souhaite parler maintenant. Une question sur la faim, la fatigue ou l’envie de retrouver ses amis laisse une place à autre chose que le score.",
     "layout": "dossier",
     "source": {
       "file": "src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md",
@@ -3904,7 +3904,7 @@
     "category": "societe",
     "pinId": "echecs-vs-philosophie-pensee-strategique--angle-04",
     "title": "La question de l’objectivité aux échecs",
-    "description": "Dans un jeu fini aux règles précisées, on peut définir une valeur sous jeu parfait. Cette valeur n’implique pas un meilleur coup unique : plusieurs continuations peuvent préserver un gain ou une nulle. La valeur de la position initiale des échecs n’est pas établie, tandis que certaines positions simples ou couvertes par des tablebases peuvent être résolues sous les conditions indiquées.",
+    "description": "Dans un jeu fini aux règles précisées, on peut définir une valeur sous jeu parfait. Cette valeur n’implique pas un meilleur coup unique : plusieurs continuations peuvent préserver un gain ou une nulle.",
     "layout": "repere",
     "source": {
       "file": "src/content/blog/societe/echecs-vs-philosophie-pensee-strategique.md",
@@ -6055,7 +6055,7 @@
     "category": "science",
     "pinId": "reseaux-bayesiens-predire-blunder--angle-06",
     "title": "Échecs : L'adversaire comme source d'information continue",
-    "description": "Dans une partie, l'adversaire te fournit de l'information à chaque coup. Du temps utilisé, du style de jeu révélé, des réactions aux complications. La perspective bayésienne formelle dit : utilise toute cette information pour mettre à jour en permanence ton estimation de son état cognitif et de ses ressources.",
+    "description": "Dans une partie, l'adversaire te fournit de l'information à chaque coup. Du temps utilisé, du style de jeu révélé, des réactions aux complications.",
     "layout": "perspective",
     "source": {
       "file": "src/content/blog/science/reseaux-bayesiens-predire-blunder.md",

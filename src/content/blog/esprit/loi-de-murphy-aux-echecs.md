@@ -37,7 +37,7 @@ Il faut aussi choisir le critère avant de regarder les exemples. Si le « pire 
 
 ## Une erreur mémorable n’est pas une fréquence
 
-Tversky et Kahneman (1973) étudient l’heuristique de disponibilité : évaluer une fréquence ou une probabilité à partir de la facilité avec laquelle des exemples viennent à l’esprit. Cette facilité peut informer le jugement, mais d’autres facteurs que la fréquence l’influencent.
+Tversky et Kahneman (1973) étudient [l’heuristique de disponibilité](/fr/blog/5-biais-cognitifs-blunder/#5-la-disponibilité--le-souvenir-qui-revient-facilement) : évaluer une fréquence ou une probabilité à partir de la facilité avec laquelle des exemples viennent à l’esprit. Cette facilité peut informer le jugement, mais d’autres facteurs que la fréquence l’influencent.
 
 Une défaite spectaculaire peut ainsi te venir plus vite à l’esprit qu’une partie tranquille. C’est une application possible de ce cadre aux échecs, pas une mesure démontrant que ta mémoire sélectionne toujours les défaites.
 

@@ -111,7 +111,7 @@ Choisir une ressource demande aussi de regarder son vocabulaire et ses objectifs
 
 ## Construire un essai adapté avec la personne
 
-Les recommandations [NICE pour les moins de 19 ans](https://www.nice.org.uk/guidance/cg170/chapter/key-priorities-for-implementation) invitent notamment à considérer les besoins sensoriels et les supports visuels dans l’accompagnement. Les [recommandations pour les adultes](https://www.nice.org.uk/guidance/CG142/chapter/Recommendations) abordent aussi l’environnement et les pauses. Ce ne sont pas des protocoles de thérapie par les échecs.
+Les recommandations [NICE pour les moins de 19 ans](https://www.nice.org.uk/guidance/cg170/chapter/key-priorities-for-implementation) invitent notamment à considérer les besoins sensoriels et les supports visuels dans l’accompagnement. Les [recommandations pour les adultes](https://www.nice.org.uk/guidance/CG142/chapter/Recommendations) abordent aussi l’environnement et les pauses. Ce ne sont pas des protocoles de [thérapie par les échecs](/fr/blog/echecs-et-therapie/).
 
 Voici des propositions pratiques pour un loisir, à ajuster avec le participant :
 

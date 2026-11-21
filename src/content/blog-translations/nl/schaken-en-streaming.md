@@ -104,7 +104,7 @@ In 2020 versterkten twee fenomenen elkaar met ongekende kracht.
 
 De COVID-19-pandemie dwong miljarden mensen thuis te blijven, op zoek naar intellectuele activiteiten online. Alle online gameplatforms kenden pieken: schaken in het bijzonder, omdat Chess.com al goed gevestigd was en Lichess (gratis open-source versie) een toegankelijk alternatief bood.
 
-In oktober 2020 zendt Netflix *The Queen's Gambit* uit. De inschrijvingen op Chess.com exploderen. De verkoop van fysieke schaaksets stijgt met 87% binnen enkele weken. Het momentum combineert zich: mensen ontdekken schaken via de serie, zoeken waar ze online kunnen spelen, vinden Chess.com, ontdekken de streams van Nakamura of GothamChess, en blijven.
+In oktober 2020 zendt Netflix *[The Queen's Gambit](/nl/blog/schaken-in-populaire-cultuur/)* uit. De inschrijvingen op Chess.com exploderen. De verkoop van fysieke schaaksets stijgt met 87% binnen enkele weken. Het momentum combineert zich: mensen ontdekken schaken via de serie, zoeken waar ze online kunnen spelen, vinden Chess.com, ontdekken de streams van Nakamura of GothamChess, en blijven.
 
 Chess.com groeide van 2 miljoen leden naar 10 miljoen in 2020. In 2024 overschrijdt het 150 miljoen geregistreerde leden.
 

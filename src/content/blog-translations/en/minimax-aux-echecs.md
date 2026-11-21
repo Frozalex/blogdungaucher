@@ -106,7 +106,7 @@ AlphaZero demonstrates that conventional alpha-beta is not the only route to str
 
 When asking “If I play there, what is their best reply?”, minimax can organise your reasoning. That does not show your brain executes it or assign three-to-eight or seven-to-ten levels to a player category.
 
-In a training position, choose two candidates and examine a reply to each. Then look for a defence you had not considered. The goal is better checking, not reproducing a measured human search depth.
+In a training position, choose two candidates and examine a reply to each. Then look for a defence you had not considered. The goal is better checking, not reproducing a measured human search depth. For an example where every defence must be covered, follow the alternating choices in [a proof of forced mate](/en/blog/modal-logic-in-chess/#the-logic-of-a-forced-variation).
 
 ![Calculation: an analogy to clarify](/images/en/minimax-02-profondeur-humain-moteur.svg)
 

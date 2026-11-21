@@ -94,7 +94,7 @@ Ce passage est une proposition de formulation. Tu dois pouvoir expliquer chaque 
 
 **« Le sport n'est-il qu'un instrument politique ? »** Réponds qu'une activité peut faire l'objet d'usages politiques sans perdre ses logiques propres. La préparation, les styles de jeu, les règles et la volonté de gagner restent des dimensions nécessaires de l'événement.
 
-**« Comment prouves-tu le soft power ? »** Distingue une ressource potentielle de prestige d'un effet effectivement mesuré. Ton dossier permet d'analyser des représentations ; il ne suffit pas à chiffrer un changement d'opinion causé par le match.
+**« Comment prouves-tu le soft power ? »** Distingue [une ressource potentielle de prestige](/fr/blog/guide-grand-oral-echecs-ses-hggsp/) d'un effet effectivement mesuré. Ton dossier permet d'analyser des représentations ; il ne suffit pas à chiffrer un changement d'opinion causé par le match.
 
 **« Pourquoi parler d'histoire et de mémoire ? »** Parce que l'événement de 1972 et son exposition commémorative de 2022 appartiennent à deux moments différents. L'un est l'objet historique ; l'autre est aussi une manière de choisir ce qui doit en être retenu.
 

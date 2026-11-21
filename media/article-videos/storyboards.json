@@ -109,7 +109,7 @@
     "category": "esprit",
     "title": "Analyser ses parties d'échecs : le guide pratique pour progresser vraiment",
     "sourceFile": "src/content/blog/esprit/analyser-ses-parties.md",
-    "sourceSha256": "8608a259a14e6b755e9d73258a77b90784e4706bcb0a268c11f94816e5fd1b75",
+    "sourceSha256": "d0b7be4563eee9ec32dd189bf876a4d926b880044e420194cedd6dea56b74e3c",
     "scenes": [
       {
         "role": "hook",
@@ -179,7 +179,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "f478d98602858e23242edfdda68a69de65eb709b970c6ae210e84f698593b767",
+    "summarySha256": "18eb03ba8c6a62ab84f4abcdcc5493d1731497f2dd2591035bc3b29e18618fa4",
     "duration": 100.5,
     "wordCount": 173,
     "compositionSeed": 3312257269,
@@ -203,7 +203,7 @@
       "license": null
     },
     "html": "html/analyser-ses-parties.html",
-    "htmlSha256": "ee58b7316dbea46bc2982347541b1deaec68ea5b4a651620b9f3cd0ac80da290",
+    "htmlSha256": "ed2f61f418cbd39e4733462ffccf6506659316731de414ac8c9de14356d4d74c",
     "video": "video/analyser-ses-parties.mp4",
     "poster": "posters/analyser-ses-parties.jpg",
     "status": "animation-prepared",
@@ -1159,7 +1159,7 @@
     "category": "esprit",
     "title": "Concentration aux échecs : garder et retrouver le fil du calcul",
     "sourceFile": "src/content/blog/esprit/echecs-et-concentration.md",
-    "sourceSha256": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
+    "sourceSha256": "ec7a7bfc0b0ac449dbc5d6dedbf3cea72445d27f0a8ebfc92ef9b79a5df5990b",
     "scenes": [
       {
         "role": "hook",
@@ -1229,7 +1229,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "289030bf4f13f5dc0689708952ddf1fffaaee119200a738ccb3a5339d654ed93",
+    "summarySha256": "4d3b49e71dfce640ffd05f7abb12c5af297714a42a473b74417dff362031c1bf",
     "duration": 100.08333333333334,
     "wordCount": 171,
     "compositionSeed": 3622779900,
@@ -1253,7 +1253,7 @@
       "license": null
     },
     "html": "html/echecs-et-concentration.html",
-    "htmlSha256": "952d46fff39777ccc3145b5229225510d9f65ebebe0930036493ad2a92391d8b",
+    "htmlSha256": "0051099306a722410b602c1cdbe99b4a5708d8e6c7400b554756bbe0c4952313",
     "video": "video/echecs-et-concentration.mp4",
     "poster": "posters/echecs-et-concentration.jpg",
     "status": "animation-prepared",
@@ -7774,7 +7774,7 @@
     "category": "science",
     "title": "AlphaZero contre Stockfish : la révolution de l'intelligence artificielle aux échecs",
     "sourceFile": "src/content/blog/science/echecs-alphazero-stockfish.md",
-    "sourceSha256": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+    "sourceSha256": "d65ae6f93c3f10348fa050ee01102e9e962ed949d0e4f9b8a422a99c430a6571",
     "scenes": [
       {
         "role": "hook",
@@ -7844,7 +7844,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "122bb4732e2797d40037fd50f92043cdcc3c0f85ef62e720e8aec17d9c40647f",
+    "summarySha256": "b110e6cf088b3dc435a0e5bc080c95171a4ddc23108973c048e9c0832ac54e83",
     "duration": 97.83333333333334,
     "wordCount": 166,
     "compositionSeed": 2816013844,
@@ -7868,7 +7868,7 @@
       "license": null
     },
     "html": "html/echecs-alphazero-stockfish.html",
-    "htmlSha256": "5d56e300b83a4de89ebf3293fb297201831003c891e06b7e53270b5b952a4bb0",
+    "htmlSha256": "2121345bdefc45481f00cf7dcee715f51bee6b30b12dd944fa02bc551ffa4fc9",
     "video": "video/echecs-alphazero-stockfish.mp4",
     "poster": "posters/echecs-alphazero-stockfish.jpg",
     "status": "animation-prepared",
@@ -8509,7 +8509,7 @@
     "category": "science",
     "title": "Échecs et mémoire : mémoire de travail, chunks et parties qui restent",
     "sourceFile": "src/content/blog/science/echecs-et-memoire.md",
-    "sourceSha256": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930",
+    "sourceSha256": "ed158a58f83bf232222a866b7b2888c5abd6c860365f139373a86389f416756b",
     "scenes": [
       {
         "role": "hook",
@@ -8579,7 +8579,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "adbf53e173a98ac06876b17d22a0ec19ee416c4f42edeb599cae2b572e299988",
+    "summarySha256": "12279651e41b0d47cb30c62327babd3eb74a71a702737f8205a356d27cefa668",
     "duration": 94.70833333333333,
     "wordCount": 162,
     "compositionSeed": 1943238935,
@@ -8603,7 +8603,7 @@
       "license": null
     },
     "html": "html/echecs-et-memoire.html",
-    "htmlSha256": "3c2ba0cf2e179380c269ab6ca0cd770befac9b14a26a52427de24459f2986541",
+    "htmlSha256": "f53ea55c1feeddbd4e6212964d0232fb54fde99ebdffffe90e713439de26e3f4",
     "video": "video/echecs-et-memoire.mp4",
     "poster": "posters/echecs-et-memoire.jpg",
     "status": "animation-prepared",
@@ -9349,7 +9349,7 @@
     "category": "science",
     "title": "Effet placebo aux échecs : ce que la croyance change vraiment",
     "sourceFile": "src/content/blog/science/effet-placebo-aux-echecs.md",
-    "sourceSha256": "a47ad7281f735c32aaa495389decda0d909d006f282868de2be44c4c7ff82066",
+    "sourceSha256": "565b2036251d4c9cc4f100f48cac8d77e3fe6c3bbb9d406515f11dd7b7aba274",
     "scenes": [
       {
         "role": "hook",
@@ -9419,7 +9419,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "daa7bdfb6d512cebce2fb6c4d10c46583843adfe377c47aa0d1a45e948f9a031",
+    "summarySha256": "774079384c6d686570819572fe07b2348c5ef21e5805294b0a2208b0ff42d5f7",
     "duration": 98.29166666666667,
     "wordCount": 163,
     "compositionSeed": 2813763584,
@@ -9443,7 +9443,7 @@
       "license": null
     },
     "html": "html/effet-placebo-aux-echecs.html",
-    "htmlSha256": "c447ac05de710ab3b4df937a125b95731bee152130671a33a3a5928187bf7357",
+    "htmlSha256": "8f25a101a4cbca3c2af3c13bd6ad858067869d00f585dfbf3d0895c686d05e2d",
     "video": "video/effet-placebo-aux-echecs.mp4",
     "poster": "posters/effet-placebo-aux-echecs.jpg",
     "status": "animation-prepared",
@@ -9979,7 +9979,7 @@
     "category": "science",
     "title": "Les échecs et le cerveau : ce que la science révèle vraiment",
     "sourceFile": "src/content/blog/science/les-echecs-et-le-cerveau.md",
-    "sourceSha256": "0e407d6cabfeb944eb612465faa92d234b7cb20422eb02618d62da5a5c4ce2e9",
+    "sourceSha256": "fd50701f1457369e140f19a5723da58a93ff1ed664a8d8ebce9baa7d28323d21",
     "scenes": [
       {
         "role": "hook",
@@ -10049,7 +10049,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "ca8f789438d7ddb2a5b7e2a3aae7c8410e751a427f35cd90c72ef19aece67f1c",
+    "summarySha256": "d6ebf296f3e8eca4ea71bb7a5d91aa77017aeac1b27ebd0b5a3324982610e79a",
     "duration": 95.66666666666667,
     "wordCount": 164,
     "compositionSeed": 4096169473,
@@ -10073,7 +10073,7 @@
       "license": null
     },
     "html": "html/les-echecs-et-le-cerveau.html",
-    "htmlSha256": "03c9f8e908b4740b5557b38309d55249ad8d8c7403d70df3112a378bd933b4e6",
+    "htmlSha256": "12562bbbd4ef2fa58cfaab1f0d2e0e5b4c4766561ed8df4969f3e6cf3d908d17",
     "video": "video/les-echecs-et-le-cerveau.mp4",
     "poster": "posters/les-echecs-et-le-cerveau.jpg",
     "status": "animation-prepared",
@@ -10294,7 +10294,7 @@
     "category": "science",
     "title": "Logique modale aux échecs : raisonner en 'gagnant si...'",
     "sourceFile": "src/content/blog/science/logique-modale-aux-echecs.md",
-    "sourceSha256": "bff47fd27cffd412bf4c5f7d86cd15c01dbf71de49c59079b49c5c9d64bd6a10",
+    "sourceSha256": "cbd1ec891814978fdfc9bd36cc2ef9257848bcce2f273871fc7b8a2498af0a13",
     "scenes": [
       {
         "role": "hook",
@@ -10364,7 +10364,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "52297528066be0d9a1421812a8cc4b5e5b94b92d3f4d2591d79b76252305f33e",
+    "summarySha256": "d9544328cb84c2b1aa23094006fba913fe5fc34a0235723a792a6f064e416e05",
     "duration": 96.54166666666667,
     "wordCount": 163,
     "compositionSeed": 2449700682,
@@ -10388,7 +10388,7 @@
       "license": null
     },
     "html": "html/logique-modale-aux-echecs.html",
-    "htmlSha256": "d812144cddd7c1a40e6c140971f94b0df80fffe4fd71d4b626375c4d2f46cabf",
+    "htmlSha256": "09d52c92d13a5a004d2339fc64189f62e8a358adb853f03007084169e5e2d319",
     "video": "video/logique-modale-aux-echecs.mp4",
     "poster": "posters/logique-modale-aux-echecs.jpg",
     "status": "animation-prepared",
@@ -11344,7 +11344,7 @@
     "category": "science",
     "title": "Paradoxe de Zermelo : l'imperfection du jeu parfait",
     "sourceFile": "src/content/blog/science/paradoxe-de-zermelo.md",
-    "sourceSha256": "14e3bb616895129e2bc87f03439a3b1a3ffe2270c2c4dfb73a6dc20e5df4ccd7",
+    "sourceSha256": "cd11916f8dcafba494d168a99730ead2c20a1ef80394e99592d6d82bc4fdcbf1",
     "scenes": [
       {
         "role": "hook",
@@ -11414,7 +11414,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "8abbf8e9513a87f242a5a4cbb5943793a6e30b38fb73f47a5faafa7246c5cd89",
+    "summarySha256": "afdcf6a5679d6c60257b90d85cf4a6a965d8b778b8bc742b1df2fd3346e8f0aa",
     "duration": 95.16666666666667,
     "wordCount": 166,
     "compositionSeed": 3870387581,
@@ -11438,7 +11438,7 @@
       "license": null
     },
     "html": "html/paradoxe-de-zermelo.html",
-    "htmlSha256": "097ca68dc107e338340bf5bd8abfb1606772385051bf5166da7f85ea864de0d7",
+    "htmlSha256": "f5258c29ca231fefa0671af21fa0a9eefd56ab6f625ae4268dd84e45540f26f1",
     "video": "video/paradoxe-de-zermelo.mp4",
     "poster": "posters/paradoxe-de-zermelo.jpg",
     "status": "animation-prepared",
@@ -13024,7 +13024,7 @@
     "category": "societe",
     "title": "Échecs et autisme : accueillir les joueurs sans promettre une thérapie",
     "sourceFile": "src/content/blog/societe/echecs-et-autisme.md",
-    "sourceSha256": "612a365df8540e352e6c927892cb8674f7be88d8b7ef90763ac8ac5caeb760ae",
+    "sourceSha256": "982e5d786374bc3e5dadc2367c334f9a913e6095329d26c4673b107a207c6ad5",
     "scenes": [
       {
         "role": "hook",
@@ -13094,7 +13094,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "5d14bfe4f32589e085f58f550f88f89444995a35d44868a899d10e9158ad185f",
+    "summarySha256": "ae515d8a2a2cf888f3b5bfb20c6d54a9767d7d939adadac3b23c4c8fb0b0db72",
     "duration": 96.54166666666666,
     "wordCount": 167,
     "compositionSeed": 2376932700,
@@ -13118,7 +13118,7 @@
       "license": null
     },
     "html": "html/echecs-et-autisme.html",
-    "htmlSha256": "eb1f95415e019406320b5be9ce3af6a77b7b1d84198a577dc026beecb3ff49a0",
+    "htmlSha256": "50187a26b5ca63d086d4e5ff944640b835d30a41e584328d93b2979b3d9915a6",
     "video": "video/echecs-et-autisme.mp4",
     "poster": "posters/echecs-et-autisme.jpg",
     "status": "animation-prepared",
@@ -13759,7 +13759,7 @@
     "category": "societe",
     "title": "Échecs et haut potentiel intellectuel : l'échiquier comme espace HPI",
     "sourceFile": "src/content/blog/societe/echecs-et-hpi.md",
-    "sourceSha256": "197e5b02216f89426a5e03a3a4eddc9b7fb4a19050b383ba59ced03dc679fa29",
+    "sourceSha256": "795dcce65c2d8947312b76ae513e8d3ce4b199ab6bdfc53363f2f55f2c42ed18",
     "scenes": [
       {
         "role": "hook",
@@ -13829,7 +13829,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "c49c6dc27640ffc37ad1b3e15996995a97485bb94142e1106bef9ddca08e0f45",
+    "summarySha256": "eec0a56f6f58fccd03cf380a918327d36117923c751084ca0b9e987528152fa6",
     "duration": 95.62500000000001,
     "wordCount": 166,
     "compositionSeed": 126231900,
@@ -13853,7 +13853,7 @@
       "license": null
     },
     "html": "html/echecs-et-hpi.html",
-    "htmlSha256": "8a7f348b4a1041177111bd4ac6988e35a2224020a18d09187b4297b9923aeddc",
+    "htmlSha256": "a6c42a0db3b88929b3ca993f02a70710d7f84ef8d8fbe84c41b76f0a8b489a38",
     "video": "video/echecs-et-hpi.mp4",
     "poster": "posters/echecs-et-hpi.jpg",
     "status": "animation-prepared",
@@ -14284,7 +14284,7 @@
     "category": "societe",
     "title": "Échecs et TDAH : un loisir à adapter, des bénéfices cliniques à établir",
     "sourceFile": "src/content/blog/societe/echecs-et-tdah.md",
-    "sourceSha256": "9855cf567bb6ea844abae45d9bd670a9162149209f87c1e786e5065e975a835f",
+    "sourceSha256": "c8565d4d027ef2e9ac375a70f6c4d539041e4dfca5a874dcf9b6e09ebfb440d0",
     "scenes": [
       {
         "role": "hook",
@@ -14354,7 +14354,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "ea4de54bca2f875e3be378248c3856071cb318db4f919ccf6688f80e6f2501f0",
+    "summarySha256": "829628942f83fc1381b464c67fb7967bb953ff787c34531a07a5cb3a565bc835",
     "duration": 99.625,
     "wordCount": 169,
     "compositionSeed": 4281431724,
@@ -14378,7 +14378,7 @@
       "license": null
     },
     "html": "html/echecs-et-tdah.html",
-    "htmlSha256": "42491d1f3b23e60c6d5b92602e63b437bf3e12995db2fb9c210f4964d97773ea",
+    "htmlSha256": "851b005b3d84094d4c4195b405a983e908e7ba020685b80ee419160bfd981440",
     "video": "video/echecs-et-tdah.mp4",
     "poster": "posters/echecs-et-tdah.jpg",
     "status": "animation-prepared",
@@ -14494,7 +14494,7 @@
     "category": "societe",
     "title": "Échecs et religion : mille ans d'interdits, de fatwas et de réhabilitations",
     "sourceFile": "src/content/blog/societe/echecs-religion-et-interdit.md",
-    "sourceSha256": "f471038eaa809a0095d9c246385a3fca4e4436895dd8ca917f2574f8d942dba3",
+    "sourceSha256": "a02534c8209e90bc931813507402c08ab82d36ff5c89bbb3fcd734103b498c9e",
     "scenes": [
       {
         "role": "hook",
@@ -14564,7 +14564,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "62ba9085be3a118cfcc7de8ce1dbd2ac597b28118cc475a436c14295fcd15cf1",
+    "summarySha256": "854e069aa522427891e873f032ae88dac2acc7c66544f4ed85e4bdfa553945da",
     "duration": 102.29166666666667,
     "wordCount": 174,
     "compositionSeed": 3543777849,
@@ -14588,7 +14588,7 @@
       "license": null
     },
     "html": "html/echecs-religion-et-interdit.html",
-    "htmlSha256": "0361df83a9730874ef4c4102f5c400ab52863018dbb028e1131ab1b892e16cb5",
+    "htmlSha256": "41d7b2a324dec463b8865fe6839e2e14d1aea06d9fda890b64b7bb947297936d",
     "video": "video/echecs-religion-et-interdit.mp4",
     "poster": "posters/echecs-religion-et-interdit.jpg",
     "status": "animation-prepared",
@@ -14599,7 +14599,7 @@
     "category": "societe",
     "title": "Échecs et philosophie : quand le jeu devient pensée",
     "sourceFile": "src/content/blog/societe/echecs-vs-philosophie-pensee-strategique.md",
-    "sourceSha256": "81f09a540af645eea71c4064bce452e4530146b3963ef9f82c0ce198a86b49d6",
+    "sourceSha256": "953aec30b245e703bd022e7f775a71079c49af086cdce2765bc70c072935ae2e",
     "scenes": [
       {
         "role": "hook",
@@ -14669,7 +14669,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "bdc853d034af6e8748b906f131d4abe8e13a02a866a141602db206ddb34500dd",
+    "summarySha256": "30c02bb6c74f2adeae59d06f9619241ba9c2a8e60648656c1d07e65ebcfdaf9f",
     "duration": 103.16666666666667,
     "wordCount": 176,
     "compositionSeed": 2445377404,
@@ -14693,7 +14693,7 @@
       "license": null
     },
     "html": "html/echecs-vs-philosophie-pensee-strategique.html",
-    "htmlSha256": "539bcbddcef8e6a780448952666a288daff0efe0fb0a31f987c53d5d7b321c41",
+    "htmlSha256": "86c0d9f6069c0d337fc7291a110ecdd07e333bfca8d799e69c1d2a0cc07bd93f",
     "video": "video/echecs-vs-philosophie-pensee-strategique.mp4",
     "poster": "posters/echecs-vs-philosophie-pensee-strategique.jpg",
     "status": "animation-prepared",
@@ -15019,7 +15019,7 @@
     "category": "societe",
     "title": "Échecs et addiction : quand le jeu prend trop de place",
     "sourceFile": "src/content/blog/societe/les-echecs-et-l-addiction.md",
-    "sourceSha256": "07dce66238fb482e5af355b145b5fe530876ec35459bc1fdc77e2142be23cb2b",
+    "sourceSha256": "030e5605656a5715c1fb306925bde60faedd03e89f0d684ea469479b1925b0e4",
     "scenes": [
       {
         "role": "hook",
@@ -15089,7 +15089,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "7b9904f9f53b0a45ea1c8e2588a505526b3e5e49b00b7ea67391e5d2dd365004",
+    "summarySha256": "a921235841ee72218253fcf420cf88294cc213b838996cc147c386ef06cedf68",
     "duration": 99.625,
     "wordCount": 166,
     "compositionSeed": 859767896,
@@ -15113,7 +15113,7 @@
       "license": null
     },
     "html": "html/les-echecs-et-l-addiction.html",
-    "htmlSha256": "e5edf22aa5c1a0c8e5635766c33d7ce3533e74ad567e277de7fb53f56a2e02f8",
+    "htmlSha256": "f4aac6ed8a3c63ba0259ea0e4b8af9de6640644cde1e8f0b15ff48300b1065f7",
     "video": "video/les-echecs-et-l-addiction.mp4",
     "poster": "posters/les-echecs-et-l-addiction.jpg",
     "status": "animation-prepared",
@@ -15439,7 +15439,7 @@
     "category": "societe",
     "title": "La psychologie de la persuasion aux échecs : comment on te vend la progression",
     "sourceFile": "src/content/blog/societe/psychologie-de-la-persuasion-aux-echecs.md",
-    "sourceSha256": "9944c0644dee37fb0bae00eea8f8a081a4d93d6ebc15898300a8d215e5d333c0",
+    "sourceSha256": "ce2f92095c78508d116b192216811f233f07d2adc7fddd707685ab3bd9da27e8",
     "scenes": [
       {
         "role": "hook",
@@ -15509,7 +15509,7 @@
       "bold": "b5d64817b6331723b5e59eaaa6db90057cbed58e9733f65687f110638192359f"
     },
     "logoSha256": "9a4d0fac4d7f7799e9fd1075e5fb4718723cf2ed39f49c41e2128eb2ace8efa3",
-    "summarySha256": "7c3f15d8178cf3b234566756d92ed2578dfc4928324e88055bd0682eb93e3c9c",
+    "summarySha256": "5d14454062f6ac48fc40b535da2916dd722cdc62db03e2ba1f6a1c0ed0514aa4",
     "duration": 95.66666666666667,
     "wordCount": 164,
     "compositionSeed": 598830426,
@@ -15533,7 +15533,7 @@
       "license": null
     },
     "html": "html/psychologie-de-la-persuasion-aux-echecs.html",
-    "htmlSha256": "d67cac5b2ac47acef5f11d2dcd078c356c51f12a2665307beeb8fbeddce2c106",
+    "htmlSha256": "0689bac9b4700758b80150058e1264a14b65c2d1e5879f9aaa269c1dd8d89cc9",
     "video": "video/psychologie-de-la-persuasion-aux-echecs.mp4",
     "poster": "posters/psychologie-de-la-persuasion-aux-echecs.jpg",
     "status": "animation-prepared",

@@ -108,7 +108,7 @@ Pauzes hebben een derde, minder voor de hand liggende rol: ze vergemakkelijken d
 
 Incubatie is het fenomeen waarbij een probleem dat weerstand bood aan bewuste analyse zijn oplossing vindt na een periode van niet-werken aan dat probleem. Klassiek onderzoek in de creatieve psychologie, van [Wallas](https://nl.wikipedia.org/wiki/Graham_Wallas) tot moderne hersenscanstudies, toont aan dat de hersenen een probleem op niet-bewuste wijze blijven verwerken tijdens pauzes.
 
-Bij schaken manifesteert dit zich soms opvallend: je werkt aan een moeilijke stelling, je vindt de sleutel niet, je stopt. Enkele uren later, vaak de volgende ochtend, verschijnt de oplossing met plotselinge helderheid. Dit is geen magie: het is het standaardnetwerk dat tijdens je rust de probleemruimte bleef verkennen.
+Bij schaken manifesteert dit zich soms opvallend: je werkt aan een moeilijke stelling, je vindt de sleutel niet, je stopt. Enkele uren later, vaak de volgende ochtend, verschijnt de oplossing met plotselinge helderheid. Dit is geen magie: het is het [standaardnetwerk](/nl/blog/default-mode-netwerk-schaken/#incubatie-het-onzichtbare-werk-van-het-dmn) dat tijdens je rust de probleemruimte bleef verkennen.
 
 ## Pauzes bewust opbouwen
 

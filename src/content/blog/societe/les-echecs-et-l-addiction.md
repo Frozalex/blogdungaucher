@@ -109,7 +109,7 @@ Si tu lances une partie pour effacer une baisse plutôt que par envie de jouer, 
 
 ### La communauté comme attache
 
-Les clubs en ligne, les amis et les tournois peuvent être une vraie source de liens. Ils peuvent aussi rendre une pause difficile si l’on craint de manquer une rencontre ou de décevoir son groupe.
+Les clubs en ligne, les amis et les tournois peuvent être [une vraie source de liens](/fr/blog/echecs-et-la-solitude/#le-club-et-la-pratique-en-ligne). Ils peuvent aussi rendre une pause difficile si l’on craint de manquer une rencontre ou de décevoir son groupe.
 
 Prévenir ses partenaires d’un horaire de fin ou proposer une activité hors plateforme permet d’observer cette tension. Avoir une communauté n’est pas un signe de maladie ; le problème éventuel est de ne plus pouvoir préserver ses autres engagements.
 

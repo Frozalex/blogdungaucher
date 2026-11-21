@@ -26,7 +26,7 @@ There is no universal threshold of 90 to 120 minutes after which the cortex runs
 
 ## Returning to a useful question
 
-When you notice a distraction, reformulate the decision you need to make: which threat needs addressing? Which candidate moves still need comparing? What has changed since the last move?
+When you notice a distraction, reformulate the decision you need to make: which threat needs addressing? Which candidate moves still need comparing? What has changed since the last move? [Mind-wandering at the board](/en/blog/reseau-mode-defaut-aux-echecs/) is easy to notice in hindsight, even when its cause is hard to pinpoint.
 
 A short question can provide a starting point for resuming. If you have already calculated a line, recall its conclusion before starting over. The aim is to avoid a loop that produces no new information.
 

@@ -60,7 +60,7 @@ The proposed interpretation therefore concerns commitment to a choice: explainin
 
 ## The question of objectivity in chess
 
-In a finite game with specified rules, a value under perfect play can be defined. **That value does not imply a uniquely best move**: several continuations may preserve a win or a draw. The value of chess’s initial position has not been established, whereas certain simple positions or positions covered by tablebases can be solved under stated conditions.
+In a finite game with specified rules, a value under perfect play can be defined. **That value does not imply a uniquely best move**: several continuations may preserve a win or a draw. The [value of chess’s initial position](/en/blog/zermelo-paradox/) has not been established, whereas certain simple positions or positions covered by tablebases can be solved under stated conditions.
 
 An engine offers analysis within a given computational budget. Its version, settings and search duration matter; its first choice is not a universal proof of the exact value. When discussing objectivity, distinguish a verifiable forced mate, a tablebase result and an estimated advantage. These do not have the same status or limitations.
 
@@ -80,7 +80,7 @@ An engine’s understanding can still be discussed, but the change of question s
 
 ## What philosophy learns from chess, and vice versa
 
-Chess offers examples precise enough to test an interpretation. If you say a decision is forced, can you show why the alternatives fail? If you call it free, are you discussing legal possibilities, the player’s uncertainty or a philosophical account of action? The position does not answer everything, but it may reveal that two speakers use the same word differently.
+Chess offers examples precise enough to test an interpretation. If you say a decision is forced, can you show [why the alternatives fail](/en/blog/modal-logic-in-chess/#the-logic-of-a-forced-variation)? If you call it free, are you discussing legal possibilities, the player’s uncertainty or a philosophical account of action? The position does not answer everything, but it may reveal that two speakers use the same word differently.
 
 Philosophy in turn invites examination of the analysis criteria: why choose this objective, what does understanding a rule mean, and what have we actually established? These questions can enrich game commentary without replacing endgame study or calculation. The cited texts demonstrate neither that philosophy readers play better nor that chess players automatically develop more rigorous general thinking.
 

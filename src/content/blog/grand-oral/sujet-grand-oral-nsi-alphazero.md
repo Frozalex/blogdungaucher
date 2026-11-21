@@ -52,7 +52,7 @@ AlphaZero apprend par auto-jeu. Les résultats des parties et les distributions 
 
 ## Lire correctement le résultat de 2017
 
-Le préprint rapporte 28 victoires, 72 nulles et aucune défaite sur 100 parties contre Stockfish 8. Cela représente 64 points sur 100, donc 64 % des points possibles, mais 28 % de victoires.
+Le préprint rapporte [28 victoires, 72 nulles et aucune défaite sur 100 parties contre Stockfish 8](/fr/blog/echecs-alphazero-stockfish/). Cela représente 64 points sur 100, donc 64 % des points possibles, mais 28 % de victoires.
 
 La comparaison utilise une minute par coup. La courbe d'apprentissage dépasse le niveau de Stockfish après environ quatre heures dans les conditions décrites ; ce repère n'est pas la durée totale de tous les entraînements ni une durée reproductible sur un ordinateur personnel.
 
@@ -90,7 +90,7 @@ Imaginons qu'une feuille de recherche soit favorable au joueur qui a le trait. E
 
 C'est une difficulté classique dans les programmes de jeu, et un bon point de discussion NSI : une erreur de convention peut faire préférer à un programme des positions favorables à son adversaire. Le problème n'est pas résolu par la présence d'un réseau de neurones ; il faut une représentation et des calculs cohérents.
 
-Pour une démonstration personnelle, un petit arbre à deux niveaux suffit. Inscris des valeurs fictives aux feuilles, annonce le point de vue et fais remonter les préférences. Tu peux contrôler chaque opération à la main. Un tel modèle ne reproduit pas AlphaZero, mais prouve que tu comprends une contrainte fondamentale d'un jeu à deux camps.
+Pour une démonstration personnelle, un petit arbre à deux niveaux suffit. Inscris des valeurs fictives aux feuilles, annonce le point de vue et fais remonter les préférences. Tu peux contrôler chaque opération à la main. Pour un oral commun aux deux spécialités, le [dossier Maths et NSI](/fr/blog/grand-oral-mathematiques-echecs/) relie ce calcul de minimax au dénombrement des variantes. Un tel modèle ne reproduit pas AlphaZero, mais prouve que tu comprends une contrainte fondamentale d'un jeu à deux camps.
 
 ## Comparer équitablement deux programmes
 

@@ -79,7 +79,7 @@ Não é preciso invocar um “pensamento em árvore” próprio da superdotaçã
 
 ## Perfeccionismo: observar uma dificuldade, não presumir um traço
 
-Querer jogar bem e ter medo de qualquer erro não são a mesma coisa. A meta-análise de [Stricker e colegas (2020)](https://www.uni-trier.de/fileadmin/fb1/prof/PSY/PAE/Team/Schneider/StrickerEtAl2020.pdf) distingue padrões elevados de preocupações perfeccionistas. Não encontra preocupações mais elevadas nos estudantes identificados como intelectualmente superdotados do que nos demais; a busca de padrões elevados é maior, em média. Isso não permite apresentar o perfeccionismo doloroso como característica obrigatória.
+Querer jogar bem e ter medo de qualquer erro não são a mesma coisa. A meta-análise de [Stricker e colegas (2020)](https://www.uni-trier.de/fileadmin/fb1/prof/PSY/PAE/Team/Schneider/StrickerEtAl2020.pdf) distingue padrões elevados de preocupações perfeccionistas. Não encontra preocupações mais elevadas nos estudantes identificados como intelectualmente superdotados do que nos demais; a busca de padrões elevados é maior, em média. Isso não permite apresentar o [perfeccionismo doloroso](/pt-br/blog/xadrez-e-perfeccionismo-toxico/) como característica obrigatória.
 
 O trabalho reúne **10 estudos comparativos, 4.340 participantes e 32 tamanhos de efeito**. A diferença nas preocupações perfeccionistas não é estatisticamente estabelecida; isso não prova a identidade de todos os indivíduos dos dois grupos. Critérios de identificação e questionários variam. Os resultados descrevem médias em amostras escolares, não uma intervenção em clube ou a reação esperada de uma criança à próxima derrota.
 
@@ -143,7 +143,7 @@ A meta-análise de [Burgoyne e colegas (2016)](https://artscimedia.case.edu/wp-c
 
 Os autores reúnem 19 estudos, com 26 amostras independentes e 1.779 participantes. A média das correlações para quatro grandes aptidões é **r = 0,24**. Isso não significa “24% do talento vem do QI” nem “um teste prevê 24% das vitórias”. Trata-se de associações entre medidas. As diferenças entre jovens e adultos, ou jogadores com e sem rating, não são um calendário de desenvolvimento individual.
 
-Portanto, não se pode afirmar que uma criança com QI 110 treinando três horas semanais necessariamente ultrapassará outra com QI 140. Um resultado elevado tampouco garante um título. Experiência, oportunidades de aprendizagem e conteúdo da prática também importam; nenhuma fórmula deste artigo os transforma em um rating futuro.
+Portanto, não se pode afirmar que uma criança com QI 110 treinando três horas semanais necessariamente ultrapassará outra com QI 140. Um resultado elevado tampouco garante um título. O que essas diferenças permitem dizer sobre [talento, prática e hereditariedade](/pt-br/blog/genetica-e-talento-xadrez/) depende do tipo de estudo e da população comparada. Experiência, oportunidades de aprendizagem e conteúdo da prática também importam; nenhuma fórmula deste artigo os transforma em um rating futuro.
 
 Sobre transferência, [Sala e Gobet (2016)](https://www.sciencedirect.com/science/article/pii/S1747938X16300112) destacam limitações dos protocolos, especialmente a falta de controles ativos adequados. Os resultados não justificam prometer aumento de QI, sucesso escolar ou efeito específico em crianças superdotadas.
 

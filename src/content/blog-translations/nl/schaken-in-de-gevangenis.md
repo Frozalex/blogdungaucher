@@ -118,7 +118,7 @@ Elke activiteit werkt aan verschillende dimensies. Wat specifiek is aan schaken:
 
 ## Dezelfde mechanismen, andere contexten
 
-De cognitieve tekorten waaraan schaken werkt in de gevangeniscontext, impulsiviteit, gebrekkige planning, moeite om de ander te modelleren, vind je terug bij andere profielen die vaak geassocieerd worden met trajecten van sociale kwetsbaarheid. Het artikel over [schaken en ADHD](/fr/blog/echecs-et-tdah/) verkent dezelfde mechanismen voor een neuro-ontwikkelingsprofiel dat opvallend oververtegenwoordigd is in gevangenispopulaties: men schat dat 25 tot 40% van de gedetineerden een niet-gediagnosticeerde ADHD heeft.
+De cognitieve tekorten waaraan schaken werkt in de gevangeniscontext, impulsiviteit, gebrekkige planning, moeite om de ander te modelleren, vind je terug bij andere profielen die vaak geassocieerd worden met trajecten van sociale kwetsbaarheid. Het artikel over [schaken en ADHD](/nl/blog/schaken-en-adhd/) verkent dezelfde mechanismen voor een neuro-ontwikkelingsprofiel dat opvallend oververtegenwoordigd is in gevangenispopulaties: men schat dat 25 tot 40% van de gedetineerden een niet-gediagnosticeerde ADHD heeft.
 
 Dat is geen detail. Als een significant deel van het impulsieve gedrag dat tot opsluiting leidt, eerder neurologische dan morele oorsprong heeft, krijgt de aanpak via training van cognitieve functies, waarvan schaken een middel is, een nog duidelijker dimensie.
 
@@ -138,7 +138,7 @@ Deze grenzen diskwalificeren de aanpak niet. Ze bepalen het eerlijke kader om ha
 
 ---
 
-Het schaakbord leert iets dat weinig activiteiten zo duidelijk leren: elke beslissing heeft een zichtbaar en onomkeerbaar gevolg, en de tegenstander tegenover je heeft een perspectief dat je er baat bij hebt te begrijpen. Programma's die **standhouden** combineren spel, **stabiele menselijke begeleiding** en **opvolging na vrijlating**; het schaakbord alleen herschrijft geen levensloop. Voor de cognitieve effecten gemeten buiten de gevangenis, zie [schaken en het brein](/fr/blog/les-echecs-et-le-cerveau/).
+Het schaakbord leert iets dat weinig activiteiten zo duidelijk leren: elke beslissing heeft een zichtbaar en onomkeerbaar gevolg, en de tegenstander tegenover je heeft een perspectief dat je er baat bij hebt te begrijpen. Programma's die **standhouden** combineren spel, **stabiele menselijke begeleiding** en **opvolging na vrijlating**; het schaakbord alleen herschrijft geen levensloop. Voor de cognitieve effecten gemeten buiten de gevangenis, zie [schaken en het brein](/nl/blog/schaken-en-het-brein/).
 
 **Na het lezen:** als je een workshop leidt of ondersteunt, stel **een** meetbaar doel in de instelling (tijdsbeheer, formulering van de gespeelde zet) gedurende zes sessies voordat je iets over recidive beoordeelt.
 
@@ -146,5 +146,5 @@ Het schaakbord leert iets dat weinig activiteiten zo duidelijk leren: elke besli
 
 ## Meer lezen
 
-- [Schaken en ADHD: waarom het schaakbord aandacht vasthoudt waar al het andere faalt](/fr/blog/echecs-et-tdah/)
-- [Schaken en het brein: wat de wetenschap echt onthult](/fr/blog/les-echecs-et-le-cerveau/)
+- [Schaken en ADHD: waarom het schaakbord aandacht vasthoudt waar al het andere faalt](/nl/blog/schaken-en-adhd/)
+- [Schaken en het brein: wat de wetenschap echt onthult](/nl/blog/schaken-en-het-brein/)

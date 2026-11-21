@@ -100,7 +100,7 @@ Os jogadores de xadrez vivem o oposto. Sabem que cada lance é definitivo. E, no
 
 ## A ironia cruel : os jogadores procrastinam no que os faria progredir
 
-Quer ver um jogador procrastinar? Peça a ele para analisar suas próprias derrotas com um motor.
+Quer ver um jogador procrastinar? Peça a ele para [analisar suas próprias derrotas com um motor](/pt-br/blog/analisar-suas-partidas/).
 
 Rever uma derrota pode ser desconfortável. Uma nova partida, pelo contrário, começa com material igual e possibilidades abertas. É fácil clicar em jogar de novo para adiar por alguns minutos a posição que ainda incomoda.
 

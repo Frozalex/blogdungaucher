@@ -71,7 +71,7 @@ Lange tijd werd gaslighting behandeld als een individuele pathologie: een manipu
 
 In 2019 publiceert socioloog [Paige Sweet](https://en.wikipedia.org/wiki/Gaslighting) in de *American Sociological Review* een artikel dat de analyse verschuift. Haar these: gaslighting is niet in de eerste plaats een psychologisch fenomeen, het is een **sociaal** fenomeen. Het werkt alleen wanneer het kan steunen op reeds bestaande ongelijkheden en beschikbare stereotypen.
 
-Met andere woorden, iemand zeggen "je verbeeldt je dingen" heeft niet dezelfde kracht afhankelijk van wie het zegt. Als de bewering komt van iemand met sociaal erkend gezag, weerspreekt ze niet alleen: ze **mobiliseert een structuur**. De twijfel die ze installeert wordt versterkt door alles wat de omgeving al voor waar aanneemt.
+Met andere woorden, iemand zeggen "je verbeeldt je dingen" heeft niet dezelfde kracht afhankelijk van wie het zegt. Als de bewering komt van [iemand met sociaal erkend gezag](/nl/blog/gehoorzaamheid-aan-autoriteit-bij-schaken/#de-autoriteiten-van-de-schaker), weerspreekt ze niet alleen: ze **mobiliseert een structuur**. De twijfel die ze installeert wordt versterkt door alles wat de omgeving al voor waar aanneemt.
 
 Deze nuance is enorm belangrijk voor het vervolg, omdat het verklaart waarom gaslighting niets te maken heeft met een gewoon meningsverschil. Twee spelers van gelijke sterkte die het oneens zijn over een positie, hebben een debat. Een gediplomeerde trainer die zijn leerling uitlegt dat hij zich verkeerd herinnert wat er is gezegd, beschikt over iets meer dan een argument.
 
@@ -180,7 +180,7 @@ Je bescherming is concreet en je hebt hem al: het is het schriftelijke spoor. Sc
 
 ---
 
-*Dit artikel maakt deel uit van een reeks gewijd aan toegepaste psychologie bij schaken. Zie ook het Dunning-Kruger-effect bij schaken. Een toekomstig artikel behandelt emotionele manipulatie, die zich tijdens de partij afspeelt en niet erna.*
+*Dit artikel maakt deel uit van een reeks gewijd aan toegepaste psychologie bij schaken. Zie ook het Dunning-Kruger-effect bij schaken. Een ander artikel behandelt [emotionele manipulatie](/nl/blog/emotionele-manipulatie-schaken/), die zich tijdens de partij afspeelt en niet erna.*
 
 ## Bronnen
 

@@ -47,7 +47,7 @@ Keep a minimal check: is your king threatened? Is a piece hanging? What was the 
 
 Simplifying may make the rest easier, but an exchange can also worsen your position or lead to a difficult endgame. “Exchange because time is short” is therefore not a sufficient rule.
 
-Do not automatically copy your opponent’s rhythm. A fast reply may come from preparation, a forced decision, intuition or a mistake. The clock gives a clue; it does not reveal what the other player thought.
+Do not automatically copy your opponent’s rhythm. A fast reply may come from preparation, a forced decision, intuition or a mistake. The clock gives a clue; it does not reveal what the other player thought. Consider [an opponent who spends fifteen minutes on one move](/en/blog/bayesian-networks-predict-blunders/#the-opponent-as-a-continuing-source-of-information). What else could explain the pause besides uncertainty?
 
 ## Analysing the minutes spent too
 

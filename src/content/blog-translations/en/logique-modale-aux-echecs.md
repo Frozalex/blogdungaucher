@@ -41,7 +41,7 @@ $$\exists c_1\;\forall c_2\;\exists c_3 : \mathrm{mate}.$$
 
 Each quantifier ranges over legal moves from the resulting position. For mate in three attacker moves, continue the alternation through the attacker’s third move, also checking for a shorter solution if the problem requires exactly three.
 
-**“They must reply this way”** is ambiguous: only one move may be legal, or several may be legal but only one preserves a given result. If accessibility includes all legal moves, bad moves remain accessible. Specify the assumptions rather than replace “reasonable” with “necessary”.
+**“They must reply this way”** is ambiguous: only one move may be legal, or several may be legal but only one preserves a given result. If accessibility includes all legal moves, bad moves remain accessible. Specify the assumptions rather than replace “reasonable” with “necessary”. The philosophical question of [freedom at the board](/en/blog/echecs-vs-philosophie-pensee-strategique/#sartre-freedom-within-necessity) starts from the same distinction between legal options and practical choices.
 
 ![A possible-world structure for chess: positions are worlds and legal moves define accessibility. The box (necessity) means every accessible world satisfies P; the diamond (possibility) means at least one does.](/images/en/logique-modale-01-mondes-possibles.svg)
 

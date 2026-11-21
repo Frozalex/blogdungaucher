@@ -36,7 +36,7 @@ Ces dimensions peuvent aider à parler de ton expérience. Elles ne permettent p
 
 Demande-toi ce qui te pousse à lancer la prochaine partie. Tu en as envie ? Tu cherches à récupérer des points ? Tu crains de décevoir ton entraîneur ou de perdre ta place dans l’équipe ? Les réponses peuvent se mélanger.
 
-La revue de Gustafsson et ses collègues examine notamment les pressions sociales, la motivation et les préoccupations perfectionnistes. Elle ne fixe pas un nombre d’heures hebdomadaires au-delà duquel un joueur d’échecs serait condamné à s’épuiser.
+La revue de Gustafsson et ses collègues examine notamment les pressions sociales, la motivation et [les préoccupations perfectionnistes](/fr/blog/echecs-et-perfectionnisme-toxique/). Elle ne fixe pas un nombre d’heures hebdomadaires au-delà duquel un joueur d’échecs serait condamné à s’épuiser.
 
 Tu peux regarder ton emploi du temps réel. Qu’as-tu abandonné pour étudier une ouverture supplémentaire ? Est-ce un choix qui te convient encore ? Le même volume peut avoir une place très différente selon tes obligations et ta situation.
 

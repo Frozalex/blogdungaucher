@@ -167,7 +167,7 @@ Het doel is een bewuste verdeling onderbouwd door redenering, geen standaardverd
 
 ### Ontbrekende partijanalyse
 
-Een blinde vlek van de regel: ze noemt de analyse van eigen partijen niet, wat veel trainers als de sterkste hefboom van allen beschouwen. Eigen echte fouten analyseren, begrijpen niet alleen *welke* zet slecht was maar *waarom* men die speelde, past in geen van de drie vakjes.
+Een blinde vlek van de regel: ze noemt de [analyse van eigen partijen](/nl/blog/schaakpartijen-analyseren/) niet, wat veel trainers als de sterkste hefboom van allen beschouwen. Eigen echte fouten analyseren, begrijpen niet alleen *welke* zet slecht was maar *waarom* men die speelde, past in geen van de drie vakjes.
 
 Een verbeterde versie van de regel zou er zo uit kunnen zien: 30% tactiek, 30% eindspelen, 15% openingen, 25% analyse van eigen partijen. Maar dan verlaat men de memoriseerbare slogan voor een gepersonaliseerde aanpak die regelmatige zelfevaluatie vereist.
 

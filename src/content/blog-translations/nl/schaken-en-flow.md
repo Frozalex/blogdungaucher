@@ -74,7 +74,7 @@ Csikszentmihalyi identificeert 8 componenten die proefpersonen systematisch besc
 
 **4. Directe feedback.** Elke actie onthult onmiddellijk of ze relevant was. Bij schaken is de reactie van de tegenstander de meest directe feedback die er bestaat.
 
-**5. Concentratie op de huidige taak.** Alle storende gedachten verdwijnen: dagelijkse zorgen, het oordeel van anderen, verleden of toekomstige resultaten.
+**5. [Concentratie op de huidige taak](/nl/blog/concentratie-schaken/).** Alle storende gedachten verdwijnen: dagelijkse zorgen, het oordeel van anderen, verleden of toekomstige resultaten.
 
 **6. Een gevoel van controle.** Geen almacht, maar een gevoel van doeltreffendheid: "ik begrijp wat er gebeurt en ik kan erop inwerken."
 

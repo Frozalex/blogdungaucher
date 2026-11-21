@@ -50,7 +50,7 @@ Après la partie, compare une décision que tu jugeais prudente à ses alternati
 
 ## Retrouver une marge de choix
 
-Avant de jouer, propose-toi un objectif praticable : vérifier les réponses forcées, comparer deux candidats quand ils existent, conserver une réserve de temps. L’objectif n’a pas besoin de devenir une obligation parfaite à chaque coup.
+Avant de jouer, propose-toi un objectif praticable : vérifier les réponses forcées, comparer deux candidats quand ils existent, [conserver une réserve de temps](/fr/blog/echecs-gestion-du-temps/). L’objectif n’a pas besoin de devenir une obligation parfaite à chaque coup.
 
 Si les tournois te pèsent, tu peux reprendre dans un cadre moins chargé, avec un partenaire de confiance ou un format qui te convient. Accumuler vingt parties en un week-end n’est pas un traitement démontré de l’anxiété et peut aussi ajouter de la fatigue.
 

@@ -57,7 +57,7 @@ Je berekent niet. Je **vlucht**. En het is hetzelfde wat je doet wanneer je een 
 
 De hedendaagse psychologie heeft zijn model in de afgelopen twintig jaar omgekeerd. Uitstelgedrag wordt niet langer begrepen als een gebrek aan discipline of tijdmanagement. Het is een **emotiereguleringsmechanisme**.
 
-Wanneer een taak angst, twijfel, faalangst of simpelweg verveling genereert, zoekt je brein het onmiddellijke ongemak te neutraliseren. De snelste manier: er niet meer aan blootgesteld worden. Je opent een ander tabblad. Je controleert je e-mails. Je maakt koffie die je niet had gevraagd. Verlichting.
+Wanneer een taak angst, twijfel, [faalangst](/nl/blog/angst-om-te-verliezen-schaken/) of simpelweg verveling genereert, zoekt je brein het onmiddellijke ongemak te neutraliseren. De snelste manier: er niet meer aan blootgesteld worden. Je opent een ander tabblad. Je controleert je e-mails. Je maakt koffie die je niet had gevraagd. Verlichting.
 
 Behalve dat de taak terugkomt. Later. Met **toegenomen** angst omdat de deadline dichterbij is gekomen. Wat de volgende vermijding nog waarschijnlijker maakt. Dit is wat psycholoog B.F. Skinner *operante conditionering* noemde: een gedrag dat onmiddellijke verlichting produceert versterkt zichzelf, zelfs wanneer het het langetermijnprobleem verergert.
 

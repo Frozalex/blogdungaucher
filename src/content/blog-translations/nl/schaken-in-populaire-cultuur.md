@@ -96,7 +96,7 @@ Dit is misschien het teken van een diepe culturele integratie: wanneer een spel 
 
 Het schaakspel is een cultureel icoon geworden dat ver uitstijgt boven zijn functie als spel. Schaakspellen verschijnen in woonkamers, kantoren, films en reclame als symbolen van intellectuele verfijning.
 
-De schaakstukken dragen elk culturele associaties die ver reiken voorbij het schaakspel zelf. De koning vertegenwoordigt absolute autoriteit gecombineerd met kwetsbaarheid: het belangrijkste stuk heeft ook de meest beperkte bewegingsmogelijkheden. De dame is het machtigste stuk op het bord, een culturele associatie die de dame centraal stelde in *The Queen's Gambit* en in bredere feministische schaakbeeldtaal.
+De schaakstukken dragen elk culturele associaties die ver reiken voorbij het schaakspel zelf. De koning vertegenwoordigt absolute autoriteit gecombineerd met kwetsbaarheid: het belangrijkste stuk heeft ook de meest beperkte bewegingsmogelijkheden. De geschiedenis van het spel laat zien [hoe de dame haar bewegingsvrijheid kreeg](/nl/blog/geschiedenis-en-oorsprong-van-het-schaakspel/#de-revolutie-van-de-dame-rond-1475). De dame is het machtigste stuk op het bord, een culturele associatie die de dame centraal stelde in *The Queen's Gambit* en in bredere feministische schaakbeeldtaal.
 
 Schaakmetaforen zijn doorgedrongen tot alledaags taalgebruik. "Schaakmat zetten" beschrijft een definitieve overwinning. "Een pion zijn" beschrijft iemand die door anderen wordt gemanipuleerd. "Remise" voor een onopgelost conflict. "Patstelling" voor een politieke of diplomatieke impasse. In het Nederlands zijn deze termen volkomen ingeburgerd, ook bij mensen die nooit een partij hebben gespeeld.
 

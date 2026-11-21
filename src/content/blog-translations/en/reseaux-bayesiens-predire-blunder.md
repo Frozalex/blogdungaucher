@@ -95,7 +95,7 @@ Professional analytical resources do not automatically guarantee this calibratio
 
 Generic priors may be a starting point, but an uncalibrated judgement should not be presented as a precise measured probability.
 
-Confirmation bias is another risk: looking for signs of an opponent’s impending mistake can make you interpret every hesitation as support. Consider contrary evidence and competing explanations.
+[Confirmation bias](/en/blog/confirmation-bias-in-chess/) is another risk: looking for signs of an opponent’s impending mistake can make you interpret every hesitation as support. Consider contrary evidence and competing explanations.
 
 ## Practical applications
 

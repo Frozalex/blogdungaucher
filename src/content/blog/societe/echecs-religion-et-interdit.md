@@ -137,7 +137,7 @@ Le procédé est génial : il ne nie pas le jeu, il le moralise. Les échecs ces
 
 ## L'islam : du soupçon à la tolérance conditionnelle
 
-Côté musulman, l'histoire est plus ancienne encore, et plus subtile. Les échecs, le *shatranj*, parviennent au monde islamique depuis la Perse sassanide (où le jeu se nomme *chatrang*) après les conquêtes du VIIᵉ siècle. Très vite, ils séduisent les élites cultivées de Bagdad, au point que les meilleurs joueurs, les *aliyat*, jouissent d'une réputation comparable à celle de savants.
+Côté musulman, l'histoire est plus ancienne encore, et plus subtile. Les échecs, le *shatranj*, [parviennent au monde islamique depuis la Perse sassanide](/fr/blog/histoire-et-origines-des-echecs/#lislam--le-shatranj-labstraction-et-les-premiers-maîtres) (où le jeu se nomme *chatrang*) après les conquêtes du VIIᵉ siècle. Très vite, ils séduisent les élites cultivées de Bagdad, au point que les meilleurs joueurs, les *aliyat*, jouissent d'une réputation comparable à celle de savants.
 
 Mais le jeu pose d'emblée une question de droit religieux. L'**aniconisme**, cette réticence à représenter des figures vivantes, explique d'ailleurs que les pièces du shatranj soient devenues abstraites, géométriques, une forme qui voyagera jusqu'en Europe et marquera durablement le design des pièces. Surtout, les juristes se demandent : ce jeu est-il licite ?
 

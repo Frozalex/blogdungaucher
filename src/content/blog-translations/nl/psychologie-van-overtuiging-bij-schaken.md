@@ -94,7 +94,7 @@ Dit is het voet-tussen-de-deur-mechanisme: eerst een kleine instemming verkrijge
 
 **Het principe:** we volgen de instructies van als legitiem waargenomen figuren, vaak zonder de inhoud van de instructie opnieuw te onderzoeken.
 
-**Bij schaken:** deze hefboom is waarschijnlijk krachtiger hier dan in elk ander domein, omdat de autoriteit er **cijfermatig** is. Een titel en een rating zijn objectieve en publieke markeringen, en die objectiviteit geeft ze een aanzienlijk gewicht.
+**Bij schaken:** deze hefboom is waarschijnlijk krachtiger hier dan in elk ander domein, omdat de autoriteit er **cijfermatig** is. [Een titel en een rating](/nl/blog/gehoorzaamheid-aan-autoriteit-bij-schaken/) zijn objectieve en publieke markeringen, en die objectiviteit geeft ze een aanzienlijk gewicht.
 
 Dit produceert een precieze, en kostbare, glijbeweging. De titel getuigt van een **speelniveau**. Ze getuigt van geen enkele **pedagogische vaardigheid**, wat een heel andere zaak is. Een grootmeester kan een uitstekende speler en een slechte leraar zijn, met name omdat hij vergeten is hoe men op 1.400 Elo denkt, en omdat hij de moeilijkheden die voor hem onzichtbaar zijn geworden niet meer waarneemt.
 

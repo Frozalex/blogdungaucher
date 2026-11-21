@@ -68,7 +68,7 @@ Wanneer het mechanische deel meer dan 70% van je schaaktijd overschrijdt, ben je
 
 Burnout treft niet willekeurig. Vier profielen zijn overmatig blootgesteld.
 
-**De perfectionist op 1700 Elo.** Hij mikt op 2000. Elke verloren partij is een persoonlijke mislukking. Elke fout is bewijs van zijn onbekwaamheid. Onmogelijke normen, chronische spanning, continu verbrande middelen. Kans op burnout over 2 jaar: zeer hoog.
+**[De perfectionist op 1700 Elo](/nl/blog/perfectionisme-schaken/).** Hij mikt op 2000. Elke verloren partij is een persoonlijke mislukking. Elke fout is bewijs van zijn onbekwaamheid. Onmogelijke normen, chronische spanning, continu verbrande middelen. Kans op burnout over 2 jaar: zeer hoog.
 
 **De opgejaagde junior.** Betrokken ouders, ambitieuze club, waakzame bond. Zijn motivatie wordt steeds meer extern. De zelfdeterminatietheorie (Edward Deci & Richard Ryan, 1985) voorspelt precies wat er gaat gebeuren: instorting in de adolescentie, vaak definitieve opgave. Het geval is massaal gedocumenteerd bij junior tennissers en zwemmers: schaken ontsnapt er niet aan.
 

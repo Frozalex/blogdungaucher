@@ -97,7 +97,7 @@ O artesão dessa astúcia é um dominicano, **Jacques de Cessoles**, que redige 
 
 O procedimento é genial: ele não nega o jogo, ele o moraliza. O xadrez deixa de ser uma vaidade para se tornar um **espelho do bom governo**. O tratado circula por toda a Europa em inúmeras cópias, traduções e adaptações. Quando a imprensa chega, **William Caxton** publica uma versão inglesa, *The Game and Playe of the Chesse*, por volta de 1474: é um dos primeiros livros impressos em língua inglesa. Símbolo marcante: o jogo outrora destinado à fogueira se torna um dos primeiros objetos da cultura impressa.
 
-A partir daí, a questão está resolvida no Ocidente cristão. O jogo permanece às vezes suspeito quando se aposta dinheiro, mas o tabuleiro em si é reabilitado. No Renascimento e no Iluminismo, ele se torna um símbolo de inteligência e civilidade, uma raiz distante de seu lugar atual na cultura popular, tema previsto para outro artigo.
+A partir daí, a questão está resolvida no Ocidente cristão. O jogo permanece às vezes suspeito quando se aposta dinheiro, mas o tabuleiro em si é reabilitado. No Renascimento e no Iluminismo, ele se torna um símbolo de inteligência e civilidade, uma raiz distante de [seu lugar atual na cultura popular](/pt-br/blog/xadrez-na-cultura-popular/).
 
 ![Cessoles: o jogo como apoio a uma alegoria](/images/pt-br/echecs-religion-03-cessoles-moralisation.svg)
 
@@ -108,7 +108,7 @@ A partir daí, a questão está resolvida no Ocidente cristão. O jogo permanece
 
 ## O islã: da suspeita à tolerância condicional
 
-Do lado muçulmano, a história é ainda mais antiga, e mais sutil. O xadrez, o *shatranj*, chega ao mundo islâmico vindo da Pérsia sassânida (onde o jogo se chama *chatrang*) após as conquistas do século VII. Rapidamente, seduz as elites cultivadas de Bagdá, a ponto de os melhores jogadores, os *aliyat*, gozarem de uma reputação comparável à de sábios.
+Do lado muçulmano, a história é ainda mais antiga, e mais sutil. O xadrez, o *shatranj*, [chega ao mundo islâmico vindo da Pérsia sassânida](/pt-br/blog/historia-e-origens-do-xadrez/#o-islã-o-shatranj-a-abstração-e-os-primeiros-mestres) (onde o jogo se chama *chatrang*) após as conquistas do século VII. Rapidamente, seduz as elites cultivadas de Bagdá, a ponto de os melhores jogadores, os *aliyat*, gozarem de uma reputação comparável à de sábios.
 
 Mas o jogo coloca imediatamente uma questão de direito religioso. O **aniconismo** (essa reticência em representar figuras vivas) explica aliás que as peças do shatranj tenham se tornado abstratas, geométricas, uma forma que viajará até a Europa e marcará duradouramente o design das peças. Sobretudo, os juristas se perguntam: esse jogo é lícito?
 
@@ -128,7 +128,7 @@ Na Idade Média, a **Igreja ortodoxa russa** condena o xadrez. Ela herda dos câ
 
 Na prática, é outra história. As escavações arqueológicas, notadamente em Novgorod, exumam quantidade de peças de xadrez de todas as camadas da sociedade, sinal de uma prática popular intensa e contínua, apesar das repreensões do clero. Até a história da morte de **Ivan, o Terrível**, em 1584, o apresenta desabando enquanto preparava ou se dispunha a jogar uma partida de xadrez. Exata ou embelezada, a anedota mostra o lugar do jogo até no topo do Estado.
 
-A reviravolta virá bem mais tarde, e ela é total. No século XX, a **União Soviética** faz do xadrez um assunto de Estado: escolas, clubes, campeões celebrados como heróis nacionais, jogo erguido em vitrine da superioridade intelectual do regime. O entretenimento que a Igreja havia querido banir torna-se um instrumento de **influência** que o Estado encena até no grande palco diplomático da Guerra Fria, assunto previsto para outro artigo do blog. Raramente uma proibição religiosa terá conhecido tal revanche.
+A reviravolta virá bem mais tarde, e ela é total. No século XX, a **União Soviética** faz do xadrez um assunto de Estado: escolas, clubes, campeões celebrados como heróis nacionais, jogo erguido em vitrine da superioridade intelectual do regime. O entretenimento que a Igreja havia querido banir torna-se um instrumento de **influência** que o Estado encena até no grande [palco diplomático da Guerra Fria](/pt-br/blog/xadrez-e-diplomacia/#1972-um-campeonato-no-contexto-da-guerra-fria). Raramente uma proibição religiosa terá conhecido tal revanche.
 
 ## O judaísmo: uma tolerância estudiosa
 

@@ -124,7 +124,7 @@ Dit heeft een directe vertaling in schaken. Een zet kan theoretisch *perfect zij
 
 ## Geweigerde varianten: suboptimale evenwichten
 
-Een contra-intuïtief resultaat van speltheorie is dat er Nash-evenwichten kunnen bestaan die niet de best mogelijke uitkomsten zijn voor beide spelers. Deze suboptimale evenwichten (of Pareto-gedomineerde evenwichten) bestaan ook in schaken.
+Een contra-intuïtief resultaat van [speltheorie](/nl/blog/speltheorie-schaken/) is dat er Nash-evenwichten kunnen bestaan die niet de best mogelijke uitkomsten zijn voor beide spelers. Deze suboptimale evenwichten (of Pareto-gedomineerde evenwichten) bestaan ook in schaken.
 
 Sommige openingsvarianten leiden naar stellingen die "remise maar saai" zijn en die beide spelers om sportieve redenen liever vermijden. In een wereldkampioenschapsmatch waar remise onvoldoende is, hebben beide spelers belang bij het kiezen van meer onevenwichtige varianten, zelfs als die theoretisch minder solide zijn. De sportieve context verandert de nutsfuncties en daarmee de evenwichten.
 

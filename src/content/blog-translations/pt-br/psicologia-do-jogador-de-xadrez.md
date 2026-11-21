@@ -35,7 +35,7 @@ Depois de um erro grave, você acelera, quer “recuperar” imediatamente ou in
 
 A meta-análise de Shields e seus colegas (2016) mostra que o estresse agudo pode afetar a memória de trabalho e a flexibilidade cognitiva, com efeitos mais variados sobre a inibição. Não mede o mecanismo de cada erro on-line.
 
-Na análise, anote separadamente a emoção e o erro: “estava com raiva” e depois “não verifiquei o xeque intermediário”. Assim você pode buscar uma adaptação concreta, sem usar a emoção como explicação suficiente para tudo.
+Na análise, [anote separadamente a emoção e o erro](/pt-br/blog/inteligencia-emocional-no-xadrez/#o-protocolo): “estava com raiva” e depois “não verifiquei o xeque intermediário”. Assim você pode buscar uma adaptação concreta, sem usar a emoção como explicação suficiente para tudo.
 
 Se puder interromper uma sessão em que está emendando decisões das quais se arrepende, experimente essa pausa. Em torneios, onde não pode suspender livremente a partida, volte a uma verificação simples e ao tempo realmente disponível.
 

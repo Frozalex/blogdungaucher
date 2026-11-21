@@ -81,7 +81,7 @@ Escolha uma posição em que ela consiga compreender a resposta, não apenas adi
 
 **Perguntar apenas pelo resultado.** Depois de um encontro, pergunte também o que a criança descobriu, achou difícil ou gostou. O rating pode interessar a alguns jogadores; não deve virar um rótulo de seu valor, em nenhuma idade.
 
-**Confundir descoberta com programa de desempenho.** Aprender os movimentos rapidamente não significa querer deveres de xadrez, um repertório de aberturas ou torneios. Pergunte à criança antes de acrescentar outra exigência.
+**Confundir descoberta com programa de desempenho.** Aprender os movimentos rapidamente não significa querer deveres de xadrez, um repertório de aberturas ou torneios. Isso também vale para [crianças com altas habilidades](/pt-br/blog/xadrez-e-superdotacao/): que tipo de jogo elas gostariam de experimentar? Pergunte à criança antes de acrescentar outra exigência.
 
 **Impor a diversão.** Se o interesse diminuir, proponha outra forma de jogar, uma pausa ou outra atividade. Não é necessário afirmar que a motivação seria o preditor estatístico mais forte para respeitar a escolha de uma criança.
 

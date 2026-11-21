@@ -45,7 +45,7 @@ These questionnaires do not, by themselves, demonstrate a causal chain from coac
 
 ## Welcoming a child without making the exit an examination
 
-If you accompany a young player, you can start by asking whether they want to talk now. A question about hunger, tiredness or wanting to see friends leaves room for something other than the score. Then offer analysis rather than imposing it.
+If you accompany a young player, you can start by asking whether they want to talk now. A question about hunger, tiredness or wanting to see friends leaves room for something other than the score. Then offer analysis rather than imposing it. The same principle applies when [teaching a child their first moves](/en/blog/teaching-chess-to-children/): let their questions set the pace.
 
 You can acknowledge disappointment without confirming every explanation. “I understand you are disappointed” does not imply that the clock, opponent or arbiter is responsible. Conversely, do not assume an excuse before hearing what happened.
 
@@ -61,7 +61,7 @@ If you play, you can request precise technical feedback without accepting humili
 
 ## A perspective, not a label
 
-A quiet child may be tired, disappointed, absorbed or simply not talkative. An adult who analyses immediately may enjoy understanding their game. These isolated behaviours do not reveal an attachment style.
+A quiet child may be tired, disappointed, absorbed or simply not talkative. A child may enjoy the [social life of the chess club](/en/blog/solitude-in-chess/#what-a-club-can-change-in-the-first-ten-minutes) and still want some quiet after a game. An adult who analyses immediately may enjoy understanding their game. These isolated behaviours do not reveal an attachment style.
 
 No established threshold at twelve or thirteen is presented here beyond which a relationship explains quitting. If discomfort persists, ask what is weighing on the player: tournament frequency, the coach relationship, family expectations or a desire to play differently. The answer deserves to be heard before reaching for a theory.
 

@@ -28,7 +28,7 @@ De [semantiek van mogelijke werelden](https://nl.wikipedia.org/wiki/Mogelijke-we
 
 ## De schaakboom als structuur van mogelijke werelden
 
-De variantenboom van een schaakpartij is precies een structuur van mogelijke werelden in Kripke's zin. Elke stelling is een wereld. De toegankelijkheidsrelatie is: "je kunt deze stelling vanuit de andere bereiken met een legale zet."
+De [variantenboom van een schaakpartij](/nl/blog/algoritmische-complexiteit-schaken/#de-spelenboom-en-de-vloek-van-de-combinatorische-explosie) is precies een structuur van mogelijke werelden in Kripke's zin. Elke stelling is een wereld. De toegankelijkheidsrelatie is: "je kunt deze stelling vanuit de andere bereiken met een legale zet."
 
 Vanuit de beginpositie is een immense verzameling werelden (stellingen) toegankelijk. Naarmate de partij vordert, worden sommige werelden ontoegankelijk (de niet-gespeelde partijen), en worden nieuwe werelden toegankelijk (de bereikte stellingen).
 

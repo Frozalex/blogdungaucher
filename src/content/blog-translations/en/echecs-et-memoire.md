@@ -28,7 +28,7 @@ The study concerns domain expertise. It does not predict how many words Karpov w
 
 ## Working memory and long-term knowledge
 
-Holding a variation in mind requires retaining and updating information. Existing knowledge can help organise the task: you do not need to rediscover every piece relationship as though seeing the game for the first time.
+Holding a variation in mind requires [retaining and updating information](/en/blog/chess-and-working-memory/). Existing knowledge can help organise the task: you do not need to rediscover every piece relationship as though seeing the game for the first time.
 
 The old account “seven units for everyone, so four pieces per unit makes 28 pieces” turned an illustration into a universal measurement. Capacities and strategies depend on the task; that multiplication cannot calculate every player’s recall.
 

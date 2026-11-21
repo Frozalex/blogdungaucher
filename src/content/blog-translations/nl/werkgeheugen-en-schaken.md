@@ -67,7 +67,7 @@ De **fonologische lus**: houdt verbale en auditieve informatie vast (de "woorden
 
 Het **visueel-ruimtelijke schetsblok**: houdt visuele en ruimtelijke informatie vast: dit is de meest gebruikte component bij schaken, om de representatie van het bord en de stukken vast te houden tijdens variantberekening.
 
-De **episodische buffer**: integreert de informatie van de verschillende subsystemen met het langetermijngeheugen: het "bindmiddel" dat het werkgeheugen verbindt met opgeslagen kennis.
+De **episodische buffer**: integreert de informatie van de verschillende subsystemen met het [langetermijngeheugen](/nl/blog/schaken-en-geheugen/): het "bindmiddel" dat het werkgeheugen verbindt met opgeslagen kennis.
 
 De totale capaciteit van dit systeem is beperkt: ongeveer 4 tot 7 elementen tegelijk, afhankelijk van de aard van de informatie en het expertiseniveau. Daarboven begint oude informatie te "lekken": het verlaat het werkgeheugen voordat het is verwerkt of overgedragen naar het langetermijngeheugen.
 
@@ -111,7 +111,7 @@ Het goede nieuws: werkgeheugen is trainbaar. Het minder goede nieuws: de trainin
 
 *Uit het hoofd naspelen*: een beroemde partij kiezen (bekend tot zet 15-20) en deze uit het hoofd naspelen zonder in het boek te kijken, met controle achteraf.
 
-*Tijdgebonden berekening*: een complexe stelling vastleggen en de benodigde tijd meten om een variant van vaste diepte te berekenen. Het doel is deze tijd te verminderen: wat efficiëntere compressiestrategieën afdwingt.
+*Tijdgebonden berekening*: een complexe stelling vastleggen en de benodigde tijd meten om een variant van vaste diepte te berekenen. Het doel is deze tijd te verminderen: wat efficiëntere compressiestrategieën afdwingt. Aan het bord komt daar een afweging bij: [wanneer een stelling extra bedenktijd verdient](/nl/blog/tijdbeheer-schaakklok/#praktische-tijdbeheerheuristieken).
 
 **Algemene oefeningen:**
 

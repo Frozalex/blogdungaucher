@@ -74,7 +74,7 @@ Aan het Perzische hof wordt het spel een kunst van de elite, een verfijning van 
 
 Na de verovering van Perzië door islamitische legers in de zevende eeuw wordt het spel overgenomen door de islamitische wereld onder de naam **shatranj**. Het beleeft daar een theoretische gouden eeuw.
 
-Daar verschijnt een beslissend visueel kenmerk: onder invloed van de terughoudendheid om levende figuren af te beelden, worden de stukken **abstract**, geometrisch, ver van realistische figuurtjes. Deze gestileerde vorm zal tot in Europa reizen en het uiterlijk van de stukken blijvend beïnvloeden. De soms gespannen verhouding tussen religieuze autoriteiten en het spel verdient overigens een eigen verhaal.
+Daar verschijnt een beslissend visueel kenmerk: onder invloed van de terughoudendheid om levende figuren af te beelden, worden de stukken **abstract**, geometrisch, ver van realistische figuurtjes. Deze gestileerde vorm zal tot in Europa reizen en het uiterlijk van de stukken blijvend beïnvloeden. De soms gespannen [verhouding tussen religieuze autoriteiten en het spel](/nl/blog/schaken-religie-verbod/) verdient overigens een eigen verhaal.
 
 Vooral wordt shatranj een studieobject. Meesters als al-Adli of as-Suli, in de achtste en negende eeuw, schrijven verhandelingen, ordenen openingen, componeren problemen (de *mansubat*) en stellen een eerste speltheorie op. De beste spelers genieten aanzienlijk aanzien. Duizend jaar vóór databases wordt er al geanalyseerd, gecatalogiseerd, doorgegeven.
 

@@ -17,7 +17,7 @@ faq:
 
 You may know the apparent paradox: apps and media present [chess](https://fr.wikipedia.org/wiki/%C3%89checs) as enormously complex, then you open an app, play a reasonable move and receive an engine correction with a line you could not find alone.
 
-Can this really be reduced to formulas? Do mathematics and computing offer partial answers, or is complexity merely a story we tell? There are two distinct points: exhaustive exploration of the full game space is beyond current practical resources, while selective search, evaluation, pruning and learning can produce performance exceeding human match results.
+Can this really be reduced to formulas? Do mathematics and computing offer partial answers, or is complexity merely a story we tell? There are two distinct points: [exhaustive exploration of the full game space](/en/blog/chess-algorithmic-complexity/) is beyond current practical resources, while selective search, evaluation, pruning and learning can produce performance exceeding human match results.
 
 ![Diagram of an 8 by 8 chessboard](/images/en/echecs-ia-01-plateau.svg)
 

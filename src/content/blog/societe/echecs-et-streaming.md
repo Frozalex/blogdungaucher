@@ -122,7 +122,7 @@ En 2020, deux phénomènes se sont superposés avec une force sans précédent.
 
 La pandémie de COVID-19 a forcé des milliards de personnes à rester chez elles, cherchant des activités intellectuelles en ligne. Les plateformes de jeu en ligne ont toutes connu des pics : les échecs particulièrement, parce que la plateforme Chess.com était déjà bien établie et que Lichess (version open-source gratuite) offrait une alternative accessible.
 
-La pandémie et la sortie du *Jeu de la Dame* en 2020 ont fourni un contexte de visibilité accrue aux échecs en ligne. Le visionnage d’une série, la création d’un compte et le suivi régulier d’un stream restent des comportements distincts.
+La pandémie et [la sortie du *Jeu de la Dame* en 2020](/fr/blog/echecs-et-culture-populaire/#the-queens-gambit--la-rupture) ont fourni un contexte de visibilité accrue aux échecs en ligne. Le visionnage d’une série, la création d’un compte et le suivi régulier d’un stream restent des comportements distincts.
 
 Chess.com est passé de 2 millions de membres à 10 millions en 2020. En 2024, il dépasse 150 millions de membres enregistrés.
 

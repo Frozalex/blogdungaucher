@@ -8,7 +8,7 @@ frSlug: "echecs-stress-tournoi"
 faq: [{"question": "Por que pode ser difícil calcular sob pressão?", "answer": "O estresse agudo pode prejudicar algumas funções executivas, mas um erro tem várias causas possíveis: dificuldade da posição, tempo restante, cansaço ou conhecimento insuficiente. O resultado não permite medir seu cortisol."}, {"question": "A respiração acalma o estresse em três minutos?", "answer": "Nenhum prazo universal é estabelecido aqui. Você pode experimentar respirar mais devagar e confortavelmente, sem prender o ar nem fazer esforço, e depois voltar à posição. Não é garantia de queda imediata do cortisol."}, {"question": "Jogadores experientes ficam menos estressados?", "answer": "A experiência pode tornar uma situação mais familiar. As fontes citadas não permitem afirmar que todos os veteranos tenham marcadores de estresse inferiores aos dos iniciantes em situações equivalentes."}, {"question": "Como preparar uma rotina?", "answer": "Escolha uma sequência simples para experimentar antes de várias partidas de treinamento: preparar-se sem pressa, observar a respiração e depois escolher um objetivo de jogo. Ajuste conforme sua experiência."}]
 ---
 
-Sua frequência cardíaca aumentou. As mãos estão levemente úmidas. O relógio conta os segundos e a posição é difícil: não perdida, mas difícil. Você precisa calcular, e sua atenção volta sem parar à classificação.
+[Sua frequência cardíaca aumentou](/pt-br/blog/xadrez-e-o-corpo/#frequência-cardíaca-e-calorias-duas-informações-diferentes). As mãos estão levemente úmidas. O relógio conta os segundos e a posição é difícil: não perdida, mas difícil. Você precisa calcular, e sua atenção volta sem parar à classificação.
 
 O estresse de torneio não é um defeito de caráter. Você pode buscar uma maneira de jogar com essa tensão, sem esperar ficar perfeitamente calmo.
 
@@ -49,7 +49,7 @@ Uma frase para experimentar pode ser: “Sinto tensão e ainda posso examinar es
 
 ## Preparar o torneio e reler a experiência
 
-Antes do torneio, prepare o material e o trajeto para evitar uma pressa adicional. Escolha um objetivo que consiga descrever depois da partida: verificar as ameaças antes de mover uma peça, por exemplo. Experimente sua rotina no treinamento, em vez de descobri-la em uma rodada decisiva.
+Antes do torneio, prepare o material e o trajeto para evitar uma pressa adicional. Escolha um objetivo que consiga descrever depois da partida: verificar as ameaças antes de mover uma peça, por exemplo. [Experimente sua rotina no treinamento](/pt-br/blog/efeito-placebo-no-xadrez/#manter-uma-rotina-sem-lhe-dar-poder-mágico), em vez de descobri-la em uma rodada decisiva.
 
 Depois da partida, distinga sua sensação das suas decisões. Em que momento estava tenso? Qual lance jogou? Quais opções tinha? Uma partida ganha pode conter uma decisão precipitada; uma partida perdida pode conter um bom trabalho de cálculo.
 

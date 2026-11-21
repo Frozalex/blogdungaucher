@@ -86,7 +86,7 @@
     "bytes": 5118440,
     "sha256": "fb638ee66098adce36633a1e96b2c6eb665c235e3a6a8a838ef991baa78e4013",
     "sourceFile": "src/content/blog/esprit/biais-de-confirmation-aux-echecs.md",
-    "sourceHash": "d55777717c22e1b39a6153c85196a17884e719c3ea6736fb7caa6c59d5947286",
+    "sourceHash": "7853619d30ad9f735dbf3ba585789dcaad8f224c03ae3688983e3730b0bec94e",
     "cover": "public/pinterest-media/covers/biais-de-confirmation-aux-echecs.jpg",
     "coverHash": "112babd82cce34f4ec506e49ba67a2b0b235e1bfee5462e63f4c711fa3aab33c",
     "video": {
@@ -115,7 +115,7 @@
     "bytes": 51325,
     "sha256": "c3047f2b6b2901d370ea20730066f58d74699033074fa3ed2796d4c8d7dfbb29",
     "sourceFile": "src/content/blog/societe/echecs-et-streaming.md",
-    "sourceHash": "90ecdb8f75296417b063fcc9b607e9347f5ed064e5949456cc2a3b40f32b78e5",
+    "sourceHash": "8e6ba12ac4483f6e0f0a8c66fba8ff5a6974649e91a1d6ea8695d55fd7aef74f",
     "cover": "public/pinterest-media/covers/echecs-et-streaming.jpg",
     "coverHash": "358a1fe8452aeed7f8f64dab919bcdc6a2f77480ed93a166ae6faac136fee25f"
   },
@@ -126,7 +126,7 @@
     "bytes": 5476363,
     "sha256": "22ef836e984e7025bb75eae92caee0dba61b65e656adc2e83e7e4ab7befd5c67",
     "sourceFile": "src/content/blog/science/effet-placebo-aux-echecs.md",
-    "sourceHash": "a47ad7281f735c32aaa495389decda0d909d006f282868de2be44c4c7ff82066",
+    "sourceHash": "565b2036251d4c9cc4f100f48cac8d77e3fe6c3bbb9d406515f11dd7b7aba274",
     "cover": "public/pinterest-media/covers/effet-placebo-aux-echecs.jpg",
     "coverHash": "5c3d8bef8137227257f447f8138ef07a07691d63dc0bb22c254c6721f89dd1cf",
     "video": {
@@ -155,7 +155,7 @@
     "bytes": 49486,
     "sha256": "f19a6050752a4a544d92fbcd1ed49f67e1cfe4c5bce25d87a94cfbc9be8345d5",
     "sourceFile": "src/content/blog/esprit/manipulation-emotionnelle-aux-echecs.md",
-    "sourceHash": "2999b03dac3503cdc7388ef36ad365f068dd492c76aa7e347d83f8458468b077",
+    "sourceHash": "745d4bed04c4a7a89c9038e4444e20c37349e5fc4b97ac70e79e6f39a76ee939",
     "cover": "public/pinterest-media/covers/manipulation-emotionnelle-aux-echecs.jpg",
     "coverHash": "398a5427c5946af3e34beb480a3dda8720fd93f34118dde74665be995650bf07"
   },
@@ -166,7 +166,7 @@
     "bytes": 56781,
     "sha256": "259fd5cfa37431a19568d6e74e1b65f8a85178d9862973b226334308a0d480f3",
     "sourceFile": "src/content/blog/science/echecs-alphazero-stockfish.md",
-    "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+    "sourceHash": "d65ae6f93c3f10348fa050ee01102e9e962ed949d0e4f9b8a422a99c430a6571",
     "cover": "public/pinterest-media/covers/echecs-alphazero-stockfish.jpg",
     "coverHash": "c53319b10c3796c609f689d0b2a46eb736ebe609674deed067d994892a271d75"
   },
@@ -275,7 +275,7 @@
     "bytes": 49610,
     "sha256": "a8404953f559474596d677f29be3439f68b4bb8c2ab5e4037b25af7c8b8efed0",
     "sourceFile": "src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md",
-    "sourceHash": "0c785f2db4b403951ffe708d1cec88f1994bae903d6a324cd50a052627f8f0f5",
+    "sourceHash": "265dc797d4d9d0ef1d2b75f7c2b6a7452940c82daffbcccdda1561e31291cdb0",
     "cover": "public/pinterest-media/covers/theorie-de-l-attachement-aux-echecs.jpg",
     "coverHash": "06209f6044d0798ae6065b4d95d7d29ec85cddd2b6f8ccdf2b0b622cdb80bb28"
   },
@@ -326,7 +326,7 @@
     "bytes": 5622606,
     "sha256": "b54ee842aa108ac20ef3e122e9541184aa569aeb2852f5d74b043871f4e45898",
     "sourceFile": "src/content/blog/esprit/mecanismes-de-defense-aux-echecs.md",
-    "sourceHash": "de0e4faa385ea6cfbb5925dba6716ceb0b5716c75382e7b8055a3c705d044ea0",
+    "sourceHash": "a89be7afec5d7bf61a96e3fbad683a79d4765ae5c3604f224fedd7f964533d06",
     "cover": "public/pinterest-media/covers/mecanismes-de-defense-aux-echecs.jpg",
     "coverHash": "6819ca89dc59496b6e9104b51559a8bc712089ee268a9bb3683cf6027f25ee3b",
     "video": {
@@ -355,7 +355,7 @@
     "bytes": 51751,
     "sha256": "860fae8e90cdc791a46d07c0ffcc3ef7629d02be334a024bd4f897eeeb452d36",
     "sourceFile": "src/content/blog/societe/echecs-et-hpi.md",
-    "sourceHash": "197e5b02216f89426a5e03a3a4eddc9b7fb4a19050b383ba59ced03dc679fa29",
+    "sourceHash": "795dcce65c2d8947312b76ae513e8d3ce4b199ab6bdfc53363f2f55f2c42ed18",
     "cover": "public/pinterest-media/covers/echecs-et-hpi.jpg",
     "coverHash": "1be2ed49b567c14a3a94ba08bd9a24d84174a3a4587b5416e2c90187cb2428f0"
   },
@@ -406,7 +406,7 @@
     "bytes": 49575,
     "sha256": "d24042b752a0e8295abba7a0f8da05de76d56d9bb67e26c5a5429658d989b029",
     "sourceFile": "src/content/blog/science/echecs-et-genetique.md",
-    "sourceHash": "f82464fea06d1566b924492059e832a8b8a9a76643381686c88986ea52601208",
+    "sourceHash": "d4e8c36008ac60a17d95bbadd97973291bd1fc87a3835dc954ba94ede9633ae0",
     "cover": "public/pinterest-media/covers/echecs-et-genetique.jpg",
     "coverHash": "f0fda00c54cec609a2f80817f87917f91a4e34f8b3920609aa696daa16792bf3"
   },
@@ -486,7 +486,7 @@
     "bytes": 4847267,
     "sha256": "c54f030828635efa7d994ddff0fcaeb29fc331f3356d02498ad3d4e4239aea03",
     "sourceFile": "src/content/blog/science/echecs-et-dopamine.md",
-    "sourceHash": "6f7c185cdb91cb02c154ec681d7a323f2502aacf03a06e104e9d8698e554621d",
+    "sourceHash": "4b0121e64043c07ff215bfc19160f4fad5311bc839ae72da7e241c45471d28c7",
     "cover": "public/pinterest-media/covers/echecs-et-dopamine.jpg",
     "coverHash": "0192aba81fc65451250b65e51fbbc1076f62628bf8cb9a0bd2279521b4112888",
     "video": {
@@ -537,7 +537,7 @@
     "bytes": 5224080,
     "sha256": "4c5b5ff51e8aa4cef16c98a0b1dc07e0409fb38fc698e955e6f96ff3fd1b532a",
     "sourceFile": "src/content/blog/societe/echecs-vs-philosophie-pensee-strategique.md",
-    "sourceHash": "81f09a540af645eea71c4064bce452e4530146b3963ef9f82c0ce198a86b49d6",
+    "sourceHash": "953aec30b245e703bd022e7f775a71079c49af086cdce2765bc70c072935ae2e",
     "cover": "public/pinterest-media/covers/echecs-vs-philosophie-pensee-strategique.jpg",
     "coverHash": "e99e209ced01c476121ad5ca932e3aab74ba7e9f587468522cde888413427426",
     "video": {
@@ -566,7 +566,7 @@
     "bytes": 6276656,
     "sha256": "5d93c714e16c47a105ffeb002fceb3218677274cf1be22011ad5d253e311eabb",
     "sourceFile": "src/content/blog/esprit/echecs-et-confiance-en-soi.md",
-    "sourceHash": "454cd1c2cabd86367d438bd4e4c5494c88cb08f678dd7e2d71563419476f9a71",
+    "sourceHash": "3eacb8ccebe2f327661f985e900548f37e02f0f87413604c32a71b14c11395a7",
     "cover": "public/pinterest-media/covers/echecs-et-confiance-en-soi.jpg",
     "coverHash": "afa2daaa0696e970565cc2fa9385e422de8b7cb536021ac6e4827ddaed57621f",
     "video": {
@@ -606,7 +606,7 @@
     "bytes": 5476206,
     "sha256": "b9b21d54be1f71ba5c72ab05034e1e05c5df5c476365716c686e32b0c846ad5c",
     "sourceFile": "src/content/blog/science/neurones-miroirs-aux-echecs.md",
-    "sourceHash": "6f51a72122e7a28ed0b9414cbd26745fa304a85fe0d982c25f5db06f428868c6",
+    "sourceHash": "2c15f80d697501608c77c7f009457cb91683af5fe4ebbcb45773e9083dd8bccd",
     "cover": "public/pinterest-media/covers/neurones-miroirs-aux-echecs.jpg",
     "coverHash": "6bbf5c07553853b834a523cb2b82b8b75fb90f57b4d5c782dfad4ad157eea3da",
     "video": {
@@ -646,7 +646,7 @@
     "bytes": 64106,
     "sha256": "9cd2dc7c2c3e787773b9cfacf3e83ba20e807ab935c509827fa5f0451e43bceb",
     "sourceFile": "src/content/blog/science/logique-modale-aux-echecs.md",
-    "sourceHash": "bff47fd27cffd412bf4c5f7d86cd15c01dbf71de49c59079b49c5c9d64bd6a10",
+    "sourceHash": "cbd1ec891814978fdfc9bd36cc2ef9257848bcce2f273871fc7b8a2498af0a13",
     "cover": "public/pinterest-media/covers/logique-modale-aux-echecs.jpg",
     "coverHash": "c64fb2659c082cf24455b3b32d4f62092ebc21728fa93fa7542cef11e754090b"
   },
@@ -657,7 +657,7 @@
     "bytes": 5888757,
     "sha256": "db22e51cf2f1bfb93f3221f1458d94b8a1098af7fdec335e7e93e8a9776acb77",
     "sourceFile": "src/content/blog/societe/echecs-et-autisme.md",
-    "sourceHash": "612a365df8540e352e6c927892cb8674f7be88d8b7ef90763ac8ac5caeb760ae",
+    "sourceHash": "982e5d786374bc3e5dadc2367c334f9a913e6095329d26c4673b107a207c6ad5",
     "cover": "public/pinterest-media/covers/echecs-et-autisme.jpg",
     "coverHash": "2852e6eb2670ad1a60ef55357d43e945ff69375e6c0270dd992509e55301e3c8",
     "video": {
@@ -686,7 +686,7 @@
     "bytes": 5228442,
     "sha256": "90fa87283aad0fe2a0d598dc43cc81fec1833b6da91d60b73ba86c04bd128dd0",
     "sourceFile": "src/content/blog/esprit/burnout-chess.md",
-    "sourceHash": "df6ef85025c51f01037b75cfa2f1a8a29adaf1f6e712b057a71db3acab1d5c43",
+    "sourceHash": "06cea15f9d52ac5f0d3e23db50ed796e01fc55881c716512bbd262674982415c",
     "cover": "public/pinterest-media/covers/burnout-chess.jpg",
     "coverHash": "e38fe402c50b47fbd101d6ebb50d438733859683843459d547768d5b9ee9d7e9",
     "video": {
@@ -752,10 +752,10 @@
     "id": "5-biais-cognitifs-blunder",
     "format": "pdf",
     "file": "public/pinterest-media/pdf/5-biais-cognitifs-blunder.pdf",
-    "bytes": 49499,
-    "sha256": "1f70366afc8d29e2a592bf1b55f8518aaec7b2aca488fcdfe669fc9fddec4ee9",
+    "bytes": 48957,
+    "sha256": "10c5f767a55729c1fea28955950bfb44041102bdfe662cfc81ac29008f3d17a5",
     "sourceFile": "src/content/blog/esprit/5-biais-cognitifs-blunder.md",
-    "sourceHash": "7df2020728ddf2f7935ba2fc200b9ba9e82ac24483a63fd0c0e828d630c499f0",
+    "sourceHash": "77d637f7d6e9ecd5860f848f609de5de757db6640c5a5e78fe2b576ef1ab0eec",
     "cover": "public/pinterest-media/covers/5-biais-cognitifs-blunder.jpg",
     "coverHash": "be1f1e45e900ed742b0651e1a543b34ea95fc118e3e72580806dd13650bf34d3"
   },
@@ -766,7 +766,7 @@
     "bytes": 86385,
     "sha256": "66975e6a6adfdb6d4e4fb9b277dd13b490d7df5b817f21cabd4983a1fc7bec19",
     "sourceFile": "src/content/blog/science/theorie-des-jeux-aux-echecs.md",
-    "sourceHash": "e305df66945f867be854b1bec2a53f80d173f0cb9b041db43b534b1f62348064",
+    "sourceHash": "93be71ff4cd1daa1758022891c5f0561f899a766114d3e6d7cb0052a61ff51ea",
     "cover": "public/pinterest-media/covers/theorie-des-jeux-aux-echecs.jpg",
     "coverHash": "5a79a36f45de7fc16d1bb46250e6cb12e4b614ed501c4e1f2c09a425f32352b9"
   },
@@ -846,7 +846,7 @@
     "bytes": 5825005,
     "sha256": "0b27116e7ae3055ccc648f76842d681db6e4932aedce8363955aebe9b8366bd3",
     "sourceFile": "src/content/blog/esprit/echecs-et-perfectionnisme-toxique.md",
-    "sourceHash": "86e5870b093b3abdf96f53f2a5f51da53be1c93a736b396668c5254a883d52ea",
+    "sourceHash": "27bd7361bd73008e09828fa928ed83621e6266a85d13ab20266dd1d9229f5782",
     "cover": "public/pinterest-media/covers/echecs-et-perfectionnisme-toxique.jpg",
     "coverHash": "4530383cd3960d95f36ce433f89170a0e668b89dee1ad1f2af8d220c55458914",
     "video": {
@@ -926,7 +926,7 @@
     "bytes": 5560321,
     "sha256": "a2266ef8f50b3fe25745f97f23cf730faf390765b952f4a50a9c5904eefc48e4",
     "sourceFile": "src/content/blog/science/echecs-et-memoire.md",
-    "sourceHash": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930",
+    "sourceHash": "ed158a58f83bf232222a866b7b2888c5abd6c860365f139373a86389f416756b",
     "cover": "public/pinterest-media/covers/echecs-et-memoire--angle-01.jpg",
     "coverHash": "9f4918e3f0a77ac5611f782c9fe8d39885dc8f379fc76ec8f166f16a8decd307",
     "video": {
@@ -955,7 +955,7 @@
     "bytes": 49965,
     "sha256": "5f0cfa4f28780ff13497bf3338ac2b474d189001848d361bb708d2a13979f2e2",
     "sourceFile": "src/content/blog/esprit/psychologie-du-joueur-d-echecs.md",
-    "sourceHash": "a969e2efd408b52af777b7ac5ec8a69cb0d78b7209c58143f66a979adc5010a9",
+    "sourceHash": "c5c97aaebba3fa4819620057cd0fe2c150ef811d78c624e2f97cb1070e1c4294",
     "cover": "public/pinterest-media/covers/psychologie-du-joueur-d-echecs--angle-01.jpg",
     "coverHash": "d326d3a8ef6fe52615c2b780a06ea311ab9117a0adc3b1389ace0f64fcaaec1d"
   },
@@ -1006,7 +1006,7 @@
     "bytes": 5151573,
     "sha256": "9509b0120b45683149a92204fd5b655f4be90e40a8a2628087b53e0777d56a14",
     "sourceFile": "src/content/blog/esprit/echecs-et-procrastination.md",
-    "sourceHash": "3747f32a6fadf5ad9ad8386bfc44011efe5d3cd79e05d2afa3aad0aaf09095d6",
+    "sourceHash": "3930f838dda898837230fcd94c2c0cb5ede131e08409c9742c5459c81fb0177d",
     "cover": "public/pinterest-media/covers/echecs-et-procrastination--angle-01.jpg",
     "coverHash": "4699ce160e229896cfec8185bf30b9cfd0dc3e446e86bdaa4e12d6df4975db8f",
     "video": {
@@ -1075,7 +1075,7 @@
     "bytes": 50684,
     "sha256": "56a130a7fa83c9d640eac04ae135af9ed710b5db343fd7adb4c4e102ba35a462",
     "sourceFile": "src/content/blog/esprit/biais-de-confirmation-aux-echecs.md",
-    "sourceHash": "d55777717c22e1b39a6153c85196a17884e719c3ea6736fb7caa6c59d5947286",
+    "sourceHash": "7853619d30ad9f735dbf3ba585789dcaad8f224c03ae3688983e3730b0bec94e",
     "cover": "public/pinterest-media/covers/biais-de-confirmation-aux-echecs--angle-01.jpg",
     "coverHash": "aaaafcd369dd8668b64a9f0beab861144cd66f2dbb37d50a3434daefc6d62c45"
   },
@@ -1086,7 +1086,7 @@
     "bytes": 50167,
     "sha256": "6df901c27b1960756ef0fb6d6fdf65734ba51c00c98b2ba8e1789e70ddf62634",
     "sourceFile": "src/content/blog/science/effet-placebo-aux-echecs.md",
-    "sourceHash": "a47ad7281f735c32aaa495389decda0d909d006f282868de2be44c4c7ff82066",
+    "sourceHash": "565b2036251d4c9cc4f100f48cac8d77e3fe6c3bbb9d406515f11dd7b7aba274",
     "cover": "public/pinterest-media/covers/effet-placebo-aux-echecs--angle-01.jpg",
     "coverHash": "c93308b1a6197e76d76a744ca291d2643730266af3fcfa09292b8f81ca4acb41"
   },
@@ -1097,7 +1097,7 @@
     "bytes": 5111056,
     "sha256": "f8771509c08966c9dde870657bcaa8e760d0d8b82ea5138276b8eafa102237d4",
     "sourceFile": "src/content/blog/societe/echecs-et-culture-populaire.md",
-    "sourceHash": "7c295e52dc4647e4f805ad6c4308107d9638f94423127ce7845f51494f77d8b2",
+    "sourceHash": "709ed77a10486d68a6f217a993647c19d1c59b39f4cb0f0941151788f5b83634",
     "cover": "public/pinterest-media/covers/echecs-et-culture-populaire--angle-01.jpg",
     "coverHash": "7a361557819772ad7cb2b69e0385858213ff164c7454ff7d1402f2ae3ea4a3d0",
     "video": {
@@ -1126,7 +1126,7 @@
     "bytes": 3745942,
     "sha256": "90ab0c37095c28484b37e5497983c3258e1d654ce44f762ee56ec7a653a8bc30",
     "sourceFile": "src/content/blog/esprit/echecs-et-visualisation.md",
-    "sourceHash": "3fdff8da8278ea5168978f7a3847219de1451ac03b4685732aaf11ca8fe11f91",
+    "sourceHash": "249f7561593ae5b24b85dc8c1bcf4628111faefd412c4332ce1cbb6470b1caa2",
     "cover": "public/pinterest-media/covers/echecs-et-visualisation--angle-01.jpg",
     "coverHash": "1bbccc72e5879a3c11baebdebf5ae95f47233d15b1302e68c944fe3d57d8a2c7",
     "video": {
@@ -1246,7 +1246,7 @@
     "bytes": 5862526,
     "sha256": "28d303e48ba30e2506eeac5faeb10eec6fc7b738c361e527205d541190363eff",
     "sourceFile": "src/content/blog/esprit/echecs-et-concentration.md",
-    "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
+    "sourceHash": "ec7a7bfc0b0ac449dbc5d6dedbf3cea72445d27f0a8ebfc92ef9b79a5df5990b",
     "cover": "public/pinterest-media/covers/echecs-et-concentration--angle-01.jpg",
     "coverHash": "79e0d3449ae13c5125ec742628820ac5e48218e954db6be39a5c165ae0354448",
     "video": {
@@ -1315,7 +1315,7 @@
     "bytes": 49757,
     "sha256": "9287eea8d3550c7df8e8376a5d39164d4e8aca2832bb821ccbb08ca2a539ae85",
     "sourceFile": "src/content/blog/esprit/mecanismes-de-defense-aux-echecs.md",
-    "sourceHash": "de0e4faa385ea6cfbb5925dba6716ceb0b5716c75382e7b8055a3c705d044ea0",
+    "sourceHash": "a89be7afec5d7bf61a96e3fbad683a79d4765ae5c3604f224fedd7f964533d06",
     "cover": "public/pinterest-media/covers/mecanismes-de-defense-aux-echecs--angle-01.jpg",
     "coverHash": "6e8f319369a2f383d54e131b07c1815c3c24142cd30f64bedd3b0ee10536a440"
   },
@@ -1337,7 +1337,7 @@
     "bytes": 4984487,
     "sha256": "1cf351b3ff22ef5ec259ce86042daea7aed724a8522dc5dc84c9f1e9de1fd096",
     "sourceFile": "src/content/blog/societe/echecs-religion-et-interdit.md",
-    "sourceHash": "f471038eaa809a0095d9c246385a3fca4e4436895dd8ca917f2574f8d942dba3",
+    "sourceHash": "a02534c8209e90bc931813507402c08ab82d36ff5c89bbb3fcd734103b498c9e",
     "cover": "public/pinterest-media/covers/echecs-religion-et-interdit--angle-01.jpg",
     "coverHash": "7e1d3c36fc691c5577074aa8054f3ba36ec53185aad0f1357bffe47fcb762b74",
     "video": {
@@ -1366,7 +1366,7 @@
     "bytes": 3883430,
     "sha256": "5217cf45c3d5eae576eebc8a6d5df6b45076b8b84c5da096fac92bc863d76748",
     "sourceFile": "src/content/blog/esprit/echecs-gestion-du-temps.md",
-    "sourceHash": "c99322000d1675e832655441a0bee3a8a6ce9a15b7b9350b89c714577790762f",
+    "sourceHash": "1455286c7b7dc7d8c1588cac53f883566c556f3f73400e2b6b68395384c0e27a",
     "cover": "public/pinterest-media/covers/echecs-gestion-du-temps--angle-01.jpg",
     "coverHash": "835aa910a99e3160f6c8122f29efe81331ba7b2509e606a5c896f4068deb9668",
     "video": {
@@ -1446,7 +1446,7 @@
     "bytes": 49573,
     "sha256": "49a781ddaea18058a26f235f2ba74eeac7f4a44f8f6ee5763cd2b5f954960b13",
     "sourceFile": "src/content/blog/science/echecs-et-dopamine.md",
-    "sourceHash": "6f7c185cdb91cb02c154ec681d7a323f2502aacf03a06e104e9d8698e554621d",
+    "sourceHash": "4b0121e64043c07ff215bfc19160f4fad5311bc839ae72da7e241c45471d28c7",
     "cover": "public/pinterest-media/covers/echecs-et-dopamine--angle-01.jpg",
     "coverHash": "c17edc7ed9193bba295d4ef910063d56812f42f3ac722f0c4e3dc526197460f2"
   },
@@ -1457,7 +1457,7 @@
     "bytes": 4564891,
     "sha256": "97e6753d52677ec5678b7aa3d4adc68508592288b20d382910f4c0b746772042",
     "sourceFile": "src/content/blog/societe/echecs-et-tdah.md",
-    "sourceHash": "9855cf567bb6ea844abae45d9bd670a9162149209f87c1e786e5065e975a835f",
+    "sourceHash": "c8565d4d027ef2e9ac375a70f6c4d539041e4dfca5a874dcf9b6e09ebfb440d0",
     "cover": "public/pinterest-media/covers/echecs-et-tdah--angle-01.jpg",
     "coverHash": "adbbe4aa92624c08776278adbc6f87258c1aab259128754219cb8f9679a08c18",
     "video": {
@@ -1515,7 +1515,7 @@
     "bytes": 49846,
     "sha256": "1be0cc7dbfaeeef00a83eac223a4db43bb1556c41f512a415c0bec562303d1e9",
     "sourceFile": "src/content/blog/societe/echecs-vs-philosophie-pensee-strategique.md",
-    "sourceHash": "81f09a540af645eea71c4064bce452e4530146b3963ef9f82c0ce198a86b49d6",
+    "sourceHash": "953aec30b245e703bd022e7f775a71079c49af086cdce2765bc70c072935ae2e",
     "cover": "public/pinterest-media/covers/echecs-vs-philosophie-pensee-strategique--angle-01.jpg",
     "coverHash": "cbba1aebba0b6b6509d939f4be1ed1ecbbc424c4b5a80f0eb1d6cf7e08f7f00b"
   },
@@ -1526,7 +1526,7 @@
     "bytes": 4594929,
     "sha256": "2131de72dcb13ea50718e28a8249478eb568eaf2ab5dfed4554a961ee675c00e",
     "sourceFile": "src/content/blog/science/reseaux-bayesiens-predire-blunder.md",
-    "sourceHash": "82a0f8d96fb53ec8e2a674b03d1e22d774395bf302dddabe0eed0d4b8166b0d7",
+    "sourceHash": "d7c96b45038e10559076eeafc3638d676881461b8c3f17054727ff19f7f106e9",
     "cover": "public/pinterest-media/covers/reseaux-bayesiens-predire-blunder--angle-01.jpg",
     "coverHash": "df46bff8c877059d6144d7f192f2e15c807ad2dc6133e8871b8da1e01edcc353",
     "video": {
@@ -1552,10 +1552,10 @@
     "id": "echecs-et-confiance-en-soi--angle-01",
     "format": "pdf",
     "file": "public/pinterest-media/pdf/echecs-et-confiance-en-soi--angle-01.pdf",
-    "bytes": 49682,
-    "sha256": "645b3cfff3afb93e6f2f3f95884373a5fd786ae69de824f5485d624d94a8a069",
+    "bytes": 49206,
+    "sha256": "4ca812a66193d1d3f510fe4897281ae4fb11f8d20f19bc211eb87cc2dba3764c",
     "sourceFile": "src/content/blog/esprit/echecs-et-confiance-en-soi.md",
-    "sourceHash": "454cd1c2cabd86367d438bd4e4c5494c88cb08f678dd7e2d71563419476f9a71",
+    "sourceHash": "3eacb8ccebe2f327661f985e900548f37e02f0f87413604c32a71b14c11395a7",
     "cover": "public/pinterest-media/covers/echecs-et-confiance-en-soi--angle-01.jpg",
     "coverHash": "fe60796512fda3f50a0fe33cc09436d898c55ba91b22b73172a96166e9c901bf"
   },
@@ -1566,7 +1566,7 @@
     "bytes": 49870,
     "sha256": "0748c22742a3b6df9ec28e997beee414ea4ac22de3f1d7b8989b966de2063f60",
     "sourceFile": "src/content/blog/science/neurones-miroirs-aux-echecs.md",
-    "sourceHash": "6f51a72122e7a28ed0b9414cbd26745fa304a85fe0d982c25f5db06f428868c6",
+    "sourceHash": "2c15f80d697501608c77c7f009457cb91683af5fe4ebbcb45773e9083dd8bccd",
     "cover": "public/pinterest-media/covers/neurones-miroirs-aux-echecs--angle-01.jpg",
     "coverHash": "cf78d5b31fe2c3c213174c02b27c587415bd1ed60240a8586dff1b2c55d07131"
   },
@@ -1577,7 +1577,7 @@
     "bytes": 5948156,
     "sha256": "10160e8100c9158c1322b54541bd2605ff4613eb6aee02c5db061b3ee4f01b23",
     "sourceFile": "src/content/blog/societe/les-echecs-et-l-addiction.md",
-    "sourceHash": "07dce66238fb482e5af355b145b5fe530876ec35459bc1fdc77e2142be23cb2b",
+    "sourceHash": "030e5605656a5715c1fb306925bde60faedd03e89f0d684ea469479b1925b0e4",
     "cover": "public/pinterest-media/covers/les-echecs-et-l-addiction--angle-01.jpg",
     "coverHash": "8b67017c2d61d3f69dcb67ff87b922416155c18dc1bc70703a747655abbc5c28",
     "video": {
@@ -1606,7 +1606,7 @@
     "bytes": 4960510,
     "sha256": "552d1dde3232cb681db2d818ab7902707e1c040662408a4556aa528db57802cf",
     "sourceFile": "src/content/blog/esprit/loi-de-murphy-aux-echecs.md",
-    "sourceHash": "e62ef0fece503c407174b044dc0a1065c83ae64c327b85ae9cdc069603968b87",
+    "sourceHash": "415e0f309149bf4a1f7e01ee05ec0dc29c800c75dea1437332e2acf2c82a2353",
     "cover": "public/pinterest-media/covers/loi-de-murphy-aux-echecs--angle-01.jpg",
     "coverHash": "ea5020e9a4b23ccd690f23c5442cb17731b8c75252d963ff8587d19ba5e862d1",
     "video": {
@@ -1635,7 +1635,7 @@
     "bytes": 49522,
     "sha256": "437f98bcf06ad0bab504bc5180d609c2d3fdc46f34006839b0e4b8e51c53047a",
     "sourceFile": "src/content/blog/societe/echecs-et-autisme.md",
-    "sourceHash": "612a365df8540e352e6c927892cb8674f7be88d8b7ef90763ac8ac5caeb760ae",
+    "sourceHash": "982e5d786374bc3e5dadc2367c334f9a913e6095329d26c4673b107a207c6ad5",
     "cover": "public/pinterest-media/covers/echecs-et-autisme--angle-01.jpg",
     "coverHash": "afda085f61b0f2d690c2e1bf5c3cf57cf983ab6c28be813b6aa0bd983cca3bce"
   },
@@ -1675,7 +1675,7 @@
     "bytes": 49487,
     "sha256": "5453b77016cb6b031ddd18cde4f09cf62b2c5f0c87d0ca319d44c83d6e5379f7",
     "sourceFile": "src/content/blog/esprit/burnout-chess.md",
-    "sourceHash": "df6ef85025c51f01037b75cfa2f1a8a29adaf1f6e712b057a71db3acab1d5c43",
+    "sourceHash": "06cea15f9d52ac5f0d3e23db50ed796e01fc55881c716512bbd262674982415c",
     "cover": "public/pinterest-media/covers/burnout-chess--angle-01.jpg",
     "coverHash": "53791ebd8398173819a62e49e1f8d2da52bfdd85292139d0e39a79c1bb82dd3b"
   },
@@ -1697,7 +1697,7 @@
     "bytes": 6454323,
     "sha256": "47842522909d424ca77e31b6c06a869bbb9267384f31e58fc08f3421736d163e",
     "sourceFile": "src/content/blog/science/paradoxe-de-zermelo.md",
-    "sourceHash": "14e3bb616895129e2bc87f03439a3b1a3ffe2270c2c4dfb73a6dc20e5df4ccd7",
+    "sourceHash": "cd11916f8dcafba494d168a99730ead2c20a1ef80394e99592d6d82bc4fdcbf1",
     "cover": "public/pinterest-media/covers/paradoxe-de-zermelo--angle-01.jpg",
     "coverHash": "85edbf719852e66e56f6c44534adb64fd103d1930b8469fdabf359f3075d7ece",
     "video": {
@@ -1726,7 +1726,7 @@
     "bytes": 3695414,
     "sha256": "e8cd9a3c64b717c2f4536d412daacf07999e0e543878bb828872c849ae59d1ce",
     "sourceFile": "src/content/blog/esprit/echecs-peur-de-perdre.md",
-    "sourceHash": "512b058a030776de83ad39a84b1a024957df02ca45b9ae161b6056f1fb2805c7",
+    "sourceHash": "8a8d02d15d577b98a66b88a0c94013f4b92c5301bbb55fdaf56c390bca86898d",
     "cover": "public/pinterest-media/covers/echecs-peur-de-perdre--angle-01.jpg",
     "coverHash": "d6abf9b1f8fe6bbed3da58af8453d4d8f49da47a47aee4e540cc493a097cfaaa",
     "video": {
@@ -1766,7 +1766,7 @@
     "bytes": 5377921,
     "sha256": "a92582adde140431c99687a76615481ebf46a0b8cd58460fff7169c2529b432e",
     "sourceFile": "src/content/blog/science/les-echecs-et-le-cerveau.md",
-    "sourceHash": "0e407d6cabfeb944eb612465faa92d234b7cb20422eb02618d62da5a5c4ce2e9",
+    "sourceHash": "fd50701f1457369e140f19a5723da58a93ff1ed664a8d8ebce9baa7d28323d21",
     "cover": "public/pinterest-media/covers/les-echecs-et-le-cerveau--angle-01.jpg",
     "coverHash": "824c4cce6b319d67778e6e5dd31b643efd9aafd02912087089f5574d492e338c",
     "video": {
@@ -1806,7 +1806,7 @@
     "bytes": 49561,
     "sha256": "770466deed67ade55d7cf7faa97149b84ae2aeff041904320f2ac2106e64d66a",
     "sourceFile": "src/content/blog/esprit/echecs-et-perfectionnisme-toxique.md",
-    "sourceHash": "86e5870b093b3abdf96f53f2a5f51da53be1c93a736b396668c5254a883d52ea",
+    "sourceHash": "27bd7361bd73008e09828fa928ed83621e6266a85d13ab20266dd1d9229f5782",
     "cover": "public/pinterest-media/covers/echecs-et-perfectionnisme-toxique--angle-01.jpg",
     "coverHash": "7b25b59d571ec6e20c55f9933e6dc1ec0d57e499501ea22f6812227fae4c840a"
   },
@@ -1817,7 +1817,7 @@
     "bytes": 5981644,
     "sha256": "2064eefd3b5cae4b23a2f835942c843bc7e0f56763e8d0c5e2d8aa80380b608d",
     "sourceFile": "src/content/blog/esprit/syndrome-imposteur-aux-echecs.md",
-    "sourceHash": "9627eb10d3cbfbb3bcdb0fa2b830e051a291c728897de77ec9ba15bd859c34dd",
+    "sourceHash": "5f24bde27577f2d4d25cffdc24a048d2da8032940a7e3ab4627d0f5a809bd5d4",
     "cover": "public/pinterest-media/covers/syndrome-imposteur-aux-echecs--angle-01.jpg",
     "coverHash": "c7c0584a34935e3f2a55f5eda5e02d39f76c79207fda9cbaf6354861a9be17e2",
     "video": {
@@ -1886,7 +1886,7 @@
     "bytes": 49790,
     "sha256": "c9aab264d753587f7f55c5e47b9e1396b5f71be102a9a21b3437910a1f23903b",
     "sourceFile": "src/content/blog/science/echecs-et-memoire.md",
-    "sourceHash": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930",
+    "sourceHash": "ed158a58f83bf232222a866b7b2888c5abd6c860365f139373a86389f416756b",
     "cover": "public/pinterest-media/covers/echecs-et-memoire--angle-02.jpg",
     "coverHash": "3a089ddf3ee5340c9c78ec786d27121d81be95b5dec82719225d45a001043187"
   },
@@ -1992,10 +1992,10 @@
     "id": "echecs-et-procrastination--angle-02",
     "format": "pdf",
     "file": "public/pinterest-media/pdf/echecs-et-procrastination--angle-02.pdf",
-    "bytes": 49989,
-    "sha256": "ec97ecddfaf574736c0f735ab8c6bf3ad5fbc1f995942a2e81637ef865ef21a9",
+    "bytes": 49507,
+    "sha256": "cb481bdac1f3382fadf63eadf7c637317eeac19cf89edc7ad635965d370b66e4",
     "sourceFile": "src/content/blog/esprit/echecs-et-procrastination.md",
-    "sourceHash": "3747f32a6fadf5ad9ad8386bfc44011efe5d3cd79e05d2afa3aad0aaf09095d6",
+    "sourceHash": "3930f838dda898837230fcd94c2c0cb5ede131e08409c9742c5459c81fb0177d",
     "cover": "public/pinterest-media/covers/echecs-et-procrastination--angle-02.jpg",
     "coverHash": "56f8b143521bac1f35f18ee41b46358ed156cfc338aa90ef438a56d07aa9253f"
   },
@@ -2017,7 +2017,7 @@
     "bytes": 6206787,
     "sha256": "148bcb8c426546fef8cc9b08aa98d7863d60466e42aa29cc804ace4b5c76ff9b",
     "sourceFile": "src/content/blog/societe/echecs-et-streaming.md",
-    "sourceHash": "90ecdb8f75296417b063fcc9b607e9347f5ed064e5949456cc2a3b40f32b78e5",
+    "sourceHash": "8e6ba12ac4483f6e0f0a8c66fba8ff5a6974649e91a1d6ea8695d55fd7aef74f",
     "cover": "public/pinterest-media/covers/echecs-et-streaming--angle-02.jpg",
     "coverHash": "55e310197db8bf4996b3423cbf3d6abe77be0292eeb7aab42b94cac8f0a15795",
     "video": {
@@ -2046,7 +2046,7 @@
     "bytes": 6094136,
     "sha256": "5f97435ea78432df74a87cbb64240154f72d708397bd77f17e9c7c81ed1389b7",
     "sourceFile": "src/content/blog/esprit/manipulation-emotionnelle-aux-echecs.md",
-    "sourceHash": "2999b03dac3503cdc7388ef36ad365f068dd492c76aa7e347d83f8458468b077",
+    "sourceHash": "745d4bed04c4a7a89c9038e4444e20c37349e5fc4b97ac70e79e6f39a76ee939",
     "cover": "public/pinterest-media/covers/manipulation-emotionnelle-aux-echecs--angle-02.jpg",
     "coverHash": "1a1e37388393941b96bb1a080911489124962289a02192a55d65a15c3600aaad",
     "video": {
@@ -2075,7 +2075,7 @@
     "bytes": 49246,
     "sha256": "359db71d49d54c1020535bcec3a32ba7d5850131b6d792cf2511c01aac363795",
     "sourceFile": "src/content/blog/societe/echecs-et-culture-populaire.md",
-    "sourceHash": "7c295e52dc4647e4f805ad6c4308107d9638f94423127ce7845f51494f77d8b2",
+    "sourceHash": "709ed77a10486d68a6f217a993647c19d1c59b39f4cb0f0941151788f5b83634",
     "cover": "public/pinterest-media/covers/echecs-et-culture-populaire--angle-02.jpg",
     "coverHash": "3c553e16b4eb3b853a5ed9840686db542e0d609282d7b60b3718185469e57f03"
   },
@@ -2086,7 +2086,7 @@
     "bytes": 5619452,
     "sha256": "43c77f8fcf773b8979daf5dd2362b21bb2b1247b18a176c15fcdc6fe29b15404",
     "sourceFile": "src/content/blog/science/echecs-alphazero-stockfish.md",
-    "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+    "sourceHash": "d65ae6f93c3f10348fa050ee01102e9e962ed949d0e4f9b8a422a99c430a6571",
     "cover": "public/pinterest-media/covers/echecs-alphazero-stockfish--angle-02.jpg",
     "coverHash": "e48dffae09b01ff77f1e7f6434c8b2ebb087a7a821d4986afd8729e67cfa23d5",
     "video": {
@@ -2136,7 +2136,7 @@
     "bytes": 49563,
     "sha256": "abd9b962a4c81a46465ba12ec1e3f3e59cec194aee0b99d9ef64d1398160eeb8",
     "sourceFile": "src/content/blog/esprit/echecs-et-visualisation.md",
-    "sourceHash": "3fdff8da8278ea5168978f7a3847219de1451ac03b4685732aaf11ca8fe11f91",
+    "sourceHash": "249f7561593ae5b24b85dc8c1bcf4628111faefd412c4332ce1cbb6470b1caa2",
     "cover": "public/pinterest-media/covers/echecs-et-visualisation--angle-02.jpg",
     "coverHash": "148bf596837996f94fadc5152f62ad333bf2f99d698aa1e94f8cd7b02bc95630"
   },
@@ -2187,7 +2187,7 @@
     "bytes": 5158388,
     "sha256": "78e5b3c9bea2f0de0f735c27d4ddd35f1d6aeecf104199497ca7d396ed0cd787",
     "sourceFile": "src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md",
-    "sourceHash": "0c785f2db4b403951ffe708d1cec88f1994bae903d6a324cd50a052627f8f0f5",
+    "sourceHash": "265dc797d4d9d0ef1d2b75f7c2b6a7452940c82daffbcccdda1561e31291cdb0",
     "cover": "public/pinterest-media/covers/theorie-de-l-attachement-aux-echecs--angle-02.jpg",
     "coverHash": "903b8bdf870186903f14db8e25fec259da2f608bc688c0f0df44581eec172fdc",
     "video": {
@@ -2256,7 +2256,7 @@
     "bytes": 49361,
     "sha256": "4244dcc046b8c3d582986f6de09a9d99c3ddf3b264a99eab3ad7fe3a3aa20223",
     "sourceFile": "src/content/blog/esprit/echecs-et-concentration.md",
-    "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
+    "sourceHash": "ec7a7bfc0b0ac449dbc5d6dedbf3cea72445d27f0a8ebfc92ef9b79a5df5990b",
     "cover": "public/pinterest-media/covers/echecs-et-concentration--angle-02.jpg",
     "coverHash": "86a0826c7736c0d63f669d24130317d5f4d03c07a229d76d1b7545944af9d726"
   },
@@ -2278,7 +2278,7 @@
     "bytes": 6133347,
     "sha256": "c14a5fc4d1c64619ad08c26f4b4b6bb1daf3000de9c1f9bc9392d95d26b2b48a",
     "sourceFile": "src/content/blog/societe/echecs-et-hpi.md",
-    "sourceHash": "197e5b02216f89426a5e03a3a4eddc9b7fb4a19050b383ba59ced03dc679fa29",
+    "sourceHash": "795dcce65c2d8947312b76ae513e8d3ce4b199ab6bdfc53363f2f55f2c42ed18",
     "cover": "public/pinterest-media/covers/echecs-et-hpi--angle-02.jpg",
     "coverHash": "2009f300d2fc3330bf65367cd2d3f7c1efa4bfab085e019ac0cf8a09739841a4",
     "video": {
@@ -2336,7 +2336,7 @@
     "bytes": 50532,
     "sha256": "d8cf4ffbcceae6a67a2048c350ce1a7f4d697088bfd83213915218b145d741a9",
     "sourceFile": "src/content/blog/societe/echecs-religion-et-interdit.md",
-    "sourceHash": "f471038eaa809a0095d9c246385a3fca4e4436895dd8ca917f2574f8d942dba3",
+    "sourceHash": "a02534c8209e90bc931813507402c08ab82d36ff5c89bbb3fcd734103b498c9e",
     "cover": "public/pinterest-media/covers/echecs-religion-et-interdit--angle-02.jpg",
     "coverHash": "d01578fc8571e37397339fb416348edd5b8106ca5e8c2306a3ecd549e0cb6d42"
   },
@@ -2347,7 +2347,7 @@
     "bytes": 5839225,
     "sha256": "f1dbd8c136d1dd1ec80d1b01e7d5b02cee1206a219f70db989c68c2b7b67a91c",
     "sourceFile": "src/content/blog/science/echecs-et-genetique.md",
-    "sourceHash": "f82464fea06d1566b924492059e832a8b8a9a76643381686c88986ea52601208",
+    "sourceHash": "d4e8c36008ac60a17d95bbadd97973291bd1fc87a3835dc954ba94ede9633ae0",
     "cover": "public/pinterest-media/covers/echecs-et-genetique--angle-02.jpg",
     "coverHash": "24a0ad02650b7b194af872435d80c1b616e885e87c631dc3424e3bcb4d8f8988",
     "video": {
@@ -2376,7 +2376,7 @@
     "bytes": 49993,
     "sha256": "2a7dba18b3c7724d91edd4c72cbde3821022d5c1a086165911fe34b51f380955",
     "sourceFile": "src/content/blog/esprit/echecs-gestion-du-temps.md",
-    "sourceHash": "c99322000d1675e832655441a0bee3a8a6ce9a15b7b9350b89c714577790762f",
+    "sourceHash": "1455286c7b7dc7d8c1588cac53f883566c556f3f73400e2b6b68395384c0e27a",
     "cover": "public/pinterest-media/covers/echecs-gestion-du-temps--angle-02.jpg",
     "coverHash": "d61dade43f2275871e604982cb8aa6a3f014658385dfdb771b8e8fdebdfc46f2"
   },
@@ -2456,7 +2456,7 @@
     "bytes": 49891,
     "sha256": "f8bb2a650621ce5f4ca46d488894109b42471b2d8f94bd01cfa20f54f02a2f09",
     "sourceFile": "src/content/blog/societe/echecs-et-tdah.md",
-    "sourceHash": "9855cf567bb6ea844abae45d9bd670a9162149209f87c1e786e5065e975a835f",
+    "sourceHash": "c8565d4d027ef2e9ac375a70f6c4d539041e4dfca5a874dcf9b6e09ebfb440d0",
     "cover": "public/pinterest-media/covers/echecs-et-tdah--angle-02.jpg",
     "coverHash": "77ae0b1a143595c3a768c2414f7fccc8bed6b7e31aece92e3d38be7f078985d8"
   },
@@ -2507,7 +2507,7 @@
     "bytes": 67767,
     "sha256": "d0d8fde17d94f5a3c8ee92d07305aef3e8b0b583a18c1be82ee65b5b252e89e6",
     "sourceFile": "src/content/blog/science/reseaux-bayesiens-predire-blunder.md",
-    "sourceHash": "82a0f8d96fb53ec8e2a674b03d1e22d774395bf302dddabe0eed0d4b8166b0d7",
+    "sourceHash": "d7c96b45038e10559076eeafc3638d676881461b8c3f17054727ff19f7f106e9",
     "cover": "public/pinterest-media/covers/reseaux-bayesiens-predire-blunder--angle-02.jpg",
     "coverHash": "ca88e607388758da3189d16e96c0f34c8a9503b81844f46e900524b5bebdad79"
   },
@@ -2576,7 +2576,7 @@
     "bytes": 49882,
     "sha256": "f2fbd948b0a8ed19afb8b5be6708f30f69539bfe220dbb8c55f288f783271be9",
     "sourceFile": "src/content/blog/societe/les-echecs-et-l-addiction.md",
-    "sourceHash": "07dce66238fb482e5af355b145b5fe530876ec35459bc1fdc77e2142be23cb2b",
+    "sourceHash": "030e5605656a5715c1fb306925bde60faedd03e89f0d684ea469479b1925b0e4",
     "cover": "public/pinterest-media/covers/les-echecs-et-l-addiction--angle-02.jpg",
     "coverHash": "ce175e2b7e6096a194b501176c395bdb01e6537966f2680aca243fcd20dcf6d4"
   },
@@ -2587,7 +2587,7 @@
     "bytes": 5545558,
     "sha256": "6e951fd6c94a7518d53a531ab6617a84abfcae17fd9dc7c768d30afe6492940e",
     "sourceFile": "src/content/blog/science/logique-modale-aux-echecs.md",
-    "sourceHash": "bff47fd27cffd412bf4c5f7d86cd15c01dbf71de49c59079b49c5c9d64bd6a10",
+    "sourceHash": "cbd1ec891814978fdfc9bd36cc2ef9257848bcce2f273871fc7b8a2498af0a13",
     "cover": "public/pinterest-media/covers/logique-modale-aux-echecs--angle-02.jpg",
     "coverHash": "2d080f1a3a7d2f808f32eea6606ca06bb1ef21f3a4ab2efd2084c29c645c49ed",
     "video": {
@@ -2616,7 +2616,7 @@
     "bytes": 54569,
     "sha256": "877ca4abc903791079251e8b2db66deda787c97903d3370031fd9e43339d749b",
     "sourceFile": "src/content/blog/esprit/loi-de-murphy-aux-echecs.md",
-    "sourceHash": "e62ef0fece503c407174b044dc0a1065c83ae64c327b85ae9cdc069603968b87",
+    "sourceHash": "415e0f309149bf4a1f7e01ee05ec0dc29c800c75dea1437332e2acf2c82a2353",
     "cover": "public/pinterest-media/covers/loi-de-murphy-aux-echecs--angle-02.jpg",
     "coverHash": "d60b34f345a1947c0126b788f61572268c456e62a0086cbc0e4684b5aa33004b"
   },
@@ -2667,7 +2667,7 @@
     "bytes": 4876110,
     "sha256": "e799c3ec822661c4d30d04cbba03588f35eb79c60d97ea3e9df55996403109e9",
     "sourceFile": "src/content/blog/esprit/5-biais-cognitifs-blunder.md",
-    "sourceHash": "7df2020728ddf2f7935ba2fc200b9ba9e82ac24483a63fd0c0e828d630c499f0",
+    "sourceHash": "77d637f7d6e9ecd5860f848f609de5de757db6640c5a5e78fe2b576ef1ab0eec",
     "cover": "public/pinterest-media/covers/5-biais-cognitifs-blunder--angle-02.jpg",
     "coverHash": "76f2b5f45912d1829a9d6c6682a25029ea23ad9e6600f261ae7905cc974955fa",
     "video": {
@@ -2696,7 +2696,7 @@
     "bytes": 61029,
     "sha256": "7addfb88463aed04c8433f76da0766a9baed148b3b1f5187234dc9eff1cc9e9b",
     "sourceFile": "src/content/blog/science/paradoxe-de-zermelo.md",
-    "sourceHash": "14e3bb616895129e2bc87f03439a3b1a3ffe2270c2c4dfb73a6dc20e5df4ccd7",
+    "sourceHash": "cd11916f8dcafba494d168a99730ead2c20a1ef80394e99592d6d82bc4fdcbf1",
     "cover": "public/pinterest-media/covers/paradoxe-de-zermelo--angle-02.jpg",
     "coverHash": "6ae600e323cebc0984aa332b07781c581f6942a3ea1190c53252e3a1ba29b2fe"
   },
@@ -2707,7 +2707,7 @@
     "bytes": 5733176,
     "sha256": "98a72a35605299f1eef4d50d57ca6b4d67bdab58843865950d7016c6fc3ee486",
     "sourceFile": "src/content/blog/science/theorie-des-jeux-aux-echecs.md",
-    "sourceHash": "e305df66945f867be854b1bec2a53f80d173f0cb9b041db43b534b1f62348064",
+    "sourceHash": "93be71ff4cd1daa1758022891c5f0561f899a766114d3e6d7cb0052a61ff51ea",
     "cover": "public/pinterest-media/covers/theorie-des-jeux-aux-echecs--angle-02.jpg",
     "coverHash": "22945efd862c739a5e527f34ebd4683d7a109c4f2e40501dfb76c43077ff312b",
     "video": {
@@ -2736,7 +2736,7 @@
     "bytes": 49427,
     "sha256": "8e32c4247d7ef449f3da01c1db8158df8f5f6a688d6ab3f34f4626bae0427f60",
     "sourceFile": "src/content/blog/esprit/echecs-peur-de-perdre.md",
-    "sourceHash": "512b058a030776de83ad39a84b1a024957df02ca45b9ae161b6056f1fb2805c7",
+    "sourceHash": "8a8d02d15d577b98a66b88a0c94013f4b92c5301bbb55fdaf56c390bca86898d",
     "cover": "public/pinterest-media/covers/echecs-peur-de-perdre--angle-02.jpg",
     "coverHash": "88b042157578c0366c27aafdf3d4cb81daae01ffdd51b87c9c1e183a8d7c99df"
   },
@@ -2747,7 +2747,7 @@
     "bytes": 49858,
     "sha256": "7869f5a7a611b3fdb4ef6fcae7145fef2e0215f0ff6fec5dec2e514f091cd6d8",
     "sourceFile": "src/content/blog/science/les-echecs-et-le-cerveau.md",
-    "sourceHash": "0e407d6cabfeb944eb612465faa92d234b7cb20422eb02618d62da5a5c4ce2e9",
+    "sourceHash": "fd50701f1457369e140f19a5723da58a93ff1ed664a8d8ebce9baa7d28323d21",
     "cover": "public/pinterest-media/covers/les-echecs-et-le-cerveau--angle-02.jpg",
     "coverHash": "b1701855949c1945ed7298cd1daf2fded6ca24733feb9e195e67f43e1754f060"
   },
@@ -2816,7 +2816,7 @@
     "bytes": 49662,
     "sha256": "22d92617eef2523fa7096261df8f73820f676441957a959fed5c35b103857840",
     "sourceFile": "src/content/blog/esprit/syndrome-imposteur-aux-echecs.md",
-    "sourceHash": "9627eb10d3cbfbb3bcdb0fa2b830e051a291c728897de77ec9ba15bd859c34dd",
+    "sourceHash": "5f24bde27577f2d4d25cffdc24a048d2da8032940a7e3ab4627d0f5a809bd5d4",
     "cover": "public/pinterest-media/covers/syndrome-imposteur-aux-echecs--angle-02.jpg",
     "coverHash": "8e58c977de4f4ffb32415b935b20ab283ab1dff694e7579cb297b39d67728035"
   },
@@ -2867,7 +2867,7 @@
     "bytes": 4598479,
     "sha256": "78873e5d17cfd03563f4db857893b3b6d2c8cda6fc782bd0cbf8bfcd3a249147",
     "sourceFile": "src/content/blog/esprit/psychologie-du-joueur-d-echecs.md",
-    "sourceHash": "a969e2efd408b52af777b7ac5ec8a69cb0d78b7209c58143f66a979adc5010a9",
+    "sourceHash": "c5c97aaebba3fa4819620057cd0fe2c150ef811d78c624e2f97cb1070e1c4294",
     "cover": "public/pinterest-media/covers/psychologie-du-joueur-d-echecs--angle-03.jpg",
     "coverHash": "346a7470a4dba9498de42fd1daad88e8dfae7b6b38d05f326b77d5c0d139782d",
     "video": {
@@ -2987,7 +2987,7 @@
     "bytes": 5178783,
     "sha256": "ec4ed4a843ab341094699d4d61e87036bdd57692192874e63c2187e154919b21",
     "sourceFile": "src/content/blog/esprit/biais-de-confirmation-aux-echecs.md",
-    "sourceHash": "d55777717c22e1b39a6153c85196a17884e719c3ea6736fb7caa6c59d5947286",
+    "sourceHash": "7853619d30ad9f735dbf3ba585789dcaad8f224c03ae3688983e3730b0bec94e",
     "cover": "public/pinterest-media/covers/biais-de-confirmation-aux-echecs--angle-03.jpg",
     "coverHash": "55691ae76bd5f0fe2daf6864affdbeda510ad4f97b608ea1d0f0d407ea97f1f9",
     "video": {
@@ -3016,7 +3016,7 @@
     "bytes": 49796,
     "sha256": "92b9bbbed3479190815658e68f6a3aef619d8fec895e17c1bdad30505ec63763",
     "sourceFile": "src/content/blog/societe/echecs-et-streaming.md",
-    "sourceHash": "90ecdb8f75296417b063fcc9b607e9347f5ed064e5949456cc2a3b40f32b78e5",
+    "sourceHash": "8e6ba12ac4483f6e0f0a8c66fba8ff5a6974649e91a1d6ea8695d55fd7aef74f",
     "cover": "public/pinterest-media/covers/echecs-et-streaming--angle-03.jpg",
     "coverHash": "8a10c484a89040e942bf2d24e15fff1bb0b46d1b3f3333a097d42afe3ead8966"
   },
@@ -3027,7 +3027,7 @@
     "bytes": 6666279,
     "sha256": "4c2577d717a8700dd51f745913f8a73b21bb5604ff86f36a3210eeb78ae7bad0",
     "sourceFile": "src/content/blog/science/effet-placebo-aux-echecs.md",
-    "sourceHash": "a47ad7281f735c32aaa495389decda0d909d006f282868de2be44c4c7ff82066",
+    "sourceHash": "565b2036251d4c9cc4f100f48cac8d77e3fe6c3bbb9d406515f11dd7b7aba274",
     "cover": "public/pinterest-media/covers/effet-placebo-aux-echecs--angle-03.jpg",
     "coverHash": "86d22cf0c17bad25dc0a2b693d9bd5a9fd4638e1b387ec52c1f275550bb41f41",
     "video": {
@@ -3056,7 +3056,7 @@
     "bytes": 48812,
     "sha256": "3346e06468f5e618b75c6b40b3412f9a48277808fba1a39137385ae2f22b952c",
     "sourceFile": "src/content/blog/esprit/manipulation-emotionnelle-aux-echecs.md",
-    "sourceHash": "2999b03dac3503cdc7388ef36ad365f068dd492c76aa7e347d83f8458468b077",
+    "sourceHash": "745d4bed04c4a7a89c9038e4444e20c37349e5fc4b97ac70e79e6f39a76ee939",
     "cover": "public/pinterest-media/covers/manipulation-emotionnelle-aux-echecs--angle-03.jpg",
     "coverHash": "cc1c56fa7531d3d3cd5580bce9018c540777c38c39aaa86dd650e069e1b1d61f"
   },
@@ -3067,7 +3067,7 @@
     "bytes": 49248,
     "sha256": "1351698d2e4897698d09dc3ec3546142fedcabe426e652aa878b50462e6b78c0",
     "sourceFile": "src/content/blog/science/echecs-alphazero-stockfish.md",
-    "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+    "sourceHash": "d65ae6f93c3f10348fa050ee01102e9e962ed949d0e4f9b8a422a99c430a6571",
     "cover": "public/pinterest-media/covers/echecs-alphazero-stockfish--angle-03.jpg",
     "coverHash": "ed516aa841085f7ace78c503c4126b0d71eafbafc91871d80225a658beeb2de1"
   },
@@ -3176,7 +3176,7 @@
     "bytes": 49883,
     "sha256": "ad67ce9d47e976e9155836035ab2e7821e544fd3c03943a93a2b88c404f7c762",
     "sourceFile": "src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md",
-    "sourceHash": "0c785f2db4b403951ffe708d1cec88f1994bae903d6a324cd50a052627f8f0f5",
+    "sourceHash": "265dc797d4d9d0ef1d2b75f7c2b6a7452940c82daffbcccdda1561e31291cdb0",
     "cover": "public/pinterest-media/covers/theorie-de-l-attachement-aux-echecs--angle-03.jpg",
     "coverHash": "23f7856d3ea1690346bc10e775350638c2eafb2ba55ce34ebdc514743701c72d"
   },
@@ -3227,7 +3227,7 @@
     "bytes": 6405113,
     "sha256": "7b68b074dbb3a36e4ff291e7acbca4d877fcefa706cbebf1220be6e2e00368cd",
     "sourceFile": "src/content/blog/esprit/mecanismes-de-defense-aux-echecs.md",
-    "sourceHash": "de0e4faa385ea6cfbb5925dba6716ceb0b5716c75382e7b8055a3c705d044ea0",
+    "sourceHash": "a89be7afec5d7bf61a96e3fbad683a79d4765ae5c3604f224fedd7f964533d06",
     "cover": "public/pinterest-media/covers/mecanismes-de-defense-aux-echecs--angle-03.jpg",
     "coverHash": "591d258ec52a9b4d4d4de63d94c2b49b083a4d7de3e454a631812de66c78fa80",
     "video": {
@@ -3256,7 +3256,7 @@
     "bytes": 49861,
     "sha256": "312ca53ee9828bc22865e0761699c91a068566cb9c9149d924ce019e10e8f596",
     "sourceFile": "src/content/blog/societe/echecs-et-hpi.md",
-    "sourceHash": "197e5b02216f89426a5e03a3a4eddc9b7fb4a19050b383ba59ced03dc679fa29",
+    "sourceHash": "795dcce65c2d8947312b76ae513e8d3ce4b199ab6bdfc53363f2f55f2c42ed18",
     "cover": "public/pinterest-media/covers/echecs-et-hpi--angle-03.jpg",
     "coverHash": "edc3ff2e42d23fd44f9440842bd3d6612a5158d43de9345cea8091f30383c83e"
   },
@@ -3307,7 +3307,7 @@
     "bytes": 49993,
     "sha256": "0a3f98d8477401414a5b41cff510d95a64607a82ed627649e2407e8ba1602e65",
     "sourceFile": "src/content/blog/science/echecs-et-genetique.md",
-    "sourceHash": "f82464fea06d1566b924492059e832a8b8a9a76643381686c88986ea52601208",
+    "sourceHash": "d4e8c36008ac60a17d95bbadd97973291bd1fc87a3835dc954ba94ede9633ae0",
     "cover": "public/pinterest-media/covers/echecs-et-genetique--angle-03.jpg",
     "coverHash": "e7c56d17994a41b0f47a5999511843d4d6a5a3754f8390805089e1ae4887b312"
   },
@@ -3387,7 +3387,7 @@
     "bytes": 4784249,
     "sha256": "3e088e08fa80138ff49a9f3c6a5348966026296729135d78580617868b9ba456",
     "sourceFile": "src/content/blog/science/echecs-et-dopamine.md",
-    "sourceHash": "6f7c185cdb91cb02c154ec681d7a323f2502aacf03a06e104e9d8698e554621d",
+    "sourceHash": "4b0121e64043c07ff215bfc19160f4fad5311bc839ae72da7e241c45471d28c7",
     "cover": "public/pinterest-media/covers/echecs-et-dopamine--angle-03.jpg",
     "coverHash": "080bbbfe0de4e76ba343c19b1285fe75d239ba3fd0876b32b1e6fa9a7dbc7af1",
     "video": {
@@ -3438,7 +3438,7 @@
     "bytes": 6195243,
     "sha256": "497e13c8fa5f757eb5e01361a3f3a689ed2ab21c2747693feaeb56d984d1c20d",
     "sourceFile": "src/content/blog/societe/echecs-vs-philosophie-pensee-strategique.md",
-    "sourceHash": "81f09a540af645eea71c4064bce452e4530146b3963ef9f82c0ce198a86b49d6",
+    "sourceHash": "953aec30b245e703bd022e7f775a71079c49af086cdce2765bc70c072935ae2e",
     "cover": "public/pinterest-media/covers/echecs-vs-philosophie-pensee-strategique--angle-03.jpg",
     "coverHash": "e77e3ff5e132e88f2f1c3c223071b6573e234c5f3c334ae7a9282808147645ed",
     "video": {
@@ -3467,7 +3467,7 @@
     "bytes": 6339353,
     "sha256": "306ec46cecf509596059f690952f89f037e4dc38c095e4c16b8879be56d46e94",
     "sourceFile": "src/content/blog/esprit/echecs-et-confiance-en-soi.md",
-    "sourceHash": "454cd1c2cabd86367d438bd4e4c5494c88cb08f678dd7e2d71563419476f9a71",
+    "sourceHash": "3eacb8ccebe2f327661f985e900548f37e02f0f87413604c32a71b14c11395a7",
     "cover": "public/pinterest-media/covers/echecs-et-confiance-en-soi--angle-03.jpg",
     "coverHash": "3f11f3e01eeb68b4fcae191b6449f1d7b8ad1d674a9423866de043965525a359",
     "video": {
@@ -3507,7 +3507,7 @@
     "bytes": 5386939,
     "sha256": "b0a68d529dda78e384adda634cbb7bfe705ec27d81ed6668c9cada347497b678",
     "sourceFile": "src/content/blog/science/neurones-miroirs-aux-echecs.md",
-    "sourceHash": "6f51a72122e7a28ed0b9414cbd26745fa304a85fe0d982c25f5db06f428868c6",
+    "sourceHash": "2c15f80d697501608c77c7f009457cb91683af5fe4ebbcb45773e9083dd8bccd",
     "cover": "public/pinterest-media/covers/neurones-miroirs-aux-echecs--angle-03.jpg",
     "coverHash": "8d0df1674fde716d35264590e4c1a0a916446e51b520a9ec588fdcf113c04834",
     "video": {
@@ -3547,7 +3547,7 @@
     "bytes": 56310,
     "sha256": "9d0a9e6d3daecdab000cf62327f3307faf22ce5f02f873b1b9bb1e66ec40e2ed",
     "sourceFile": "src/content/blog/science/logique-modale-aux-echecs.md",
-    "sourceHash": "bff47fd27cffd412bf4c5f7d86cd15c01dbf71de49c59079b49c5c9d64bd6a10",
+    "sourceHash": "cbd1ec891814978fdfc9bd36cc2ef9257848bcce2f273871fc7b8a2498af0a13",
     "cover": "public/pinterest-media/covers/logique-modale-aux-echecs--angle-03.jpg",
     "coverHash": "e3d58f67f049daee67427520afdd520445dbfcd3ea7bd078872b8d321a79db56"
   },
@@ -3558,7 +3558,7 @@
     "bytes": 6015334,
     "sha256": "dbead7e828195c93d8bc70a1fb68a32ec5e206a3790fc4e7b267533782cf416a",
     "sourceFile": "src/content/blog/societe/echecs-et-autisme.md",
-    "sourceHash": "612a365df8540e352e6c927892cb8674f7be88d8b7ef90763ac8ac5caeb760ae",
+    "sourceHash": "982e5d786374bc3e5dadc2367c334f9a913e6095329d26c4673b107a207c6ad5",
     "cover": "public/pinterest-media/covers/echecs-et-autisme--angle-03.jpg",
     "coverHash": "9d9749f8f79e02af49280d3529b80f40842de412d091f9cea2651c290658e47d",
     "video": {
@@ -3587,7 +3587,7 @@
     "bytes": 5579221,
     "sha256": "534d8bcb96f3aafd4bc7040c4c9f4f98d2df5b84a5fef90daf99e0b6321596bc",
     "sourceFile": "src/content/blog/esprit/burnout-chess.md",
-    "sourceHash": "df6ef85025c51f01037b75cfa2f1a8a29adaf1f6e712b057a71db3acab1d5c43",
+    "sourceHash": "06cea15f9d52ac5f0d3e23db50ed796e01fc55881c716512bbd262674982415c",
     "cover": "public/pinterest-media/covers/burnout-chess--angle-03.jpg",
     "coverHash": "be404412520f55b2ef12ab89e6a18ee4d5e970a290c6cd4b3f5cbd5390fa31ba",
     "video": {
@@ -3656,7 +3656,7 @@
     "bytes": 49671,
     "sha256": "fbf0d2abb33e7106124b38e458855814ef5e5206b70612c8f9fbab2ee50bfb0a",
     "sourceFile": "src/content/blog/esprit/5-biais-cognitifs-blunder.md",
-    "sourceHash": "7df2020728ddf2f7935ba2fc200b9ba9e82ac24483a63fd0c0e828d630c499f0",
+    "sourceHash": "77d637f7d6e9ecd5860f848f609de5de757db6640c5a5e78fe2b576ef1ab0eec",
     "cover": "public/pinterest-media/covers/5-biais-cognitifs-blunder--angle-03.jpg",
     "coverHash": "64ccff8d6de60638ab24850cf3955a483b6c8996e96e03ca9a3ab91aaf76cb9a"
   },
@@ -3667,7 +3667,7 @@
     "bytes": 84810,
     "sha256": "d6569f4c2459c564044c91875b6f966e403259666cc61815157028b2cd6f22e3",
     "sourceFile": "src/content/blog/science/theorie-des-jeux-aux-echecs.md",
-    "sourceHash": "e305df66945f867be854b1bec2a53f80d173f0cb9b041db43b534b1f62348064",
+    "sourceHash": "93be71ff4cd1daa1758022891c5f0561f899a766114d3e6d7cb0052a61ff51ea",
     "cover": "public/pinterest-media/covers/theorie-des-jeux-aux-echecs--angle-03.jpg",
     "coverHash": "01897b9442ca600f623ab7c4e1239fa3c52b526ebfef2d048eb2aa97e94e6890"
   },
@@ -3747,7 +3747,7 @@
     "bytes": 4979938,
     "sha256": "6ccd1d6170e3f6a94ab5f85db9b3589d2e79eac952f381ba0b419e9b86aa9e1f",
     "sourceFile": "src/content/blog/esprit/echecs-et-perfectionnisme-toxique.md",
-    "sourceHash": "86e5870b093b3abdf96f53f2a5f51da53be1c93a736b396668c5254a883d52ea",
+    "sourceHash": "27bd7361bd73008e09828fa928ed83621e6266a85d13ab20266dd1d9229f5782",
     "cover": "public/pinterest-media/covers/echecs-et-perfectionnisme-toxique--angle-03.jpg",
     "coverHash": "177a12d351674dee585b746f44bc5d3d68f2d87067978b8ca3b3325b7fcf64b7",
     "video": {
@@ -3827,7 +3827,7 @@
     "bytes": 5732294,
     "sha256": "cb6ad581062f3e8bc209e75400693ef56001d7795430cbef39c9925f3f4a818a",
     "sourceFile": "src/content/blog/science/echecs-et-memoire.md",
-    "sourceHash": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930",
+    "sourceHash": "ed158a58f83bf232222a866b7b2888c5abd6c860365f139373a86389f416756b",
     "cover": "public/pinterest-media/covers/echecs-et-memoire--angle-04.jpg",
     "coverHash": "e0f753128aa361fa735bbb37b15bfd949c71245364b65e8272ea2f100de90d6c",
     "video": {
@@ -3856,7 +3856,7 @@
     "bytes": 49874,
     "sha256": "711fa90656e8063f189a85deecc9317e027fa616dea7ee09d2caac863e38aba4",
     "sourceFile": "src/content/blog/esprit/psychologie-du-joueur-d-echecs.md",
-    "sourceHash": "a969e2efd408b52af777b7ac5ec8a69cb0d78b7209c58143f66a979adc5010a9",
+    "sourceHash": "c5c97aaebba3fa4819620057cd0fe2c150ef811d78c624e2f97cb1070e1c4294",
     "cover": "public/pinterest-media/covers/psychologie-du-joueur-d-echecs--angle-04.jpg",
     "coverHash": "b47d66cdbfca024b243c6a10740ebea8de45cec930428ff7a9f47a8eec248e86"
   },
@@ -3907,7 +3907,7 @@
     "bytes": 4386922,
     "sha256": "a35ee21503eda503b0b8d8b29579fa8e52f06b58315a643586115eb8ef9d8ed4",
     "sourceFile": "src/content/blog/esprit/echecs-et-procrastination.md",
-    "sourceHash": "3747f32a6fadf5ad9ad8386bfc44011efe5d3cd79e05d2afa3aad0aaf09095d6",
+    "sourceHash": "3930f838dda898837230fcd94c2c0cb5ede131e08409c9742c5459c81fb0177d",
     "cover": "public/pinterest-media/covers/echecs-et-procrastination--angle-04.jpg",
     "coverHash": "4db6a844c60539496f3e6c441520f7f76ff25d14383880866bfdd9e041ac3c5f",
     "video": {
@@ -3976,7 +3976,7 @@
     "bytes": 49799,
     "sha256": "e2e519e9b75a34a954c21a1b096c3ba04f054a59ab087e9d3c24853a42571770",
     "sourceFile": "src/content/blog/esprit/biais-de-confirmation-aux-echecs.md",
-    "sourceHash": "d55777717c22e1b39a6153c85196a17884e719c3ea6736fb7caa6c59d5947286",
+    "sourceHash": "7853619d30ad9f735dbf3ba585789dcaad8f224c03ae3688983e3730b0bec94e",
     "cover": "public/pinterest-media/covers/biais-de-confirmation-aux-echecs--angle-04.jpg",
     "coverHash": "418b504ec566e224359cde4d444497607baeb9f2c474de12a14becf255a48052"
   },
@@ -3987,7 +3987,7 @@
     "bytes": 49480,
     "sha256": "1c854fc33d52c9a9a25a6625e57d9549f9b4d61f9eb30f5d02b78dad1ab0d042",
     "sourceFile": "src/content/blog/science/effet-placebo-aux-echecs.md",
-    "sourceHash": "a47ad7281f735c32aaa495389decda0d909d006f282868de2be44c4c7ff82066",
+    "sourceHash": "565b2036251d4c9cc4f100f48cac8d77e3fe6c3bbb9d406515f11dd7b7aba274",
     "cover": "public/pinterest-media/covers/effet-placebo-aux-echecs--angle-04.jpg",
     "coverHash": "6d978526750fc67016d546265ee4560aafd6628ae5dd728ea1a4830932e3b2d7"
   },
@@ -3998,7 +3998,7 @@
     "bytes": 4505577,
     "sha256": "792acd0d18dc9de4aba134440bb01516dcd032ae05a41eff73f5239dc31d30c4",
     "sourceFile": "src/content/blog/societe/echecs-et-culture-populaire.md",
-    "sourceHash": "7c295e52dc4647e4f805ad6c4308107d9638f94423127ce7845f51494f77d8b2",
+    "sourceHash": "709ed77a10486d68a6f217a993647c19d1c59b39f4cb0f0941151788f5b83634",
     "cover": "public/pinterest-media/covers/echecs-et-culture-populaire--angle-04.jpg",
     "coverHash": "cf9846f8e45b052fe480ad290c7bf4fbda46f4687722d1ca3b1fe46b73a67509",
     "video": {
@@ -4027,7 +4027,7 @@
     "bytes": 4080304,
     "sha256": "a76c7155286ea07ee5a4d6e8995aad6c4d78b45ba4140df17f419970f6f29084",
     "sourceFile": "src/content/blog/esprit/echecs-et-visualisation.md",
-    "sourceHash": "3fdff8da8278ea5168978f7a3847219de1451ac03b4685732aaf11ca8fe11f91",
+    "sourceHash": "249f7561593ae5b24b85dc8c1bcf4628111faefd412c4332ce1cbb6470b1caa2",
     "cover": "public/pinterest-media/covers/echecs-et-visualisation--angle-04.jpg",
     "coverHash": "0925e03466f820bf1e116a19c7e704111bb1addfb45bbf2bc54c89735ac2e0a9",
     "video": {
@@ -4147,7 +4147,7 @@
     "bytes": 6652749,
     "sha256": "2834183a52c23815fc3ddde4be99cc76347f895b27d90da9e7188e45b0e8cbc3",
     "sourceFile": "src/content/blog/esprit/echecs-et-concentration.md",
-    "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
+    "sourceHash": "ec7a7bfc0b0ac449dbc5d6dedbf3cea72445d27f0a8ebfc92ef9b79a5df5990b",
     "cover": "public/pinterest-media/covers/echecs-et-concentration--angle-04.jpg",
     "coverHash": "1fbccc28407a4e398409b57a90a96efec0e82360edfc8bf854f39e1ffb5b6808",
     "video": {
@@ -4216,7 +4216,7 @@
     "bytes": 47718,
     "sha256": "c68abccf71bc28ae87e3fc3326b6b18d717e5072c6fb99229e80bee8730bc058",
     "sourceFile": "src/content/blog/esprit/mecanismes-de-defense-aux-echecs.md",
-    "sourceHash": "de0e4faa385ea6cfbb5925dba6716ceb0b5716c75382e7b8055a3c705d044ea0",
+    "sourceHash": "a89be7afec5d7bf61a96e3fbad683a79d4765ae5c3604f224fedd7f964533d06",
     "cover": "public/pinterest-media/covers/mecanismes-de-defense-aux-echecs--angle-04.jpg",
     "coverHash": "7ead8f2aa60f3fb9eb43c3654ed81ee42ab37db88b49506238723dd33aa24d1f"
   },
@@ -4238,7 +4238,7 @@
     "bytes": 5064848,
     "sha256": "a744595638a38d05e6f6ad0a8f96ddf4d1a88915fe6d9647cbc5d3ca7ddf4550",
     "sourceFile": "src/content/blog/societe/echecs-religion-et-interdit.md",
-    "sourceHash": "f471038eaa809a0095d9c246385a3fca4e4436895dd8ca917f2574f8d942dba3",
+    "sourceHash": "a02534c8209e90bc931813507402c08ab82d36ff5c89bbb3fcd734103b498c9e",
     "cover": "public/pinterest-media/covers/echecs-religion-et-interdit--angle-04.jpg",
     "coverHash": "b538ce04875110845749c376b044dce5f305e042a55663306a27dd385802be50",
     "video": {
@@ -4267,7 +4267,7 @@
     "bytes": 4091011,
     "sha256": "044919d9516c6ed12d2820561518cb73407ade50f6db12bcccc1bfc266aa712d",
     "sourceFile": "src/content/blog/esprit/echecs-gestion-du-temps.md",
-    "sourceHash": "c99322000d1675e832655441a0bee3a8a6ce9a15b7b9350b89c714577790762f",
+    "sourceHash": "1455286c7b7dc7d8c1588cac53f883566c556f3f73400e2b6b68395384c0e27a",
     "cover": "public/pinterest-media/covers/echecs-gestion-du-temps--angle-04.jpg",
     "coverHash": "3c5e057fb0391a2220b0704624d8c102b3e5dd28bd5eb8455b26b177b2fc25ae",
     "video": {
@@ -4347,7 +4347,7 @@
     "bytes": 49669,
     "sha256": "46a85266cd73cc696cb3d46dc6d9fd83a9d17a65888aa80dc60009f98aead8b1",
     "sourceFile": "src/content/blog/science/echecs-et-dopamine.md",
-    "sourceHash": "6f7c185cdb91cb02c154ec681d7a323f2502aacf03a06e104e9d8698e554621d",
+    "sourceHash": "4b0121e64043c07ff215bfc19160f4fad5311bc839ae72da7e241c45471d28c7",
     "cover": "public/pinterest-media/covers/echecs-et-dopamine--angle-04.jpg",
     "coverHash": "9ab400e95f2efb22727a41a7dd8b4aa50365b3014a3382f8416d9d1c2ff41cec"
   },
@@ -4358,7 +4358,7 @@
     "bytes": 5005889,
     "sha256": "b3292f3d718062e3a5caaac37da919b0d2d8e4bb9f2c3ea53bb8a6f1c9642f61",
     "sourceFile": "src/content/blog/societe/echecs-et-tdah.md",
-    "sourceHash": "9855cf567bb6ea844abae45d9bd670a9162149209f87c1e786e5065e975a835f",
+    "sourceHash": "c8565d4d027ef2e9ac375a70f6c4d539041e4dfca5a874dcf9b6e09ebfb440d0",
     "cover": "public/pinterest-media/covers/echecs-et-tdah--angle-04.jpg",
     "coverHash": "5ab7ebf3233b1d7e8a077e5a79a6c92642182e36bddfa98a9d2b21f607f818a8",
     "video": {
@@ -4416,7 +4416,7 @@
     "bytes": 49614,
     "sha256": "4ffa73469878041028ce7498c23b4454275d64a86b1d612d306f2ceea9da3d66",
     "sourceFile": "src/content/blog/societe/echecs-vs-philosophie-pensee-strategique.md",
-    "sourceHash": "81f09a540af645eea71c4064bce452e4530146b3963ef9f82c0ce198a86b49d6",
+    "sourceHash": "953aec30b245e703bd022e7f775a71079c49af086cdce2765bc70c072935ae2e",
     "cover": "public/pinterest-media/covers/echecs-vs-philosophie-pensee-strategique--angle-04.jpg",
     "coverHash": "4a19ac03a89ca6a17dfccef8a6c3332d6f01193c6948cb5b6ce186207ccf5bb8"
   },
@@ -4427,7 +4427,7 @@
     "bytes": 5396897,
     "sha256": "1fee62d6cdefb157af17a4126c4d70677ebb45934bbb7b0dcd5e9a1dd92f6127",
     "sourceFile": "src/content/blog/science/reseaux-bayesiens-predire-blunder.md",
-    "sourceHash": "82a0f8d96fb53ec8e2a674b03d1e22d774395bf302dddabe0eed0d4b8166b0d7",
+    "sourceHash": "d7c96b45038e10559076eeafc3638d676881461b8c3f17054727ff19f7f106e9",
     "cover": "public/pinterest-media/covers/reseaux-bayesiens-predire-blunder--angle-04.jpg",
     "coverHash": "dd8a265525b9846cf8cb262857cb7e7de11f0ea999396ef8826e2b7d9ed627cd",
     "video": {
@@ -4456,7 +4456,7 @@
     "bytes": 49802,
     "sha256": "a6fe90b414f0ca2e12d542f43a1f3523b3afaaaceaea9b35977ee1702814213d",
     "sourceFile": "src/content/blog/esprit/echecs-et-confiance-en-soi.md",
-    "sourceHash": "454cd1c2cabd86367d438bd4e4c5494c88cb08f678dd7e2d71563419476f9a71",
+    "sourceHash": "3eacb8ccebe2f327661f985e900548f37e02f0f87413604c32a71b14c11395a7",
     "cover": "public/pinterest-media/covers/echecs-et-confiance-en-soi--angle-04.jpg",
     "coverHash": "c78183fd87b61f846e81f89d177891e80657ec7c1caea68a298be7cd80708847"
   },
@@ -4467,7 +4467,7 @@
     "bytes": 49881,
     "sha256": "207b472ee08d88c5437143973a9024f448d73229ec43ef2c10345df4c3239ca9",
     "sourceFile": "src/content/blog/science/neurones-miroirs-aux-echecs.md",
-    "sourceHash": "6f51a72122e7a28ed0b9414cbd26745fa304a85fe0d982c25f5db06f428868c6",
+    "sourceHash": "2c15f80d697501608c77c7f009457cb91683af5fe4ebbcb45773e9083dd8bccd",
     "cover": "public/pinterest-media/covers/neurones-miroirs-aux-echecs--angle-04.jpg",
     "coverHash": "4f4b7c312fd20a6ccfc0d78f7db401fe46a28afa7ce2abc143075825bebd6f38"
   },
@@ -4478,7 +4478,7 @@
     "bytes": 5081028,
     "sha256": "0bc76453e98013e970d9ea1183360694ec0385d60ffe16d6a776167038df03df",
     "sourceFile": "src/content/blog/societe/les-echecs-et-l-addiction.md",
-    "sourceHash": "07dce66238fb482e5af355b145b5fe530876ec35459bc1fdc77e2142be23cb2b",
+    "sourceHash": "030e5605656a5715c1fb306925bde60faedd03e89f0d684ea469479b1925b0e4",
     "cover": "public/pinterest-media/covers/les-echecs-et-l-addiction--angle-04.jpg",
     "coverHash": "d690a63cb998e4a9366fb1ed38e8ddc63b8fd5a1a10f54b93f967d15c66ca23e",
     "video": {
@@ -4507,7 +4507,7 @@
     "bytes": 6151420,
     "sha256": "0efb5f3d7044df4cf99c310e4f1dae7f4bd4b5a65646c1551ebcd9ec81201224",
     "sourceFile": "src/content/blog/esprit/loi-de-murphy-aux-echecs.md",
-    "sourceHash": "e62ef0fece503c407174b044dc0a1065c83ae64c327b85ae9cdc069603968b87",
+    "sourceHash": "415e0f309149bf4a1f7e01ee05ec0dc29c800c75dea1437332e2acf2c82a2353",
     "cover": "public/pinterest-media/covers/loi-de-murphy-aux-echecs--angle-04.jpg",
     "coverHash": "2f1e7fa50637affb22be7b6948f76fd29bad515b214cebe5a7daef325ff3d50e",
     "video": {
@@ -4536,7 +4536,7 @@
     "bytes": 49768,
     "sha256": "93d1dac971c6318f29b8aa985e3a9cd398921d051db30c55690c3ea741ea4cfd",
     "sourceFile": "src/content/blog/societe/echecs-et-autisme.md",
-    "sourceHash": "612a365df8540e352e6c927892cb8674f7be88d8b7ef90763ac8ac5caeb760ae",
+    "sourceHash": "982e5d786374bc3e5dadc2367c334f9a913e6095329d26c4673b107a207c6ad5",
     "cover": "public/pinterest-media/covers/echecs-et-autisme--angle-04.jpg",
     "coverHash": "3082c5bb2fb7617c367ac6de8e2d6048f64e40d2be7694fc8fd779046b8e3076"
   },
@@ -4576,7 +4576,7 @@
     "bytes": 49376,
     "sha256": "1fc8e70b022f11523100264c148bf4dab86d999fd2043b2da2496e6a26227f17",
     "sourceFile": "src/content/blog/esprit/burnout-chess.md",
-    "sourceHash": "df6ef85025c51f01037b75cfa2f1a8a29adaf1f6e712b057a71db3acab1d5c43",
+    "sourceHash": "06cea15f9d52ac5f0d3e23db50ed796e01fc55881c716512bbd262674982415c",
     "cover": "public/pinterest-media/covers/burnout-chess--angle-04.jpg",
     "coverHash": "9a4e9475ceed08d4c16b1d0918399aded34d59472e61143e43f726f5e01142bc"
   },
@@ -4598,7 +4598,7 @@
     "bytes": 5839129,
     "sha256": "bd5e3fcf6253b598544ca1f73709d7f94a3ae5541248cf6e638f845a713750c7",
     "sourceFile": "src/content/blog/science/paradoxe-de-zermelo.md",
-    "sourceHash": "14e3bb616895129e2bc87f03439a3b1a3ffe2270c2c4dfb73a6dc20e5df4ccd7",
+    "sourceHash": "cd11916f8dcafba494d168a99730ead2c20a1ef80394e99592d6d82bc4fdcbf1",
     "cover": "public/pinterest-media/covers/paradoxe-de-zermelo--angle-04.jpg",
     "coverHash": "ce6909eec6caf077a57fd00fb9c7d3c0575e121009bd8794c9c852757bd8f18f",
     "video": {
@@ -4627,7 +4627,7 @@
     "bytes": 4030857,
     "sha256": "77adbd0988659b274d350f9ceabbce9e8d9ba6e5fcd4360a80b53c5ceaf7a3ab",
     "sourceFile": "src/content/blog/esprit/echecs-peur-de-perdre.md",
-    "sourceHash": "512b058a030776de83ad39a84b1a024957df02ca45b9ae161b6056f1fb2805c7",
+    "sourceHash": "8a8d02d15d577b98a66b88a0c94013f4b92c5301bbb55fdaf56c390bca86898d",
     "cover": "public/pinterest-media/covers/echecs-peur-de-perdre--angle-04.jpg",
     "coverHash": "b17f0d8233b725130989e6a2883c4b8e87d06103c1113430b2dbb2b44261447f",
     "video": {
@@ -4667,7 +4667,7 @@
     "bytes": 5914211,
     "sha256": "967bf87551d0850ac38662f24b8ef416e1d79017e79812c7ace8ee8928da2c25",
     "sourceFile": "src/content/blog/science/les-echecs-et-le-cerveau.md",
-    "sourceHash": "0e407d6cabfeb944eb612465faa92d234b7cb20422eb02618d62da5a5c4ce2e9",
+    "sourceHash": "fd50701f1457369e140f19a5723da58a93ff1ed664a8d8ebce9baa7d28323d21",
     "cover": "public/pinterest-media/covers/les-echecs-et-le-cerveau--angle-04.jpg",
     "coverHash": "9ab4016217917f28785905eb935cb2e5a882ba940d224a457ebce050ae95d6e8",
     "video": {
@@ -4707,7 +4707,7 @@
     "bytes": 49446,
     "sha256": "c057be58caade36a7b4f10b2c16ae6d3883367c8a80566347285c638935f2995",
     "sourceFile": "src/content/blog/esprit/echecs-et-perfectionnisme-toxique.md",
-    "sourceHash": "86e5870b093b3abdf96f53f2a5f51da53be1c93a736b396668c5254a883d52ea",
+    "sourceHash": "27bd7361bd73008e09828fa928ed83621e6266a85d13ab20266dd1d9229f5782",
     "cover": "public/pinterest-media/covers/echecs-et-perfectionnisme-toxique--angle-04.jpg",
     "coverHash": "252c52787f52bfcdf982f356f1a2b8f7a9261cc058206cabbf0c3ec6a522efc1"
   },
@@ -4718,7 +4718,7 @@
     "bytes": 5902744,
     "sha256": "09c18512f97acc6a46729773a371ab76c7894b75902adaf487929f7b662a146d",
     "sourceFile": "src/content/blog/esprit/syndrome-imposteur-aux-echecs.md",
-    "sourceHash": "9627eb10d3cbfbb3bcdb0fa2b830e051a291c728897de77ec9ba15bd859c34dd",
+    "sourceHash": "5f24bde27577f2d4d25cffdc24a048d2da8032940a7e3ab4627d0f5a809bd5d4",
     "cover": "public/pinterest-media/covers/syndrome-imposteur-aux-echecs--angle-04.jpg",
     "coverHash": "cbec241db6c4a45e62c21ff2fdf8ca450e2a527df2ed134768ae7762705649eb",
     "video": {
@@ -4787,7 +4787,7 @@
     "bytes": 47127,
     "sha256": "34c720f7a2fe2811a159116b8c617526d3a4b7c8918fe66dbc2051e7b2509753",
     "sourceFile": "src/content/blog/science/echecs-et-memoire.md",
-    "sourceHash": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930",
+    "sourceHash": "ed158a58f83bf232222a866b7b2888c5abd6c860365f139373a86389f416756b",
     "cover": "public/pinterest-media/covers/echecs-et-memoire--angle-05.jpg",
     "coverHash": "471b14d980980727d1692752cf5cd1f6e383357d615e123a5d2f6995811f4ea6"
   },
@@ -4896,7 +4896,7 @@
     "bytes": 50005,
     "sha256": "ee364fc11413d891b0dfe18fc7b19238a6a66857ca194f87cc58bd4c9549f3a5",
     "sourceFile": "src/content/blog/esprit/echecs-et-procrastination.md",
-    "sourceHash": "3747f32a6fadf5ad9ad8386bfc44011efe5d3cd79e05d2afa3aad0aaf09095d6",
+    "sourceHash": "3930f838dda898837230fcd94c2c0cb5ede131e08409c9742c5459c81fb0177d",
     "cover": "public/pinterest-media/covers/echecs-et-procrastination--angle-05.jpg",
     "coverHash": "a0cf7d19750955f03ac30322826e676521ca59e7326ed20bdeb9e5bd892d08a6"
   },
@@ -4918,7 +4918,7 @@
     "bytes": 6889504,
     "sha256": "d2d5bd85d2c9812c4e468d716040858a6105bcdff89402c9f7ac8197f087dc2a",
     "sourceFile": "src/content/blog/societe/echecs-et-streaming.md",
-    "sourceHash": "90ecdb8f75296417b063fcc9b607e9347f5ed064e5949456cc2a3b40f32b78e5",
+    "sourceHash": "8e6ba12ac4483f6e0f0a8c66fba8ff5a6974649e91a1d6ea8695d55fd7aef74f",
     "cover": "public/pinterest-media/covers/echecs-et-streaming--angle-05.jpg",
     "coverHash": "dfad17d43b08b1828749582c181477c359bdfef02ed7418b1e1d2c442e33fe5d",
     "video": {
@@ -4947,7 +4947,7 @@
     "bytes": 5325867,
     "sha256": "21e0b2887b146f428ebbb2f2b0fffa509158c03d0e925ef69284a99d9c77ef72",
     "sourceFile": "src/content/blog/esprit/manipulation-emotionnelle-aux-echecs.md",
-    "sourceHash": "2999b03dac3503cdc7388ef36ad365f068dd492c76aa7e347d83f8458468b077",
+    "sourceHash": "745d4bed04c4a7a89c9038e4444e20c37349e5fc4b97ac70e79e6f39a76ee939",
     "cover": "public/pinterest-media/covers/manipulation-emotionnelle-aux-echecs--angle-05.jpg",
     "coverHash": "e53a14b94a2aae49c433121b4154e6c9dc06aa880ce511c5899c41b1695ef120",
     "video": {
@@ -4976,7 +4976,7 @@
     "bytes": 49737,
     "sha256": "4f66ae978e37a071ffedc1957b41ce99a862597308a781f3606f02ef0fcd500f",
     "sourceFile": "src/content/blog/societe/echecs-et-culture-populaire.md",
-    "sourceHash": "7c295e52dc4647e4f805ad6c4308107d9638f94423127ce7845f51494f77d8b2",
+    "sourceHash": "709ed77a10486d68a6f217a993647c19d1c59b39f4cb0f0941151788f5b83634",
     "cover": "public/pinterest-media/covers/echecs-et-culture-populaire--angle-05.jpg",
     "coverHash": "68bd5c17347e308b861f8c7f9bc43eb30990d08ccdda0a3055e63fca6258014b"
   },
@@ -4987,7 +4987,7 @@
     "bytes": 5555879,
     "sha256": "3be8afc2bd8e25b2936cc8b8ca176918930e797853644e643ccdd7ccd0eb0f86",
     "sourceFile": "src/content/blog/science/echecs-alphazero-stockfish.md",
-    "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+    "sourceHash": "d65ae6f93c3f10348fa050ee01102e9e962ed949d0e4f9b8a422a99c430a6571",
     "cover": "public/pinterest-media/covers/echecs-alphazero-stockfish--angle-05.jpg",
     "coverHash": "410ca28340fd662391e30f6647d50eaddb3d4d13cbf6955e2395a04baa338bbd",
     "video": {
@@ -5037,7 +5037,7 @@
     "bytes": 49881,
     "sha256": "e6ec919d57897565b23c5db9655b07ac150182dbd73a8bba9c391a9cfd37f6b2",
     "sourceFile": "src/content/blog/esprit/echecs-et-visualisation.md",
-    "sourceHash": "3fdff8da8278ea5168978f7a3847219de1451ac03b4685732aaf11ca8fe11f91",
+    "sourceHash": "249f7561593ae5b24b85dc8c1bcf4628111faefd412c4332ce1cbb6470b1caa2",
     "cover": "public/pinterest-media/covers/echecs-et-visualisation--angle-05.jpg",
     "coverHash": "fd085edd846aa04a003e966d36cfacb99edef076af7308bff488d7d5dcbb786b"
   },
@@ -5088,7 +5088,7 @@
     "bytes": 5208404,
     "sha256": "efb3efbaad87fee67f56cb9498593c111e857c7093964abbebcd4d2d84f7e3de",
     "sourceFile": "src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md",
-    "sourceHash": "0c785f2db4b403951ffe708d1cec88f1994bae903d6a324cd50a052627f8f0f5",
+    "sourceHash": "265dc797d4d9d0ef1d2b75f7c2b6a7452940c82daffbcccdda1561e31291cdb0",
     "cover": "public/pinterest-media/covers/theorie-de-l-attachement-aux-echecs--angle-05.jpg",
     "coverHash": "8e5bbae6c513b8a3bc574bd35d87fdf20ce031926e5e25b700577ebfa330cb21",
     "video": {
@@ -5157,7 +5157,7 @@
     "bytes": 49723,
     "sha256": "bbbfd4f04584317e7dc156f3ed523f2f8c3a568fdeb15b1107d0fa523bfc297c",
     "sourceFile": "src/content/blog/esprit/echecs-et-concentration.md",
-    "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
+    "sourceHash": "ec7a7bfc0b0ac449dbc5d6dedbf3cea72445d27f0a8ebfc92ef9b79a5df5990b",
     "cover": "public/pinterest-media/covers/echecs-et-concentration--angle-05.jpg",
     "coverHash": "8d8e343d8767ef63e3f08d3c1bda293e6d7ffcb7a1cad8457eee1cdfc3e5511a"
   },
@@ -5179,7 +5179,7 @@
     "bytes": 5084433,
     "sha256": "fd96ad15eba35606acd9a944d073251b200010bcf3eaf5cf61b70f25113bd74b",
     "sourceFile": "src/content/blog/societe/echecs-et-hpi.md",
-    "sourceHash": "197e5b02216f89426a5e03a3a4eddc9b7fb4a19050b383ba59ced03dc679fa29",
+    "sourceHash": "795dcce65c2d8947312b76ae513e8d3ce4b199ab6bdfc53363f2f55f2c42ed18",
     "cover": "public/pinterest-media/covers/echecs-et-hpi--angle-05.jpg",
     "coverHash": "becef8d7e3ffe1d2ed6c9c18fb03de6accf03db6c750bab017ed1af80968454f",
     "video": {
@@ -5237,7 +5237,7 @@
     "bytes": 50433,
     "sha256": "7b026be8ff0afbffc0581ec521454c68fbd341f22dd23157662a85f485aad1f6",
     "sourceFile": "src/content/blog/societe/echecs-religion-et-interdit.md",
-    "sourceHash": "f471038eaa809a0095d9c246385a3fca4e4436895dd8ca917f2574f8d942dba3",
+    "sourceHash": "a02534c8209e90bc931813507402c08ab82d36ff5c89bbb3fcd734103b498c9e",
     "cover": "public/pinterest-media/covers/echecs-religion-et-interdit--angle-05.jpg",
     "coverHash": "ff850ab7f1fd6e90730f8860f3a77c5d3b336d0860151333c6aeff036e19910c"
   },
@@ -5248,7 +5248,7 @@
     "bytes": 6473212,
     "sha256": "c48edddff0a2d805fe49def9958e121bca091a15e57f5c1bcfc8bd4d2f254d9b",
     "sourceFile": "src/content/blog/science/echecs-et-genetique.md",
-    "sourceHash": "f82464fea06d1566b924492059e832a8b8a9a76643381686c88986ea52601208",
+    "sourceHash": "d4e8c36008ac60a17d95bbadd97973291bd1fc87a3835dc954ba94ede9633ae0",
     "cover": "public/pinterest-media/covers/echecs-et-genetique--angle-05.jpg",
     "coverHash": "8278e52e5719bc988c637d9bd7f771d31fa248987dca08ca98dc3b99ae6d4273",
     "video": {
@@ -5274,10 +5274,10 @@
     "id": "echecs-gestion-du-temps--angle-05",
     "format": "pdf",
     "file": "public/pinterest-media/pdf/echecs-gestion-du-temps--angle-05.pdf",
-    "bytes": 49656,
-    "sha256": "5a32a5db72b9da9e1b403fbcaedc066abda0f5f6526c4e5a5308221b62645f89",
+    "bytes": 49072,
+    "sha256": "58cb5a47ca644f61079049b10623ced65328204ff77a0d77b2a1f42c64058abc",
     "sourceFile": "src/content/blog/esprit/echecs-gestion-du-temps.md",
-    "sourceHash": "c99322000d1675e832655441a0bee3a8a6ce9a15b7b9350b89c714577790762f",
+    "sourceHash": "1455286c7b7dc7d8c1588cac53f883566c556f3f73400e2b6b68395384c0e27a",
     "cover": "public/pinterest-media/covers/echecs-gestion-du-temps--angle-05.jpg",
     "coverHash": "ca8ba4caec2dfe81de36a81f76f4d275074e4c83c216a0ef2962bcb3a5c3d3ea"
   },
@@ -5357,7 +5357,7 @@
     "bytes": 49707,
     "sha256": "89d11749d03fb4996e969e114dc2c4b32f552d8c716d5c937120d4a737d7f065",
     "sourceFile": "src/content/blog/societe/echecs-et-tdah.md",
-    "sourceHash": "9855cf567bb6ea844abae45d9bd670a9162149209f87c1e786e5065e975a835f",
+    "sourceHash": "c8565d4d027ef2e9ac375a70f6c4d539041e4dfca5a874dcf9b6e09ebfb440d0",
     "cover": "public/pinterest-media/covers/echecs-et-tdah--angle-05.jpg",
     "coverHash": "8268ef18e6215c3cbca0635a0a49864efb596c6caf7aea2e2c585e0f63a5104b"
   },
@@ -5408,7 +5408,7 @@
     "bytes": 63296,
     "sha256": "d1d031c8793ad2ff26810cf291a7e5b02ab0e4a534e0f4d9d32e71055093ffd2",
     "sourceFile": "src/content/blog/science/reseaux-bayesiens-predire-blunder.md",
-    "sourceHash": "82a0f8d96fb53ec8e2a674b03d1e22d774395bf302dddabe0eed0d4b8166b0d7",
+    "sourceHash": "d7c96b45038e10559076eeafc3638d676881461b8c3f17054727ff19f7f106e9",
     "cover": "public/pinterest-media/covers/reseaux-bayesiens-predire-blunder--angle-05.jpg",
     "coverHash": "b99c83f0e76dc6959e22654661873dde5832ca28b31c0cf434ee3c7fa714546c"
   },
@@ -5477,7 +5477,7 @@
     "bytes": 49155,
     "sha256": "a0470342396228b3685c7691d0d47c29bfd603103edf2d30ea143276682b28ab",
     "sourceFile": "src/content/blog/societe/les-echecs-et-l-addiction.md",
-    "sourceHash": "07dce66238fb482e5af355b145b5fe530876ec35459bc1fdc77e2142be23cb2b",
+    "sourceHash": "030e5605656a5715c1fb306925bde60faedd03e89f0d684ea469479b1925b0e4",
     "cover": "public/pinterest-media/covers/les-echecs-et-l-addiction--angle-05.jpg",
     "coverHash": "fc7be64ad543e88d668fc2221ddf7bc06235c9ef9bdd12a4bd976d10b69b99ce"
   },
@@ -5488,7 +5488,7 @@
     "bytes": 5576135,
     "sha256": "39d26080541e4dfda3314065aed02478603b035323108214c9a8dbfeae2422ea",
     "sourceFile": "src/content/blog/science/logique-modale-aux-echecs.md",
-    "sourceHash": "bff47fd27cffd412bf4c5f7d86cd15c01dbf71de49c59079b49c5c9d64bd6a10",
+    "sourceHash": "cbd1ec891814978fdfc9bd36cc2ef9257848bcce2f273871fc7b8a2498af0a13",
     "cover": "public/pinterest-media/covers/logique-modale-aux-echecs--angle-05.jpg",
     "coverHash": "9771ba8848280be1370136135541f29295bf1253f34f669c916521156c1c060f",
     "video": {
@@ -5517,7 +5517,7 @@
     "bytes": 49772,
     "sha256": "b64e7cd390da06be5e7da8585a395ce1fda0212bdd166293be563a0f8f135ff1",
     "sourceFile": "src/content/blog/esprit/loi-de-murphy-aux-echecs.md",
-    "sourceHash": "e62ef0fece503c407174b044dc0a1065c83ae64c327b85ae9cdc069603968b87",
+    "sourceHash": "415e0f309149bf4a1f7e01ee05ec0dc29c800c75dea1437332e2acf2c82a2353",
     "cover": "public/pinterest-media/covers/loi-de-murphy-aux-echecs--angle-05.jpg",
     "coverHash": "63e845bc82bab0b147a25f4b786d267d2ab4b1335d0d36b057b9aefb1b6be7c2"
   },
@@ -5568,7 +5568,7 @@
     "bytes": 4867589,
     "sha256": "9fc2a97249d8ca31ba927cce4e530af35d1a3d72774918a7d2264d526e27d4e9",
     "sourceFile": "src/content/blog/esprit/5-biais-cognitifs-blunder.md",
-    "sourceHash": "7df2020728ddf2f7935ba2fc200b9ba9e82ac24483a63fd0c0e828d630c499f0",
+    "sourceHash": "77d637f7d6e9ecd5860f848f609de5de757db6640c5a5e78fe2b576ef1ab0eec",
     "cover": "public/pinterest-media/covers/5-biais-cognitifs-blunder--angle-05.jpg",
     "coverHash": "839d8234bd920443e74cbf9e73870b8557c609ae8d7aecf94ae19ac9ecc7d7ab",
     "video": {
@@ -5597,7 +5597,7 @@
     "bytes": 49124,
     "sha256": "bbf668e76cce745b28142db22442fc1146d93ec893b7e5afbce34d0e969da8ca",
     "sourceFile": "src/content/blog/science/paradoxe-de-zermelo.md",
-    "sourceHash": "14e3bb616895129e2bc87f03439a3b1a3ffe2270c2c4dfb73a6dc20e5df4ccd7",
+    "sourceHash": "cd11916f8dcafba494d168a99730ead2c20a1ef80394e99592d6d82bc4fdcbf1",
     "cover": "public/pinterest-media/covers/paradoxe-de-zermelo--angle-05.jpg",
     "coverHash": "68639537ea8ac7563dd5ed606bfc66c3607b447b18c7a2c916eadeb71f10a72e"
   },
@@ -5608,7 +5608,7 @@
     "bytes": 5203080,
     "sha256": "ac455ed2e64b0095ee34c72e04bb65072467aa2a2f5bfa0926756facae481203",
     "sourceFile": "src/content/blog/science/theorie-des-jeux-aux-echecs.md",
-    "sourceHash": "e305df66945f867be854b1bec2a53f80d173f0cb9b041db43b534b1f62348064",
+    "sourceHash": "93be71ff4cd1daa1758022891c5f0561f899a766114d3e6d7cb0052a61ff51ea",
     "cover": "public/pinterest-media/covers/theorie-des-jeux-aux-echecs--angle-05.jpg",
     "coverHash": "b6b021e9a780a9b2fbc46431fce54f56834f84ece6cd23d6bfc73c0857264385",
     "video": {
@@ -5637,7 +5637,7 @@
     "bytes": 49698,
     "sha256": "f03f634da8306890fd65562716194ed6a954c3e47f5f382c13a5048e6737426b",
     "sourceFile": "src/content/blog/esprit/echecs-peur-de-perdre.md",
-    "sourceHash": "512b058a030776de83ad39a84b1a024957df02ca45b9ae161b6056f1fb2805c7",
+    "sourceHash": "8a8d02d15d577b98a66b88a0c94013f4b92c5301bbb55fdaf56c390bca86898d",
     "cover": "public/pinterest-media/covers/echecs-peur-de-perdre--angle-05.jpg",
     "coverHash": "94f987dbb9297b1b701a6c4004392870c05a17adfef0fd248606090ca8829895"
   },
@@ -5648,7 +5648,7 @@
     "bytes": 49812,
     "sha256": "ab5344c2d5df1347743d6dcb3ba70541c6c15945e2c191e5b816cbd9746eda18",
     "sourceFile": "src/content/blog/science/les-echecs-et-le-cerveau.md",
-    "sourceHash": "0e407d6cabfeb944eb612465faa92d234b7cb20422eb02618d62da5a5c4ce2e9",
+    "sourceHash": "fd50701f1457369e140f19a5723da58a93ff1ed664a8d8ebce9baa7d28323d21",
     "cover": "public/pinterest-media/covers/les-echecs-et-le-cerveau--angle-05.jpg",
     "coverHash": "b7d1e552cbb5f79e37d7d520a6040416abd385fddb5011e239b582f54d15c405"
   },
@@ -5717,7 +5717,7 @@
     "bytes": 50037,
     "sha256": "aab1f4846192209f07e4378cbadc9ca26a9e71b2ac7d9bd8e85cb28bad7c6645",
     "sourceFile": "src/content/blog/esprit/syndrome-imposteur-aux-echecs.md",
-    "sourceHash": "9627eb10d3cbfbb3bcdb0fa2b830e051a291c728897de77ec9ba15bd859c34dd",
+    "sourceHash": "5f24bde27577f2d4d25cffdc24a048d2da8032940a7e3ab4627d0f5a809bd5d4",
     "cover": "public/pinterest-media/covers/syndrome-imposteur-aux-echecs--angle-05.jpg",
     "coverHash": "7d7d05ed8c1eafe3c04c0340390b6e0ebc6a1db59c67d54a57eedad79f3778b0"
   },
@@ -5768,7 +5768,7 @@
     "bytes": 5200221,
     "sha256": "c295aedcb5894bbf58c2891fb93166d0d5de1a9ac3eeff217bf7c2d4713f2942",
     "sourceFile": "src/content/blog/esprit/psychologie-du-joueur-d-echecs.md",
-    "sourceHash": "a969e2efd408b52af777b7ac5ec8a69cb0d78b7209c58143f66a979adc5010a9",
+    "sourceHash": "c5c97aaebba3fa4819620057cd0fe2c150ef811d78c624e2f97cb1070e1c4294",
     "cover": "public/pinterest-media/covers/psychologie-du-joueur-d-echecs--angle-06.jpg",
     "coverHash": "f5406e2123e623c8de9e65172b5bcaea5c1732fdf3f066f27f41be4a409e7557",
     "video": {
@@ -5888,7 +5888,7 @@
     "bytes": 5777840,
     "sha256": "7f9b2627a61b65f69f4ad4b0f7cbb78145bc360c913494fe8334f2f9bbe91285",
     "sourceFile": "src/content/blog/esprit/biais-de-confirmation-aux-echecs.md",
-    "sourceHash": "d55777717c22e1b39a6153c85196a17884e719c3ea6736fb7caa6c59d5947286",
+    "sourceHash": "7853619d30ad9f735dbf3ba585789dcaad8f224c03ae3688983e3730b0bec94e",
     "cover": "public/pinterest-media/covers/biais-de-confirmation-aux-echecs--angle-06.jpg",
     "coverHash": "5774236449e5662ce1a42b20308c9eda0ab12fcfe148d780bddec98f44c2eace",
     "video": {
@@ -5917,7 +5917,7 @@
     "bytes": 49479,
     "sha256": "e19097901f33226492d63280a2f3b4e98c3de92f8436425a760aca082014da0e",
     "sourceFile": "src/content/blog/societe/echecs-et-streaming.md",
-    "sourceHash": "90ecdb8f75296417b063fcc9b607e9347f5ed064e5949456cc2a3b40f32b78e5",
+    "sourceHash": "8e6ba12ac4483f6e0f0a8c66fba8ff5a6974649e91a1d6ea8695d55fd7aef74f",
     "cover": "public/pinterest-media/covers/echecs-et-streaming--angle-06.jpg",
     "coverHash": "ccce3a951c91e5c3dd0cb65a88559a0a8bba56b3051fd96a373c92f4ce5fb301"
   },
@@ -5928,7 +5928,7 @@
     "bytes": 6503098,
     "sha256": "076a473cfc26fb3dda3f09b89569e0d74ef5503923d77886dbd021edc0a8e7e7",
     "sourceFile": "src/content/blog/science/effet-placebo-aux-echecs.md",
-    "sourceHash": "a47ad7281f735c32aaa495389decda0d909d006f282868de2be44c4c7ff82066",
+    "sourceHash": "565b2036251d4c9cc4f100f48cac8d77e3fe6c3bbb9d406515f11dd7b7aba274",
     "cover": "public/pinterest-media/covers/effet-placebo-aux-echecs--angle-06.jpg",
     "coverHash": "fed37cbd13e5d06622aca4487b3b0dd0df61847c4ba7d1a2d4b55fe21d047c46",
     "video": {
@@ -5957,7 +5957,7 @@
     "bytes": 49471,
     "sha256": "14f8dc2afd85df752cb1ae800276626ad45d0a1375c9f60c0410306697f6c2b8",
     "sourceFile": "src/content/blog/esprit/manipulation-emotionnelle-aux-echecs.md",
-    "sourceHash": "2999b03dac3503cdc7388ef36ad365f068dd492c76aa7e347d83f8458468b077",
+    "sourceHash": "745d4bed04c4a7a89c9038e4444e20c37349e5fc4b97ac70e79e6f39a76ee939",
     "cover": "public/pinterest-media/covers/manipulation-emotionnelle-aux-echecs--angle-06.jpg",
     "coverHash": "086f57d0fe4200321ca4d7cced12ac9bf0aeadfe09abb962a81560661dd6ffca"
   },
@@ -5968,7 +5968,7 @@
     "bytes": 46907,
     "sha256": "87a71d95ddc925c9332cdfbe143271fa44178f58124c1d2fd99bb4de05ffdd99",
     "sourceFile": "src/content/blog/science/echecs-alphazero-stockfish.md",
-    "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+    "sourceHash": "d65ae6f93c3f10348fa050ee01102e9e962ed949d0e4f9b8a422a99c430a6571",
     "cover": "public/pinterest-media/covers/echecs-alphazero-stockfish--angle-06.jpg",
     "coverHash": "d0daa6f4af28a610ff0feb2d2493234bd86456260645dd6c978fcdf0464af957"
   },
@@ -6077,7 +6077,7 @@
     "bytes": 50018,
     "sha256": "8d9b0b730b4b744396f75d5f8e4d9994821445d89d7e65a4e8d0fcb810ce3c37",
     "sourceFile": "src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md",
-    "sourceHash": "0c785f2db4b403951ffe708d1cec88f1994bae903d6a324cd50a052627f8f0f5",
+    "sourceHash": "265dc797d4d9d0ef1d2b75f7c2b6a7452940c82daffbcccdda1561e31291cdb0",
     "cover": "public/pinterest-media/covers/theorie-de-l-attachement-aux-echecs--angle-06.jpg",
     "coverHash": "401102d52cd4934371bda55c63b762a828e2fa1ae9a15881d87ef0b4670bd110"
   },
@@ -6128,7 +6128,7 @@
     "bytes": 5898724,
     "sha256": "e3cac73a5a330128755cd01ad9bba0a04256e6140f79da3de242bf197f9e54f1",
     "sourceFile": "src/content/blog/esprit/mecanismes-de-defense-aux-echecs.md",
-    "sourceHash": "de0e4faa385ea6cfbb5925dba6716ceb0b5716c75382e7b8055a3c705d044ea0",
+    "sourceHash": "a89be7afec5d7bf61a96e3fbad683a79d4765ae5c3604f224fedd7f964533d06",
     "cover": "public/pinterest-media/covers/mecanismes-de-defense-aux-echecs--angle-06.jpg",
     "coverHash": "8ec2f36df695b7333bd5fe3999855145007800cf073273d4bc444064c6030be5",
     "video": {
@@ -6157,7 +6157,7 @@
     "bytes": 49706,
     "sha256": "7fb2875d92e20eae757d90dd76fafa30ba8a9d1825f70b7ce425170c2c986352",
     "sourceFile": "src/content/blog/societe/echecs-et-hpi.md",
-    "sourceHash": "197e5b02216f89426a5e03a3a4eddc9b7fb4a19050b383ba59ced03dc679fa29",
+    "sourceHash": "795dcce65c2d8947312b76ae513e8d3ce4b199ab6bdfc53363f2f55f2c42ed18",
     "cover": "public/pinterest-media/covers/echecs-et-hpi--angle-06.jpg",
     "coverHash": "a8c65c3ebea1c996b07e302cd0df550665d962997d90152093f32e752b8b5aa4"
   },
@@ -6208,7 +6208,7 @@
     "bytes": 50259,
     "sha256": "34bc85e2d5deb29ac788fd580913f553bf736955d75cf143e36ebf8a308a5ec6",
     "sourceFile": "src/content/blog/science/echecs-et-genetique.md",
-    "sourceHash": "f82464fea06d1566b924492059e832a8b8a9a76643381686c88986ea52601208",
+    "sourceHash": "d4e8c36008ac60a17d95bbadd97973291bd1fc87a3835dc954ba94ede9633ae0",
     "cover": "public/pinterest-media/covers/echecs-et-genetique--angle-06.jpg",
     "coverHash": "145f6fc1987f4a24d070621ccbf95bfac2212e4dd310198700e4b447db3a52b0"
   },
@@ -6288,7 +6288,7 @@
     "bytes": 5677244,
     "sha256": "6988fda2f1bedf1a6e0c2f8aadadc6e4b12e3b1d51413d6f9f36ff8aef1c2db4",
     "sourceFile": "src/content/blog/science/echecs-et-dopamine.md",
-    "sourceHash": "6f7c185cdb91cb02c154ec681d7a323f2502aacf03a06e104e9d8698e554621d",
+    "sourceHash": "4b0121e64043c07ff215bfc19160f4fad5311bc839ae72da7e241c45471d28c7",
     "cover": "public/pinterest-media/covers/echecs-et-dopamine--angle-06.jpg",
     "coverHash": "23970907090a294c30364e008daba3b4a342f585c86d3e8a9f69eeec906066ac",
     "video": {
@@ -6328,7 +6328,7 @@
     "bytes": 6516760,
     "sha256": "4d5726e45af611b48ae7698023700ecf43b51a575e6d107dffb9ea2e4c8dc991",
     "sourceFile": "src/content/blog/societe/echecs-vs-philosophie-pensee-strategique.md",
-    "sourceHash": "81f09a540af645eea71c4064bce452e4530146b3963ef9f82c0ce198a86b49d6",
+    "sourceHash": "953aec30b245e703bd022e7f775a71079c49af086cdce2765bc70c072935ae2e",
     "cover": "public/pinterest-media/covers/echecs-vs-philosophie-pensee-strategique--angle-06.jpg",
     "coverHash": "c3e5f1539cf035b0dbfaf7363fc8c37bd4ed3ba65f0910fc1a1d71504590fd01",
     "video": {
@@ -6357,7 +6357,7 @@
     "bytes": 7004457,
     "sha256": "32892f3f457affbff39cd2727331deb60ec4e2cb1b04528c3830528b136401ca",
     "sourceFile": "src/content/blog/esprit/echecs-et-confiance-en-soi.md",
-    "sourceHash": "454cd1c2cabd86367d438bd4e4c5494c88cb08f678dd7e2d71563419476f9a71",
+    "sourceHash": "3eacb8ccebe2f327661f985e900548f37e02f0f87413604c32a71b14c11395a7",
     "cover": "public/pinterest-media/covers/echecs-et-confiance-en-soi--angle-06.jpg",
     "coverHash": "144726999f3e8f5ac8b9c9bbec466ef776178d830960ea6849c60f4f93cc14e6",
     "video": {
@@ -6397,7 +6397,7 @@
     "bytes": 6453675,
     "sha256": "c0dc100c67d91c3831ba6ee593be18caadee1255dd5af151e940161176c05e8f",
     "sourceFile": "src/content/blog/science/neurones-miroirs-aux-echecs.md",
-    "sourceHash": "6f51a72122e7a28ed0b9414cbd26745fa304a85fe0d982c25f5db06f428868c6",
+    "sourceHash": "2c15f80d697501608c77c7f009457cb91683af5fe4ebbcb45773e9083dd8bccd",
     "cover": "public/pinterest-media/covers/neurones-miroirs-aux-echecs--angle-06.jpg",
     "coverHash": "da4b890c28d08e6d704fa17a913084d85c15caa048c2f19a457f91e5cb654e88",
     "video": {
@@ -6437,7 +6437,7 @@
     "bytes": 49468,
     "sha256": "92c7378a4c9d4a934e348f01e1b642f276875506e9f56785cecb2b1698c4acc8",
     "sourceFile": "src/content/blog/science/logique-modale-aux-echecs.md",
-    "sourceHash": "bff47fd27cffd412bf4c5f7d86cd15c01dbf71de49c59079b49c5c9d64bd6a10",
+    "sourceHash": "cbd1ec891814978fdfc9bd36cc2ef9257848bcce2f273871fc7b8a2498af0a13",
     "cover": "public/pinterest-media/covers/logique-modale-aux-echecs--angle-06.jpg",
     "coverHash": "b9ea811da8503209b9df4e70737f4c5bef3f38eaf3f477487e1f4b8c12ec7b27"
   },
@@ -6448,7 +6448,7 @@
     "bytes": 6460036,
     "sha256": "1c238c894996de0b464f2e50325b2c10d335847131d72b9e5d1b0deb8d88105e",
     "sourceFile": "src/content/blog/societe/echecs-et-autisme.md",
-    "sourceHash": "612a365df8540e352e6c927892cb8674f7be88d8b7ef90763ac8ac5caeb760ae",
+    "sourceHash": "982e5d786374bc3e5dadc2367c334f9a913e6095329d26c4673b107a207c6ad5",
     "cover": "public/pinterest-media/covers/echecs-et-autisme--angle-06.jpg",
     "coverHash": "7a46740c3d952599f38ec7b16e47bbbfa3161f1951ffc269af796b47beb9a187",
     "video": {
@@ -6477,7 +6477,7 @@
     "bytes": 6026195,
     "sha256": "484b4ef9283fa2dd54559619188062a4a02a800df43f2dc023f103e0c3a650ba",
     "sourceFile": "src/content/blog/esprit/burnout-chess.md",
-    "sourceHash": "df6ef85025c51f01037b75cfa2f1a8a29adaf1f6e712b057a71db3acab1d5c43",
+    "sourceHash": "06cea15f9d52ac5f0d3e23db50ed796e01fc55881c716512bbd262674982415c",
     "cover": "public/pinterest-media/covers/burnout-chess--angle-06.jpg",
     "coverHash": "9201e9f3f08b50a465007569e98184876ef70ed9f9d59a4baa3639b6b8c0eea6",
     "video": {
@@ -6546,7 +6546,7 @@
     "bytes": 49762,
     "sha256": "7b16c08735141ae5fbd71650552aa47a5462a1c11487918d7a78d78b10db0476",
     "sourceFile": "src/content/blog/esprit/5-biais-cognitifs-blunder.md",
-    "sourceHash": "7df2020728ddf2f7935ba2fc200b9ba9e82ac24483a63fd0c0e828d630c499f0",
+    "sourceHash": "77d637f7d6e9ecd5860f848f609de5de757db6640c5a5e78fe2b576ef1ab0eec",
     "cover": "public/pinterest-media/covers/5-biais-cognitifs-blunder--angle-06.jpg",
     "coverHash": "fc1d52413a2381cb56213e09428a2eef0e22879303be4bc080a52bafe20d5871"
   },
@@ -6557,7 +6557,7 @@
     "bytes": 49791,
     "sha256": "44be3a9666d8e796a6b3d2883bd97c3aff1b4ee8a05618faf06691ad40a5bfbe",
     "sourceFile": "src/content/blog/science/theorie-des-jeux-aux-echecs.md",
-    "sourceHash": "e305df66945f867be854b1bec2a53f80d173f0cb9b041db43b534b1f62348064",
+    "sourceHash": "93be71ff4cd1daa1758022891c5f0561f899a766114d3e6d7cb0052a61ff51ea",
     "cover": "public/pinterest-media/covers/theorie-des-jeux-aux-echecs--angle-06.jpg",
     "coverHash": "ecf7e0bae3f7eadcd16d41007d3b346cba01ec4be1d76d1fc8819934e0b16cf2"
   },
@@ -6637,7 +6637,7 @@
     "bytes": 5460018,
     "sha256": "4bee45547e5a66fdfe6bab487bfe9756624c8aea5bdf48bbc1559902c6afbff6",
     "sourceFile": "src/content/blog/esprit/echecs-et-perfectionnisme-toxique.md",
-    "sourceHash": "86e5870b093b3abdf96f53f2a5f51da53be1c93a736b396668c5254a883d52ea",
+    "sourceHash": "27bd7361bd73008e09828fa928ed83621e6266a85d13ab20266dd1d9229f5782",
     "cover": "public/pinterest-media/covers/echecs-et-perfectionnisme-toxique--angle-06.jpg",
     "coverHash": "507b070cfe728789d341bf9c571e25237bbbb5a59a8a9526a926e9006f300453",
     "video": {
@@ -6717,7 +6717,7 @@
     "bytes": 6037982,
     "sha256": "f8397defa0dc93e2f08965ebccaffebe96c65747bf011b1b63a5dd23d7f71dfc",
     "sourceFile": "src/content/blog/science/echecs-et-memoire.md",
-    "sourceHash": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930",
+    "sourceHash": "ed158a58f83bf232222a866b7b2888c5abd6c860365f139373a86389f416756b",
     "cover": "public/pinterest-media/covers/echecs-et-memoire--angle-07.jpg",
     "coverHash": "8e7d34353277e928afeaf76b4865058705084c9a37e5496c92323f1dfd31fadf",
     "video": {
@@ -6746,7 +6746,7 @@
     "bytes": 49739,
     "sha256": "1498fbc4da37b0b929ea254f5d5ce3ff4f9e24743bfdb8d8f2f98aece90fe239",
     "sourceFile": "src/content/blog/esprit/psychologie-du-joueur-d-echecs.md",
-    "sourceHash": "a969e2efd408b52af777b7ac5ec8a69cb0d78b7209c58143f66a979adc5010a9",
+    "sourceHash": "c5c97aaebba3fa4819620057cd0fe2c150ef811d78c624e2f97cb1070e1c4294",
     "cover": "public/pinterest-media/covers/psychologie-du-joueur-d-echecs--angle-07.jpg",
     "coverHash": "1b4a198a4fb2496daee8b9cbc3bcafb9c75cd7cb7bc3b4526005889b75bf5d5d"
   },
@@ -6797,7 +6797,7 @@
     "bytes": 4867297,
     "sha256": "3472ee63d5df2ca895098fbdf26732195425b77b86592572fcefef74819888bc",
     "sourceFile": "src/content/blog/esprit/echecs-et-procrastination.md",
-    "sourceHash": "3747f32a6fadf5ad9ad8386bfc44011efe5d3cd79e05d2afa3aad0aaf09095d6",
+    "sourceHash": "3930f838dda898837230fcd94c2c0cb5ede131e08409c9742c5459c81fb0177d",
     "cover": "public/pinterest-media/covers/echecs-et-procrastination--angle-07.jpg",
     "coverHash": "eea1ac762a4db9627afbb9e54dd543da28f965b1e2de2b7d93805aaed47bd4b4",
     "video": {
@@ -6863,10 +6863,10 @@
     "id": "biais-de-confirmation-aux-echecs--angle-07",
     "format": "pdf",
     "file": "public/pinterest-media/pdf/biais-de-confirmation-aux-echecs--angle-07.pdf",
-    "bytes": 49460,
-    "sha256": "11c1a8b9f01c1934c3a56399a61cb7bc072089f8ba6d07371036e81457273be6",
+    "bytes": 49044,
+    "sha256": "20b7129f437ce5c226e2db962a67bc814f74dc2a8a99097290db53986c61ab83",
     "sourceFile": "src/content/blog/esprit/biais-de-confirmation-aux-echecs.md",
-    "sourceHash": "d55777717c22e1b39a6153c85196a17884e719c3ea6736fb7caa6c59d5947286",
+    "sourceHash": "7853619d30ad9f735dbf3ba585789dcaad8f224c03ae3688983e3730b0bec94e",
     "cover": "public/pinterest-media/covers/biais-de-confirmation-aux-echecs--angle-07.jpg",
     "coverHash": "e5046ea11bc9644baaf9fae57418cad92596c3b3395b43c9336caa3e6334d990"
   },
@@ -6877,7 +6877,7 @@
     "bytes": 50048,
     "sha256": "f8e688b3bea2256470398e27c3deb41644059d678ac81228016384b1994ddf0a",
     "sourceFile": "src/content/blog/science/effet-placebo-aux-echecs.md",
-    "sourceHash": "a47ad7281f735c32aaa495389decda0d909d006f282868de2be44c4c7ff82066",
+    "sourceHash": "565b2036251d4c9cc4f100f48cac8d77e3fe6c3bbb9d406515f11dd7b7aba274",
     "cover": "public/pinterest-media/covers/effet-placebo-aux-echecs--angle-07.jpg",
     "coverHash": "f0422adca1389f6fe3b8acc2c4934889454463acf4381e4df34f96ee0ab7d4b6"
   },
@@ -6888,7 +6888,7 @@
     "bytes": 4692681,
     "sha256": "3dccd7903727f5f76b65f6b1bc5d68d5101fe2f6e8c71e1d2f59abb43738feca",
     "sourceFile": "src/content/blog/societe/echecs-et-culture-populaire.md",
-    "sourceHash": "7c295e52dc4647e4f805ad6c4308107d9638f94423127ce7845f51494f77d8b2",
+    "sourceHash": "709ed77a10486d68a6f217a993647c19d1c59b39f4cb0f0941151788f5b83634",
     "cover": "public/pinterest-media/covers/echecs-et-culture-populaire--angle-07.jpg",
     "coverHash": "ebc00f71106afa8fc5e9a04c8583c98c0d46d0739be364a6c2aa9e0a5f52c263",
     "video": {
@@ -6917,7 +6917,7 @@
     "bytes": 3855441,
     "sha256": "0f958b2f2ce1283e4c9c39b3d6c2ff4e6050ba719c4126406fd52fa33ca227f5",
     "sourceFile": "src/content/blog/esprit/echecs-et-visualisation.md",
-    "sourceHash": "3fdff8da8278ea5168978f7a3847219de1451ac03b4685732aaf11ca8fe11f91",
+    "sourceHash": "249f7561593ae5b24b85dc8c1bcf4628111faefd412c4332ce1cbb6470b1caa2",
     "cover": "public/pinterest-media/covers/echecs-et-visualisation--angle-07.jpg",
     "coverHash": "60327f9376fad06c6825bbc2a637f05972cc610c4438b2415e91a447bbd4aa9a",
     "video": {
@@ -7037,7 +7037,7 @@
     "bytes": 6878312,
     "sha256": "8755a6da5e3c1e11a4e97b6cbca0986a026fa80cee73628c5247037449df7413",
     "sourceFile": "src/content/blog/esprit/echecs-et-concentration.md",
-    "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
+    "sourceHash": "ec7a7bfc0b0ac449dbc5d6dedbf3cea72445d27f0a8ebfc92ef9b79a5df5990b",
     "cover": "public/pinterest-media/covers/echecs-et-concentration--angle-07.jpg",
     "coverHash": "c0fa47c4d59507281f8fb6057b8201a39be6f197e229bc31be7615a04ac80f77",
     "video": {
@@ -7106,7 +7106,7 @@
     "bytes": 49443,
     "sha256": "230ac43860960039b6c52c71e2557912194a75d1fdae19271e0fc17da55f2f17",
     "sourceFile": "src/content/blog/esprit/mecanismes-de-defense-aux-echecs.md",
-    "sourceHash": "de0e4faa385ea6cfbb5925dba6716ceb0b5716c75382e7b8055a3c705d044ea0",
+    "sourceHash": "a89be7afec5d7bf61a96e3fbad683a79d4765ae5c3604f224fedd7f964533d06",
     "cover": "public/pinterest-media/covers/mecanismes-de-defense-aux-echecs--angle-07.jpg",
     "coverHash": "ceef138d8a4fbbb5a8f5b6a97572b98abe4ef452a7f77c01bb8c929ad19ab3f1"
   },
@@ -7128,7 +7128,7 @@
     "bytes": 5419633,
     "sha256": "5872136e22eb23965b5e63c5e7031be15d0c423bc89013160ec76ca9b5bfe08e",
     "sourceFile": "src/content/blog/societe/echecs-religion-et-interdit.md",
-    "sourceHash": "f471038eaa809a0095d9c246385a3fca4e4436895dd8ca917f2574f8d942dba3",
+    "sourceHash": "a02534c8209e90bc931813507402c08ab82d36ff5c89bbb3fcd734103b498c9e",
     "cover": "public/pinterest-media/covers/echecs-religion-et-interdit--angle-07.jpg",
     "coverHash": "bfbe62b7897e138093021b780f4ed44e9f08e6519d257404b1e1a302d6176a04",
     "video": {
@@ -7157,7 +7157,7 @@
     "bytes": 4587799,
     "sha256": "b9c64dec39d36008e86e0fc8d0f443ef789f775da37e5599932b27907002fece",
     "sourceFile": "src/content/blog/esprit/echecs-gestion-du-temps.md",
-    "sourceHash": "c99322000d1675e832655441a0bee3a8a6ce9a15b7b9350b89c714577790762f",
+    "sourceHash": "1455286c7b7dc7d8c1588cac53f883566c556f3f73400e2b6b68395384c0e27a",
     "cover": "public/pinterest-media/covers/echecs-gestion-du-temps--angle-07.jpg",
     "coverHash": "a4500c3d88ee243622a01eb0906a449e1dbe0a9fa9e49646cd825818ff34b4d1",
     "video": {
@@ -7237,7 +7237,7 @@
     "bytes": 49508,
     "sha256": "f0dcb0518ba4535d63bc71ea6b1c7112edc5cd895e043353fdfcdf2eb8a7d4a7",
     "sourceFile": "src/content/blog/science/echecs-et-dopamine.md",
-    "sourceHash": "6f7c185cdb91cb02c154ec681d7a323f2502aacf03a06e104e9d8698e554621d",
+    "sourceHash": "4b0121e64043c07ff215bfc19160f4fad5311bc839ae72da7e241c45471d28c7",
     "cover": "public/pinterest-media/covers/echecs-et-dopamine--angle-07.jpg",
     "coverHash": "a044079c5f6a55c26360cb4d0d100ce0bdf6cd2c55539cbbbcd5c0fbe208687f"
   },
@@ -7248,7 +7248,7 @@
     "bytes": 4866802,
     "sha256": "08de5b945d89026afdaa9159dc8e630f969d97114178f123c1f19d5b03cae2c1",
     "sourceFile": "src/content/blog/societe/echecs-et-tdah.md",
-    "sourceHash": "9855cf567bb6ea844abae45d9bd670a9162149209f87c1e786e5065e975a835f",
+    "sourceHash": "c8565d4d027ef2e9ac375a70f6c4d539041e4dfca5a874dcf9b6e09ebfb440d0",
     "cover": "public/pinterest-media/covers/echecs-et-tdah--angle-07.jpg",
     "coverHash": "22abbbe9397f0e0bb0162d1b42f7c24fa031291862221e20737644bd6562d481",
     "video": {
@@ -7317,7 +7317,7 @@
     "bytes": 49799,
     "sha256": "1bdcff0b06a29a1d573ef8d9fd7009cc37f6ab8c9cabfc9be2eb3d66de874433",
     "sourceFile": "src/content/blog/societe/echecs-vs-philosophie-pensee-strategique.md",
-    "sourceHash": "81f09a540af645eea71c4064bce452e4530146b3963ef9f82c0ce198a86b49d6",
+    "sourceHash": "953aec30b245e703bd022e7f775a71079c49af086cdce2765bc70c072935ae2e",
     "cover": "public/pinterest-media/covers/echecs-vs-philosophie-pensee-strategique--angle-07.jpg",
     "coverHash": "c5ac7a82c107035b4f671daf323e8a889d286487e87d27b2decddd9813fee426"
   },
@@ -7328,7 +7328,7 @@
     "bytes": 5134568,
     "sha256": "9f8994c7cd7b90d055ab709af9f9e60180450e5050acf4b3e09c96bc5c4581a7",
     "sourceFile": "src/content/blog/science/reseaux-bayesiens-predire-blunder.md",
-    "sourceHash": "82a0f8d96fb53ec8e2a674b03d1e22d774395bf302dddabe0eed0d4b8166b0d7",
+    "sourceHash": "d7c96b45038e10559076eeafc3638d676881461b8c3f17054727ff19f7f106e9",
     "cover": "public/pinterest-media/covers/reseaux-bayesiens-predire-blunder--angle-07.jpg",
     "coverHash": "39296f058fd84fdfd5cc8ca50f271f1cb456cbdd00842c2e5355b9022a19a0f5",
     "video": {
@@ -7357,7 +7357,7 @@
     "bytes": 49852,
     "sha256": "479db74febe175d1c96e0831242a23dd555225369bd2fbbf4833688648b0bb30",
     "sourceFile": "src/content/blog/esprit/echecs-et-confiance-en-soi.md",
-    "sourceHash": "454cd1c2cabd86367d438bd4e4c5494c88cb08f678dd7e2d71563419476f9a71",
+    "sourceHash": "3eacb8ccebe2f327661f985e900548f37e02f0f87413604c32a71b14c11395a7",
     "cover": "public/pinterest-media/covers/echecs-et-confiance-en-soi--angle-07.jpg",
     "coverHash": "f790a774e796cdf7df3ede0a53e07519b39314d329fc2bac260c255693e3f4d6"
   },
@@ -7368,7 +7368,7 @@
     "bytes": 50015,
     "sha256": "c409e300581abe4cd85f6252717ba7da2fe81d2bdc1f32d12097c5bc35ee3bbf",
     "sourceFile": "src/content/blog/science/neurones-miroirs-aux-echecs.md",
-    "sourceHash": "6f51a72122e7a28ed0b9414cbd26745fa304a85fe0d982c25f5db06f428868c6",
+    "sourceHash": "2c15f80d697501608c77c7f009457cb91683af5fe4ebbcb45773e9083dd8bccd",
     "cover": "public/pinterest-media/covers/neurones-miroirs-aux-echecs--angle-07.jpg",
     "coverHash": "1aee7c5583f6bb2e9834b0cda62fd0322bf127db52b2cfd1e0bb03bc7f128eac"
   },
@@ -7379,7 +7379,7 @@
     "bytes": 4936897,
     "sha256": "9277264a9fa84a2b5c8b65ce2fdbca6160680b3cf523481f842a204c4ef94012",
     "sourceFile": "src/content/blog/societe/les-echecs-et-l-addiction.md",
-    "sourceHash": "07dce66238fb482e5af355b145b5fe530876ec35459bc1fdc77e2142be23cb2b",
+    "sourceHash": "030e5605656a5715c1fb306925bde60faedd03e89f0d684ea469479b1925b0e4",
     "cover": "public/pinterest-media/covers/les-echecs-et-l-addiction--angle-07.jpg",
     "coverHash": "4ca669cb2c07d01640bd86fd48b0267fce2557a37fc0b7a291d0664429520328",
     "video": {
@@ -7408,7 +7408,7 @@
     "bytes": 5407759,
     "sha256": "9561d8db43bde7f4b46882ff25ae3ca48aadae8869300fcaef50a3c64841cb5b",
     "sourceFile": "src/content/blog/esprit/loi-de-murphy-aux-echecs.md",
-    "sourceHash": "e62ef0fece503c407174b044dc0a1065c83ae64c327b85ae9cdc069603968b87",
+    "sourceHash": "415e0f309149bf4a1f7e01ee05ec0dc29c800c75dea1437332e2acf2c82a2353",
     "cover": "public/pinterest-media/covers/loi-de-murphy-aux-echecs--angle-07.jpg",
     "coverHash": "563320613f211275e4c73227f996823e3bdb7e0fb8a80147e24e6902006c409d",
     "video": {
@@ -7437,7 +7437,7 @@
     "bytes": 49599,
     "sha256": "994388c58bed8cd1a4cc5ec9fb1058c10251c8a057cec68994724e333727fa59",
     "sourceFile": "src/content/blog/societe/echecs-et-autisme.md",
-    "sourceHash": "612a365df8540e352e6c927892cb8674f7be88d8b7ef90763ac8ac5caeb760ae",
+    "sourceHash": "982e5d786374bc3e5dadc2367c334f9a913e6095329d26c4673b107a207c6ad5",
     "cover": "public/pinterest-media/covers/echecs-et-autisme--angle-07.jpg",
     "coverHash": "310a033e3ee11c682e58f3eb25de486af9a32b1d96b761bd753706cf9b06fa5f"
   },
@@ -7477,7 +7477,7 @@
     "bytes": 49843,
     "sha256": "36f37f303b639c89f4325a5bea6cb7a61cfc547b4ac9414c0198ffe7c007ef79",
     "sourceFile": "src/content/blog/esprit/burnout-chess.md",
-    "sourceHash": "df6ef85025c51f01037b75cfa2f1a8a29adaf1f6e712b057a71db3acab1d5c43",
+    "sourceHash": "06cea15f9d52ac5f0d3e23db50ed796e01fc55881c716512bbd262674982415c",
     "cover": "public/pinterest-media/covers/burnout-chess--angle-07.jpg",
     "coverHash": "d731292b355b409b2d3f8b62fffbd7f91f09d4ede1f0a36485e59c7b54c9ee47"
   },
@@ -7499,7 +7499,7 @@
     "bytes": 5750625,
     "sha256": "2d53c3c47bc1a8abe7c889851c918d3fb8cf8f4aa72335c25b3cc1b88e69c832",
     "sourceFile": "src/content/blog/science/paradoxe-de-zermelo.md",
-    "sourceHash": "14e3bb616895129e2bc87f03439a3b1a3ffe2270c2c4dfb73a6dc20e5df4ccd7",
+    "sourceHash": "cd11916f8dcafba494d168a99730ead2c20a1ef80394e99592d6d82bc4fdcbf1",
     "cover": "public/pinterest-media/covers/paradoxe-de-zermelo--angle-07.jpg",
     "coverHash": "6201deb89f37a7904586f0f1b506e0a8eaed6e52c5525bce446066a0224a12df",
     "video": {
@@ -7528,7 +7528,7 @@
     "bytes": 4229362,
     "sha256": "3595a079942eb92fad85e82712fcfd0e99c02c3334037b7106c42724e5441961",
     "sourceFile": "src/content/blog/esprit/echecs-peur-de-perdre.md",
-    "sourceHash": "512b058a030776de83ad39a84b1a024957df02ca45b9ae161b6056f1fb2805c7",
+    "sourceHash": "8a8d02d15d577b98a66b88a0c94013f4b92c5301bbb55fdaf56c390bca86898d",
     "cover": "public/pinterest-media/covers/echecs-peur-de-perdre--angle-07.jpg",
     "coverHash": "4037937c6c089f52565f986097c34db957ae4baacbced3cc521e51b5c24e22a5",
     "video": {
@@ -7568,7 +7568,7 @@
     "bytes": 5468974,
     "sha256": "0d820753b8deb9d58d502f0b55044b557059f4166871dc4673ac39288ac84f6f",
     "sourceFile": "src/content/blog/science/les-echecs-et-le-cerveau.md",
-    "sourceHash": "0e407d6cabfeb944eb612465faa92d234b7cb20422eb02618d62da5a5c4ce2e9",
+    "sourceHash": "fd50701f1457369e140f19a5723da58a93ff1ed664a8d8ebce9baa7d28323d21",
     "cover": "public/pinterest-media/covers/les-echecs-et-le-cerveau--angle-07.jpg",
     "coverHash": "feb654e755cd133f54a1b915df2f77330b81a91740bbd7783374e734332bbaa0",
     "video": {
@@ -7608,7 +7608,7 @@
     "bytes": 49891,
     "sha256": "8c658b8f1b230e4045091fb92f5940792e5132bfdd1bdf1603cfda4bba405699",
     "sourceFile": "src/content/blog/esprit/echecs-et-perfectionnisme-toxique.md",
-    "sourceHash": "86e5870b093b3abdf96f53f2a5f51da53be1c93a736b396668c5254a883d52ea",
+    "sourceHash": "27bd7361bd73008e09828fa928ed83621e6266a85d13ab20266dd1d9229f5782",
     "cover": "public/pinterest-media/covers/echecs-et-perfectionnisme-toxique--angle-07.jpg",
     "coverHash": "b8490bd5132df892b1d323406c3a953e467b5ce4f5e7fbb9d3db5c3ae71a55a2"
   },
@@ -7619,7 +7619,7 @@
     "bytes": 5917433,
     "sha256": "2127a90b45bd1b7346f86f6427819d882e849cc5551f950fc405710ccf25e169",
     "sourceFile": "src/content/blog/esprit/syndrome-imposteur-aux-echecs.md",
-    "sourceHash": "9627eb10d3cbfbb3bcdb0fa2b830e051a291c728897de77ec9ba15bd859c34dd",
+    "sourceHash": "5f24bde27577f2d4d25cffdc24a048d2da8032940a7e3ab4627d0f5a809bd5d4",
     "cover": "public/pinterest-media/covers/syndrome-imposteur-aux-echecs--angle-07.jpg",
     "coverHash": "cd1a83c67a2e8db3f00499c9aaf4437b4a8cb374de7b70c0a820a264d5c85d1b",
     "video": {
@@ -7688,7 +7688,7 @@
     "bytes": 49764,
     "sha256": "46a863bf3044d82f5bace002ba9f08c0a753e1f37d5ffccf537e11e7c1046086",
     "sourceFile": "src/content/blog/science/echecs-et-memoire.md",
-    "sourceHash": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930",
+    "sourceHash": "ed158a58f83bf232222a866b7b2888c5abd6c860365f139373a86389f416756b",
     "cover": "public/pinterest-media/covers/echecs-et-memoire--angle-08.jpg",
     "coverHash": "3d7af0cfad343a103cb9f211d038f780b97d26cff675f7a94e33e4db5b60f1aa"
   },
@@ -7797,7 +7797,7 @@
     "bytes": 49645,
     "sha256": "f982768e18be8389ddf1bbc73fcdb37ddf3eee9670c9d8f50ae20acc54bc34fa",
     "sourceFile": "src/content/blog/esprit/echecs-et-procrastination.md",
-    "sourceHash": "3747f32a6fadf5ad9ad8386bfc44011efe5d3cd79e05d2afa3aad0aaf09095d6",
+    "sourceHash": "3930f838dda898837230fcd94c2c0cb5ede131e08409c9742c5459c81fb0177d",
     "cover": "public/pinterest-media/covers/echecs-et-procrastination--angle-08.jpg",
     "coverHash": "6a1d3326e461d51ab7951ab2b5cc00cd85fc231855661396733e5475119590eb"
   },
@@ -7819,7 +7819,7 @@
     "bytes": 6205663,
     "sha256": "34068002a12e3997150360087326f46467ee9bcbb7c7bbbf8c6507ba03415362",
     "sourceFile": "src/content/blog/societe/echecs-et-streaming.md",
-    "sourceHash": "90ecdb8f75296417b063fcc9b607e9347f5ed064e5949456cc2a3b40f32b78e5",
+    "sourceHash": "8e6ba12ac4483f6e0f0a8c66fba8ff5a6974649e91a1d6ea8695d55fd7aef74f",
     "cover": "public/pinterest-media/covers/echecs-et-streaming--angle-08.jpg",
     "coverHash": "6ac61ebb68b5d73298231fdb1ea287d96a37c08b4562c07b9c162a844e4bdc87",
     "video": {
@@ -7848,7 +7848,7 @@
     "bytes": 50348,
     "sha256": "df6e9ade159432a3d4f9f2a997a33cfb4b8ff02a73a3f9c2d08d299971c22e3f",
     "sourceFile": "src/content/blog/societe/echecs-et-culture-populaire.md",
-    "sourceHash": "7c295e52dc4647e4f805ad6c4308107d9638f94423127ce7845f51494f77d8b2",
+    "sourceHash": "709ed77a10486d68a6f217a993647c19d1c59b39f4cb0f0941151788f5b83634",
     "cover": "public/pinterest-media/covers/echecs-et-culture-populaire--angle-08.jpg",
     "coverHash": "06befbaf1aafd86d9e331bb414d7dfb0e70fe682c051607d351c98e8755b0d3a"
   },
@@ -7859,7 +7859,7 @@
     "bytes": 5324382,
     "sha256": "6fc33a4b9338edc313c8781c44b357aa170354992fd967af72400793cf62ccbc",
     "sourceFile": "src/content/blog/science/echecs-alphazero-stockfish.md",
-    "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+    "sourceHash": "d65ae6f93c3f10348fa050ee01102e9e962ed949d0e4f9b8a422a99c430a6571",
     "cover": "public/pinterest-media/covers/echecs-alphazero-stockfish--angle-08.jpg",
     "coverHash": "007152b9773241f2e50d900351527096980b05fa4b9004a0b725ec2435269e7b",
     "video": {
@@ -7888,7 +7888,7 @@
     "bytes": 49153,
     "sha256": "22c1d190c214ce66f27c1452cbd092080d0831786991f3fcf77dd8d501794272",
     "sourceFile": "src/content/blog/esprit/echecs-et-visualisation.md",
-    "sourceHash": "3fdff8da8278ea5168978f7a3847219de1451ac03b4685732aaf11ca8fe11f91",
+    "sourceHash": "249f7561593ae5b24b85dc8c1bcf4628111faefd412c4332ce1cbb6470b1caa2",
     "cover": "public/pinterest-media/covers/echecs-et-visualisation--angle-08.jpg",
     "coverHash": "5165a580de85b2a517f328083721689e1c49dc3085ee4ce006abedaee3b3210c"
   },
@@ -7939,7 +7939,7 @@
     "bytes": 5745340,
     "sha256": "30b0a1ed7a5b0c265137900e9ea33ff1f6faad0053bd534241cd314a4327e9f3",
     "sourceFile": "src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md",
-    "sourceHash": "0c785f2db4b403951ffe708d1cec88f1994bae903d6a324cd50a052627f8f0f5",
+    "sourceHash": "265dc797d4d9d0ef1d2b75f7c2b6a7452940c82daffbcccdda1561e31291cdb0",
     "cover": "public/pinterest-media/covers/theorie-de-l-attachement-aux-echecs--angle-08.jpg",
     "coverHash": "9dd536209a516bd25bb11558b3ec4234c90d00327ade66b2d4740c987b1fcf58",
     "video": {
@@ -8008,7 +8008,7 @@
     "bytes": 49838,
     "sha256": "881b1e016888475865253bfb58657f251e9c32a04486157861edfe3894c7427a",
     "sourceFile": "src/content/blog/esprit/echecs-et-concentration.md",
-    "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
+    "sourceHash": "ec7a7bfc0b0ac449dbc5d6dedbf3cea72445d27f0a8ebfc92ef9b79a5df5990b",
     "cover": "public/pinterest-media/covers/echecs-et-concentration--angle-08.jpg",
     "coverHash": "3c6ebf5877358d1ab48ea5c052f24e9f10db629a8b22857afa5f72b4afa383f0"
   },
@@ -8030,7 +8030,7 @@
     "bytes": 5281380,
     "sha256": "92df465ff2cbc6268350e8b5230c86e8363837a0a3e0bedd7c8464fa9ed4f3d4",
     "sourceFile": "src/content/blog/societe/echecs-et-hpi.md",
-    "sourceHash": "197e5b02216f89426a5e03a3a4eddc9b7fb4a19050b383ba59ced03dc679fa29",
+    "sourceHash": "795dcce65c2d8947312b76ae513e8d3ce4b199ab6bdfc53363f2f55f2c42ed18",
     "cover": "public/pinterest-media/covers/echecs-et-hpi--angle-08.jpg",
     "coverHash": "4c0ce76f37500f734fa5ad82df661ae44fe3a5e6415e92c8ae668cb06d280cd0",
     "video": {
@@ -8088,7 +8088,7 @@
     "bytes": 50051,
     "sha256": "ecc15bbb6cb032c4f4982f12dd8ca50834de4642ee2d4c0b3c8a177d9c39c585",
     "sourceFile": "src/content/blog/societe/echecs-religion-et-interdit.md",
-    "sourceHash": "f471038eaa809a0095d9c246385a3fca4e4436895dd8ca917f2574f8d942dba3",
+    "sourceHash": "a02534c8209e90bc931813507402c08ab82d36ff5c89bbb3fcd734103b498c9e",
     "cover": "public/pinterest-media/covers/echecs-religion-et-interdit--angle-08.jpg",
     "coverHash": "d0dd1af754f478eb11ed1dba90afb037983e43e3686f606fc9c11d2b1c7577e5"
   },
@@ -8099,7 +8099,7 @@
     "bytes": 5932766,
     "sha256": "84c1649edb74ea743cbf6c75c043cb3202c688b06f8dbee3b698e1353369121d",
     "sourceFile": "src/content/blog/science/echecs-et-genetique.md",
-    "sourceHash": "f82464fea06d1566b924492059e832a8b8a9a76643381686c88986ea52601208",
+    "sourceHash": "d4e8c36008ac60a17d95bbadd97973291bd1fc87a3835dc954ba94ede9633ae0",
     "cover": "public/pinterest-media/covers/echecs-et-genetique--angle-08.jpg",
     "coverHash": "06d477bd049021957ab14965caa5835d743bba40bed1b4613d87488cc4f2dca3",
     "video": {
@@ -8128,7 +8128,7 @@
     "bytes": 49434,
     "sha256": "8908628d074d71099faae0d6a0816dd630aa63172bc7f5ff3274a475fb328589",
     "sourceFile": "src/content/blog/esprit/echecs-gestion-du-temps.md",
-    "sourceHash": "c99322000d1675e832655441a0bee3a8a6ce9a15b7b9350b89c714577790762f",
+    "sourceHash": "1455286c7b7dc7d8c1588cac53f883566c556f3f73400e2b6b68395384c0e27a",
     "cover": "public/pinterest-media/covers/echecs-gestion-du-temps--angle-08.jpg",
     "coverHash": "60e10f4b2d5a7c760c318ee27dacbb8f46cce32515bd28c4758d8a67cd62cbbf"
   },
@@ -8208,7 +8208,7 @@
     "bytes": 49643,
     "sha256": "e52ec210456b74f78b18e474086582c49339d44601e2c5b423a374156d8b5f7a",
     "sourceFile": "src/content/blog/societe/echecs-et-tdah.md",
-    "sourceHash": "9855cf567bb6ea844abae45d9bd670a9162149209f87c1e786e5065e975a835f",
+    "sourceHash": "c8565d4d027ef2e9ac375a70f6c4d539041e4dfca5a874dcf9b6e09ebfb440d0",
     "cover": "public/pinterest-media/covers/echecs-et-tdah--angle-08.jpg",
     "coverHash": "6842e810228fdd43389b02fcb6bfec2c91d53d2d251d50983f761b1141b39711"
   },
@@ -8230,7 +8230,7 @@
     "bytes": 48760,
     "sha256": "aed7f129a275c41fdc8b6e52622909c1f90f9f6ba76d3077b0097b4eb1033cdb",
     "sourceFile": "src/content/blog/science/reseaux-bayesiens-predire-blunder.md",
-    "sourceHash": "82a0f8d96fb53ec8e2a674b03d1e22d774395bf302dddabe0eed0d4b8166b0d7",
+    "sourceHash": "d7c96b45038e10559076eeafc3638d676881461b8c3f17054727ff19f7f106e9",
     "cover": "public/pinterest-media/covers/reseaux-bayesiens-predire-blunder--angle-08.jpg",
     "coverHash": "45d700ec949a36d522914c3ff32961fefc1d815f9f1ea84e59f6b9d664d759c1"
   },
@@ -8270,7 +8270,7 @@
     "bytes": 49653,
     "sha256": "2a279d1f7fa58e0f6c6c97a20f8b92025ee102c20c488f3b40e18e567fd1e28d",
     "sourceFile": "src/content/blog/societe/les-echecs-et-l-addiction.md",
-    "sourceHash": "07dce66238fb482e5af355b145b5fe530876ec35459bc1fdc77e2142be23cb2b",
+    "sourceHash": "030e5605656a5715c1fb306925bde60faedd03e89f0d684ea469479b1925b0e4",
     "cover": "public/pinterest-media/covers/les-echecs-et-l-addiction--angle-08.jpg",
     "coverHash": "3dec4e3e2dfd52c88daae91243e5e995ce9359c07d6b10a28d6b98975d7c136d"
   },
@@ -8281,7 +8281,7 @@
     "bytes": 5759642,
     "sha256": "457c4dd6c09befad6fbabdc6c470bd72d48fd8bc0b0fe33c8eb0515b9630bb8a",
     "sourceFile": "src/content/blog/science/logique-modale-aux-echecs.md",
-    "sourceHash": "bff47fd27cffd412bf4c5f7d86cd15c01dbf71de49c59079b49c5c9d64bd6a10",
+    "sourceHash": "cbd1ec891814978fdfc9bd36cc2ef9257848bcce2f273871fc7b8a2498af0a13",
     "cover": "public/pinterest-media/covers/logique-modale-aux-echecs--angle-08.jpg",
     "coverHash": "bace2c82dc06436d3fd91a77c34ab161c717e404238d342a8f7a573d5d05d8c8",
     "video": {
@@ -8310,7 +8310,7 @@
     "bytes": 47634,
     "sha256": "2de12a040a241c23a7268b1f7009da1c3b0b2bd194c697325d3234911aa66df4",
     "sourceFile": "src/content/blog/esprit/loi-de-murphy-aux-echecs.md",
-    "sourceHash": "e62ef0fece503c407174b044dc0a1065c83ae64c327b85ae9cdc069603968b87",
+    "sourceHash": "415e0f309149bf4a1f7e01ee05ec0dc29c800c75dea1437332e2acf2c82a2353",
     "cover": "public/pinterest-media/covers/loi-de-murphy-aux-echecs--angle-08.jpg",
     "coverHash": "756beacd92500c22ef1543f94f294aa197f679bcf03227d43bfcfcab9789e19f"
   },
@@ -8361,7 +8361,7 @@
     "bytes": 5351461,
     "sha256": "b04cc4d5bc240ba0b7cb12ac55e08f61f2dfb42608d9b283bc07accaf220c37f",
     "sourceFile": "src/content/blog/esprit/5-biais-cognitifs-blunder.md",
-    "sourceHash": "7df2020728ddf2f7935ba2fc200b9ba9e82ac24483a63fd0c0e828d630c499f0",
+    "sourceHash": "77d637f7d6e9ecd5860f848f609de5de757db6640c5a5e78fe2b576ef1ab0eec",
     "cover": "public/pinterest-media/covers/5-biais-cognitifs-blunder--angle-08.jpg",
     "coverHash": "f1b66af47a7db5f6c2ee75eac3a2926c7bbf0ae003ca14b751a3e1e42ae14171",
     "video": {
@@ -8390,7 +8390,7 @@
     "bytes": 54356,
     "sha256": "d1aa30163493dd440c01ec974814b849687d24ff2551f26f894b5bdb602dcdb6",
     "sourceFile": "src/content/blog/science/paradoxe-de-zermelo.md",
-    "sourceHash": "14e3bb616895129e2bc87f03439a3b1a3ffe2270c2c4dfb73a6dc20e5df4ccd7",
+    "sourceHash": "cd11916f8dcafba494d168a99730ead2c20a1ef80394e99592d6d82bc4fdcbf1",
     "cover": "public/pinterest-media/covers/paradoxe-de-zermelo--angle-08.jpg",
     "coverHash": "069aed2b613baeb41bbcafc87fc6e0e8dba372bd8ff318e09be657dab6f66624"
   },
@@ -8401,7 +8401,7 @@
     "bytes": 5889516,
     "sha256": "564196997f28a7ad0d6332d5d386a945cb9addde27c872e4e343a382b33e7aec",
     "sourceFile": "src/content/blog/science/theorie-des-jeux-aux-echecs.md",
-    "sourceHash": "e305df66945f867be854b1bec2a53f80d173f0cb9b041db43b534b1f62348064",
+    "sourceHash": "93be71ff4cd1daa1758022891c5f0561f899a766114d3e6d7cb0052a61ff51ea",
     "cover": "public/pinterest-media/covers/theorie-des-jeux-aux-echecs--angle-08.jpg",
     "coverHash": "3ac61593b941990dd9a4d268c4c38d3d4a1866ff06857cab84428acd40306f5c",
     "video": {
@@ -8430,7 +8430,7 @@
     "bytes": 49124,
     "sha256": "cab350d92cf47ebccc89e9ae6d2147e9244dda137bbd53ede74603cfa960c01a",
     "sourceFile": "src/content/blog/esprit/echecs-peur-de-perdre.md",
-    "sourceHash": "512b058a030776de83ad39a84b1a024957df02ca45b9ae161b6056f1fb2805c7",
+    "sourceHash": "8a8d02d15d577b98a66b88a0c94013f4b92c5301bbb55fdaf56c390bca86898d",
     "cover": "public/pinterest-media/covers/echecs-peur-de-perdre--angle-08.jpg",
     "coverHash": "77de775a1fc86de04bb8179e7f45e8649a358331ea939ccc4b292493fb1999b7"
   },
@@ -8441,7 +8441,7 @@
     "bytes": 49745,
     "sha256": "5ab07b3926c90293e972b1c16bb101bafdce23ed4484a0fe8378796798664717",
     "sourceFile": "src/content/blog/science/les-echecs-et-le-cerveau.md",
-    "sourceHash": "0e407d6cabfeb944eb612465faa92d234b7cb20422eb02618d62da5a5c4ce2e9",
+    "sourceHash": "fd50701f1457369e140f19a5723da58a93ff1ed664a8d8ebce9baa7d28323d21",
     "cover": "public/pinterest-media/covers/les-echecs-et-le-cerveau--angle-08.jpg",
     "coverHash": "40836083cef6b65b7eb97061d5794bfd04bed09e91d053772ca33476d479b680"
   },
@@ -8510,7 +8510,7 @@
     "bytes": 49688,
     "sha256": "eb9ba6f5ff6745d43390e787f2658e7b1f3282eba463667f28be37bac1f68628",
     "sourceFile": "src/content/blog/esprit/syndrome-imposteur-aux-echecs.md",
-    "sourceHash": "9627eb10d3cbfbb3bcdb0fa2b830e051a291c728897de77ec9ba15bd859c34dd",
+    "sourceHash": "5f24bde27577f2d4d25cffdc24a048d2da8032940a7e3ab4627d0f5a809bd5d4",
     "cover": "public/pinterest-media/covers/syndrome-imposteur-aux-echecs--angle-08.jpg",
     "coverHash": "3265895b7fdf68d92640d655f1f782959b859693eadcd45911d17b1bef7e2907"
   },
@@ -8561,7 +8561,7 @@
     "bytes": 5280735,
     "sha256": "fa7bf889dcc2bb120587f4d01c4de66e3c140c0a33d5f45f9a3c5f75949257d6",
     "sourceFile": "src/content/blog/esprit/psychologie-du-joueur-d-echecs.md",
-    "sourceHash": "a969e2efd408b52af777b7ac5ec8a69cb0d78b7209c58143f66a979adc5010a9",
+    "sourceHash": "c5c97aaebba3fa4819620057cd0fe2c150ef811d78c624e2f97cb1070e1c4294",
     "cover": "public/pinterest-media/covers/psychologie-du-joueur-d-echecs--angle-09.jpg",
     "coverHash": "69c941eb3d0088f56008319ec5827c6a5e57190074dffee90a42329ac889a2a4",
     "video": {
@@ -8681,7 +8681,7 @@
     "bytes": 6112788,
     "sha256": "abacf0c3ad7989d31e71adde2a84a811a18e55e754809da1783f8c82d1a48ce0",
     "sourceFile": "src/content/blog/science/effet-placebo-aux-echecs.md",
-    "sourceHash": "a47ad7281f735c32aaa495389decda0d909d006f282868de2be44c4c7ff82066",
+    "sourceHash": "565b2036251d4c9cc4f100f48cac8d77e3fe6c3bbb9d406515f11dd7b7aba274",
     "cover": "public/pinterest-media/covers/effet-placebo-aux-echecs--angle-09.jpg",
     "coverHash": "93d65ff07ea31a57314c5c1983daab67bf3de4f06afd19e6e968b1729134d8ec",
     "video": {
@@ -8710,7 +8710,7 @@
     "bytes": 49495,
     "sha256": "4ef7fa7e4929cdb620b85c5514143480bf97c860db9641a7ece9ea324177e0b2",
     "sourceFile": "src/content/blog/science/echecs-alphazero-stockfish.md",
-    "sourceHash": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+    "sourceHash": "d65ae6f93c3f10348fa050ee01102e9e962ed949d0e4f9b8a422a99c430a6571",
     "cover": "public/pinterest-media/covers/echecs-alphazero-stockfish--angle-09.jpg",
     "coverHash": "215b934e1906f85a0fcd999bab63dd1152501c19920a4e87709c8248cdead173"
   },
@@ -8819,7 +8819,7 @@
     "bytes": 49474,
     "sha256": "db06c132033ea2ee313eadf353a13e74139b59ffaed7c82caf112e262db857ff",
     "sourceFile": "src/content/blog/esprit/theorie-de-l-attachement-aux-echecs.md",
-    "sourceHash": "0c785f2db4b403951ffe708d1cec88f1994bae903d6a324cd50a052627f8f0f5",
+    "sourceHash": "265dc797d4d9d0ef1d2b75f7c2b6a7452940c82daffbcccdda1561e31291cdb0",
     "cover": "public/pinterest-media/covers/theorie-de-l-attachement-aux-echecs--angle-09.jpg",
     "coverHash": "62f766c37183f96e25eb89d44c0f8fbe20f5e79e061bf4ecd3aa8239d6a1a1d6"
   },
@@ -8859,7 +8859,7 @@
     "bytes": 49633,
     "sha256": "55c25b4538cf3cfe4ad53e67a185c8967293676e158334988219bbcdb0ab0810",
     "sourceFile": "src/content/blog/societe/echecs-et-hpi.md",
-    "sourceHash": "197e5b02216f89426a5e03a3a4eddc9b7fb4a19050b383ba59ced03dc679fa29",
+    "sourceHash": "795dcce65c2d8947312b76ae513e8d3ce4b199ab6bdfc53363f2f55f2c42ed18",
     "cover": "public/pinterest-media/covers/echecs-et-hpi--angle-09.jpg",
     "coverHash": "c4c885ade7cded1ba9bddc72bacb06912e71298daba2a26027738c9326cd3377"
   },
@@ -8910,7 +8910,7 @@
     "bytes": 49743,
     "sha256": "2e9600bcdb6a850c424e8f34c30a2e1b1d0d25041bacb05d5d44aa2664558173",
     "sourceFile": "src/content/blog/science/echecs-et-genetique.md",
-    "sourceHash": "f82464fea06d1566b924492059e832a8b8a9a76643381686c88986ea52601208",
+    "sourceHash": "d4e8c36008ac60a17d95bbadd97973291bd1fc87a3835dc954ba94ede9633ae0",
     "cover": "public/pinterest-media/covers/echecs-et-genetique--angle-09.jpg",
     "coverHash": "c68965bbe4ed951dc864b7c7fb3f5e582d706984921bcda588646f081e033f99"
   },
@@ -8961,7 +8961,7 @@
     "bytes": 5537681,
     "sha256": "839511bd29a03ebc3684519a55971e85ba24c9995471ce055bc8d11981c4ee4e",
     "sourceFile": "src/content/blog/science/echecs-et-dopamine.md",
-    "sourceHash": "6f7c185cdb91cb02c154ec681d7a323f2502aacf03a06e104e9d8698e554621d",
+    "sourceHash": "4b0121e64043c07ff215bfc19160f4fad5311bc839ae72da7e241c45471d28c7",
     "cover": "public/pinterest-media/covers/echecs-et-dopamine--angle-09.jpg",
     "coverHash": "e28833105fda57f20c2c6be419d97fea4ffc707a01d3f7b05f746b3c09b0f771",
     "video": {
@@ -9019,7 +9019,7 @@
     "bytes": 5387199,
     "sha256": "2b7b08428055ea4ea0fcd31ece7812b97026bd6ca46f4a791f6214c0b2ebea08",
     "sourceFile": "src/content/blog/societe/echecs-vs-philosophie-pensee-strategique.md",
-    "sourceHash": "81f09a540af645eea71c4064bce452e4530146b3963ef9f82c0ce198a86b49d6",
+    "sourceHash": "953aec30b245e703bd022e7f775a71079c49af086cdce2765bc70c072935ae2e",
     "cover": "public/pinterest-media/covers/echecs-vs-philosophie-pensee-strategique--angle-09.jpg",
     "coverHash": "1fe7f7758dc81aebd314dee911b6eb0ff02a7cf32d56a11f49796068dcf378c7",
     "video": {
@@ -9048,7 +9048,7 @@
     "bytes": 7137630,
     "sha256": "f5918b69c4d97c1524ea9c1cf63d625e2cd6305c628bcd1ad3afbf25b6adf2f5",
     "sourceFile": "src/content/blog/esprit/echecs-et-confiance-en-soi.md",
-    "sourceHash": "454cd1c2cabd86367d438bd4e4c5494c88cb08f678dd7e2d71563419476f9a71",
+    "sourceHash": "3eacb8ccebe2f327661f985e900548f37e02f0f87413604c32a71b14c11395a7",
     "cover": "public/pinterest-media/covers/echecs-et-confiance-en-soi--angle-09.jpg",
     "coverHash": "d40dc36aa88324c308d639d5161675c9658243b3b99d6481aad0a7d5e32b23ca",
     "video": {
@@ -9088,7 +9088,7 @@
     "bytes": 6003833,
     "sha256": "b43a3b8ed43b3fa36c893537e7da78e60f74ffab3fdc181cea8e6f6f9e17cf08",
     "sourceFile": "src/content/blog/science/neurones-miroirs-aux-echecs.md",
-    "sourceHash": "6f51a72122e7a28ed0b9414cbd26745fa304a85fe0d982c25f5db06f428868c6",
+    "sourceHash": "2c15f80d697501608c77c7f009457cb91683af5fe4ebbcb45773e9083dd8bccd",
     "cover": "public/pinterest-media/covers/neurones-miroirs-aux-echecs--angle-09.jpg",
     "coverHash": "84a49899164dc343fe6d9b1e8672a6dd3e35185445b297dd9d2e0c586d1a05bc",
     "video": {
@@ -9117,7 +9117,7 @@
     "bytes": 53816,
     "sha256": "917ffa3e6c41a4ca7ebba6193d21522da1bf3b12986ab597bd9d2418565e360f",
     "sourceFile": "src/content/blog/science/logique-modale-aux-echecs.md",
-    "sourceHash": "bff47fd27cffd412bf4c5f7d86cd15c01dbf71de49c59079b49c5c9d64bd6a10",
+    "sourceHash": "cbd1ec891814978fdfc9bd36cc2ef9257848bcce2f273871fc7b8a2498af0a13",
     "cover": "public/pinterest-media/covers/logique-modale-aux-echecs--angle-09.jpg",
     "coverHash": "cf2f564e8bd864bb83f2f2ae6ace9658ddf52d907cac218375288f4fbb496ca9"
   },
@@ -9128,7 +9128,7 @@
     "bytes": 6359060,
     "sha256": "78b214e8c30b7c64ab7392255ad5d449a3feca7f56e47a13bc8db57f1c7565b4",
     "sourceFile": "src/content/blog/societe/echecs-et-autisme.md",
-    "sourceHash": "612a365df8540e352e6c927892cb8674f7be88d8b7ef90763ac8ac5caeb760ae",
+    "sourceHash": "982e5d786374bc3e5dadc2367c334f9a913e6095329d26c4673b107a207c6ad5",
     "cover": "public/pinterest-media/covers/echecs-et-autisme--angle-09.jpg",
     "coverHash": "e221c1ab32dd5fd0d469d9ca5870617e180150c0179c2c918b2e5e7f628f1491",
     "video": {
@@ -9157,7 +9157,7 @@
     "bytes": 6213120,
     "sha256": "53d0ea1ac9633a47b495a4955ff107987a83310434558ae73ee4d05e8d9df27f",
     "sourceFile": "src/content/blog/esprit/burnout-chess.md",
-    "sourceHash": "df6ef85025c51f01037b75cfa2f1a8a29adaf1f6e712b057a71db3acab1d5c43",
+    "sourceHash": "06cea15f9d52ac5f0d3e23db50ed796e01fc55881c716512bbd262674982415c",
     "cover": "public/pinterest-media/covers/burnout-chess--angle-09.jpg",
     "coverHash": "54637214f4334fcf9f192207d3471d14f0c6815a0d9af40a2302d1ab56961184",
     "video": {
@@ -9226,7 +9226,7 @@
     "bytes": 47696,
     "sha256": "034e7770e4a85c6f3e92c28867045f5ec47326d929dc5608d66806e6aefa0d7a",
     "sourceFile": "src/content/blog/esprit/5-biais-cognitifs-blunder.md",
-    "sourceHash": "7df2020728ddf2f7935ba2fc200b9ba9e82ac24483a63fd0c0e828d630c499f0",
+    "sourceHash": "77d637f7d6e9ecd5860f848f609de5de757db6640c5a5e78fe2b576ef1ab0eec",
     "cover": "public/pinterest-media/covers/5-biais-cognitifs-blunder--angle-09.jpg",
     "coverHash": "a9e8bf959f8468c44e7f3f4f7b2170d272c1d599abd4c13ed19d597b120429cd"
   },
@@ -9237,7 +9237,7 @@
     "bytes": 47701,
     "sha256": "a505683efc340f5925085d02b6c0ec294543e1ed6fa6ce4e937a986b389f3be6",
     "sourceFile": "src/content/blog/science/theorie-des-jeux-aux-echecs.md",
-    "sourceHash": "e305df66945f867be854b1bec2a53f80d173f0cb9b041db43b534b1f62348064",
+    "sourceHash": "93be71ff4cd1daa1758022891c5f0561f899a766114d3e6d7cb0052a61ff51ea",
     "cover": "public/pinterest-media/covers/theorie-des-jeux-aux-echecs--angle-09.jpg",
     "coverHash": "a790678665a7a5b1b7bf0080534a3da4bd187bf2d68e861629f45973a168b9ee"
   },
@@ -9317,7 +9317,7 @@
     "bytes": 5769153,
     "sha256": "361d0f1f90dbf4d63e9035ab8cfa94f28e419c881f722d30635c21703e36c2c3",
     "sourceFile": "src/content/blog/esprit/echecs-et-perfectionnisme-toxique.md",
-    "sourceHash": "86e5870b093b3abdf96f53f2a5f51da53be1c93a736b396668c5254a883d52ea",
+    "sourceHash": "27bd7361bd73008e09828fa928ed83621e6266a85d13ab20266dd1d9229f5782",
     "cover": "public/pinterest-media/covers/echecs-et-perfectionnisme-toxique--angle-09.jpg",
     "coverHash": "1b3e4154178d57dbf9c5a1bf5efa02e98d0005c7b55e0ef986bbd0a111964030",
     "video": {
@@ -9397,7 +9397,7 @@
     "bytes": 47474,
     "sha256": "c1dd323d20bee5f4fd3fb8087e9575fa5c8060ac80970f8ce9c160f83ff5ff28",
     "sourceFile": "src/content/blog/esprit/psychologie-du-joueur-d-echecs.md",
-    "sourceHash": "a969e2efd408b52af777b7ac5ec8a69cb0d78b7209c58143f66a979adc5010a9",
+    "sourceHash": "c5c97aaebba3fa4819620057cd0fe2c150ef811d78c624e2f97cb1070e1c4294",
     "cover": "public/pinterest-media/covers/psychologie-du-joueur-d-echecs--angle-10.jpg",
     "coverHash": "fbab82760413df3acd323e40512f91a8375840f3e0b61db32fdd1f2468146684"
   },
@@ -9448,7 +9448,7 @@
     "bytes": 5288768,
     "sha256": "797bbf47c9b681b6a4f690d9bc9445c0f75b3ebe622bb7911887a418f201acd9",
     "sourceFile": "src/content/blog/esprit/echecs-et-procrastination.md",
-    "sourceHash": "3747f32a6fadf5ad9ad8386bfc44011efe5d3cd79e05d2afa3aad0aaf09095d6",
+    "sourceHash": "3930f838dda898837230fcd94c2c0cb5ede131e08409c9742c5459c81fb0177d",
     "cover": "public/pinterest-media/covers/echecs-et-procrastination--angle-10.jpg",
     "coverHash": "44c00f5f341de587c531696e52a4bd015cb785b5ba883ffad85a3ca38a300ad4",
     "video": {
@@ -9517,7 +9517,7 @@
     "bytes": 5734314,
     "sha256": "e733c4bb7f84413851da3fe85eb3876371de7de9e9f6d79cdeff8d72fbe90bc0",
     "sourceFile": "src/content/blog/esprit/biais-de-confirmation-aux-echecs.md",
-    "sourceHash": "d55777717c22e1b39a6153c85196a17884e719c3ea6736fb7caa6c59d5947286",
+    "sourceHash": "7853619d30ad9f735dbf3ba585789dcaad8f224c03ae3688983e3730b0bec94e",
     "cover": "public/pinterest-media/covers/biais-de-confirmation-aux-echecs--angle-10.jpg",
     "coverHash": "16631e7c54dd5086efdc3b63b3f42e41325f547d5d3c8a3c0ab18f675e7847e0",
     "video": {
@@ -9546,7 +9546,7 @@
     "bytes": 47042,
     "sha256": "402ab280dc21de9c3ca33535861858f18e451c8f824b56816d2b580e6e6474e5",
     "sourceFile": "src/content/blog/science/effet-placebo-aux-echecs.md",
-    "sourceHash": "a47ad7281f735c32aaa495389decda0d909d006f282868de2be44c4c7ff82066",
+    "sourceHash": "565b2036251d4c9cc4f100f48cac8d77e3fe6c3bbb9d406515f11dd7b7aba274",
     "cover": "public/pinterest-media/covers/effet-placebo-aux-echecs--angle-10.jpg",
     "coverHash": "3a132909602a865c3afcfa0316a490b21ff9572692396a00003b19512e806fb9"
   },
@@ -9557,7 +9557,7 @@
     "bytes": 4220482,
     "sha256": "8753dc0cc876ed6616ff9dba42c93e05a6a9d3a484969e3f2a2beab54db1c590",
     "sourceFile": "src/content/blog/esprit/echecs-et-visualisation.md",
-    "sourceHash": "3fdff8da8278ea5168978f7a3847219de1451ac03b4685732aaf11ca8fe11f91",
+    "sourceHash": "249f7561593ae5b24b85dc8c1bcf4628111faefd412c4332ce1cbb6470b1caa2",
     "cover": "public/pinterest-media/covers/echecs-et-visualisation--angle-10.jpg",
     "coverHash": "d248f6755a2fbc88e13275c1b31e96ed57ea57aa1b5d161bd016bc9dae949e23",
     "video": {
@@ -9666,7 +9666,7 @@
     "bytes": 6363905,
     "sha256": "ee473be06de498d6a045bfb46a2d17ecba6d27056c8b7bd9909d530fcea03784",
     "sourceFile": "src/content/blog/esprit/echecs-et-concentration.md",
-    "sourceHash": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
+    "sourceHash": "ec7a7bfc0b0ac449dbc5d6dedbf3cea72445d27f0a8ebfc92ef9b79a5df5990b",
     "cover": "public/pinterest-media/covers/echecs-et-concentration--angle-10.jpg",
     "coverHash": "72635cb463ffc1250215fe876b0ac48df5a63e46f1ca7b6c60d2664c136143bb",
     "video": {

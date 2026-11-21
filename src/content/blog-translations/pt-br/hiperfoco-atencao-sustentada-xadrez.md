@@ -72,7 +72,7 @@ Mas o hiperfoco tem um preço que pode ser elevado.
 
 ## O flow não é o hiperfoco
 
-Confunde-se frequentemente hiperfoco e **flow** (o conceito introduzido por [Mihály Csíkszentmihályi](https://pt.wikipedia.org/wiki/Mihaly_Csikszentmihalyi)). São estados próximos, mas distintos.
+Confunde-se frequentemente hiperfoco e **[flow](/pt-br/blog/flow-no-xadrez/)** (o conceito introduzido por [Mihály Csíkszentmihályi](https://pt.wikipedia.org/wiki/Mihaly_Csikszentmihalyi)). São estados próximos, mas distintos.
 
 O flow se caracteriza por:
 - Um equilíbrio preciso entre dificuldade da tarefa e competência do sujeito.

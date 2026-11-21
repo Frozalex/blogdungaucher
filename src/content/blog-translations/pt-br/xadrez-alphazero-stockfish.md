@@ -76,7 +76,7 @@ Lc0 é um projeto livre inspirado em AlphaZero; essa origem não garante superio
 
 Em setembro de 2020, com a versão 12, Stockfish incorporou uma arquitetura de rede neural chamada **NNUE**, *Efficiently Updatable Neural Network*, introduzida no shogi por Yu Nasu em 2018 e depois adaptada ao xadrez.
 
-NNUE substitui a função de avaliação heurística do Stockfish por uma rede treinada com milhões de posições avaliadas pelo próprio Stockfish. Sua particularidade é ser concebida para rodar rapidamente em um processador comum, sem placa gráfica. Assim, Stockfish NNUE combina a velocidade da busca alfa-beta da arquitetura anterior com a riqueza da avaliação posicional das redes neurais.
+NNUE substitui a função de avaliação heurística do Stockfish por uma rede treinada com milhões de posições avaliadas pelo próprio Stockfish. Sua particularidade é ser concebida para rodar rapidamente em um processador comum, sem placa gráfica. Assim, Stockfish NNUE combina a velocidade da [busca alfa-beta da arquitetura anterior](/pt-br/blog/complexidade-algoritmica-xadrez/#poda-alfa-beta-o-primeiro-grande-salto) com a riqueza da avaliação posicional das redes neurais.
 
 A melhora foi imediata. A equipe atribuiu somente à adoção do NNUE pelo menos 80 pontos Elo nos seus testes. Um salto considerável para um motor que chegava à décima segunda versão.
 

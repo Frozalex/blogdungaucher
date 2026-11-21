@@ -51,7 +51,7 @@ Het **"Schach und Integration"**-programma (Schaken en Integratie), geboren in B
 
 In Nederland heeft de club van Amsterdam de opvang van vluchtelingen in zijn missie opgenomen vanaf 2016. Het format: gemengde avonden (vaste spelers + bewoners van nabijgelegen opvangcentra), met simultane partijen begeleid door sterkere spelers. Deelnemers ontvangen een notatieboekje en kunnen hun progressie bijhouden: een eerste gevoel van verwezenlijking in een nieuw land.
 
-De UNHCR heeft soortgelijke programma's gedocumenteerd in zijn vluchtelingenkampen in Jordanië (kamp Zaatari), Libanon en Griekenland (kampen van Lesbos en Chios). In deze contexten dient schaken ook als bezigheidstherapie: een gestructureerde, cognitieve activiteit die inhoud geeft aan vaak lege dagen.
+De UNHCR heeft soortgelijke programma's gedocumenteerd in zijn vluchtelingenkampen in Jordanië (kamp Zaatari), Libanon en Griekenland (kampen van Lesbos en Chios). In deze contexten dient [schaken ook als bezigheidstherapie](/nl/blog/schaken-als-therapie/#de-therapeutische-mechanismen-wat-plausibel-is): een gestructureerde, cognitieve activiteit die inhoud geeft aan vaak lege dagen.
 
 ## De geschiedenis van schaken is een migratiegeschiedenis
 

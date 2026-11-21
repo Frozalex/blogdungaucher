@@ -22,7 +22,7 @@ A grandmaster recognises a position you still need to work through. It is tempti
 
 A study may compare experts with beginners and find a difference in brain structure or activity. It is then measuring an association with expertise. The groups may also differ in their histories, selection, starting ages, environments or other activities.
 
-Establishing an effect of training would require, among other things, following changes over time and using an appropriate comparison. A correlation between a brain measurement and years of practice is not enough, by itself, to distinguish all the possible explanations.
+Establishing an effect of training would require, among other things, [following changes over time and using an appropriate comparison](/en/blog/neuroplasticity-and-chess/). A correlation between a brain measurement and years of practice is not enough, by itself, to distinguish all the possible explanations.
 
 This does not make imaging useless. It clarifies the question it answers: “Do these groups differ on this measure?” is a different question from “Did chess produce this difference?”
 

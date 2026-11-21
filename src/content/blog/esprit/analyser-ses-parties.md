@@ -95,7 +95,7 @@ Remarque aussi la limite du récit : la notation montre les coups, mais elle ne 
 
 Si le moteur recommande un autre coup, commence par la première réponse adverse qui met ton idée en difficulté. Une longue ligne peut contenir plusieurs idées ; tu n'as pas besoin de tout mémoriser pour comprendre le premier point décisif. Rejoue les coups sur l'échiquier et vérifie la légalité des déplacements.
 
-Compare ensuite le candidat moteur à ton candidat initial. Qu'est-ce qui change : un défenseur, un tempo, une case de fuite, un échange ? Si tu ne vois aucune différence compréhensible, formule la question au lieu de recopier une variation de vingt coups comme si tu l'avais apprise.
+Compare ensuite le candidat moteur à ton candidat initial. Qu'est-ce qui change : un défenseur, un tempo, une case de fuite, un échange ? Si tu ne vois aucune différence compréhensible, formule la question au lieu de [recopier une variation de vingt coups comme si tu l'avais apprise](/fr/blog/obeissance-a-l-autorite-aux-echecs/).
 
 Une évaluation dépend aussi des conditions de recherche. Un moteur arrêté tôt peut changer d'avis ; une profondeur annoncée n'a pas exactement le même sens dans toutes les positions. Une variation d'évaluation signale un résultat de calcul à examiner, sans devenir une mesure directe de ta réflexion humaine.
 

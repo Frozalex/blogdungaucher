@@ -19,9 +19,9 @@ Esse momento não tem nada de excepcional: é a situação padrão no xadrez. Um
 
 No xadrez, a palavra "incerteza" está em todo lugar. Antes de avançar, é preciso separar este artigo de alguns vizinhos próximos.
 
-**Não é teoria dos jogos.** A teoria dos jogos no xadrez estuda a interação estratégica entre jogadores: equilíbrios, antecipações mútuas, estratégias ótimas com informação completa. Aqui o foco é mais preciso: a decisão *individual* diante de uma incerteza.
+**Não é teoria dos jogos.** A [teoria dos jogos no xadrez](/pt-br/blog/teoria-dos-jogos-no-xadrez/) estuda a interação estratégica entre jogadores: equilíbrios, antecipações mútuas, estratégias ótimas com informação completa. Aqui o foco é mais preciso: a decisão *individual* diante de uma incerteza.
 
-**Não é estatística bayesiana pura.** O artigo sobre redes bayesianas no xadrez olha para como construir modelos estatísticos para prever eventos (erros graves, vitórias). Aqui o interesse é o uso do raciocínio bayesiano como método de decisão em tempo real.
+**Não é estatística bayesiana pura.** O artigo sobre [redes bayesianas no xadrez](/pt-br/blog/redes-bayesianas-prever-blunder/) olha para como construir modelos estatísticos para prever eventos (erros graves, vitórias). Aqui o interesse é o uso do raciocínio bayesiano como método de decisão em tempo real.
 
 **Não é complexidade algorítmica.** O fato de o xadrez ser um problema EXPTIME-completo explica *por que* você precisa decidir sob incerteza. Mas o *como*, isso é aqui.
 

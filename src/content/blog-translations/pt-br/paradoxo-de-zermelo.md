@@ -101,7 +101,7 @@ O [xadrez, em francês](https://fr.wikipedia.org/wiki/%C3%89checs) continua em a
 
 Saber que o valor inicial continua desconhecido muda algo para o jogador prático? Não diretamente no tabuleiro. Mas muda a maneira de pensar o jogo.
 
-Em uma posição complexa, suas variantes e sua avaliação geralmente são parciais. Existem, porém, certezas locais: um mate forçado corretamente estabelecido ou uma posição coberta por base de finais pode ser resolvida sob regras precisas. É preciso distinguir esses casos do desconhecido que permanece desde a posição inicial.
+Em uma posição complexa, suas variantes e sua avaliação geralmente são parciais. Existem, porém, certezas locais: [um mate forçado corretamente estabelecido](/pt-br/blog/logica-modal-no-xadrez/#a-lógica-da-variante-forçada) ou uma posição coberta por base de finais pode ser resolvida sob regras precisas. É preciso distinguir esses casos do desconhecido que permanece desde a posição inicial.
 
 A distinção ajuda diante de um adversário mais forte: um desempenho melhor não garante uma solução exata de cada posição. Mas também não diz que ele desconheça um final conhecido ou um mate forçado. Compare variantes concretas, tempo disponível e justificativa do lance, em vez de um suposto grau de proximidade com a perfeição.
 

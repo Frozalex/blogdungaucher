@@ -29,7 +29,7 @@ Esses questionários, sozinhos, não demonstram uma cadeia causal que vá do com
 
 ## Acolher sem transformar a saída em exame
 
-Se você acompanha um jovem jogador, pode começar perguntando se ele quer conversar agora. Uma pergunta sobre fome, cansaço ou vontade de encontrar os amigos abre espaço para algo além do resultado. Depois proponha a análise, em vez de impô-la.
+Se você acompanha um jovem jogador, pode começar perguntando se ele quer conversar agora. Uma pergunta sobre fome, cansaço ou vontade de encontrar os amigos abre espaço para algo além do resultado. Nas primeiras experiências com o tabuleiro, importa também que a criança possa [expressar cansaço e frustração](/pt-br/blog/xadrez-para-criancas/#poder-expressar-cansaço-e-frustração). Depois proponha a análise, em vez de impô-la.
 
 Você pode reconhecer a decepção sem confirmar cada explicação. “Entendo que você esteja decepcionado” não implica que o relógio, o adversário ou o árbitro sejam responsáveis. Por outro lado, não suponha uma desculpa antes de ouvir o que aconteceu.
 

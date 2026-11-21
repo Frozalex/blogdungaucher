@@ -88,7 +88,7 @@ $$
 
 In clubtermen: minimax betekent "ik speel geen zet die alleen werkt als de tegenstander slaapt." Het is een heldere logica van rationele voorzichtigheid, geen garantie tegen tilt, maar een worst-case-model.
 
-Rauwe minimax alleen verkent een veel te grote boom: zonder optimalisatie sterf je voordat je klaar bent met denken; het goede nieuws is dat een enorm deel van de boom nutteloos is als je weet hoe je kan snoeien zonder spijt.
+[Rauwe minimax](/nl/blog/minimax-schaken/) alleen verkent een veel te grote boom: zonder optimalisatie sterf je voordat je klaar bent met denken; het goede nieuws is dat een enorm deel van de boom nutteloos is als je weet hoe je kan snoeien zonder spijt.
 
 ## Alfa-bèta: de kunst van snoeien zonder spijt
 

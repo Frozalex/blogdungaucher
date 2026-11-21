@@ -78,11 +78,11 @@ Onderzoek in de sportpsychologie heeft persoonlijke factoren geïdentificeerd di
 
 **Ego-oriëntatie** in plaats van meesterschapsoriëntatie. Spelers wiens hoofddoel is "de anderen te verslaan" en hun rangschikking te beschermen, reageren heftiger op nederlagen dan degenen wier doel is "leren en vorderen".
 
-**Identiteitsrigiditeit rond de Elo-rangschikking**. Zoals elders op deze blog besproken, wanneer de Elo een identiteit wordt, is elk verlies een existentiële bedreiging in plaats van informatie. De existentiële bedreiging activeert de amygdala sterker.
+**Identiteitsrigiditeit rond de Elo-rangschikking**. Zoals elders op deze blog besproken, wanneer [de Elo een identiteit wordt](/nl/blog/elo-zelfbeeld-schaken/), is elk verlies een existentiële bedreiging in plaats van informatie. De existentiële bedreiging activeert de amygdala sterker.
 
 **Perfectionisme** gecombineerd met een lage tolerantie voor fouten. Perfectionisten lijden bijzonder onder blunders, omdat elke fout een schending van hun interne standaard vormt.
 
-**Slaaptekort en vermoeidheid**. De prefrontale cortex, verantwoordelijk voor emotionele regulatie, is bijzonder gevoelig voor vermoeidheid. Een vermoeide speler is neuraal minder in staat zijn emoties te reguleren, zelfs met dezelfde bewuste motivatie om dat te doen.
+**Slaaptekort en vermoeidheid**. De prefrontale cortex, verantwoordelijk voor [emotionele regulatie](/nl/blog/emotionele-intelligentie-bij-schaken/), is bijzonder gevoelig voor vermoeidheid. Een vermoeide speler is neuraal minder in staat zijn emoties te reguleren, zelfs met dezelfde bewuste motivatie om dat te doen.
 
 ## Concrete regulatietechnieken
 

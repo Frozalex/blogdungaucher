@@ -124,7 +124,7 @@ The slide happens when the challenge changes target and lands on **your mind**:
 - "you think you calculated, but you didn't calculate";
 - "everyone at the club can see this problem in you."
 
-These broad statements risk replacing a specific explanation with a judgment about the person. Some can be checked against notes or messages; none alone establishes manipulative intent.
+These broad statements risk replacing a specific explanation with a judgment about the person. Some can be checked against notes or messages; none alone establishes manipulative intent. During a game, [repeated distractions and unreasonable draw offers](/en/blog/emotional-manipulation-in-chess/) raise a separate, practical question about when to involve the arbiter.
 
 The speaker’s authority may amplify a remark’s effect. Content, opportunities to respond and the relationship’s history matter too. Sweet’s research cannot predict every student’s or coach’s response.
 

@@ -21,7 +21,7 @@ O estudo trata de experiência no domínio. Não permite prever quantas palavras
 
 ## Memória de trabalho e conhecimentos de longo prazo
 
-Manter uma variante em mente exige conservar e atualizar algumas informações. Os conhecimentos já adquiridos podem ajudar a organizar essa tarefa: você não precisa redescobrir cada relação entre as peças como se visse o jogo pela primeira vez.
+Manter uma variante em mente exige [conservar e atualizar algumas informações](/pt-br/blog/xadrez-memoria-de-trabalho/). Os conhecimentos já adquiridos podem ajudar a organizar essa tarefa: você não precisa redescobrir cada relação entre as peças como se visse o jogo pela primeira vez.
 
 O antigo resumo “sete unidades para todos, portanto quatro peças por unidade resultam em 28 peças” apresentava uma ilustração como medida universal. As capacidades e estratégias dependem da tarefa; não é possível calcular a recordação de cada jogador com essa multiplicação.
 

@@ -72,13 +72,13 @@ Garde une vérification minimale : ton roi est-il menacé ? Une pièce reste-t-e
 
 Simplifier peut faciliter la suite, mais un échange peut aussi dégrader ta position ou mener à une finale délicate. « Échanger parce qu’il reste peu de temps » n’est donc pas une règle suffisante.
 
-Ne copie pas automatiquement le rythme adverse. Une réponse rapide peut venir de la préparation, d’une décision forcée, d’une intuition ou d’une erreur. La pendule donne un indice ; elle ne révèle pas ce que l’autre a pensé.
+Ne copie pas automatiquement le rythme adverse. Une réponse rapide peut venir de la préparation, d’une décision forcée, d’une intuition ou d’une erreur. La pendule donne un indice ; elle ne révèle pas ce que l’autre a pensé. Que peux-tu déduire de [quinze minutes de réflexion sur un seul coup](/fr/blog/reseaux-bayesiens-predire-blunder/#ladversaire-comme-source-dinformation-continue) ? L’exemple montre comment une même durée peut étayer plusieurs hypothèses.
 
 ## Analyser aussi les minutes dépensées
 
 Après la partie, relève quelques moments où tu as beaucoup réfléchi. Qu’as-tu cherché ? Qu’as-tu réellement trouvé ? Avais-tu aperçu une défense importante ou simplement retardé le choix ?
 
-Compare plusieurs parties à la même cadence. Un épisode isolé ne suffit pas à te classer comme joueur impulsif ou perfectionniste. Ce relevé peut en revanche faire apparaître une difficulté précise à travailler dans ton analyse de parties (un guide détaillé est à venir).
+Compare plusieurs parties à la même cadence. Un épisode isolé ne suffit pas à te classer comme joueur impulsif ou perfectionniste. Ce relevé peut en revanche faire apparaître une difficulté précise à travailler dans ton [analyse de parties](/fr/blog/analyser-ses-parties/).
 
 ## Ce que les recherches sur les décisions chronométrées ajoutent
 

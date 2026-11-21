@@ -65,7 +65,7 @@ If you are still too agitated to analyse, postpone the exercise. One hour or twe
 
 ## Using the framework without confining people
 
-You can ask a coach to challenge your explanation with a variation. That is more useful than a personality label. If analysing with a friend, start with what they want to understand rather than what you think you have exposed.
+You can ask a coach to challenge your explanation with a variation. For instance, if your account begins with [“I was winning”](/en/blog/cognitive-dissonance-in-chess/), can you find the move that would have kept the advantage? That is more useful than a personality label. If analysing with a friend, start with what they want to understand rather than what you think you have exposed.
 
 This framework remains an invitation to examine your account. It turns neither a game notebook into a diagnostic tool nor a post-tournament routine into psychological treatment.
 

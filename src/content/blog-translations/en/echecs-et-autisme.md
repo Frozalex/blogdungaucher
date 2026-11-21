@@ -128,7 +128,7 @@ You cannot diagnose Morphy, Fischer or a contemporary player from playing style,
 
 Accounts from people who choose to discuss their experience have a place when attributed with their permission, without representing the whole spectrum. An individual story describes an experience; it does not replace a study or oblige anyone to become a model of success.
 
-Chess can remain a freely chosen hobby with adaptations. It does not replace educational, social or healthcare support someone needs. Its value can lie in playing, discovering and sharing an interest without having to demonstrate a therapeutic effect.
+Chess can remain a freely chosen hobby with adaptations. It does not replace educational, social or healthcare support someone needs. Its value can lie in playing, discovering and sharing an interest without having to demonstrate a therapeutic effect. A [chess workshop offered as treatment](/en/blog/chess-as-therapy/) raises a different question about what outcomes were measured and compared.
 
 ![A chosen and adapted hobby can coexist with necessary support; it is neither treatment nor a promise of clinical benefit.](/images/en/echecs-autisme-05-complement-pas-therapie.svg)
 

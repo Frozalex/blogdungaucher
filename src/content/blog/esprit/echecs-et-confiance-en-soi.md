@@ -64,7 +64,7 @@ Commence par quelques parties plutôt que par une conclusion globale. As-tu rat�
 
 Tu peux demander l’aide d’un partenaire pour séparer une erreur technique d’une interprétation sur toi-même. « Je n’ai pas vu cet échec intermédiaire » donne un travail possible. « Je suis incapable de calculer » dépasse ce que cette partie démontre.
 
-L’analyse après la partie (article à venir) est une proposition de travail. Elle n’est pas établie ici comme la meilleure méthode scientifique de construction de la confiance, ni comme une garantie de progression.
+L’[analyse après la partie](/fr/blog/analyser-ses-parties/) est une proposition de travail. Elle n’est pas établie ici comme la meilleure méthode scientifique de construction de la confiance, ni comme une garantie de progression.
 
 ## Utiliser le classement avec mesure
 
@@ -78,7 +78,7 @@ Le doute sur ta légitimité est abordé séparément dans l’article sur le [s
 
 Choisis un objectif que tu peux mettre en œuvre : examiner la menace adverse, comparer tes candidats, garder une réserve de temps. Un objectif de résultat peut rester motivant, mais tu ne contrôles pas seul son accomplissement.
 
-Tu peux ressentir de la nervosité sans en conclure que tout ira mal. Essaie une routine simple et regarde si elle t’aide à commencer. La confiance n’exige pas l’absence de doute ; elle peut laisser une place à la vérification.
+Tu peux ressentir de la nervosité sans en conclure que tout ira mal. Essaie une routine simple et regarde si elle t’aide à commencer. Le dossier sur [l’effet des attentes](/fr/blog/effet-placebo-aux-echecs/#placebo-attente-et-simple-préparation--trois-notions-à-séparer) propose de distinguer le sentiment d’être prêt et la qualité des coups. La confiance n’exige pas l’absence de doute ; elle peut laisser une place à la vérification.
 
 ## Confiance, estime de soi et certitude : trois questions différentes
 

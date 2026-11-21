@@ -8,7 +8,7 @@ frSlug: "echecs-et-sommeil"
 faq: [{"question": "Quanto sono planejar para um torneio?", "answer": "Os CDC indicam pelo menos sete horas para adultos de 18 a 60 anos; as necessidades variam, entre outros fatores, com a idade. Essa referência de saúde geral não garante desempenho no xadrez."}, {"question": "É melhor escolher um cochilo de vinte ou de noventa minutos?", "answer": "Essas durações correspondem a práticas diferentes, não a duas versões da mesma regra. As fontes apresentadas não permitem prometer um ganho de memorização de posições nem indicar uma duração ideal para cada jogador."}, {"question": "Uma partida de cinco horas equivale a vinte horas sem dormir?", "answer": "Não: essa equivalência não é estabelecida pelos trabalhos citados. Tempo acordado, fadiga percebida e dificuldade da partida são variáveis distintas."}]
 ---
 
-Você termina uma partida tarde. Poderia dormir, mas uma posição continua passando pela cabeça. Abre a análise e depois outra partida. No dia seguinte, tem dificuldade para manter as variantes na memória.
+Você termina uma partida tarde. Poderia dormir, mas uma posição continua passando pela cabeça. Abre a análise e depois outra partida. No dia seguinte, tem dificuldade para [manter as variantes na memória](/pt-br/blog/xadrez-e-memoria/).
 
 O sono tem lugar na preparação de um torneio. Para falar dele corretamente, porém, é preciso evitar converter cada resultado de laboratório em pontos Elo ou percentual de combinações encontradas.
 

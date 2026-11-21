@@ -44,7 +44,7 @@ Você não precisa somar as respostas para obter uma pontuação. Se o esgotamen
 
 ## Reduzir a pressão no seu ritmo
 
-Não existe aqui um protocolo único que imponha três semanas, dois meses ou seis meses de afastamento. A duração e a forma de uma mudança dependem da sua situação. Uma pausa pode ser uma possibilidade; reduzir os compromissos ou mudar o ambiente são outras.
+Não existe aqui um protocolo único que imponha três semanas, dois meses ou seis meses de afastamento. A duração e a forma de uma mudança dependem da sua situação. Uma pausa pode ser uma possibilidade; reduzir os compromissos ou mudar o ambiente são outras. Para organizar o descanso entre partidas, vale distinguir [uma pausa durante a sessão](/pt-br/blog/beneficios-das-pausas-no-xadrez/) de um afastamento mais longo.
 
 Escolha uma medida concreta e reversível: retirar uma competição do calendário, suspender as sessões impostas, desativar os estímulos da plataforma ou reservar tempo para uma atividade sem objetivo de classificação. São opções para discutir, não tratamentos validados por este artigo.
 

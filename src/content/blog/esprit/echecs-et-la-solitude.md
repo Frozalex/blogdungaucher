@@ -98,7 +98,7 @@ Si un sentiment de solitude te pèse durablement, les échecs peuvent constituer
 
 ## Choisir une alternance
 
-Tu peux essayer de compléter une séance individuelle par une conversation après la partie, une analyse à deux ou un rendez-vous régulier. Tu peux aussi préserver un moment calme si c'est ce que tu recherches.
+Tu peux essayer de compléter une séance individuelle par une conversation après la partie, [une analyse à deux](/fr/blog/analyser-ses-parties/) ou un rendez-vous régulier. Tu peux aussi préserver un moment calme si c'est ce que tu recherches.
 
 Ces propositions ne constituent pas un traitement de la solitude. Elles permettent d'ajuster ta pratique à tes envies plutôt que d'imiter une routine prêtée à Carlsen ou à Tal.
 

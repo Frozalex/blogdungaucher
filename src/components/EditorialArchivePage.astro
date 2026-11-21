@@ -60,13 +60,13 @@ const nextPageHref =
       <p id="filter-error" class="archive-feedback" hidden role="status">{L.archiveError}</p>
     </section>
     <AdBanner format="leaderboard" />
-    <section class="archive-listing" aria-labelledby="listing-title">
+    <div class="archive-listing">
       <div class="resource-section-head"><h2 id="listing-title" data-default-title={listingTitle} data-filtered-title={L.filtered}>{listingTitle}</h2><p id="filter-count" class="archive-count" aria-live="polite" aria-atomic="true" data-count-template={`{count} ${L.inCategory}`} data-default-count={range}>{range}</p></div>
-      <div class="post-grid" id="post-grid" data-blog-index={`/blog-index/${lang}.json`}>{page.data.map((post,i)=><div class="post-item" data-category={post.data.category}><EditorialArchiveCard post={post} lang={lang} eager={i<3} /></div>)}</div>
+      <section class="post-grid" id="post-grid" aria-labelledby="listing-title" data-blog-index={`/blog-index/${lang}.json`}>{page.data.map((post,i)=><div class="post-item" data-category={post.data.category}><EditorialArchiveCard post={post} lang={lang} eager={i<3} /></div>)}</section>
       <p id="listing-empty" class="archive-empty" hidden>{L.noFilter}</p>
       <div id="listing-pagination"><Pagination currentPage={page.currentPage} lastPage={page.lastPage} pages={paginationPages} getHref={(n:number)=>getBlogIndexPagePath(lang,n)} prevHref={prevPageHref} nextHref={nextPageHref} lang={lang} /></div>
       <BlogviSidebar posts={getGaucherSelection(allPosts, page.data)} lang={lang} />
-    </section>
+    </div>
     <div class="resource-end"><span>{L.follow}</span>{lang!=="nl"&&<a class="resource-link" href={`/${lang}/series/`}>{L.exploreSeries} →</a>}<a class="resource-link" href={`/${lang}/recherche/`}>{L.search} →</a></div>
     <div id="card-templates" hidden aria-hidden="true" data-pagefind-ignore>{heroTemplatePost && <div class="post-item" data-template="hero"><EditorialArchiveCard post={heroTemplatePost} lang={lang} /></div>}{plainTemplatePost && <div class="post-item" data-template="plain"><EditorialArchiveCard post={plainTemplatePost} lang={lang} /></div>}</div>
   </div></div>

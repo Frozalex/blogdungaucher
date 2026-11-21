@@ -96,7 +96,7 @@ Si le moteur te contredit, tu peux aussi garder une question ouverte lorsque la 
 
 Après plusieurs séances, regarde si tu identifies plus souvent une réponse pertinente avant de voir la solution. Vérifie ce point sur des positions nouvelles. Ne compte pas uniquement les bonnes réponses : une réfutation bien trouvée peut sauver l'analyse d'un candidat qui te plaisait.
 
-Cette méthode proposée vise une habitude échiquéenne précise. Elle ne garantit pas que tu deviendras plus critique dans tous les domaines, ni qu'une erreur restante prouverait un refus d'apprendre. Une meilleure recherche reste compatible avec l'incertitude et avec des lacunes encore à combler.
+Cette méthode proposée vise une habitude échiquéenne précise. Elle ne garantit pas que tu deviendras plus critique dans tous les domaines, ni qu'une erreur restante prouverait un refus d'apprendre. Une meilleure recherche reste compatible avec l'incertitude et avec des lacunes encore à combler. Le dossier sur les biais cognitifs propose quatre autres pistes à examiner, dont [le poids d’une première idée familière](/fr/blog/5-biais-cognitifs-blunder/).
 
 ## Après la partie
 
@@ -104,7 +104,7 @@ Avant de consulter le moteur, note ce dont tu te souviens : candidats, suites en
 
 Le moteur peut ensuite montrer une réponse oubliée et aider à la comprendre. Un souvenir incomplet ne prouve pas que tu n’avais jamais envisagé cette réponse. L’article sur la mémoire reconstructive (article à venir) explique pourquoi il faut rester prudent.
 
-Choisis enfin une position similaire à travailler. L’objectif est de rendre une défense plus accessible à ta recherche, sans transformer une erreur en verdict sur ta lucidité. Le guide d’analyse (article à venir) propose une démarche complémentaire.
+Choisis enfin une position similaire à travailler. L’objectif est de rendre une défense plus accessible à ta recherche, sans transformer une erreur en verdict sur ta lucidité. Le [guide d’analyse](/fr/blog/analyser-ses-parties/#reconstituer-ton-raisonnement) propose une démarche complémentaire.
 
 ## Le pion empoisonné que personne ne veut défendre
 

@@ -144,7 +144,7 @@ En de analyse van Haslam en Reicher is woordelijk van toepassing. Je onderwerpt 
 
 ## Vier praktijken
 
-**Schrijf je evaluatie op voordat je de engine aanzet.** Dit is de belangrijkste regel van dit artikel, en het kost tien seconden. Noteer je oordeel over de positie, in één regel, en start dan de analyse.
+**[Schrijf je evaluatie op voordat je de engine aanzet](/nl/blog/schaakpartijen-analyseren/).** Dit is de belangrijkste regel van dit artikel, en het kost tien seconden. Noteer je oordeel over de positie, in één regel, en start dan de analyse.
 
 De nuttige informatie is niet de evaluatie van de engine, die waar is en niets over jou leert. Het is **het verschil** tussen de hare en de jouwe. Zonder voorafgaand geschreven oordeel bestaat dat verschil niet, en verwar je systematisch "ik had het begrepen" met "ik heb het antwoord gelezen."
 
@@ -168,7 +168,7 @@ Vandaar één regel, die niets kost: produceer je oordeel voordat je het hare vr
 
 ---
 
-*Dit artikel maakt deel uit van een reeks over toegepaste psychologie bij schaken. Het vult ons artikel over de psychologie van persuasie bij schaken aan.*
+*Dit artikel maakt deel uit van een reeks over toegepaste psychologie bij schaken. Het vult ons artikel over [de psychologie van overtuiging bij schaken](/nl/blog/psychologie-van-overtuiging-bij-schaken/) aan.*
 
 ## Bronnen
 

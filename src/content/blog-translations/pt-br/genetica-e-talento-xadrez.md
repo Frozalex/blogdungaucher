@@ -42,7 +42,7 @@ Você não precisa escolher entre “tudo estava programado” e “todos obteri
 
 Parta de dificuldades que consegue descrever: referências de finais, verificação de ameaças, tempo dedicado às decisões. Escolha uma maneira de trabalhá-las e observe a evolução das respostas. Estagnar em algumas partidas não mede seu potencial biológico.
 
-Se acompanha uma criança, mantenha a possibilidade de descobrir várias atividades e mudar de ideia. Sua classificação não fornece um teste de predisposições. O interesse pelo jogo e as condições em que pratica também merecem ser ouvidos.
+Se acompanha uma criança, mantenha a possibilidade de descobrir várias atividades e mudar de ideia. Para uma criança com altas habilidades, [experimentar o xadrez](/pt-br/blog/xadrez-e-superdotacao/#o-que-o-tabuleiro-pode-oferecer-dependendo-da-criança) começa por observar se ela se interessa pelo jogo. Sua classificação não fornece um teste de predisposições. O interesse pelo jogo e as condições em que pratica também merecem ser ouvidos.
 
 A pesquisa deixa muitas perguntas abertas. Isso não impede estudar seriamente nem jogar por prazer; impede, sobretudo, transformar uma estatística de população em veredito sobre uma pessoa.
 

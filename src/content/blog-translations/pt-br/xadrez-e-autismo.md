@@ -120,7 +120,7 @@ Não se pode diagnosticar Morphy, Fischer ou um jogador contemporâneo a partir 
 
 Relatos de pessoas que escolhem falar de sua experiência têm lugar quando são atribuídos com sua autorização, sem representar todo o espectro. Uma história individual descreve uma experiência; não substitui um estudo nem obriga ninguém a se tornar um modelo de sucesso.
 
-O xadrez pode continuar sendo um lazer escolhido e adaptado. Não substitui os apoios educativos, sociais ou de saúde de que a pessoa necessita. Seu valor pode estar em jogar, descobrir e compartilhar um interesse, sem precisar demonstrar um efeito terapêutico.
+O xadrez pode continuar sendo um lazer escolhido e adaptado. Não substitui os apoios educativos, sociais ou de saúde de que a pessoa necessita. Seu valor pode estar em jogar, descobrir e compartilhar um interesse, sem precisar demonstrar um efeito terapêutico. Uma [oficina de xadrez apresentada como tratamento](/pt-br/blog/xadrez-como-terapia/) levanta outra questão: como foram avaliados os benefícios alegados?
 
 ![Um lazer escolhido e adaptado pode coexistir com os apoios necessários; não constitui tratamento nem promessa de benefício clínico.](/images/pt-br/echecs-autisme-05-complement-pas-therapie.svg)
 

@@ -67,7 +67,7 @@ Une part inexpliquée peut inclure d’autres variables, des différences de mes
 
 Plomin et von Stumm (2018) passent en revue les travaux sur la génétique de l’intelligence. L’héritabilité concerne la variabilité d’un caractère dans une population et un environnement étudiés. Elle ne signifie pas que ton propre niveau serait constitué d’un pourcentage fixe de gènes et du reste d’entraînement.
 
-Leur revue porte sur des mesures cognitives et des associations génétiques. Elle ne fournit pas une estimation de l’héritabilité de ton Elo. Les pourcentages annoncés pour le QI ne peuvent donc pas être recyclés en fourchette du « talent aux échecs ».
+Leur revue porte sur des mesures cognitives et des associations génétiques. Elle ne fournit pas une estimation de l’héritabilité de ton Elo. Les pourcentages annoncés pour le QI ne peuvent donc pas être recyclés en fourchette du « talent aux échecs ». Les études sur [les liens entre QI et niveau aux échecs](/fr/blog/echecs-et-hpi/#hpi-et-performance--ce-que-les-études-permettent-de-dire) comparent des performances mesurées chez des joueurs.
 
 ## Corrélation et héritabilité ne sont pas interchangeables
 

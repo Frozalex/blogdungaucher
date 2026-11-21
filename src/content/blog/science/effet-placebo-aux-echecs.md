@@ -132,7 +132,7 @@ Après la partie, ne crédite pas automatiquement le rituel d'une victoire et ne
 
 ## Tester une habitude sans te tromper sur la conclusion
 
-Tu peux tenir un carnet personnel en distinguant le confort, le respect de la routine et la qualité du travail. Une telle observation peut t'aider à choisir une habitude agréable et peu contraignante. Elle ne suffit pas à établir une causalité : tes adversaires changent, tu progresses et tes attentes évoluent avec le temps.
+Tu peux tenir un carnet personnel en distinguant le confort, le respect de la routine et la qualité du travail. Une telle observation peut t'aider à [choisir une habitude](/fr/blog/formation-des-habitudes-aux-echecs/) agréable et peu contraignante. Elle ne suffit pas à établir une causalité : tes adversaires changent, tu progresses et tes attentes évoluent avec le temps.
 
 Méfie-toi surtout d'une méthode qui devient impossible à réfuter : si tu gagnes, elle fonctionne ; si tu perds, tu n'y croyais pas assez. Cette logique protège la promesse de toute comparaison. Une affirmation sérieuse précise ce qui pourrait la contredire et accepte qu'un bénéfice ressenti ne soit pas une amélioration mesurable des coups.
 

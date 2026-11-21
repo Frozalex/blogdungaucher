@@ -38,7 +38,7 @@ Dit gedrag is niet altijd bewust. De speler kan zichzelf verhalen vertellen: "Ik
 
 ### Winnende standen als specifieke bron van angst
 
-Onderzoek in de prestatipsychologie heeft aangetoond dat winnende standen een specifieke vorm van angst kunnen genereren, anders dan de angst om te verliezen. Deze "winnersangst" is gekoppeld aan de druk om te converteren, aan het risico een verdiende overwinning te "verspelen".
+Onderzoek in de prestatipsychologie heeft aangetoond dat winnende standen een specifieke vorm van angst kunnen genereren, anders dan de [angst om te verliezen](/nl/blog/angst-om-te-verliezen-schaken/). Deze "winnersangst" is gekoppeld aan de druk om te converteren, aan het risico een verdiende overwinning te "verspelen".
 
 Deze angst activeert dezelfde neurologische circuits als andere vormen van prestatieangst: activering van de amygdala, stijging van cortisol, verminderde prestaties van de prefrontale cortex. Met andere woorden: precies de omstandigheden die het risico op fouten vergroten.
 

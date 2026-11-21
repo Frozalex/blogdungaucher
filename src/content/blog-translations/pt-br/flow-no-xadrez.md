@@ -63,7 +63,7 @@ O desafio percebido conta mais que um limite de classificação: nenhuma diferen
 
 ## O custo cognitivo da distração
 
-Uma notificação de telefone, uma conversa próxima ou um pensamento intrusivo sobre o resultado podem interromper a absorção. Quanto tempo leva para retomar?
+Uma notificação de telefone, uma conversa próxima ou um pensamento intrusivo sobre o resultado podem interromper a absorção. Quanto tempo leva para retomar? Para distinguir uma imersão prazerosa da dificuldade de mudar o foco, veja [como o hiperfoco se diferencia do flow](/pt-br/blog/hiperfoco-atencao-sustentada-xadrez/#o-flow-não-é-o-hiperfoco).
 
 Mark, Gudith e Klocke (2008) observam, em uma tarefa de trabalho interrompida, mais estresse e esforço percebido. O experimento não mede um prazo de retorno ao flow no tabuleiro. Os números de 23 minutos ou de 10 a 15 minutos não podem, portanto, servir como cronômetro de recuperação durante uma partida.
 
@@ -99,7 +99,7 @@ Uma experiência satisfatória também pode virar algo que você procura em detr
 
 No xadrez, o **blitz on-line** oferece retorno rápido, como um resultado em três minutos, partida seguinte imediata, mudanças visíveis na classificação e acesso permanente. Para alguns jogadores, essas condições podem acompanhar um envolvimento problemático.
 
-Alguém absorvido no blitz às duas da manhã pode estar aproveitando a experiência. Se jogar repetidamente reduz o sono ou toma o lugar de outras atividades importantes, esse prazer não resolve se o padrão está funcionando para a pessoa. A absorção, sozinha, não é diagnóstico de dependência.
+Alguém absorvido no blitz às duas da manhã pode estar aproveitando a experiência. Se jogar repetidamente reduz o sono ou toma o lugar de outras atividades importantes, esse prazer não resolve se o padrão está funcionando para a pessoa. A absorção, sozinha, não é [diagnóstico de dependência](/pt-br/blog/vicio-em-xadrez/).
 
 Você pode registrar o tempo dedicado ao xadrez, perguntar se procura a atividade por ela mesma ou para evitar outra coisa e manter uma variedade de atividades que valoriza. Use essa observação para decidir se precisa ajustar seu padrão.
 

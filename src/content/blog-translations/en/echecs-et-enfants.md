@@ -82,7 +82,7 @@ Choose a position where the child can understand the answer rather than just gue
 
 **Asking only about the result.** After a game, also ask what the child discovered, found difficult or enjoyed. Some players find ratings interesting; ratings should not become labels for their worth at any age.
 
-**Confusing exploration with a performance programme.** Quickly learning movements does not mean wanting chess homework, an opening repertoire or tournaments. Ask the child before adding another requirement.
+**Confusing exploration with a performance programme.** Quickly learning movements does not mean wanting chess homework, an opening repertoire or tournaments. This also matters when [a gifted child takes up chess](/en/blog/chess-and-giftedness/): what would they like to try next? Ask the child before adding another requirement.
 
 **Demanding enjoyment.** If interest drops, suggest another form of play, a break or a different activity. Respecting a child's choice does not require claiming motivation is the strongest statistical predictor of progress.
 

@@ -14,7 +14,7 @@ Um grande mestre reconhece uma posição que você ainda precisa destrinchar. É
 
 Um estudo pode comparar especialistas e iniciantes e encontrar uma diferença na estrutura ou na atividade cerebral. Nesse caso, mede uma associação com a experiência. Os grupos também podem diferir quanto à trajetória, à seleção, à idade de início, ao ambiente ou a outras atividades.
 
-Para estabelecer um efeito do treinamento, seria necessário, entre outras coisas, acompanhar as mudanças ao longo do tempo e contar com uma comparação apropriada. Uma correlação entre uma medida cerebral e os anos de prática não basta, sozinha, para distinguir todas as explicações.
+Para estabelecer um efeito do treinamento, seria necessário, entre outras coisas, [acompanhar as mudanças ao longo do tempo](/pt-br/blog/neuroplasticidade-e-xadrez/) e contar com uma comparação apropriada. Uma correlação entre uma medida cerebral e os anos de prática não basta, sozinha, para distinguir todas as explicações.
 
 Isso não torna os exames de imagem inúteis. Apenas delimita a pergunta a que respondem: “Esses grupos diferem nesta medida?” é uma questão distinta de “O xadrez produziu essa diferença?”.
 

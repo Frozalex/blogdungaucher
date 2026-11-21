@@ -48,7 +48,7 @@ Datzelfde jaar verdeelde het Formule 1-wereldkampioenschap ongeveer 1,2 miljard 
 
 Magnus Carlsen, volgens vrijwel alle indicatoren de beste schaakspeler uit de geschiedenis, heeft over zijn hele toernooicarrière ongeveer 2,4 miljoen dollar aan prijzengeld opgestapeld. Niet per seizoen. Over zijn hele carrière.
 
-Dat is geen populariteitsprobleem: schaken telt wereldwijd 600 tot 800 miljoen spelers volgens schattingen. Het is een probleem van economische structuur. En die structuur is interessanter om aan te tonen dan de cijfers laten vermoeden. (Voor de sociologische context waarop dit probleem aansluit, met name de ondervertegenwoordiging van vrouwen in betaalde circuits, zie [schaken en vrouwen](/fr/blog/echecs-et-femmes/).)
+Dat is geen populariteitsprobleem: schaken telt wereldwijd 600 tot 800 miljoen spelers volgens schattingen. Het is een probleem van economische structuur. En die structuur is interessanter om aan te tonen dan de cijfers laten vermoeden. (Voor de sociologische context waarop dit probleem aansluit, met name de ondervertegenwoordiging van vrouwen in betaalde circuits, zie [schaken en vrouwen](/nl/blog/schaken-en-vrouwen/).)
 
 ## De cijfers die shockeren
 
@@ -83,7 +83,7 @@ Drie feiten vallen op uit deze ranglijst:
 2. De concentratie is bruut: de eerste verdient ongeveer vier keer zoveel als de tiende, en de curve stort nog sneller in voorbij de top 30.
 3. Deze bedragen tellen alleen het prijzengeld mee: geen optredenshonoraria, geen streaming, geen sponsoring, geen lesgeven.
 
-Dan komt de deductie. Er zijn wereldwijd ongeveer 1.800 Grootmeesters. Als slechts 26 van hen zes cijfers aan toernooiwinsten bereiken, dan **verdient meer dan 98% van de Grootmeesters minder dan 100.000 dollar per jaar aan prijzengeld**, en de overweldigende meerderheid veel minder. Een solide GM buiten de top 50 haalt doorgaans ongeveer 40.000 dollar per jaar uit toernooien, waarvan nog reis-, verblijfs- en inschrijvingskosten moeten worden afgetrokken die het nettobedrag flink verminderen.
+Dan komt de deductie. Er zijn wereldwijd ongeveer 1.800 Grootmeesters. Als slechts 26 van hen zes cijfers aan toernooiwinsten bereiken, dan **verdient meer dan 98% van de Grootmeesters minder dan 100.000 dollar per jaar aan prijzengeld**, en de overweldigende meerderheid veel minder. Een solide GM buiten de top 50 haalt doorgaans ongeveer 40.000 dollar per jaar uit toernooien, waarvan nog reis-, verblijfs- en inschrijvingskosten moeten worden afgetrokken die het nettobedrag flink verminderen. Al voor iemand prijzengeld verdient, speelt de vraag [wie zich wedstrijdschaak kan veroorloven](/nl/blog/schaken-en-armoede/#bourdieus-cultureel-kapitaal-en-schaken).
 
 De logische conclusie is dat voor vrijwel alle GM's **prijzengeld geen inkomen is maar een aanvulling.** Het echte inkomen komt van elders, vooral onderwijs. Bij 30 tot 80 dollar per uur (boven de 100 dollar voor de meest gerenommeerde trainers) benadert een GM die een twintigtal lesuren per week geeft een leefbaar inkomen dichter dan wat de meesten uit competitie halen. De omkering is opvallend: voor een gewone GM is de beste manier om van schaken te leven niet spelen, maar lesgeven aan wie speelt.
 
@@ -148,7 +148,7 @@ Maar hier is de economische vraag die zich stelt: **wie int de waarde die door d
 
 Dit model heeft een grens: het werkt voor charismatische persoonlijkheden en spelers die al aan de top staan met een bestaande bekendheid. Het lost het economische probleem niet op van de 1.750 Grootmeesters die geen Hikaru Nakamura zijn.
 
-Het creëert ook een nieuwe hiërarchie in de schaakwereld: die van het publiek, niet die van het spelniveau. Een charismaloze speler van 2600 Elo zal minder verdienen dan een speler van 2450 Elo die een community weet te animeren. Dat is een diepgaande verandering van de prikkels in het milieu, die ook aansluit bij het bredere debat over [de competitieve psychologie van de schaakspeler](/fr/blog/psychologie-du-joueur-d-echecs/): wanneer het inkomen meer afhangt van het publiek dan van het resultaat, veranderen druk en motivaties van aard.
+Het creëert ook een nieuwe hiërarchie in de schaakwereld: die van het publiek, niet die van het spelniveau. Een charismaloze speler van 2600 Elo zal minder verdienen dan een speler van 2450 Elo die een community weet te animeren. Dat is een diepgaande verandering van de prikkels in het milieu, die ook aansluit bij het bredere debat over [de competitieve psychologie van de schaakspeler](/nl/blog/psychologie-schaker/): wanneer het inkomen meer afhangt van het publiek dan van het resultaat, veranderen druk en motivaties van aard.
 
 ### Online toernooien: meer geld maar minder prestige
 

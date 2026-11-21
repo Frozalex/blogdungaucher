@@ -15,7 +15,7 @@ Acreditar que isso ajuda basta para jogar melhor? As pesquisas disponíveis não
 
 ## Melhorar depois não significa melhorar por causa disso
 
-Quando você joga melhor depois de adotar um ritual, várias explicações continuam possíveis. Talvez tenha estudado mais, encontrado uma oposição diferente ou recuperado melhores condições de sono. Uma única sequência de partidas não permite isolar a causa.
+Quando você joga melhor depois de adotar um ritual, várias explicações continuam possíveis. Talvez tenha estudado mais, encontrado uma oposição diferente ou recuperado melhores [condições de sono](/pt-br/blog/xadrez-e-sono/). Uma única sequência de partidas não permite isolar a causa.
 
 A revisão Cochrane de Hróbjartsson e Gøtzsche (2010) compara intervenções placebo com ausência de tratamento em contextos clínicos. Não encontra um efeito clínico importante em geral, embora identifique resultados variáveis, especialmente em alguns sintomas relatados pelos pacientes.
 

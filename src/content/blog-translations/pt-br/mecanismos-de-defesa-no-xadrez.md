@@ -41,7 +41,7 @@ O humor pode ajudar a ganhar distância, mas também pode ferir ou esconder uma 
 
 ## Voltar aos fatos depois da derrota
 
-Você pode experimentar um registro escrito breve após a partida: o que aconteceu, o que sentiu e o que conclui. Separe esses três elementos. “Perdi depois de não ver um xeque intermediário” é uma observação técnica; “nunca sei calcular” é uma generalização.
+Você pode experimentar um [registro escrito breve após a partida](/pt-br/blog/analisar-suas-partidas/): o que aconteceu, o que sentiu e o que conclui. Separe esses três elementos. “Perdi depois de não ver um xeque intermediário” é uma observação técnica; “nunca sei calcular” é uma generalização.
 
 Se ainda estiver agitado demais para analisar, adie o exercício. Uma hora ou vinte e quatro horas não constituem uma prescrição universal: escolha um momento em que possa olhar a partida sem retomar o conflito.
 

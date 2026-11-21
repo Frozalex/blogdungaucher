@@ -58,7 +58,7 @@ Une offre ne prouve pas que la position est égale. Tu peux la refuser. Les règ
 
 Si un comportement attire ton regard, reprends une vérification simple : dernière modification de la position, menaces immédiates, coups candidats. Cette routine est un conseil pratique, pas une protection démontrée contre toute distraction.
 
-Après la partie, distingue l'incident de tes décisions. Une gêne réelle peut mériter un signalement même si tu as aussi commis une erreur. À l'inverse, une erreur ne démontre pas qu'un geste adverse l'a provoquée.
+Après la partie, [distingue l'incident de tes décisions](/fr/blog/analyser-ses-parties/). Une gêne réelle peut mériter un signalement même si tu as aussi commis une erreur. À l'inverse, une erreur ne démontre pas qu'un geste adverse l'a provoquée.
 
 Les anecdotes sur des pouvoirs hypnotiques ou les diagnostics à distance ajoutent peu à cette démarche. Tu peux défendre tes conditions de jeu en t'appuyant sur les faits et sur l'arbitrage.
 

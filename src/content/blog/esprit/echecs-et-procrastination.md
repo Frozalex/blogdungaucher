@@ -67,7 +67,7 @@ Si tu rates le rendez-vous, examine la raison avant de doubler le volume suivant
 
 Décider sous pendule et commencer un dossier sont des tâches différentes. Les sources retenues ici ne montrent pas que jouer régulièrement développe une tolérance générale à l’ambiguïté ni que cinquante parties « recâblent » la décision.
 
-Tu peux t’inspirer d’une méthode de travail apprise aux échecs, mais son utilité ailleurs doit être observée. La formation des habitudes (article à venir) complète cette réflexion sur le démarrage ; la [gestion du temps](/fr/blog/echecs-gestion-du-temps/) concerne les choix pendant la partie.
+Tu peux t’inspirer d’une méthode de travail apprise aux échecs, mais son utilité ailleurs doit être observée. La [formation des habitudes](/fr/blog/formation-des-habitudes-aux-echecs/) complète cette réflexion sur le démarrage ; la [gestion du temps](/fr/blog/echecs-gestion-du-temps/) concerne les choix pendant la partie.
 
 ## Un report peut être raisonnable, même si la tâche compte
 

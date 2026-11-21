@@ -27,7 +27,7 @@ You also need to choose the criterion before looking at examples. If the “wors
 
 ## A memorable mistake is not a frequency
 
-Tversky and Kahneman (1973) study the availability heuristic: judging frequency or probability from how easily examples come to mind. That ease can inform judgement, but factors other than frequency influence it.
+Tversky and Kahneman (1973) study the availability heuristic: [judging frequency or probability from how easily examples come to mind](/en/blog/5-cognitive-biases-blunder/). That ease can inform judgement, but factors other than frequency influence it.
 
 A spectacular loss may therefore come to mind more readily than a quiet game. This is a possible application of the framework to chess, not a measurement demonstrating that your memory always selects defeats.
 

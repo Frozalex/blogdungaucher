@@ -96,7 +96,7 @@ Avisar aos parceiros o horário de encerramento ou propor uma atividade fora da 
 
 ### Jogar para colocar o resto à distância
 
-Uma partida pode oferecer uma pausa bem-vinda em um dia difícil. Se ela se torna a única forma de suportar uma preocupação, a solidão ou um conflito, vale examinar também esse contexto.
+Uma partida pode oferecer uma pausa bem-vinda em um dia difícil. Se ela se torna a única forma de suportar uma preocupação, a [solidão](/pt-br/blog/xadrez-e-solidao/#a-internet-suprimiu-a-obrigação-social) ou um conflito, vale examinar também esse contexto.
 
 Não podemos deduzir de um estudo de imagem que a “rede de modo padrão” desliga as preocupações do jogador. O alívio sentido e as dificuldades que voltam depois da sessão merecem ser descritos por si mesmos. Uma ansiedade ou um humor deprimido associado também não prova qual dificuldade veio primeiro.
 

@@ -30,7 +30,7 @@ AlphaZero is a **deep reinforcement learning** system. It combines two technolog
 
 **A deep neural network** takes the board position as input and produces two outputs: a probability distribution over legal moves, the “policy head”, indicating promising moves, and a value between −1 and +1 estimating the outcome from the side-to-move perspective, the “value head”.
 
-**Monte Carlo tree search, MCTS,** uses the network to guide search. Instead of exhaustively traversing the game tree using alpha-beta pruning, MCTS selects paths to leaves of the explored tree; the network supplies evaluations there which are backed up towards the root. These simulations are not all played through to checkmate.
+**Monte Carlo tree search, MCTS,** uses the network to guide search. Instead of exhaustively traversing the game tree using [alpha-beta pruning](/en/blog/chess-algorithmic-complexity/#alpha-beta-pruning-the-first-major-leap), MCTS selects paths to leaves of the explored tree; the network supplies evaluations there which are backed up towards the root. These simulations are not all played through to checkmate.
 
 AlphaZero received **the game’s rules**, without human games, a hand-written positional evaluation or endgame tablebases. This still involved a representation, architecture and training procedure designed by researchers; it was not the absence of engineering choices.
 

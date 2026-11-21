@@ -41,7 +41,7 @@ Aucune étude présentée dans cet article ne permet d’affirmer qu’une activ
 
 ## Changer de point de vue reste un exercice utile à essayer
 
-Tu n’as pas besoin d’une explication neuronale pour poser une question pratique : « Si j’avais les pièces adverses, quel coup examinerais-je ? » Cet exercice peut t’aider à sortir d’un calcul centré sur ton propre plan. Il ne mesure pas et ne garantit pas l’entraînement d’un système miroir.
+Tu n’as pas besoin d’une explication neuronale pour poser une question pratique : « Si j’avais les pièces adverses, quel coup examinerais-je ? » Cet exercice peut t’aider à [sortir d’un calcul centré sur ton propre plan](/fr/blog/biais-de-confirmation-aux-echecs/). Il ne mesure pas et ne garantit pas l’entraînement d’un système miroir.
 
 Voici une manière de le pratiquer sur une partie d’entraînement :
 

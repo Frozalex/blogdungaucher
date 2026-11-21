@@ -73,7 +73,7 @@ Deze twee voorbeelden zeggen iets belangrijks: het schaakbord heeft wiskundigen 
 
 ### De boom der mogelijkheden en combinatorische berekening
 
-De tweede fundamentele pijler die schaken en wiskunde verbindt, is ongetwijfeld combinatoriek. Al vanaf de eerste uitwisselingen van de partij explodeert het aantal mogelijke stellingen exponentieel.
+De tweede fundamentele pijler die schaken en wiskunde verbindt, is ongetwijfeld combinatoriek. Al vanaf de eerste uitwisselingen van de partij explodeert [het aantal mogelijke stellingen](/nl/blog/algoritmische-complexiteit-schaken/) exponentieel.
 
 Na slechts drie zetten van elke kant zijn er al meer dan negen miljoen verschillende mogelijke stellingen op het bord. [Claude Shannon](https://nl.wikipedia.org/wiki/Claude_Shannon) schatte de orde van grootte van het aantal mogelijke partijen op $10^{120}$ (**het getal van Shannon**), ver boven het aantal atomen in het waarneembare heelal ($\sim 10^{80}$).
 

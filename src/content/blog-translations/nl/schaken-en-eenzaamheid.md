@@ -63,7 +63,7 @@ Het FIDE-reglement (artikel 12) is expliciet: "Spelers is het verboden aantekeni
 
 ### Vijf uur innerlijke monoloog
 
-Probeer vijf uur zonder externe feedback op een lopende beslissing door te brengen. Geen validatie, geen correctie, geen geruststellende blik. Alleen jij, het probleem en de verstrijkende tijd.
+Probeer vijf uur zonder externe feedback op een lopende beslissing door te brengen. Geen validatie, geen correctie, geen geruststellende blik. Alleen jij, het probleem en de verstrijkende tijd. Bij jonge spelers roept dat een tweede vraag op: wat is [de rol van ouders en trainers na de partij](/nl/blog/hechtingstheorie-bij-schaken/)?
 
 Dat is wat een speler meemaakt in een lange partij. De stelling verandert, dreigingen evolueren, de tijd dringt, en de enige beschikbare gesprekspartner is je eigen berekening.
 

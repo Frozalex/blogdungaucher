@@ -163,23 +163,23 @@ const seeAllLabel =
 
   {/* ─────────────── ARTICLES D'ABORD ─────────────── */}
   {hero && (
-    <section class="cat-section cat-section--featured" style={`--cat-accent: ${meta.accent};`}>
+    <section class="cat-section cat-section--featured" aria-labelledby="category-featured" style={`--cat-accent: ${meta.accent};`}>
       <div class="container">
         <div class="cat-section__head reveal">
-          <span class="eyebrow eyebrow--accent" data-t="category.featured">{featuredLabel}</span>
+          <h2 id="category-featured" class="eyebrow eyebrow--accent" data-t="category.featured">{featuredLabel}</h2>
         </div>
         <div class="cat-featured-card reveal">
-          <ArticleCard post={hero} featured={true} eager={true} lang={lang} />
+          <ArticleCard post={hero} featured={true} eager={true} lang={lang} headingLevel={3} />
         </div>
       </div>
     </section>
   )}
 
   {rest.length > 0 ? (
-    <section class="cat-section" style={`--cat-accent: ${meta.accent};`}>
+    <section class="cat-section" aria-labelledby="category-articles" style={`--cat-accent: ${meta.accent};`}>
       <div class="container">
         <div class="cat-section__head reveal">
-          <span class="eyebrow eyebrow--accent" data-t="category.allArticles">{allLabel}</span>
+          <h2 id="category-articles" class="eyebrow eyebrow--accent" data-t="category.allArticles">{allLabel}</h2>
           <a href={blogHref} class="text-link" data-t="category.seeAll">{seeAllLabel}</a>
         </div>
         <div class="post-grid reveal-group">
@@ -211,9 +211,9 @@ const seeAllLabel =
 
   {/* ─────────────── ÉDITORIAL CONDENSÉ (déplacé sous les articles) ─────────────── */}
   {landingRich && (
-    <section class="cat-rich" style={`--cat-accent: ${meta.accent};`}>
+    <section class="cat-rich" aria-labelledby="category-explore" style={`--cat-accent: ${meta.accent};`}>
       <div class="container">
-        <span class="eyebrow eyebrow--accent reveal">{richEyebrow}</span>
+        <h2 id="category-explore" class="eyebrow eyebrow--accent reveal">{richEyebrow}</h2>
 
         {landingRich.slides && landingRich.slides.length > 0 ? (
           <div class="cat-slides reveal-group">

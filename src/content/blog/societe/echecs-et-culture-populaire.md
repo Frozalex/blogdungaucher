@@ -82,7 +82,7 @@ Dans *From Russia with Love* (1963), le personnage de Kronsteen est présenté c
 
 Cette association (échecs = intelligence froide, potentiellement menaçante) n'est pas accidentelle. Elle reflète un imaginaire culturel construit sur deux piliers : le génie asocial (le joueur solitaire, incompris, dangereux) et la métaphore de la manipulation (l'échiquier comme espace où l'on déplace les autres comme des pièces).
 
-Ingmar Bergman, dans *Le Septième Sceau* (1957), pousse la métaphore à son extrême : le chevalier médiéval joue aux échecs contre la Mort elle-même pour retarder la fin. L'échiquier devient le lieu de la négociation existentielle, de la stratégie contre le destin.
+Ingmar Bergman, dans *Le Septième Sceau* (1957), pousse la métaphore à son extrême : le chevalier médiéval joue aux échecs contre la Mort elle-même pour retarder la fin. L'échiquier devient le lieu de la négociation existentielle, de la stratégie contre le destin. Au Moyen Âge, Jacques de Cessoles donnait aux pièces un autre rôle : [son échiquier figurait les métiers et les devoirs de chacun](/fr/blog/echecs-religion-et-interdit/).
 
 ## Stefan Zweig et la littérature des échecs
 
@@ -110,7 +110,7 @@ L'impact sur la pratique réelle a été immédiat et mesurable. Chess.com a pub
 
 ## La révolution Twitch et YouTube
 
-Parallèlement à *The Queen's Gambit*, une autre transformation culturelle était en cours : l'essor des échecs en streaming.
+Parallèlement à *The Queen's Gambit*, une autre transformation culturelle était en cours : [l'essor des échecs en streaming](/fr/blog/echecs-et-streaming/).
 
 Hikaru Nakamura, Grand Maître américain, a commencé à streamer sur Twitch en 2017. Sa chaîne a explosé pendant la pandémie, avec jusqu'à 50 000 spectateurs simultanés. En 2024, il compte parmi les streamers de jeu les plus suivis au monde, toutes catégories confondues.
 

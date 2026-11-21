@@ -51,7 +51,7 @@ Un grand maître reconnaît une position que tu dois encore décortiquer. C'est 
 
 Une étude peut comparer des experts à des novices et trouver une différence de structure ou d'activité cérébrale. Elle mesure alors une association avec l'expertise. Les groupes peuvent aussi différer par leur histoire, leur sélection, leur âge de début, leur environnement ou d'autres activités.
 
-Pour établir un effet de l'entraînement, il faudrait notamment suivre les changements dans le temps et disposer d'une comparaison appropriée. Une corrélation entre une mesure cérébrale et des années de pratique ne suffit pas, à elle seule, à départager toutes les explications.
+Pour [établir un effet de l'entraînement](/fr/blog/neuroplasticite-aux-echecs/), il faudrait notamment suivre les changements dans le temps et disposer d'une comparaison appropriée. Une corrélation entre une mesure cérébrale et des années de pratique ne suffit pas, à elle seule, à départager toutes les explications.
 
 Cela ne rend pas l'imagerie inutile. Cela précise ce qu'elle répond : « Ces groupes diffèrent-ils selon cette mesure ? » est une question distincte de « Les échecs ont-ils produit cette différence ? »
 

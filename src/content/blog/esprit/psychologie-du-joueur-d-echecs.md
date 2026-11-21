@@ -61,7 +61,7 @@ Après une gaffe, tu accélères, tu veux « rattraper » immédiatement ou tu r
 
 La méta-analyse de Shields et ses collègues (2016) montre que le stress aigu peut affecter la mémoire de travail et la flexibilité cognitive, avec des effets plus nuancés sur l'inhibition. Elle ne mesure pas le mécanisme de chaque gaffe en ligne.
 
-Pour ton analyse, note séparément l'émotion et l'erreur : « j'étais en colère » puis « je n'ai pas vérifié l'échec intermédiaire ». Tu peux ainsi chercher une adaptation concrète, sans utiliser l'émotion comme explication suffisante de tout.
+Pour ton analyse, [note séparément l'émotion et l'erreur](/fr/blog/intelligence-emotionnelle-aux-echecs/) : « j'étais en colère » puis « je n'ai pas vérifié l'échec intermédiaire ». Tu peux ainsi chercher une adaptation concrète, sans utiliser l'émotion comme explication suffisante de tout.
 
 Si tu peux arrêter une session qui te fait enchaîner des décisions regrettées, essaie cette coupure. En tournoi, où tu ne peux pas suspendre librement la partie, reviens à une vérification simple et au temps réellement disponible.
 

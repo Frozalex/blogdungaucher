@@ -122,7 +122,7 @@ Ditzelfde cognitieve profiel, moeite met inhibitie, behoefte aan een stabiel kad
 
 Het zou oneerlijk zijn het schaakbord voor te stellen als een oplossing voor ADHD. Enkele belangrijke voorzorgsmaatregelen:
 
-**Hyperfocus is geen genezing.** Als Luca 45 minuten aan het schaakbord blijft, is dat niet omdat zijn ADHD "verdwenen" is. Het is omdat de taak aan alle voorwaarden voor zijn betrokkenheid voldoet. De terugkeer naar andere contexten, de wiskundeles de volgende ochtend, kan net zo moeilijk zijn als voorheen. Het schaakbord traint het brein niet grondig opnieuw; het creëert gunstige omstandigheden waarin het brein anders kan functioneren.
+**[Hyperfocus](/nl/blog/hyperfocus-schaken/) is geen genezing.** Als Luca 45 minuten aan het schaakbord blijft, is dat niet omdat zijn ADHD "verdwenen" is. Het is omdat de taak aan alle voorwaarden voor zijn betrokkenheid voldoet. De terugkeer naar andere contexten, de wiskundeles de volgende ochtend, kan net zo moeilijk zijn als voorheen. Het schaakbord traint het brein niet grondig opnieuw; het creëert gunstige omstandigheden waarin het brein anders kan functioneren.
 
 **Niet alle ADHD-profielen reageren op dezelfde manier.** ADHD omvat zeer uiteenlopende profielen: overwegend onoplettend, overwegend hyperactief-impulsief, en gecombineerd. Zeer hyperactieve kinderen kunnen de traagheid van een volledige partij in het begin frustrerend vinden. Aanpassing (kortere partijen, vereenvoudigd formaat, leren via geïsoleerde stukken) is vaak nodig.
 

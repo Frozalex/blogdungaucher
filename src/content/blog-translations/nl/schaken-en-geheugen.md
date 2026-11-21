@@ -46,7 +46,7 @@ Anatoli Karpov speelde partijen uit het geheugen na, zonder bord, gespeeld twint
 
 En toch, als je hem had gevraagd een lijst van 30 willekeurige woorden te onthouden, had hij hetzelfde gedaan als jij: binnen een uur de helft vergeten.
 
-Deze paradox vat het onderwerp samen: **schaken "geeft" geen magisch geheugen**. Het traint zeer specifieke circuits (patroonherkenning op het schaakbord, planning, impulsonderdrukking) terwijl het steunt op dezelfde menselijke beperkingen als overal elders. Dit artikel verbindt **werkgeheugen**, **langetermijngeheugen**, **praktijk** en **wat de wetenschap echt toestaat te concluderen**.
+Deze paradox vat het onderwerp samen: **schaken "geeft" geen magisch geheugen**. Het traint zeer specifieke circuits (patroonherkenning op het schaakbord, planning, impulsonderdrukking) terwijl het steunt op dezelfde menselijke beperkingen als overal elders. Dit artikel verbindt **[werkgeheugen](/nl/blog/werkgeheugen-en-schaken/)**, **langetermijngeheugen**, **praktijk** en **wat de wetenschap echt toestaat te concluderen**.
 
 ## Inleiding: de band tussen schaken en geheugen
 

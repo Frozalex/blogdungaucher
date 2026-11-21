@@ -34,7 +34,7 @@ Les échecs peuvent être un loisir plaisant et un cadre de rencontre pour certa
 
 Le trouble déficit de l'attention avec ou sans hyperactivité est un trouble du développement qui peut associer inattention, hyperactivité et impulsivité. Selon le [NIMH](https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know), le diagnostic repose sur des symptômes persistants qui perturbent le fonctionnement dans plusieurs contextes, avec une évaluation appropriée.
 
-Être absorbé par un jeu ne suffit donc pas à exclure un TDAH. Inversement, bouger sur sa chaise, jouer vite ou oublier une pièce ne permet pas de le diagnostiquer. Un animateur peut décrire ce qu'il observe ; il ne remplace pas l'évaluation clinique.
+[Être absorbé par un jeu](/fr/blog/hyperfocus-attention-soutenue-aux-echecs/) ne suffit donc pas à exclure un TDAH. Inversement, bouger sur sa chaise, jouer vite ou oublier une pièce ne permet pas de le diagnostiquer. Un animateur peut décrire ce qu'il observe ; il ne remplace pas l'évaluation clinique.
 
 Les échecs sollicitent la mémoire de travail, la planification et la capacité à interrompre un geste pour examiner une menace. Mais solliciter une fonction pendant un jeu ne démontre pas qu'elle s'améliore durablement, ni que les progrès se transfèrent aux devoirs, au travail ou à la vie quotidienne.
 

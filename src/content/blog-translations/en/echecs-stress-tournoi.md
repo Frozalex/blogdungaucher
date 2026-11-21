@@ -26,7 +26,7 @@ The meta-analysis by Shields, Sazma and Yonelinas (2016) finds adverse effects o
 
 This research helps explain why a task may become harder under pressure. It demonstrates neither an optimal hormonal threshold for each player nor an automatic list of chess mistakes.
 
-At the board, you can observe your own reactions: exchanging to escape an uncomfortable position, moving quickly without checking a reply, or repeatedly returning to the consequences of defeat. These are observation prompts, not signs that diagnose a precise physiological reaction.
+At the board, you can observe your own reactions: exchanging to escape an uncomfortable position, moving quickly without checking a reply, or repeatedly returning to the consequences of defeat. These are observation prompts, not signs that diagnose a precise physiological reaction. For a comparison, see [what researchers measure during a game](/en/blog/echecs-et-le-corps/#what-researchers-measure), from heart rate to energy expenditure.
 
 ![Returning to the position](/images/en/stress-tournoi-01-position.svg)
 

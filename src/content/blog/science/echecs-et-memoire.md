@@ -80,7 +80,7 @@ Une façon pédagogique de comprendre la différence est de penser à un cadre q
 
 Quand tu calcules une capture, tu dois te rappeler où arrive la pièce, quelle pièce disparaît et quelle ligne devient libre. Tu peux connaître le motif tactique et perdre malgré tout le fil d'une case modifiée. Distinguer ces difficultés aide à choisir un exercice.
 
-**Exemple pédagogique :** après un échange de tours, tu continues à calculer comme si une tour contrôlait encore la dernière rangée. Le problème de cette variante est une mise à jour incorrecte de l'état. Il ne prouve ni une absence de compréhension du motif ni un trouble général de la mémoire.
+**Exemple pédagogique :** après un échange de tours, tu continues à calculer comme si une tour contrôlait encore la dernière rangée. Le problème de cette variante est [une mise à jour incorrecte de l'état](/fr/blog/echecs-memoire-de-travail/). Il ne prouve ni une absence de compréhension du motif ni un trouble général de la mémoire.
 
 Pour l'étudier à l'entraînement, rejoue lentement les coups et décris les pièces présentes à chaque étape. Tu peux ensuite essayer la même tâche sans déplacer les pièces. Compare la nature des erreurs : case oubliée, capture non retirée, coup illégal ou défense absente. Il s'agit d'une proposition d'exercice ciblé, sans rendement universel établi.
 

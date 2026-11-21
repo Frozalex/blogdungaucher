@@ -101,7 +101,7 @@ Une nulle peut suffire à remporter un tournoi ; elle peut aussi laisser un joue
 
 **Situation fictive :** à la dernière ronde, seule une victoire permet de te qualifier. Tu peux préférer une position avec davantage de déséquilibres à une répétition de coups disponible. Cela ne rend pas la répétition moins correcte dans le jeu abstrait. Tu changes la fonction d'utilité pertinente pour ta décision. Il faut encore vérifier que la complication conserve des chances raisonnables, au lieu de confondre obligation de gagner et obligation de sacrifier.
 
-Une analyse utile peut donc garder deux colonnes : valeur échiquéenne estimée et intérêt pour ton objectif réel. Cette séparation permet de discuter une décision sans réécrire après coup les règles mathématiques pour justifier un pari.
+Une analyse utile peut donc garder deux colonnes : valeur échiquéenne estimée et intérêt pour ton objectif réel. Cette séparation permet de discuter une décision sans réécrire après coup les règles mathématiques pour justifier un pari. Le dossier sur la [décision sous incertitude](/fr/blog/decision-sous-incertitude-aux-echecs/) montre comment comparer des coups quand tu ne connais qu’une partie de leurs conséquences.
 
 ## Comment utiliser cette théorie dans ton entraînement
 

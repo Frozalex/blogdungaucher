@@ -138,7 +138,7 @@ Les [échecs](https://fr.wikipedia.org/wiki/%C3%89checs) restent ouverts. Le [Go
 
 Savoir que la valeur de la position initiale reste inconnue change-t-il quelque chose pour le joueur pratique ? Pas directement sur l'échiquier. Mais cela change la façon de penser au jeu.
 
-Dans une position complexe, tes variantes et ton évaluation restent généralement partielles. Il existe pourtant des certitudes locales : un mat forcé correctement établi ou une position couverte par une tablebase peut être résolu selon des règles précises. Il faut distinguer ces cas de l’inconnu qui subsiste depuis la position initiale.
+Dans une position complexe, tes variantes et ton évaluation restent généralement partielles. Il existe pourtant des certitudes locales : [un mat forcé correctement établi](/fr/blog/logique-modale-aux-echecs/) ou une position couverte par une tablebase peut être résolu selon des règles précises. Il faut distinguer ces cas de l’inconnu qui subsiste depuis la position initiale.
 
 Cette distinction est utile face à un adversaire plus fort : une meilleure performance ne garantit pas une solution exacte de chaque position. Mais elle ne dit pas non plus qu’il ignore une finale connue ou un mat forcé. Compare les variantes concrètes, le temps disponible et la justification d’un coup, plutôt qu’un niveau supposé de proximité avec la perfection.
 

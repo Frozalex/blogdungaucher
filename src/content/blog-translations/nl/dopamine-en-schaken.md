@@ -94,7 +94,7 @@ Dit fenomeen verklaart een veelvoorkomende gedragsbias bij schaken: spelers onde
 
 De Elo-rating is een bron van uitgestelde maar krachtige dopaminebeloning. Elk gewonnen punt is een micro-beloning. Elke overschrijding van een symbolische drempel (1500, 1700, 2000) is een sterkere beloning.
 
-Dit systeem van zichtbare en gekwantificeerde progressie is een van de meest effectieve mechanismen om betrokkenheid op lange termijn te behouden, en ook een van de riskantste voor profielen die vatbaar zijn voor gedragsverslaving.
+Dit systeem van zichtbare en gekwantificeerde progressie is een van de meest effectieve mechanismen om betrokkenheid op lange termijn te behouden, en ook een van de riskantste voor profielen die vatbaar zijn voor [gedragsverslaving](/nl/blog/verslaving-aan-schaken/).
 
 ## Vergelijking met andere spellen: het specifieke profiel van schaken
 

@@ -40,7 +40,7 @@ Bilalić, McLeod et Gobet (2008) étudient des problèmes où une solution connu
 
 Cowley et Byrne (2004) observent que les maîtres génèrent plus facilement que les novices des suites réfutant leurs plans dans les tâches étudiées. Cela ne rend pas chaque maître immunisé, ni chaque novice incapable de critique.
 
-Quand tu calcules une attaque, regarde ce qui se passe si l’adversaire ne répond pas comme prévu. Un échec intermédiaire ou un refus de reprendre peut changer la suite. L’article sur le biais de confirmation (article à venir) développe cette recherche.
+Quand tu calcules une attaque, regarde ce qui se passe si l’adversaire ne répond pas comme prévu. Un échec intermédiaire ou un refus de reprendre peut changer la suite. L’article sur le [biais de confirmation](/fr/blog/biais-de-confirmation-aux-echecs/) développe cette recherche.
 
 ## 3. L’ancrage : une première estimation persistante
 
@@ -58,7 +58,7 @@ Après avoir gagné du matériel, réexamine les menaces encore présentes. L’
 
 Dans le cadre de Tversky et Kahneman, la facilité à rappeler des exemples peut influencer les estimations de fréquence. Une tactique récemment subie peut ainsi occuper ton attention ; cela reste une hypothèse à vérifier dans ton jeu.
 
-Compare tes souvenirs à un ensemble de parties, y compris les moins marquantes. Puis choisis une difficulté concrète à travailler. Connaître un mot de psychologie ne suffit pas à expliquer l’erreur ni à la corriger.
+Compare tes souvenirs à un ensemble de parties, y compris les moins marquantes. Le dossier sur [l’impression de gaffer au pire moment](/fr/blog/loi-de-murphy-aux-echecs/#une-petite-enquête-sur-tes-conversions) propose de compter aussi les conversions réussies. Puis choisis une difficulté concrète à travailler. Connaître un mot de psychologie ne suffit pas à expliquer l’erreur ni à la corriger.
 
 ## Une même gaffe peut avoir plusieurs histoires
 

@@ -49,7 +49,7 @@ faq:
 
 [Vishy Anand](https://nl.wikipedia.org/wiki/Viswanathan_Anand) speelde 8 schaakpartijen tegelijk, blind, zonder ook maar één bord te zien, en versloeg al zijn tegenstanders. In zijn hoofd: 8 verschillende stellingen, elk met tientallen stukken, afzonderlijke partijverhalen, plannen en tegenplannen, allemaal tegelijk vastgehouden gedurende uren.
 
-Dit is geen magie. Het is ruimtelijke visualisatie tot het uiterste gedreven: een vaardigheid die schaken aantoonbaar ontwikkelt, en die de neurowetenschap steeds beter begint te begrijpen.
+Dit is geen magie. Het is [ruimtelijke visualisatie](/nl/blog/visualisatie-schaken/#visualisatietraining) tot het uiterste gedreven: een vaardigheid die schaken aantoonbaar ontwikkelt, en die de neurowetenschap steeds beter begint te begrijpen.
 
 ## Ruimtelijke cognitie: waar hebben we het over?
 

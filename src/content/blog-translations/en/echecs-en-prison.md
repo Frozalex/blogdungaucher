@@ -75,7 +75,7 @@ Research on general or vocational education does not establish which component p
 
 **Adapt difficulty.** A beginner might work on a basic mate while someone else analyses a game. Participants do not arrive with identical knowledge, experiences or constraints. Shared rules do not imply equal prior resources.
 
-**Make room for enjoyment.** Learning a game, solving an exercise or sharing a session can be explicit objectives. An activity does not need relabelling as “therapy” to have value.
+**Make room for enjoyment.** Learning a game, solving an exercise or sharing a session can be explicit objectives. An activity does not need relabelling as “therapy” to have value. The [distinction between a chess workshop and treatment](/en/blog/chess-as-therapy/#in-prison-document-the-programme-and-its-evaluation-separately) matters when deciding how to evaluate either one.
 
 ![Educational possibilities: revisit decisions, share rules and adapt exercises, without guaranteeing personal transformation.](/images/en/echecs-prison-04-specificite-echecs.svg)
 

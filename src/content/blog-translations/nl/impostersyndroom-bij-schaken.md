@@ -72,7 +72,7 @@ Een legitieme vraag is: hoe onderscheid je het impostersyndroom van een eerlijke
 
 Het verschil zit in de systematiek en de weerstand tegen bewijs. Een realistische evaluatie van je beperkingen erkent ook je sterke punten en past zich aan naarmate bewijzen zich opstapelen. Het impostersyndroom houdt zijn negatieve overtuigingen vast, ongeacht het tegenbewijs. Overwinningen worden gebagatelliseerd. Nederlagen worden versterkt. Het patroon is bestand tegen informatie.
 
-Als je al maanden een stabiele Elorating hebt op een bepaald niveau, met honderden gespeelde partijen, is die rating een statistisch solide schatting van je niveau. Dat is geen geluk. De statistische stabiliteit is precies wat het Elosysteem is ontworpen om te meten.
+Als je al maanden [een stabiele Elorating](/nl/blog/elo-zelfbeeld-schaken/#de-psychologie-van-de-numerieke-rangschikking) hebt op een bepaald niveau, met honderden gespeelde partijen, is die rating een statistisch solide schatting van je niveau. Dat is geen geluk. De statistische stabiliteit is precies wat het Elosysteem is ontworpen om te meten. Waarom voelt [het passeren van de grens van 2000 Elo](/nl/blog/syndrome-imposteur-2000-elo/#waarom-2000-elo-zo39n-verraderlijke-drempel-is) dan soms alsof je je niveau opnieuw moet bewijzen?
 
 ## Strategieën voor transformatie
 

@@ -85,7 +85,7 @@ Uma novidade de abertura pode oferecer uma vantagem de preparação: você estud
 
 ![Legalidade e preparação: dois planos distintos](/images/pt-br/logique-modale-03-epistemique-preparation.svg)
 
-A analogia também tem um limite: os modelos clássicos de conhecimento frequentemente supõem fechamento por consequência lógica, enquanto um humano não calcula todas as consequências das regras. A surpresa tática se relaciona aqui a um limite de análise, sem que uma fórmula modal simples descreva automaticamente seu mecanismo.
+A analogia também tem um limite: os modelos clássicos de conhecimento frequentemente supõem fechamento por consequência lógica, enquanto um humano não calcula todas as consequências das regras. A surpresa tática se relaciona aqui a um limite de análise, sem que uma fórmula modal simples descreva automaticamente seu mecanismo. A distinção se estende à pergunta filosófica sobre [o que significa compreender uma regra de xadrez](/pt-br/blog/echecs-vs-philosophie-pensee-strategique/#wittgenstein-o-xadrez-como-laboratório-da-linguagem).
 
 ## Raciocínio modal e níveis de jogo
 

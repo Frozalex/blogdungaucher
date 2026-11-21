@@ -117,7 +117,7 @@ A solução não é não se preocupar com o Elo. É torná-lo um indicador entre
 
 **Definir-se como "alguém que ama o xadrez"** em vez de "alguém com um Elo de X". O amor ao jogo é uma identidade estável : não flutua após uma derrota. O Elo é um indicador de nível num determinado momento : flutua por natureza.
 
-**Celebrar progressos de jogo independentes da classificação**: "encontrei a defesa certa nesse final difícil", "calculei uma variante de 5 lances corretamente", "compreendi por que minha estrutura de peões estava fraca nessa partida". Esses progressos reais existem mesmo quando o Elo estagna ou cai.
+**Celebrar [progressos de jogo independentes da classificação](/pt-br/blog/xadrez-e-autoconfianca/#construir-referências-concretas)**: "encontrei a defesa certa nesse final difícil", "calculei uma variante de 5 lances corretamente", "compreendi por que minha estrutura de peões estava fraca nessa partida". Esses progressos reais existem mesmo quando o Elo estagna ou cai.
 
 **Fixar objetivos de processo**: "vou analisar cada partida esta semana", "vou estudar finais de torre 30 minutos por semana", "vou jogar um torneio presencial este mês". Esses objetivos estão sob seu controle, ao contrário do Elo que depende também dos adversários, da forma do dia e do acaso dos emparelhamentos.
 

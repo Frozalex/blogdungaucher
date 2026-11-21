@@ -65,7 +65,7 @@ Isso oferece uma base empírica para a pergunta sobre prever erros. O trabalho n
 
 A perspectiva bayesiana sobre erros tem uma consequência estratégica possível. Se você consegue estimar que suas complicações criam uma probabilidade alta de erro adversário, mesmo em uma posição objetivamente um pouco inferior, complicar pode ser a melhor estratégia.
 
-É uma decisão sob incerteza: comparar o ganho esperado na linha complicada, objetivamente desfavorável mas com alto risco de erro adversário, com o da linha mais simples, igual ou levemente favorável mas com menor risco de erro.
+É uma [decisão sob incerteza](/pt-br/blog/decisao-sob-incerteza-xadrez/): comparar o ganho esperado na linha complicada, objetivamente desfavorável mas com alto risco de erro adversário, com o da linha mais simples, igual ou levemente favorável mas com menor risco de erro.
 
 Em termos bayesianos, se $P(\text{erro} | \text{complicação}) \gt \text{limiar}$ for alto o suficiente para compensar a desvantagem objetiva, a complicação é favorecida pelo modelo. Esse “limiar” depende do contexto: em um torneio no qual precisa vencer, os pesos diferem de uma partida em que o empate basta.
 
@@ -89,7 +89,7 @@ O modelo tem limites importantes nesse contexto. As probabilidades condicionais 
 
 Para o amador, o raciocínio pode continuar útil, mas com menos precisão. Probabilidades genéricas de jogadores de nível semelhante, quando disponíveis, não são dados individuais do adversário.
 
-Outro limite é o viés de confirmação: ao buscar sinais de risco de erro adversário, você pode encontrar o que procura mesmo sem estar realmente presente. A disciplina bayesiana exige considerar também as evidências contra a hipótese.
+Outro limite é o [viés de confirmação](/pt-br/blog/vies-de-confirmacao-no-xadrez/): ao buscar sinais de risco de erro adversário, você pode encontrar o que procura mesmo sem estar realmente presente. A disciplina bayesiana exige considerar também as evidências contra a hipótese.
 
 ## Aplicações para o jogador prático
 

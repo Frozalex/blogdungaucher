@@ -75,7 +75,7 @@ Uma pesquisa sobre educação geral ou profissional não estabelece qual compone
 
 **Adaptar a dificuldade.** Quem começa pode trabalhar um mate básico, enquanto outra pessoa analisa uma partida. Os participantes não chegam com conhecimentos, experiências ou restrições idênticos. Regras comuns não significam igualdade prévia de recursos.
 
-**Dar espaço ao prazer.** Aprender um jogo, resolver um exercício ou compartilhar uma sessão pode ser um objetivo explícito. Não é preciso chamar esse lazer de “terapia” para reconhecer seu interesse.
+**Dar espaço ao prazer.** Aprender um jogo, resolver um exercício ou compartilhar uma sessão pode ser um objetivo explícito. Não é preciso chamar esse lazer de “terapia” para reconhecer seu interesse. A distinção entre [uma oficina e um tratamento](/pt-br/blog/xadrez-como-terapia/#uma-oficina-não-é-automaticamente-um-tratamento) também vale em outros contextos.
 
 ![Possibilidades educativas: rever uma decisão, compartilhar regras e adaptar exercícios, sem garantia de transformação pessoal.](/images/pt-br/echecs-prison-04-specificite-echecs.svg)
 

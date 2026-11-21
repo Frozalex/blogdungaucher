@@ -12,7 +12,7 @@ faq:
     answer: "No universal timescale is established here. Adapt variation length and check the resulting position."
 ---
 
-You calculate a variation without moving the pieces, then forget where a knight is. Visualisation requires keeping a position up to date while exploring its transformations. It may draw on images, relationships between pieces and chess knowledge; those descriptions are not mutually exclusive.
+You calculate a variation without moving the pieces, then forget where a knight is. Visualisation requires [keeping a position up to date](/en/blog/chess-and-working-memory/) while exploring its transformations. It may draw on images, relationships between pieces and chess knowledge; those descriptions are not mutually exclusive.
 
 ## Memory organised by knowledge
 

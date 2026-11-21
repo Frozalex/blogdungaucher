@@ -67,7 +67,7 @@ Na corte persa, o jogo se torna uma arte de elite, um refinamento de letrados e 
 
 Após a conquista da Pérsia pelos exércitos muçulmanos no século VII, o jogo é adotado pelo mundo islâmico sob o nome de **shatranj**. Nele conhece uma idade de ouro teórica.
 
-É aí que aparece uma característica visual decisiva: sob o efeito da relutância em representar figuras vivas, as peças se tornam **abstratas**, geométricas, distantes das figurinhas realistas. Essa forma estilizada viajará até a Europa e marcará duradouramente a aparência das peças.
+É aí que aparece uma característica visual decisiva: sob o efeito da [relutância em representar figuras vivas](/pt-br/blog/xadrez-religiao-e-proibicao/#o-islã-da-suspeita-à-tolerância-condicional), as peças se tornam **abstratas**, geométricas, distantes das figurinhas realistas. Essa forma estilizada viajará até a Europa e marcará duradouramente a aparência das peças.
 
 Sobretudo, o shatranj se torna objeto de estudo. Mestres como al-Adli ou as-Suli, nos séculos VIII e IX, redigem tratados, classificam as aberturas, compõem problemas (os *mansubat*) e estabelecem uma primeira teoria do jogo. Os melhores jogadores gozam de um prestígio considerável. Mil anos antes dos bancos de dados, já se analisa, cataloga, transmite.
 

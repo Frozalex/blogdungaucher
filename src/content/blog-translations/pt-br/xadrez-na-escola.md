@@ -102,7 +102,7 @@ Para demonstrar uma melhora dessas funções, seriam necessárias medidas adequa
 
 Uma atividade no horário escolar pode alcançar alunos que não frequentam clubes. Mas oferecer o mesmo tabuleiro a todos não basta: alguns já conhecem o jogo, outros estão descobrindo as regras, e as necessidades de leitura, manipulação e atenção variam.
 
-Preveja explicações visuais, duplas adequadas, materiais acessíveis e formas de participação que não se limitem aos torneios. Observe quem fala, quem espera e quem se afasta. O acesso cultural pode ser um objetivo por si só, sem acrescentar uma redução não demonstrada das desigualdades de desempenho.
+Preveja explicações visuais, duplas adequadas, materiais acessíveis e formas de participação que não se limitem aos torneios. Observe quem fala, quem espera e quem se afasta. O [acesso cultural pode ser um objetivo por si só](/pt-br/blog/xadrez-e-precariedade/#decidir-o-que-financiar-com-o-primeiro-orçamento), sem acrescentar uma redução não demonstrada das desigualdades de desempenho.
 
 ## Decidir o lugar do xadrez no horário escolar
 

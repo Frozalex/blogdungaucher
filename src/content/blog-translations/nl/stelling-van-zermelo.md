@@ -36,7 +36,7 @@ De stelling van Zermelo is van toepassing op een klasse van spellen waartoe scha
 
 **Formulering:** In elk spel van dit type is noodzakelijkerwijs een van drie situaties waar: speler 1 heeft een winnende strategie, of speler 2 heeft een winnende strategie, of beide spelers kunnen remise forceren.
 
-Het bewijs gebruikt **achterwaartse inductie** op de maximale mogelijke spellengte. Het is precies hetzelfde mechanisme als de moderne minimax-versie, 35 jaar eerder.
+Het bewijs gebruikt **achterwaartse inductie** op de maximale mogelijke spellengte. Het is precies hetzelfde mechanisme als de [moderne minimax-versie](/nl/blog/minimax-schaken/), 35 jaar eerder.
 
 Stel je een eindspelstelling voor die bereikt is. Elke eindstelling is ofwel winst voor wit, winst voor zwart, of remise. Ga nu een zet terug. Als het witwit is, kan wit kiezen uit de bereikbare eindstellingen de meest gunstige voor zichzelf. Door recursief terug te gaan van alle eindstellingen naar de beginpositie, krijgt elke stelling in de spelenboom een bepaalde waarde.
 
@@ -86,7 +86,7 @@ Het verschil tussen Carlsen en Stockfish is niet kwalitatief (de een speelt perf
 
 ## Perfect spel is niet ideaal spel
 
-Een andere dimensie van de paradox van Zermelo is filosofisch. Zelfs als de perfecte strategie zwart op wit geschreven was, zou je die echt willen spelen?
+Een andere dimensie van de paradox van Zermelo is filosofisch. Zelfs als de perfecte strategie zwart op wit geschreven was, zou je die echt willen spelen? Wat blijft er dan over van [de keuzevrijheid van de speler](/nl/blog/schaken-versus-filosofie/#sartre-vrijheid-in-de-noodzaak)?
 
 Stel je voor dat wit een geforceerde winst heeft in 80 zetten vanuit de beginpositie. Die geforceerde winst spelen zou betekenen dat elke partij in werkelijkheid al voorbij is op zet 1. De tegenstander kan spelen wat hij wil, het resultaat zou hetzelfde zijn. Schaken als spel zou ophouden te bestaan.
 

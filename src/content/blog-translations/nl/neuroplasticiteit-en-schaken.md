@@ -98,7 +98,7 @@ De meest geciteerde studie om te bewijzen dat leren het brein duurzaam verandert
 
 ## De logische sprong
 
-Laten we alles hierboven aannemen, en de studies toevoegen die rechtstreeks bij schaakspelers zijn uitgevoerd, die wel degelijk structurele verschillen tussen experts en beginners hebben aangetoond. Ons artikel over [schaken en het brein](/fr/blog/les-echecs-et-le-cerveau/) bespreekt dit in detail.
+Laten we alles hierboven aannemen, en de studies toevoegen die rechtstreeks bij schaakspelers zijn uitgevoerd, die wel degelijk structurele verschillen tussen experts en beginners hebben aangetoond. Ons artikel over [schaken en het brein](/nl/blog/schaken-en-het-brein/) bespreekt dit in detail.
 
 Er blijft een probleem, en dat is het echte onderwerp.
 
@@ -134,7 +134,7 @@ Het gaat er niet om te concluderen dat schaken niets doen. Ze doen veel, maar ni
 
 **Je wordt echt beter in schaken, en dat is een aanzienlijke cognitieve transformatie.** Een ervaren speler ziet niet hetzelfde bord als een beginner. Hij ziet structuren waar de ander stukken ziet, wat onderzoek *chunking* noemt. Deze vaardigheid is reëel, meetbaar en diepgaand. Ze is gewoon **specifiek**.
 
-**Sommige minder spectaculaire effecten houden beter stand.** Het verband tussen volgehouden cognitieve activiteiten en cognitieve reserve op hoge leeftijd is gedocumenteerd, ook al levert het causaliteitsproblemen op, en ons artikel over [schaken en alzheimer](/fr/blog/echecs-alzheimer-prevention-declin-cognitif/) bespreekt de beperkingen ervan.
+**Sommige minder spectaculaire effecten houden beter stand.** Het verband tussen volgehouden cognitieve activiteiten en cognitieve reserve op hoge leeftijd is gedocumenteerd, ook al levert het causaliteitsproblemen op, en ons artikel over [schaken en alzheimer](/nl/blog/schaken-alzheimer-preventie-cognitieve-achteruitgang/) bespreekt de beperkingen ervan.
 
 **En plezier heeft geen neurologische rechtvaardiging nodig.** Dat is misschien de echte inzet van dit hele artikel.
 
@@ -170,7 +170,7 @@ Schaken maakt je goed in schaken. Dat is al veel, en dat was al de enige eerlijk
 
 ---
 
-*Dit artikel maakt deel uit van een reeks over psychologie toegepast op schaken. Zie ook [het Dunning-Kruger-effect bij schaken](/fr/blog/effet-dunning-kruger-aux-echecs/) en [het overlevingsvooroordeel bij schaken](/fr/blog/biais-du-survivant-aux-echecs/).*
+*Dit artikel maakt deel uit van een reeks over psychologie toegepast op schaken. Zie ook [het Dunning-Kruger-effect bij schaken](/nl/blog/dunning-kruger-effect-schaken/) en [het overlevingsvooroordeel bij schaken](/nl/blog/overlevendenvooroordeel-schaken/).*
 
 ## Bronnen
 

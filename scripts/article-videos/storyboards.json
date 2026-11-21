@@ -56,7 +56,7 @@
     "category": "esprit",
     "title": "Analyser ses parties d'échecs : le guide pratique pour progresser vraiment",
     "sourceFile": "src/content/blog/esprit/analyser-ses-parties.md",
-    "sourceSha256": "8608a259a14e6b755e9d73258a77b90784e4706bcb0a268c11f94816e5fd1b75",
+    "sourceSha256": "d0b7be4563eee9ec32dd189bf876a4d926b880044e420194cedd6dea56b74e3c",
     "scenes": [
       {
         "role": "hook",
@@ -576,7 +576,7 @@
     "category": "esprit",
     "title": "Concentration aux échecs : garder et retrouver le fil du calcul",
     "sourceFile": "src/content/blog/esprit/echecs-et-concentration.md",
-    "sourceSha256": "f0e2679987b9fc7f2b7096097cc772e1b83c959ddd2b18d98292ae06a645fc1a",
+    "sourceSha256": "ec7a7bfc0b0ac449dbc5d6dedbf3cea72445d27f0a8ebfc92ef9b79a5df5990b",
     "scenes": [
       {
         "role": "hook",
@@ -3852,7 +3852,7 @@
     "category": "science",
     "title": "AlphaZero contre Stockfish : la révolution de l'intelligence artificielle aux échecs",
     "sourceFile": "src/content/blog/science/echecs-alphazero-stockfish.md",
-    "sourceSha256": "9ef46a2891f72f88391c4454bd7cf1e8de629d8810a74435cdf09171f7bf2ee5",
+    "sourceSha256": "d65ae6f93c3f10348fa050ee01102e9e962ed949d0e4f9b8a422a99c430a6571",
     "scenes": [
       {
         "role": "hook",
@@ -4216,7 +4216,7 @@
     "category": "science",
     "title": "Échecs et mémoire : mémoire de travail, chunks et parties qui restent",
     "sourceFile": "src/content/blog/science/echecs-et-memoire.md",
-    "sourceSha256": "8ed83198e0c9bcd7414e3e507ca6dad08e45862bd20b79898e6ecb0c3ea51930",
+    "sourceSha256": "ed158a58f83bf232222a866b7b2888c5abd6c860365f139373a86389f416756b",
     "scenes": [
       {
         "role": "hook",
@@ -4632,7 +4632,7 @@
     "category": "science",
     "title": "Effet placebo aux échecs : ce que la croyance change vraiment",
     "sourceFile": "src/content/blog/science/effet-placebo-aux-echecs.md",
-    "sourceSha256": "a47ad7281f735c32aaa495389decda0d909d006f282868de2be44c4c7ff82066",
+    "sourceSha256": "565b2036251d4c9cc4f100f48cac8d77e3fe6c3bbb9d406515f11dd7b7aba274",
     "scenes": [
       {
         "role": "hook",
@@ -4944,7 +4944,7 @@
     "category": "science",
     "title": "Les échecs et le cerveau : ce que la science révèle vraiment",
     "sourceFile": "src/content/blog/science/les-echecs-et-le-cerveau.md",
-    "sourceSha256": "0e407d6cabfeb944eb612465faa92d234b7cb20422eb02618d62da5a5c4ce2e9",
+    "sourceSha256": "fd50701f1457369e140f19a5723da58a93ff1ed664a8d8ebce9baa7d28323d21",
     "scenes": [
       {
         "role": "hook",
@@ -5100,7 +5100,7 @@
     "category": "science",
     "title": "Logique modale aux échecs : raisonner en 'gagnant si...'",
     "sourceFile": "src/content/blog/science/logique-modale-aux-echecs.md",
-    "sourceSha256": "bff47fd27cffd412bf4c5f7d86cd15c01dbf71de49c59079b49c5c9d64bd6a10",
+    "sourceSha256": "cbd1ec891814978fdfc9bd36cc2ef9257848bcce2f273871fc7b8a2498af0a13",
     "scenes": [
       {
         "role": "hook",
@@ -5620,7 +5620,7 @@
     "category": "science",
     "title": "Paradoxe de Zermelo : l'imperfection du jeu parfait",
     "sourceFile": "src/content/blog/science/paradoxe-de-zermelo.md",
-    "sourceSha256": "14e3bb616895129e2bc87f03439a3b1a3ffe2270c2c4dfb73a6dc20e5df4ccd7",
+    "sourceSha256": "cd11916f8dcafba494d168a99730ead2c20a1ef80394e99592d6d82bc4fdcbf1",
     "scenes": [
       {
         "role": "hook",
@@ -6452,7 +6452,7 @@
     "category": "societe",
     "title": "Échecs et autisme : accueillir les joueurs sans promettre une thérapie",
     "sourceFile": "src/content/blog/societe/echecs-et-autisme.md",
-    "sourceSha256": "612a365df8540e352e6c927892cb8674f7be88d8b7ef90763ac8ac5caeb760ae",
+    "sourceSha256": "982e5d786374bc3e5dadc2367c334f9a913e6095329d26c4673b107a207c6ad5",
     "scenes": [
       {
         "role": "hook",
@@ -6816,7 +6816,7 @@
     "category": "societe",
     "title": "Échecs et haut potentiel intellectuel : l'échiquier comme espace HPI",
     "sourceFile": "src/content/blog/societe/echecs-et-hpi.md",
-    "sourceSha256": "197e5b02216f89426a5e03a3a4eddc9b7fb4a19050b383ba59ced03dc679fa29",
+    "sourceSha256": "795dcce65c2d8947312b76ae513e8d3ce4b199ab6bdfc53363f2f55f2c42ed18",
     "scenes": [
       {
         "role": "hook",
@@ -7076,7 +7076,7 @@
     "category": "societe",
     "title": "Échecs et TDAH : un loisir à adapter, des bénéfices cliniques à établir",
     "sourceFile": "src/content/blog/societe/echecs-et-tdah.md",
-    "sourceSha256": "9855cf567bb6ea844abae45d9bd670a9162149209f87c1e786e5065e975a835f",
+    "sourceSha256": "c8565d4d027ef2e9ac375a70f6c4d539041e4dfca5a874dcf9b6e09ebfb440d0",
     "scenes": [
       {
         "role": "hook",
@@ -7180,7 +7180,7 @@
     "category": "societe",
     "title": "Échecs et religion : mille ans d'interdits, de fatwas et de réhabilitations",
     "sourceFile": "src/content/blog/societe/echecs-religion-et-interdit.md",
-    "sourceSha256": "f471038eaa809a0095d9c246385a3fca4e4436895dd8ca917f2574f8d942dba3",
+    "sourceSha256": "a02534c8209e90bc931813507402c08ab82d36ff5c89bbb3fcd734103b498c9e",
     "scenes": [
       {
         "role": "hook",
@@ -7232,7 +7232,7 @@
     "category": "societe",
     "title": "Échecs et philosophie : quand le jeu devient pensée",
     "sourceFile": "src/content/blog/societe/echecs-vs-philosophie-pensee-strategique.md",
-    "sourceSha256": "81f09a540af645eea71c4064bce452e4530146b3963ef9f82c0ce198a86b49d6",
+    "sourceSha256": "953aec30b245e703bd022e7f775a71079c49af086cdce2765bc70c072935ae2e",
     "scenes": [
       {
         "role": "hook",
@@ -7440,7 +7440,7 @@
     "category": "societe",
     "title": "Échecs et addiction : quand le jeu prend trop de place",
     "sourceFile": "src/content/blog/societe/les-echecs-et-l-addiction.md",
-    "sourceSha256": "07dce66238fb482e5af355b145b5fe530876ec35459bc1fdc77e2142be23cb2b",
+    "sourceSha256": "030e5605656a5715c1fb306925bde60faedd03e89f0d684ea469479b1925b0e4",
     "scenes": [
       {
         "role": "hook",
@@ -7648,7 +7648,7 @@
     "category": "societe",
     "title": "La psychologie de la persuasion aux échecs : comment on te vend la progression",
     "sourceFile": "src/content/blog/societe/psychologie-de-la-persuasion-aux-echecs.md",
-    "sourceSha256": "9944c0644dee37fb0bae00eea8f8a081a4d93d6ebc15898300a8d215e5d333c0",
+    "sourceSha256": "ce2f92095c78508d116b192216811f233f07d2adc7fddd707685ab3bd9da27e8",
     "scenes": [
       {
         "role": "hook",

@@ -46,7 +46,7 @@ La tâche, la fatigue et les distractions doivent donc être examinées séparé
 
 Tu peux chercher des signes concrets : reprendre sans cesse la même ligne, oublier la menace adverse, regarder le classement au lieu de la position. Aucun ne suffit à diagnostiquer un trouble de l’attention. Ils indiquent surtout qu’un changement de méthode mérite d’être essayé.
 
-Il n’y a pas de seuil universel de 90 à 120 minutes après lequel le cortex manquerait de glucose ou de neurotransmetteurs. Une longue partie peut être éprouvante sans que chaque erreur provienne de la fatigue.
+Il n’y a pas de seuil universel de 90 à 120 minutes après lequel le cortex manquerait de glucose ou de neurotransmetteurs. On peut reconnaître [la fatigue ressentie après une longue partie](/fr/blog/echecs-et-le-corps/#la-fatigue-reste-une-expérience-réelle) sans lui attribuer chaque erreur.
 
 ## Revenir à une question utile
 

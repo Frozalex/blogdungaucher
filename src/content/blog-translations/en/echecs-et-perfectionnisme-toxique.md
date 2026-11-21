@@ -12,7 +12,7 @@ faq:
     answer: "No. The time control, difficulty and remaining time vary. A practical guideline should not replace examination of the position."
 ---
 
-Finding a good move and understanding a mistake are part of chess’s enjoyment. Difficulty arises when you can no longer decide, stop an analysis or play a game that might be imperfect.
+Finding a good move and [understanding a mistake](/en/blog/how-to-analyze-chess-games/) are part of chess’s enjoyment. Difficulty arises when you can no longer decide, stop an analysis or play a game that might be imperfect.
 
 “Toxic” here describes the cost these demands may have for you. It is not a diagnosis, and time spent on a position is not enough to establish one.
 

@@ -40,7 +40,7 @@ After a blunder, you speed up, want to “make up for it” immediately or start
 
 The meta-analysis by Shields and colleagues (2016) shows that acute stress can affect working memory and cognitive flexibility, with more nuanced effects on inhibition. It does not measure the mechanism of every online blunder.
 
-For analysis, note the emotion and mistake separately: “I was angry”, then “I did not check the intermediate check”. You can then seek a concrete adjustment without treating the emotion as a sufficient explanation for everything.
+For analysis, [note the emotion and mistake separately](/en/blog/emotional-intelligence-in-chess/#the-protocol): “I was angry”, then “I did not check the intermediate check”. You can then seek a concrete adjustment without treating the emotion as a sufficient explanation for everything.
 
 If you can stop a session that leads to repeated regretted decisions, try that interruption. In a tournament, where you cannot freely suspend the game, return to a simple check and the time actually available.
 

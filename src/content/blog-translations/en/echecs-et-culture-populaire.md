@@ -47,7 +47,7 @@ In *From Russia with Love* (1963), Kronsteen is introduced as a formidable chess
 
 This association (chess = cold intelligence, potentially threatening) isn't accidental. It reflects a cultural imaginary built on two pillars: the asocial genius and the metaphor of manipulation (the board as a space where one moves others like pieces).
 
-Ingmar Bergman, in *The Seventh Seal* (1957), pushes the metaphor to its extreme: the medieval knight challenges Death over the chess board to delay the end. The board becomes the place of existential negotiation.
+Ingmar Bergman, in *The Seventh Seal* (1957), pushes the metaphor to its extreme: the medieval knight challenges Death over the chess board to delay the end. The board becomes the place of existential negotiation. The medieval friar Jacobus de Cessolis [used the chessmen to teach moral lessons](/en/blog/echecs-religion-et-interdit/#the-reversal-a-chessboard-becomes-a-moral-lesson), giving each piece a role in society.
 
 ## Stefan Zweig and Chess Literature
 
@@ -73,7 +73,7 @@ The impact on actual practice was immediate and measurable. Chess.com published 
 
 In parallel with *The Queen's Gambit*, another cultural transformation was underway: the rise of streamed chess.
 
-Hikaru Nakamura began streaming on Twitch in 2017. His channel exploded during the pandemic, with up to 50,000 simultaneous viewers.
+Hikaru Nakamura began [streaming on Twitch](/en/blog/chess-and-streaming/) in 2017. His channel exploded during the pandemic, with up to 50,000 simultaneous viewers.
 
 Levy Rozman (GothamChess) developed a YouTube format of game analysis with an accessible, humorous, emotional tone, celebrating beautiful combinations, suffering blunders. His channel exceeds 4 million subscribers.
 

@@ -47,7 +47,7 @@ Le règlement FIDE décrit une mesure fondée sur les résultats face à des adv
 
 Il n'existe donc pas un gain universel de 16 points après une victoire contre un adversaire de même cote. Avec K = 20 et un score attendu de 0,5, la variation théorique d'une telle partie est de 10 points, avant les règles d'agrégation et d'arrondi. Les coefficients des deux joueurs peuvent différer.
 
-Ce calcul ne mesure ni ta valeur personnelle ni tout ce que tu sais faire. Un résultat apporte de l'information sur ta performance ; il ne résume pas ton identité.
+Ce calcul ne mesure ni ta valeur personnelle ni tout ce que tu sais faire. Un résultat apporte de l'information sur ta performance ; il ne résume pas ton identité. Pour travailler [la confiance dans ta capacité à accomplir une tâche](/fr/blog/echecs-et-confiance-en-soi/), choisis par exemple une finale dont tu peux vérifier la technique.
 
 ## Quand le nombre prend trop de place
 

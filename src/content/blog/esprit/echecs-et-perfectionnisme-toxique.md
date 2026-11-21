@@ -27,7 +27,7 @@ Le mot « toxique » décrit ici le coût que cette exigence peut avoir pour toi
 
 ## Repérer ce qui te coûte
 
-Tu peux examiner trois situations : recommencer sans cesse le même calcul, prolonger une analyse alors qu’elle n’apporte plus rien, reporter une partie parce que ta préparation ne te semble jamais suffisante.
+Tu peux examiner trois situations : recommencer sans cesse le même calcul, prolonger une analyse alors qu’elle n’apporte plus rien, [reporter une partie parce que ta préparation ne te semble jamais suffisante](/fr/blog/echecs-et-procrastination/).
 
 Chacune peut avoir plusieurs explications. Une position peut exiger une vérification longue. Un entraînement peut être reporté parce que tu manques de temps. Évite de transformer un épisode en portrait de personnalité.
 

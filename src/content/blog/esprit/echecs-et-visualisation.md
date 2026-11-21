@@ -36,7 +36,7 @@ faq:
     answer: "Aucun délai universel n'est établi ici. Adapte la longueur des variantes et vérifie la position obtenue."
 ---
 
-Tu calcules une variante sans déplacer les pièces, puis tu oublies où se trouve un cavalier. La visualisation demande de garder une position à jour pendant que tu explores ses transformations. Elle peut s'appuyer sur des images, des relations entre pièces et des connaissances de jeu ; ces descriptions ne s'excluent pas.
+Tu calcules une variante sans déplacer les pièces, puis tu oublies où se trouve un cavalier. La visualisation demande de [garder une position à jour](/fr/blog/echecs-memoire-de-travail/) pendant que tu explores ses transformations. Elle peut s'appuyer sur des images, des relations entre pièces et des connaissances de jeu ; ces descriptions ne s'excluent pas.
 
 ## Une mémoire organisée par les connaissances
 

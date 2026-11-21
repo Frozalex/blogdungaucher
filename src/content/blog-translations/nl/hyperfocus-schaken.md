@@ -73,7 +73,7 @@ Maar hyperfocus heeft een prijs die zwaar kan wegen.
 
 ## Flow is niet hetzelfde als hyperfocus
 
-Hyperfocus en **flow** (het begrip geïntroduceerd door [Mihály Csíkszentmihályi](https://nl.wikipedia.org/wiki/Mih%C3%A1ly_Cs%C3%ADkszentmih%C3%A1lyi)) worden vaak verward. Het zijn verwante maar onderscheiden toestanden.
+Hyperfocus en **[flow](/nl/blog/schaken-en-flow/)** (het begrip geïntroduceerd door [Mihály Csíkszentmihályi](https://nl.wikipedia.org/wiki/Mih%C3%A1ly_Cs%C3%ADkszentmih%C3%A1lyi)) worden vaak verward. Het zijn verwante maar onderscheiden toestanden.
 
 Flow kenmerkt zich door:
 - Een nauwkeurig evenwicht tussen de moeilijkheid van de taak en de vaardigheid van de persoon.

@@ -9,7 +9,7 @@ frSlug: "echecs-et-visualisation"
 faq: [{"question": "É preciso ver uma imagem fotográfica?", "answer": "Não. Os conhecimentos e as relações entre as peças podem sustentar a representação, sem excluir uma experiência de imagem mental."}, {"question": "Quanto tempo leva para progredir?", "answer": "Nenhum prazo universal é estabelecido aqui. Adapte a extensão das variantes e confira a posição obtida."}]
 ---
 
-Você calcula uma variante sem mover as peças e depois esquece onde está um cavalo. A visualização exige manter uma posição atualizada enquanto explora suas transformações. Pode se apoiar em imagens, relações entre as peças e conhecimentos de jogo; essas descrições não se excluem.
+Você calcula uma variante sem mover as peças e depois esquece onde está um cavalo. A visualização exige [manter uma posição atualizada enquanto explora suas transformações](/pt-br/blog/xadrez-memoria-de-trabalho/#por-que-o-xadrez-exige-tanto-da-memória-de-trabalho). Pode se apoiar em imagens, relações entre as peças e conhecimentos de jogo; essas descrições não se excluem.
 
 ## Uma memória organizada pelo conhecimento
 

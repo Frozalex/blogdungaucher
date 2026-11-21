@@ -53,7 +53,7 @@ Ces questionnaires ne démontrent pas, à eux seuls, une chaîne causale allant 
 
 ## Accueillir sans transformer la sortie en examen
 
-Si tu accompagnes un jeune joueur, tu peux commencer par lui demander s’il souhaite parler maintenant. Une question sur la faim, la fatigue ou l’envie de retrouver ses amis laisse une place à autre chose que le score. Propose ensuite l’analyse au lieu de l’imposer.
+Si tu accompagnes un jeune joueur, tu peux commencer par lui demander s’il souhaite parler maintenant. Une question sur la faim, la fatigue ou l’envie de retrouver ses amis laisse une place à autre chose que le score. Tu peux aussi lui laisser l’initiative [quand tu lui apprends à jouer](/fr/blog/echecs-et-enfants/) : quelle pièce ou quelle position aimerait-il essayer ? Propose ensuite l’analyse au lieu de l’imposer.
 
 Tu peux reconnaître sa déception sans confirmer chaque explication. « Je comprends que tu sois déçu » n’implique pas que la pendule, l’adversaire ou l’arbitre soit responsable. Inversement, ne suppose pas une excuse avant d’avoir écouté ce qui s’est passé.
 

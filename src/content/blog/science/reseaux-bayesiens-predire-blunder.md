@@ -75,7 +75,7 @@ Cela donne une base empirique à la question de la prédiction des erreurs. Leur
 
 La perspective bayésienne sur le blunder a une conséquence stratégique directe. Si tu peux estimer que tes complications créent une probabilité élevée d'erreur adverse, même dans une position objectivement légèrement inférieure, compliquer peut être la meilleure stratégie.
 
-C'est une décision sous incertitude : comparer l'espérance de gain dans la ligne compliquée (défavorable objectivement mais avec risque élevé d'erreur adverse) versus la ligne plus simple (égale ou légèrement favorable mais avec faible risque d'erreur).
+C'est une [décision sous incertitude](/fr/blog/decision-sous-incertitude-aux-echecs/) : comparer l'espérance de gain dans la ligne compliquée (défavorable objectivement mais avec risque élevé d'erreur adverse) versus la ligne plus simple (égale ou légèrement favorable mais avec faible risque d'erreur).
 
 En termes bayésiens, si $P(\text{blunder} | \text{complication}) > \text{seuil}$ est suffisamment élevé pour compenser le désavantage objectif de la complication, la complication est correcte. Ce "seuil" dépend du contexte : dans un tournoi où tu as besoin d'une victoire, la pondération est différente d'une partie où le nul suffit.
 
@@ -85,7 +85,7 @@ Cette décision doit aussi tenir compte de ton propre risque d’erreur. Une com
 
 ## L'adversaire comme source d'information continue
 
-Dans une partie, l'adversaire te fournit de l'information à chaque coup. Du temps utilisé, du style de jeu révélé, des réactions aux complications. La perspective bayésienne formelle dit : utilise toute cette information pour mettre à jour en permanence ton estimation de son état cognitif et de ses ressources.
+Dans une partie, l'adversaire te fournit de l'information à chaque coup. Du temps utilisé, du style de jeu révélé, des réactions aux complications. Pour [anticiper le plan adverse](/fr/blog/neurones-miroirs-aux-echecs/#trois-questions-pour-examiner-le-dernier-coup-adverse), il reste à confronter ton interprétation aux menaces présentes sur l’échiquier. La perspective bayésienne formelle dit : utilise toute cette information pour mettre à jour en permanence ton estimation de son état cognitif et de ses ressources.
 
 Si l'adversaire a utilisé 15 minutes sur un coup que tu avais vu rapidement, deux interprétations sont possibles : soit la position est plus complexe que tu ne le pensais (mise à jour de ta propre analyse), soit l'adversaire est en difficulté (mise à jour de ton estimation de son état). La bonne réponse bayésienne est de peser les deux interprétations selon leur vraisemblance.
 
@@ -99,7 +99,7 @@ Le modèle bayésien a des limites importantes dans ce contexte. Les probabilit�
 
 Pour le joueur amateur, le raisonnement reste utile mais moins précis. Les probabilités sont des priors génériques basés sur des statistiques de joueurs de même niveau, non sur des données individuelles.
 
-Une autre limite est le biais de confirmation : en cherchant des signaux de risque de blunder chez l'adversaire, tu risques de trouver ce que tu cherches même si ce n'est pas réellement présent. La discipline bayésienne exige de considérer également les preuves contre l'hypothèse.
+Une autre limite est le [biais de confirmation](/fr/blog/biais-de-confirmation-aux-echecs/) : en cherchant des signaux de risque de blunder chez l'adversaire, tu risques de trouver ce que tu cherches même si ce n'est pas réellement présent. La discipline bayésienne exige de considérer également les preuves contre l'hypothèse.
 
 ## Applications concrètes pour le joueur pratique
 

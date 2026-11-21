@@ -63,7 +63,7 @@ O contato pode ser um objetivo razoável a explorar, mas o jogo não garante seu
 
 [A Assembleia Geral da ONU proclamou em 2019 o 20 de julho como Dia Mundial do Xadrez](https://www.un.org/en/observances/world-chess-day). Esse reconhecimento institucional destaca cooperação e diálogo. Não constitui um estudo de eficácia nem prova de que torneios tenham reduzido conflitos.
 
-Um exemplo concreto é **Chess for Protection**: a [FIDE descreveu em 2024 uma seleção de jogadores em Kakuma](https://www.fide.com/refugee-team-ready-to-compete-on-global-stage-at-chess-olympiad/) em um projeto que envolve ACNUR, Lutheran World Federation, Chess Kenya e Kakuma Chess Club. Nomear os parceiros evita confundir ACNUR, UNICEF e a ONU como um todo.
+Um exemplo concreto é **Chess for Protection**: a [FIDE descreveu em 2024 uma seleção de jogadores em Kakuma](https://www.fide.com/refugee-team-ready-to-compete-on-global-stage-at-chess-olympiad/) em um projeto que envolve ACNUR, Lutheran World Federation, Chess Kenya e Kakuma Chess Club. Nomear os parceiros evita confundir ACNUR, UNICEF e a ONU como um todo. O artigo sobre [xadrez e imigração](/pt-br/blog/xadrez-e-imigracao/) examina também os limites do clube como espaço de acolhimento.
 
 A publicação documenta atividades organizadas. Não permite concluir que o jogo trate consequências de traumas ou estabeleça paz entre comunidades. Um lazer ou uma oportunidade de representação internacional pode ter valor sem se tornar uma intervenção clínica.
 

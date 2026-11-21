@@ -100,7 +100,7 @@ Bij schaken bevindt de ouder zich in een gang. De zaal is gesloten, de stilte is
 
 Hier vloeien drie gevolgen uit voort.
 
-**Het kind beleeft de beproeving volledig alleen.** Geen rust, geen coach langs het veld, geen teamgenoot. Dit is het onderwerp van ons artikel over eenzaamheid bij schaken, en het wordt verergerd op tienjarige leeftijd.
+**Het kind beleeft de beproeving volledig alleen.** Geen rust, geen coach langs het veld, geen teamgenoot. Dit is het onderwerp van ons artikel over [eenzaamheid bij schaken](/nl/blog/schaken-en-eenzaamheid/), en het wordt verergerd op tienjarige leeftijd.
 
 **De ouder ontvangt alleen een resultaat.** Geen context, geen nuance, geen beeld van de geleverde inspanning. Alleen een letter op een indelingsblad. Wat, mechanisch, al zijn aandacht concentreert op die letter, bij gebrek aan andere informatie om zijn oordeel te nuanceren.
 
@@ -120,11 +120,11 @@ Vanaf dat moment speelt het niet meer tegen zijn tegenstander. Het speelt tegen 
 
 ### De trainer die uniek is geworden
 
-Schaken bevordert lange en exclusieve pedagogische relaties. Een kind kan jarenlang met dezelfde trainer werken, vaak onder vier ogen, aan een onderwerp dat zijn hele identiteit structureert.
+Schaken bevordert lange en exclusieve pedagogische relaties. Die kunnen al beginnen tijdens [de eerste schaaklessen van een kind](/nl/blog/schaken-en-kinderen/). Een kind kan jarenlang met dezelfde trainer werken, vaak onder vier ogen, aan een onderwerp dat zijn hele identiteit structureert.
 
 Dit is een krachtige configuratie wanneer ze werkt: Davis en Jowett tonen aan dat een trainer die de functie van veilige basis correct vervult risico's mogelijk maakt, en dus vooruitgang, en een sneller leren van veeleisende stellingen faciliteert. Je durft een nieuwe opening, een offer, een te sterk toernooi, omdat je weet waar je naar kunt terugkeren.
 
-En het is een risicovolle configuratie wanneer het misloopt. Een hechtingsfiguur beschikt over een hefboom die geen enkele gewone leraar bezit: die van goedkeuring voorwaardelijk maken. Dat is wat sommige coachingrelaties zo moeilijk te verlaten maakt, zelfs wanneer ze kwaad doen. Ons artikel over gaslighting bij schaken beschrijft een verwant mechanisme.
+En het is een risicovolle configuratie wanneer het misloopt. Een hechtingsfiguur beschikt over een hefboom die geen enkele gewone leraar bezit: die van goedkeuring voorwaardelijk maken. Dat is wat sommige coachingrelaties zo moeilijk te verlaten maakt, zelfs wanneer ze kwaad doen. Ons artikel over [gaslighting bij schaken](/nl/blog/gaslighting-bij-schaken/) beschrijft een verwant mechanisme.
 
 ### De volwassen speler die geen basis meer heeft
 

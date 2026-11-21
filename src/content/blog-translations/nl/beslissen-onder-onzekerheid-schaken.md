@@ -22,11 +22,11 @@ Dit moment is niets uitzonderlijks: het is de standaardsituatie bij schaken. Een
 
 Bij schaken staat het woord "onzekerheid" overal. Voordat we verder gaan, moet dit artikel van enkele buren gescheiden worden.
 
-**Dit is geen speltheorie.** De [speltheorie bij schaken](/fr/blog/theorie-des-jeux-aux-echecs/) bestudeert de strategische interactie tussen spelers: evenwichten, wederzijdse verwachtingen, optimale strategieën bij volledige informatie. Hier gaat het om een preciezer onderwerp: de *individuele* beslissing tegenover onzekerheid.
+**Dit is geen speltheorie.** De [speltheorie bij schaken](/nl/blog/speltheorie-schaken/) bestudeert de strategische interactie tussen spelers: evenwichten, wederzijdse verwachtingen, optimale strategieën bij volledige informatie. Hier gaat het om een preciezer onderwerp: de *individuele* beslissing tegenover onzekerheid.
 
-**Dit is geen zuivere bayesiaanse statistiek.** Het artikel over [bayesiaanse netwerken bij schaken](/fr/blog/reseaux-bayesiens-predire-blunder/) bekijkt hoe je statistische modellen bouwt om gebeurtenissen te voorspellen (blunders, winsten). Hier gaat het om het gebruik van bayesiaans redeneren als een besluitvormingsmethode in real time.
+**Dit is geen zuivere bayesiaanse statistiek.** Het artikel over [bayesiaanse netwerken bij schaken](/nl/blog/bayesiaanse-netwerken-blunders/) bekijkt hoe je statistische modellen bouwt om gebeurtenissen te voorspellen (blunders, winsten). Hier gaat het om het gebruik van bayesiaans redeneren als een besluitvormingsmethode in real time.
 
-**Dit is geen algoritmische complexiteit.** Het feit dat schaken een EXPTIME-compleet probleem is (zie [waarom schaken een onmogelijk wiskundig probleem is](/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/)) verklaart waarom je *moet* beslissen onder onzekerheid. Maar het hoe, dat is hier.
+**Dit is geen algoritmische complexiteit.** Het feit dat schaken een EXPTIME-compleet probleem is (zie [waarom schaken een onmogelijk wiskundig probleem is](/nl/blog/schaken-onoplosbaar-wiskunde-ai/)) verklaart waarom je *moet* beslissen onder onzekerheid. Maar het hoe, dat is hier.
 
 De inzet van dit artikel: wat te doen op het precieze moment dat je aarzelt tussen meerdere zetten en weet dat je niet alles zult weten.
 
@@ -100,7 +100,7 @@ Je eigen verliesaversievertekeningen herkennen is de eerste stap om ze te corrig
 
 Deze intuïtie is centraal bij schaken. Je hebt geen tijd om de wiskundig beste zet te vinden in een complexe stelling. Je zoekt een zet die aan een aanvaardbaar kwaliteitsdrempel voldoet, en je speelt. De gewonnen tijd kan elders dienen: op een ander moment in de partij waar het rendabeler zal zijn.
 
-Simon heeft dit idee zelfs geformaliseerd voor schaken in zijn werk over expertise. Sterke spelers berekenen niet uitputtend: ze gebruiken heuristieken gebaseerd op patroonherkenning (chunk-theorie, zie [schaken en het brein](/fr/blog/les-echecs-et-le-cerveau/)) om de zoekruimte te reduceren tot enkele kandidaatzetten, en analyseren die kandidaten dan met meer diepgang.
+Simon heeft dit idee zelfs geformaliseerd voor schaken in zijn werk over expertise. Sterke spelers berekenen niet uitputtend: ze gebruiken heuristieken gebaseerd op patroonherkenning (chunk-theorie, zie [schaken en het brein](/nl/blog/schaken-en-het-brein/)) om de zoekruimte te reduceren tot enkele kandidaatzetten, en analyseren die kandidaten dan met meer diepgang.
 
 Satisficing bij schaken vertaalt zich als volgt:
 

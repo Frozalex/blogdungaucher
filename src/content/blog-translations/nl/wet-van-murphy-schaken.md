@@ -57,7 +57,7 @@ Je merkt ook het patroon "op het slechtste moment" op omdat je aandacht al geric
 
 ## Murphy in de clubomgeving
 
-Het murphy-verhaal is besmettelijk. Na een pijnlijke nederlaag stelt "het is de wet van Murphy" twee psychologische behoeften gerust: **de pijn verklaren** en de vernedering **normaliseren** door haar universeel te maken. Dat is niet altijd onjuist (fouten bestaan nu eenmaal), maar dit mechanisme kan een excuus worden om het werkelijke mechanisme niet te analyseren: slecht tijdbeheer, een terugkerend patroon van nalatigheid op een bepaald veld, chronische vermoeidheid.
+Het murphy-verhaal is besmettelijk. Na een pijnlijke nederlaag stelt "het is de wet van Murphy" twee psychologische behoeften gerust: **de pijn verklaren** en de vernedering **normaliseren** door haar universeel te maken. Dat is niet altijd onjuist (fouten bestaan nu eenmaal), maar dit mechanisme kan een excuus worden om het werkelijke mechanisme niet te analyseren: [slecht tijdbeheer](/nl/blog/tijdbeheer-schaakklok/#praktische-tijdbeheerheuristieken), een terugkerend patroon van nalatigheid op een bepaald veld, chronische vermoeidheid.
 
 ## Praktische tegengiften (zonder magie)
 

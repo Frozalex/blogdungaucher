@@ -47,7 +47,7 @@ Tente ficar cinco horas sem feedback externo sobre uma decisão em andamento. Se
 
 É o que vive um jogador numa partida longa. A posição muda, as ameaças evoluem, o tempo aperta, e o único interlocutor disponível é seu próprio cálculo.
 
-Os psicólogos cognitivos chamam isso de monólogo interior : o fluxo de pensamento verbal que acompanha a reflexão. Nas posições difíceis, esse monólogo pode se tornar ansioso, repetitivo, circular. *"Vejo essa ameaça. Perdi algo? Essa variante está correta?"* Sem nenhum sinal externo para calibrar, o jogador deve aprender a confiar no próprio raciocínio, ou a viver com a incerteza de não poder fazê-lo.
+Os psicólogos cognitivos chamam isso de monólogo interior : o fluxo de pensamento verbal que acompanha a reflexão. Nas posições difíceis, [esse monólogo pode se tornar ansioso, repetitivo, circular](/pt-br/blog/rede-modo-padrao-xadrez/#ruminação-e-recuperação). *"Vejo essa ameaça. Perdi algo? Essa variante está correta?"* Sem nenhum sinal externo para calibrar, o jogador deve aprender a confiar no próprio raciocínio, ou a viver com a incerteza de não poder fazê-lo.
 
 É um treinamento cognitivo real. É também uma fonte de estresse particular que a literatura sobre o xadrez raramente celebra.
 

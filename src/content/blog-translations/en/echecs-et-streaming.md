@@ -57,7 +57,7 @@ Twitch's analytics guide distinguishes average concurrent viewers, unique viewer
 
 Give the club a concrete goal and the interpretation changes. If the organisers want beginners to know where they can play, a link to a public meeting and a voluntary question at the door can tell them more than the peak audience. If they want members abroad to follow the championship, a full replay with round numbers and timestamps may be more valuable than a highlight with many views. Keep the question narrow: how many newcomers *said* they heard about this session on the broadcast? Somebody who saw three clips, heard about the club from a friend and then attended has a more complicated story than a single referral can capture.
 
-The pandemic and the release of *The Queen's Gambit* in 2020 gave online chess several overlapping sources of attention. A rise in registrations during the same period cannot allocate credit between a drama, a tournament, a creator and people looking for a game with friends. A registered account can also go unused. Claims about lasting participation need observations over time, such as new entrants who return for later rounds under the same counting rule.
+The pandemic and the [release of *The Queen's Gambit*](/en/blog/chess-and-popular-culture/) in 2020 gave online chess several overlapping sources of attention. A rise in registrations during the same period cannot allocate credit between a drama, a tournament, a creator and people looking for a game with friends. A registered account can also go unused. Claims about lasting participation need observations over time, such as new entrants who return for later rounds under the same counting rule.
 
 ## The work behind a club broadcast
 

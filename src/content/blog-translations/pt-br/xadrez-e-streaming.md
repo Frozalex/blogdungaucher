@@ -48,7 +48,7 @@ O painel da Twitch distingue público simultâneo médio, espectadores únicos e
 
 O clube precisa escolher qual pergunta merece o esforço de contar. Se a intenção era convidar iniciantes para o encontro de sábado, registre os horários da transmissão e pergunte aos novos participantes, de forma voluntária, como conheceram o evento. Se a ideia era permitir que familiares de outras cidades acompanhassem a final, uma reprise bem identificada pode cumprir o objetivo mesmo com poucas pessoas ao vivo. Convém anotar a resposta com as palavras usadas pela pessoa. Quem recebeu o link de um amigo depois de ver um vídeo curto percorreu mais de um caminho.
 
-A pandemia e a chegada de *O Gambito da Rainha* em 2020 deram visibilidade ao jogo num período em que várias formas de entretenimento disputavam o tempo das mesmas pessoas. Abrir uma conta, assistir à série e comparecer a uma segunda rodada no clube são acontecimentos distintos. Para falar de continuidade, vale acompanhar o mesmo grupo ao longo de várias datas. Um pico de acessos numa noite de final pode ser um bom resultado para o organizador daquela final, embora nada diga sobre a próxima edição.
+A pandemia e a [chegada de *O Gambito da Rainha*](/pt-br/blog/xadrez-na-cultura-popular/#o-gambito-da-rainha--a-ruptura) em 2020 deram visibilidade ao jogo num período em que várias formas de entretenimento disputavam o tempo das mesmas pessoas. Abrir uma conta, assistir à série e comparecer a uma segunda rodada no clube são acontecimentos distintos. Para falar de continuidade, vale acompanhar o mesmo grupo ao longo de várias datas. Um pico de acessos numa noite de final pode ser um bom resultado para o organizador daquela final, embora nada diga sobre a próxima edição.
 
 ## Como usar uma reprise no treino
 

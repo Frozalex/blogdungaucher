@@ -72,7 +72,7 @@ De aantrekkingskracht van schaken als emancipatiemiddel berust op een simpel ide
 
 Deze formele gelijkheid is reëel. En dat is de reden waarom opvoeders, maatschappelijk werkers en activisten keer op keer naar schaken hebben gegrepen als pedagogisch instrument in achterstandsomgevingen.
 
-Het idee heeft een lange geschiedenis. Schaakprogramma's in achterstandswijken in Amerika bestaan al sinds de jaren zeventig, met name **Chess in the Schools** in New York (opgericht in 1986), dat tienduizenden kinderen heeft bereikt op openbare scholen in arme wijken. In Nederland experimenteerde de [KNSB](https://nl.wikipedia.org/wiki/Koninklijke_Nederlandse_Schaakbond) al vroeg met schaak op basisscholen in kwetsbare buurten.
+Het idee heeft een lange geschiedenis. Schaakprogramma's in achterstandswijken in Amerika bestaan al sinds de jaren zeventig, met name **Chess in the Schools** in New York (opgericht in 1986), dat tienduizenden kinderen heeft bereikt op [openbare scholen in arme wijken](/nl/blog/schaken-op-school/). In Nederland experimenteerde de [KNSB](https://nl.wikipedia.org/wiki/Koninklijke_Nederlandse_Schaakbond) al vroeg met schaak op basisscholen in kwetsbare buurten.
 
 ## Wat onderzoek zegt over programma's in achterstandsomgevingen
 

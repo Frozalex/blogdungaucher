@@ -100,7 +100,7 @@ Deze studie zegt niet dat schaken angst in klinische zin behandelt: ze zegt dat 
 
 ## Gevangenisprogramma's: bemoedigende resultaten
 
-Het gebruik van schaken in gevangenissen is een van de best gedocumenteerde therapeutische toepassingen in de praktijk, ook al is rigoureus onderzoek nog beperkt.
+Het gebruik van [schaken in gevangenissen](/nl/blog/schaken-in-de-gevangenis/) is een van de best gedocumenteerde therapeutische toepassingen in de praktijk, ook al is rigoureus onderzoek nog beperkt.
 
 ### Het Britse programma "Chess in Prisons"
 

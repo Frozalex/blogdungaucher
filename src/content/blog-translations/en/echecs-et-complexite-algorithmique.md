@@ -80,7 +80,7 @@ AlphaZero learns its move policy and evaluation through self-play, without a hum
 
 It played against itself across millions of games. A deep neural network learned which positions tended to lead to wins and which moves tended to work from particular positions. Silver and colleagues’ preprint (2017) reports surpassing Stockfish after **four hours** on its evaluation curve. Training uses many TPUs; this duration and result depend on the hardware and protocol.
 
-AlphaZero’s dynamic, often sacrificial play attracted grandmasters’ attention, with positional choices not explicitly written into a conventional evaluation function. In the 2017 preprint comparison, AlphaZero searches about 80,000 positions per second against Stockfish’s 70 million. These measurements concern different systems and hardware; a searched node does not have the same cost or role in both methods.
+AlphaZero’s dynamic, often sacrificial play attracted grandmasters’ attention, with positional choices not explicitly written into a conventional evaluation function. In the 2017 preprint comparison, AlphaZero searches about 80,000 positions per second against Stockfish’s 70 million. These measurements concern different systems and hardware; a searched node does not have the same cost or role in both methods. The [AlphaZero–Stockfish match report](/en/blog/alphazero-vs-stockfish/#the-match-28072) compares the time controls, hardware and versions behind those figures.
 
 The network guides MCTS search: AlphaZero still explores a tree, with different selection of variations and a learned evaluation. “Intuition” is an analogy here, not proof that a human cognitive mechanism has been reproduced.
 

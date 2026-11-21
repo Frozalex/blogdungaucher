@@ -56,7 +56,7 @@ Deze vicieuze cirkel is gedocumenteerd in tal van longitudinale studies in de sp
 
 ## De Elo als trigger voor angst: de bescherming van het "getal"
 
-Een specifieke factor bij schaken is de rol van de Elo-rangschikking in het versterken van de angst om te verliezen. Wanneer de Elo een identiteit wordt in plaats van een statistisch instrument, wordt elke partij een existentiële bedreiging.
+Een specifieke factor bij schaken is de rol van de Elo-rangschikking in het versterken van de angst om te verliezen. Wanneer [de Elo een identiteit wordt](/nl/blog/elo-zelfbeeld-schaken/#elo-angst-een-gedocumenteerd-fenomeen) in plaats van een statistisch instrument, wordt elke partij een existentiële bedreiging.
 
 Het verliezen van Elo-punten wordt ervaren als een "zelfvernietiging". Deze existentiële bedreiging activeert de amygdala intenser dan het loutere vooruitzicht van een sportieve nederlaag. Het resultaat is versterkte angst en nog angstiger spel.
 

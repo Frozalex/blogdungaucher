@@ -34,7 +34,7 @@ Online schaken voegt een laag toe: helse tempo's (Bullet, **Blitz**), **live Elo
 
 ### De dopaminecirkel
 
-Overwinning → dopamine → gevoel van vooruitgang → zin om opnieuw te beginnen → **nieuwe** partij → nieuwe piek (of nieuwe frustratie om "uit te wissen"). Je [striatum](https://nl.wikipedia.org/wiki/Striatum), hub van het beloningscircuit, wordt geactiveerd wanneer het mat valt, wanneer je tijd wint op de klok, wanneer je precies op het juiste **moment** klikt.
+Overwinning → dopamine → gevoel van vooruitgang → zin om opnieuw te beginnen → **nieuwe** partij → nieuwe piek (of nieuwe frustratie om "uit te wissen"). Je [striatum](https://nl.wikipedia.org/wiki/Striatum), hub van het [beloningscircuit](/nl/blog/dopamine-en-schaken/), wordt geactiveerd wanneer het mat valt, wanneer je tijd wint op de klok, wanneer je precies op het juiste **moment** klikt.
 
 Het is niet dat je "zwak" bent. Het is dat je brein precies doet wat de evolutie het heeft geleerd: signalen najagen die op succes lijken.
 
@@ -98,7 +98,7 @@ Verslaving is geen kwestie van "X **uur**" op de teller. Het is de relatie tot h
 
 **Drie ja's of meer** → wat je hier leest, gaat direct over jou. Dit is geen schaamtelabel: het is een signaal om het kader bij te stellen en **misschien** met een professional te praten.
 
-De criteria van de [DSM-5](https://nl.wikipedia.org/wiki/DSM-5) en de ICD-11 komen samen op één idee: controleverlies, prioriteit aan het **spel**, **doorgaan ondanks de gevolgen**. Leugens over de bestede **tijd**, opgeofferde slaap, prikkelbaarheid bij onthouding: alarmsignalen.
+De criteria van de [DSM-5](https://nl.wikipedia.org/wiki/DSM-5) en de ICD-11 komen samen op één idee: controleverlies, prioriteit aan het **spel**, **doorgaan ondanks de gevolgen**. Leugens over de bestede **tijd**, [opgeofferde slaap](/nl/blog/schaken-en-slaap/#wat-slaapdeprivatie-doet-met-berekening), prikkelbaarheid bij onthouding: alarmsignalen.
 
 **Kwetsbaardere profielen**: Daria Kuss (Nottingham Trent) toont hoe angst, depressie of ADHD naar hyperstimulatie van de kortste online tempo's kunnen duwen; dit is **geen** "zwakte", het is context.
 

@@ -63,7 +63,7 @@ Deliberate practice is defined precisely: it's not comfortable, it targets speci
 
 The most common error in post-game analysis: opening Stockfish first.
 
-If the engine analyzes before you, you lose the bulk of the exercise's value. You don't develop your capacity to evaluate positions yourself, you read evaluations. You don't reinforce your intuition, you become dependent on external confirmation.
+If the engine analyzes before you, you lose the bulk of the exercise's value. You don't develop your capacity to evaluate positions yourself, you read evaluations. You don't reinforce your intuition, you [become dependent on external confirmation](/en/blog/obedience-to-authority-in-chess/#the-engine-is-a-new-kind-of-authority).
 
 **Phase 1: Human analysis without engine (15-20 minutes)**
 

@@ -41,7 +41,7 @@ Depois de ganhar material, reexamine as ameaças ainda presentes. A vantagem nã
 
 No modelo de Tversky e Kahneman, a facilidade de lembrar exemplos pode influenciar as estimativas de frequência. Uma tática sofrida recentemente pode, assim, ocupar sua atenção; isso continua sendo uma hipótese a verificar no seu jogo.
 
-Compare suas lembranças com um conjunto de partidas, incluindo as menos marcantes. Depois escolha uma dificuldade concreta para trabalhar. Conhecer um termo de psicologia não basta para explicar o erro nem corrigi-lo.
+Compare suas lembranças com um conjunto de partidas, incluindo as menos marcantes. O mesmo cuidado ajuda a examinar a impressão de que [o erro sempre vem no pior momento](/pt-br/blog/lei-de-murphy-no-xadrez/). Depois escolha uma dificuldade concreta para trabalhar. Conhecer um termo de psicologia não basta para explicar o erro nem corrigi-lo.
 
 ## Um mesmo erro pode ter várias histórias
 

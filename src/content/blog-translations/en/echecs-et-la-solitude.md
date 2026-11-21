@@ -37,7 +37,7 @@ When they arrive, ask before introducing them to half the room. Someone may welc
 
 ## How to have an analysis conversation with two voices
 
-Pick a decision from a finished game and ask the other person to describe which reply occupied their thoughts. Do that before placing your own candidate on the board. A position that felt like a straightforward pawn grab from your side might have looked like an invitation to attack from theirs. Give the second player time to show their line, including the move they ultimately rejected. You may learn more from the candidate they discarded than from the move they played.
+[Pick a decision from a finished game](/en/blog/how-to-analyze-chess-games/) and ask the other person to describe which reply occupied their thoughts. Do that before placing your own candidate on the board. A position that felt like a straightforward pawn grab from your side might have looked like an invitation to attack from theirs. Give the second player time to show their line, including the move they ultimately rejected. You may learn more from the candidate they discarded than from the move they played.
 
 Now swap roles: one player tries to defend the proposed idea and the other tries to defeat it. If both players are uncertain after three or four moves, mark the position rather than pretending to agree. An engine can help settle a tactical question later. It cannot tell you that your opponent spent most of their time trying to decide whether you had seen a particular threat. That information comes from the person who was there. The shared activity is partly the conversation itself; an unresolved position can still be the beginning of a friendship.
 

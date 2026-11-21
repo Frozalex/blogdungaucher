@@ -32,7 +32,7 @@ heroImage:
 
 ---
 
-Dans quelle mesure les probabilités permettent-elles de modéliser la performance aux échecs ? Tu peux partir d'un match fictif, puis montrer pourquoi le classement Elo demande un modèle différent. Cette distinction évite de confondre probabilité de victoire et score attendu.
+Dans quelle mesure les probabilités permettent-elles de modéliser la performance aux échecs ? Tu peux partir d'un match fictif, puis montrer pourquoi le classement Elo demande un modèle différent. Cela aide aussi à préciser [ce que le classement dit des résultats d’un joueur](/fr/blog/echecs-estime-de-soi-elo/). Cette distinction évite de confondre probabilité de victoire et score attendu.
 
 ## Un modèle binomial volontairement simplifié
 

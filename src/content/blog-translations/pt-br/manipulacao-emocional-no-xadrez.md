@@ -9,7 +9,7 @@ heroImageAlt: Um fio tenso puxa lateralmente um pêndulo suspenso.
 
 ---
 
-Um suspiro, um olhar insistente, uma oferta de empate em um momento ruim: o que acontece ao redor do tabuleiro pode distrair você. A dificuldade é reagir a um comportamento observável sem fingir que lê as intenções do adversário.
+Um suspiro, um olhar insistente, uma oferta de empate em um momento ruim: o que acontece ao redor do tabuleiro pode distrair você. A dificuldade é reagir a um comportamento observável sem fingir que [lê as intenções do adversário](/pt-br/blog/neuronios-espelho-no-xadrez/#antecipar-um-plano-não-se-resume-a-observar-um-gesto).
 
 ## Um gesto não dá acesso a uma intenção
 

@@ -70,7 +70,7 @@ La lecture proposée porte donc sur l’engagement dans un choix : expliquer pou
 
 ## La question de l’objectivité aux échecs
 
-Dans un jeu fini aux règles précisées, on peut définir une valeur sous jeu parfait. **Cette valeur n’implique pas un meilleur coup unique** : plusieurs continuations peuvent préserver un gain ou une nulle. La valeur de la position initiale des échecs n’est pas établie, tandis que certaines positions simples ou couvertes par des tablebases peuvent être résolues sous les conditions indiquées.
+Dans un jeu fini aux règles précisées, on peut définir [une valeur sous jeu parfait](/fr/blog/paradoxe-de-zermelo/). **Cette valeur n’implique pas un meilleur coup unique** : plusieurs continuations peuvent préserver un gain ou une nulle. La logique modale permet de préciser [la différence entre un coup possible et une suite forcée](/fr/blog/logique-modale-aux-echecs/#la-logique-de-la-variante-forcée). La valeur de la position initiale des échecs n’est pas établie, tandis que certaines positions simples ou couvertes par des tablebases peuvent être résolues sous les conditions indiquées.
 
 Un moteur propose une analyse dans un budget de calcul donné. Sa version, ses réglages et la durée de recherche comptent ; son premier choix n’est pas une preuve universelle de la valeur exacte. Pour discuter l’objectivité, distingue un mat forcé vérifiable, un résultat de tablebase et un avantage estimé. Ces informations n’ont ni le même statut ni les mêmes limites.
 

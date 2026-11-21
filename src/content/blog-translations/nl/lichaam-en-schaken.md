@@ -62,7 +62,7 @@ Het lichaam van een speler in een klassieke partij is niet in rust. Het is waakz
 
 Sinds spelers worden uitgerust met hartslagmeters, is het beeld preciezer geworden. In de beslissende momenten van een partij stijgt de hartslag tot niveaus die men associeert met matige lichamelijke inspanning, terwijl de speler niets anders doet dan zitten. De ademhaling wordt korter, de bloeddruk stijgt, de spieren trekken onmerkbaar samen.
 
-Een vaak geciteerde meting, gerapporteerd in 2018, betreft grootmeester Mikhail Antipov: ongeveer 560 calorieën verbrand in twee uur spelen. Voor een inspanning waarbij niets beweegt, is dat verrassend. Het wordt niet verklaard door de spieren maar door de **stressreactie** van het hele organisme.
+Een vaak geciteerde meting, gerapporteerd in 2018, betreft grootmeester Mikhail Antipov: ongeveer 560 calorieën verbrand in twee uur spelen. Voor een inspanning waarbij niets beweegt, is dat verrassend. Het wordt niet verklaard door de spieren maar door de **[stressreactie](/nl/blog/stress-toernooi-schaken/#de-fysiologie-van-competitiestress)** van het hele organisme.
 
 Het mechanisme is bekend bij fysiologen. Een kritieke positie, een tikkende klok, het vooruitzicht van een vernederende nederlaag: de hersenen behandelen deze symbolische dreigingen bijna als fysieke dreigingen. Ze triggeren dezelfde cascade: adrenaline, cortisol, versneld hartritme, mobilisatie van glucose. Het is de oude "vecht of vlucht"-reactie, behalve dat er noch gevochten noch gevlucht moet worden. De energie wordt vrijgegeven en ter plaatse verbrand, in een lichaam dat aan zijn stoel gekluisterd blijft.
 

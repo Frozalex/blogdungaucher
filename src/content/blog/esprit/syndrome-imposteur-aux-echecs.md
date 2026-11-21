@@ -87,7 +87,7 @@ Ton classement fournit une information sur tes résultats dans un système donn�
 
 Voici des pistes de réflexion à adapter, sans promesse de disparition du doute.
 
-**Tenir un journal de compétence.** Documenter régulièrement, après chaque partie ou session, ce que tu as bien fait. Pas de façon générale ("j'ai bien joué"), mais de façon spécifique ("j'ai correctement évalué la structure de pions en fin de jeu", "j'ai trouvé la suite tactique au coup 23 sous pression de temps"). Ce journal crée une base de données de preuves de compétence réelle. Travailler méthodiquement un [recueil d'exercices tactiques](https://amzn.to/4wdx8HC) alimente le même dossier : chaque problème résolu est une preuve concrète, difficile à balayer d'un « j'ai eu de la chance ».
+**Tenir un journal de compétence.** [Documenter régulièrement, après chaque partie ou session, ce que tu as bien fait](/fr/blog/echecs-et-confiance-en-soi/). Pas de façon générale ("j'ai bien joué"), mais de façon spécifique ("j'ai correctement évalué la structure de pions en fin de jeu", "j'ai trouvé la suite tactique au coup 23 sous pression de temps"). Ce journal crée une base de données de preuves de compétence réelle. Travailler méthodiquement un [recueil d'exercices tactiques](https://amzn.to/4wdx8HC) alimente le même dossier : chaque problème résolu est une preuve concrète, difficile à balayer d'un « j'ai eu de la chance ».
 
 **Pratiquer l'attribution correcte.** Quand une victoire arrive, s'entraîner à identifier les décisions spécifiques qui y ont contribué. "J'ai gagné parce que j'ai géré mon temps correctement" ou "parce que j'ai reconnu la structure positionnelle" sont des attributions internes et contrôlables. Elles contrebalancent l'attribution externe par défaut du syndrome.
 

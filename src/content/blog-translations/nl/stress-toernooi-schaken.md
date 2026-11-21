@@ -109,7 +109,7 @@ Deze technieken vervangen de technische voorbereiding niet. Maar ze maken het mo
 
 ## Ervaring als regulator
 
-Een consistente observatie in studies bij competitieve spelers: toernooi-ervaring vermindert fysiologische stress **onafhankelijk van het speelniveau**. Een speler van 1600 Elo met tien toernooien ervaring toont lagere stressmarkers (cortisol, hartslag) dan een speler van 1600 Elo bij zijn eerste toernooi, voor partijen met dezelfde objectieve inzet.
+Een consistente observatie in studies bij competitieve spelers: toernooi-ervaring vermindert [fysiologische stress](/nl/blog/lichaam-en-schaken/#wat-de-sensoren-zeggen-hart-bloeddruk-calorieën) **onafhankelijk van het speelniveau**. Een speler van 1600 Elo met tien toernooien ervaring toont lagere stressmarkers (cortisol, hartslag) dan een speler van 1600 Elo bij zijn eerste toernooi, voor partijen met dezelfde objectieve inzet.
 
 Het is niet dat ervaren spelers minder competitief of minder betrokken zijn. Het is dat ze in de loop van de herhalingen hebben geleerd dat toernooistress beheersbaar is: dat ze de druk eerder hebben overleefd, dat een nederlaag geen ramp is, dat het brein uiteindelijk zijn hulpbronnen vindt, zelfs in moeilijke stellingen.
 

@@ -120,7 +120,7 @@ Ce qui produit un glissement précis, et coûteux. Le titre atteste d'un **nivea
 
 La question utile n'est donc pas « quel est son classement », mais **« quels progrès ont fait ses élèves partis de mon niveau »**. C'est rarement affiché.
 
-*L'obéissance à l'autorité fait l'objet du prochain article de cette série.*
+*Le dossier sur [l'obéissance à l'autorité](/fr/blog/obeissance-a-l-autorite-aux-echecs/) examine comment un joueur réagit aux avis d’un entraîneur ou d’un moteur.*
 
 ### 5. La sympathie
 

@@ -54,7 +54,7 @@ Comparer les plateformes suppose aussi de distinguer l'accès gratuit, les optio
 
 La FIDE présente en 2021 *Chess for Protection*, un projet pour le camp de Kakuma au Kenya, avec le HCR, la Fédération luthérienne mondiale, la fédération kényane et le club de Kakuma.
 
-Cette annonce documente un partenariat et ses objectifs. Elle ne permet pas d'étendre le programme à des camps en Syrie ou au Bangladesh, ni de présenter ses bénéfices psychologiques comme mesurés. Le HCR est une agence des Nations unies : il faut distinguer organisation intergouvernementale, fédération, association locale et entreprise privée.
+Cette annonce documente un partenariat et ses objectifs. Elle ne permet pas d'étendre le programme à des camps en Syrie ou au Bangladesh, ni de présenter ses bénéfices psychologiques comme mesurés. Le HCR est une agence des Nations unies : il faut distinguer organisation intergouvernementale, fédération, association locale et entreprise privée. Pour examiner [l’accueil de joueurs réfugiés](/fr/blog/echecs-et-immigration/) à l’échelle d’un club, on peut aussi s’intéresser à la langue utilisée, à la régularité des rencontres et aux conditions de participation.
 
 Le cas montre comment un cadre commun de jeu peut être utilisé dans une situation locale. Les objectifs, les moyens et l'évaluation du projet restent à examiner séparément.
 

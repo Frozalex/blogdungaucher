@@ -137,7 +137,7 @@ Dans la sémantique relationnelle habituelle, $\Box P$ est vrai dans un état sa
 
 Pour raisonner sur les fins de partie, il faut donc tester l'issue terminale avant de traiter la formule de continuation. Un mat et un pat peuvent tous deux ne laisser aucun coup légal au joueur au trait, tout en ayant des résultats différents. La proposition « le roi est en échec » les distingue.
 
-Cette subtilité illustre l'intérêt de la formalisation : elle révèle ce que le langage courant laisse implicite. Le symbole carré n'est pas une garantie générale de réussite ; sa vérité dépend du modèle et de la proposition définis.
+Cette subtilité illustre l'intérêt de la formalisation : elle révèle ce que le langage courant laisse implicite. Le symbole carré n'est pas une garantie générale de réussite ; sa vérité dépend du modèle et de la proposition définis. Le rapprochement avec Wittgenstein pose une autre question : que signifie [comprendre une règle du jeu](/fr/blog/echecs-vs-philosophie-pensee-strategique/#wittgenstein--les-échecs-comme-laboratoire-du-langage) ?
 
 ## Information parfaite ne signifie pas calcul parfait
 

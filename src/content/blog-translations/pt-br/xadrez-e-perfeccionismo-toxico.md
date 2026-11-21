@@ -14,7 +14,7 @@ A palavra “tóxico” descreve aqui o custo que essa exigência pode ter para 
 
 ## Identificar o que custa para você
 
-Você pode examinar três situações: recomeçar sem parar o mesmo cálculo, prolongar uma análise quando ela já não traz nada novo, adiar uma partida porque sua preparação nunca parece suficiente.
+Você pode examinar três situações: recomeçar sem parar o mesmo cálculo, prolongar uma análise quando ela já não traz nada novo, [adiar uma partida porque sua preparação nunca parece suficiente](/pt-br/blog/xadrez-e-procrastinacao/).
 
 Cada uma pode ter várias explicações. Uma posição pode exigir uma verificação longa. Um treinamento pode ser adiado porque falta tempo. Evite transformar um episódio em um retrato de personalidade.
 

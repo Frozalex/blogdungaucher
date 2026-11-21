@@ -27,7 +27,7 @@ A sigh, an insistent look, a draw offer at an awkward moment: what happens aroun
 
 ## A gesture does not reveal an intention
 
-A player may sigh because they are disappointed, tired or preoccupied. They may also be trying to unsettle you. The gesture alone does not settle it. You risk wasting time constructing a story the position does not confirm.
+A player may sigh because they are disappointed, tired or preoccupied. They may also be trying to unsettle you. The gesture alone does not settle it. [Reading an opponent’s intentions from a movement](/en/blog/mirror-neurons-in-chess/) is also where comparisons with mirror neurons reach their limit. You risk wasting time constructing a story the position does not confirm.
 
 Return to questions you can answer: is there a threat? How much time remains? Is a specific behaviour disrupting the game? The other player’s apparent confidence does not replace calculation of a variation.
 

@@ -77,7 +77,7 @@ Onthoud deze drie assen (geld, tijd, hartstochten), want ze verklaren bijna alle
 
 ## Het middeleeuwse christendom: de Kerk tegen het schaakbord
 
-Schaken bereikt West-Europa rond het jaar duizend via het islamitische Spanje en Zuid-Italië. De verspreiding gaat snel binnen de adel: het is een hofspel, een teken van verfijning. De Kerk reageert vrijwel onmiddellijk.
+[Schaken bereikt West-Europa](/nl/blog/geschiedenis-en-oorsprong-van-het-schaakspel/) rond het jaar duizend via het islamitische Spanje en Zuid-Italië. De verspreiding gaat snel binnen de adel: het is een hofspel, een teken van verfijning. De Kerk reageert vrijwel onmiddellijk.
 
 De grondleggende daad wordt toegeschreven aan **Petrus Damianus**, kardinaal-bisschop van Ostia, een van de grote hervormers van de elfde eeuw. Rond 1061 richt hij een verontwaardigde brief aan een bisschop die betrapt was op schaken. Voor Damianus verraadt een prelaat die zich verlaagt tot een spel dat verwant is aan dobbelstenen zijn functie. Het voorval, overgeleverd door historici van het spel, trekt een duurzame lijn: schaken is een bezigheid van lege leken, niet van klerken.
 
@@ -117,7 +117,7 @@ In de middeleeuwen veroordeelt de **Russisch-orthodoxe Kerk** schaken. Ze erft d
 
 In de praktijk is het een ander verhaal. Archeologische opgravingen, met name in Novgorod, brengen talloze schaakstukken aan het licht uit alle lagen van de samenleving, bewijs van een intense en ononderbroken volkspraktijk die volledig onverschillig stond tegenover de vermaningen van de geestelijkheid. De legende van de dood van **Ivan de Verschrikkelijke**, in 1584, toont hem instortend terwijl hij stukken opstelde of op het punt stond een partij te spelen: of het verhaal nu accuraat of verfraaid is, het zegt genoeg over de plaats van het spel tot aan de top van de staat.
 
-De omwenteling komt veel later, en ze is totaal. In de twintigste eeuw maakt de **Sovjet-Unie** van schaken een staatszaak: scholen, clubs, kampioenen gevierd als nationale helden, het spel verheven tot etalage van de intellectuele superioriteit van het regime. Het vermaak dat de Kerk ooit wilde verbannen, wordt een instrument van **invloed** dat de staat etaleert op het grote diplomatieke toneel van de Koude Oorlog. Zelden heeft een religieus verbod zo'n wraak gekend.
+De omwenteling komt veel later, en ze is totaal. In de twintigste eeuw maakt de **Sovjet-Unie** van schaken een staatszaak: scholen, clubs, kampioenen gevierd als nationale helden, het spel verheven tot etalage van de intellectuele superioriteit van het regime. Het vermaak dat de Kerk ooit wilde verbannen, wordt een instrument van **invloed** dat de staat etaleert op [het grote diplomatieke toneel van de Koude Oorlog](/nl/blog/schaken-en-diplomatie/). Zelden heeft een religieus verbod zo'n wraak gekend.
 
 In Nederland heeft schaken nooit een religieus taboe gehad. De [KNSB](https://nl.wikipedia.org/wiki/Koninklijke_Nederlandse_Schaakbond), opgericht in 1873, kon ongestoord groeien. De wereldkampioen [Max Euwe](https://nl.wikipedia.org/wiki/Max_Euwe) (1935-1937) was een gerespecteerd wiskundeleraar en later FIDE-voorzitter: het typeprotret van een spel dat in Nederland nooit aan religieuze verdenking ten prooi is gevallen.
 

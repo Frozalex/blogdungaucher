@@ -25,7 +25,7 @@ Bandura (1977) proposes the concept of self-efficacy: expectations about one’s
 
 This theoretical text draws on work concerning behavioural change. It is not a study showing that expert athletes’ confidence predicts performance better than talent, nor a validation of a chess protocol.
 
-In chess, you can use this distinction to formulate a testable expectation: “I can explain the defence in this endgame” is more precise than “I should beat them”. You still need to check the endgame: a specific belief can also be poorly calibrated.
+In chess, you can use this distinction to formulate a testable expectation: “I can explain the defence in this endgame” is more precise than “I should beat them”. You still need to check the endgame: a specific belief can also be poorly calibrated. Likewise, [feeling better after a pre-game ritual](/en/blog/placebo-effect-in-chess/) does not establish that the ritual improved your play.
 
 ## Building concrete reference points
 

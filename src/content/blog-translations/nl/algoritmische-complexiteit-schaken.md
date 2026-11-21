@@ -106,7 +106,7 @@ AlphaZero ontving alleen de **spelregels**: welke stukken bestaan, hoe ze bewege
 
 Het speelde tegen zichzelf: miljoenen partijen. Na elke partij leerde een diep neuraal netwerk: welke posities de neiging hebben winnend te zijn, welke zetten de neiging hebben goed te zijn vanuit welke posities. Na **9 uur** training op TPU's (gespecialiseerde processors van Google) had AlphaZero een niveau bereikt dat Stockfish overtrof, de beste "klassieke" motor van die tijd.
 
-De speelstijl die AlphaZero had ontwikkeld fascineerde grootmeesters: dynamisch, gretig offerend, met positionele intuïties die theoretici nooit expliciet hadden gecodificeerd. AlphaZero doorzocht aanzienlijk minder posities dan Stockfish (circa 80.000 per seconde tegen 60 miljoen), maar elke positie werd geëvalueerd door een neuraal netwerk dat een door ervaring aangeleerde "intuïtie" encodeerde in plaats van expliciete regels.
+[De speelstijl die AlphaZero had ontwikkeld](/nl/blog/alphazero-versus-stockfish-revolutie-ai/#de-speelstijl-wat-de-grootmeesters-fascineerde) fascineerde grootmeesters: dynamisch, gretig offerend, met positionele intuïties die theoretici nooit expliciet hadden gecodificeerd. AlphaZero doorzocht aanzienlijk minder posities dan Stockfish (circa 80.000 per seconde tegen 60 miljoen), maar elke positie werd geëvalueerd door een neuraal netwerk dat een door ervaring aangeleerde "intuïtie" encodeerde in plaats van expliciete regels.
 
 Dit was niet langer verbeterd uitputtend zoeken. Het was iets structureel anders: een benadering van intuïtie door diep leren.
 

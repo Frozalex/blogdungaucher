@@ -80,7 +80,7 @@ There is no need to invoke a distinctive gifted “tree-like thinking” style. 
 
 ## Perfectionism: observe a difficulty rather than assume a gifted trait
 
-Wanting to play well and fearing every mistake are different things. The meta-analysis by [Stricker and colleagues (2020)](https://www.uni-trier.de/fileadmin/fb1/prof/PSY/PAE/Team/Schneider/StrickerEtAl2020.pdf) distinguishes high standards from perfectionistic concerns. It does not find higher concerns in students identified as intellectually gifted than in other students; striving is higher on average. Painful perfectionism therefore cannot be presented as an obligatory gifted trait.
+Wanting to play well and [fearing every mistake](/en/blog/chess-toxic-perfectionism/) are different things. The meta-analysis by [Stricker and colleagues (2020)](https://www.uni-trier.de/fileadmin/fb1/prof/PSY/PAE/Team/Schneider/StrickerEtAl2020.pdf) distinguishes high standards from perfectionistic concerns. It does not find higher concerns in students identified as intellectually gifted than in other students; striving is higher on average. Painful perfectionism therefore cannot be presented as an obligatory gifted trait.
 
 The review combines **10 comparative studies, 4,340 participants and 32 effect sizes**. A difference in perfectionistic concerns is not statistically established; that does not prove every individual in both groups is identical. Identification criteria and questionnaires vary. The findings describe averages in educational samples, not a club intervention or a prediction of one child's next defeat.
 
@@ -144,7 +144,7 @@ The meta-analysis by [Burgoyne and colleagues (2016)](https://artscimedia.case.e
 
 The authors combine 19 studies, involving 26 independent samples and 1,779 participants. Their average correlation across four broad abilities is **r = 0.24**. That means neither “24% of talent comes from IQ” nor “a test predicts 24% of wins”. It concerns associations between measurements. Differences between younger and adult samples, or rated and unrated players, are not an individual developmental timetable.
 
-We therefore cannot claim that a child with an IQ of 110 practising three hours weekly must overtake a child with an IQ of 140. Nor does a high score guarantee a title. Experience, learning opportunities and practice content matter too; this article provides no formula converting them into a future rating.
+We therefore cannot claim that a child with an IQ of 110 practising three hours weekly must overtake a child with an IQ of 140. Nor does a high score guarantee a title. Experience, learning opportunities and practice content matter too; this article provides no formula converting them into a future rating. The discussion of [genetics and chess talent](/en/blog/chess-and-genetics/) explains why a population estimate cannot predict one child’s career.
 
 For transfer, [Sala and Gobet (2016)](https://www.sciencedirect.com/science/article/pii/S1747938X16300112) highlight limitations in learning-study designs, notably the lack of suitable active controls. Their findings justify no promise of an IQ increase, school success or a particular effect in gifted children.
 

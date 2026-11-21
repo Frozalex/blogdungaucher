@@ -143,9 +143,9 @@ Geen magie. Louter expertise gedreven tot een buitengewoon niveau.
 
 ## Verder lezen
 
-- [Ontdek de kracht van schaken op je geheugen](/fr/blog/echecs-et-memoire/)
-- [Concentratie bij schaken: aandacht trainen als een spier](/fr/blog/echecs-et-concentration/)
-- [Werkgeheugen en schaken: het cognitieve knelpunt](/fr/blog/echecs-memoire-de-travail/)
+- [Ontdek de kracht van schaken op je geheugen](/nl/blog/schaken-en-geheugen/)
+- [Concentratie bij schaken: aandacht trainen als een spier](/nl/blog/concentratie-schaken/)
+- [Werkgeheugen en schaken: het cognitieve knelpunt](/nl/blog/werkgeheugen-en-schaken/)
 
 ---
 

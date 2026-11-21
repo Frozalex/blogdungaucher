@@ -75,7 +75,7 @@ Sua classificação fornece uma informação sobre os resultados em um sistema e
 
 Estas são propostas de reflexão para adaptar, sem promessa de eliminar a dúvida.
 
-**Manter um diário de competência.** Registrar regularmente, após cada partida ou sessão, o que você fez bem. Não de maneira genérica, como “joguei bem”, mas específica: “avaliei corretamente a estrutura de peões no final”, “encontrei a sequência tática no lance 23 sob pressão de tempo”. Esse diário cria uma base de evidências de competência real. Trabalhar metodicamente um [livro de exercícios táticos](https://amzn.to/4wdx8HC) alimenta o mesmo registro: cada problema resolvido é uma prova concreta, difícil de descartar com “tive sorte”.
+**Manter um diário de competência.** [Registrar regularmente, após cada partida ou sessão, o que você fez bem](/pt-br/blog/xadrez-e-autoconfianca/). Não de maneira genérica, como “joguei bem”, mas específica: “avaliei corretamente a estrutura de peões no final”, “encontrei a sequência tática no lance 23 sob pressão de tempo”. Esse diário cria uma base de evidências de competência real. Trabalhar metodicamente um [livro de exercícios táticos](https://amzn.to/4wdx8HC) alimenta o mesmo registro: cada problema resolvido é uma prova concreta, difícil de descartar com “tive sorte”.
 
 **Praticar atribuições adequadas.** Quando chega uma vitória, treinar a identificação das decisões específicas que contribuíram para ela. “Ganhei porque administrei meu tempo corretamente” ou “porque reconheci a estrutura posicional” são atribuições internas e controláveis. Elas fazem contraponto à atribuição externa automática da sensação de impostura.
 

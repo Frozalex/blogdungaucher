@@ -55,7 +55,7 @@ A [FIDE–Peace and Sport document](https://www.fide.com/images/stories/NEWS_201
 
 Organisers’ peace or encounter aims do not measure their achievement. The document does not provide a controlled comparison of attitudes between participants and non-participants. It therefore cannot support a quantified reduction in prejudice.
 
-Evaluating an encounter project would require identifying voluntary participants, who is excluded, the support offered and what is measured afterwards. Immediate satisfaction, a new friendship and lasting attitude change are different observations.
+Evaluating an encounter project would require identifying voluntary participants, who is excluded, the support offered and what is measured afterwards. Immediate satisfaction, a new friendship and lasting attitude change are different observations. [Chess clubs welcoming refugees](/en/blog/chess-and-immigration/) face a related question: what helps a first meeting turn into continued participation?
 
 Contact can be a reasonable aim to explore, but the game alone does not guarantee its effects. Safety, freedom to refuse, power relationships and facilitation quality belong in the project description. Playing together is not consent to a shared political narrative.
 

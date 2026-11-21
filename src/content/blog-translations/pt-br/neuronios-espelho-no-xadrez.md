@@ -32,7 +32,7 @@ Nenhum estudo apresentado neste artigo permite afirmar que a atividade dos neur�
 
 ## Mudar de ponto de vista continua sendo um exercício que vale experimentar
 
-Você não precisa de uma explicação neuronal para fazer uma pergunta prática: “Se eu estivesse com as peças do adversário, qual lance examinaria?”. Esse exercício pode ajudar a sair de um cálculo concentrado no seu próprio plano. Não mede nem garante o treinamento de um sistema espelho.
+Você não precisa de uma explicação neuronal para fazer uma pergunta prática: “Se eu estivesse com as peças do adversário, qual lance examinaria?”. Esse exercício pode ajudar a [sair de um cálculo concentrado no seu próprio plano](/pt-br/blog/vies-de-confirmacao-no-xadrez/#2-troque-de-cadeira). Não mede nem garante o treinamento de um sistema espelho.
 
 Uma maneira de praticá-lo em uma partida de treinamento:
 
@@ -49,7 +49,7 @@ São orientações de análise. Não são atribuídas aqui a Botvinnik sem uma r
 
 “No lugar dele, eu atacaria” pode ser um bom ponto de partida. Também pode fazer você esquecer uma defesa ou uma troca que não gosta de jogar. Sua hipótese sobre o adversário não deve fechar cedo demais a lista dos lances a calcular.
 
-Uma pergunta mais consistente é: “Qual resposta dificulta minha ideia?”. Ela se refere à posição, e não a uma intenção presumida. Se várias respostas funcionarem, mantenha todas na análise em vez de eliminar uma porque parece pouco natural para você.
+Uma pergunta mais consistente é: “Qual resposta dificulta minha ideia?”. Ela se refere à posição, e não a [uma intenção presumida](/pt-br/blog/manipulacao-emocional-no-xadrez/#um-gesto-não-dá-acesso-a-uma-intenção). Se várias respostas funcionarem, mantenha todas na análise em vez de eliminar uma porque parece pouco natural para você.
 
 ![Evitar projetar seu próprio estilo](/images/pt-br/neurones-miroirs-03-angles-morts-style.svg)
 

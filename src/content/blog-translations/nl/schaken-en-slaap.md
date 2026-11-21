@@ -70,7 +70,7 @@ Voor een schaakspeler zijn de implicaties concreet: **de eerste 6 uur slaap cons
 - **Onderdrukking** (vermogen om een duidelijk verkeerd antwoord af te wijzen ten gunste van een beter): een van de eerste functies die worden aangetast
 - **Werkgeheugen** (een variant in het hoofd houden tijdens berekening): verminderd na 24 uur wakker zijn
 
-Dit laatste punt is bijzonder belangrijk. Het werkgeheugen is de bottleneck van de berekening bij schaken: het is het geheugen dat het mogelijk maakt de eindstelling van een variant in gedachten te houden terwijl de takken worden verkend. Een verslechterd werkgeheugen betekent kortere varianten, verkeerd geëvalueerde stellingen, blunders op dreigingen die berekend maar niet vastgehouden zijn.
+Dit laatste punt is bijzonder belangrijk. Het werkgeheugen is [de bottleneck van de berekening bij schaken](/nl/blog/werkgeheugen-en-schaken/): het is het geheugen dat het mogelijk maakt de eindstelling van een variant in gedachten te houden terwijl de takken worden verkend. Een verslechterd werkgeheugen betekent kortere varianten, verkeerd geëvalueerde stellingen, blunders op dreigingen die berekend maar niet vastgehouden zijn.
 
 ![Effect van slaapdeprivatie op de drie belangrijkste uitvoerende functies bij schaken: onderdrukking van verkeerde antwoorden verslechtert het eerst, gevolgd door cognitieve flexibiliteit, dan werkgeheugen. Bij 24 uur wakker zijn, cognitief equivalent aan een alcoholpromillage van 0,10% (Harrison en Horne, 2000; Walker, 2017).](/images/echecs-sommeil-02-privation-fonctions.svg)
 

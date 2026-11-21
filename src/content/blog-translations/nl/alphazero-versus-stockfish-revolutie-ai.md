@@ -63,7 +63,7 @@ AlphaZero is een systeem van **deep reinforcement learning** (diep versterkend l
 
 **Een diep neuraal netwerk** dat als invoer de schaakpositie neemt en twee uitvoeren produceert: een kansverdeling over alle legale zetten (de "policy head": welke zetten veelbelovend lijken), en een evaluatie van de positie (-1 tot +1, overeenkomend met een zwartwinst, remise, of een witwinst: de "value head").
 
-**De Monte Carlo-boomzoekmethode (MCTS)** die het neurale netwerk gebruikt om de zoektocht te sturen. In plaats van de spelboom uitputtend te verkennen met alpha-bèta-snoei, simuleert MCTS partijen tot het einde door zetten te kiezen volgens de kansen van de policy head en de resultaten terug te propageren naar de wortel.
+**De Monte Carlo-boomzoekmethode (MCTS)** die het neurale netwerk gebruikt om de zoektocht te sturen. In plaats van de spelboom uitputtend te verkennen met [alpha-bèta-snoei](/nl/blog/algoritmische-complexiteit-schaken/#alpha-beta-snoei-de-eerste-grote-sprong), simuleert MCTS partijen tot het einde door zetten te kiezen volgens de kansen van de policy head en de resultaten terug te propageren naar de wortel.
 
 Wat opmerkelijk is: AlphaZero had alleen **de regels van het spel** ontvangen. Geen enkele menselijke partij. Geen enkele positionele heuristiek. Geen eindspeldatabase. Geen kennis over wat een "goede" positie is: alleen de regel dat mat winst betekent.
 
@@ -128,7 +128,7 @@ AlphaZero suggereert dat er een vorm van positioneel begrip bestaat die niet her
 
 Deze gradiënten, moeilijk numeriek te kwantificeren maar intuïtief herkenbaar door een ervaren Grootmeester, lijken op wat menselijke spelers "het initiatief", "de dynamiek", "de actieve stukken" noemen. AlphaZero heeft een vorm van meting van deze kwaliteiten ontwikkeld die de klassieke heuristieken niet hadden.
 
-Voor menselijke spelers is de les contra-intuïtief: soms is de "objectief" licht inferieure maar dynamisch rijke positie beter dan de "objectief" gelijkwaardige maar statische positie. De numerieke evaluaties van engines, nuttig maar onvolmaakt, vangen deze dynamiek niet altijd.
+Voor menselijke spelers is de les contra-intuïtief: soms is de "objectief" licht inferieure maar dynamisch rijke positie beter dan de "objectief" gelijkwaardige maar statische positie. De numerieke evaluaties van engines, nuttig maar onvolmaakt, vangen deze dynamiek niet altijd. Voor de speler aan het bord blijft de vraag: [hoe kies je tussen twee speelbare zetten](/nl/blog/beslissen-onder-onzekerheid-schaken/#een-beslissingsprotocol-in-7-stappen)?
 
 Dat is misschien de meest blijvende bijdrage van AlphaZero aan het schaken: eraan herinneren dat de maatstaf voor de goede zet niet alleen numeriek is. Schoonheid, druk, offer, initiatief (concepten die menselijke spelers altijd hebben gebruikt) hebben een computationele realiteit, niet alleen een poëtische.
 

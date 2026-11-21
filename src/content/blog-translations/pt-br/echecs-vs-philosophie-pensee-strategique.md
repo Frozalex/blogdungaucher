@@ -61,9 +61,9 @@ A leitura proposta trata, portanto, do compromisso com uma escolha: explicar por
 
 ## A questão da objetividade no xadrez
 
-Num jogo finito com regras especificadas, é possível definir um valor sob jogo perfeito. **Esse valor não implica um único melhor lance**: várias continuações podem preservar uma vitória ou um empate. O valor da posição inicial do xadrez não foi estabelecido, enquanto certas posições simples ou cobertas por tablebases podem ser resolvidas nas condições indicadas.
+Num jogo finito com regras especificadas, é possível [definir um valor sob jogo perfeito](/pt-br/blog/teoria-dos-jogos-no-xadrez/#um-valor-teórico-não-é-uma-solução-calculada). **Esse valor não implica um único melhor lance**: várias continuações podem preservar uma vitória ou um empate. O valor da posição inicial do xadrez não foi estabelecido, enquanto certas posições simples ou cobertas por tablebases podem ser resolvidas nas condições indicadas.
 
-Um motor propõe uma análise dentro de um orçamento de cálculo. Sua versão, suas configurações e o tempo de busca importam; sua primeira escolha não é uma prova universal do valor exato. Para discutir objetividade, diferencie um mate forçado verificável, um resultado de tablebase e uma vantagem estimada. Essas informações não têm o mesmo estatuto nem os mesmos limites.
+Um motor propõe uma análise dentro de um orçamento de cálculo. Sua versão, suas configurações e o tempo de busca importam; sua primeira escolha não é uma prova universal do valor exato. Para discutir objetividade, diferencie [um mate forçado verificável](/pt-br/blog/logica-modal-no-xadrez/#a-lógica-da-variante-forçada), um resultado de tablebase e uma vantagem estimada. Essas informações não têm o mesmo estatuto nem os mesmos limites.
 
 Na introdução de *The View from Nowhere* (1986), Thomas Nagel busca articular a perspectiva de uma pessoa situada no mundo e uma compreensão mais distanciada desse mesmo mundo. Não estabelece aqui duas categorias de verdades do xadrez, uma absoluta e outra relativa a um regulamento. Nossa aproximação é mais modesta: a experiência do jogador e a análise impessoal de uma posição respondem a perguntas diferentes, que pode ser útil considerar em conjunto.
 

@@ -23,7 +23,7 @@ Também é preciso escolher o critério antes de olhar os exemplos. Se o “pior
 
 ## Um erro memorável não é uma frequência
 
-Tversky e Kahneman (1973) estudam a heurística da disponibilidade: avaliar uma frequência ou probabilidade a partir da facilidade com que exemplos vêm à mente. Essa facilidade pode informar o julgamento, mas outros fatores além da frequência a influenciam.
+Tversky e Kahneman (1973) estudam a [heurística da disponibilidade](/pt-br/blog/5-vieses-cognitivos-blunder/#5-disponibilidade-a-lembrança-que-vem-facilmente): avaliar uma frequência ou probabilidade a partir da facilidade com que exemplos vêm à mente. Essa facilidade pode informar o julgamento, mas outros fatores além da frequência a influenciam.
 
 Uma derrota espetacular pode, assim, vir à mente mais rapidamente que uma partida tranquila. É uma aplicação possível desse modelo ao xadrez, não uma medida que demonstre que sua memória sempre seleciona as derrotas.
 

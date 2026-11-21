@@ -43,7 +43,7 @@ After winning material, re-examine the threats that remain. Having an advantage 
 
 ## 5. Availability: the memory that comes easily
 
-In Tversky and Kahneman’s framework, the ease of recalling examples can influence estimates of frequency. A tactic you recently fell victim to may therefore occupy your attention; that remains a hypothesis to check in your own play.
+In Tversky and Kahneman’s framework, the ease of recalling examples can influence estimates of frequency. A tactic you recently fell victim to may therefore occupy your attention; that remains a hypothesis to check in your own play. When [a blunder seems to come at the worst possible moment](/en/blog/murphys-law-in-chess/), counting the games in which it did not happen helps test that impression.
 
 Compare your memories with a set of games, including the less memorable ones. Then choose a specific difficulty to work on. Knowing a psychology term is not enough to explain a mistake or correct it.
 

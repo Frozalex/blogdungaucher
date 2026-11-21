@@ -77,7 +77,7 @@ Your rating provides information about results within a particular system. It me
 
 These are suggestions for reflection to adapt, without a promise that doubt will disappear.
 
-**Keep a record of competence.** After a game or session, record what you did well in specific terms: “I correctly evaluated the endgame pawn structure”, or “I found the tactical line on move 23 under time pressure”. This creates examples to compare with your account. Working through [a collection of tactical exercises](https://amzn.to/4wdx8HC) can provide additional concrete tasks; solving one problem still does not measure your entire ability.
+**Keep a record of competence.** After a game or session, [record what you did well in specific terms](/en/blog/chess-and-self-confidence/): “I correctly evaluated the endgame pawn structure”, or “I found the tactical line on move 23 under time pressure”. This creates examples to compare with your account. Working through [a collection of tactical exercises](https://amzn.to/4wdx8HC) can provide additional concrete tasks; solving one problem still does not measure your entire ability.
 
 **Examine what contributed to a win.** Identify specific decisions: managing time or recognising a positional structure, for example. Check those explanations against the game rather than merely replacing every external explanation with a flattering internal one.
 

@@ -109,7 +109,7 @@ La [revue de Berridge et Robinson](https://sites.lsa.umich.edu/berridge-lab/wp-c
 
 **Situation fictive :** après trois défaites, tu n'apprécies plus les parties, mais tu veux revenir au classement de départ avant de fermer l'application. Le constat utile est la divergence entre envie de relancer et plaisir de jouer. Tu peux aussi continuer par habitude, parce qu'un ami est encore connecté, ou parce que tu as du mal à laisser une tâche inachevée. Une description comportementale ne permet pas de trancher entre toutes ces explications au niveau cérébral.
 
-Tu peux noter, avant et après une séance, ce que tu avais décidé de faire, ce que tu as effectivement fait et ce que tu en as retiré. Cette observation personnelle ne constitue ni un diagnostic d'addiction ni une expérience de neurosciences. Elle peut néanmoins révéler un problème d'organisation sur lequel tu peux agir.
+Tu peux noter, avant et après une séance, ce que tu avais décidé de faire, ce que tu as effectivement fait et ce que tu en as retiré. Cette observation personnelle ne constitue ni un [diagnostic d'addiction](/fr/blog/les-echecs-et-l-addiction/) ni une expérience de neurosciences. Elle peut néanmoins révéler un problème d'organisation sur lequel tu peux agir.
 
 ## Organiser les retours d'apprentissage plutôt que chercher un pic
 

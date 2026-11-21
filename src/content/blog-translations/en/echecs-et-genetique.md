@@ -50,7 +50,7 @@ You need not choose between “everything was predetermined” and “everyone w
 
 Start with difficulties you can describe: endgame knowledge, checking threats, time spent on decisions. Choose a way to work on them and observe how your responses develop. A plateau over a few games does not measure biological potential.
 
-If you support a child, preserve opportunities to discover several activities and change their mind. Their rating is not an aptitude test. Their interest in chess and the conditions in which they play also deserve a hearing.
+If you support a child, preserve opportunities to discover several activities and change their mind. Their rating is not an aptitude test. The same distinction matters when [supporting gifted children who play chess](/en/blog/chess-and-giftedness/). Their interest in chess and the conditions in which they play also deserve a hearing.
 
 Research leaves many questions open. That does not prevent serious work or playing for enjoyment; above all, it prevents turning a population statistic into a verdict on a person.
 

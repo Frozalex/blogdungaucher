@@ -48,7 +48,7 @@ Em *From Russia with Love* (1963), Kronsteen é apresentado como um enxadrista f
 
 Essa associação (xadrez = inteligência fria, potencialmente ameaçadora) não é acidental. Ela reflete um imaginário cultural construído sobre dois pilares : o gênio associal (o jogador solitário, incompreendido, perigoso) e a metáfora da manipulação (o tabuleiro como espaço onde se move os outros como peças).
 
-[Ingmar Bergman](https://pt.wikipedia.org/wiki/Ingmar_Bergman), em *O Sétimo Selo* (1957), empurra a metáfora ao extremo : o cavaleiro medieval joga xadrez contra a Morte ela mesma para retardar o fim. O tabuleiro torna-se o lugar da negociação existencial, da estratégia contra o destino.
+[Ingmar Bergman](https://pt.wikipedia.org/wiki/Ingmar_Bergman), em *O Sétimo Selo* (1957), empurra a metáfora ao extremo : o cavaleiro medieval joga xadrez contra a Morte ela mesma para retardar o fim. O tabuleiro torna-se o lugar da negociação existencial, da estratégia contra o destino. Na Idade Média, o frade Jacques de Cessoles deu às peças outro papel: [cada uma representava um ofício ou uma função na sociedade](/pt-br/blog/xadrez-religiao-e-proibicao/).
 
 ## Stefan Zweig e a literatura do xadrez
 
@@ -76,7 +76,7 @@ Uma compra e uma inscrição registram comportamentos diferentes. Para acompanha
 
 ## A revolução Twitch e YouTube
 
-Paralelamente a *O Gambito da Rainha*, outra transformação cultural estava em curso : o surgimento do xadrez em streaming.
+Paralelamente a *O Gambito da Rainha*, outra transformação cultural estava em curso : o [surgimento do xadrez em streaming](/pt-br/blog/xadrez-e-streaming/).
 
 [Hikaru Nakamura](https://pt.wikipedia.org/wiki/Hikaru_Nakamura), Grande Mestre americano, começou a fazer stream no Twitch em 2017. Seu canal explodiu durante a pandemia, com até 50.000 espectadores simultâneos. Em 2024, ele conta entre os streamers de jogo mais seguidos do mundo, em todas as categorias combinadas.
 

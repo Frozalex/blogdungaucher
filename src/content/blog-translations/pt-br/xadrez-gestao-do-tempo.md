@@ -41,7 +41,7 @@ Mantenha uma verificação mínima: seu rei está ameaçado? Alguma peça contin
 
 Simplificar pode facilitar a continuação, mas uma troca também pode piorar sua posição ou levar a um final delicado. Portanto, “trocar porque resta pouco tempo” não é uma regra suficiente.
 
-Não copie automaticamente o ritmo adversário. Uma resposta rápida pode vir de preparação, de uma decisão forçada, de uma intuição ou de um erro. O relógio oferece uma pista; não revela o que a outra pessoa pensou.
+Não copie automaticamente o ritmo adversário. Uma resposta rápida pode vir de preparação, de uma decisão forçada, de uma intuição ou de um erro. O relógio oferece uma pista; não revela o que a outra pessoa pensou. O exemplo do [adversário que gasta quinze minutos em um lance](/pt-br/blog/redes-bayesianas-prever-blunder/#o-adversário-como-fonte-contínua-de-informação) mostra como comparar duas explicações para a mesma demora.
 
 ## Analisar também os minutos gastos
 

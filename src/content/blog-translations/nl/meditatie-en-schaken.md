@@ -24,7 +24,7 @@ Het antwoord hier is beperkt maar bruikbaar: je kunt een aandachtsoefening als p
 
 ## Mindfulness, ontspanning en concentratie: drie verschillende doelen
 
-In de oefening hieronder betekent mindfulness dat je de huidige ervaring opmerkt en naar een gekozen aandachtspunt terugkeert. Ontspanning richt zich eerder op het verminderen van spanning. Schaakconcentratie betekent werken met informatie die voor de stelling relevant is. Deze activiteiten kunnen samengaan, maar hebben verschillende criteria voor succes.
+In de oefening hieronder betekent mindfulness dat je de huidige ervaring opmerkt en naar een gekozen aandachtspunt terugkeert. Ontspanning richt zich eerder op het verminderen van spanning. [Schaakconcentratie](/nl/blog/concentratie-schaken/) betekent werken met informatie die voor de stelling relevant is. Deze activiteiten kunnen samengaan, maar hebben verschillende criteria voor succes.
 
 Je kunt je onrust duidelijk opmerken zonder te ontspannen. Je kunt ook heel rustig zijn en een dreiging missen. Aandacht die volledig opgaat in een onjuiste variant maakt de analyse niet correct doordat ze lang aanhoudt. Beschikbare aandacht heeft nog steeds schaakkennis en controle nodig.
 

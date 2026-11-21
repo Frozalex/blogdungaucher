@@ -71,7 +71,7 @@ This shows deception is not always necessary to observe an effect in a clinical 
 
 Choose a stable arrangement: prepare equipment, check available time, then return to the position. That is a practical suggestion, not a method with an established Elo effect here.
 
-Keep it flexible enough not to depend on an object. If the jumper is missing, the tournament remains playable. “Without it, I will lose” is a prediction, not a completed result. Check it against your games instead of treating it as a rule.
+Keep it flexible enough not to depend on an object. If the jumper is missing, the tournament remains playable. “Without it, I will lose” is a prediction, not a completed result. A [testable expectation about your play](/en/blog/chess-and-self-confidence/) names something you can actually do or check. Check it against your games instead of treating it as a rule.
 
 The same applies to “I always lose to them” or “I am useless at endgames”. Check what games actually show. The link with expectations is explored in [the self-fulfilling prophecy in chess](/en/blog/self-fulfilling-prophecy-in-chess/).
 

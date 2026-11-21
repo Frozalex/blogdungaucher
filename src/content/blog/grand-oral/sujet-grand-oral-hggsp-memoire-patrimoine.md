@@ -30,7 +30,7 @@ heroImage:
 
 ---
 
-Un même match peut être étudié comme une suite de parties, raconté comme un affrontement politique et présenté dans une exposition. Comment ces usages transforment-ils notre rapport à Fischer-Spassky 1972 ?
+Un même match peut être étudié comme une suite de parties, raconté comme un affrontement politique et présenté dans une exposition. Comment ces usages transforment-ils notre rapport à [Fischer-Spassky 1972](/fr/blog/sujet-grand-oral-hggsp-fischer-spassky/) ?
 
 Pour préparer tes dix minutes de présentation, pars d'un document précis plutôt que de supposer trois mémoires nationales homogènes. L'exposition du World Chess Hall of Fame organisée pour le cinquantenaire fournit un cas vérifiable.
 
