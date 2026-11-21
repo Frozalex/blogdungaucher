@@ -27,6 +27,21 @@ Monte o orçamento de uma saída inventada. O clube oferece a inscrição a duas
 
 Acrescente uma coluna sem valores. A última rodada termina antes do horário do último ônibus? Quem precisa trabalhar naquele dia consegue deixar a criança no local com um responsável previamente indicado? É possível participar de parte da atividade em vez de faltar ao evento inteiro? Uma organização pode anunciar o horário de início com três semanas de antecedência e esquecer completamente o de saída. Uma mensagem curta corrigindo a informação pode trazer de volta quem havia descartado o torneio por precaução. Você não precisa conhecer o orçamento da família para tornar sua própria comunicação mais clara.
 
+## Timbó 2025: por que a mesma inscrição variava de 400 a 800 reais?
+
+No 91º Campeonato Brasileiro Absoluto de Xadrez, em Timbó (SC), a data da inscrição fazia diferença antes mesmo do primeiro lance. Para o torneio clássico de dezembro de 2025, a Confederação Brasileira de Xadrez publicou quatro valores na linha “Inscrição STD”.
+
+| Prazo de inscrição em 2025 | Taxa do clássico |
+| --- | ---: |
+| Até 1º de outubro | R$ 400 |
+| Até 1º de novembro | R$ 550 |
+| Até 1º de dezembro | R$ 650 |
+| Até 12 de dezembro | R$ 800 |
+
+Do primeiro ao último prazo, a taxa anunciada dobrou. Para quem só pudesse confirmar a viagem em 12 de dezembro, seriam 400 reais a mais pela mesma vaga no clássico, antes de somar transporte e hospedagem. Antecipar a decisão também tinha um custo: a inscrição era pessoal e o regulamento não previa reembolso. Para quem dependia de uma folga no trabalho, pagar em outubro significava assumir o risco de perder os 400 reais se a folga não saísse.
+
+Havia valores próprios para outras categorias, além de descontos e isenções. Os quatro valores acima se referem à tarifa padrão do clássico. [Consulte a tabela e as condições na página 2 do regulamento da CBX.](https://www.cbx.org.br/files/downloads/bratimbo.pdf#page=2)
+
 ## O conhecimento que chega antes da inscrição
 
 A ideia de capital cultural ajuda a prestar atenção nos hábitos que uma pessoa aprende sem precisar pagar por uma aula formal. Pense numa criança que acompanhou a irmã em vários torneios. Ela já sabe onde conferir o emparceiramento, como reconhecer o número da mesa e a quem recorrer se o nome não aparecer. Outra criança, igualmente capaz de calcular uma combinação, pode imaginar que basta esperar alguém chamá-la pelo nome. Se ela chegar atrasada à mesa, sua dificuldade naquele momento tem pouco a ver com a posição inicial do tabuleiro.
