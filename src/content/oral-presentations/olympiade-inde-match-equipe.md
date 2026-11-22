@@ -21,6 +21,8 @@ publishDate: "2027-04-17T02:00:00+02:00"
 
 <p>On peut ainsi avoir une équipe forte dans un classement pour des raisons qui ne se confondent pas avec le résultat de son premier échiquier. Si un joueur gagne et que ses trois coéquipiers perdent, l’équipe perd le match. À l’inverse, un joueur peut perdre alors que le reste de son équipe assure le résultat. Le cadre collectif donne un rôle aux quatre parties.</p>
 
+<p>Le passage des points de partie aux points de match n’est pas un simple changement d’unité. Prenons deux équipes fictives sur deux rondes. La première gagne quatre à zéro puis perd un à trois. Elle totalise cinq points de partie et deux points de match. La seconde gagne deux et demi à un et demi deux fois. Elle totalise aussi cinq points de partie, mais quatre points de match. Le classement par matches privilégie donc la répétition des succès collectifs, tandis qu’un classement par points de partie donnerait la même valeur aux deux parcours. Le tableau de l’Olympiade encode ainsi une manière de définir la régularité d’une équipe.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Un cas documenté montre comment lire une dernière ronde">
@@ -31,6 +33,8 @@ publishDate: "2027-04-17T02:00:00+02:00"
 
 <p>L’organisation impose aussi des décisions collectives avant de jouer : établir un ordre des échiquiers et choisir quels membres de la délégation seront alignés. Ces choix ne rendent pas les coups individuels collectifs. Ils déterminent la manière dont les compétences disponibles entrent dans les quatre rencontres de la ronde.</p>
 
+<p>Je peux décomposer le score de trois et demi à un demi en quatre lignes, une pour chaque échiquier. Trois lignes portent un point pour l’Inde, et la quatrième un demi-point. Cette représentation évite de parler d’un joueur qui aurait remporté « trois points et demi » dans une seule partie. En dessous, j’ajoute une ligne récapitulative et je transforme le total gagné en deux points de match. Dans un document public, faire apparaître les deux niveaux aiderait à expliquer pourquoi un résultat large est marquant même lorsqu’il rapporte autant de points de match qu’une victoire plus étroite.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Présenter un résultat national donne un sens qui dépasse la somme des coups">
@@ -38,6 +42,10 @@ publishDate: "2027-04-17T02:00:00+02:00"
 <p class="dissertation-movement-start">Le classement associe un résultat à une équipe représentant une fédération. Cela permet aux médias et aux institutions de présenter une victoire au nom d’un pays. La force de cette représentation tient au fait que les contributions séparées sont rassemblées sous un même nom. On peut suivre les décisions de quatre personnes et reconnaître en même temps le parcours d’un collectif.</p>
 
 <p>Ce résultat ne donne pas une mesure directe du niveau de tous les joueurs de ce pays. Il indique ce qu’une délégation déterminée a obtenu avec ses adversaires, ses sélections et son programme de rondes. Pour expliquer l’émergence d’une équipe, il faudrait distinguer la formation des joueurs, leur accès aux tournois et d’autres éléments que le tableau final ne mesure pas. Le classement donne une preuve de résultat sportif, tandis que son interprétation comme signe de puissance culturelle ou de développement demande des documents supplémentaires.</p>
+
+<p>Pour mesurer ce que la victoire fait connaître d’une équipe, on peut comparer un tableau final et un compte rendu. Le tableau donne un ensemble de résultats selon une règle commune. Le compte rendu met en avant certains noms, certains matches et des moments considérés comme décisifs. Il peut rappeler une génération de joueurs ou rapprocher le succès d’autres étapes du développement du jeu. Ces éléments ne disposent pas du même statut. Les premiers peuvent être lus directement dans les résultats. Les seconds demandent des sources sur la formation, les institutions et les parcours. Le résultat est donc un fait de compétition qui peut nourrir plusieurs récits, selon les preuves que l’on choisit de discuter.</p>
+
+<p>On peut comprendre le rôle des quatre parties en suivant une ronde fictive. Si une équipe mène deux à un alors que le dernier échiquier joue encore, la dernière partie peut transformer cette avance en victoire ou ramener le total à deux partout. Si la partie se termine nulle, le total devient deux et demi à un et demi. Pour le public, l’enjeu de ce dernier demi-point devient lisible seulement si l’on connaît les trois autres résultats. C’est une conséquence concrète du format collectif : une même finale n’a pas la même portée selon les parties déjà achevées.</p>
 
 </section>
 

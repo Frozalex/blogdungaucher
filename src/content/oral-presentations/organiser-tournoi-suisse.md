@@ -21,6 +21,8 @@ publishDate: "2026-12-12T02:00:00+01:00"
 
 <p>Supposons maintenant sept rondes où soixante-quatre personnes jouent toutes à chaque tour. Il y a trente-deux parties par ronde, donc 224 parties. Ce nombre permet à chaque participant de jouer sept fois, quel que soit son résultat précédent. Le prix de cette économie est la variété des parcours. Chacun ne rencontre qu’une partie du groupe. La structure des appariements devient donc importante pour donner un sens au classement.</p>
 
+<p>Le calcul de 224 parties traduit aussi un choix de calendrier. Si une salle ne contient que trente-deux échiquiers, chaque ronde mobilise toutes les tables à la fois. Avec soixante-trois rondes, la quantité de matériel instantanément nécessaire ne change pas, mais la durée s’allonge fortement. Si la salle ne contient que seize échiquiers, il faut fractionner la ronde ou diminuer le nombre de participants. Fractionner les rencontres oblige ensuite à gérer l’horaire et les résultats encore inconnus avant de composer la ronde suivante. Le système suisse réduit ainsi un coût de durée et de répétition des rencontres, tandis que la capacité de la salle reste une contrainte propre. C’est la combinaison de ces deux limites qui aide un organisateur à choisir un format réaliste.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Apparier selon les résultats construit des parcours comparables en partie">
@@ -31,6 +33,8 @@ publishDate: "2026-12-12T02:00:00+01:00"
 
 <p>Cette logique réduit certaines comparaisons peu informatives, mais elle ne donne pas les mêmes adversaires à tous. Imaginons deux joueurs qui terminent chacun à cinq points sur sept. L’un a pu rencontrer plusieurs participants qui terminent parmi les premiers. L’autre a pu les éviter. Les deux scores sont égaux alors que les parcours diffèrent. Il faut choisir si cette différence doit participer au classement.</p>
 
+<p>On peut rendre le principe d’un appariement concret avec huit personnes fictives. Dans la première ronde, supposons quatre victoires et quatre défaites. Avant la deuxième, on dispose de quatre joueurs à un point et de quatre à zéro. Il est possible d’organiser deux rencontres dans chaque groupe. Supposons maintenant qu’un score intermédiaire apparaisse parce que certaines parties se terminent par des nulles. Le groupe correspondant peut compter un nombre impair de personnes à une ronde ultérieure. Il manque alors un partenaire pour que tout le monde joue à score égal. Une rencontre entre scores voisins peut résoudre cette difficulté, à condition de vérifier qu’elle ne répète pas une rencontre antérieure et qu’elle reste conforme au système choisi. Le problème ressemble à la recherche d’un ensemble de paires compatibles, plutôt qu’au classement d’une seule liste.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Le départage mesure le parcours selon une convention publique">
@@ -38,6 +42,8 @@ publishDate: "2026-12-12T02:00:00+01:00"
 <p class="dissertation-movement-start">Le Buchholz, dans sa forme simple, additionne les scores des adversaires rencontrés. Prenons des valeurs fictives sur sept rondes jouées. Pour le joueur A, les adversaires terminent avec 6, 5, 5, 4, 4, 3 et 2 points. Le total vaut 29. Pour le joueur B, ils terminent avec 5, 5, 4, 4, 3, 3 et 2 points. Le total vaut 26. Si le règlement annonce ce départage et qu’il s’applique ainsi au cas étudié, A passe devant B. Il a rencontré un groupe qui a, collectivement, marqué davantage.</p>
 
 <p>Ce critère a une limite intéressante. Si un ancien adversaire de A gagne sa dernière partie, le départage de A augmente alors même que son propre score n’a pas changé. Ce n’est pas une erreur de calcul. C’est la conséquence d’un indicateur qui renseigne sur la force du parcours d’après les résultats de l’ensemble des joueurs. Une autre convention pourrait privilégier la confrontation directe dans les cas où elle existe. Chaque critère met l’accent sur une propriété différente. D’où l’importance de l’annoncer avant les parties.</p>
+
+<p>Pour rendre visible le choix du départage, je peux garder les mêmes résultats et écrire deux colonnes supplémentaires au tableau. La première indique le score personnel, égal pour A et B. La seconde donne le total des scores adverses utilisé pour le Buchholz. Supposons maintenant que B ait battu A lors de leur rencontre directe. Un règlement qui place cette rencontre en premier peut donner l’avantage à B. Un règlement qui applique d’abord le Buchholz donne l’avantage à A dans l’exemple. Les deux classements s’appuient sur des faits vérifiables. Leur divergence vient de la question prioritaire choisie par le tournoi : retenir le résultat de leur confrontation ou comparer le parcours général. Annoncer le critère avant la première ronde permet aux joueurs de connaître ce sens du classement avant qu’il ne favorise quelqu’un.</p>
 
 </section>
 

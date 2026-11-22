@@ -21,6 +21,8 @@ publishDate: "2027-01-16T02:00:00+01:00"
 
 <p>Les deux institutions n’exercent pas la même fonction. Une fédération établit des règles de compétition et des procédures d’arbitrage. L’Assemblée générale désigne un jour et formule une invitation. Elle ne joue pas à la place des clubs et n’organise pas les appariements. Cette différence permet d’étudier comment une décision internationale peut modifier l’attention accordée à une activité sans assurer elle-même sa mise en œuvre.</p>
 
+<p>Une date de reconnaissance peut également servir à rendre une action repérable pour des personnes qui ignorent l’existence d’un club. Il suffit d’imaginer deux annonces proposant le même atelier : l’une paraît isolément et l’autre figure dans une programmation commune des bibliothèques et associations. Le contenu du jeu ne change pas, mais la deuxième information peut être reprise par davantage d’acteurs et apparaître dans des lieux consultés par des publics différents. C’est un effet possible de coordination que le texte international rend plausible. Il faudrait observer la diffusion réelle des annonces et demander comment les personnes ont découvert l’événement pour savoir si cet effet se produit.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Le sens de la journée dépend des acteurs qui organisent le jeu">
@@ -31,6 +33,8 @@ publishDate: "2027-01-16T02:00:00+01:00"
 
 <p>Il faut aussi éviter de confondre une règle partagée et une expérience identique. Le fait que le cavalier se déplace de la même façon donne une base commune. La possibilité de jouer dépend du temps, du coût du déplacement, de l’accès à un lieu et de l’expérience préalable. La circulation d’un règlement aide à organiser une rencontre, mais ne retire pas les obstacles qui se trouvent avant l’échiquier.</p>
 
+<p>Le choix du matériel donne un exemple de la mise en œuvre locale. Un lieu peut installer plusieurs tables entièrement équipées et attendre que des joueurs commencent des parties. Il peut aussi consacrer une table à une finale de trois pièces, avec une personne chargée d’expliquer les déplacements et de faire essayer les deux camps. Dans le premier cas, les joueurs autonomes accèdent vite à des adversaires. Dans le second, quelqu’un qui n’a jamais roqué ou donné échec peut faire une expérience complète à partir d’une position simple. Ces deux usages du même matériel montrent que le succès d’une action dépend de la manière dont le public est accueilli.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Une reconnaissance se juge aussi par ce qui se passe après le rendez-vous">
@@ -38,6 +42,10 @@ publishDate: "2027-01-16T02:00:00+01:00"
 <p class="dissertation-movement-start">Pour savoir ce que la journée a changé, compter les entrées dans la bibliothèque ne suffit pas. On peut distinguer le nombre de visiteurs, la proportion de personnes qui découvrent le jeu sur place et leur possibilité de continuer si elles le souhaitent. Une personne peut venir pour un autre motif et regarder un échiquier quelques minutes. Une autre peut revenir en club après l’atelier. Les deux réponses renseignent sur des dimensions différentes de l’événement.</p>
 
 <p>La comparaison avec une action analogue organisée à une autre date permettrait d’examiner la contribution du rendez-vous mondial. Mais des différences de communication ou de disponibilité des bénévoles pourraient expliquer une partie de l’écart. Un effet plausible doit être attribué avec précaution. L’intérêt de la comparaison est de passer d’une intention commune à une question observable : quelles personnes ont eu accès à quelle forme de pratique et qu’a rendu possible ce rendez-vous ?</p>
+
+<p>Pour illustrer les choix de mesure, supposons qu’un atelier fictif ait reçu quarante personnes, dont vingt découvrent les échecs, et qu’une semaine plus tard cinq d’entre elles reviennent. On peut annoncer quarante visites, comme on peut parler de cinq retours sur vingt premières rencontres. Ces chiffres ne s’opposent pas. Ils décrivent la fréquentation et une première continuité. Il faudrait aussi demander quelles personnes souhaitaient revenir mais ne le pouvaient pas, et pour quelles raisons. Le retour dépend autant de la présence d’autres créneaux que de l’intérêt créé le jour même. L’évaluation doit donc relier un rendez-vous ponctuel aux choix de l’organisation qui le suit.</p>
+
+<p>L’exemple d’une action organisée par deux clubs permet de comprendre où se trouve la valeur du rendez-vous commun. Un club peut prêter des pièces à un autre parce que celui-ci propose un atelier l’après-midi et que son propre événement a lieu le matin. Dans un autre cas, deux ateliers prévus à la même heure se disputent les mêmes bénévoles. La coordination ne découle donc pas mécaniquement de la date. Elle dépend des décisions prises autour de cette date, notamment de l’horaire et du partage des ressources. C’est cette organisation qu’il faudrait observer.</p>
 
 </section>
 

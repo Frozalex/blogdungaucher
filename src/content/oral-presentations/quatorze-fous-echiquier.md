@@ -21,6 +21,8 @@ publishDate: "2027-06-12T02:00:00+02:00"
 
 <p>Puisqu’il y a quinze diagonales, ce premier raisonnement donne une borne de quinze. Il ne démontre pas encore qu’une disposition de quinze fous est possible. Les fous se déplacent aussi selon une autre famille de diagonales. Il faut examiner si l’occupation de toutes les diagonales de la première famille laisse apparaître une attaque dans la seconde.</p>
 
+<p>Pour vérifier le nombre de diagonales, on peut commencer avec les trois valeurs centrales. La différence zéro décrit a1, b2 et toutes les cases jusqu’à h8. Avec une différence de un, on commence en b1 et on poursuit jusqu’à h7. Avec une différence de moins un, on commence en a2 et on poursuit jusqu’à g8. En s’éloignant de zéro, les diagonales raccourcissent d’une case à chaque étape, jusqu’à ce qu’il ne reste qu’un coin. Cette construction aide à justifier que toutes les différences de moins sept à sept existent. Dans l’exposé, dessiner deux ou trois diagonales seulement suffit à faire comprendre comment les autres suivent le même principe.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Placer quinze fous contraint deux coins à s’attaquer">
@@ -31,6 +33,8 @@ publishDate: "2027-06-12T02:00:00+02:00"
 
 <p>La preuve procède en deux temps. La première famille donne un nombre de places possibles. La seconde empêche d’utiliser toutes ces places à la fois. Ce n’est pas simplement parce que les coins sont proches ou éloignés. C’est leur appartenance simultanée à deux familles de diagonales qui crée le blocage.</p>
 
+<p>L’argument des coins peut être repris comme un raisonnement par contradiction. Je suppose d’abord qu’un placement de quinze fous existe. Puisque chacun exige une diagonale distincte de la première famille, les quinze diagonales doivent être utilisées. Je n’ai alors plus aucun choix pour les deux diagonales qui ne contiennent qu’une seule case. Une fois ces deux cases occupées, la seconde famille de diagonales donne une attaque. La supposition de départ ne peut donc pas être vraie. Cette manière de présenter la preuve montre que le problème ne vient pas d’une disposition mal choisie. Il apparaît dans toutes les dispositions qui tenteraient d’atteindre la même borne.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Une disposition de quatorze fous montre que la limite est atteignable">
@@ -40,6 +44,10 @@ publishDate: "2027-06-12T02:00:00+02:00"
 <p>Nous avons maintenant deux affirmations complémentaires. Une disposition de quinze fous est impossible. Une disposition de quatorze fous existe et on peut la dessiner directement. Le premier raisonnement empêche de dépasser la borne. Le second prouve qu’il n’est pas nécessaire de descendre jusqu’à treize. On obtient un maximum démontré, plutôt qu’un record trouvé au hasard par essais successifs.</p>
 
 <p>Cette distinction est générale dans les problèmes d’optimisation. Énumérer de bons exemples donne confiance dans une réponse, mais ne ferme pas la possibilité d’un meilleur exemple. Construire une borne sans montrer qu’elle est atteinte ne donne pas non plus la solution exacte. Le plateau permet de voir comment ces deux étapes s’articulent.</p>
+
+<p>L’idée peut être prolongée sur un plateau carré de côté différent. Sur un plateau de quatre cases sur quatre, on peut occuper les trois premières colonnes de la rangée du bas et de la rangée du haut. Le décalage vertical vaut trois, tandis que le décalage horizontal disponible ne dépasse pas deux. On obtient six fous. Le même argument appliqué aux diagonales extrêmes exclut une disposition de sept. En formulant ce prolongement, on voit quelles propriétés de la démonstration dépendent de la taille huit et lesquelles restent stables. Il n’est pas nécessaire de parcourir toutes les positions. On utilise les mêmes relations de coordonnées et de diagonales pour comprendre pourquoi la construction fonctionne.</p>
+
+<p>On peut encore vérifier la construction en séparant les deux sens du déplacement. Un fou placé sur la première rangée et un autre placé sur la dernière ne peuvent se rencontrer sur une droite à quarante-cinq degrés que si l’un occupe a et l’autre h. Ce sont les seules colonnes dont l’écart vaut sept. En supprimant h des deux rangées, je retire donc toutes les rencontres possibles entre elles. Cette observation donne un moyen rapide d’expliquer le dessin à voix haute, même si le public n’a pas suivi chaque étape du calcul avec les coordonnées.</p>
 
 </section>
 

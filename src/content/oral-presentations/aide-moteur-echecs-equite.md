@@ -21,6 +21,8 @@ publishDate: "2027-04-10T02:00:00+02:00"
 
 <p>Le logiciel n’est donc pas obligé d’entrer lui-même le coup pour participer à la décision. Un indice, la liste des meilleurs coups ou l’évaluation brusquement défavorable d’une position peuvent déjà donner une information recherchée en cours de jeu. C’est la relation entre cette information et la décision en cours qui rend l’aide importante.</p>
 
+<p>La comparaison avec une préparation ouverte avant le match permet d’établir une limite précise. Un joueur peut étudier le mat du berger et arriver à l’échiquier sachant qu’il doit surveiller f7. Il lui reste alors à reconnaître si la menace existe dans la partie réelle. Un indice reçu au bon moment peut au contraire lui désigner directement ce qu’il doit examiner. Dans le premier cas, le joueur mobilise une connaissance acquise. Dans le second, une intervention extérieure sélectionne une information au cours d’une décision. La différence porte sur la façon dont le savoir devient disponible, pas sur la valeur théorique du conseil.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Après la partie, le conseil a une autre fonction">
@@ -31,6 +33,8 @@ publishDate: "2027-04-10T02:00:00+02:00"
 
 <p>L’intérêt pédagogique de l’outil et sa limitation en compétition répondent donc à deux objectifs distincts. Dans l’entraînement, on cherche à rendre un processus compréhensible. Dans la partie, on cherche à observer comment les joueurs appliquent leurs connaissances selon des ressources définies.</p>
 
+<p>Je peux aussi illustrer deux manières d’utiliser l’analyse après la partie. La première consiste à lire le meilleur coup puis à changer de position. La seconde consiste à masquer la réponse, à énoncer la menace et à rejouer les coups possibles avant de comparer avec le programme. Dans un exemple de mat en un, le diagnostic est assez simple à vérifier : je montre exactement la pièce qui protège la dame au moment de la prise. Dans une position plus complexe, il faut expliquer pourquoi une réponse reste meilleure après la meilleure défense adverse. L’analyse devient alors un moyen de mettre le raisonnement à l’épreuve plutôt que de recueillir seulement un verdict.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Le cadre de jeu rend la distinction vérifiable">
@@ -38,6 +42,10 @@ publishDate: "2027-04-10T02:00:00+02:00"
 <p class="dissertation-movement-start">Lichess publie des règles qui distinguent plusieurs activités. En partie humaine en temps réel, ses règles interdisent notamment l’aide d’un moteur et les conseils d’une autre personne. Dans ses parties par correspondance, des ressources d’ouverture sont admises, tandis que le moteur reste interdit. Contre l’ordinateur de la plateforme, le tableau des règles autorise certaines aides. Le même site organise donc plusieurs contrats de jeu avec des conditions différentes.</p>
 
 <p>Cette diversité montre pourquoi il faut connaître les règles communes avant de comparer des résultats. Imaginez une séance d’enseignement où les deux joueurs reçoivent librement des indications d’un ordinateur et discutent leurs choix. Le résultat appartient à une activité d’entraînement assistée. Il ne devient pas pour autant comparable à un résultat obtenu seul sous la pendule. La différence tient à ce que chacun a accepté et à ce que l’on souhaite mesurer.</p>
+
+<p>L’équité ne se réduit pas à constater que deux personnes pourraient techniquement ouvrir le même outil. Si elles ont accepté une partie sans aide, leur offrir à toutes deux la possibilité de consulter en secret ne préserve pas le sens de la rencontre. Chacune peut croire juger une décision humaine prise dans le cadre annoncé alors qu’une autre ressource intervient. À l’inverse, un format explicitement assisté permet de fixer d’avance ce qui appartient à la personne et ce que le logiciel peut fournir. On ne doit donc pas déduire la légitimité de l’aide de sa simple disponibilité. C’est l’accord sur les règles et la possibilité de comprendre le résultat qui donnent au conseil son statut.</p>
+
+<p>Le risque de confusion existe aussi quand l’aide ne vient pas d’une machine. Un spectateur qui répond à haute voix à une question sur la menace peut influencer le choix autant qu’une flèche affichée par un programme. Inversement, une personne chargée d’aider un joueur à manipuler ou à annoncer ses pièces peut agir sans lui conseiller de coup. Pour comprendre la règle, il faut distinguer l’aide qui rend l’action possible et l’information qui la détermine. Le cas du moteur est particulièrement clair parce qu’il peut fournir une réponse portant directement sur le problème que le joueur doit résoudre.</p>
 
 </section>
 

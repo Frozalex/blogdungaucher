@@ -21,6 +21,8 @@ publishDate: "2026-12-19T02:00:00+01:00"
 
 <p>Le vocabulaire change légèrement en français. Dans le système de jeu, on appelle généralement la pièce « dame ». Dans le récit, « reine » conserve le statut du personnage et convient au monde peuplé de figures royales. Le rapprochement éclaire donc deux niveaux. Une pièce change de type sur le diagramme, et un personnage accède à un nouveau rôle dans la fiction.</p>
 
+<p>Cette promotion a une autre conséquence pour la lecture du personnage. Le but annoncé semble à la portée d’Alice parce qu’il est défini par une règle et par une destination. Pourtant, atteindre la bonne case ne lui donne pas d’avance la maîtrise du monde dans lequel elle arrive. Une promotion moderne remplace immédiatement le pion par une pièce dont les déplacements sont connus. Dans un récit, le nouveau statut doit être reconnu et mis à l’épreuve dans les relations avec les autres personnages. L’expression « devenir reine » relie ces deux moments sans les rendre identiques. On peut donc dire que la règle fournit une condition d’arrivée et que le texte examine ce que cette arrivée signifie pour l’héroïne. C’est l’écart entre les deux qui permet de garder l’intérêt du récit après que son plan a été annoncé.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Le diagramme et le récit n’organisent pas l’expérience du lecteur de la même façon">
@@ -31,6 +33,8 @@ publishDate: "2026-12-19T02:00:00+01:00"
 
 <p>On peut se représenter deux lecteurs. Le premier sait jouer et reconnaît le principe de promotion dès qu’il voit le pion. Le second comprend progressivement qu’Alice doit avancer et qu’une transformation l’attend. La structure échiquéenne offre une anticipation au premier. Le récit lui-même permet au second de suivre l’enjeu sans connaître tous les déplacements.</p>
 
+<p>Pour expliquer cette différence à voix haute, je peux tracer une colonne de huit cases et placer un pion en deuxième rangée. Je colorie la dernière case pour indiquer le point vers lequel il avance. Le schéma ne raconte aucune rencontre. Il fait comprendre d’un regard que la direction est irréversible et que l’arrivée fait changer le pion de catégorie. Si j’ajoute un nom d’épisode à plusieurs rangées, le même dessin devient un outil de lecture. Il permet de demander ce que l’on gagne à passer d’une étape à l’autre et pourquoi le livre prend son temps sur certaines d’entre elles. Je n’ai pas besoin de présenter la colonne comme la transcription exacte de tous les coups de la fiction. Elle sert à montrer la relation entre le temps parcouru par le personnage et la place qu’on peut lui attribuer après coup.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Le livre peut s’écarter du déroulement normal d’une partie">
@@ -38,6 +42,8 @@ publishDate: "2026-12-19T02:00:00+01:00"
 <p class="dissertation-movement-start">Dans la remarque liminaire de l’édition de Gutenberg, Carroll reconnaît que l’alternance des camps n’est pas strictement respectée et soutient que la solution annoncée peut être reconstruite telle qu’elle est donnée. Cette précision distingue deux exigences. Une partie homologuée doit respecter le trait et la légalité à chaque instant. Un récit peut suivre une succession d’actions choisies pour rendre visibles les transformations de son personnage, tout en conservant certains points d’appui du jeu.</p>
 
 <p>Si l’on exigeait que chaque scène corresponde exactement à un demi-coup régulier, on ferait disparaître une partie de cette liberté. À l’inverse, si l’on supprimait l’échiquier, la traversée perdrait son principe de progression et la promotion perdrait son sens. Le livre construit sa cohérence en sélectionnant la règle qui lui donne son axe puis en laissant à la fiction du temps et des déplacements propres.</p>
+
+<p>Un autre contraste concerne la manière de gagner. Dans une partie d’échecs, avancer un pion jusqu’à la dernière rangée peut aider à préparer un mat, mais la promotion seule ne donne aucun point. Le camp doit encore obtenir le résultat prévu par les règles. L’annonce de Carroll associe donc deux événements distincts : l’ascension du pion et le gain annoncé. Le lecteur peut s’intéresser davantage au changement de rôle d’Alice, pendant que le diagramme appelle aussi une question sur l’issue de la partie. Cette distinction évite de prendre la nouvelle couronne pour l’équivalent automatique d’une victoire. Elle aide aussi à comprendre la différence entre la lecture du jeu, qui demande quel camp gagne, et la lecture du récit, qui demande quelle place le personnage peut prendre dans un monde dont il traverse les règles.</p>
 
 </section>
 

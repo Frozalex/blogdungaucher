@@ -20,6 +20,8 @@ specialty: "SES"
 
 <p>Ce cas montre que la valeur économique d’un événement d’échecs peut dépendre de ce que l’on donne à suivre et de la manière dont on rend la partie accessible. Il ne permet pas à lui seul de connaître les revenus individuels. La dotation annoncée d’un tournoi, un contrat de diffusion et la rémunération mensuelle d’une chaîne correspondent à des flux qu’il faut distinguer.</p>
 
+<p>On peut préciser la différence des services proposés avec une même partie diffusée de deux manières. Dans la première, l’écran donne uniquement les coups et les pendules. Dans la seconde, une personne revient sur les décisions, explique une menace et répond aux questions posées pendant la diffusion. Les résultats des joueurs restent identiques, mais la deuxième diffusion mobilise un autre travail. Elle demande d’ajuster les explications à un public qui ne connaît pas aussi bien la position. La personne qui sait rendre intéressante une finale peu spectaculaire crée ainsi une valeur que le seul classement du tournoi ne permet pas de repérer.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Une chaîne donne plus de choix sur le contenu et ouvre de nouvelles dépendances">
@@ -30,6 +32,8 @@ specialty: "SES"
 
 <p>La plateforme peut faciliter la mise en relation avec un public, grâce à ses moyens de diffusion et de paiement. Elle fixe aussi certaines règles d’accès et de monétisation. Comme l’expliquent les pages d’aide de Twitch, certains achats du public peuvent donner lieu à une part versée à la chaîne. Si l’audience, les paiements et l’accès au public sont fortement concentrés sur un seul service, une modification de ces règles peut modifier les options du créateur. C’est une dépendance envers un intermédiaire, même lorsque celui-ci ne fixe pas le contenu précis de la séance.</p>
 
+<p>Dans l’exemple des quatorze heures de travail, on pourrait encore distinguer les recettes qui se reproduisent et celles qui dépendent d’un événement précis. Si les 120 euros se composent surtout d’un versement exceptionnel, répéter quatre séances le mois suivant ne garantit pas la même recette. Si une part provient d’un ensemble de soutiens réguliers, la prévision peut être plus stable, mais elle dépend de leur maintien. Pour comparer sérieusement les deux situations, il faut suivre plusieurs périodes, repérer les dépenses fixes et distinguer ce qui varie avec le nombre de séances. L’autonomie implique de pouvoir organiser l’activité en fonction de cette incertitude.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. L’autonomie dépend des solutions de remplacement">
@@ -37,6 +41,8 @@ specialty: "SES"
 <p class="dissertation-movement-start">Comparer deux créateurs qui ont le même revenu mensuel permet de préciser la notion. Le premier obtient presque tout grâce à une seule chaîne de diffusion. Le second répartit son activité entre cours, commentaires de tournoi et plusieurs moyens de contacter son public. Si un format ou un service cesse de lui être favorable, le second dispose de davantage d’options. Il doit en contrepartie consacrer du temps à plusieurs activités et gérer d’autres coûts. La diversification peut réduire une dépendance sans faire disparaître les contraintes du travail.</p>
 
 <p>Pour mesurer ces écarts dans un cas réel, il faudrait demander à la fois d’où viennent les recettes et quel temps est nécessaire pour les obtenir. Le nombre de vues renseigne sur l’attention, mais n’indique pas par lui-même le revenu ou la stabilité de la chaîne. Les montants ponctuels d’un événement ne renseignent pas non plus sur ce qui se répète en dehors de la compétition. La marge d’autonomie se lit donc dans les options effectivement accessibles, au-delà du nombre de personnes qui regardent.</p>
+
+<p>La relation au public peut aussi modifier le contenu que le créateur se sent libre de proposer. Supposons, dans un cas fictif, que des parties très rapides attirent davantage de personnes qu’une analyse de quarante minutes. Le joueur peut adapter le format pour conserver ses recettes. Il conserve formellement le choix de diffuser une longue analyse, mais une partie des conditions qui rendent ce choix viable se trouve dans les habitudes du public et l’accès que lui donne la plateforme. Pour examiner concrètement cette dépendance, je comparerais plusieurs types de séances avec le temps de préparation, les recettes attribuables et la possibilité de retrouver le même public ailleurs.</p>
 
 </section>
 

@@ -20,6 +20,8 @@ specialty: "Arts · Histoire des arts · HGGSP"
 
 <p>Cependant, le sens n’est pas entièrement contenu dans le visage ou les attributs de devant. En partie, le joueur voit souvent le dos de ses propres pièces. Il est donc utile de demander ce qu’un musée montre lorsqu’il rend cette face visible.</p>
 
+<p>Un même rôle pourrait devenir plus ou moins reconnaissable selon les objets placés à côté. Si le gardien est montré seul, le bouclier peut évoquer une figurine militaire. S’il est entouré de cavaliers, de rois et de pions, on repère plus facilement le système de différences dans lequel il s’inscrit. Une vitrine peut partir de l’usage en rapprochant des types de pièces, puis inviter le visiteur à examiner séparément les gestes et les matières. Il est alors possible de parler de la fonction sans supposer que la personne connaît déjà la forme et le déplacement de chaque pièce du jeu actuel.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. La vue arrière révèle des choix de fabrication">
@@ -30,6 +32,8 @@ specialty: "Arts · Histoire des arts · HGGSP"
 
 <p>Le dispositif d’exposition prolonge ce changement. Le musée décrit une nouvelle disposition, un nouvel éclairage et la possibilité de découvrir les pièces sous plusieurs angles. Ces choix répondent à la difficulté de voir des volumes de petite taille. Ils font aussi apparaître une différence entre la position fixe du joueur assis et le parcours mobile du visiteur autour d’une vitrine.</p>
 
+<p>Pour décrire l’effet de la présentation, je pourrais prendre une image de face et une image de dos du même objet, puis demander ce qui permet d’établir qu’il s’agit d’une seule pièce. Les dimensions, la forme générale du corps et la continuité du volume donnent des indices. Le motif du dossier apporte ensuite un renseignement nouveau qu’une vue frontale ne livrait pas. Cette démarche simple distingue l’identité de l’objet et les éléments que chaque vue rend visibles. En passant d’une photographie à un espace d’exposition, le visiteur peut effectuer lui-même ce changement de point de vue et ajuster la distance à l’objet.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Le musée rassemble des objets dont l’histoire a séparé les trajectoires">
@@ -37,6 +41,8 @@ specialty: "Arts · Histoire des arts · HGGSP"
 <p class="dissertation-movement-start">L’ensemble retrouvé à Lewis comprenait des pièces relevant d’au moins quatre jeux d’échecs et d’autres pièces de jeu. Une vitrine qui réunit plusieurs figures ne reconstitue donc pas nécessairement un échiquier complet tel qu’il aurait été utilisé par deux personnes. En outre, les objets sont répartis entre National Museums Scotland et le British Museum, avec des pièces prêtées pour être montrées à Lewis. Cette histoire oblige à distinguer le lieu de la découverte, les lieux de conservation et les conditions de présentation.</p>
 
 <p>Le musée situe probablement la fabrication autour de 1200 en Norvège. Il présente plusieurs hypothèses sur la voie par laquelle les objets sont arrivés à Lewis et sur les personnes qui ont pu les posséder. Reconnaître ce qui reste incertain fait partie de la médiation. Le public peut constater les ressemblances entre des pièces, examiner les traces de sculpture et comprendre pourquoi les chercheurs les rapprochent du monde scandinave. Il ne peut pas en déduire avec certitude l’identité de leur propriétaire ou la raison de leur dépôt.</p>
+
+<p>Présenter les pièces dans le lieu où elles ont été trouvées et les présenter parmi d’autres objets médiévaux ne dirige pas vers les mêmes questions. Dans le premier cas, l’histoire locale de la découverte peut prendre plus de place. Dans le second, des rapprochements avec d’autres techniques de sculpture deviennent possibles. L’objet et sa matérialité restent les mêmes, mais ce qui l’entoure modifie les comparaisons offertes. Dans un exposé, les deux situations permettent de distinguer le patrimoine comme ensemble d’objets conservés et le patrimoine comme manière de relier ces objets à des publics et à des lieux. Il s’agit d’une interprétation du dispositif, que l’on peut argumenter à partir des documents du musée.</p>
 
 </section>
 

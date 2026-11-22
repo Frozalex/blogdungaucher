@@ -21,6 +21,8 @@ publishDate: "2027-07-10T02:00:00+02:00"
 
 <p>Le seuil d’équilibre donne un repère. Il dépend des hypothèses. Si la subvention n’est pas confirmée, il faut couvrir 480 euros au lieu de 360 et le nombre nécessaire devient quatre-vingts inscriptions. Dans le cas d’un club, distinguer une recette probable et une recette confirmée change donc le niveau de risque que l’on accepte avant d’engager les dépenses.</p>
 
+<p>Le seuil d’équilibre permet de revenir sur un poste de dépense sans recalculer l’organisation entière. Supposons que l’arbitrage et la salle soient déjà engagés. Une charge fixe supplémentaire de trente euros ferait passer le montant restant à couvrir de 360 à 390 euros. Avec six euros de marge par inscription, il faudrait alors soixante-cinq joueurs, soit une personne de plus que la capacité retenue plus loin dans l’exposé. Une variation assez faible peut donc rendre le projet impossible dans cette configuration. Ce calcul permet à l’organisateur de savoir quelles dépenses doivent être confirmées avant qu’il annonce un tarif et une limite de places.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. La capacité de jeu limite les inscriptions possibles">
@@ -31,6 +33,8 @@ publishDate: "2027-07-10T02:00:00+02:00"
 
 <p>La capacité change aussi la manière de réagir. Une politique de prix très bas qui remplit la salle rapidement peut laisser des joueurs sans place. Louer une salle plus grande entraîne de nouveaux coûts fixes et demande éventuellement davantage de matériel ou d’encadrement. L’organisateur doit donc comparer des solutions complètes, pas seulement modifier un chiffre dans la même configuration.</p>
 
+<p>Pour comparer clairement les prix, on peut placer sur un même graphique le nombre d’inscrits et la marge cumulée. La droite du tarif de dix euros monte plus vite, puisque chaque inscription couvre huit euros de charges fixes après les dépenses variables. La droite du tarif de huit euros monte moins vite. Mais avant d’annoncer que la première option est meilleure, il faut choisir sur chaque droite un nombre de participants plausible pour le prix correspondant. La capacité interdit de prolonger l’interprétation au-delà de soixante-quatre places dans ce cas précis. Le graphique relie donc une propriété du budget, une hypothèse de fréquentation et une contrainte physique liée au nombre d’échiquiers.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Le tarif traduit aussi l’objectif du club">
@@ -38,6 +42,10 @@ publishDate: "2027-07-10T02:00:00+02:00"
 <p class="dissertation-movement-start">Un club peut vouloir attirer des personnes qui n’ont jamais joué en tournoi. Il peut prévoir une réduction sur une partie des places ou rechercher un partenaire qui finance spécifiquement cet accès. Par exemple, avec vingt places à six euros et quarante places à neuf euros, le total des inscriptions vaut 480 euros, comme avec soixante inscriptions à huit euros. Le résultat financier est identique dans ces deux cas fictifs, si les soixante places sont prises et si les coûts sont les mêmes. La répartition du prix et le public touché peuvent en revanche différer.</p>
 
 <p>Pour comparer les choix après le tournoi, on peut relever le nombre d’inscriptions payées, la présence le jour même, le nombre de nouvelles personnes et le résultat financier. Ces éléments répondent à des questions différentes. Si le tarif réduit attire quelques personnes qui reviennent ensuite au club, il remplit peut-être l’objectif fixé même sans hausse du nombre total de participants. Il faut alors que ce but et le coût qui lui est consacré aient été décidés à l’avance.</p>
+
+<p>Le tarif réduit peut aussi être évalué à partir de son coût pour le reste de l’organisation. Si l’on remplace une inscription à neuf euros par une inscription à six euros, les recettes baissent de trois euros à fréquentation identique. Si cette place aurait autrement été vide, elle apporte au contraire une recette supplémentaire de six euros et coûte deux euros à servir dans notre modèle. La même réduction ne produit pas le même effet selon la situation qu’elle remplace. Pour apprécier le dispositif, il faut donc savoir si les places à tarif normal auraient été prises et combien de nouvelles personnes ont effectivement joué. Cette comparaison aide à défendre une décision tarifaire en montrant qui elle accueille et de quelle manière elle affecte le budget.</p>
+
+<p>Le même calcul peut servir après un changement de capacité. Si quatre tables deviennent indisponibles, on perd huit places et le seuil de soixante inscrits n’est plus atteignable au tarif de huit euros. L’organisateur peut alors vérifier si la salle peut être réaménagée, si une autre recette est possible ou si certaines dépenses peuvent être adaptées. Connaître à l’avance la marge entre le seuil et la capacité donne un moyen de réagir. On peut montrer ce résultat sur le graphique en déplaçant la limite du nombre de joueurs.</p>
 
 </section>
 

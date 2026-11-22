@@ -21,6 +21,8 @@ publishDate: "2026-12-26T02:00:00+01:00"
 
 <p>Prenons un cas de lecture très simple. Un roi blanc placé en e1 doit être reconnu sur une case sombre. Après le petit roque, il occupe une autre case sombre, g1, tandis que la tour blanche arrive sur f1, une case claire. Si les pièces blanches se détachent bien sur une case sombre mais peu sur une case claire, le roque révèle un problème qui restait caché quand on observait seulement les premières pièces sur le plateau initial. Un bon échantillon de formes doit donc inclure chaque couleur de pièce sur chaque couleur de case.</p>
 
+<p>La lecture du damier dépend aussi de la place de l’observateur. Un joueur assis du côté des Noirs et un joueur assis du côté des Blancs ont la même position devant eux, mais leurs orientations sont inversées. Les coordonnées imprimées servent de repère commun. Leur disposition doit fournir le nom d’une case sans obliger à déplacer une pièce ou à interpréter une lettre tournée du mauvais côté. Ce problème devient visible dans un exercice de club : une personne décrit une menace depuis son fauteuil et l’autre doit la retrouver depuis le côté opposé. Si la seconde se trompe de colonne malgré des cases bien distinguées, augmenter le contraste des couleurs n’est probablement pas la réponse la plus directe. Il faut d’abord observer la manière dont les coordonnées soutiennent la tâche.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Le contraste doit appuyer l’usage du plateau">
@@ -31,6 +33,8 @@ publishDate: "2026-12-26T02:00:00+01:00"
 
 <p>La FIDE demande notamment un contraste suffisant entre cases claires et sombres pour le matériel de compétition. Une démarche de conception peut approfondir cette exigence en examinant en plus les interactions entre fond, pièces et lumière. Elle peut aussi prévoir des coordonnées discrètes mais lisibles, et des familles de formes reconnaissables sans dépendre d’une différence de couleur seule.</p>
 
+<p>Une combinaison de couleurs devrait être examinée à trois échelles. De loin, on cherche à reconnaître la disposition du damier. À la distance de jeu, on doit distinguer la silhouette d’une pièce des pièces voisines. Dans le détail, il faut reconnaître un signe qui sépare deux types sans effort excessif. Une dame et un roi dont les sommets sont presque identiques peuvent se lire différemment si leurs hauteurs ou leurs profils sont suffisamment distincts. Toutefois, si l’on compte seulement sur la hauteur, une pièce placée derrière une autre peut sembler petite pour une raison de perspective. En conservant plusieurs indices, le dessin reste lisible dans davantage de circonstances. Le prototype doit être essayé avec une position dense, où les occultations se produisent, et avec une finale, où l’on isole plus facilement les formes.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Comparer deux maquettes suppose de faire jouer les utilisateurs">
@@ -38,6 +42,8 @@ publishDate: "2026-12-26T02:00:00+01:00"
 <p class="dissertation-movement-start">Imaginons deux prototypes de même taille. Le premier garde deux teintes assez proches et emploie un quadrillage marqué. Le second augmente la différence de clarté et emploie un quadrillage plus discret. Au lieu de demander uniquement lequel est plus beau, on peut proposer les mêmes tâches : retrouver e4, identifier un fou placé sur une case claire, puis énoncer quelles cases le fou peut atteindre sans tenir compte d’autres pièces. On mesure le temps, les erreurs et les hésitations, et on recueille la description de ce qui a gêné la lecture.</p>
 
 <p>Pour éviter que le deuxième passage soit favorisé par la répétition, deux groupes peuvent commencer dans un ordre différent. On doit aussi renouveler les configurations et pratiquer l’exercice sous plusieurs lumières. Si l’un des plateaux aide à reconnaître la grille mais entraîne plus d’erreurs sur les pièces, le résultat invite à retoucher un aspect du projet. Il ne suffit pas à déclarer que l’ensemble de la maquette est meilleur.</p>
+
+<p>On peut représenter les résultats avec une petite grille. Les lignes décrivent la tâche, par exemple trouver une case, reconnaître le camp ou distinguer deux pièces. Les colonnes indiquent la maquette et le type d’éclairage. Supposons qu’un prototype améliore la localisation des cases mais que les joueurs confondent une tour sombre avec une case sombre plus souvent. La grille permet de relier ce problème à la combinaison précise de la pièce et du fond. On pourrait éclaircir la pièce, reprendre son contour ou modifier la case la plus sombre. La décision ne doit pas être prise à partir d’un seul temps moyen, car la moyenne effacerait le type d’erreur. Le résultat recherché est une lecture assez robuste pour que la personne puisse accorder son attention au jeu plutôt qu’au décodage du matériel.</p>
 
 </section>
 

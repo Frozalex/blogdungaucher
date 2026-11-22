@@ -21,6 +21,8 @@ publishDate: "2027-05-29T02:00:00+02:00"
 
 <p>Le cas montre qu’un jeu peut circuler facilement comme ensemble de règles et rester soumis à des obstacles concrets de participation. L’égalité des coups permis constitue une base. Elle ne résout pas les questions qui se posent avant qu’un joueur puisse s’asseoir à l’échiquier.</p>
 
+<p>On peut distinguer les conditions que l’arbitre examine à la table et celles que l’organisateur traite avant le tournoi. À la table, le règlement précise comment annoncer une nulle, vérifier un score ou décider qui a le trait. Avant la compétition, les organisateurs doivent savoir où inscrire chaque personne, pour quelle équipe elle peut jouer et si elle a les moyens d’être présente. L’ouverture de la compétition se joue dans cette deuxième série de décisions. Une règle unique de déplacement des pièces rend possible la rencontre une fois organisée. Elle ne détermine ni le nom qui apparaîtra dans le classement ni le trajet nécessaire pour arriver dans la salle.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. La décision ouvre un accès au moyen d’une procédure précise">
@@ -31,6 +33,8 @@ publishDate: "2027-05-29T02:00:00+02:00"
 
 <p>Le fait que ces informations viennent en partie des organisations qui conduisent le projet importe. Elles renseignent sur les décisions, les acteurs et les objectifs annoncés. Pour apprécier ce qui a changé pour les personnes sur plusieurs années, il faudrait aussi recueillir d’autres points de vue et observer la continuité des activités.</p>
 
+<p>Pour suivre le processus, je peux écrire trois étapes sur le support. D’abord, des joueurs ont développé une pratique locale et peuvent être évalués. Ensuite, une procédure sélectionne celles et ceux qui formeront la délégation dans les sections prévues. Enfin, l’admission et la vérification des documents rendent leur participation administrativement possible. Les trois étapes sont liées, mais chacune demande un appui différent. On peut avoir une pratique locale active avec peu de perspectives internationales. On peut aussi annoncer une place dans un tournoi sans résoudre les questions de sélection ou de déplacement. Le schéma montre où la résolution intervient et pourquoi le travail des partenaires ne se réduit pas à accorder une dérogation.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Une participation internationale rend visible une possibilité sans épuiser l’évaluation du projet">
@@ -38,6 +42,10 @@ publishDate: "2027-05-29T02:00:00+02:00"
 <p class="dissertation-movement-start">On peut juger la décision d’abord sur un effet déterminé : des joueurs qui auraient rencontré des obstacles de représentation peuvent prendre part à une compétition d’équipes. Le public peut suivre leurs parties et reconnaître leurs résultats dans le même dispositif que ceux des autres délégations. Le règlement du jeu n’est pas modifié. C’est le passage vers l’événement qui devient possible par une procédure particulière.</p>
 
 <p>Un autre indicateur porterait sur l’accès régulier à la pratique. Il faudrait examiner les lieux de jeu, les séances suivies, les possibilités de poursuivre après la sélection et la participation de personnes qui ne feront jamais partie de l’équipe. Choisir seulement les résultats échiquéens des compétiteurs retenus éclairerait leur tournoi, mais laisserait de côté ce que le projet permet à d’autres joueurs. Les conséquences à l’échelle locale et l’effet de représentation internationale ne se mesurent donc pas avec le même tableau.</p>
+
+<p>On peut préciser ce que le résultat permettrait de dire avec un exemple fictif. Si une équipe nouvellement admise termine dans la seconde moitié du classement, ce résultat ne retire pas le fait qu’elle a pu prendre part à la compétition. Si elle obtient un bon score, cela ne suffit pas à démontrer que tous les obstacles à la pratique locale ont diminué. Il faut donc séparer l’accès, les résultats et les effets après le tournoi. Ce cadre permet d’écouter aussi les personnes qui suivent des séances sans chercher à participer à l’Olympiade. L’évaluation peut alors reconnaître l’importance de la présence internationale tout en examinant ce que le projet rend accessible plus largement et plus durablement.</p>
+
+<p>À l’oral, je peux comparer deux manières de compter l’accès à la compétition. L’une retient le nombre de joueurs admis à une épreuve internationale. L’autre observe combien de personnes disposent d’un lieu et de partenaires pour jouer régulièrement. Une délégation de quelques joueurs peut rendre une pratique beaucoup plus visible sans indiquer à elle seule le nombre de personnes que cette pratique touche au quotidien. Séparer ces échelles permet de décrire ce qui a changé à Budapest et de formuler une autre question, celle des conditions qui permettent de poursuivre le jeu à Kakuma.</p>
 
 </section>
 

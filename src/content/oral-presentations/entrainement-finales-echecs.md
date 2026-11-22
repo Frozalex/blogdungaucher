@@ -21,6 +21,8 @@ publishDate: "2027-05-08T02:00:00+02:00"
 
 <p>Ce raisonnement correspond à un objectif d’entraînement précis. On ne demande pas de connaître par cœur la position initiale. On demande de justifier si le pion peut avancer jusqu’à sa promotion sans assistance. Cette définition donne un moyen d’évaluer ce qui a été appris.</p>
 
+<p>L’exemple peut être expliqué en comptant les coups plutôt qu’en annonçant que le roi est trop loin. Le pion est à trois avancées de la promotion. Le roi noir ne joue qu’entre ces avances. Depuis a8, aucun des deux coups qui précèdent la promotion ne lui permet d’atteindre une case voisine du pion ou de sa destination. Dans la seconde position, aller de f7 à g6 suffit au contraire à entrer près de la colonne h, et le roi peut reprendre le pion s’il monte en h7. En formulant cette comparaison, le joueur donne une justification qu’il peut transposer à un autre dessin. C’est cette justification que l’évaluation doit chercher à faire apparaître.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Il faut distinguer l’entraînement du contrôle de l’apprentissage">
@@ -31,6 +33,8 @@ publishDate: "2027-05-08T02:00:00+02:00"
 
 <p>Pour étudier cet effet, deux groupes fictifs pourraient disposer du même temps. L’un reprendrait plusieurs fois les mêmes finales, l’autre varierait les places et expliquerait ses décisions. Avant et après, on proposerait des positions de difficulté comparable, sans reprendre exactement les exemples d’entraînement. On noterait la décision, sa justification et la capacité à donner une réponse du roi adverse. Un contrôle après un délai indiquerait si l’amélioration s’est maintenue.</p>
 
+<p>On peut distinguer au moins deux échecs possibles lors d’un exercice. Certains joueurs trouvent la bonne décision mais se trompent dans la raison. D’autres énoncent l’idée du nombre de coups mais négligent une case de passage. Dans un suivi, regrouper ces deux difficultés en un seul score rendrait l’entraînement suivant moins précis. Le premier cas appelle une explication du mécanisme. Le second appelle une meilleure vérification des trajectoires. Un relevé simple pourrait noter séparément la réponse, le nombre de coups avancé et une ligne qui la justifie. On obtient ainsi un résultat exploitable pour construire la séance suivante.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Le transfert se juge par la nature des positions nouvelles">
@@ -38,6 +42,10 @@ publishDate: "2027-05-08T02:00:00+02:00"
 <p class="dissertation-movement-start">Si le pion est avancé d’une case mais que tout le reste correspond à un exemple connu, on mesure une adaptation assez proche. Si l’on change le camp au trait, on vérifie que le joueur tient compte de l’ordre des actions. Si l’on ajoute un autre pion ou le soutien du roi, le problème devient plus riche. Pour comparer des résultats, il faut savoir à quel degré de nouveauté les joueurs ont été confrontés.</p>
 
 <p>La vitesse doit également être interprétée. Une réponse rapide et fausse n’est pas un progrès. Une réponse plus lente peut signaler que le joueur prend le temps de comparer des trajectoires qu’il ne voyait pas auparavant. L’entraînement peut viser d’abord la justesse du raisonnement, puis la rapidité avec laquelle il est réutilisé sous la pendule. Cette séparation permet de demander un progrès précis selon le niveau du joueur.</p>
+
+<p>Pour faire varier la difficulté, je peux reprendre le problème du côté des Noirs. La tâche n’est plus de décider si le pion blanc peut avancer, mais de trouver à quel moment le roi doit se rapprocher et quelle case il doit viser. La position peut rester proche, tout en exigeant que le joueur adopte le point de vue inverse. Quelqu’un qui se contente de répéter le mouvement blanc de l’exercice d’origine risque de passer à côté. Quelqu’un qui a appris la méthode compte à nouveau les trajets et tient compte du trait. Changer la question fournit ainsi une façon de vérifier un transfert, même quand le dessin comporte les mêmes pièces.</p>
+
+<p>Le délai entre les séances permet de nuancer l’interprétation. Rejouer immédiatement une position donne une indication sur la compréhension de la consigne. Revenir quelques jours plus tard sur une position du même type permet de voir si le principe reste disponible quand le dernier exemple est moins présent en mémoire. Ces deux mesures peuvent diverger sans se contredire. Leur intérêt est de faire apparaître ce que le joueur peut expliquer seul après la séance, avec un autre ordre des cases et un temps de réflexion comparable.</p>
 
 </section>
 

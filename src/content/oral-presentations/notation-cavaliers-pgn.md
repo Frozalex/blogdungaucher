@@ -21,6 +21,8 @@ publishDate: "2027-05-15T02:00:00+02:00"
 
 <p>Cette dépendance est utile. Sur un plateau comportant beaucoup de pièces, la case d’arrivée et le type de pièce réduisent déjà fortement les possibilités. On peut donc ajouter des précisions seulement quand le choix d’origine ne se déduit plus de façon unique.</p>
 
+<p>On peut décrire ce que fait le lecteur quand il transforme une notation courte en déplacement. Il identifie la lettre de la pièce puis cherche la destination. Ensuite, il examine, parmi les pièces du camp au trait, celles qui pourraient atteindre cette case. Le processus est presque inverse de celui du joueur qui vient de déplacer une pièce et doit écrire le coup. En partant de la notation, on reconstruit un geste. En partant du geste, on choisit la notation la plus courte que le règlement de transcription autorise. Montrer ces deux sens permet de comprendre pourquoi un fichier peut être compact tout en restant assez précis pour être relu automatiquement.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Le programme ajoute le renseignement qui sépare les candidats">
@@ -31,6 +33,8 @@ publishDate: "2027-05-15T02:00:00+02:00"
 
 <p>La précision porte sur les coups légaux. Un cavalier peut, par la géométrie de son mouvement, atteindre une case et pourtant ne pas avoir le droit de jouer. Par exemple, s’il se trouve entre son roi et une tour qui l’attaquerait dès qu’il bouge, son départ peut exposer son propre roi. Si un seul des cavaliers peut réellement effectuer le déplacement, il ne faut pas ajouter une précision pour un concurrent que les règles excluent. Le code de la partie dépend donc de la légalité et de l’image du plateau.</p>
 
+<p>On peut affiner l’exemple avec deux cavaliers d’une même colonne. Plaçons les cavaliers blancs en b1 et b3, les rois en e1 et e8 et les Blancs au trait. Ils peuvent tous deux aller en d2. Écrire seulement la colonne b ne résout plus rien. La rangée devient donc l’information décisive. La notation standard donne N1d2 pour le cavalier de b1 et N3d2 pour celui de b3. Ce deuxième exemple complète le premier. On voit que la règle ne consiste pas à ajouter systématiquement un caractère déterminé. Elle demande de choisir l’indice qui sépare effectivement les candidats, en suivant un ordre de priorité commun à ceux qui produisent et à ceux qui lisent le fichier.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. La portabilité suppose une convention partagée">
@@ -38,6 +42,10 @@ publishDate: "2027-05-15T02:00:00+02:00"
 <p class="dissertation-movement-start">L’intérêt d’un fichier PGN est que plusieurs logiciels peuvent relire la même partie. Un programme peut afficher en français les lettres utilisées par le joueur et toujours exporter selon la convention anglaise du format. Le choix de langue à l’écran ne doit pas produire un fichier dont un autre programme interprète mal les pièces. Il faut aussi connaître la position de départ. Si une partie commence dans une configuration particulière, la notation des mouvements ne donne pas, à elle seule, tout l’état nécessaire à sa première lecture.</p>
 
 <p>On peut vérifier ce principe en comparant deux essais : écrire une suite complète à partir de la position initiale, puis donner les mêmes derniers coups sans la position de départ ou les premiers mouvements. Dans le deuxième cas, plusieurs interprétations peuvent devenir possibles. Le format est compact parce qu’une grande partie de l’information se reconstitue à partir d’un contexte fourni.</p>
+
+<p>L’inscription d’un résultat final permet de distinguer deux autres tâches. Reconstituer la suite des coups établit comment les pièces ont bougé. Connaître le résultat indique comment la partie s’est achevée. Un joueur peut abandonner dans une position où les règles autorisent encore de nombreux déplacements. La dernière notation du fichier ne permet donc pas toujours de déduire à elle seule le résultat. Il faut conserver cette information par ailleurs. Un lecteur qui sait distinguer la suite des gestes de l’issue déclarée peut utiliser le fichier pour rejouer la partie et pour l’inclure dans des statistiques sans mélanger les deux usages. Cette séparation fait partie de ce que rend possible une notation conçue pour être partagée.</p>
+
+<p>Pour l’illustrer devant un auditoire, je peux masquer les cases d’origine et écrire d’abord la destination d2. Lorsque les deux trajets apparaissent sur le dessin, le manque d’information devient visible. J’ajoute ensuite seulement le détail qui permet de séparer les deux trajets. Au lieu de retenir une série de règles de notation par cœur, le public peut suivre un problème d’identification. Le code est suffisant si une personne qui connaît la position ne peut reconstruire qu’un seul coup légal à partir du message.</p>
 
 </section>
 

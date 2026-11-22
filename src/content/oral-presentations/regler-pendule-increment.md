@@ -21,6 +21,8 @@ publishDate: "2027-01-02T02:00:00+01:00"
 
 <p>Cette relation éclaire le sens d’une moyenne. Si, sur une séquence jouée entièrement, les Blancs dépensent moins de dix secondes par coup en moyenne, leur réserve a augmenté. S’ils en dépensent davantage, elle a diminué. La moyenne donne donc le bilan de la séquence, mais elle n’indique pas ce qui se passe pendant chacun de ses coups.</p>
 
+<p>Pour fixer les termes, je peux représenter une réserve sur une frise avec un seul joueur. À gauche se trouve le temps dont il dispose avant de réfléchir. À droite apparaissent le temps restant avant qu’il presse la pendule et celui qui sera disponible lors de son prochain tour. Entre ces deux valeurs, la pendule a changé de camp et l’incrément a été compté. Le temps pris par l’adversaire intervient dans la durée vécue de la partie, mais il ne se soustrait pas de la réserve du joueur qui attend normalement son tour. Si je mélange ces deux durées, je ne peux plus expliquer pourquoi un joueur dont la partie dure quatre-vingt-dix minutes peut avoir dépensé beaucoup moins de temps sur sa propre pendule. Le modèle suit une réserve individuelle à des instants bien définis.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Deux séquences de même moyenne ne présentent pas le même risque">
@@ -31,6 +33,8 @@ publishDate: "2027-01-02T02:00:00+01:00"
 
 <p>La différence tient à une condition que le bilan final ne montre pas. À chaque étape, la somme des temps déjà dépensés doit rester compatible avec les ajouts déjà reçus. On ne peut pas dépenser d’avance le temps qu’un prochain coup pourrait rendre. On peut représenter le principe avec trois barres de durée, puis déplacer visuellement la plus longue vers le début. Le seul changement d’ordre suffit à faire apparaître le risque.</p>
 
+<p>À partir de cette frise, on peut calculer un seuil sans connaître le bilan final. Dans la première séquence, la réserve juste avant chaque dépense vaut vingt, vingt-trois, puis vingt-six secondes. Le joueur garde donc une marge de treize secondes sur le premier coup, seize sur le deuxième et cinq sur le dernier. La marge la plus faible se trouve au moment où le temps de réflexion approche le plus de la réserve disponible, même si la réserve après le troisième coup vaut quinze secondes. Cette différence permet de poser une question pratique : quel est le moment où l’on risque le plus de perdre à la pendule ? Ce n’est pas forcément celui où le total après le coup est le plus bas. Pour l’estimer, il faut observer la réserve avant de recevoir l’ajout suivant.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. L’incrément donne une valeur stratégique aux coups simples">
@@ -38,6 +42,8 @@ publishDate: "2027-01-02T02:00:00+01:00"
 <p class="dissertation-movement-start">Lorsqu’un joueur sait exactement comment répondre à une menace, il peut jouer en moins de dix secondes et reconstituer une partie de sa réserve. Il dispose alors de plus de temps pour une décision où plusieurs réponses s’affrontent. Dans une finale, par exemple, poursuivre un plan connu peut coûter peu de réflexion, alors qu’un échange de tours demande de vérifier si la finale de pions obtenue est favorable. Le temps gagné plus tôt devient disponible pour cette comparaison.</p>
 
 <p>Cela ne veut pas dire que jouer vite est toujours préférable quand un coup semble facile. Si une réponse adverse a été omise, une réserve plus grande ne répare pas automatiquement l’erreur. Le joueur compare deux coûts : celui des secondes consommées et celui d’une vérification négligée. Plus la position offre de réponses critiques, plus le second coût peut devenir important. Un entraînement spécifique consisterait à distinguer les coups où une vérification courte suffit et ceux où la position justifie de dépenser une part de la réserve.</p>
+
+<p>On peut comparer les premières secondes de deux cadences fictives en gardant la même position au départ. Dans la première, le joueur dispose de trente secondes et n’en récupère jamais. S’il joue trois fois en six secondes, il lui en reste douze. Dans la seconde, il dispose aussi de trente secondes mais reçoit dix secondes par coup terminé à temps. Après les trois mêmes dépenses, il dispose de quarante-deux secondes. Les premiers coups simples ont ici un effet que leur rapidité seule ne ferait pas voir. Une méthode d’entraînement peut demander au joueur de repérer les positions où une réponse se vérifie rapidement et celles qui exigent un examen plus long. Une dépense volontaire devient plus compréhensible si l’on sait de quelle marge elle part et ce qui reste à traiter ensuite.</p>
 
 </section>
 
