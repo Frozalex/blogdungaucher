@@ -43,6 +43,15 @@
 :root body.site-blogvi .c-hero__title{color:var(--text-main);font-family:var(--font-body);font-size:clamp(30px,3.3vw,44px);text-transform:none;letter-spacing:-.025em}
 :root body.site-blogvi :is(.c-hero__chev,.c-hero__rule){display:none}
 :root body.site-blogvi .c-card{position:static;transform:none;margin:0;box-shadow:none}
+.site-blogvi .resource-button:not([hidden]) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .6em 1.15em;
+  min-height: 2.75rem;
+  line-height: 1.35;
+  text-align: center;
+}
 :root body.site-blogvi .c-card__pill{position:static;transform:none;background:var(--bv-tint);color:var(--text-main);border-radius:8px;box-shadow:none}
 :root body.site-blogvi .c-submit{background:var(--green);color:var(--on-green);border-radius:30px;box-shadow:3px 3px 0 var(--bv-ink)}
 :root body.site-blogvi .editorial-article{border:1px solid var(--bv-line);border-radius:18px;background:var(--bv-paper);padding:22px}
@@ -51,7 +60,7 @@
 :root body.site-blogvi .post-grid{grid-template-columns:1fr;gap:24px}
 :root body.site-blogvi .archive-card{padding:24px;border:1px solid var(--bv-line);border-radius:20px;background:var(--bv-paper)}
 :root body.site-blogvi .archive-card .card-link{display:grid;grid-template-columns:39% minmax(0,1fr);align-items:center;gap:26px}
-:root body.site-blogvi .archive-card .card-image-wrap{margin:0;border-radius:10px}
+:root body.site-blogvi .archive-card .card-thumb-wrap{margin:0;border-radius:10px}
 :root body.site-blogvi .archive-card .card-title{font-size:25px;line-height:1.2}
 :root body.site-blogvi .archive-card .card-body{padding:0}
 :root body.site-blogvi .archive-listing{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:0 28px}
@@ -137,6 +146,11 @@
 
 :root body.site-blogvi .dissertation-page .article-layout{border-top:1px solid var(--bv-line);border-radius:20px;padding:30px}
 :root body.site-blogvi .dissertation-page .read-tools{margin:22px 0}
+
+.site-blogvi :is(.hero-title, .card-title, .article-body h2, .article-body h3) {
+  hyphens: auto;
+  overflow-wrap: anywhere;
+}
 
 :root body.site-blogvi article.article-page .affiliate-note{display:flow-root;font-size:12px;margin-right:332px;border-radius:8px}
 @media(max-width:900px){:root body.site-blogvi article.article-page .affiliate-note{margin-right:0}}

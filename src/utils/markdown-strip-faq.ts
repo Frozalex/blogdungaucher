@@ -11,6 +11,7 @@ import { unified } from "unified";
 
 import { rehypeAffiliateLinks } from "./rehype-affiliate-links";
 import { rehypeMathSingle } from "./rehype-math-single";
+import { rehypeScrollableTables } from "./rehype-scrollable-tables";
 import { rehypeTaskListLabels } from "./rehype-task-list-labels";
 import { stripInlineMath } from "./inline-math";
 
@@ -107,6 +108,7 @@ export async function renderMarkdownToArticleHtml(markdown: string): Promise<{
     .use(rehypeMathSingle)
     .use(rehypeAffiliateLinks)
     .use(rehypeTaskListLabels)
+    .use(rehypeScrollableTables)
     .run(tree);
 
   // allowDangerousHtml : laisse passer le HTML brut auteur (ex. <div data-pytrace>,

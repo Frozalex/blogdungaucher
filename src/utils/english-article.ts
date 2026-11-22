@@ -1,5 +1,5 @@
 import GithubSlugger from "github-slugger";
-import { Marked, type Tokens } from "marked";
+import { Marked, Renderer, type Tokens } from "marked";
 import { load } from "cheerio";
 
 import { renderInlineMath, stripInlineMath } from "./inline-math";
@@ -20,6 +20,10 @@ export function renderEnglishMarkdown(markdown: string): {
   const md = new Marked();
   md.use({
     renderer: {
+      table(token: Tokens.Table) {
+        const table = Renderer.prototype.table.call(this, token);
+        return `<div class="table-scroll">${table}</div>\n`;
+      },
       heading(this: { parser: { parseInline: (t: Tokens.Heading["tokens"]) => string } }, { tokens, depth }: Tokens.Heading) {
         const htmlText = this.parser.parseInline(tokens);
         const plain = htmlText.replace(/<[^>]*>/g, "").trim();

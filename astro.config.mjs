@@ -6,6 +6,7 @@ import remarkMath from "remark-math";
 
 import { rehypeAffiliateLinks } from "./src/utils/rehype-affiliate-links.ts";
 import { rehypeMathSingle } from "./src/utils/rehype-math-single.ts";
+import { rehypeScrollableTables } from "./src/utils/rehype-scrollable-tables.ts";
 import { rehypeTaskListLabels } from "./src/utils/rehype-task-list-labels.ts";
 
 import { SITE_ORIGIN } from "./scripts/site-origin.mjs";
@@ -86,7 +87,7 @@ export default defineConfig({
     // Keep the existing remark/rehype rendering when upgrading Astro's defaults.
     processor: unified({
       remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeMathSingle, rehypeAffiliateLinks, rehypeTaskListLabels],
+      rehypePlugins: [rehypeMathSingle, rehypeAffiliateLinks, rehypeTaskListLabels, rehypeScrollableTables],
     }),
     shikiConfig: {
       // Thème clair lisible, contraste élevé sur fond blanc.

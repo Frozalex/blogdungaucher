@@ -747,6 +747,13 @@ main[tabindex="-1"]:focus {
 ::-webkit-scrollbar-thumb { background : rgba(61,139,55,0.3); border-radius: 999px; }
 
 /* ─── TABLEAUX (articles markdown, toutes langues) ────────────── */
+.article-body .table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  margin-block: 1.65rem;
+}
+.article-body .table-scroll > table { margin: 0; }
+
 .article-body table {
   width: 100%;
   border-collapse: separate;

@@ -21,7 +21,7 @@
 .resource-button { display:inline-flex; justify-content:center; align-items:center; gap:1rem; padding:.8rem 1.1rem; border-radius:3px; border:1px solid var(--green); background:var(--green); color:var(--on-green); font:inherit; font-size:.82rem; cursor:pointer; }
 .resource-button:hover { background:var(--green-hover); color:var(--on-green); }
 .resource-page :is(a,button,input,select):focus-visible { outline:2px solid var(--green); outline-offset:4px; }
-.resource-page [hidden] { display:none!important; }
+:is(.resource-page, .reading-library) [hidden] { display:none!important; }
 .resource-end { display:flex; justify-content:space-between; flex-wrap:wrap; align-items:center; gap:1rem; border-top:1px solid var(--border-strong); padding:1.5rem 0; font-size:.9rem; color:var(--text-muted); }
 .resource-field { background:var(--bg); border:1px solid var(--field-border); border-radius:3px; color:var(--text-main); padding:.8rem .9rem; min-width:0; font:inherit; font-size:.9rem; }
 .resource-filter { display:flex; flex-wrap:wrap; gap:.5rem; }

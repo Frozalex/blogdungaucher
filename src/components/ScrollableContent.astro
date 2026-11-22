@@ -28,7 +28,11 @@
       wrapper.append(math);
     });
 
-    const regions = Array.from(article.querySelectorAll<HTMLElement>("pre, .math-scroll-region"))
+    const tableLabel = lang.startsWith("nl") ? "Tabel, scroll met de pijltjestoetsen"
+      : lang.startsWith("en") ? "Table, scroll with the left and right arrow keys"
+      : lang.startsWith("pt") ? "Tabela, use as setas esquerda e direita para rolar"
+      : "Tableau, défilement avec les flèches gauche et droite";
+    const regions = Array.from(article.querySelectorAll<HTMLElement>("pre, .math-scroll-region, .table-scroll"))
       .filter((region) => !region.closest("[aria-hidden='true'], [inert]"));
     const original = new Map(regions.map((region) => [region, {
       tabindex: region.getAttribute("tabindex"),
@@ -55,7 +59,7 @@
           region.dataset.keyboardScroll = "true";
           region.tabIndex = 0;
           if (!original.get(region)!.role) region.setAttribute("role", "region");
-          if (!original.get(region)!.label) region.setAttribute("aria-label", region.matches("pre") ? labels.code : labels.math);
+          if (!original.get(region)!.label) region.setAttribute("aria-label", region.matches(".table-scroll") ? tableLabel : region.matches("pre") ? labels.code : labels.math);
         } else restore(region);
       });
     }
