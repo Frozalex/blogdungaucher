@@ -1,5 +1,6 @@
 import { releasedVariants } from './campaign.mjs';
 import { isEligible } from './content.mjs';
+import { newArticleReleases } from './new-articles.mjs';
 
 const DAY = 86_400_000;
 export function validateConfig(config) {
@@ -79,11 +80,13 @@ export function selectFeedItems(posts, archive, config, now = new Date(), varian
   if (!Number.isFinite(now.getTime())) throw new Error('Invalid build date');
   const releases = new Map(archive.map(entry => [entry.slug, entry]));
   const start = new Date(config.startsAt).getTime();
+  const newReleases = newArticleReleases(posts,config);
   const lower = now.getTime() - config.feedWindowDays * DAY;
   return posts.filter(post => isEligible(post, config, now)).flatMap(post => {
     const isArchive = new Date(post.publishedAt) < new Date(config.archiveCutoff);
     const entry = releases.get(post.slug);
-    const releaseAt = isArchive ? entry?.releaseAt : new Date(Math.max(start, new Date(post.publishedAt).getTime())).toISOString();
+    const managed = config.newArticleDelivery && new Date(post.publishedAt) >= new Date(config.newArticleDelivery.from);
+    const releaseAt = !isArchive && managed ? newReleases.get(post.slug) : isArchive ? entry?.releaseAt : new Date(Math.max(start, new Date(post.publishedAt).getTime())).toISOString();
     if (!releaseAt) return [];
     const release = new Date(releaseAt).getTime();
     return (entry?.initial === true || release >= start) && release <= now.getTime() && release > lower ? [{...post, releaseAt, initial:entry?.initial === true, kind: isArchive ? 'archive' : 'new'}] : [];

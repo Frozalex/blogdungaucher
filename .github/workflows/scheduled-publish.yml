@@ -28,8 +28,8 @@ on:
     # Série Grand oral : le changement d’heure est géré pour Paris.
     - cron: "0 2 * * 6"
       timezone: "Europe/Paris"
-    # Reprise Pinterest : mardi, vendredi, dimanche à 10 h en Guadeloupe.
-    - cron: "0 14 * * 2,5,0"
+    # Pinterest : campagne mar/ven/dim ; compléments RSS lun/jeu, à 10 h en Guadeloupe.
+    - cron: "0 14 * * 1,2,4,5,0"
   workflow_dispatch:
 
 jobs:

@@ -1,0 +1,3087 @@
+{
+  "verifiedAt": "2026-11-22T21:49:27.203Z",
+  "receipts": [
+    {
+      "slug": "echecs-et-l-echec",
+      "id": 437994137,
+      "uuid": "-5950129582971466163",
+      "publicationDate": {
+        "dateTime": "2026-11-23T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Apprendre à perdre aux échecs : ce que personne ne dit vraiment",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-l-echec/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-l-echec",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-15819731711155571862.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-5950129582971466163"
+    },
+    {
+      "slug": "les-echecs-rendent-ils-plus-intelligent",
+      "id": 437994541,
+      "uuid": "733930126704199014",
+      "publicationDate": {
+        "dateTime": "2026-11-26T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Les échecs rendent-ils plus intelligent ? Le vrai bilan scientifique",
+        "pinLink": "https://blogdungaucher.com/fr/blog/les-echecs-rendent-ils-plus-intelligent/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=les-echecs-rendent-ils-plus-intelligent",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-6186504901527540387.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=733930126704199014"
+    },
+    {
+      "slug": "les-echecs-sont-ils-vraiment-un-sport",
+      "id": 437994620,
+      "uuid": "-2015836747339512787",
+      "publicationDate": {
+        "dateTime": "2026-11-30T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Les échecs sont-ils un sport ? Ce que mesurent les différentes définitions",
+        "pinLink": "https://blogdungaucher.com/fr/blog/les-echecs-sont-ils-vraiment-un-sport/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=les-echecs-sont-ils-vraiment-un-sport",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-11695068946840670568.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-2015836747339512787"
+    },
+    {
+      "slug": "pourquoi-grands-joueurs-perdent-contre-enfants",
+      "id": 437994678,
+      "uuid": "8980421051563526963",
+      "publicationDate": {
+        "dateTime": "2026-12-03T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Pourquoi un GM peut perdre contre un enfant : explication cognitive",
+        "pinLink": "https://blogdungaucher.com/fr/blog/pourquoi-grands-joueurs-perdent-contre-enfants/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=pourquoi-grands-joueurs-perdent-contre-enfants",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-10957501839083480782.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=8980421051563526963"
+    },
+    {
+      "slug": "faux-souvenirs-aux-echecs",
+      "id": 437994751,
+      "uuid": "-3865604823405081675",
+      "publicationDate": {
+        "dateTime": "2026-12-07T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Faux souvenirs aux échecs : pourquoi tu crois avoir vu le coup",
+        "pinLink": "https://blogdungaucher.com/fr/blog/faux-souvenirs-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=faux-souvenirs-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-4373503915210912936.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-3865604823405081675"
+    },
+    {
+      "slug": "effet-spectateur-aux-echecs",
+      "id": 437994807,
+      "uuid": "539338680745608060",
+      "publicationDate": {
+        "dateTime": "2026-12-10T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Effet spectateur aux échecs : triche, harcèlement et inaction",
+        "pinLink": "https://blogdungaucher.com/fr/blog/effet-spectateur-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=effet-spectateur-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-944919155271907311.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=539338680745608060"
+    },
+    {
+      "slug": "jouer-en-blitz-est-il-mauvais-pour-progresser",
+      "id": 437994869,
+      "uuid": "8062911137101662578",
+      "publicationDate": {
+        "dateTime": "2026-12-14T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Le blitz freine-t-il ta progression aux échecs ?",
+        "pinLink": "https://blogdungaucher.com/fr/blog/jouer-en-blitz-est-il-mauvais-pour-progresser/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=jouer-en-blitz-est-il-mauvais-pour-progresser",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-6873879253717532084.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=8062911137101662578"
+    },
+    {
+      "slug": "echecs-vs-go-complexite-intelligence",
+      "id": 437994945,
+      "uuid": "-3193801053998135583",
+      "publicationDate": {
+        "dateTime": "2026-12-17T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Échecs vs Go : comparaison complète (complexité, cognition, IA)",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-vs-go-complexite-intelligence/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-vs-go-complexite-intelligence",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-12562863855761075905.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-3193801053998135583"
+    },
+    {
+      "slug": "impuissance-apprise-aux-echecs",
+      "id": 437995030,
+      "uuid": "4296811769048744740",
+      "publicationDate": {
+        "dateTime": "2026-12-21T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Impuissance apprise et échecs : comprendre la révision de 2016",
+        "pinLink": "https://blogdungaucher.com/fr/blog/impuissance-apprise-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=impuissance-apprise-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-9727422530941365528.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=4296811769048744740"
+    },
+    {
+      "slug": "echecs-vs-jeux-video-cerveau",
+      "id": 437995093,
+      "uuid": "5117559632552280348",
+      "publicationDate": {
+        "dateTime": "2026-12-24T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Échecs vs jeux vidéo : ce que dit la science sur le cerveau",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-vs-jeux-video-cerveau/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-vs-jeux-video-cerveau",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-10860076782085960058.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=5117559632552280348"
+    },
+    {
+      "slug": "echecs-vs-poker-strategie",
+      "id": 437995174,
+      "uuid": "-6877403348020342842",
+      "publicationDate": {
+        "dateTime": "2026-12-28T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Échecs vs poker : stratégie, incertitude et prise de décision",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-vs-poker-strategie/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-vs-poker-strategie",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-3451927178791596861.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-6877403348020342842"
+    },
+    {
+      "slug": "aversion-a-la-perte-aux-echecs",
+      "id": 437995252,
+      "uuid": "2744326109339667525",
+      "publicationDate": {
+        "dateTime": "2026-12-31T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Aversion à la perte et échecs : une analogie à examiner",
+        "pinLink": "https://blogdungaucher.com/fr/blog/aversion-a-la-perte-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=aversion-a-la-perte-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-15679230521378269491.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=2744326109339667525"
+    },
+    {
+      "slug": "echecs-vs-scrabble-cognition",
+      "id": 437995349,
+      "uuid": "-5998756204960856074",
+      "publicationDate": {
+        "dateTime": "2027-01-04T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Échecs vs Scrabble : quelles compétences cognitives développent-ils ?",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-vs-scrabble-cognition/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-vs-scrabble-cognition",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-16645908979548824682.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-5998756204960856074"
+    },
+    {
+      "slug": "wittgenstein-et-les-echecs",
+      "id": 437995500,
+      "uuid": "159192803357379294",
+      "publicationDate": {
+        "dateTime": "2027-01-07T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Wittgenstein et les échecs : comprendre et suivre une règle",
+        "pinLink": "https://blogdungaucher.com/fr/blog/wittgenstein-et-les-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=wittgenstein-et-les-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-13364339926154803195.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=159192803357379294"
+    },
+    {
+      "slug": "biais-d-ancrage-aux-echecs",
+      "id": 437995557,
+      "uuid": "456817752338613651",
+      "publicationDate": {
+        "dateTime": "2027-01-11T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Biais d'ancrage aux échecs : l'évaluation du moteur te contamine",
+        "pinLink": "https://blogdungaucher.com/fr/blog/biais-d-ancrage-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=biais-d-ancrage-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-13907653791563334987.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=456817752338613651"
+    },
+    {
+      "slug": "conformisme-aux-echecs",
+      "id": 437995623,
+      "uuid": "2905954641633299599",
+      "publicationDate": {
+        "dateTime": "2027-01-14T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Conformisme aux échecs : modes théoriques et pensée de groupe",
+        "pinLink": "https://blogdungaucher.com/fr/blog/conformisme-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=conformisme-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-12029091569373689640.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=2905954641633299599"
+    },
+    {
+      "slug": "echecs-vs-musique-cerveau",
+      "id": 437995839,
+      "uuid": "8705013696693619960",
+      "publicationDate": {
+        "dateTime": "2027-01-18T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Échecs vs musique : quel impact sur le cerveau ?",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-vs-musique-cerveau/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-vs-musique-cerveau",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-16090076022540640145.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=8705013696693619960"
+    },
+    {
+      "slug": "paradoxe-du-choix-aux-echecs",
+      "id": 437995888,
+      "uuid": "-6532315462104888939",
+      "publicationDate": {
+        "dateTime": "2027-01-21T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Paradoxe du choix aux échecs : répertoire et surcharge d'options",
+        "pinLink": "https://blogdungaucher.com/fr/blog/paradoxe-du-choix-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=paradoxe-du-choix-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-867923526601302897.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-6532315462104888939"
+    },
+    {
+      "slug": "echecs-vs-mathematiques-logique",
+      "id": 437995934,
+      "uuid": "2369165067997167869",
+      "publicationDate": {
+        "dateTime": "2027-01-25T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Échecs vs mathématiques : compétences cognitives partagées ou non ?",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-vs-mathematiques-logique/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-vs-mathematiques-logique",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-2042423144793143767.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=2369165067997167869"
+    },
+    {
+      "slug": "effet-barnum-aux-echecs",
+      "id": 437996009,
+      "uuid": "3319593303112042063",
+      "publicationDate": {
+        "dateTime": "2027-01-28T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Effet Barnum aux échecs : reconnaître les profils trop vagues",
+        "pinLink": "https://blogdungaucher.com/fr/blog/effet-barnum-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=effet-barnum-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-17651256488600937973.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=3319593303112042063"
+    },
+    {
+      "slug": "conditionnement-operant-aux-echecs",
+      "id": 437996096,
+      "uuid": "-8916210906195997494",
+      "publicationDate": {
+        "dateTime": "2027-02-01T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Conditionnement opérant et échecs : renforcement et blitz",
+        "pinLink": "https://blogdungaucher.com/fr/blog/conditionnement-operant-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=conditionnement-operant-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-17637194908215474583.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-8916210906195997494"
+    },
+    {
+      "slug": "prophetie-auto-realisatrice-aux-echecs",
+      "id": 437996166,
+      "uuid": "7988370280287521530",
+      "publicationDate": {
+        "dateTime": "2027-02-04T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Prophétie auto-réalisatrice aux échecs : croyances et progression",
+        "pinLink": "https://blogdungaucher.com/fr/blog/prophetie-auto-realisatrice-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=prophetie-auto-realisatrice-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-16318523360227634607.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=7988370280287521530"
+    },
+    {
+      "slug": "memoriser-parties-aux-echecs",
+      "id": 437996221,
+      "uuid": "1858821734846646208",
+      "publicationDate": {
+        "dateTime": "2027-02-08T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Mémoriser des parties d'échecs : ce que dit la science cognitive",
+        "pinLink": "https://blogdungaucher.com/fr/blog/memoriser-parties-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=memoriser-parties-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-113850778977113082.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=1858821734846646208"
+    },
+    {
+      "slug": "faut-il-vraiment-etudier-les-ouvertures",
+      "id": 437996291,
+      "uuid": "-9060063109519031077",
+      "publicationDate": {
+        "dateTime": "2027-02-11T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Faut-il étudier les ouvertures aux échecs ? Le vrai conseil",
+        "pinLink": "https://blogdungaucher.com/fr/blog/faut-il-vraiment-etudier-les-ouvertures/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=faut-il-vraiment-etudier-les-ouvertures",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-11994492178310173518.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-9060063109519031077"
+    },
+    {
+      "slug": "conditionnement-classique-aux-echecs",
+      "id": 437996373,
+      "uuid": "-293831299305224565",
+      "publicationDate": {
+        "dateTime": "2027-02-15T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Conditionnement classique aux échecs : positions et anxiété",
+        "pinLink": "https://blogdungaucher.com/fr/blog/conditionnement-classique-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=conditionnement-classique-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-1765778255539067021.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-293831299305224565"
+    },
+    {
+      "slug": "comparaison-sociale-aux-echecs",
+      "id": 437996452,
+      "uuid": "-6164073921119891830",
+      "publicationDate": {
+        "dateTime": "2027-02-18T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Comparaison sociale aux échecs : vivre avec un classement permanent",
+        "pinLink": "https://blogdungaucher.com/fr/blog/comparaison-sociale-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=comparaison-sociale-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-13396361257976991359.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-6164073921119891830"
+    },
+    {
+      "slug": "histoire-et-origines-des-echecs",
+      "id": 437996617,
+      "uuid": "5921196372235338426",
+      "publicationDate": {
+        "dateTime": "2027-02-22T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Histoire des échecs : origines, du chaturanga à la dame moderne",
+        "pinLink": "https://blogdungaucher.com/fr/blog/histoire-et-origines-des-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=histoire-et-origines-des-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-17196293536318391886.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=5921196372235338426"
+    },
+    {
+      "slug": "effet-de-halo-aux-echecs",
+      "id": 437996689,
+      "uuid": "-2903176855015437656",
+      "publicationDate": {
+        "dateTime": "2027-02-25T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Effet de halo aux échecs : quand le classement contamine le jugement",
+        "pinLink": "https://blogdungaucher.com/fr/blog/effet-de-halo-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=effet-de-halo-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-2736749200654143338.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-2903176855015437656"
+    },
+    {
+      "slug": "psychologie-des-foules-aux-echecs",
+      "id": 437996764,
+      "uuid": "3224482856377404569",
+      "publicationDate": {
+        "dateTime": "2027-03-01T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Psychologie des foules aux échecs : public, salle et chat en ligne",
+        "pinLink": "https://blogdungaucher.com/fr/blog/psychologie-des-foules-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=psychologie-des-foules-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-13649118436986984460.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=3224482856377404569"
+    },
+    {
+      "slug": "gratification-differee-aux-echecs",
+      "id": 437996863,
+      "uuid": "4394836650876030267",
+      "publicationDate": {
+        "dateTime": "2027-03-04T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Gratification différée aux échecs : ce que le marshmallow a raté",
+        "pinLink": "https://blogdungaucher.com/fr/blog/gratification-differee-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=gratification-differee-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-15030672222557989220.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=4394836650876030267"
+    },
+    {
+      "slug": "obeissance-a-l-autorite-aux-echecs",
+      "id": 437996930,
+      "uuid": "-3629839482962950711",
+      "publicationDate": {
+        "dateTime": "2027-03-08T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Obéissance à l'autorité aux échecs : moteurs, coachs et théorie",
+        "pinLink": "https://blogdungaucher.com/fr/blog/obeissance-a-l-autorite-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=obeissance-a-l-autorite-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-16133139223135173891.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-3629839482962950711"
+    },
+    {
+      "slug": "stress-chronique-aux-echecs",
+      "id": 437997033,
+      "uuid": "1380796848988241920",
+      "publicationDate": {
+        "dateTime": "2027-03-11T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Stress chronique aux échecs : fatigue, charge et récupération",
+        "pinLink": "https://blogdungaucher.com/fr/blog/stress-chronique-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=stress-chronique-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-5494381342336357824.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=1380796848988241920"
+    },
+    {
+      "slug": "echecs-et-la-solitude",
+      "id": 437997170,
+      "uuid": "-8787889757030954007",
+      "publicationDate": {
+        "dateTime": "2027-03-15T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Solitude aux échecs : autonomie de jeu et liens sociaux",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-la-solitude/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-la-solitude",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-12235580291670783331.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-8787889757030954007"
+    },
+    {
+      "slug": "echecs-et-precarite",
+      "id": 437997281,
+      "uuid": "-3364090848296089157",
+      "publicationDate": {
+        "dateTime": "2027-03-18T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs et précarité : l'échiquier peut-il transcender les inégalités ?",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-precarite/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-precarite",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-4567177837776924537.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-3364090848296089157"
+    },
+    {
+      "slug": "motivation-intrinseque-aux-echecs",
+      "id": 437997353,
+      "uuid": "1182985850264373327",
+      "publicationDate": {
+        "dateTime": "2027-03-22T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Motivation intrinsèque aux échecs : quand le Elo remplace le plaisir",
+        "pinLink": "https://blogdungaucher.com/fr/blog/motivation-intrinseque-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=motivation-intrinseque-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-545964727319471663.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=1182985850264373327"
+    },
+    {
+      "slug": "theorie-de-l-esprit-aux-echecs",
+      "id": 437997425,
+      "uuid": "7278029072263563570",
+      "publicationDate": {
+        "dateTime": "2027-03-25T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Théorie de l'esprit aux échecs : modéliser ce que l'adversaire croit",
+        "pinLink": "https://blogdungaucher.com/fr/blog/theorie-de-l-esprit-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=theorie-de-l-esprit-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-637967932213706093.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=7278029072263563570"
+    },
+    {
+      "slug": "intelligence-emotionnelle-aux-echecs",
+      "id": 437997504,
+      "uuid": "-962126282843275222",
+      "publicationDate": {
+        "dateTime": "2027-03-29T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Intelligence émotionnelle aux échecs : ce qui résiste à la critique",
+        "pinLink": "https://blogdungaucher.com/fr/blog/intelligence-emotionnelle-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=intelligence-emotionnelle-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-10888334432383763688.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-962126282843275222"
+    },
+    {
+      "slug": "decision-sous-incertitude-aux-echecs",
+      "id": 437997615,
+      "uuid": "4981523716293084823",
+      "publicationDate": {
+        "dateTime": "2027-04-01T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Décision sous incertitude aux échecs : utilité espérée, Bayes et rationalité limitée",
+        "pinLink": "https://blogdungaucher.com/fr/blog/decision-sous-incertitude-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=decision-sous-incertitude-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-2221217058507621079.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=4981523716293084823"
+    },
+    {
+      "slug": "projection-aux-echecs",
+      "id": 437997775,
+      "uuid": "-8279719304289433114",
+      "publicationDate": {
+        "dateTime": "2027-04-05T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Projection aux échecs : prêter à l'adversaire ses propres idées",
+        "pinLink": "https://blogdungaucher.com/fr/blog/projection-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=projection-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-16033429113615608336.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-8279719304289433114"
+    },
+    {
+      "slug": "memoire-reconstructive-aux-echecs",
+      "id": 437997850,
+      "uuid": "3824823753907588612",
+      "publicationDate": {
+        "dateTime": "2027-04-08T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Mémoire reconstructive aux échecs : le souvenir se refabrique",
+        "pinLink": "https://blogdungaucher.com/fr/blog/memoire-reconstructive-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=memoire-reconstructive-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-6060123606339335391.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=3824823753907588612"
+    },
+    {
+      "slug": "echecs-estime-de-soi-elo",
+      "id": 437997942,
+      "uuid": "7105129663385848673",
+      "publicationDate": {
+        "dateTime": "2027-04-12T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Elo et estime de soi : quand ton classement devient ton identité",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-estime-de-soi-elo/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-estime-de-soi-elo",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-8804286692916242160.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=7105129663385848673"
+    },
+    {
+      "slug": "psychologie-du-statut-aux-echecs",
+      "id": 437998015,
+      "uuid": "-5423408473701005861",
+      "publicationDate": {
+        "dateTime": "2027-04-15T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Psychologie du statut aux échecs : ce que le classement fait vraiment",
+        "pinLink": "https://blogdungaucher.com/fr/blog/psychologie-du-statut-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=psychologie-du-statut-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-11445197080302676620.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-5423408473701005861"
+    },
+    {
+      "slug": "analyser-ses-parties",
+      "id": 437998075,
+      "uuid": "5652246603353703164",
+      "publicationDate": {
+        "dateTime": "2027-04-19T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Analyser ses parties d'échecs : méthode pratique pour progresser",
+        "pinLink": "https://blogdungaucher.com/fr/blog/analyser-ses-parties/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=analyser-ses-parties",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-1576182448081161415.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=5652246603353703164"
+    },
+    {
+      "slug": "psychologie-de-la-persuasion-aux-echecs",
+      "id": 437998161,
+      "uuid": "923454681263063724",
+      "publicationDate": {
+        "dateTime": "2027-04-22T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Psychologie de la persuasion aux échecs : les 7 leviers de Cialdini",
+        "pinLink": "https://blogdungaucher.com/fr/blog/psychologie-de-la-persuasion-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=psychologie-de-la-persuasion-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-13569132447027885985.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=923454681263063724"
+    },
+    {
+      "slug": "rationalisation-aux-echecs",
+      "id": 437998416,
+      "uuid": "5944064366574387971",
+      "publicationDate": {
+        "dateTime": "2027-04-26T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Rationalisation aux échecs : les raisons qu'on invente après coup",
+        "pinLink": "https://blogdungaucher.com/fr/blog/rationalisation-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=rationalisation-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-5829815602820687452.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=5944064366574387971"
+    },
+    {
+      "slug": "reciprocite-aux-echecs",
+      "id": 437998496,
+      "uuid": "94600385969277872",
+      "publicationDate": {
+        "dateTime": "2027-04-29T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Réciprocité aux échecs : la dette invisible du cours gratuit",
+        "pinLink": "https://blogdungaucher.com/fr/blog/reciprocite-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=reciprocite-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-17458681844256538355.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=94600385969277872"
+    },
+    {
+      "slug": "formation-des-habitudes-aux-echecs",
+      "id": 437999057,
+      "uuid": "6308794568350321243",
+      "publicationDate": {
+        "dateTime": "2027-05-03T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Formation des habitudes aux échecs : ce qui marche vraiment",
+        "pinLink": "https://blogdungaucher.com/fr/blog/formation-des-habitudes-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=formation-des-habitudes-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-15604119957248708485.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=6308794568350321243"
+    },
+    {
+      "slug": "hyperfocus-attention-soutenue-aux-echecs",
+      "id": 437999114,
+      "uuid": "-6048688600201019076",
+      "publicationDate": {
+        "dateTime": "2027-05-06T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Hyperfocus et attention soutenue aux échecs : définitions",
+        "pinLink": "https://blogdungaucher.com/fr/blog/hyperfocus-attention-soutenue-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=hyperfocus-attention-soutenue-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-8686768313971230772.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-6048688600201019076"
+    },
+    {
+      "slug": "theorie-auto-determination-aux-echecs",
+      "id": 437999177,
+      "uuid": "-4964660460481592362",
+      "publicationDate": {
+        "dateTime": "2027-05-10T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Théorie de l'autodétermination aux échecs : les trois besoins",
+        "pinLink": "https://blogdungaucher.com/fr/blog/theorie-auto-determination-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=theorie-auto-determination-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-13207747133032226268.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-4964660460481592362"
+    },
+    {
+      "slug": "preuve-sociale-aux-echecs",
+      "id": 437999239,
+      "uuid": "-3709601353213129374",
+      "publicationDate": {
+        "dateTime": "2027-05-13T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Preuve sociale aux échecs : popularité contre taux de réussite",
+        "pinLink": "https://blogdungaucher.com/fr/blog/preuve-sociale-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=preuve-sociale-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-13146223272176074059.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-3709601353213129374"
+    },
+    {
+      "slug": "echecs-et-procrastination",
+      "id": 437999303,
+      "uuid": "7062382880024117702",
+      "publicationDate": {
+        "dateTime": "2027-05-17T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Procrastination et échecs : ce que l'échiquier apprend sur l'évitement",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-procrastination/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-procrastination",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-15167785226409361693.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=7062382880024117702"
+    },
+    {
+      "slug": "rarete-aux-echecs",
+      "id": 437999483,
+      "uuid": "6880788319002447083",
+      "publicationDate": {
+        "dateTime": "2027-05-20T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Rareté aux échecs : offres limitées et psychologie du zeitnot",
+        "pinLink": "https://blogdungaucher.com/fr/blog/rarete-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=rarete-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-8608411435383462725.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=6880788319002447083"
+    },
+    {
+      "slug": "biais-de-confirmation-aux-echecs",
+      "id": 437999552,
+      "uuid": "8410476542579393025",
+      "publicationDate": {
+        "dateTime": "2027-05-24T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Biais de confirmation aux échecs : chercher la réfutation de son plan",
+        "pinLink": "https://blogdungaucher.com/fr/blog/biais-de-confirmation-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=biais-de-confirmation-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-8720744269889396916.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=8410476542579393025"
+    },
+    {
+      "slug": "echecs-et-la-triche",
+      "id": 437999628,
+      "uuid": "3591675861162085405",
+      "publicationDate": {
+        "dateTime": "2027-05-27T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Triche aux échecs : preuves et affaire Niemann",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-la-triche/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-la-triche",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-11820707926371415049.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=3591675861162085405"
+    },
+    {
+      "slug": "pourquoi-ton-cerveau-prefere-avoir-raison",
+      "id": 437999724,
+      "uuid": "892276849487793581",
+      "publicationDate": {
+        "dateTime": "2027-05-31T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Psychologie aux échecs : remettre ton jugement en question",
+        "pinLink": "https://blogdungaucher.com/fr/blog/pourquoi-ton-cerveau-prefere-avoir-raison/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=pourquoi-ton-cerveau-prefere-avoir-raison",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-2399730978657615040.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=892276849487793581"
+    },
+    {
+      "slug": "moteur-echecs-python-par-ou-commencer",
+      "id": 437999797,
+      "uuid": "-438458253173831061",
+      "publicationDate": {
+        "dateTime": "2027-06-03T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Programmer un moteur d'échecs en Python : par où commencer",
+        "pinLink": "https://blogdungaucher.com/fr/blog/moteur-echecs-python-par-ou-commencer/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=moteur-echecs-python-par-ou-commencer",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-12112655273615501342.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-438458253173831061"
+    },
+    {
+      "slug": "manipulation-emotionnelle-aux-echecs",
+      "id": 437999859,
+      "uuid": "1768361007171653352",
+      "publicationDate": {
+        "dateTime": "2027-06-07T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Manipulation émotionnelle aux échecs : le jeu hors de l'échiquier",
+        "pinLink": "https://blogdungaucher.com/fr/blog/manipulation-emotionnelle-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=manipulation-emotionnelle-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-10511009904591380717.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=1768361007171653352"
+    },
+    {
+      "slug": "representer-un-echiquier-en-python",
+      "id": 437999944,
+      "uuid": "2442455122150575530",
+      "publicationDate": {
+        "dateTime": "2027-06-10T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Représenter un échiquier en Python : mailbox 10x12 et FEN",
+        "pinLink": "https://blogdungaucher.com/fr/blog/representer-un-echiquier-en-python/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=representer-un-echiquier-en-python",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-13352274636382561949.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=2442455122150575530"
+    },
+    {
+      "slug": "echecs-et-visualisation",
+      "id": 438000015,
+      "uuid": "2838682088167065345",
+      "publicationDate": {
+        "dateTime": "2027-06-14T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Visualisation mentale aux échecs : voir sans regarder",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-visualisation/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-visualisation",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-9300184888716645387.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=2838682088167065345"
+    },
+    {
+      "slug": "generer-les-coups-legaux-en-python",
+      "id": 438000100,
+      "uuid": "2269916264346764772",
+      "publicationDate": {
+        "dateTime": "2027-06-17T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Générer les coups légaux aux échecs en Python : le guide complet",
+        "pinLink": "https://blogdungaucher.com/fr/blog/generer-les-coups-legaux-en-python/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=generer-les-coups-legaux-en-python",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-6444906243756723998.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=2269916264346764772"
+    },
+    {
+      "slug": "echecs-stress-tournoi",
+      "id": 438000183,
+      "uuid": "1745345979485343095",
+      "publicationDate": {
+        "dateTime": "2027-06-21T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Gérer le stress en tournoi d'échecs : psychologie et physiologie",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-stress-tournoi/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-stress-tournoi",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-17554648258333469115.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=1745345979485343095"
+    },
+    {
+      "slug": "perft-verifier-son-generateur-de-coups",
+      "id": 438000246,
+      "uuid": "-4158809416196406264",
+      "publicationDate": {
+        "dateTime": "2027-06-24T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Perft aux échecs : vérifier son générateur de coups en Python",
+        "pinLink": "https://blogdungaucher.com/fr/blog/perft-verifier-son-generateur-de-coups/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=perft-verifier-son-generateur-de-coups",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-5110306484948833366.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-4158809416196406264"
+    },
+    {
+      "slug": "echecs-et-handicap",
+      "id": 438000336,
+      "uuid": "-6476143313310167661",
+      "publicationDate": {
+        "dateTime": "2027-06-28T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs et handicap : règles, matériel et accessibilité",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-handicap/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-handicap",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-9042571652552371237.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-6476143313310167661"
+    },
+    {
+      "slug": "un-moteur-qui-joue-au-hasard",
+      "id": 438000391,
+      "uuid": "-6689430358014344874",
+      "publicationDate": {
+        "dateTime": "2027-07-01T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Coder un moteur d'échecs qui joue une partie complète en Python",
+        "pinLink": "https://blogdungaucher.com/fr/blog/un-moteur-qui-joue-au-hasard/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=un-moteur-qui-joue-au-hasard",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-9523396469006716975.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-6689430358014344874"
+    },
+    {
+      "slug": "theorie-de-l-attachement-aux-echecs",
+      "id": 438000476,
+      "uuid": "-8230322774038589902",
+      "publicationDate": {
+        "dateTime": "2027-07-05T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Attachement et échecs : le soutien des parents et des coachs",
+        "pinLink": "https://blogdungaucher.com/fr/blog/theorie-de-l-attachement-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=theorie-de-l-attachement-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-3953822973360996362.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-8230322774038589902"
+    },
+    {
+      "slug": "fonction-evaluation-materiel-python",
+      "id": 438000552,
+      "uuid": "-2367810921004381037",
+      "publicationDate": {
+        "dateTime": "2027-07-08T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Fonction d'évaluation d'un moteur d'échecs en Python : le matériel",
+        "pinLink": "https://blogdungaucher.com/fr/blog/fonction-evaluation-materiel-python/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=fonction-evaluation-materiel-python",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-13038507946271209929.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-2367810921004381037"
+    },
+    {
+      "slug": "echecs-et-concentration",
+      "id": 438000635,
+      "uuid": "532912919227027189",
+      "publicationDate": {
+        "dateTime": "2027-07-12T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Concentration aux échecs : retrouver le fil du raisonnement",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-concentration/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-concentration",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-6663574753452547550.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=532912919227027189"
+    },
+    {
+      "slug": "minimax-en-python-moteur-echecs",
+      "id": 438000702,
+      "uuid": "6784696172286394731",
+      "publicationDate": {
+        "dateTime": "2027-07-15T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Implémenter minimax en Python pour un moteur d'échecs",
+        "pinLink": "https://blogdungaucher.com/fr/blog/minimax-en-python-moteur-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=minimax-en-python-moteur-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-3021695960881353342.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=6784696172286394731"
+    },
+    {
+      "slug": "mecanismes-de-defense-aux-echecs",
+      "id": 438000774,
+      "uuid": "841235031854761248",
+      "publicationDate": {
+        "dateTime": "2027-07-19T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Mécanismes de défense aux échecs : comprendre les réactions",
+        "pinLink": "https://blogdungaucher.com/fr/blog/mecanismes-de-defense-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=mecanismes-de-defense-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-5584799547501158617.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=841235031854761248"
+    },
+    {
+      "slug": "negamax-et-elagage-alpha-beta-python",
+      "id": 438000837,
+      "uuid": "5309607543503473643",
+      "publicationDate": {
+        "dateTime": "2027-07-22T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Négamax et élagage alpha-bêta en Python : moteur d'échecs",
+        "pinLink": "https://blogdungaucher.com/fr/blog/negamax-et-elagage-alpha-beta-python/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=negamax-et-elagage-alpha-beta-python",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-7212015304661041810.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=5309607543503473643"
+    },
+    {
+      "slug": "echecs-et-resilience",
+      "id": 438000938,
+      "uuid": "3521717015464330594",
+      "publicationDate": {
+        "dateTime": "2027-07-26T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Résilience aux échecs : comment rebondir après une défaite et progresser",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-resilience/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-resilience",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-2907427616685483342.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=3521717015464330594"
+    },
+    {
+      "slug": "ordonnancement-des-coups-moteur-echecs",
+      "id": 438001015,
+      "uuid": "967064279095526676",
+      "publicationDate": {
+        "dateTime": "2027-07-29T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Ordonnancement des coups d'un moteur d'échecs : MVV-LVA, killers",
+        "pinLink": "https://blogdungaucher.com/fr/blog/ordonnancement-des-coups-moteur-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=ordonnancement-des-coups-moteur-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-16802316079737128325.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=967064279095526676"
+    },
+    {
+      "slug": "echecs-et-streaming",
+      "id": 438001096,
+      "uuid": "752886896023850499",
+      "publicationDate": {
+        "dateTime": "2027-08-02T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs et streaming : comment Twitch et YouTube ont révolutionné le jeu",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-streaming/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-streaming",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-7824879780285040840.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=752886896023850499"
+    },
+    {
+      "slug": "approfondissement-iteratif-gestion-du-temps",
+      "id": 438001177,
+      "uuid": "604994871519955465",
+      "publicationDate": {
+        "dateTime": "2027-08-05T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Approfondissement itératif et gestion du temps d'un moteur d'échecs",
+        "pinLink": "https://blogdungaucher.com/fr/blog/approfondissement-iteratif-gestion-du-temps/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=approfondissement-iteratif-gestion-du-temps",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-16188763815164658189.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=604994871519955465"
+    },
+    {
+      "slug": "echecs-gestion-du-temps",
+      "id": 438001272,
+      "uuid": "-398474644112653041",
+      "publicationDate": {
+        "dateTime": "2027-08-09T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Gestion du temps aux échecs : maîtriser la pendule et la décision sous pression",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-gestion-du-temps/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-gestion-du-temps",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-8945161793770875919.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-398474644112653041"
+    },
+    {
+      "slug": "quiescence-et-tables-de-cases-python",
+      "id": 438001348,
+      "uuid": "-2946459028809430025",
+      "publicationDate": {
+        "dateTime": "2027-08-12T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Recherche de quiescence et tables de cases en Python",
+        "pinLink": "https://blogdungaucher.com/fr/blog/quiescence-et-tables-de-cases-python/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=quiescence-et-tables-de-cases-python",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-17579999081162095319.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-2946459028809430025"
+    },
+    {
+      "slug": "biais-du-survivant-aux-echecs",
+      "id": 438001695,
+      "uuid": "-2309018760345533901",
+      "publicationDate": {
+        "dateTime": "2027-08-16T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Biais du survivant aux échecs : ouvertures, conseils de GM et prodiges",
+        "pinLink": "https://blogdungaucher.com/fr/blog/biais-du-survivant-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=biais-du-survivant-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-4338039862878558974.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-2309018760345533901"
+    },
+    {
+      "slug": "protocole-uci-python-et-mesurer-son-elo",
+      "id": 438001774,
+      "uuid": "-361843263419693224",
+      "publicationDate": {
+        "dateTime": "2027-08-19T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "UCI en Python : prototype et estimation de force d'un moteur",
+        "pinLink": "https://blogdungaucher.com/fr/blog/protocole-uci-python-et-mesurer-son-elo/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=protocole-uci-python-et-mesurer-son-elo",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-8569065361548729529.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-361843263419693224"
+    },
+    {
+      "slug": "echecs-et-culture-populaire",
+      "id": 438001840,
+      "uuid": "-4041211154901613171",
+      "publicationDate": {
+        "dateTime": "2027-08-23T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs et culture populaire : de Bergman à The Queen's Gambit",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-culture-populaire/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-culture-populaire",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-17472653809011421618.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-4041211154901613171"
+    },
+    {
+      "slug": "reseau-mode-defaut-aux-echecs",
+      "id": 438001933,
+      "uuid": "2031891991686040895",
+      "publicationDate": {
+        "dateTime": "2027-08-26T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Réseau du mode par défaut et échecs : pensée et attention",
+        "pinLink": "https://blogdungaucher.com/fr/blog/reseau-mode-defaut-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=reseau-mode-defaut-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-12729061418565086249.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=2031891991686040895"
+    },
+    {
+      "slug": "echecs-et-diplomatie",
+      "id": 438001997,
+      "uuid": "-8711485952758823032",
+      "publicationDate": {
+        "dateTime": "2027-08-30T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs et diplomatie : histoire, rencontres et limites",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-diplomatie/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-diplomatie",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-10247730746928346619.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-8711485952758823032"
+    },
+    {
+      "slug": "effet-placebo-aux-echecs",
+      "id": 438002076,
+      "uuid": "-636844187209087038",
+      "publicationDate": {
+        "dateTime": "2027-09-02T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Effet placebo aux échecs : ce que la croyance change vraiment",
+        "pinLink": "https://blogdungaucher.com/fr/blog/effet-placebo-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=effet-placebo-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-14335386904254907108.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-636844187209087038"
+    },
+    {
+      "slug": "dissonance-cognitive-aux-echecs",
+      "id": 438002155,
+      "uuid": "8088306671141863476",
+      "publicationDate": {
+        "dateTime": "2027-09-06T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Dissonance cognitive aux échecs : la psychologie du « j'étais gagnant »",
+        "pinLink": "https://blogdungaucher.com/fr/blog/dissonance-cognitive-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=dissonance-cognitive-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-3823429403300597758.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=8088306671141863476"
+    },
+    {
+      "slug": "echecs-alphazero-stockfish",
+      "id": 438002231,
+      "uuid": "6683541107108234694",
+      "publicationDate": {
+        "dateTime": "2027-09-09T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "AlphaZero contre Stockfish : la révolution de l'IA aux échecs",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-alphazero-stockfish/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-alphazero-stockfish",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-1417806646541481483.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=6683541107108234694"
+    },
+    {
+      "slug": "echecs-et-flow",
+      "id": 438002311,
+      "uuid": "1668315092929890033",
+      "publicationDate": {
+        "dateTime": "2027-09-13T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Échecs et flow : comprendre l'état de flux sur l'échiquier",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-flow/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-flow",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-12055853922760181783.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=1668315092929890033"
+    },
+    {
+      "slug": "echecs-et-le-corps",
+      "id": 438002375,
+      "uuid": "6224679526276614500",
+      "publicationDate": {
+        "dateTime": "2027-09-16T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Échecs et physiologie : calories, rythme cardiaque et fatigue",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-le-corps/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-le-corps",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-7810273085164638997.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=6224679526276614500"
+    },
+    {
+      "slug": "gaslighting-aux-echecs",
+      "id": 438002479,
+      "uuid": "-3255719817952017626",
+      "publicationDate": {
+        "dateTime": "2027-09-20T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Gaslighting aux échecs : accusations, coaching toxique et déni",
+        "pinLink": "https://blogdungaucher.com/fr/blog/gaslighting-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=gaslighting-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-11245546085209279181.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-3255719817952017626"
+    },
+    {
+      "slug": "neuroplasticite-aux-echecs",
+      "id": 438002623,
+      "uuid": "3915444177759846757",
+      "publicationDate": {
+        "dateTime": "2027-09-23T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Neuroplasticité et échecs : ce que les études disent vraiment",
+        "pinLink": "https://blogdungaucher.com/fr/blog/neuroplasticite-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=neuroplasticite-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-17632480828808845681.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=3915444177759846757"
+    },
+    {
+      "slug": "echecs-et-confiance-en-soi",
+      "id": 438002724,
+      "uuid": "607886294557740690",
+      "publicationDate": {
+        "dateTime": "2027-09-27T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Échecs et confiance en soi : construire une estime solide sur l'échiquier",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-confiance-en-soi/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-confiance-en-soi",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-11779004174395508258.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=607886294557740690"
+    },
+    {
+      "slug": "echecs-memoire-de-travail",
+      "id": 438002804,
+      "uuid": "-1086852205287422350",
+      "publicationDate": {
+        "dateTime": "2027-09-30T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Mémoire de travail et échecs : le goulot d'étranglement cognitif",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-memoire-de-travail/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-memoire-de-travail",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-15550437397506967519.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-1086852205287422350"
+    },
+    {
+      "slug": "effet-dunning-kruger-aux-echecs",
+      "id": 438002867,
+      "uuid": "-9099263193821723558",
+      "publicationDate": {
+        "dateTime": "2027-10-04T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Effet Dunning-Kruger aux échecs : l'étude sur 3 388 joueurs",
+        "pinLink": "https://blogdungaucher.com/fr/blog/effet-dunning-kruger-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=effet-dunning-kruger-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-2458722165333564284.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-9099263193821723558"
+    },
+    {
+      "slug": "echecs-et-complexite-algorithmique",
+      "id": 438002976,
+      "uuid": "-1029565490930954363",
+      "publicationDate": {
+        "dateTime": "2027-10-07T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Complexité des échecs : Shannon, alpha-bêta et AlphaZero",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-complexite-algorithmique/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-complexite-algorithmique",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-8613961573640167249.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-1029565490930954363"
+    },
+    {
+      "slug": "echecs-et-enfants",
+      "id": 438003051,
+      "uuid": "1965503582333389904",
+      "publicationDate": {
+        "dateTime": "2027-10-11T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs pour enfants : commencer et apprendre à leur rythme",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-enfants/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-enfants",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-15508562776434651158.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=1965503582333389904"
+    },
+    {
+      "slug": "echecs-et-meditation",
+      "id": 438003141,
+      "uuid": "-7119824593134075538",
+      "publicationDate": {
+        "dateTime": "2027-10-14T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Méditation et échecs : études, pratique et limites",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-meditation/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-meditation",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-9592116756211738112.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-7119824593134075538"
+    },
+    {
+      "slug": "loi-de-murphy-aux-echecs",
+      "id": 438003227,
+      "uuid": "-3811664171407684291",
+      "publicationDate": {
+        "dateTime": "2027-10-18T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Loi de Murphy aux échecs : pourquoi les blunders tombent toujours au pire moment",
+        "pinLink": "https://blogdungaucher.com/fr/blog/loi-de-murphy-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=loi-de-murphy-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-5308914339843501989.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-3811664171407684291"
+    },
+    {
+      "slug": "echecs-et-therapie",
+      "id": 438003285,
+      "uuid": "4776140522932617613",
+      "publicationDate": {
+        "dateTime": "2027-10-21T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs et santé mentale : usages, études et limites",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-therapie/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-therapie",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-15360379284528464720.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=4776140522932617613"
+    },
+    {
+      "slug": "burnout-chess",
+      "id": 438003360,
+      "uuid": "6362649826116388941",
+      "publicationDate": {
+        "dateTime": "2027-10-25T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Burnout aux échecs : comprendre l'épuisement et la pression",
+        "pinLink": "https://blogdungaucher.com/fr/blog/burnout-chess/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=burnout-chess",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-8871043561954424460.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=6362649826116388941"
+    },
+    {
+      "slug": "echecs-et-genetique",
+      "id": 438003442,
+      "uuid": "-2752618664150611490",
+      "publicationDate": {
+        "dateTime": "2027-10-28T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Génétique et talent aux échecs : ce que la science dit sur l'inné et l'acquis",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-genetique/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-genetique",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-3404393836769585694.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-2752618664150611490"
+    },
+    {
+      "slug": "5-biais-cognitifs-blunder",
+      "id": 438003533,
+      "uuid": "-9030038469619202016",
+      "publicationDate": {
+        "dateTime": "2027-11-01T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "5 biais cognitifs aux échecs : comprendre tes erreurs",
+        "pinLink": "https://blogdungaucher.com/fr/blog/5-biais-cognitifs-blunder/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=5-biais-cognitifs-blunder",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-8423994813836723200.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-9030038469619202016"
+    },
+    {
+      "slug": "echecs-et-hpi",
+      "id": 438003605,
+      "uuid": "-6785321422186526564",
+      "publicationDate": {
+        "dateTime": "2027-11-04T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs et HPI : accompagner l'enfant sans stéréotypes",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-hpi/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-hpi",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-5977105197294788123.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-6785321422186526564"
+    },
+    {
+      "slug": "echecs-peur-de-perdre",
+      "id": 438003680,
+      "uuid": "3824476493724995325",
+      "publicationDate": {
+        "dateTime": "2027-11-08T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Peur de perdre aux échecs : psychologie et solutions",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-peur-de-perdre/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-peur-de-perdre",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-18081511262143424292.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=3824476493724995325"
+    },
+    {
+      "slug": "echecs-religion-et-interdit",
+      "id": 438003748,
+      "uuid": "-3718226559265715348",
+      "publicationDate": {
+        "dateTime": "2027-11-11T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs et religion : l'histoire des interdits religieux du jeu",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-religion-et-interdit/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-religion-et-interdit",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-15298288628251295309.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-3718226559265715348"
+    },
+    {
+      "slug": "echecs-et-vision-spatiale",
+      "id": 438003858,
+      "uuid": "912036245476819229",
+      "publicationDate": {
+        "dateTime": "2027-11-15T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Échecs et vision spatiale : expertise et limites du transfert",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-vision-spatiale/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-vision-spatiale",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-16499342249174537637.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=912036245476819229"
+    },
+    {
+      "slug": "echecs-peur-de-gagner",
+      "id": 438003924,
+      "uuid": "-6500584237979319987",
+      "publicationDate": {
+        "dateTime": "2027-11-18T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Peur de gagner aux échecs : comprendre les erreurs sous pression",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-peur-de-gagner/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-peur-de-gagner",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-13846128497895563694.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-6500584237979319987"
+    },
+    {
+      "slug": "echecs-et-ecole",
+      "id": 438003992,
+      "uuid": "-1406757886779503586",
+      "publicationDate": {
+        "dateTime": "2027-11-22T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs à l'école : études et limites du transfert scolaire",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-ecole/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-ecole",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-5415747386419087975.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-1406757886779503586"
+    },
+    {
+      "slug": "echecs-et-perfectionnisme-toxique",
+      "id": 438004054,
+      "uuid": "-8579237330272105796",
+      "publicationDate": {
+        "dateTime": "2027-11-25T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Perfectionnisme toxique aux échecs : effets et solutions",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-perfectionnisme-toxique/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-perfectionnisme-toxique",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-15976219979225036710.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-8579237330272105796"
+    },
+    {
+      "slug": "echecs-et-dopamine",
+      "id": 438004269,
+      "uuid": "3567573678399768979",
+      "publicationDate": {
+        "dateTime": "2027-11-29T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Dopamine et échecs : récompense, motivation et limites",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-dopamine/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-dopamine",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-4730796079368280814.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=3567573678399768979"
+    },
+    {
+      "slug": "syndrome-imposteur-2000-elo",
+      "id": 438004373,
+      "uuid": "612797799799996876",
+      "publicationDate": {
+        "dateTime": "2027-12-02T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "2000 Elo et sentiment d'imposture : vivre le passage de palier",
+        "pinLink": "https://blogdungaucher.com/fr/blog/syndrome-imposteur-2000-elo/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=syndrome-imposteur-2000-elo",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-15197949666438432989.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=612797799799996876"
+    },
+    {
+      "slug": "echecs-en-prison",
+      "id": 438004441,
+      "uuid": "111011581134196445",
+      "publicationDate": {
+        "dateTime": "2027-12-06T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs en prison : programmes, éducation et limites des preuves",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-en-prison/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-en-prison",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-3764525033926228988.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=111011581134196445"
+    },
+    {
+      "slug": "syndrome-imposteur-aux-echecs",
+      "id": 438004510,
+      "uuid": "-7808930402695822682",
+      "publicationDate": {
+        "dateTime": "2027-12-09T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Syndrome de l'imposteur aux échecs : comprendre le doute",
+        "pinLink": "https://blogdungaucher.com/fr/blog/syndrome-imposteur-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=syndrome-imposteur-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-16580396939392128569.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-7808930402695822682"
+    },
+    {
+      "slug": "echecs-et-sommeil",
+      "id": 438004578,
+      "uuid": "3627562770285546875",
+      "publicationDate": {
+        "dateTime": "2027-12-13T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Sommeil et échecs : vigilance, apprentissage et récupération",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-sommeil/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-sommeil",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-13580287416829370969.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=3627562770285546875"
+    },
+    {
+      "slug": "echecs-et-tdah",
+      "id": 438004667,
+      "uuid": "7345843518224353933",
+      "publicationDate": {
+        "dateTime": "2027-12-16T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs et TDAH : études, limites et pratique adaptée",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-tdah/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-tdah",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-14346390328977281448.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=7345843518224353933"
+    },
+    {
+      "slug": "echecs-et-colere-ragequit",
+      "id": 438004725,
+      "uuid": "-6273091950541912088",
+      "publicationDate": {
+        "dateTime": "2027-12-20T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Colère aux échecs et ragequit : comprendre tes réactions",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-colere-ragequit/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-colere-ragequit",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-3966696964431807113.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-6273091950541912088"
+    },
+    {
+      "slug": "echecs-vs-philosophie-pensee-strategique",
+      "id": 438004797,
+      "uuid": "8348348007329057562",
+      "publicationDate": {
+        "dateTime": "2027-12-23T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs et philosophie : règles, liberté et limites des analogies",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-vs-philosophie-pensee-strategique/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-vs-philosophie-pensee-strategique",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-15954943045873532379.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=8348348007329057562"
+    },
+    {
+      "slug": "reseaux-bayesiens-predire-blunder",
+      "id": 438004859,
+      "uuid": "-5693596043393284100",
+      "publicationDate": {
+        "dateTime": "2027-12-27T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Réseaux bayésiens et erreurs aux échecs : modèle pédagogique",
+        "pinLink": "https://blogdungaucher.com/fr/blog/reseaux-bayesiens-predire-blunder/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=reseaux-bayesiens-predire-blunder",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-6239977034563768166.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-5693596043393284100"
+    },
+    {
+      "slug": "bienfaits-des-pauses-aux-echecs",
+      "id": 438004938,
+      "uuid": "4335089039782987275",
+      "publicationDate": {
+        "dateTime": "2027-12-30T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Pauses aux échecs : fatigue, récupération et rythme de jeu",
+        "pinLink": "https://blogdungaucher.com/fr/blog/bienfaits-des-pauses-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=bienfaits-des-pauses-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-4387365554247723099.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=4335089039782987275"
+    },
+    {
+      "slug": "neurones-miroirs-aux-echecs",
+      "id": 438005000,
+      "uuid": "3466947028933889350",
+      "publicationDate": {
+        "dateTime": "2028-01-03T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Neurones miroirs et échecs : les limites de l'explication",
+        "pinLink": "https://blogdungaucher.com/fr/blog/neurones-miroirs-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=neurones-miroirs-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-6325743149169578549.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=3466947028933889350"
+    },
+    {
+      "slug": "echecs-et-argent",
+      "id": 438005092,
+      "uuid": "-4321153951561922367",
+      "publicationDate": {
+        "dateTime": "2028-01-06T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Argent aux échecs : gains 2025 et fortune de Carlsen",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-argent/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-argent",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-16884861773871865005.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-4321153951561922367"
+    },
+    {
+      "slug": "logique-modale-aux-echecs",
+      "id": 438005150,
+      "uuid": "-3324565976451297512",
+      "publicationDate": {
+        "dateTime": "2028-01-10T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Logique modale aux échecs : penser par possibilités et nécessités sur l'échiquier",
+        "pinLink": "https://blogdungaucher.com/fr/blog/logique-modale-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=logique-modale-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-6195862311567000833.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-3324565976451297512"
+    },
+    {
+      "slug": "regle-40-40-20-echecs",
+      "id": 438005249,
+      "uuid": "3771171762756996042",
+      "publicationDate": {
+        "dateTime": "2028-01-13T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Règle 40-40-20 aux échecs : un repère à adapter",
+        "pinLink": "https://blogdungaucher.com/fr/blog/regle-40-40-20-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=regle-40-40-20-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-11781109927694300709.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=3771171762756996042"
+    },
+    {
+      "slug": "theorie-du-chaos-aux-echecs",
+      "id": 438005313,
+      "uuid": "733025499047872691",
+      "publicationDate": {
+        "dateTime": "2028-01-17T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Théorie du chaos et échecs : une analogie à préciser",
+        "pinLink": "https://blogdungaucher.com/fr/blog/theorie-du-chaos-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=theorie-du-chaos-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-8040325005697841295.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=733025499047872691"
+    },
+    {
+      "slug": "psychologie-du-joueur-d-echecs",
+      "id": 438005365,
+      "uuid": "248300110054113597",
+      "publicationDate": {
+        "dateTime": "2028-01-20T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462189",
+        "pinTitle": "Psychologie du joueur d'échecs : ego, tilt, flow et peur de perdre",
+        "pinLink": "https://blogdungaucher.com/fr/blog/psychologie-du-joueur-d-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=psychologie-du-joueur-d-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-12052964862718506357.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=248300110054113597"
+    },
+    {
+      "slug": "echecs-et-memoire",
+      "id": 438005459,
+      "uuid": "6646428441135657",
+      "publicationDate": {
+        "dateTime": "2028-01-24T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Échecs et mémoire : mémoire de travail, chunks et apprentissage",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-memoire/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-memoire",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-7031604412315820875.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=6646428441135657"
+    },
+    {
+      "slug": "echecs-et-femmes",
+      "id": 438005525,
+      "uuid": "918783391947375843",
+      "publicationDate": {
+        "dateTime": "2028-01-27T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs et Femmes : pourquoi si peu de joueuses aujourd'hui ?",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-femmes/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-femmes",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-13318299128546681280.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=918783391947375843"
+    },
+    {
+      "slug": "minimax-aux-echecs",
+      "id": 438005590,
+      "uuid": "4906958215019776386",
+      "publicationDate": {
+        "dateTime": "2028-01-31T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Algorithme minimax aux échecs : alpha-bêta, negamax et calcul des moteurs",
+        "pinLink": "https://blogdungaucher.com/fr/blog/minimax-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=minimax-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-7360581830418618537.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=4906958215019776386"
+    },
+    {
+      "slug": "les-echecs-et-l-addiction",
+      "id": 438005678,
+      "uuid": "-8257413756970319682",
+      "publicationDate": {
+        "dateTime": "2028-02-03T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs et addiction : repérer un usage problématique",
+        "pinLink": "https://blogdungaucher.com/fr/blog/les-echecs-et-l-addiction/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=les-echecs-et-l-addiction",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-6241046298434458461.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-8257413756970319682"
+    },
+    {
+      "slug": "graphes-de-nash-equilibre-ouvertures",
+      "id": 438005740,
+      "uuid": "2214872957103260396",
+      "publicationDate": {
+        "dateTime": "2028-02-07T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Équilibre de Nash et ouvertures : modèle et limites",
+        "pinLink": "https://blogdungaucher.com/fr/blog/graphes-de-nash-equilibre-ouvertures/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=graphes-de-nash-equilibre-ouvertures",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-12550481515462415964.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=2214872957103260396"
+    },
+    {
+      "slug": "echecs-et-autisme",
+      "id": 438005821,
+      "uuid": "-1630575558652377101",
+      "publicationDate": {
+        "dateTime": "2028-02-10T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462188",
+        "pinTitle": "Échecs et autisme : inclusion, adaptations et limites des preuves",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-et-autisme/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-et-autisme",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-16019948926153919830.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=-1630575558652377101"
+    },
+    {
+      "slug": "echecs-alzheimer-prevention-declin-cognitif",
+      "id": 438005886,
+      "uuid": "1973198808478730679",
+      "publicationDate": {
+        "dateTime": "2028-02-14T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Échecs et Alzheimer : ce que les études permettent de dire",
+        "pinLink": "https://blogdungaucher.com/fr/blog/echecs-alzheimer-prevention-declin-cognitif/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=echecs-alzheimer-prevention-declin-cognitif",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-2536229572273927616.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=1973198808478730679"
+    },
+    {
+      "slug": "paradoxe-de-zermelo",
+      "id": 438005944,
+      "uuid": "1179984599286040023",
+      "publicationDate": {
+        "dateTime": "2028-02-17T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Zermelo et échecs : valeur théorique et résultat encore inconnu",
+        "pinLink": "https://blogdungaucher.com/fr/blog/paradoxe-de-zermelo/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=paradoxe-de-zermelo",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-11843452103552707745.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=1179984599286040023"
+    },
+    {
+      "slug": "theorie-des-jeux-aux-echecs",
+      "id": 438006021,
+      "uuid": "757460404720127950",
+      "publicationDate": {
+        "dateTime": "2028-02-21T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Théorie des jeux aux échecs : Nash, minimax, Zermelo expliqués",
+        "pinLink": "https://blogdungaucher.com/fr/blog/theorie-des-jeux-aux-echecs/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=theorie-des-jeux-aux-echecs",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-14133056667998148305.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=757460404720127950"
+    },
+    {
+      "slug": "pourquoi-echecs-probleme-mathematique-impossible-et-ia",
+      "id": 438006093,
+      "uuid": "5035196022253634953",
+      "publicationDate": {
+        "dateTime": "2028-02-24T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Résoudre les échecs : complexité, Shannon et limites de l'IA",
+        "pinLink": "https://blogdungaucher.com/fr/blog/pourquoi-echecs-probleme-mathematique-impossible-et-ia/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=pourquoi-echecs-probleme-mathematique-impossible-et-ia",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-12811201076275138223.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=5035196022253634953"
+    },
+    {
+      "slug": "les-echecs-et-le-cerveau",
+      "id": 438006155,
+      "uuid": "3428676959090133668",
+      "publicationDate": {
+        "dateTime": "2028-02-28T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Échecs et cerveau : ce que l'IRMf révèle sur les joueurs experts",
+        "pinLink": "https://blogdungaucher.com/fr/blog/les-echecs-et-le-cerveau/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=les-echecs-et-le-cerveau",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-4846178912531180864.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=3428676959090133668"
+    },
+    {
+      "slug": "les-echecs-et-les-mathematiques",
+      "id": 438006220,
+      "uuid": "3219745535259394258",
+      "publicationDate": {
+        "dateTime": "2028-03-02T10:00:00",
+        "timezone": "America/Guadeloupe"
+      },
+      "pinterestData": {
+        "boardId": "255086835083462187",
+        "pinTitle": "Échecs et mathématiques : vrai transfert ou mythe ? Méta-analyses",
+        "pinLink": "https://blogdungaucher.com/fr/blog/les-echecs-et-les-mathematiques/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=pixel_art&utm_content=les-echecs-et-les-mathematiques",
+        "pinNewFormat": false,
+        "isAiGenerated": true,
+        "isAiGeneratedPerson": false
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/8276044-file-1684177287251376420.jpeg"
+      ],
+      "autoPublish": true,
+      "status": "PENDING",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=8276044&openWithPostUuid=3219745535259394258"
+    }
+  ]
+}

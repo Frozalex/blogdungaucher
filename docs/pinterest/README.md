@@ -10,7 +10,7 @@ Les 730 identifiants et dates restent ceux du programme existant. Les accroches 
 
 - Départ : 27 octobre 2026, avec un article par tableau.
 - Reprise : 3 novembre 2026 ; mardi, vendredi et dimanche à 10 h en Guadeloupe.
-- Fin des 730 créneaux : **24 juin 2031**. Les nouveaux articles sont en supplément.
+- Fin des 730 créneaux : **24 juin 2031**. Depuis le 23 novembre 2026, les compléments sont limités au lundi et jeudi à 10 h en Guadeloupe : deux créneaux supplémentaires, pour un objectif global de cinq par semaine.
 - 72 créneaux initiaux dans `archive.json`, puis 658 angles dans `variants.json`.
 - Les formats sont figés dans `formats.json`, pas réattribués à chaque construction.
 
@@ -33,8 +33,18 @@ complet. Le fichier PDF n’est pas présenté comme un format d’épingle nati
 
 Les entrées apparaissent uniquement à leur date et restent 14 jours dans les flux.
 Les identifiants restent stables après une reconstruction. Les cartes déjà libérées
-restent disponibles tant que leur article est public. Les nouveaux articles
-admissibles continuent à recevoir une épingle image, hors des 730 créneaux.
+restent disponibles tant que leur article est public. Les articles gérés par Metricool ne reçoivent pas une deuxième épingle RSS lors de leur sortie. Les autres nouveaux articles admissibles attendent un créneau libre du lundi ou jeudi, hors des 730 créneaux. Les dates déjà exposées avant le 23 novembre 2026 restent inchangées.
+
+### Vignettes pixel art : programmation Metricool confirmée
+
+134 épingles ont été enregistrées et relues dans Metricool le 22 novembre 2026,
+du 23 novembre 2026 au 2 mars 2028 (lundi et jeudi à 10 h en Guadeloupe).
+Les images approuvées sont réutilisées à l’identique et copiées chez Metricool.
+Les liens conduisent aux articles correspondants. L’épingle sur l’immigration,
+déjà publiée, est exclue. Reçus, calendrier et export de secours : `metricool/`.
+Ne pas réimporter le CSV après cette programmation : il créerait des doublons.
+Les 99 programmations natives précédemment observées dans Pinterest sont conservées ;
+leur présence ne certifie pas l’importation de toutes les 243 vidéos.
 
 ### Vidéos : importation Pinterest distincte
 

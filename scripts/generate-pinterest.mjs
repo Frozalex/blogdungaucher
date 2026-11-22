@@ -51,6 +51,12 @@ try {
     generatedAt:now.toISOString(), initialReleaseAt:config.initialReleaseAt, startsAt:config.startsAt, feedWindowDays:config.feedWindowDays,
     note:'Exposition dans le flux, pas confirmation de publication Pinterest.',
     items:items.map(post=>({slug:post.slug,pinId:post.pinId,category:post.category,kind:post.kind,format:post.mediaFormat,initial:post.initial,releaseAt:post.releaseAt,url:articleUrl(post,config)})),
+    delivery:config.newArticleDelivery ? {
+      effectiveFrom:config.newArticleDelivery.from, timezone:'America/Guadeloupe',
+      campaignWeekdays:['mardi','vendredi','dimanche'], complementaryWeekdays:['lundi','jeudi'], hour:'10:00',
+      metricoolScheduled:config.newArticleDelivery.metricool.length,
+      note:'Créneaux prévus : 3 campagne + 2 compléments par semaine. Le statut distant est conservé dans docs/pinterest/metricool/verification.json.',
+    } : null,
     archivePlanned:archive.length,
     formats:formatCounts, rssPlanned:formatCounts.image+formatCounts.pdf,
     videoPublication:'Les 243 vidéos nécessitent une importation des CSV dans Pinterest. Le RSS ne les publie pas.',
