@@ -21,6 +21,8 @@ publishDate: "2027-05-22T02:00:00+02:00"
 
 <p>Cette distinction aide à définir ce que l’on veut améliorer. Réduire les pics brefs produits par les pièces est une chose. Réduire le bruit de fond perçu pendant que tous les joueurs réfléchissent en est une autre. Le même relevé ne répond pas nécessairement aux deux questions.</p>
 
+<p>Le même déplacement peut produire un son différent selon la manière dont on l’effectue. Une pièce posée doucement sur un plateau souple ne transmet pas le même choc qu’une pièce déposée rapidement sur une surface rigide. Pourtant, la notation du coup est identique. Pour étudier l’acoustique d’un tournoi, il faut donc décrire le geste réel, pas seulement compter les déplacements. Une finale jouée presque sans temps peut, par exemple, donner une fréquence de contacts différente de celle d’un milieu de partie où les joueurs réfléchissent longtemps. Je peux tracer sur une frise quelques contacts isolés puis des contacts plus rapprochés. Les signaux prennent davantage de place dans le temps, avant même que chacun soit devenu plus intense. Ce dessin aide à poser séparément les questions du nombre de gestes et de l’énergie sonore de chaque geste.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Plusieurs sources peuvent produire une intensité totale plus grande">
@@ -31,6 +33,8 @@ publishDate: "2027-05-22T02:00:00+02:00"
 
 <p>Le modèle aide néanmoins à comprendre comment un bruit localement faible peut devenir sensible quand l’activité se multiplie. Le niveau de la salle dépend de la fréquence des gestes et de la façon dont les sons se propagent. Le nombre d’échiquiers fournit un indice, sans suffire à prédire ce qui sera entendu.</p>
 
+<p>Pour comparer l’effet d’un bruit de fond et celui d’un contact, je peux prendre une mesure fictive. Imaginons que le bruit de fond apporte neuf unités d’intensité au microphone et qu’un choc bref apporte une unité supplémentaire, sans autre changement. Le niveau monte de dix fois le logarithme de dix neuvièmes, soit environ un demi-décibel. Si le fond ne représente qu’une unité et que le choc apporte toujours une unité, le rapport est de deux et l’augmentation est proche de trois décibels. Le choc a la même contribution physique dans les deux calculs. Sa présence pèse différemment dans le total. Ce modèle explique pourquoi un geste peu remarqué dans une salle animée peut devenir perceptible quand les personnes et les équipements environnants se taisent.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. L’aménagement doit viser la source ou la propagation">
@@ -38,6 +42,10 @@ publishDate: "2027-05-22T02:00:00+02:00"
 <p class="dissertation-movement-start">Pour réduire certains chocs sur un échiquier, on peut choisir une base de pièce qui amortit le contact. Pour agir sur les bruits de chaises, on étudiera plutôt le sol et les patins. Pour réduire les réflexions dans une salle, on peut modifier certaines surfaces. Ces interventions ne ciblent pas le même phénomène. Si le bruit dominant vient d’une porte qui s’ouvre souvent, changer le matériau du plateau peut avoir peu d’effet sur ce que les joueurs entendent.</p>
 
 <p>Un protocole simple ferait répéter les mêmes gestes au même endroit avec deux configurations. Le microphone serait placé à distance identique, puis déplacé pour comparer différentes places. On noterait séparément les pics, la durée d’un bruit et le niveau de fond. Si possible, on vérifierait aussi les résultats pendant un usage comparable, car une salle pleine ne se comporte pas exactement comme une salle vide.</p>
+
+<p>Les comparaisons deviennent plus solides si l’on choisit la place du microphone en fonction de la question. Près d’un plateau, on observe surtout l’effet du matériau et de la façon de poser les pièces. À hauteur d’oreille sur une table voisine, on cherche à reproduire ce que reçoit le joueur assis. À l’entrée de la salle, on peut davantage capter le passage et les discussions. Ces mesures peuvent chacune être valables et pourtant conduire à différentes priorités. Un essai d’aménagement doit donc préciser quelle place on souhaite améliorer, quel geste on reproduit et quel intervalle on utilise pour comparer les résultats. Il devient plus facile d’expliquer pourquoi un seul nombre affiché par un appareil ne suffit pas à classer toute une salle.</p>
+
+<p>Dans un tournoi fictif, on pourrait vouloir diminuer le bruit d’une seule table particulièrement proche d’un mur. Le même essai peut comparer cette table contre le mur, puis quelques mètres plus loin avec les mêmes pièces et les mêmes gestes. On sépare ainsi la manière de produire le bruit de la manière dont le lieu le transmet. Si les résultats diffèrent peu au niveau du plateau mais beaucoup à la place du joueur, le changement concerne surtout la propagation. Cette comparaison donne une raison physique de choisir où agir.</p>
 
 </section>
 

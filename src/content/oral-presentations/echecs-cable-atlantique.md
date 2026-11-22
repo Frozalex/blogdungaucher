@@ -21,6 +21,8 @@ publishDate: "2027-06-26T02:00:00+02:00"
 
 <p>Les échecs se prêtent à cette circulation parce qu’un événement complexe à regarder peut être décrit par un petit nombre de signes. Avec un état de départ commun et le détail d’un coup, une personne éloignée peut reconstruire l’action. Le réseau communique une transition. La position complète peut ensuite être conservée sur les deux sites.</p>
 
+<p>La quantité d’information transmise dépend aussi de ce qui est déjà connu à l’autre bout. Si chacun a installé ses pièces dans le même ordre et sait quel camp joue, une description brève du déplacement est généralement assez riche pour mettre à jour le plateau. Si quelqu’un rejoint le match au milieu d’une partie sans connaître les coups précédents, la même description ne lui donne pas la position complète. Il lui faudrait une suite de mouvements depuis le départ ou un relevé de l’état actuel de l’échiquier. Cette distinction explique pourquoi les joueurs et le public peuvent avoir besoin de supports différents, même lorsqu’ils cherchent à suivre le même duel.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. La liaison technique ne remplace pas les intermédiaires">
@@ -31,6 +33,8 @@ publishDate: "2027-06-26T02:00:00+02:00"
 
 <p>La presse d’époque indique que des parties ont été interrompues puis reprises. Cette organisation rappelle que le temps d’un match à distance ne dépend pas seulement du trajet du signal. Les horaires, le règlement et la coordination entre les salles structurent également la rencontre. Même un lien très rapide ne dispense pas de décider quand on commence, quand on suspend et dans quelles conditions on reprend.</p>
 
+<p>Il faut aussi distinguer le temps du signal et le temps du traitement du message. Le trajet à travers le câble est un élément de la transmission. Il faut néanmoins que le coup soit repéré, formulé, transmis dans le bon ordre puis replacé sur le bon plateau. Sur un support, je peux écrire Londres d’un côté, Brooklyn de l’autre et placer une série de relais entre les deux. Je peux alors expliquer ce qui serait affecté si le câble était indisponible et ce qui le serait si l’on mélangeait deux messages corrects. Le premier problème concerne la possibilité d’échanger. Le second concerne l’organisation du sens de ce qui est échangé. Les deux peuvent interrompre une partie pour des raisons différentes.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Le réseau donne une autre échelle au spectacle">
@@ -38,6 +42,10 @@ publishDate: "2027-06-26T02:00:00+02:00"
 <p class="dissertation-movement-start">Le compte rendu du San Francisco Call décrit des spectateurs et prête une grande importance à l’événement. Ce jugement appartient au journal, mais il nous renseigne sur la façon dont la rencontre a été présentée. Des publics distincts pouvaient suivre un même concours sans être dans le même lieu. Les joueurs se trouvaient dans une salle, les messages circulaient entre les deux villes et les récits journalistiques atteignaient encore d’autres lecteurs.</p>
 
 <p>L’échange ne supprime pas pour autant les lieux. Les deux salles restent des espaces où des personnes observent, commentent et attendent. Ce que permet le réseau, c’est leur relation : un coup joué ici modifie l’état d’une partie là-bas. Si l’on garde cette chaîne à l’esprit, le match de 1896 permet de comparer le câble et les plateformes modernes sans confondre les techniques. Dans les deux cas, il faut qu’une action locale devienne une information interprétable par d’autres.</p>
+
+<p>Une rencontre à distance peut se présenter au public comme un événement unique sans que tous les spectateurs voient exactement les mêmes choses. Ceux qui assistent à la partie dans la salle voient les gestes de leur équipe. Ceux qui suivent le plateau de l’autre ville reçoivent la trace du coup. Les lecteurs du journal reçoivent ensuite un récit qui choisit quels passages expliquer. Le match relie ces trois publics sans les placer au même endroit ni au même moment. Cette distinction aide à comprendre ce que peut apporter une infrastructure de communication : étendre le nombre de personnes qui suivent une même action, tout en donnant à chacune un accès partiel par l’intermédiaire d’un support.</p>
+
+<p>Une comparaison avec la lettre aide à préciser l’intérêt de cette liaison. Pour jouer par courrier, il est possible de décrire un coup avec les mêmes éléments et de les relire à distance. Le vocabulaire du jeu n’attend pas le télégraphe pour exister. Ce que le câble change, c’est la durée de circulation des messages et la possibilité de réunir des rencontres et des publics dans une période commune plus courte. La technique transforme ainsi l’organisation d’une partie sans changer ce qui rend le coup intelligible.</p>
 
 </section>
 

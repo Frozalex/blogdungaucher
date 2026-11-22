@@ -20,6 +20,8 @@ specialty: "HLP"
 
 <p>Cette procédure répond à une exigence : les deux joueurs doivent retrouver une position qu’ils avaient effectivement produite en jouant selon les mêmes règles. Déclarer immédiatement un vainqueur après une simple erreur aurait un autre coût. La partie cesserait avant que l’adversaire ait montré ce qu’il pouvait faire dans la position. La correction préserve ainsi la possibilité de continuer une confrontation significative.</p>
 
+<p>Il existe une différence entre remettre la partie en état et laisser le joueur recommencer son raisonnement de zéro avec un avantage. Dans l’exemple, le pion avait été touché dans l’intention de le jouer. Après correction, il est utile de demander ce que son propriétaire peut encore choisir depuis e4. Selon la position décrite, il peut l’avancer à e5 ou prendre en d5. Le geste erroné est retiré, tandis que l’engagement lié à la pièce demeure. Cette combinaison évite que le joueur découvre la réaction de l’adversaire puis profite de la correction pour abandonner librement toute idée de jouer le pion. Le choix n’est donc pas entièrement rouvert.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Replacer les pièces ne rend pas intégralement la situation initiale">
@@ -30,6 +32,8 @@ specialty: "HLP"
 
 <p>L’irrégularité ne suffit pas à prouver une intention de tromper. Une erreur de lecture, un oubli et une tentative consciente de tirer avantage d’un déplacement peuvent produire le même état visible. Le règlement permet de traiter les effets d’un coup achevé même quand on ignore son intention. La responsabilité d’un geste dans la partie et le jugement moral sur la personne sont deux questions distinctes.</p>
 
+<p>On peut examiner l’objection suivante. Si les deux minutes supplémentaires dépassent le temps réellement perdu, la correction ne favorise-t-elle pas l’adversaire ? Ce risque existe avec un montant fixe, surtout quand le dérangement a été bref. Mais un montant calculé au cas par cas demanderait de mesurer quelque chose que l’arbitre ne peut pas toujours observer : le temps de réflexion utile perdu à cause de l’erreur. Une mesure fixe échange une précision inaccessible contre la prévisibilité. Elle peut néanmoins peser davantage dans une finale où il reste peu de temps. Cette observation explique pourquoi il faut préciser le régime de compétition évoqué avant d’appliquer une durée trouvée dans le règlement.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. La gradation de la réponse délimite ce qu’exige une compétition juste">
@@ -37,6 +41,8 @@ specialty: "HLP"
 <p class="dissertation-movement-start">Au deuxième coup illégal achevé du même joueur, les règles standard prévoient la perte de la partie, avec une exception. Si son adversaire ne peut pas le mater par quelque suite légale que ce soit, la partie est déclarée nulle. La gravité de la sanction est donc liée à une possibilité que les règles du jeu reconnaissent. Cette disposition oblige à distinguer une victoire difficile à obtenir et un mat impossible. Un joueur ne reçoit pas automatiquement le point dans ce dernier cas.</p>
 
 <p>On pourrait objecter que deux erreurs commises sans intention de nuire ne justifient jamais une défaite. Mais une compétition doit aussi garantir que chaque joueur puisse compter sur le respect des règles communes. La première mesure remet la partie en état et la laisse se poursuivre. La réponse à la seconde fixe une limite prévisible à la poursuite d’une partie répétitivement perturbée. En partie d’apprentissage, un professeur et ses élèves pourraient convenir d’un autre dispositif pour comprendre leurs erreurs. La fonction du cadre choisi explique cette différence de réponse.</p>
+
+<p>L’exception liée au mat montre qu’une sanction ne peut pas produire n’importe quel résultat sans entrer en conflit avec la logique du sport. Imaginons que le camp auquel on attribuerait la victoire n’ait plus que son roi. Son roi ne peut donner légalement échec au roi adverse, puisqu’il ne peut s’en approcher de cette manière. Dans ce cas, il n’existe aucune suite légale qui le conduise à mater, même si son adversaire coopère. L’exemple permet de distinguer la perte prononcée pour une irrégularité et la condition qui permet d’accorder le point adverse. Une sanction peut être ferme tout en restant définie à l’intérieur des possibilités que le jeu reconnaît.</p>
 
 </section>
 

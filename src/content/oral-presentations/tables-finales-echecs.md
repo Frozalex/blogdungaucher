@@ -19,6 +19,8 @@ publishDate: "2027-03-20T02:00:00+01:00"
 
 <p>Déplaçons maintenant la dame blanche de b7 à b6 et gardons les deux rois dans les mêmes cases. Le roi noir n’est plus attaqué directement. Les cases a7, b7 et b8 restent interdites par la dame et, pour b7, par le roi blanc. Il n’existe aucun coup légal. Cette deuxième situation est un pat. Les deux positions ont les mêmes pièces et le même camp au trait. Une seule case différente transforme une défaite en nulle immédiate. Pour une base de finales, ces situations forment des points de départ distincts.</p>
 
+<p>Sur le support, je peux commencer par écrire le résultat sans le nommer, sous la forme de deux questions successives. Le roi noir est-il attaqué sur sa case ? Combien de déplacements autorisés lui restent-ils ? La deuxième réponse est zéro dans les deux exemples. La première change quand la dame passe de b7 à b6. Cette dissociation suffit à expliquer l’écart entre les résultats. Elle indique également ce que le programme doit connaître pour initialiser la base. Un outil qui se contente de compter les coups légaux ne sait pas encore quelle position terminale classer comme perdante.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Le raisonnement à rebours repose sur ce que chaque camp peut choisir">
@@ -29,6 +31,8 @@ publishDate: "2027-03-20T02:00:00+01:00"
 
 <p>Sur une famille complète de positions, on répète ce raisonnement. On part des issues connues et on met à jour les positions qui y conduisent. Certaines présentent des cycles. Si les joueurs peuvent toujours éviter l’issue perdante et que le calcul traite le jeu prolongé selon le modèle annoncé, une suite de tels retours ne doit pas être classée comme une victoire forcée. Il faut donc garder l’information sur les états déjà examinés et distinguer une position encore inconnue pendant le calcul d’une position classée nulle à la fin.</p>
 
+<p>Il est important de préciser le point de vue employé à chaque flèche. Si les Blancs jouent la dame de b6 à b7, la position de départ est évaluée pour les Blancs. Après le coup, le trait est aux Noirs, et l’état suivant est perdant de leur point de vue. Je peux écrire ces deux couleurs sous les diagrammes et relier les positions. Cela évite un malentendu courant : aller vers un état « perdant » est favorable lorsqu’il est perdant pour la personne qui doit ensuite jouer. En avançant d’une flèche supplémentaire, on inverse à nouveau la lecture. La base peut stocker ce résultat relativement au camp au trait, à condition d’utiliser la même convention partout.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. L’exactitude dépend de la question posée à la base">
@@ -36,6 +40,10 @@ publishDate: "2027-03-20T02:00:00+01:00"
 <p class="dissertation-movement-start">Une base peut répondre à une question sur l’issue du jeu sous certaines règles. Elle peut aussi aider à choisir un coup qui rapproche d’une prise, d’un mouvement de pion ou du mat. Ces objectifs donnent des distances différentes. Le joueur qui cherche à convertir une position en compétition doit tenir compte des règles de nulle. La documentation Stockfish précise par exemple comment le traitement de la règle des cinquante coups intervient dans l’usage de tables Syzygy.</p>
 
 <p>Le coût se trouve surtout avant la consultation. Il faut construire et stocker une grande famille de positions, peuplée de pièces placées dans des configurations très nombreuses. Ajouter du matériel augmente considérablement cet ensemble. Le moteur peut consulter une base compatible quand il atteint son domaine. Pour les autres positions, il doit continuer à rechercher et à évaluer. Les deux approches peuvent travailler ensemble à l’intérieur d’une même analyse.</p>
+
+<p>Une base ne répond pas toujours avec une seule décision. Deux coups peuvent mener tous deux à une victoire forcée, avec des suites très différentes. Si le programme doit en proposer un, il lui faut une autre règle, comme raccourcir le chemin jusqu’au mat ou atteindre rapidement un coup qui remet le compteur des cinquante coups à zéro. Ces critères peuvent départager différemment les candidats sans modifier la classification des positions. Le joueur apprend alors à poser deux questions dans le bon ordre. D’abord, quel résultat peut-on imposer ? Ensuite, parmi les chemins compatibles avec ce résultat, lequel correspond au problème concret posé par la position ou la règle de compétition ?</p>
+
+<p>Les prises présentent un cas utile pour comprendre la construction d’une base. Si une dame est capturée, l’état suivant comporte moins de pièces. Le calcul peut alors utiliser une famille de positions déjà traitée, à condition que ses règles et ses conventions soient compatibles. Avec les trois pièces de l’exemple, la disparition de la dame laisserait deux rois seuls et ferait disparaître toute possibilité de mat. Générer la prise n’est donc qu’une partie du travail. Il faut ensuite relier l’état obtenu à sa propre famille et en réutiliser le résultat lors du calcul à rebours.</p>
 
 </section>
 

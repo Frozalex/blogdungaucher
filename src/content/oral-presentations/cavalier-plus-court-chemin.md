@@ -21,6 +21,8 @@ publishDate: "2027-02-20T02:00:00+01:00"
 
 <p>La couleur ne donne pas toujours une preuve complète. Entre a1 et b1, les cases sont de couleurs différentes, donc il faut un nombre impair de sauts. Un seul ne suffit pas, car le déplacement horizontal d’une case n’est pas permis au cavalier. On sait déjà qu’il en faut au moins trois. Une construction comme a1-c2-a3-b1 montre que trois suffisent. Pour des cibles plus éloignées, il devient utile de disposer d’une méthode systématique.</p>
 
+<p>Il faut également distinguer la couleur d’une case et sa position dans le réseau des sauts. Depuis a1, le cavalier ne voit que deux destinations, alors qu’un cavalier placé loin des bords peut en avoir huit. Deux cases de même couleur ne proposent donc pas nécessairement le même nombre de chemins. La règle d’alternance est vraie partout et permet d’éliminer certaines longueurs, mais les bords changent les options disponibles. Si je dessine les premiers sauts depuis le coin puis depuis une case du centre, l’écart devient visible. C’est une raison de ne pas déduire automatiquement le trajet le plus court d’une simple distance mesurée sur le quadrillage.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Le graphe permet de décrire des étages de distance">
@@ -31,6 +33,8 @@ publishDate: "2027-02-20T02:00:00+01:00"
 
 <p>La première fois que le programme découvre la cible, il connaît sa distance minimale. S’il existait un trajet plus court, il aurait été découvert à un étage exploré plus tôt. On peut aussi conserver, pour chaque case, le sommet d’où elle a été découverte. En remontant ces prédécesseurs depuis la cible jusqu’au départ, on retrouve un trajet complet. Si plusieurs chemins minimaux existent, la file en fournit un selon l’ordre dans lequel on a examiné les voisins.</p>
 
+<p>Je peux montrer le principe de la file avec le trajet vers b1. Au départ, j’écris a1 à la distance zéro. Je note ensuite b3 et c2 à la distance un. En examinant c2, je peux découvrir a3 à la distance deux. Depuis a3, un saut atteint b1. Il reste à expliquer pourquoi le programme n’a pas oublié un trajet plus court : s’il existait, la case aurait été trouvée avant l’examen des cases de distance deux. On peut lire la démonstration même en suivant une seule branche du dessin. La file garantit l’ordre de traitement de toutes les autres et empêche qu’une longue branche commencée tôt soit confondue avec le meilleur trajet.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Une partie réelle change le graphe">
@@ -38,6 +42,10 @@ publishDate: "2027-02-20T02:00:00+01:00"
 <p class="dissertation-movement-start">Le modèle suppose un plateau vide et traite le cavalier comme la seule pièce qui décide. Sur un plateau où certains emplacements sont occupés par des pièces du même camp, on ne peut pas s’y poser. En revanche, le cavalier peut passer par-dessus les pièces entre les deux cases. Il faut donc retirer des destinations, plutôt que de tracer un obstacle continu dans l’espace. Si ces autres pièces restent fixes, on peut garder la même méthode sur le graphe modifié.</p>
 
 <p>Dans une vraie partie, l’adversaire joue entre deux sauts du cavalier. Une case libre peut devenir occupée ou menacée. Le plus court trajet en nombre de coups peut alors être imprudent ou impossible à réaliser. La question stratégique devient : comment construire un trajet dont les étapes restent acceptables selon les réponses adverses ? Ce problème demande de tenir compte de positions successives, alors que l’exposé traitait d’abord la géométrie du cavalier.</p>
+
+<p>Si les sauts ne sont pas tous évalués de la même manière, la définition du plus court chemin peut changer. Dans un exercice pédagogique, on pourrait compter un coût de deux pour entrer sur une case jugée dangereuse et un coût d’un pour les autres. Un trajet en trois sauts pourrait alors coûter davantage qu’un détour en quatre. Le parcours en largeur resterait adapté pour compter les sauts, mais ne traiterait plus automatiquement la somme des coûts. La différence est intéressante pour le joueur : rejoindre vite une case et rejoindre cette case avec le moins de risques ne sont pas des objectifs identiques. Le modèle doit annoncer lequel il cherche à atteindre.</p>
+
+<p>On peut aussi tracer seulement les cases de la première couche et entourer les deux cibles de l’exposé. Ni d4 ni b1 n’est entourée au premier étage. Au deuxième, d4 est atteinte et b1 reste absente. Cette lecture rejoint le raisonnement par la couleur, mais elle donne une preuve qui peut être reproduite systématiquement. En montrant ces deux contrôles ensemble, on distingue une propriété géométrique utile pour expliquer le résultat et une méthode qui peut trouver le chemin même quand la simple couleur ne suffit pas.</p>
 
 </section>
 

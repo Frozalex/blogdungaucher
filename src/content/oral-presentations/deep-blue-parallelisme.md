@@ -21,6 +21,8 @@ publishDate: "2027-03-13T02:00:00+01:00"
 
 <p>Un moteur doit donc arbitrer avec une ressource limitée : le temps. S’il analyse plus loin, il peut voir certaines conséquences qui demeuraient hors de portée. S’il consacre son budget à des variantes peu utiles, une partie de ce gain disparaît. Le matériel permet d’aller plus vite, mais l’organisation de la recherche décide au moins en partie de ce que cette vitesse permet de voir.</p>
 
+<p>Il est utile de distinguer ce qui est nécessaire pour choisir un coup et ce qui est nécessaire pour le classer précisément parmi tous les autres. Si une branche mène immédiatement à la perte du roi au sens du mat, la recherche peut établir une limite sévère pour ce choix. Pour comparer deux décisions qui restent jouables, une analyse plus profonde peut être nécessaire. Cette inégalité de travail donne une raison stratégique de ne pas attribuer par avance à chaque coup la même quantité de calcul. On peut d’abord explorer les coups qui paraissent les plus prometteurs, puis réutiliser ce qu’ils révèlent pour décider jusqu’où examiner les suivants. Le choix de l’ordre de recherche affecte ainsi la répartition du travail.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Le parallélisme fait gagner du temps si les tâches se répartissent bien">
@@ -31,6 +33,8 @@ publishDate: "2027-03-13T02:00:00+01:00"
 
 <p>Dans leur présentation de Deep Blue, Campbell, Hoane et Hsu mentionnent à la fois des circuits dédiés à la recherche échiquéenne, plusieurs niveaux de parallélisme et des méthodes qui prolongent certaines variantes. Leur description invite ainsi à examiner la distribution des tâches et le choix du travail à poursuivre, en plus des performances du matériel.</p>
 
+<p>Dans le modèle à quatre branches, si l’on sépare la tâche de neuf secondes en trois morceaux indépendants de trois secondes, il existe une meilleure répartition. Trois processeurs prennent chacun un morceau. Le quatrième peut traiter la branche de trois secondes. Au bout de trois secondes, il reste les deux branches de deux secondes, que deux processeurs peuvent prendre en parallèle. Le calcul se termine alors en cinq secondes dans cette organisation idéale. Ce nombre suppose qu’on peut découper et communiquer sans coût. Il donne une référence à laquelle comparer un essai réel. Il montre aussi pourquoi ajouter des processeurs et redessiner les tâches sont deux décisions différentes.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Un match mesure le résultat d’un système complet">
@@ -38,6 +42,10 @@ publishDate: "2027-03-13T02:00:00+01:00"
 <p class="dissertation-movement-start">Le score de 1997 montre que Deep Blue a gagné ce match contre le champion du monde. Pour attribuer une part précise au parallélisme, il faudrait comparer des systèmes aussi proches que possible, en changeant le nombre de processeurs, puis observer la quantité de calcul utile, la qualité des décisions et les résultats. Un match à lui seul ne réalise pas cette comparaison. Entre les rencontres de 1996 et 1997, IBM indique avoir aussi amélioré l’évaluation et les bases utilisées pour certaines finales.</p>
 
 <p>Les échecs offrent tout de même un point d’appui clair. Le système doit produire des coups dans un cadre partagé, et ses choix se mesurent à des réponses adverses. Le résultat donne donc une preuve de capacité dans des conditions de compétition définies. Il ne révèle pas comment la machine traiterait une tâche dépourvue des mêmes règles ou du même type de recherche.</p>
+
+<p>Mesurer la vitesse d’un moteur peut vouloir dire compter des positions par seconde, chronométrer le temps nécessaire pour atteindre un résultat donné ou suivre la proportion de bonnes décisions sur un ensemble de positions. Ces mesures ne sont pas équivalentes. Un moteur peut visiter moins de positions et mieux choisir celles qu’il approfondit. On peut s’en rendre compte avec une série pédagogique mêlant des mats en un et des positions où le danger n’apparaît qu’après plusieurs réponses. Le premier type met surtout en jeu la reconnaissance d’une issue immédiate. Le second donne davantage de poids à l’organisation de la recherche. Ce contraste évite de prendre une mesure de débit pour un jugement complet sur le jeu.</p>
+
+<p>Le modèle à quatre branches suppose aussi que tout le monde commence au même instant. Si la position et une première évaluation ne sont disponibles qu’après une phase commune, les processeurs ne peuvent pas accélérer cette partie du travail de la même façon. Ajouter une seconde de travail initial commun porterait notre seconde estimation de cinq à six secondes, même si la répartition des branches restait idéale. Cet exemple sépare le temps que l’on peut partager de celui que toute organisation doit réserver au départ.</p>
 
 </section>
 

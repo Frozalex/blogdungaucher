@@ -21,6 +21,8 @@ publishDate: "2026-11-28T02:00:00+01:00"
 
 <p>L’intérêt de cette première étape se voit si l’on essaie de commencer par les tours. On devrait alors distinguer les situations où le roi trouve plusieurs places entre elles et celles où il n’en trouve aucune. Les fous et la dame laissent toujours le même nombre de cases libres. L’ordre dans lequel on construit l’objet simplifie donc le raisonnement, même si le règlement n’oblige pas à installer les pièces dans cet ordre.</p>
 
+<p>On peut vérifier que ce calcul par produit repose sur la stabilité du nombre de choix, et non sur une indépendance au sens des probabilités. Si le premier fou est placé en c1, on ne peut plus y poser la dame. Si le premier fou se trouve en e1, c1 peut rester disponible pour elle. Les cases accessibles à la dame dépendent donc des choix précédents. Ce qui ne change jamais est le nombre de ces cases : six. La liberté de choisir une case particulière varie, tandis que la quantité d’options reste constante. C’est ce critère qui permet de multiplier. Dans un autre problème, si une règle imposait en plus que la dame touche l’un des fous, le nombre de cases disponibles pourrait varier d’une disposition à l’autre. Il faudrait alors séparer les cas ou inventorier autrement les contraintes.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Les cavaliers laissent au roi et aux tours un seul arrangement">
@@ -31,6 +33,8 @@ publishDate: "2026-11-28T02:00:00+01:00"
 
 <p>Le produit complet vaut donc quatre fois quatre, fois six, fois dix, fois un. Il donne 960. On ne multiplie pas par un nombre de rangées noires, car leur configuration est déjà déterminée par la rangée blanche. Pour vérifier qu’il n’y a ni oubli ni répétition, on peut lire une rangée terminée à l’envers. On y retrouve la case sombre et la case claire des fous, celle de la dame, puis la paire des cavaliers. Une rangée donnée correspond donc à une seule suite de choix.</p>
 
+<p>Je peux construire une rangée pour montrer ce que le calcul contient. Je place les fous en c1 et f1, la dame en b1, puis les cavaliers en a1 et e1. Il reste d1, g1 et h1, dans cet ordre. J’installe donc une tour en d1, le roi en g1 et l’autre tour en h1. Les huit cases portent, de gauche à droite, cavalier, dame, fou, tour, cavalier, fou, roi, tour. On vérifie les contraintes sans reconstruire les 959 autres rangées. On peut ensuite partir de l’arrangement classique et retrouver les mêmes étapes. Les fous sont encore en c1 et f1, mais la dame est en d1 et les cavaliers en b1 et g1. Les cases restantes imposent a1, e1 et h1 pour les tours et le roi. La position classique fait donc partie des 960.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Le dénombrement donne une méthode de tirage uniforme">
@@ -38,6 +42,8 @@ publishDate: "2026-11-28T02:00:00+01:00"
 <p class="dissertation-movement-start">On peut tirer une des quatre cases sombres au hasard, puis une des quatre claires, puis une des six cases de la dame et enfin une des dix paires de cavaliers. Si, à chaque étape, les choix encore possibles sont équiprobables, la probabilité d’une rangée particulière est un sur quatre, fois un sur quatre, fois un sur six, fois un sur dix. Elle vaut un sur 960. La contrainte sur les tours et le roi ne demande aucun tirage supplémentaire.</p>
 
 <p>Une méthode qui choisirait d’abord n’importe quelle case pour le roi et chercherait ensuite à placer les tours pose un problème différent. Le roi ne peut pas occuper une extrémité. Même parmi les cases permises, certaines laissent plus de manières de placer des tours de chaque côté. Donner à chaque emplacement du roi la même probabilité ne suffit donc pas à rendre toutes les rangées finales équiprobables. La méthode par les fous et la dame fonctionne parce que le nombre de prolongements reste le même à chaque étape retenue.</p>
+
+<p>Le biais d’un tirage par le roi peut se calculer à partir de deux exemples. Si le roi est en b1, sa tour de gauche doit occuper a1. La tour de droite a alors six cases possibles si l’on n’a posé aucune autre pièce. Si le roi est en d1, il existe trois emplacements à gauche et quatre à droite, soit douze couples possibles avant de placer les autres pièces. Ce calcul intermédiaire ne remplace pas le dénombrement complet, puisque la répartition des fous doit encore être prise en compte. Il suffit néanmoins à montrer pourquoi une procédure qui tire ensuite les deux tours uniformément selon les places autour du roi ne donne pas à tous les triplets la même chance. La construction par les fous évite ce problème. Elle permet aussi de donner à chaque position une étiquette unique en numérotant les choix successifs dans un ordre fixé.</p>
 
 </section>
 

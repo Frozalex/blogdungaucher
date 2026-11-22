@@ -21,6 +21,8 @@ publishDate: "2027-03-06T02:00:00+01:00"
 
 <p>La démonstration utilise deux conditions distinctes. Si le roi était attaqué et ne disposait d’aucun coup permettant de répondre, ce serait un mat. Ici, l’absence de coup légal ne suffit pas à produire une victoire. Il faut connaître la différence entre interdire un déplacement et attaquer le roi à sa place actuelle.</p>
 
+<p>Cette position se prête à une vérification visuelle que l’on peut faire suivre à une personne qui ne joue pas. Je montre seulement les trois pièces présentes avant la promotion. Je place ensuite la dame en c8 et j’examine les cinq cases voisines du roi noir, l’une après l’autre. Le public n’a pas besoin de connaître une valeur conventionnelle de la dame ou de la tour. Il lui suffit de constater quelles lignes atteignent chaque case. On peut séparer la case où le roi se trouve des cases où il pourrait aller. Si je barre les cases de fuite avant d’examiner la case de départ du roi, je risque autrement de confondre la preuve d’un pat et celle d’un mat.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. La promotion en tour laisse une case que la dame contrôlait">
@@ -31,6 +33,8 @@ publishDate: "2027-03-06T02:00:00+01:00"
 
 <p>Ce résultat n’affirme pas qu’une tour est en général plus forte qu’une dame. Dans cette position, l’attaque supplémentaire de la dame sur la diagonale est précisément ce qui retire l’unique réponse noire. Une propriété utile dans de nombreuses situations produit ici un autre effet parce que la règle du pat donne une valeur particulière à l’absence de coup.</p>
 
+<p>La comparaison gagne à montrer précisément quelle case disparaît lorsqu’on remplace la tour par la dame. Dans les deux situations, la pièce de c8 contrôle les cases de la huitième rangée à sa gauche. Dans les deux, le roi blanc protège les cases b6 et b7. L’information décisive est donc le contrôle d’a6 sur la diagonale c8, b7, a6. Une propriété qu’on attribue généralement à la force supérieure de la dame change ici immédiatement le statut de la partie. On peut lire cette différence avec une seule ligne dessinée. Il est alors possible de défendre le choix de la tour sans demander au public d’accepter un jugement d’autorité.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Il faut comparer les états obtenus, promotion par promotion">
@@ -38,6 +42,10 @@ publishDate: "2027-03-06T02:00:00+01:00"
 <p class="dissertation-movement-start">Un programme peut être tenté de générer seulement les promotions en dame, parce que c’est souvent celle que les joueurs choisissent. Il manquerait alors des coups pourtant légaux et, dans notre position, une solution gagnante. Après l’avance du pion, le programme doit générer quatre candidats distincts : dame, tour, fou et cavalier. Même si les quatre coups ont la même case de départ et la même case d’arrivée, la pièce produite change l’état.</p>
 
 <p>Il faut ensuite analyser le résultat. La dame donne un pat. La tour mène à une finale gagnable par les Blancs. Un roi avec un seul fou ou un seul cavalier contre un roi seul ne dispose pas du matériel permettant de donner mat. Le meilleur choix vient donc de la comparaison des conséquences, pas d’une valeur fixe attribuée à la pièce.</p>
+
+<p>Un autre point concerne la façon de classer les coups. Un programme d’entraînement pourrait proposer la dame en première position dans l’interface, parce que c’est un choix fréquent. Il peut être pratique de mettre ce choix à portée de main. Mais le programme d’analyse doit conserver l’ensemble des promotions possibles et vérifier ce qui suit chacune. L’ordre d’affichage et les coups que le moteur considère sont deux décisions distinctes. L’exemple donne un contrôle simple pour le vérifier : si l’ordinateur annonce une nulle inévitable alors que la promotion en tour ouvre une finale gagnante, la recherche a probablement écarté un candidat essentiel ou évalué son résultat de manière inexacte.</p>
+
+<p>On peut clore la démonstration en demandant au public de comparer une seule différence sur deux diagrammes successifs. Le premier montre le résultat d’une promotion en dame et le second celui d’une promotion en tour. Je n’ai besoin de déplacer le regard que vers a6. En expliquant pourquoi cette case est libre pour le roi dans le second dessin, je montre le moment précis où la partie peut continuer. La démonstration complète permet ainsi de défendre le résultat à partir d’une case plutôt qu’à partir de la valeur habituelle des pièces.</p>
 
 </section>
 

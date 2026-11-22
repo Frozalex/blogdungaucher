@@ -20,6 +20,8 @@ specialty: "SVT"
 
 <p>Cette expérience de copie mesure ce qui a été encodé et peut être rappelé peu après. Elle ne permet pas de dire ce que le sommeil change. Pour étudier un souvenir du lendemain, il faut isoler une étape intermédiaire : la consolidation, par laquelle une information nouvellement acquise devient plus stable.</p>
 
+<p>Il y a une différence entre restituer un groupe de pièces et revoir leur fonction. Sur un support, je peux noter seulement trois lettres : « roi, tour, pions ». Si j’ajoute les cases g1, f1, f2, g2 et h2, le dessin devient une position que le public peut regarder. La décrire ensuite comme un roi protégé par un groupe de pions permet de comprendre ce qu’est un regroupement. Mais si je demande un rappel précis des cinq cases, l’explication du motif ne vaut pas cinq réponses correctes. Le score doit refléter ce que je cherche à mesurer. Distinguer ces deux questions empêche de confondre une meilleure compréhension de la position et une meilleure restitution de ses détails.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. L’expérience des cartes permet d’isoler un effet pendant le sommeil">
@@ -30,6 +32,8 @@ specialty: "SVT"
 
 <p>Les cartes, comme les pièces, occupent des emplacements, et l’hippocampe intervient dans certaines formes de mémoire spatiale. L’analogie a cependant une limite. Apprendre une position d’échecs, c’est parfois retenir qu’un cavalier défend une case, tandis que mémoriser des cartes ne demande pas de connaître leurs relations de jeu. Le rapprochement des deux études sert donc à formuler une hypothèse précise sur les échecs.</p>
 
+<p>Pour lire le résultat de l’expérience, je peux représenter les deux résultats sur une échelle de zéro à cent. Chaque bande commence au même niveau, celui des associations apprises avant le sommeil. On compare la part de ces associations qui a été conservée le lendemain. Le gain est moyen. Il pourrait correspondre à un changement assez régulier chez les participants ou à un effet prononcé chez certains et faible chez d’autres. Le nombre moyen seul ne décide pas entre ces possibilités. Le fait que les mêmes personnes aient participé aux deux nuits permet une lecture plus fine, car on peut demander, pour chacune, comment ses deux scores se comparent.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Une expérience avec des échiquiers devrait dissocier expertise et consolidation">
@@ -37,6 +41,8 @@ specialty: "SVT"
 <p class="dissertation-movement-start">On pourrait faire apprendre deux séries de positions comparables à des joueurs d’un même niveau. Pour chaque position, le score du soir compterait les pièces replacées correctement. Un second indicateur porterait sur les relations reconnues, par exemple la capacité d’expliquer quelle pièce protège le roi. Le rappel du lendemain se ferait sans échiquier modèle. Comparer les résultats du matin aux scores du soir permettrait de tenir compte des différences d’acquisition entre les positions.</p>
 
 <p>Pour étudier l’effet d’un indice nocturne, un protocole en laboratoire pourrait comparer deux nuits ordinaires avec et sans réexposition à un indice associé, suivant le principe utilisé par Rasch. Il faudrait équilibrer l’ordre des nuits et les séries de positions. Pour étudier l’effet du sommeil lui-même, la question serait différente. Il faudrait une comparaison avec une période d’éveil de durée comparable, en tenant compte de l’heure du test et des activités intermédiaires. On conserverait donc des indicateurs distincts de mémoire et de compréhension. Replacer correctement un cavalier et expliquer pourquoi il défend une case ne demandent pas tout à fait la même chose.</p>
+
+<p>Une activité immédiate sur l’échiquier illustre l’intérêt de cette méthode sans constituer une expérience sur le sommeil. Je présente une configuration familière puis une configuration assez proche où une seule pièce s’est déplacée. Je demande dans les deux cas de rappeler sa case. Si un joueur revient à la configuration habituelle, j’ai identifié un type d’erreur sur lequel un protocole de rappel différé pourrait porter. Pour interpréter une mesure du lendemain, on pourrait alors comparer les omissions et les substitutions par une case familière, au lieu de regrouper toutes les erreurs. La question devient plus précise : le souvenir d’un écart à la configuration habituelle se conserve-t-il aussi bien que celui du motif général ?</p>
 
 </section>
 

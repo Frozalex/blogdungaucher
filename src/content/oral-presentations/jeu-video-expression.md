@@ -18,6 +18,8 @@ specialty: "Arts · Cinéma-audiovisuel"
 
 <p>Ce cas fictif fait apparaître deux informations de nature différente. Le coup choisi appartient à la partie. L’interposition envisagée appartient à l’examen de ce qui pourrait arriver. Une mise en scène peut donner une place à ce deuxième niveau en utilisant un plan, un changement de point de vue ou une image qui signale une hypothèse. Elle doit alors faire comprendre au public que ce qu’il voit n’est pas nécessairement arrivé dans le monde de la partie.</p>
 
+<p>Je peux rendre la distinction visible avec deux dessins presque identiques. Le premier montre la position avant que la tour blanche se déplace. Dans le second, la tour est déjà en e8, mais je trace la diagonale du fou noir jusqu’à f8. Rien ne m’oblige à raconter que le coup a été joué. Je peux dire qu’il s’agit d’une position imaginée pour en juger les conséquences. Le public comprend alors que le second dessin a le statut d’une hypothèse. C’est ce changement de statut qu’une mise en scène doit faire sentir, même lorsqu’elle ne dispose que du regard d’un personnage pour indiquer d’où vient une image.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. L’échiquier au plafond transforme un regard en accès à une représentation mentale">
@@ -28,6 +30,8 @@ specialty: "Arts · Cinéma-audiovisuel"
 
 <p>Cette image fait aussi varier l’échelle de l’action. Un déplacement de quelques centimètres sur un vrai plateau peut occuper une large part de l’écran. La série rend sensible l’importance que peut prendre une case pour le personnage. Le spectateur qui ignore le détail des règles peut reconnaître un espace ordonné, des pièces en relation et l’attention qui les anime. Le joueur d’échecs peut, lui, chercher à identifier une menace et comparer les coups visibles.</p>
 
+<p>Le choix du plafond joue aussi sur la position du public. Devant une table, le spectateur voit en général les deux joueurs ou un échiquier partagé. Ici, la représentation prend appui sur un regard orienté vers un espace que Beth observe seule. L’image rapproche donc le spectateur d’un personnage sans imposer que chaque plan adopte exactement son point de vue visuel. Je peux distinguer ce qui relève de la position des pièces, que la mise en scène rend visible, et la manière dont un plan nous invite à comprendre pourquoi elle les examine. Le récit tient à cette motivation aussi bien qu’à la lisibilité du plateau.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Filmer le calcul consiste à choisir ce que le public doit suivre">
@@ -35,6 +39,10 @@ specialty: "Arts · Cinéma-audiovisuel"
 <p class="dissertation-movement-start">La série ne pourrait pas montrer toutes les variantes d’une position à chaque décision. Une telle représentation multiplierait les hypothèses et rendrait plus difficile l’identification de l’enjeu immédiat. Le montage sélectionne donc un fragment. Il peut faire attendre le moment où Beth voit une possibilité, suivre un déplacement, puis revenir à son visage. Le public comprend un changement dans sa relation à la position, même s’il ne connaît pas la valeur exacte de chaque coup.</p>
 
 <p>Cette sélection a une limite. Une image du plateau mental peut donner l’impression que des variantes se déploient nettement et dans l’ordre. Un joueur réel peut réexaminer une case, abandonner une piste et hésiter entre plusieurs menaces. Le dispositif audiovisuel formule un point de vue sur cette attention. Sa réussite se juge sur la clarté du récit et la cohérence des positions qu’il propose, tandis qu’une étude scientifique devrait établir comment les joueurs raisonnent effectivement.</p>
+
+<p>Une comparaison entre deux montages imaginaires éclaire le choix. Le premier montre un visage immobile, un long temps de silence et le mouvement qui termine la réflexion. Il laisse au public le soin d’imaginer ce qui s’est passé entre les deux. Le second insère une réponse adverse possible avant de revenir au visage. Il précise l’objet de l’hésitation et peut devenir plus facile à suivre pour qui sait quel camp joue. En revanche, une variante longue peut déplacer l’attention vers la technique alors que la scène porte sur la décision du personnage. Un motif bref permet de donner accès au calcul tout en conservant le rythme du récit.</p>
+
+<p>Le dessin d’une variante peut également préciser où doit se déplacer l’attention dans le montage. Si l’on montre d’abord l’arrivée de la tour, le public voit l’attaque. Si l’on laisse apparaître le fou avant de revenir au visage, il découvre une réponse qui change la valeur de ce premier geste. La relation entre ces images raconte une petite révision du jugement. Elle fait percevoir la logique du calcul sans énumérer tous les coups disponibles dans la position.</p>
 
 </section>
 

@@ -20,6 +20,8 @@ specialty: "LLCER anglais · HLP"
 
 <p>La question devient alors de savoir ce que le français doit rendre explicite. Il peut privilégier ce que la situation indique et dire directement que Ferdinand triche. Il peut aussi conserver une ambiguïté que le jeu des comédiens aidera à comprendre.</p>
 
+<p>La scène propose également un changement de public. Avant que Prospero ne découvre les joueurs, leur échange appartient à leur partie. Une fois la partie révélée, d’autres personnages deviennent les témoins de la manière dont ils se parlent et se disputent. Sur scène, ce passage peut se marquer par un changement de regard. La réplique peut commencer dans l’intimité du jeu et être entendue par ceux qui attendent une explication plus large. Donner à voir les deux camps sur une table aide le public à comprendre ce passage d’une relation entre deux personnes à une situation que d’autres interprètent.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Une traduction claire peut refermer une ambiguïté utile au théâtre">
@@ -30,6 +32,8 @@ specialty: "LLCER anglais · HLP"
 
 <p>La réponse de Ferdinand permet de comparer les choix. Il soutient qu’il ne le ferait pour rien au monde. Une telle promesse paraît disproportionnée si l’on ne pense qu’à un pion déplacé de travers. Elle paraît plus naturelle si le propos engage la confiance entre les deux personnes. Une traduction peut donc laisser au public le temps de passer du petit incident de jeu à la question plus ample de leur loyauté réciproque.</p>
 
+<p>On peut entendre les deux essais de traduction en conservant les mêmes gestes imaginés. Dans un premier essai, l’actrice arrête la main de Ferdinand au-dessus du plateau. « Vous trichez » fonctionne alors comme une réaction directe au déplacement. Dans l’autre, elle garde les yeux sur lui avant de se tourner vers le jeu. « Vous me jouez un tour » accueille plus facilement ce trajet du regard. Inverser les deux phrases et leurs gestes fait apparaître que la nuance n’appartient pas seulement au mot français. La manière de temporiser ou de montrer la pièce peut ramener vers la règle une traduction plus personnelle, ou rendre plus inquiétante une accusation apparemment simple.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Les royaumes agrandissent la portée de ce qui se joue sur la table">
@@ -37,6 +41,8 @@ specialty: "LLCER anglais · HLP"
 <p class="dissertation-movement-start">Miranda poursuit en évoquant des royaumes et en affirmant qu’elle appellerait cela « fair play ». Le rapprochement change l’échelle. Une table porte un jeu de pièces, tandis que la réplique évoque le partage ou la dispute de pouvoirs réels. L’expression anglaise peut s’entendre comme un jeu loyal ou comme un jugement plus général sur ce que l’on accepte dans un affrontement. Traduire ici par « je trouverais encore la partie loyale » relie nettement l’image à l’échiquier. « Je dirais encore que c’est de bonne guerre » fait mieux entendre la querelle de pouvoir, au prix d’un lien lexical moins direct avec le jeu.</p>
 
 <p>Ce passage invite à rapprocher le jeu des enjeux de la pièce sans faire de chaque pièce un personnage déterminé. Rien, dans l’extrait, n’attribue à Ferdinand le roi, à Miranda une reine ou à Prospero une couleur particulière. Le rapprochement est plus solide si l’on observe un principe commun. Dans une partie, les acteurs disposent d’options et acceptent des règles. Dans les rapports de pouvoir de la pièce, ils doivent aussi interpréter les engagements et les intentions des autres. La relation entre ces deux niveaux se construit par la scène et par les mots.</p>
+
+<p>Le mot choisi pour « fair » permet enfin de mesurer ce qu’apporte la partie. La loyauté peut désigner ici la conformité à une règle du jeu ou le jugement d’une personne qui accepte les conséquences d’un affrontement. Si Miranda appelle loyal un comportement qu’elle vient de contester, sa réplique peut devenir une petite mise à l’épreuve de la règle, ou une manière d’exprimer son attachement malgré la dispute. Le texte ne décide pas à lui seul quelle intonation doit dominer. Une traduction réussie peut ménager les deux possibilités et laisser les gestes peser dans l’interprétation. Décrire cette hésitation permet de justifier le choix de traduction avec une raison que le public peut entendre.</p>
 
 </section>
 

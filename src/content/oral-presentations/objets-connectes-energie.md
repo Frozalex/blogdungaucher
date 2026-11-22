@@ -20,6 +20,8 @@ specialty: "Sciences de l’ingénieur · NSI"
 
 <p>Dans une architecture simple, le plateau envoie fréquemment des relevés bruts à un ordinateur qui reconstruit la partie. Dans une autre, le plateau lit ses capteurs à la même fréquence, mais garde l’état précédent en mémoire. Au terme du geste, il compare l’état stable aux positions que les coups légaux pourraient produire. Si la comparaison permet d’identifier un coup, il envoie un message qui décrit celui-ci, accompagné par exemple de son numéro. La mesure n’a pas été ralentie. C’est le nombre de transmissions qui a changé.</p>
 
+<p>Le cas de la promotion montre à quel point le système doit être attentif au sens des données. Quand un pion atteint la dernière rangée, le joueur doit le remplacer par une pièce choisie parmi quatre types. Un capteur qui connaît seulement les cases occupées peut indiquer que le pion a quitté sa case et que la dernière rangée reste occupée. Cela ne dit pas s’il y a désormais une dame ou un cavalier. Le système doit attendre une identification suffisante ou recevoir une indication explicite du type choisi. Ce besoin n’est pas un détail d’affichage. Les coups légaux disponibles au tour suivant dépendent de la pièce qui a réellement été posée.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. On peut comparer la charge dépensée pour une même séquence de jeu">
@@ -30,6 +32,8 @@ specialty: "Sciences de l’ingénieur · NSI"
 
 <p>Au total, le modèle donne environ 0,317 contre 0,268 milliampère-heure sur la période. La charge liée aux émissions diminue fortement, tandis que le gain sur l’ensemble est proche de 15 %. Cette distinction est essentielle. Économiser presque toute la charge dédiée aux messages ne signifie pas économiser presque toute la batterie. Les capteurs restent actifs entre les coups. Si le calcul local, l’écoute radio ou les retransmissions consomment davantage que ne le suppose le modèle, le résultat doit être recalculé.</p>
 
+<p>Le bilan permet aussi d’établir une limite pour le choix de l’architecture. Dans le modèle, on économise environ 0,049 milliampère-heure d’émission sur deux minutes. Si le traitement local ajoute davantage que cette quantité de charge, l’économie disparaît. Sur deux minutes, un supplément constant de 1,5 milliampère représente justement 0,05 milliampère-heure. C’est donc un ordre de grandeur à comparer au coût réel du processeur. Ce raisonnement aide à formuler un essai plus ciblé : mesurer la hausse du courant hors transmission lorsque le programme local filtre plusieurs lectures et compare les possibilités, puis vérifier que cette hausse reste compatible avec l’économie calculée sur la radio.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Le direct impose des critères de délai et de cohérence">
@@ -37,6 +41,8 @@ specialty: "Sciences de l’ingénieur · NSI"
 <p class="dissertation-movement-start">Pour valider un coup, le système peut attendre que la position reste stable sur plusieurs lectures. Cette attente protège contre l’envoi d’un geste inachevé. Elle ajoute aussi un délai après le dépôt de la pièce. Une valeur acceptable se choisit selon le service attendu. Le public a besoin d’une mise à jour rapide, mais un léger décalage est souvent moins gênant qu’un échiquier qui affiche successivement des positions contradictoires. En tournoi, le temps des joueurs et le temps de diffusion doivent rester des informations distinctes.</p>
 
 <p>Une rupture du réseau pose un autre problème. Si le récepteur manque le message numéro huit et reçoit le neuf, il peut détecter le trou. Le plateau peut garder un court historique et renvoyer le coup manquant, ou transmettre l’état complet pour retrouver un affichage cohérent. Avec plusieurs jeux de mesures, on comparerait le délai du dernier geste au nouvel affichage, le nombre d’erreurs et la charge effectivement utilisée. Il faudrait notamment examiner le roque, la prise, la promotion et une interruption de connexion.</p>
+
+<p>Pour suivre la panne d’un seul message, je peux écrire trois colonnes sur une feuille. La première reçoit le déplacement physique, la deuxième le numéro de coup du plateau, la troisième l’état du récepteur. Tant que les numéros se suivent, le spectateur sait à quel événement correspond la mise à jour. S’ils font un saut, je peux montrer ce que doivent faire les deux appareils : demander la donnée manquante ou repartir d’une position complète et d’un numéro annoncé. Envoyer une position complète conserve l’affichage, mais ne reconstitue pas forcément la notation de tous les coups manquants. Un produit destiné à l’analyse après tournoi peut donc avoir une exigence d’enregistrement plus forte qu’un écran qui affiche seulement la position actuelle.</p>
 
 </section>
 

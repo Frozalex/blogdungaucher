@@ -21,6 +21,8 @@ publishDate: "2027-06-05T02:00:00+02:00"
 
 <p>Il faut aussi définir ce que signifie « servir ». Remettre un plateau prêt compte dans la circulation au comptoir. Le participant doit ensuite disposer de temps pour manger et rejoindre la salle. Finir de distribuer le dernier repas au moment où commence la ronde est donc insuffisant, même si l’objectif de distribution a été atteint.</p>
 
+<p>Pour rendre le problème concret, je peux tracer la salle et le lieu de restauration sur un dessin très simple. J’indique ensuite les passages qui prennent du temps : sortir de la partie après avoir confirmé le résultat, rejoindre le comptoir, récupérer le repas, manger puis retourner voir l’appariement. Chacune de ces étapes réduit la durée réellement disponible pour servir. Si la reprise est à quatorze heures et que certains joueurs ont besoin d’au moins quinze minutes pour manger et revenir, distribuer leur repas à treize heures cinquante-cinq ne remplit pas le service attendu. L’échéance du comptoir est donc plus tôt que l’échéance de la ronde. Partir de la fin du trajet explique pourquoi une pause qui paraît longue sur le programme peut être difficile à utiliser.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. La capacité dépend du poste le plus lent">
@@ -31,6 +33,8 @@ publishDate: "2027-06-05T02:00:00+02:00"
 
 <p>On peut aussi utiliser les informations de l’organisation du tournoi. Le nombre de parties encore en cours donne un indicateur des arrivées qui restent possibles : une partie en cours concerne deux joueurs, même si leurs décisions concernant le repas peuvent différer. Communiquer régulièrement sur l’état de la ronde aide à éviter de préparer trop tôt ou trop tard une vague de service.</p>
 
+<p>Le débit doit aussi être mis en relation avec ce qui arrive avant le rush. Supposons que cinq joueurs attendent déjà lorsqu’arrivent les vingt autres. Si le comptoir sert deux personnes par minute, il faut compter vingt-cinq repas à distribuer, soit douze minutes et demie dans notre modèle. La prévision de dix minutes ne suffit plus parce qu’elle avait supposé une file vide. On peut réunir les informations de la salle et du service : combien de parties sont encore ouvertes, et combien de personnes attendent déjà ? Utiliser les deux nombres permet de décider s’il faut ouvrir le second point de service avant que le dernier groupe ne se présente.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Il faut juger le service sur l’usage, le délai et les pertes">
@@ -38,6 +42,10 @@ publishDate: "2027-06-05T02:00:00+02:00"
 <p class="dissertation-movement-start">Un service accéléré peut augmenter le nombre de plateaux préparés d’avance. Cela peut améliorer la tenue de l’horaire et accroître les pertes si tous les joueurs ne se présentent pas. Une organisation par réservation réduit une partie de l’incertitude, tandis qu’une petite souplesse permet d’absorber des arrivées tardives. Il faut observer combien de repas sont consommés, combien restent en fin de pause et quel délai connaissent les derniers participants.</p>
 
 <p>Pour comparer deux tournois, on pourrait mesurer la durée d’attente par tranche d’arrivée et non seulement le débit moyen. Il faudrait aussi noter si certains joueurs reviennent en retard et pourquoi. Un retard peut venir du service ou d’une annonce tardive des appariements. La mesure doit donc tenir compte de toute la succession des actions entre la dernière partie de la matinée et la première de l’après-midi.</p>
+
+<p>Un bon relevé peut également distinguer la qualité du repas des contraintes qui entourent sa remise. Un participant peut apprécier le menu et juger le service peu satisfaisant parce qu’il a dû manger trop vite. Une autre personne peut recevoir son plateau immédiatement, mais rester sans place pour s’asseoir. On peut comparer ces deux expériences en suivant des étapes plutôt qu’en posant une seule question de satisfaction. Si le principal problème est l’accès à une table, augmenter le nombre de personnes au comptoir ne répondra pas au besoin. Le calendrier du tournoi est donc un élément du cahier des charges qui aide à interpréter la qualité perçue.</p>
+
+<p>L’échéance d’une ronde suivante permet de tester l’organisation dans deux situations. Quand les parties se terminent tôt, la régularité du service importe surtout pour limiter l’attente. Quand plusieurs fins se rapprochent, il faut réagir assez vite pour éviter une longue file à un moment où elle serait difficile à résorber. Un plan de service peut donc prévoir un poste supplémentaire à activer selon un indicateur visible, plutôt que le maintenir ouvert toute la pause. L’équipe peut vérifier ensuite si la décision est intervenue assez tôt pour laisser aux derniers joueurs le temps de manger.</p>
 
 </section>
 

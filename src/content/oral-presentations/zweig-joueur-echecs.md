@@ -21,6 +21,8 @@ publishDate: "2027-07-03T02:00:00+02:00"
 
 <p>Il faut tenir compte de la manière dont cette histoire nous parvient. Le lecteur découvre les faits racontés par le docteur B., dans un récit encadré par la rencontre en mer. Cette voix donne au jeu le sens que le personnage reconnaît après coup. Elle ne transforme pas son expérience en règle générale sur les effets des échecs.</p>
 
+<p>Le livre fournit une résistance que le personnage peut mettre à l’épreuve sans inventer toutes les réponses. Une partie consignée contient des décisions prises par d’autres. Quand le docteur B. revient à une position et examine une suite, il peut confronter ce qu’il attend à ce que le relevé indique. Cette confrontation donne à son activité une limite extérieure qu’il n’a pas lui-même choisie. Elle explique en partie pourquoi lire et rejouer un recueil diffère de la pratique qui suivra. Dans un exposé, je peux montrer la distinction avec deux colonnes : d’un côté, un coup est déjà inscrit. De l’autre, il reste à décider. La nouvelle explore ce qui arrive quand le personnage doit fournir lui-même tout ce qui se trouve dans les deux colonnes.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Jouer contre soi modifie la structure de l’opposition">
@@ -31,6 +33,8 @@ publishDate: "2027-07-03T02:00:00+02:00"
 
 <p>Dans le texte allemand, le mot « Schachvergiftung », que l’on peut rendre ici par « intoxication échiquéenne », associe le jeu à l’idée d’empoisonnement. Le terme vient de l’univers du récit et de la façon dont le personnage décrit son expérience. Il donne une forme frappante à la perte de maîtrise ressentie. Le lire comme le nom d’un diagnostic médical moderne ferait perdre son rôle dans le texte.</p>
 
+<p>On peut souligner la difficulté en suivant une décision ordinaire. Avec les Blancs, le personnage envisage une menace et cherche à la dissimuler. Avec les Noirs, il doit répondre en sachant déjà qu’il l’a conçue. Il ne peut pas retrouver complètement l’incertitude qui existe quand l’adversaire possède ses propres intentions. Le texte donne alors une forme narrative à la tentative de se partager entre deux positions. Cette interprétation ne demande pas que l’on imagine une partie réglementaire complète. L’important est le contraste entre deux rôles que le jeu sépare habituellement, et la manière dont le personnage essaie de faire vivre cette séparation dans une seule conscience.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. Le duel avec Czentovic redonne un corps et un rythme à l’opposition">
@@ -38,6 +42,8 @@ publishDate: "2027-07-03T02:00:00+02:00"
 <p class="dissertation-movement-start">Sur le bateau, le docteur B. se retrouve face au champion Mirko Czentovic. Dans cette situation, les deux camps sont de nouveau occupés par des personnes différentes. La partie se déroule devant d’autres passagers et les pièces se trouvent sur un plateau réel. Cela devrait rendre plus facile la distinction entre un coup envisagé et un coup joué. Le récit montre pourtant que les habitudes et les réactions issues du jeu intérieur ne disparaissent pas du seul fait que l’adversaire est présent.</p>
 
 <p>La différence de rythme entre les deux joueurs accentue l’écart. Celui qui attend une réponse ne décide pas du moment où elle vient. Au lieu de suivre seul le rythme de sa pensée, il doit tenir compte du temps pris par l’autre. Le duel rétablit donc ce qui faisait d’abord la réalité du jeu : un adversaire résiste avec ses propres décisions. C’est aussi ce qui met le personnage à l’épreuve. La sortie de la partie devient, dans le récit, une décision distincte de la recherche de la victoire.</p>
+
+<p>La présence d’autres personnes sur le bateau change aussi la manière dont ce qui arrive peut être constaté. Dans le récit de détention, le jeu intérieur est principalement accessible par les mots du docteur B. Devant un vrai plateau, un observateur peut suivre les coups, remarquer la durée de l’attente ou constater qu’un geste ne correspond pas à la position visible. Le lecteur voit donc le problème passer d’un récit intérieur à une scène où les gestes peuvent être vus et interprétés par d’autres. Le retour au plateau réel ne supprime pas d’un coup les difficultés de l’expérience intérieure. Il permet au récit de montrer ces difficultés depuis un autre point de vue.</p>
 
 </section>
 

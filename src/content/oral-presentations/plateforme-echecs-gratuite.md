@@ -21,6 +21,8 @@ publishDate: "2027-04-03T02:00:00+02:00"
 
 <p>Les joueurs apportent également quelque chose au service sans nécessairement le payer. Chaque personne disponible peut devenir l’adversaire d’une autre. Plus la plateforme reçoit de joueurs compatibles au même moment, plus elle dispose d’options pour trouver une rencontre à un niveau et une cadence voisins. Cette valeur dépend de la présence des autres. Ouvrir largement l’accès peut donc améliorer l’appariement des joueurs, tout en demandant des ressources suffisantes pour traiter ce volume.</p>
 
+<p>Le rythme des parties donne un exemple de cette contrainte. Dans une cadence rapide, un écart de quelques secondes se remarque davantage que dans une partie jouée sur plusieurs jours. À nombre de parties identique, les besoins ne sont donc pas nécessairement les mêmes. Une plateforme doit considérer le nombre de joueurs actifs au même moment, la fréquence des coups et le temps pendant lequel un état doit rester accessible. L’infrastructure qui sert une fonction peut être partagée avec d’autres fonctions, mais sa capacité n’est pas illimitée. Le succès visible auprès du public se traduit en décisions techniques que le prix individuel ne fait pas apparaître.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="II. Les dons financent un service que d’autres peuvent aussi utiliser">
@@ -31,6 +33,8 @@ publishDate: "2027-04-03T02:00:00+02:00"
 
 <p>Prenons un budget fictif. Un service a besoin de mille euros par mois pour ses dépenses monétaires. Si deux cents personnes donnent cinq euros, cette dépense est couverte. Si seulement cent cinquante personnes contribuent au même montant, il manque 250 euros. Le nombre total de joueurs pourrait pourtant rester identique. On ne peut donc pas prévoir la santé financière à partir de la fréquentation seule. Il faut aussi suivre le montant et la régularité des contributions.</p>
 
+<p>Le modèle par dons peut aussi exposer le projet à une concentration de ses ressources. Si une seule personne fournit la moitié du montant fictif de mille euros, son départ peut laisser un déficit rapide, même si beaucoup d’utilisateurs continuent à jouer. Si le même montant provient de nombreux petits dons, la perte d’une contribution a moins d’effet à elle seule. Il reste néanmoins à savoir si ces dons arrivent régulièrement. L’indicateur pertinent ne se limite pas à la somme du mois. Il peut comprendre le nombre de contributions régulières et la part que représentent les plus importantes. Cela relève du financement de l’organisation, indépendamment de la force de ses joueurs.</p>
+
 </section>
 
 <section class="dissertation-movement" aria-label="III. La durabilité se juge sur plusieurs indicateurs">
@@ -38,6 +42,10 @@ publishDate: "2027-04-03T02:00:00+02:00"
 <p class="dissertation-movement-start">On peut donner à deux plateformes le même nombre de parties tout en observant des niveaux de service différents. L’une peut disposer d’une marge de capacité aux heures chargées, tandis que l’autre rencontre des temps d’attente ou des déconnexions. Un budget équilibré un mois informe sur une période précise. Il renseigne peu sur la capacité à remplacer du matériel, entretenir le logiciel ou répondre à une hausse de fréquentation. Suivre la disponibilité du service, les dépenses et la régularité des recettes permet d’examiner ces dimensions ensemble.</p>
 
 <p>Le choix d’une ressource contribue aussi à définir les relations entre l’organisation et les joueurs. Une formule payante pourrait apporter un revenu plus directement lié aux inscriptions. Un financement par dons préserve un accès dissocié du paiement, mais dépend de la volonté d’une partie du public. Le cas Lichess montre une façon de structurer cet arbitrage. Comparer effectivement plusieurs plateformes demanderait de disposer d’informations de coût et de service établies sur des périmètres comparables.</p>
+
+<p>On peut séparer les signes de bonne santé du service en trois questions que l’on pourrait poser à un responsable. Combien de temps faut-il pour trouver une partie et recevoir les coups ? Les ressources du mois couvrent-elles les dépenses prévisibles ? Existe-t-il des personnes capables de maintenir le logiciel si un contributeur habituel s’arrête ? Les réponses peuvent évoluer dans des directions différentes. Un service fluide aujourd’hui peut reposer sur une organisation fragile, alors qu’un budget équilibré peut masquer des limites de capacité. Le modèle économique se juge donc aussi à la manière dont il rend possible le travail à venir, et pas uniquement à ce que l’interface affiche à un utilisateur.</p>
+
+<p>Enfin, le service rendu comprend plusieurs activités auxquelles l’utilisateur accède depuis la même plateforme. Trouver un adversaire, consulter une étude et faire analyser une partie peuvent nécessiter des ressources différentes. Une réduction du temps d’attente informe surtout sur la mise en relation, tandis qu’une file d’analyses signale un autre besoin de capacité. On peut donc imaginer des priorités distinctes lorsque l’organisation doit choisir où employer un don ou une heure de travail. Un budget se comprend mieux si l’on sait quel aspect du jeu chaque dépense soutient.</p>
 
 </section>
 
