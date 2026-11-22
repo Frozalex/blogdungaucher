@@ -143,5 +143,15 @@ const dissertations = defineCollection({
   }),
 });
 
-export const collections = { blog, enTranslations, ptBrTranslations, nlTranslations, dissertations };
+const oralPresentations = defineCollection({
+  loader: glob({ pattern: "*.md", base: "./src/content/oral-presentations" }),
+  schema: z.object({
+    title: z.string(),
+    excerpt: z.string(),
+    specialty: z.string(),
+    publishDate: z.coerce.date().optional(),
+  }),
+});
+
+export const collections = { blog, enTranslations, ptBrTranslations, nlTranslations, dissertations, oralPresentations };
 

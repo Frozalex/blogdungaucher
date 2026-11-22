@@ -6,6 +6,7 @@ import { siteConfig, staticRoutes, enStaticRoutes, ptBrStaticRoutes, nlStaticRou
 import { serieMoteurSlugs } from "../data/serie-moteur-python";
 import { getAllPosts, getEnSlugMap, getPtBrSlugMap, getNlSlugMap, getPostSlug, getPostUrl, isFrenchOnlyPost } from "../utils/blog";
 import { swapLangPrefix, withTrailingSlash, type SiteLang } from "../utils/lang-paths";
+import { getPublishedOralPresentations, oralPresentationPath } from "../utils/oral-presentations";
 
 /** Pages exclues du sitemap : thin content et pages légales.
  *  Doit rester synchrone avec les `noindex={true}` des pages correspondantes :
@@ -77,6 +78,13 @@ export const GET: APIRoute = async () => {
     ]),
   );
 
+  const oralPresentations = await getPublishedOralPresentations(buildTime);
+  const frOralPaths = oralPresentations.map(({ id, data }) => {
+    const path = oralPresentationPath(id);
+    if (data.publishDate) extraDates.set(path, data.publishDate);
+    return path;
+  });
+
   function lastmodFor(frPath: string): string | undefined {
     const post = posts.find((p) => getPostUrl(p) === frPath);
     const date = post ? (post.data.updatedDate ?? post.data.publishDate) : extraDates.get(frPath);
@@ -139,8 +147,8 @@ export const GET: APIRoute = async () => {
     .map((r) => withTrailingSlash(r));
 
   const frPostPaths = posts.filter((post) => !post.data.noindex).map((post) => getPostUrl(post));
-  const frDissertationPaths = [...extraDates.keys()];
-  const allFrPaths = [...frStaticPaths, ...frPostPaths, ...frDissertationPaths];
+  const frDissertationPaths = dissertations.map(d => `/fr/dissertations/${lastSegment(d.id)}/`);
+  const allFrPaths = [...frStaticPaths, ...frPostPaths, ...frDissertationPaths, ...frOralPaths];
 
   const frEntries = allFrPaths.map((frPath) => {
     const frOnly = isFrOnlyPath(frPath);
