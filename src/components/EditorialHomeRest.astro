@@ -64,7 +64,7 @@ const dossier = (lang==="fr"?currentDossier.entries:[]).flatMap(entry => {
       <h3>Les échecs,<br />un sujet à défendre.</h3>
       <p>Des idées aux arguments : prépare ton Grand oral avec des sujets de Maths et de NSI, des plans et des repères pour le jury.</p>
       <a class="oral-dossier__button" href={currentDossier.href}>Préparer mon Grand oral <span aria-hidden="true">→</span></a>
-      <div class="oral-dossier__signature" aria-hidden="true"><img src="/images/logo.svg" alt="" width="30" height="42" /><span>Comprendre.<br />Construire. Convaincre.</span></div>
+      <div class="oral-dossier__signature" aria-hidden="true"><img src="/images/logo.svg" loading="lazy" alt="" width="30" height="42" /><span>Comprendre.<br />Construire. Convaincre.</span></div>
     </div>
     <div class="oral-dossier__articles">
       {dossier.map(entry => <article class="oral-dossier__article">

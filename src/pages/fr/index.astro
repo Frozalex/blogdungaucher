@@ -11,11 +11,11 @@ const leadImage = lead ? getPostHeroSrc(lead) : null;
 ---
 <BaseLayout
   title={homeTitles["fr"]}
-  description="Blog sur les échecs : neurosciences, psychologie du joueur, stratégie et société. Articles approfondis deux fois par semaine pour progresser et comprendre le jeu."
+  description="Explore les échecs sous un autre angle. Deux articles par semaine sur la science du jeu, la psychologie du joueur et la place des échecs dans la société."
   canonicalPath="/fr/"
   preloadImage={leadImage ?? undefined}
   preloadImageSrcset={buildSrcset(leadImage)}
-  preloadImageSizes="(min-width: 900px) 730px, 100vw"
+  preloadImageSizes="(min-width: 1280px) 576px, (min-width: 901px) 45vw, (min-width: 601px) 39vw, calc(100vw - 80px)"
   structuredData={buildWebsiteJsonLd()}
 >
   <HomePortal lang="fr" />
