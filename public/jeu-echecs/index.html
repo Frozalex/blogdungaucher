@@ -4,60 +4,101 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, follow">
-  <meta name="theme-color" content="#182820">
-  <meta name="description" content="Apprends trois ouvertures et le vocabulaire des échecs en anglais ou en portugais du Brésil, dans une clairière en pixel art.">
+  <meta name="theme-color" content="#ece9df">
+  <meta name="description" content="Explore librement trois ouvertures avec Le Gaucher, joue les coups sur l’échiquier et découvre des mots en anglais ou en portugais du Brésil.">
   <title>Le Gambit des Mots · Blog d’un Gaucher</title>
   <link rel="icon" type="image/png" href="./assets/icone.png?v=2403b7e36cc1">
   <link rel="preload" as="image" href="./assets/clairiere.webp?v=eff32c65e2df">
-  <link rel="stylesheet" href="./assets/style.css?v=dff1fb97b3dd">
-  <script defer src="./game.js?v=8bf2d74513ad"></script>
+  <link rel="preload" as="font" type="font/woff2" href="./assets/outfit-latin.woff2?v=6c18d579fd87" crossorigin>
+  <script src="./theme.js?v=b9d9079b4b18"></script>
+  <link rel="stylesheet" href="./assets/style.css?v=704c1ada1810">
+  <script defer src="./game.js?v=0cf1150786e1"></script>
 </head>
 <body>
   <a class="skip" href="#jeu">Aller au jeu</a>
-  <header class="masthead">
-    <div class="site-width masthead-inner">
-      <a class="brand" href="https://blogdungaucher.com/fr/"><span class="brand-icon" aria-hidden="true"></span>Blog d’un Gaucher</a>
-      <a class="blog-link" href="#parcours">Les parcours <span aria-hidden="true">↓</span></a>
-    </div>
+  <header class="masthead site-width">
+    <a class="brand" href="https://blogdungaucher.com/fr/" aria-label="Accueil du Blog d’un Gaucher">
+      <img src="./assets/logo-blog.svg?v=ca5a3c0cf594" width="29" height="41" alt=""><span>Blog d’un Gaucher</span>
+    </a>
+    <nav class="site-nav" aria-label="Navigation du jeu">
+      <a href="#jeu" aria-current="page">Échiquier</a>
+      <a href="#idees">Coups étudiés</a>
+    </nav>
+    <button id="theme-toggle" type="button" aria-label="Mode sombre" aria-pressed="false" title="Mode sombre">
+      <svg viewBox="0 0 24 24" aria-hidden="true" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path class="moon" d="M20.4 14.3A8.7 8.7 0 0 1 9.7 3.6 8.7 8.7 0 1 0 20.4 14.3Z"/>
+        <g class="sun"><circle cx="12" cy="12" r="3.6"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g>
+      </svg>
+    </button>
   </header>
-  <main id="jeu" class="site-width">
+  <main id="jeu" class="site-width" tabindex="-1">
     <div class="intro">
-      <div><h1>Le Gambit des Mots</h1><p>Lis la consigne dans ta langue cible, joue le coup et apprends le mot qui va avec.</p></div>
-      <div class="controls">
-        <label class="language-picker">Langue à apprendre
-          <select id="language"><option value="en">Anglais</option><option value="pt-BR">Portugais du Brésil</option></select>
+      <div class="intro-copy">
+        <h1>Le Gambit des Mots</h1>
+        <p>Explore trois ouvertures avec Le Gaucher et découvre les mots de chaque position en anglais ou en portugais.</p>
+      </div>
+      <div class="controls" role="group" aria-label="Choisir une position d’ouverture">
+        <label class="field">Ouverture
+          <select id="family">
+            <option value="english">Anglaise</option>
+            <option value="philidor">Défense Philidor</option>
+            <option value="dutch">Défense hollandaise</option>
+          </select>
         </label>
-        <div class="switcher" role="group" aria-label="Mode d’apprentissage">
-          <button type="button" data-mode="lesson" aria-pressed="true">Leçons</button>
-          <button type="button" data-mode="review" aria-pressed="false">Réviser <span id="due-count" hidden></span></button>
-        </div>
+        <label class="field">Variante
+          <select id="variant"><option value="">Position de départ</option></select>
+        </label>
       </div>
     </div>
     <div class="game-layout">
-      <section class="stage" aria-label="Clairière et échiquier">
-        <div class="stage-top"><span class="tag" id="turn">Aux Blancs</span></div>
-        <details id="evaluation" class="evaluation">
-          <summary>Évaluation</summary>
-          <div><span id="evaluation-bar" aria-hidden="true"><i></i></span><output id="evaluation-value"></output></div>
-        </details>
-        <div class="board-frame"><div class="board" id="board" role="group" aria-label="Échiquier, les Blancs en bas. Utilise les flèches pour naviguer et Entrée pour choisir."></div></div>
-        <div class="stage-bottom"><span class="tag" id="moves" aria-label="Coups joués">Position de départ</span></div>
-      </section>
-      <section class="activity" aria-label="Activité en cours">
-        <div id="activity"><p>Chargement de la première leçon…</p></div>
-        <p id="feedback" class="feedback" role="status"></p>
-        <noscript><p>Active JavaScript pour déplacer les pièces et jouer les leçons.</p></noscript>
-      </section>
+      <div class="play-area">
+        <section class="stage" aria-label="Clairière et échiquier">
+          <div class="stage-top"><span class="tag" id="turn">Aux Blancs</span></div>
+          <details id="evaluation" class="evaluation">
+            <summary>Évaluation</summary>
+            <div><span id="evaluation-bar" aria-hidden="true"><i></i></span><output id="evaluation-value"></output></div>
+          </details>
+          <div class="board-frame"><div class="board" id="board" role="group" aria-label="Échiquier, les Blancs en bas. Utilise les flèches pour naviguer et Entrée pour choisir."></div></div>
+          <div class="stage-bottom"><span class="tag" id="moves" aria-label="Coups joués">Position de départ</span></div>
+        </section>
+        <div class="board-tools">
+          <div class="history-tools" role="group" aria-label="Historique de la position">
+            <button class="action" id="undo" type="button" disabled><span aria-hidden="true">↶</span> Annuler</button>
+            <button class="action" id="redo" type="button" disabled><span aria-hidden="true">↷</span> Rétablir</button>
+            <button class="action" id="restart" type="button">Recommencer</button>
+          </div>
+          <label class="field">Mode de jeu
+            <select id="control"><option value="auto">Réplique automatique</option><option value="both">Jouer les deux camps</option></select>
+          </label>
+          <p id="status" role="status"></p>
+        </div>
+      </div>
+      <aside class="activity" aria-label="Le coach, les coups et les mots">
+        <div class="coach">
+          <img src="./assets/coach.webp?v=2100634bb716" alt="" width="60" height="60">
+          <p><strong>Le Gaucher</strong><span>Ton coach d’échecs</span></p>
+        </div>
+        <p id="advice" aria-live="polite">Préparation de la position…</p>
+        <section class="ideas" id="idees" aria-labelledby="ideas-title">
+          <h2 id="ideas-title">Coups étudiés</h2>
+          <div id="branches"></div>
+          <div id="comparateur"></div>
+        </section>
+        <section id="extras" aria-label="Vocabulaire de la position">
+          <label class="field language-picker">Langue des mots
+            <select id="language"><option value="en">Anglais</option><option value="pt-BR">Portugais du Brésil</option></select>
+          </label>
+          <div id="explorer-words"></div>
+        </section>
+        <noscript><p>Active JavaScript pour déplacer les pièces et explorer les ouvertures.</p></noscript>
+      </aside>
     </div>
-    <section class="course" id="parcours" aria-labelledby="course-title">
-      <div class="course-head"><h2 id="course-title">Les parcours d’ouverture</h2><p id="course-count"></p></div>
-      <div class="lessons" id="lessons"></div>
-    </section>
     <footer class="credits">
-      <p id="save-notice">Ta progression est enregistrée dans ce navigateur.</p>
+      <p id="save-notice">Ta position est enregistrée dans ce navigateur.</p>
       <details><summary>Sources et crédits</summary>
         <p>Les lignes étudiées viennent du Laboratoire des ouvertures du Blog d’un Gaucher. Le catalogue d’origine est celui de Lichess (CC0) et les suites ont été calculées avec Stockfish. Règles des échecs avec <a href="./credits-chess-js.txt">chess.js (BSD-2-Clause)</a>.</p>
         <p>Lexique anglais adapté de WikDict (Karl Bartel), DBnary et Wiktionary. Fiches adaptées sous <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Les fiches renvoient à leur entrée source. Traductions contextuelles et exemples écrits pour le jeu.</p>
+        <p>Typographie Outfit, distribuée sous <a href="./assets/outfit-OFL.txt">licence SIL Open Font</a>.</p>
         <p><a href="https://github.com/lichess-org/chess-openings">Catalogue Lichess</a> · <a href="https://www.wikdict.com/">WikDict</a> · <a href="https://en.wiktionary.org/wiki/Wiktionary:Copyrights">Attributions Wiktionary</a></p>
       </details>
     </footer>
