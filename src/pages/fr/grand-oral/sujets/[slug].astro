@@ -1,0 +1,56 @@
+---
+import { render } from "astro:content";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import Breadcrumb from "../../../../components/Breadcrumb.astro";
+import { buildBreadcrumbJsonLd } from "../../../../utils/blog";
+import { getPublishedOralPresentations, oralPresentationPath } from "../../../../utils/oral-presentations";
+import "../../../../styles/editorial-resources.css";
+import "../../../../styles/editorial-articles.css";
+import "../../../../styles/editorial-dissertations.css";
+
+export async function getStaticPaths() {
+  const entries = await getPublishedOralPresentations();
+  return entries.map(entry => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const canonicalPath = oralPresentationPath(entry.id);
+const breadcrumbs = [
+  { label: "Accueil", href: "/fr/" },
+  { label: "Grand oral", href: "/fr/grand-oral/" },
+  { label: entry.data.title },
+];
+const structuredData = buildBreadcrumbJsonLd(breadcrumbs.map(item => ({
+  name: item.label,
+  path: item.href ?? canonicalPath,
+})));
+---
+
+<BaseLayout title={`${entry.data.title} | Grand oral`} description={entry.data.excerpt} canonicalPath={canonicalPath} lang="fr" type="article" section="Grand oral" publishDate={entry.data.publishDate} structuredData={structuredData} omitEnDeAlternateLinks={true}>
+  <article class="article-page dissertation-page">
+    <div class="reading-progress" aria-hidden="true"><span id="reading-progress-fill"></span></div>
+    <div class="container article-layout">
+      <div class="article-main">
+        <div class="dissertation-breadcrumb" data-no-print><Breadcrumb items={breadcrumbs} /></div>
+        <header class="article-header">
+          <p class="dissertation-kicker">Grand oral <span aria-hidden="true">·</span> {entry.data.specialty}</p>
+          <h1>{entry.data.title}</h1>
+          <p class="article-excerpt">{entry.data.excerpt}</p>
+          <div class="dissertation-byline" data-no-print>
+            <div class="dissertation-author"><img src="/images/logo.svg" alt="" width="23" height="32" /><span>Par <a href="/fr/about/" rel="author">Le Gaucher</a></span></div>
+            <a class="dissertation-start" href="#texte-du-sujet">Lire le sujet <span aria-hidden="true">↓</span></a>
+          </div>
+        </header>
+        <div class="dissertation-reading">
+          <div class="article-body prose" id="texte-du-sujet"><Content /></div>
+          <footer class="article-footer" data-no-print>
+            <a class="dissertation-back resource-link" href="/fr/grand-oral/#sujets-rediges">← Tous les sujets rédigés</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<script>import "../../../../scripts/dissertation-reading";</script>

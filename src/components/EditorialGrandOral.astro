@@ -4,9 +4,11 @@ import EditorialArticle from "./EditorialArticle.astro";
 import { oralLead, oralSpecialties, oralSubjects, oralGuides, oralRevisionSheets } from "../data/grand-oral-editorial";
 import { getPostsByCategory, getPostSlug, buildBreadcrumbJsonLd } from "../utils/blog";
 import { isPublicAssetAvailable } from "../utils/public-asset";
+import { getPublishedOralPresentations, oralPresentationPath } from "../utils/oral-presentations";
 import "../styles/editorial-resources.css";
 
 const posts = await getPostsByCategory("grand-oral");
+const presentations = await getPublishedOralPresentations();
 const bySlug = new Map(posts.map(post => [getPostSlug(post), post]));
 const lead = bySlug.get(oralLead);
 const subjects = oralSubjects.flatMap(entry => { const post = bySlug.get(entry.slug); return post ? [{ ...entry, post }] : []; });
@@ -20,7 +22,7 @@ const pdf = (slug: string) => isPublicAssetAvailable(`/pdfs/${slug}.pdf`) ? `/pd
 const generatorEnabled = true;
 ---
 
-<BaseLayout title="Grand oral : sujets, guides et fiches autour des échecs | Blog d’un Gaucher" description="Trouve une problématique de Grand oral autour des échecs en Maths, NSI, SES ou HGGSP. Sujets, guides de préparation, fiches de révision et PDF à télécharger." canonicalPath="/fr/grand-oral/" lang="fr" omitEnDeAlternateLinks={true} structuredData={buildBreadcrumbJsonLd([{ name: "Accueil", path: "/fr/" }, { name: "Grand oral", path: "/fr/grand-oral/" }])}>
+<BaseLayout title="Grand oral : sujets rédigés, guides et fiches | Blog d’un Gaucher" description="Lis des sujets rédigés pour le Grand oral en sciences, en lettres et en arts. Retrouve aussi les sujets autour des échecs, les guides et les fiches de révision." canonicalPath="/fr/grand-oral/" lang="fr" omitEnDeAlternateLinks={true} structuredData={buildBreadcrumbJsonLd([{ name: "Accueil", path: "/fr/" }, { name: "Grand oral", path: "/fr/grand-oral/" }])}>
   <div class="resource-page oral-page">
     <div class="container">
       <header class="oral-header">
@@ -29,11 +31,20 @@ const generatorEnabled = true;
         <div class="resource-heading oral-heading">
           <span class="resource-kicker oral-label">Le dossier · Lycée & baccalauréat</span>
           <h1>Ton Grand oral.<br />Un sujet qui se défend.</h1>
-          <p>Les échecs peuvent être un point de départ. Je te propose des questions, des notions et des ressources pour construire un raisonnement que tu comprends — et que tu peux défendre avec tes mots.</p>
-          <div class="oral-byline">Le_Gaucher <span aria-hidden="true">·</span> {subjects.length} sujets <span aria-hidden="true">·</span> {guides.length + (lead ? 1 : 0)} guides <span aria-hidden="true">·</span> {sheets.length} fiches de révision</div>
+          <p>Lis des exposés rédigés par spécialité et retrouve les ressources pour approfondir les sujets autour des échecs.</p>
+          <div class="oral-byline">Le_Gaucher <span aria-hidden="true">·</span> {presentations.length + subjects.length} sujets <span aria-hidden="true">·</span> {guides.length + (lead ? 1 : 0)} guides <span aria-hidden="true">·</span> {sheets.length} fiches de révision</div>
         </div>
-        <nav class="oral-shortcuts" aria-label="Dans ce dossier">{generatorEnabled && <a href="/fr/grand-oral/generateur/">Préparer mon oral →</a>}<a href="#sujets">Trouver mon sujet ↓</a><a href="#guides">Choisir mon guide ↓</a><a href="#ressources">Réviser & m’entraîner ↓</a></nav>
+        <nav class="oral-shortcuts" aria-label="Dans ce dossier"><a href="#sujets-rediges">Sujets rédigés ↓</a><a href="#sujets">Sujets autour des échecs ↓</a>{generatorEnabled && <a href="/fr/grand-oral/generateur/">Préparer mon oral →</a>}<a href="#guides">Choisir mon guide ↓</a></nav>
       </header>
+
+      <section class="resource-section" id="sujets-rediges" aria-labelledby="oral-presentations-title">
+        <div class="resource-section-head"><h2 id="oral-presentations-title">Sujets rédigés pour le Grand oral</h2></div>
+        <div class="oral-guide-grid">{presentations.map(({ id, data }) => <article class="oral-presentation">
+          <p class="resource-kicker">{data.specialty}</p>
+          <h3><a href={oralPresentationPath(id)}>{data.title}</a></h3>
+          <p>{data.excerpt}</p>
+        </article>)}</div>
+      </section>
 
       {generatorEnabled && <section class="oral-generator-invitation" aria-labelledby="oral-generator-title">
         <div><span class="resource-kicker">L’atelier · Toutes spécialités</span><h2 id="oral-generator-title">Une idée à transformer en question ?</h2><p>Sciences, arts, langues, société : choisis une question, construis ta réponse, vérifie tes sources et prépare les objections. Garde tes brouillons sur cet appareil, puis répète avec le chronomètre.</p></div>
@@ -111,6 +122,11 @@ const generatorEnabled = true;
 
 <style>
   .oral-page { --oral-accent: #8b5cf6; }
+  .oral-presentation { min-width: 0; padding-block: 1rem; border-top: 1px solid var(--border-strong); }
+  .oral-presentation > p { margin: 0; }
+  .oral-presentation > h3 { margin: .55rem 0; font: 550 1.35rem/1.35 var(--font-serif); }
+  .oral-presentation a:hover { color: var(--green); }
+  .oral-presentation > h3 + p { color: var(--text-muted); font-size: .9rem; line-height: 1.65; }
   .oral-header { margin-bottom: 2.5rem; }
   .oral-header .resource-nav { border-top-color: var(--oral-accent); }
   .oral-label { display: flex; align-items: center; gap: .5rem; }
