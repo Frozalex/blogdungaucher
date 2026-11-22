@@ -43,6 +43,7 @@
 :root body.site-blogvi .c-hero__title{color:var(--text-main);font-family:var(--font-body);font-size:clamp(30px,3.3vw,44px);text-transform:none;letter-spacing:-.025em}
 :root body.site-blogvi :is(.c-hero__chev,.c-hero__rule){display:none}
 :root body.site-blogvi .c-card{position:static;transform:none;margin:0;box-shadow:none}
+.site-blogvi .bv-home-grid { margin-block-end: clamp(1.5rem, 3vw, 2.5rem); }
 .site-blogvi .resource-button:not([hidden]) {
   display: inline-flex;
   align-items: center;
