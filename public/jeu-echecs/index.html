@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#182820">
+  <meta name="description" content="Apprends trois ouvertures et le vocabulaire des échecs en anglais ou en portugais du Brésil, dans une clairière en pixel art.">
+  <title>Le Gambit des Mots · Blog d’un Gaucher</title>
+  <link rel="icon" type="image/png" href="./assets/icone.png?v=2403b7e36cc1">
+  <link rel="preload" as="image" href="./assets/clairiere.webp?v=eff32c65e2df">
+  <link rel="stylesheet" href="./assets/style.css?v=dff1fb97b3dd">
+  <script defer src="./game.js?v=8bf2d74513ad"></script>
+</head>
+<body>
+  <a class="skip" href="#jeu">Aller au jeu</a>
+  <header class="masthead">
+    <div class="site-width masthead-inner">
+      <a class="brand" href="https://blogdungaucher.com/fr/"><span class="brand-icon" aria-hidden="true"></span>Blog d’un Gaucher</a>
+      <a class="blog-link" href="#parcours">Les parcours <span aria-hidden="true">↓</span></a>
+    </div>
+  </header>
+  <main id="jeu" class="site-width">
+    <div class="intro">
+      <div><h1>Le Gambit des Mots</h1><p>Lis la consigne dans ta langue cible, joue le coup et apprends le mot qui va avec.</p></div>
+      <div class="controls">
+        <label class="language-picker">Langue à apprendre
+          <select id="language"><option value="en">Anglais</option><option value="pt-BR">Portugais du Brésil</option></select>
+        </label>
+        <div class="switcher" role="group" aria-label="Mode d’apprentissage">
+          <button type="button" data-mode="lesson" aria-pressed="true">Leçons</button>
+          <button type="button" data-mode="review" aria-pressed="false">Réviser <span id="due-count" hidden></span></button>
+        </div>
+      </div>
+    </div>
+    <div class="game-layout">
+      <section class="stage" aria-label="Clairière et échiquier">
+        <div class="stage-top"><span class="tag" id="turn">Aux Blancs</span></div>
+        <details id="evaluation" class="evaluation">
+          <summary>Évaluation</summary>
+          <div><span id="evaluation-bar" aria-hidden="true"><i></i></span><output id="evaluation-value"></output></div>
+        </details>
+        <div class="board-frame"><div class="board" id="board" role="group" aria-label="Échiquier, les Blancs en bas. Utilise les flèches pour naviguer et Entrée pour choisir."></div></div>
+        <div class="stage-bottom"><span class="tag" id="moves" aria-label="Coups joués">Position de départ</span></div>
+      </section>
+      <section class="activity" aria-label="Activité en cours">
+        <div id="activity"><p>Chargement de la première leçon…</p></div>
+        <p id="feedback" class="feedback" role="status"></p>
+        <noscript><p>Active JavaScript pour déplacer les pièces et jouer les leçons.</p></noscript>
+      </section>
+    </div>
+    <section class="course" id="parcours" aria-labelledby="course-title">
+      <div class="course-head"><h2 id="course-title">Les parcours d’ouverture</h2><p id="course-count"></p></div>
+      <div class="lessons" id="lessons"></div>
+    </section>
+    <footer class="credits">
+      <p id="save-notice">Ta progression est enregistrée dans ce navigateur.</p>
+      <details><summary>Sources et crédits</summary>
+        <p>Les lignes étudiées viennent du Laboratoire des ouvertures du Blog d’un Gaucher. Le catalogue d’origine est celui de Lichess (CC0) et les suites ont été calculées avec Stockfish. Règles des échecs avec <a href="./credits-chess-js.txt">chess.js (BSD-2-Clause)</a>.</p>
+        <p>Lexique anglais adapté de WikDict (Karl Bartel), DBnary et Wiktionary. Fiches adaptées sous <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Les fiches renvoient à leur entrée source. Traductions contextuelles et exemples écrits pour le jeu.</p>
+        <p><a href="https://github.com/lichess-org/chess-openings">Catalogue Lichess</a> · <a href="https://www.wikdict.com/">WikDict</a> · <a href="https://en.wiktionary.org/wiki/Wiktionary:Copyrights">Attributions Wiktionary</a></p>
+      </details>
+    </footer>
+  </main>
+</body>
+</html>

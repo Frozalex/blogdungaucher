@@ -1,0 +1,72 @@
+name: Vérifier la publication du Gambit des Mots
+on:
+  push:
+    branches: [main]
+    paths: ["public/jeu-echecs/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publication:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: public/jeu-echecs
+      - name: Vérifier le rendu et le noindex sur le domaine
+        shell: python
+        run: |
+          import hashlib
+          import re
+          import time
+          import urllib.request
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import urljoin
+
+          root = Path("public/jeu-echecs")
+          site = "https://blogdungaucher.com/"
+          game = urljoin(site, "jeu-echecs/")
+          def get(url):
+              request = urllib.request.Request(url, headers={"Cache-Control": "no-cache", "User-Agent": "Gambit-des-Mots/1.0 publication-check"})
+              with urllib.request.urlopen(request, timeout=20) as response:
+                  assert response.status == 200 and response.geturl().startswith(site), response.geturl()
+                  return response.read()
+
+          class Page(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.robots, self.scripts = [], []
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  if tag == "meta" and attrs.get("name", "").lower() == "robots":
+                      self.robots.extend(re.split(r"[,\s]+", attrs.get("content", "").lower()))
+                  if tag == "script" and "src" in attrs:
+                      self.scripts.append(attrs["src"])
+
+          js_digest = hashlib.sha256((root / "game.js").read_bytes()).hexdigest()
+          def verify():
+              page = Page()
+              page.feed(get(game).decode())
+              assert "noindex" in page.robots and "index" not in page.robots, page.robots
+              assert "./game.js?v=" + js_digest[:12] in page.scripts, page.scripts
+              for file in sorted(root.rglob("*")):
+                  if file.is_file() and file.name != "index.html":
+                      data = file.read_bytes()
+                      digest = hashlib.sha256(data).hexdigest()[:12]
+                      assert get(urljoin(game, file.relative_to(root).as_posix()) + "?v=" + digest) == data, file
+              assert b"/jeu-echecs/" not in get(urljoin(site, "sitemap.xml")), "Jeu présent dans le sitemap"
+              print("HTTP 200, noindex, sitemap et ressources du build vérifiés sur", game, flush=True)
+
+          for attempt in range(45):
+              try:
+                  verify()
+                  break
+              except Exception as error:
+                  if attempt == 44:
+                      raise
+                  print("En attente de la version du VPS :", str(error)[:260], flush=True)
+                  time.sleep(30)
