@@ -19,6 +19,20 @@ const pages = walk('dist').filter(f => f.endsWith('.html')).map(f => {
 });
 const summary = {pages:pages.length,languages:{},baselineCompared:false};
 const launchedNl = new Date() >= NL_LAUNCH_DATE;
+// The apex must remain a usable language chooser, including without JavaScript.
+const rootHtml = fs.readFileSync('dist/index.html', 'utf8');
+const rootPage = load(rootHtml);
+assert.equal(rootPage('h1').length, 1, 'Missing language chooser heading');
+assert.equal(rootPage('link[rel=canonical]').attr('href'), 'https://blogdungaucher.com/');
+assert.equal(rootPage('meta[http-equiv="refresh" i]').length, 0, 'Apex still redirects');
+assert.doesNotMatch(rootHtml, /(?:window\.)?location\.(?:replace|assign)\s*\(/, 'Apex must wait for a language choice');
+const choices = rootPage('nav a[hreflang]').map((_, e) => rootPage(e).attr('href')).get();
+assert.deepEqual(choices, ['/fr/', '/en/', '/pt-br/', ...(launchedNl ? ['/nl/'] : [])]);
+for (const href of choices) assert.ok(pages.some(p => p.path === href), `Missing language destination ${href}`);
+for (const file of ['deploy/nginx-redirects.conf', 'scripts/gen-nginx-redirects.mjs']) {
+  assert.doesNotMatch(fs.readFileSync(file, 'utf8'), /location\s*=\s*\/\s*\{[^}]*return\s+30[1278]/, `${file} redirects the apex before the chooser`);
+}
+
 const languages = [['fr','fr'],['en','en'],['pt-br','pt-BR'], ...(launchedNl ? [['nl','nl']] : [])];
 if (!launchedNl) assert.equal(pages.filter(p => p.path.startsWith('/nl/blog/') && p.body).length, 0, 'NL articles exposed before launch');
 for (const [lang,htmlLang] of languages) {
