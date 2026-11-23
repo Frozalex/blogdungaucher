@@ -91,7 +91,7 @@
     "theorie-des-jeux-aux-echecs",
     "theorie-du-chaos-aux-echecs"
   ],
-  "updatedAt": "2026-11-19T15:45:10.921Z",
+  "updatedAt": "2026-11-23T18:10:01.287Z",
   "version": 2,
   "channels": {
     "ntfy": [
@@ -216,6 +216,7 @@
       "echecs-et-handicap",
       "echecs-et-hpi",
       "echecs-et-immigration",
+      "echecs-et-l-echec",
       "echecs-et-la-solitude",
       "echecs-et-la-triche",
       "echecs-et-le-corps",
