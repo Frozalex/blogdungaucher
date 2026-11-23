@@ -77,7 +77,7 @@ h1 { font-size: clamp(30px, 3.3vw, 44px); line-height: 1.16; font-weight: 700; l
 .stage { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(max-content, 1fr) auto minmax(max-content, 1fr); aspect-ratio: 1.54; place-items: center; min-width: 0; isolation: isolate; overflow: hidden; border-bottom: 1px solid var(--line); background: #664220 url("./clairiere.webp?v=eff32c65e2df") 50% 49% / cover no-repeat; }
 .stage-top, .stage-bottom { justify-self: start; min-width: 0; max-width: calc(100% - 24px); margin: 10px 12px; display: flex; pointer-events: none; }
 .stage-top { grid-area: 1 / 1; align-self: start; }
-.stage-bottom { grid-area: 3 / 1; align-self: end; }
+.stage-bottom { grid-area: 3 / 1; align-self: end; align-items: center; gap: .4rem; }
 .tag, .evaluation { background: #1b322aef; color: #fff7e4; border: 1px solid #d9bd81a6; border-radius: 14px; font-size: .77rem; }
 .tag { display: inline-flex; align-items: center; max-width: 100%; padding: .26rem .65rem; font-weight: 600; }
 .evaluation { grid-area: 1 / 1; align-self: start; justify-self: end; max-width: 55%; margin: 10px 12px; min-width: 0; }
@@ -86,10 +86,19 @@ h1 { font-size: clamp(30px, 3.3vw, 44px); line-height: 1.16; font-weight: 700; l
 .evaluation > div { padding: .15rem .66rem .45rem; }
 #evaluation-bar { display: block; overflow: hidden; height: 5px; margin-bottom: .25rem; border: 1px solid #b3b99c; border-radius: 3px; background: #304831; }
 #evaluation-bar i { display: block; height: 100%; width: var(--white-share, 50%); background: #f3deb8; }
-#moves { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#moves { display: block; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#idea-board-caption { flex: none; gap: .28em; max-width: 72%; min-height: 32px; padding: .18rem .68rem; color: #fff4cb; background: #214c40; border-color: #fff4cb; pointer-events: auto; }
+#idea-board-caption:hover { background: #133c33; }
+#idea-board-caption:focus-visible { outline-color: #fff4cb; }
 .board-frame { grid-area: 2 / 1; width: 53%; padding: clamp(4px, .55vw, 9px); background: #a76b37; border: 2px solid #512d19; border-radius: 3px; box-shadow: 0 5px 0 #492717, 0 11px 16px #25150cc9, inset 0 0 0 2px #d59c5f; }
 .board { position: relative; display: grid; grid-template: repeat(8,minmax(0,1fr)) / repeat(8,minmax(0,1fr)); aspect-ratio: 1; isolation: isolate; border: 1px solid #684323; background: #d3a569; }
 .move-overlay { position: absolute; inset: 0; z-index: 5; pointer-events: none; }
+.idea-overlay { position: absolute; inset: 0; z-index: 3; width: 100%; height: 100%; pointer-events: none; }
+.idea-overlay [data-color="w"] { --idea-fill: #fff4cb; --idea-outline: #17433d; }
+.idea-overlay [data-color="b"] { --idea-fill: #1b4940; --idea-outline: #fff4cb; }
+.idea-origin { fill: none; stroke: var(--idea-outline); stroke-width: 3; stroke-dasharray: 10 5; }
+.idea-arrow { fill: var(--idea-fill); stroke: var(--idea-outline); stroke-width: 3.5; stroke-linejoin: round; }
+.idea-target { fill: #f9d75d40; stroke: #244c41; stroke-width: 4; }
 .move-actor { position: absolute; width: 12.5%; height: 12.5%; pointer-events: none; }
 .square { position: relative; padding: 0; min-width: 0; min-height: 0; border: 0; border-radius: 0; background: #edc887; color: #5a341d; }
 .square[data-tone="dark"] { background: #975b38; color: #fff0c8; }
@@ -110,6 +119,20 @@ h1 { font-size: clamp(30px, 3.3vw, 44px); line-height: 1.16; font-weight: 700; l
 .coach strong { font-size: 1.12rem; font-weight: 650; letter-spacing: -.02em; }
 .coach span { color: var(--muted); font-size: .86rem; }
 #advice { position: relative; padding: .85rem 1rem; border-radius: 3px 16px 16px 16px; background: var(--tint); color: var(--ink); font-size: 1.06rem; font-weight: 480; line-height: 1.5; }
+#coach-idea { margin-top: .55rem; }
+#coach-idea-controls { display: flex; flex-wrap: wrap; gap: .45rem; }
+.idea-toggle { display: inline-flex; align-items: center; justify-content: center; gap: .45rem; min-height: 40px; padding: .38rem .78rem; border: 1px solid var(--accent); border-radius: 20px; background: var(--paper); color: var(--accent); font-size: .93rem; font-weight: 600; }
+.idea-toggle svg { flex: none; width: 18px; height: 18px; }
+.idea-toggle:hover { background: var(--tint); }
+.idea-toggle[aria-expanded="true"] { color: var(--on-accent); background: var(--accent); }
+#advice .idea-toggle { display: inline; padding: 0 .17em; min-height: 0; border: 0; border-radius: .22em; background: transparent; font: inherit; font-weight: 650; text-decoration: underline dotted; text-underline-offset: .19em; }
+#advice .idea-toggle svg { display: none; }
+#advice .idea-toggle:hover, #advice .idea-toggle[aria-expanded="true"] { color: var(--on-accent); background: var(--accent); }
+#coach-idea-detail { margin: .55rem 0 0 .3rem; padding: .1rem .75rem; border-left: 3px solid var(--accent); }
+#coach-idea-description { font-size: .96rem; line-height: 1.45; }
+#coach-idea-detail p + p { display: flex; align-items: baseline; flex-wrap: wrap; gap: .4rem; margin-top: .3rem; }
+#coach-idea-language { color: var(--muted); font-size: .875rem; }
+#coach-idea-translation { color: var(--accent); font-weight: 650; }
 .ideas { margin-top: 1.35rem; scroll-margin-top: 1rem; }
 #branches { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .65rem; color: var(--muted); }
 .branch { display: inline-flex; align-items: center; flex-wrap: wrap; gap: .5rem; padding: .48rem .8rem; min-height: 40px; max-width: 100%; border: 1px solid var(--line); border-radius: 22px; background: var(--paper); color: var(--ink); text-align: left; }
@@ -217,11 +240,12 @@ h1 { font-size: clamp(30px, 3.3vw, 44px); line-height: 1.16; font-weight: 700; l
   .site-nav a { font-size: .8rem; }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .action, .branch, .site-nav a, #theme-toggle {
+  .action, .branch, .site-nav a, #theme-toggle, .idea-toggle, #idea-board-caption {
     transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease, box-shadow 140ms ease;
   }
   .action.primary:active:not(:disabled) { box-shadow: none; }
   .square { transition: background-color 120ms ease, box-shadow 120ms ease; }
   .evaluation[open] > div, .activity details[open] > p { animation: reveal 140ms ease-out; }
+  .idea-overlay, #coach-idea-detail:not([hidden]) { animation: reveal 160ms ease-out; }
   @keyframes reveal { from { opacity: 0; } to { opacity: 1; } }
 }
