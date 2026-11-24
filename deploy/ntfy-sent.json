@@ -91,7 +91,7 @@
     "theorie-des-jeux-aux-echecs",
     "theorie-du-chaos-aux-echecs"
   ],
-  "updatedAt": "2026-11-23T18:10:01.287Z",
+  "updatedAt": "2026-11-24T17:48:24.904Z",
   "version": 2,
   "channels": {
     "ntfy": [
@@ -239,6 +239,7 @@
       "echecs-religion-et-interdit",
       "echecs-stress-tournoi",
       "echecs-vs-philosophie-pensee-strategique",
+      "effet-de-halo-aux-echecs",
       "effet-dunning-kruger-aux-echecs",
       "effet-placebo-aux-echecs",
       "formation-des-habitudes-aux-echecs",
