@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v6";
+const CACHE_VERSION = "v7";
 const STATIC_CACHE = `blogdungaucher-static-${CACHE_VERSION}`;
 const FONT_CACHE   = `blogdungaucher-fonts-${CACHE_VERSION}`;
 const IMAGE_CACHE  = `blogdungaucher-images-${CACHE_VERSION}`;
